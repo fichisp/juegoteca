@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_guardar"
+        android:icon="@drawable/menu_guardar"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_guardar"/>
+    <!--
+         <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+    -->
+
+</menu>

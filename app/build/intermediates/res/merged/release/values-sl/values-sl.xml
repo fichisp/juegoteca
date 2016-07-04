@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Krmarjenje domov"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Krmarjenje navzgor"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Več možnosti"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Končano"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Pokaži vse"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Izbira aplikacije"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Iskanje …"</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Izbris poizvedbe"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Iskalna poizvedba"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Iskanje"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Pošiljanje poizvedbe"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Glasovno iskanje"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Deljenje z"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Deljenje z:"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Strni"</string>
+    <string name="action_buscar">Search</string>
+    <string name="action_duplicar">Duplicate</string>
+    <string name="action_editar">Edit</string>
+    <string name="action_eliminar">Delete</string>
+    <string name="action_estadisticas">Statistics</string>
+    <string name="action_exportar">Export</string>
+    <string name="action_favorito">Add to favorites</string>
+    <string name="action_favorito_eliminar">Delete from favorites</string>
+    <string name="action_favoritos">Favorites</string>
+    <string name="action_guardar">Save</string>
+    <string name="action_hacer_copia_seguridad">Backup</string>
+    <string name="action_home">Home</string>
+    <string name="action_importar">Import</string>
+    <string name="action_nuevo">New</string>
+    <string name="action_pendientes">Pending</string>
+    <string name="action_restaurar_copia_seguridad">Restore backup</string>
+    <string name="action_settings">Options</string>
+    <string name="alerta_atras_nuevo_texto">Are you sure you want to go back? Unsaved data will be lost</string>
+    <string name="alerta_atras_nuevo_titulo">Cancel game creation</string>
+    <string name="alerta_borrado_texto">Are you sure you want to delete the game?</string>
+    <string name="alerta_borrado_titulo">Delete game</string>
+    <string name="alerta_borrado_todo_texto">Are you sure you want to delete all application data?</string>
+    <string name="alerta_borrado_todo_titulo">Full detel</string>
+    <string name="alerta_buscar_online_texto">Do you want to search the online database?</string>
+    <string name="alerta_buscar_online_titulo">No results in the local database.</string>
+    <string name="alerta_restaurar_texto">Are you sure you want to restore the backup? All data will be erased and can not be recovered</string>
+    <string name="alerta_restaurar_titulo">Restore backup</string>
+    <string name="anio_invalido">The YEAR is invalid</string>
+    <string name="app_name">My Game Collection</string>
+    <string name="app_version">1.3</string>
+    <string name="app_versiones_texto">Version 0.9 - Beta</string>
+    <string name="app_versiones_title">Version changes</string>
+    <string name="campo_compania_vacio">The field COMPANY can not be blank</string>
+    <string name="campo_fecha_completado_invalido">The field value COMPLETED DATE is invalid</string>
+    <string name="campo_fecha_compra_invalido">The field value PURCHASE DATE is invalid</string>
+    <string name="campo_fecha_lanzamiento_invalido">The field value RELEASE DATE is invalid</string>
+    <string name="campo_puntuacion_invalido">The SCRORE may not exceed 100</string>
+    <string name="campo_titulo_vacio">The field TITLE can not be blank</string>
+    <string name="cancel">Cancel</string>
+    <string msgid="4770915072144378781" name="common_google_play_services_api_unavailable_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> potrebuje eno ali več storitev za Google Play, ki trenutno niso na voljo. Za pomoč se obrnite na razvijalca."</string>
+    <string msgid="2050101795821476669" name="common_google_play_services_enable_button">"Omogočite storitve Google Play"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne bo delovala, če ne omogočite storitev Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Omogočanje storitev Google Play"</string>
+    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Namesti storitve Google Play"</string>
+    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne deluje brez storitev Google Play, vendar teh ni v telefonu."</string>
+    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne deluje brez storitev Google Play, vendar teh ni v tabličnem računalniku."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Namestitev storitev Google Play"</string>
+    <string msgid="479501935061677276" name="common_google_play_services_invalid_account_text">"V tej napravi ne obstaja navedeni račun. Izberite drugega."</string>
+    <string msgid="5775407690646375078" name="common_google_play_services_invalid_account_title">"Neveljaven račun"</string>
+    <string msgid="6857745590248226927" name="common_google_play_services_network_error_text">"Za povezavo s storitvami Google Play potrebujete podatkovno povezavo."</string>
+    <string msgid="4183541461338112307" name="common_google_play_services_network_error_title">"Omrežna napaka"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Napaka storitev Google Play"</string>
+    <string msgid="8897126254633757462" name="common_google_play_services_resolution_required_text">"Dokončajte dejanje, ki ga zahteva <ns1:g id="APP_NAME">%1$s</ns1:g>."</string>
+    <string msgid="7524004365913123453" name="common_google_play_services_resolution_required_title">"Storitve Google Play zahtevajo ukrepanje"</string>
+    <string msgid="3111284987662714014" name="common_google_play_services_restricted_profile_text">"Dostopanje do računov iz omejenega profila ni podprto."</string>
+    <string msgid="8137798410446890929" name="common_google_play_services_restricted_profile_title">"Omejen profil"</string>
+    <string msgid="2431909537598981235" name="common_google_play_services_sign_in_failed_text">"Napaka pri prijavi v izbran račun. Izberite drug račun."</string>
+    <string msgid="4402642931312190213" name="common_google_play_services_sign_in_failed_title">"Prijava ni uspela"</string>
+    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ima težave s storitvami Google Play. Če težava ne bo odpravljena, se za pomoč obrnite na razvijalca."</string>
+    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> potrebuje storitve Google Play, ki jih vaša naprava ne podpira. Za pomoč se obrnite na proizvajalca."</string>
+    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Storitve Google Play"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Posodobi"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne bo delovala, če ne posodobite storitev Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Posodobitev storitev Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"Aplikacija <ns1:g id="APP_NAME">%1$s</ns1:g> ne deluje brez storitev Google Play, ki se trenutno posodabljajo."</string>
+    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Storitve Google Play se posodabljajo"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Potrebujete novo različico storitev Google Play. V kratkem se bodo posodobile."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Odpiranje v telefonu"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Prijava"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Prijava z Google Računom"</string>
+    <string name="contrasena">Password</string>
+    <string name="copia_restaurada_ko">The backup could not be restored</string>
+    <string name="copia_restaurada_ok">Backup complete. The application will restart</string>
+    <string name="dia_invalido">The DAY is invalid</string>
+    <string name="digital">Digital</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_cargar_caratula">Unable to copy the cover to directory app</string>
+    <string name="error_cargar_ficha_online">Error retrieving online data. Check your Internet connection or try again.</string>
+    <string name="etiqueta_email">Email</string>
+    <string name="etiqueta_nombre">Name</string>
+    <string name="etiqueta_registro">Sing up</string>
+    <string name="etiqueta_repite_contrasena">Repeat password</string>
+    <string name="favoritos">Favorites</string>
+    <string name="fisico">Retail</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_comentario">Game comments</string>
+    <string name="hint_compania">Company</string>
+    <string name="hint_contrasena">Password</string>
+    <string name="hint_ean">Product code</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_fecha">dd/mm/aaaa</string>
+    <string name="hint_nombre">Name</string>
+    <string name="hint_precio">Game Price</string>
+    <string name="hint_puntuacion">From 0 to 100</string>
+    <string name="hint_resumen">Resume or description of the game</string>
+    <string name="hint_titulo">Game title</string>
+    <string name="inicio_titulo_completados">Last games completed</string>
+    <string name="juego_actualizado_ko">Failed to update the game data</string>
+    <string name="juego_actualizado_ok">Game data updated</string>
+    <string name="juego_anadido_favoritos">Game added to favorites</string>
+    <string name="juego_codigo_duplicado">A game already exists with the same product code</string>
+    <string name="juego_eliminado">Game deleted</string>
+    <string name="juego_eliminado_favoritos">Game removed from favorites</string>
+    <string name="juego_guardado">Game saved</string>
+    <string name="juego_no_anadido_favoritos">Could not add the game to favorites</string>
+    <string name="juego_no_eliminado">Could not delete the game</string>
+    <string name="juego_no_eliminiado_favoritos">Could not eliminate game from favorites</string>
+    <string name="juego_no_guardado">Error saving game:</string>
+    <string name="juego_ya_anadido_favoritos">This game is already in favorites</string>
+    <string name="juegos_encontrados">games found.</string>
+    <string name="ko">No</string>
+    <string name="label_buscar">Search</string>
+    <string name="label_comentario">Comments</string>
+    <string name="label_compania">Company</string>
+    <string name="label_completado">Completed</string>
+    <string name="label_descripcion_editar">Description</string>
+    <string name="label_ean">Product code</string>
+    <string name="label_fecha_compra">Date of purchase</string>
+    <string name="label_fecha_lanzamiento">Release date</string>
+    <string name="label_formato">Format</string>
+    <string name="label_genero">Genre</string>
+    <string name="label_plataforma">Platform</string>
+    <string name="label_precio">Price</string>
+    <string name="label_puntuacion">Score</string>
+    <string name="label_resumen">Summary</string>
+    <string name="label_resumen_editar">Summary</string>
+    <string name="label_titulo">Title</string>
+    <string name="mensaje_datos_borrados_ok">All data clear. The application will restart</string>
+    <string name="mes_invalido">The MONTH is invalid</string>
+    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Predvajanje"</string>
+    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Iskanje naprav …"</string>
+    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Povezovanje z napravo"</string>
+    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Prekini povezavo"</string>
+    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"Podatki niso na voljo"</string>
+    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Zaustavi"</string>
+    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Predvajaj"</string>
+    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Nastavitve poti"</string>
+    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Ustavi predvajanje"</string>
+    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
+    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Naprave"</string>
+    <string name="no_data_backup">There is no data to save in the backup</string>
+    <string name="ok">Yes</string>
+    <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Počisti iskalno polje"</string>
+    <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Iskanje"</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_description_exportar_copia">Make a backup and stores it in the device.</string>
+    <string name="pref_description_hacer_copia">Make a backup and stores it on the server.</string>
+    <string name="pref_description_importar_copia">Retrieve a backup stored on the device and restore data.</string>
+    <string name="pref_description_iniciar_sesion">Inicia sesión para compartir fichas y hacer copias de seguridad de tus datos</string>
+    <string name="pref_description_restaurar_copia">Retrieve a backup stored on the server and restores the data.</string>
+    <string name="pref_header_data">Data and backup</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_otros">Others</string>
+    <string name="pref_iniciar_sesion">Iniciar sesión</string>
+    <string name="pref_title_about">About</string>
+    <string name="pref_title_borrar_bbdd">Clear all data</string>
+    <string name="pref_title_display_name">Nombre</string>
+    <string name="pref_title_eliminar_ads">Eliminar anuncios/Restaurar compra</string>
+    <string name="pref_title_exportar_copia">Export backup file</string>
+    <string name="pref_title_hacer_copia">Backup</string>
+    <string name="pref_title_importar_copia">Import backup file</string>
+    <string name="pref_title_restaurar_copia">Restore backup</string>
+    <string name="pref_title_share_name">Mostrar mi nombre en la fichas compartidas</string>
+    <string name="pref_title_version">Version %1$s</string>
+    <string name="registro_contrasenas_no_coinciden">Passwords do not match</string>
+    <string name="registro_correcto">It has been recorded properly. You will receive an email to activate your account.</string>
+    <string name="registro_email_usado">The email indicated already has a registered user</string>
+    <string name="registro_mensaje">By registering, you will receive an email to activate your account.</string>
+    <string name="sin_resultados_busqueda">There are no results for this search</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="texto_boton_buscar_online">Online search</string>
+    <string name="texto_inicio_sesion">Enter your username and password.</string>
+    <string name="texto_inicio_sesion_registro">If you have not yet registered, click on the button \ "Register \" to create your account to share your stack of games and make backup copies of your data in the sevidor.</string>
+    <string name="texto_registro">Register to access the functions of backup on the server and share your chips on gaming.</string>
+    <string name="title_activity_acerca_de">About</string>
+    <string name="title_activity_anuncio">Ad</string>
+    <string name="title_activity_buscador">Search</string>
+    <string name="title_activity_cargar_caratula">Add box art</string>
+    <string name="title_activity_detalle_juego">Game Details</string>
+    <string name="title_activity_duplicar_juego">Duplicate game</string>
+    <string name="title_activity_editar_juego">Edit game</string>
+    <string name="title_activity_eliminar_anuncios">Remove ads</string>
+    <string name="title_activity_estadisitcas">Statistics</string>
+    <string name="title_activity_favoritos">Favorites</string>
+    <string name="title_activity_inicio">My Game Library</string>
+    <string name="title_activity_listado_juego">Search results</string>
+    <string name="title_activity_nuevo_juego">Add game</string>
+    <string name="title_activity_opciones">Opciones</string>
+    <string name="title_activity_pendientes">Pending</string>
+    <string name="title_activity_plataforma">Platform</string>
+    <string name="title_activity_registro">Sing up</string>
+    <string name="title_activity_seleccionar_fichero">Select file</string>
+    <string name="title_activity_splash">My Game Library</string>
+    <string name="titulo_estadisiticas_plataforma">GAMES BY PLATFORM</string>
+    <string name="titulo_estadisticas_completados">GAMES COMPLETED</string>
+    <string name="titulo_estadisticas_formato">Games by format</string>
+    <string name="titulo_estadisticas_genero">GAMES BY GENRES</string>
+    <string name="titulo_pendientes">Pending</string>
+    <string name="total_juegos">Total</string>
+    <string name="ultimos_juegos_anadidos">Last games added</string>
+    <string name="url_bajar_copia">http://www.mijuegoteca.com/administracion/buscarCopiaSeguridad</string>
+    <string name="url_buscar">http://www.mijuegoteca.com/administracion/buscador</string>
+    <string name="url_comprobar_subir_copia">http://www.mijuegoteca.com/administracion/comprobarSubirCopiaSeguridad</string>
+    <string name="url_iniciar_sesion">http://www.mijuegoteca.com/administracion/iniciosesion</string>
+    <string name="url_insertar">http://www.mijuegoteca.com/administracion/juego/insertarExportado</string>
+    <string name="url_registrar_trial">>http://www.mijuegoteca.com/administracion/registrarTrial</string>
+    <string name="url_registro_usuario">http://www.mijuegoteca.com/administracion/registro</string>
+    <string name="url_subir_copia">http://www.mijuegoteca.com/administracion/subirCopiaSeguridad</string>
+    <string name="url_subir_imagen">http://www.mijuegoteca.com/administracion/juego/subirImagen</string>
+    <string name="zip">Creating file…</string>
+</resources>

@@ -1,0 +1,31 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >   
+    
+    <Preference android:title="@string/pref_title_exportar_copia" 
+        android:summary="@string/pref_description_exportar_copia"
+        android:icon="@null"
+        android:key="exportar_copia_seguridad">
+    </Preference>
+    
+    <Preference android:title="@string/pref_title_importar_copia" 
+        android:summary="@string/pref_description_importar_copia"
+        android:icon="@null"
+        android:key="importar_restaurar_seguridad">
+    </Preference>
+    
+<!--     <Preference android:title="@string/pref_title_hacer_copia" 
+        android:summary="@string/pref_description_hacer_copia"
+        android:icon="@null"
+        android:key="hacer_copia_seguridad">
+    </Preference>
+    
+    <Preference android:title="@string/pref_title_restaurar_copia" 
+        android:summary="@string/pref_description_restaurar_copia"
+        android:icon="@null"
+        android:key="hacer_restaurar_seguridad">
+    </Preference> -->
+    
+      <Preference android:title="@string/pref_title_borrar_bbdd"
+          android:icon="@null"
+          android:key="borrar_todo">
+    </Preference>
+</PreferenceScreen>

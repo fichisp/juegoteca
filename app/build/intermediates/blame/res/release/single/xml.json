@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/xml/pref_otros.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/xml/pref_otros.xml"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/xml/pref_headers.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/xml/pref_headers.xml"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/xml/pref_general.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/xml/pref_general.xml"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/xml/pref_datos_seguridad.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/xml/pref_datos_seguridad.xml"
+    }
+]

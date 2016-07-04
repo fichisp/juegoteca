@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="title_activity_opciones">Opciones</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <!-- Opciones generales -->
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_display_name">Nombre</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_title_share_name">Mostrar mi nombre en la fichas compartidas</string>
+    <string name="pref_iniciar_sesion">Iniciar sesión</string>
+    <string name="pref_description_iniciar_sesion">Inicia sesión para compartir fichas y hacer copias de seguridad de tus datos</string>
+    <!--
+         <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+    -->
+
+
+    <!-- Opciones de datos y seguridad -->
+    <string name="pref_header_data">Datos y seguridad</string>
+    <string name="pref_title_hacer_copia">Hacer copia de seguridad</string>
+    <string name="pref_description_hacer_copia">Realiza una copia de seguridad y la almacena en el servidor.</string>
+    <string name="pref_title_restaurar_copia">Restaurar copia de seguridad</string>
+    <string name="pref_description_restaurar_copia">Recuperar una copia de seguridad almacenada en el servidor y restaura los datos.</string>
+    <string name="pref_title_exportar_copia">Exportar copia de seguridad a fichero</string>
+    <string name="pref_description_exportar_copia">Realiza una copia de seguridad y la almacena en el dispositivo.</string>
+    <string name="pref_title_importar_copia">Importar copia de seguridad</string>
+    <string name="pref_description_importar_copia">Recuperar una copia de seguridad almacenada en el dispositivo y restaura los datos.</string>
+    <string name="pref_title_borrar_bbdd">Borrar todos los datos</string>
+
+    <!-- Otros -->
+    <string name="pref_header_otros">Otros</string>
+    <string name="pref_title_version">Version %1$s</string>
+    <string name="pref_title_about">Acerca de</string>
+    <string name="pref_title_eliminar_ads">Eliminar anuncios/Restaurar compra</string>
+
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+</resources>

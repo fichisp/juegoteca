@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/home/alvaro/workspaces/studio/mijuegoteca/app/src/release/jniLibs"/></dataSet></merger>

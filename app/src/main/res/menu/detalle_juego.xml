@@ -1,0 +1,56 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/menu_home"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_home"/>
+    <item
+        android:id="@+id/action_editar"
+        android:icon="@drawable/menu_editar"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_editar"/>
+    <item
+        android:id="@+id/action_eliminar"
+        android:icon="@drawable/menu_eliminar"
+        android:orderInCategory="300"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_eliminar"/>
+    <item
+        android:id="@+id/action_favorito"
+        android:icon="@drawable/menu_favorito"
+        android:orderInCategory="400"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_favorito"/>
+    <item
+        android:id="@+id/action_favorito_eliminar"
+        android:icon="@drawable/menu_favorito_eliminar"
+        android:orderInCategory="500"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_favorito_eliminar"/>
+    <item
+        android:id="@+id/action_importar"
+        android:icon="@drawable/menu_importar"
+        android:orderInCategory="600"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_importar"/>
+    
+<!-- Eliminado en la version 1.2     
+	<item
+        android:id="@+id/action_exportar"
+        android:icon="@drawable/menu_exportar"
+        android:orderInCategory="700"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_exportar"/> -->
+    <!--
+         <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/menu_opciones"
+        android:title="@string/action_settings"/>
+    -->
+
+</menu>

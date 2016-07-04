@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="Theme.Light.NoTitleBar.Workaround" parent="@android:style/Theme.Material.Light">
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewLight</item>
+        <item name="android:dropDownItemStyle">@style/Widget.DropDownItemLight</item>
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:statusBarColor">@color/naranja_cabeceras</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+</resources>

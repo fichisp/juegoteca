@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/list_placeholder.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/raw/list_placeholder.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/gtm_analytics",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.2/res/raw/gtm_analytics"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/loading.gif",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/raw/loading.gif"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/db_create.sql",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/raw/db_create.sql"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/licencias.txt",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/raw/licencias.txt"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/db_upgrade.sql",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/raw/db_upgrade.sql"
+    }
+]

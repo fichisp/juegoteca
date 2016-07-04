@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+    <string msgid="4600421777120114993" name="abc_action_bar_home_description">"Navega a la pàgina d\'inici"</string>
+    <string msgid="1397052879051804371" name="abc_action_bar_home_description_format">"%1$s, %2$s"</string>
+    <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
+    <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Navega cap a dalt"</string>
+    <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Més opcions"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Fet"</string>
+    <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Mostra\'ls tots"</string>
+    <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Selecciona una aplicació"</string>
+    <string msgid="7723749260725869598" name="abc_search_hint">"Cerca..."</string>
+    <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Esborra la consulta"</string>
+    <string msgid="2550479030709304392" name="abc_searchview_description_query">"Consulta de cerca"</string>
+    <string msgid="8264924765203268293" name="abc_searchview_description_search">"Cerca"</string>
+    <string msgid="8928215447528550784" name="abc_searchview_description_submit">"Envia la consulta"</string>
+    <string msgid="893419373245838918" name="abc_searchview_description_voice">"Cerca per veu"</string>
+    <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Comparteix amb"</string>
+    <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Comparteix amb %s"</string>
+    <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Replega"</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_duplicar">Importar</string>
+    <string name="action_editar">Editar</string>
+    <string name="action_eliminar">Eliminar</string>
+    <string name="action_estadisticas">Estadísticas</string>
+    <string name="action_exportar">Exportar</string>
+    <string name="action_favorito">Añadir a favoritos</string>
+    <string name="action_favorito_eliminar">Eliminar de favoritos</string>
+    <string name="action_favoritos">Favoritos</string>
+    <string name="action_guardar">Guardar</string>
+    <string name="action_hacer_copia_seguridad">Hacer copia de seguridad</string>
+    <string name="action_home">Inicio</string>
+    <string name="action_importar">Importar</string>
+    <string name="action_nuevo">Nuevo</string>
+    <string name="action_pendientes">Pendientes</string>
+    <string name="action_restaurar_copia_seguridad">Restaurar copia de seguridad</string>
+    <string name="action_settings">Opciones</string>
+    <string name="alerta_atras_nuevo_texto">¿Seguro que desea volver atrás? Si lo hace perderá los datos no guardados</string>
+    <string name="alerta_atras_nuevo_titulo">Cancelar la creación de juego</string>
+    <string name="alerta_borrado_texto">¿Seguro que desea eliminar el juego?</string>
+    <string name="alerta_borrado_titulo">Eliminar juego</string>
+    <string name="alerta_borrado_todo_texto">¿Está seguro de que desea borrar todos los datos de la aplicación?</string>
+    <string name="alerta_borrado_todo_titulo">Borrado completo</string>
+    <string name="alerta_buscar_online_texto">¿Desea buscar en la base de datos online?</string>
+    <string name="alerta_buscar_online_titulo">No hay resultados en la base de datos local.</string>
+    <string name="alerta_restaurar_texto">¿Seguro que desea restaurar la copia de seguridad? Todos los datos serán borrados y no podrán recuperarse</string>
+    <string name="alerta_restaurar_titulo">Restaurar copia de seguridad</string>
+    <string name="anio_invalido">El AÑO no es correcto</string>
+    <string name="app_name">Mi juegoteca</string>
+    <string name="app_version">1.3</string>
+    <string name="app_versiones_texto">Version 0.9 - Beta</string>
+    <string name="app_versiones_title">Historial de versiones</string>
+    <string name="campo_compania_vacio">El campor COMPAÑÍA no puede quedar en blanco</string>
+    <string name="campo_fecha_completado_invalido">El valor del campo FECHA DE COMPLETADO no es válido</string>
+    <string name="campo_fecha_compra_invalido">El valor del campo FECHA DE COMPRA no es válido.</string>
+    <string name="campo_fecha_lanzamiento_invalido">El valor del campo FECHA DE LANZAMIENTO no es válido</string>
+    <string name="campo_puntuacion_invalido">La PUNTUACIÓN no puede ser mayor que 100</string>
+    <string name="campo_titulo_vacio">El campo TÍTULO no puede quedar en blanco</string>
+    <string name="cancel">Cancelar</string>
+    <string msgid="4770915072144378781" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> necessita almenys un servei de Google Play que actualment no està disponible. Contacta amb el desenvolupador per obtenir ajuda."</string>
+    <string msgid="2050101795821476669" name="common_google_play_services_enable_button">"Activa els serveis de Google Play"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no funcionarà si no actives els serveis de Google Play."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Activa els serveis de Google Play"</string>
+    <string msgid="7118643132557593940" name="common_google_play_services_install_button">"Obtén els serveis de Google Play"</string>
+    <string msgid="1666261992894286769" name="common_google_play_services_install_text_phone">"<ns1:g id="APP_NAME">%1$s</ns1:g> no s\'executarà si el telèfon no té instal·lats els serveis de Google Play."</string>
+    <string msgid="1701766622451829291" name="common_google_play_services_install_text_tablet">"<ns1:g id="APP_NAME">%1$s</ns1:g> no s\'executarà si la tauleta no té instal·lats els serveis de Google Play."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Obtén els serveis de Google Play"</string>
+    <string msgid="479501935061677276" name="common_google_play_services_invalid_account_text">"El compte especificat no existeix en aquest dispositiu. Tria un compte diferent."</string>
+    <string msgid="5775407690646375078" name="common_google_play_services_invalid_account_title">"Compte no vàlid"</string>
+    <string msgid="6857745590248226927" name="common_google_play_services_network_error_text">"Cal una connexió de dades per connectar amb els serveis de Google Play."</string>
+    <string msgid="4183541461338112307" name="common_google_play_services_network_error_title">"Error de xarxa"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Error dels serveis de Google Play"</string>
+    <string msgid="8897126254633757462" name="common_google_play_services_resolution_required_text">"Completa l\'acció que requereix <ns1:g id="APP_NAME">%1$s</ns1:g>."</string>
+    <string msgid="7524004365913123453" name="common_google_play_services_resolution_required_title">"Acció requerida als serveis de Google Play"</string>
+    <string msgid="3111284987662714014" name="common_google_play_services_restricted_profile_text">"No es pot accedir als comptes d\'un perfil restringit."</string>
+    <string msgid="8137798410446890929" name="common_google_play_services_restricted_profile_title">"Perfil restringit"</string>
+    <string msgid="2431909537598981235" name="common_google_play_services_sign_in_failed_text">"S\'ha produït un error en iniciar la sessió al compte especificat. Selecciona un altre compte."</string>
+    <string msgid="4402642931312190213" name="common_google_play_services_sign_in_failed_title">"S\'ha produït un error en iniciar sessió."</string>
+    <string msgid="9089562800660647919" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> té problemes amb els serveis de Google Play. Si el problema continua, contacta amb el desenvolupador per obtenir ajuda."</string>
+    <string msgid="1064791666906610763" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> depèn dels serveis de Google Play, que no són compatibles amb el teu dispositiu. Contacta amb el fabricant per obtenir ajuda."</string>
+    <string msgid="539866123733096737" name="common_google_play_services_unsupported_title">"Serveis de Google Play"</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Actualitza"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no s\'executarà si no actualitzes els serveis de Google Play."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Actualitza els serveis de Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> no s\'executarà sense els serveis de Google Play, que s\'estan actualitzant en aquest moment."</string>
+    <string msgid="2270671469198016014" name="common_google_play_services_updating_title">"Actualitzant els serveis de Google Play"</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Cal una nova versió dels serveis de Google Play. S\'actualitzaran automàticament aviat."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Obre al telèfon"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Inicia sessió"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Inicia la sessió amb Google"</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="copia_restaurada_ko">La copia de seguridad no se ha podido restaurar</string>
+    <string name="copia_restaurada_ok">Copia restaurada. La aplicación se va a reiniciar</string>
+    <string name="dia_invalido">El DÍA no es correcto</string>
+    <string name="digital">Digital</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="error_cargar_caratula">No se puede copiar la carátula al directorio de la apliación</string>
+    <string name="error_cargar_ficha_online">Error al recuperar la ficha online. Comprueba tu conexión a internet o vuelve a intentarlo.</string>
+    <string name="etiqueta_email">Email</string>
+    <string name="etiqueta_nombre">Nombre</string>
+    <string name="etiqueta_registro">Registrarse</string>
+    <string name="etiqueta_repite_contrasena">Repite contraseña</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="fisico">Físico</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hint_comentario">Comentario del juego</string>
+    <string name="hint_compania">Compañía</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="hint_ean">Código del producto</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_fecha">dd/mm/aaaa</string>
+    <string name="hint_nombre">Nombre</string>
+    <string name="hint_precio">Precio del juego</string>
+    <string name="hint_puntuacion">De 0 a 100</string>
+    <string name="hint_resumen">Resumen o descripción del juego</string>
+    <string name="hint_titulo">Título del juego</string>
+    <string name="inicio_titulo_completados">Recién completados</string>
+    <string name="juego_actualizado_ko">Error al actualizar los datos del juego</string>
+    <string name="juego_actualizado_ok">Datos del juego actualizados</string>
+    <string name="juego_anadido_favoritos">Juego añadido a favoritos</string>
+    <string name="juego_codigo_duplicado">Ya existe un juego con el mismo código de producto</string>
+    <string name="juego_eliminado">Juego eliminado"</string>
+    <string name="juego_eliminado_favoritos">Juego eliminado de favoritos</string>
+    <string name="juego_guardado">Juego guardado</string>
+    <string name="juego_no_anadido_favoritos">No se ha podido añadir el juego a favoritos</string>
+    <string name="juego_no_eliminado">No se ha podido eliminar el juego</string>
+    <string name="juego_no_eliminiado_favoritos">"No se ha podido elimnar el juego de favoritos</string>
+    <string name="juego_no_guardado">Error al crear el juego:</string>
+    <string name="juego_ya_anadido_favoritos">Este juego ya está en favoritos</string>
+    <string name="juegos_encontrados">juegos encontrados.</string>
+    <string name="ko">No</string>
+    <string name="label_buscar">Buscar</string>
+    <string name="label_comentario">Comentario</string>
+    <string name="label_compania">Compañía</string>
+    <string name="label_completado">Completado</string>
+    <string name="label_descripcion_editar">Descripción</string>
+    <string name="label_ean">Código de producto</string>
+    <string name="label_fecha_compra">Fecha de compra</string>
+    <string name="label_fecha_lanzamiento">Fecha de lanzamiento</string>
+    <string name="label_formato">Formato</string>
+    <string name="label_genero">Género</string>
+    <string name="label_plataforma">Plataforma</string>
+    <string name="label_precio">Precio</string>
+    <string name="label_puntuacion">Puntuación</string>
+    <string name="label_resumen">Resumen</string>
+    <string name="label_resumen_editar">Resumen</string>
+    <string name="label_titulo">Título</string>
+    <string name="mensaje_datos_borrados_ok">Datos borrados. La aplicación se va a reiniciar</string>
+    <string name="mes_invalido">El MES no es correcto</string>
+    <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Emet"</string>
+    <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"S\'estan cercant dispositius…"</string>
+    <string msgid="7106830097177242655" name="mr_media_route_chooser_title">"Connecta al dispositiu"</string>
+    <string msgid="109793632378378069" name="mr_media_route_controller_disconnect">"Desconnecta"</string>
+    <string msgid="3641544772007543920" name="mr_media_route_controller_no_info_available">"No hi ha informació disponible"</string>
+    <string msgid="8315773974194466049" name="mr_media_route_controller_pause">"Posa en pausa"</string>
+    <string msgid="5214423499524760404" name="mr_media_route_controller_play">"Reprodueix"</string>
+    <string msgid="379358765881274425" name="mr_media_route_controller_settings_description">"Configuració de la ruta"</string>
+    <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Atura l\'emissió"</string>
+    <string msgid="5441529851481176817" name="mr_system_route_name">"Sistema"</string>
+    <string msgid="7498112907524977311" name="mr_user_route_category_name">"Dispositius"</string>
+    <string name="no_data_backup">No hay datos que salvar en la copia de seguridad</string>
+    <string name="ok">Sí</string>
+    <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Esborra la cerca"</string>
+    <string msgid="2809095107724486040" name="place_autocomplete_search_hint">"Cerca"</string>
+    <string name="pref_default_display_name">John Smith</string>
+    <string name="pref_description_exportar_copia">Realiza una copia de seguridad y la almacena en el dispositivo.</string>
+    <string name="pref_description_hacer_copia">Realiza una copia de seguridad y la almacena en el servidor.</string>
+    <string name="pref_description_importar_copia">Recuperar una copia de seguridad almacenada en el dispositivo y restaura los datos.</string>
+    <string name="pref_description_iniciar_sesion">Inicia sesión para compartir fichas y hacer copias de seguridad de tus datos</string>
+    <string name="pref_description_restaurar_copia">Recuperar una copia de seguridad almacenada en el servidor y restaura los datos.</string>
+    <string name="pref_header_data">Datos y seguridad</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_otros">Otros</string>
+    <string name="pref_iniciar_sesion">Iniciar sesión</string>
+    <string name="pref_title_about">Acerca de</string>
+    <string name="pref_title_borrar_bbdd">Borrar todos los datos</string>
+    <string name="pref_title_display_name">Nombre</string>
+    <string name="pref_title_eliminar_ads">Eliminar anuncios/Restaurar compra</string>
+    <string name="pref_title_exportar_copia">Exportar copia de seguridad a fichero</string>
+    <string name="pref_title_hacer_copia">Hacer copia de seguridad</string>
+    <string name="pref_title_importar_copia">Importar copia de seguridad</string>
+    <string name="pref_title_restaurar_copia">Restaurar copia de seguridad</string>
+    <string name="pref_title_share_name">Mostrar mi nombre en la fichas compartidas</string>
+    <string name="pref_title_version">Version %1$s</string>
+    <string name="registro_contrasenas_no_coinciden">Las contraseñas no coinciden</string>
+    <string name="registro_correcto">Se ha registrado correctamente. Recibirá un email para activar su cuenta.</string>
+    <string name="registro_email_usado">El correo electrónico indicado ya tiene un usuario registrado</string>
+    <string name="registro_mensaje">Al registrarse, recibirá un correo para activar su cuenta.</string>
+    <string name="sin_resultados_busqueda">No hay resultados para esta búsqueda</string>
+    <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"+999"</string>
+    <string name="texto_boton_buscar_online">Buscar Online</string>
+    <string name="texto_inicio_sesion">Introduce tu nombre de usuario y contraseña.</string>
+    <string name="texto_inicio_sesion_registro">Si aún no te has registrado, pulsa el botón \"Registrarse\" para crear tu cuenta para poder compartir tus fichas de juegos y hacer copias de seguridad de tus datos en el sevidor.</string>
+    <string name="texto_registro">Registrate para acceder a las funciones de copia de seguridad en el servidor y compartir tus fichas sobre juegos.</string>
+    <string name="title_activity_acerca_de">Acerca de</string>
+    <string name="title_activity_anuncio">Anuncio</string>
+    <string name="title_activity_buscador">Buscador</string>
+    <string name="title_activity_cargar_caratula">CargarCaratula</string>
+    <string name="title_activity_detalle_juego">Ficha del juego</string>
+    <string name="title_activity_duplicar_juego">Duplicar Juego</string>
+    <string name="title_activity_editar_juego">Editar juego</string>
+    <string name="title_activity_eliminar_anuncios">Quitar anuncios</string>
+    <string name="title_activity_estadisitcas">Estadísticas</string>
+    <string name="title_activity_favoritos">Favoritos</string>
+    <string name="title_activity_inicio">Juegoteca</string>
+    <string name="title_activity_listado_juego">Resultado búsqueda</string>
+    <string name="title_activity_nuevo_juego">Añadir juego</string>
+    <string name="title_activity_opciones">Opciones</string>
+    <string name="title_activity_pendientes">Pendientes</string>
+    <string name="title_activity_plataforma">Plataforma</string>
+    <string name="title_activity_registro">Registro</string>
+    <string name="title_activity_seleccionar_fichero">SeleccionarFichero</string>
+    <string name="title_activity_splash">Juegoteca</string>
+    <string name="titulo_estadisiticas_plataforma">JUEGOS POR PLATAFORMA</string>
+    <string name="titulo_estadisticas_completados">JUEGOS COMPLETADOS</string>
+    <string name="titulo_estadisticas_formato">Juegos por formato</string>
+    <string name="titulo_estadisticas_genero">JUEGOS POR GÉNERO</string>
+    <string name="titulo_pendientes">Pendientes</string>
+    <string name="total_juegos">Total de juegos</string>
+    <string name="ultimos_juegos_anadidos">Últimos juegos añadidos</string>
+    <string name="url_bajar_copia">http://www.mijuegoteca.com/administracion/buscarCopiaSeguridad</string>
+    <string name="url_buscar">http://www.mijuegoteca.com/administracion/buscador</string>
+    <string name="url_comprobar_subir_copia">http://www.mijuegoteca.com/administracion/comprobarSubirCopiaSeguridad</string>
+    <string name="url_iniciar_sesion">http://www.mijuegoteca.com/administracion/iniciosesion</string>
+    <string name="url_insertar">http://www.mijuegoteca.com/administracion/juego/insertarExportado</string>
+    <string name="url_registrar_trial">>http://www.mijuegoteca.com/administracion/registrarTrial</string>
+    <string name="url_registro_usuario">http://www.mijuegoteca.com/administracion/registro</string>
+    <string name="url_subir_copia">http://www.mijuegoteca.com/administracion/subirCopiaSeguridad</string>
+    <string name="url_subir_imagen">http://www.mijuegoteca.com/administracion/juego/subirImagen</string>
+    <string name="zip">Generando fichero…</string>
+</resources>
