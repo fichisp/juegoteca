@@ -2,389 +2,438 @@
 <items version="2" >
 
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="af9d57d713e05d6da464c0d009325e235585f5ea">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-panorama-9.0.1_24f85d0892db82cb7c37aaf7639fbc1fc8414b74.jar" />
+        sha1="e91e1f335dc418d0138991a1d5155f0490ab6082">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-lite-9.2.0_9e60b55a1bb5e313b7e7e8b77895aca2358a131d/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="363f626ad5686283250cdb6073ae1bba5cb07a87">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.2.0_b099a7948bd98d3ec4c0232684d7b783e8141b72/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dc4c18602ecffb3e69cda6cdc51ba4feac0f97d7">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.2.0_2d77e85b84ffc706e0087913ae7fcaafb81eebc0/classes.dex" />
     </item>
     <item
         jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/libs/internal_impl-23.0.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.3"
         sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.0_ec82a0215ec71b3f7041d5f551522328e49b78f0.jar" />
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.0_ec82a0215ec71b3f7041d5f551522328e49b78f0/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="babde6b32d7ab7c069a98f008b2bc795c8777fae">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-9.0.1_2b849231e480b89f532abebc857f7eb6f22d15d2.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8d502e4a55039c7b920b5ef5f89d23060304ff8c">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-vision-9.0.1_6d2b2604fcad8fd9f555669c3a94fe10e33c4b17.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="e711046a40e1562d85854ee09cd0a05254cb6463">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.1_609ac0a61fa00a2338711639e5f2e10a2ee13041.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f386000f91af644f751d96ab4c26be945a7dbce4">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-cast-9.0.1_6f8174ef0c8bac2c981155f21a6f3645f7fcde10.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="aa3f026e88b5606be5cb0c7be5cf224489ede2bf">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-9.0.1_1d3e86c83652b50b9655084843af723476c378b1.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="8751850c44515d845de08e317733f1da49e6426a">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-api-9.0.1_5da8e91b6b2fa997172151bfb2758c8f5e6a5319.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="2a816e2891e93c97db7be2bbbf941a31bb64a63e">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-9.0.1_67860875f00456ff96360bb5daf6f434fd7634ea.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="93779beb83069c13f278b652b2206f1f24850705">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.0.1_1e7e6912712ed4c72a281e862bd8fcc1bf5b0d3a.jar" />
+        sha1="74694bf98bd1f856cf478bd0c516531801badced">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.2.0_bc55568ebf4edec8205ed69b1284be952eb19ac9/classes.dex" />
     </item>
     <item
         jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/jars/classes.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.3"
         sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.android.support-mediarouter-v7-23.0.0_f8980d2f19d53cede16a18b72d8f26dc26164f9f.jar" />
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-23.0.0_f8980d2f19d53cede16a18b72d8f26dc26164f9f/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="60f1c7b6953c6c82c4733b2cd67713835ed4fc39">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.0.1_990bd075eb02c7b1315a130b03e90306b8b04fc4.jar" />
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_7aab920544bdb568c3063022e1186b4a8ef505d6/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_abc60b5b283c805ceb09f1a7f048aa5a9c90fc4d.jar" />
+        sha1="535d4497b5fa5d451e07a043e9e220d5c25ab7c7">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gcm-9.2.0_4d4c5d193982de44fffc4e8d6d7127c2e244c82d/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="cd6820c177093398f096088a6f4abc3014588e65">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appindexing-9.0.1_902ea4178e63097fdfb770b6e83fbb3b469ee0bc.jar" />
+        sha1="fbb50f7f89342c915898c9376a67229e2fcee286">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-iid-9.2.0_a2e52241ebe60f0f8aab2fb6c1165e452358c196/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="41216638a24a3c78b00f27b4f7ea33032c185106">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-crash-9.0.1_a8236f88bbff2364353be744a01f81edbaebc735.jar" />
+        sha1="982031d2aa9652bc955d0b581ec70378c0adfc56">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.2.0_29e28e2b02bb3df5779973da8cbeff2304e75678/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="1e972292f7c6bdc49935925da64f9f06d5f8b3ac">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-9.0.1_a9122f8bab1e4b73cfb2571d287aff329082dd43.jar" />
+        sha1="39261f58509b1a379df041f03da394c29da05395">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wallet-9.2.0_ba747f132b50cb26068b686a0316bf4c5bef096c/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="cc67c4553076c53f31a79fb73bce967bfcfe66d8">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-safetynet-9.0.1_9c171f6210ac4cdac4666b116d37835c6d49ac6a.jar" />
+        sha1="dd7b4a8e01cafa79a0b228b2ee5bd57ae5577444">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-games-9.2.0_93c3ade3247fb3408a818e3298646342b97088ab/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="ae63fa87d1dca092eb386a9b148a1d5d14f71253">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-nearby-9.0.1_620cbb0e952f250e4f4e67cc6190259eb6327bfd.jar" />
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_f85278ee303328c6759f76130e7a6ccdce83eff1/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="20e4578cdf97486712a260ec34582334083e3a07">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-9.0.1_f32a991f1fb060ca05dca61279dd9ad420542e95.jar" />
+        sha1="33b5900f82d19fd3dacee518363b249ace77b8f5">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-panorama-9.2.0_3ae8f798814eebadd1d327d865910bb3acd78e81/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="a3ebac72ca6befe2e900427505dbb3dd58a5ebbf">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.1_b910ab54e4dc5103b44e0638386326fa99509734.jar" />
+        sha1="5acfd484717d9175c175569a114d46dbeec074ed">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appinvite-9.2.0_bb6a11b5ef090e1a29e53fe1b9fc3ce29dcecc63/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="a0505314a91da9985e336c17088410f4c7085690">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wallet-9.0.1_ad15df63a3cd4ad9d260d4d3d2485d3a08a35622.jar" />
+        sha1="f315c6b5b99081f16a79c9aaa557328a4644fe63">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.2.0_1b3f7e96895e60d51f3618cd5e4424cfd3375e83/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="aafdbaf742c84cf3b7842fa6e1fc57890d88ab0b">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_53a337293be163f1cc1560d697312625214eee6f/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="98efec479ffdce4f418fbf186f37bccc469100b0">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_9899675e2ebee7c877904e52a8eea4e0b39792c3/classes.dex" />
     </item>
     <item
         jar="/home/alvaro/workspaces/studio/mijuegoteca/app/libs/achartengine-1.0.0.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.3"
         sha1="b2bb0af9f390c0edd4d7d95f613f38da3abe0144">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/achartengine-1.0.0_64f00d840e8edaa16e64c2b4622a1353f2fe410a.jar" />
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/2/achartengine-1.0.0_64f00d840e8edaa16e64c2b4622a1353f2fe410a/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="beecf0c3e72517a9f684ac49dc836b347b80de26">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-plus-9.0.1_9f09e615a8e1322687a5ef7ab79a5c5b9050acf4.jar" />
+        sha1="b53d61bae49278c0fa202d9066d2e72fc151c1e8">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-clearcut-9.2.0_de971eb2f31075ac4355a17d3326e87c376b19e4/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="b94d84286db4c24557b661015bc67497444a4071">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.0.1_7036e418dd127feb2cb8465a8e1f589534392d88.jar" />
+        sha1="fb15fd9774b5c51dcb39d8e6fa1b6f06bcd1cd34">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.2.0_2f726181d776e9146e3735f1321f3cf59ba0c057/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="34375e2adbbe36bc39f2b5fae55d549b9efc77e6">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.0.1_946c0c294c78056ceb4586d8a196b0dd7af0a00b.jar" />
+        sha1="404f4108b41050173f93836f5b35efdd9525a0ad">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.2.0_b1d03cdbac671dca4966a765d9af1c5ca2f7283f/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="d01902a80cb52c283941b014b1ad4d466402ac0a">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.0.1_3ac7024d32e93ea1e3e21f08c9260ab8642e3f9a.jar" />
+        sha1="a378adc3106cb3560ab3dfed05f1fda26cff5b49">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.2.0_3f8954ffe1d547847934e3806d9491b437664024/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="2ad3e3e8810a3ea03417d19012169034dc51d021">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tagmanager-9.0.1_d06f4263373c6e7cb6e0356b375786c27371e9c8.jar" />
+        sha1="3c8fcebabb73df25937704f5566bf6c388ea941d">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-vision-9.2.0_6e3f028b09e1d0041d299364f17cbc2c3662a99a/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_68e0d08519b22070c357d1f3f43da784ddb7b398.jar" />
+        sha1="0595e77431edaba6793410f9bfa3603c063c58e7">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.2.0_f6f2faa1f49361ee2eb002452b66b03913d27cca/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="6dcbd3a56843f14553715f22b331d017f0fabc12">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-location-9.0.1_276d9b0ef907f93264ca4e4add19d21c7be23783.jar" />
+        sha1="593fbaec1c3e100480a2bd72457b64b7dde6ac2d">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.2.0_2e6e2c8791ff8e5c668e2b90eb6604ad2c47f176/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="a2d2b21282d89df001d0ac96671a33bd8c0e83f8">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-drive-9.0.1_59fbdc9adfe116d4ef3b42c96db85b859788b54d.jar" />
+        sha1="a0712565a784bedd07ada2393c95e0b1e288840f">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.2.0_bfed9c6494459b7a33af7a0a9a09dca670ef09b8/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="bc38f0704a08802ebc398ecf13a0c9b2072dc1e5">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-9.0.1_fec9789296fefd9096527365cde8d31ef9b7a53a.jar" />
+        sha1="7c39a4b431976abc46d3cf6344c75d06c769cd35">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-identity-9.2.0_fb7a1f4a96e4e98edb4fd52a41e6282703c8c860/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="fa736dcff406efe6012e6edc61239c47a08b40f4">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-impl-9.0.1_7fbeb6db9cafb36b1183e7c55a36ad62dd0cc7fa.jar" />
+        sha1="a06eb7761fca120bbb46b34b930a3a3462ba9d7f">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.2.0_00b1ce6aff67a375832c2e398c9f16cd9ca23f28/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="a064025a115398c5ad4732f536548dd36b7283d6">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-identity-9.0.1_1dee2bc17df59a9b203343934e2c2c7eecda2cc2.jar" />
+        sha1="20ca7888c59f63d439f218a8810c88039f8bc7db">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.2.0_1ed2db2d981dd70d0b6757692cbcdb8c76b452a6/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.4.0/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_01cb6977625fb39bada3d1d431ccf4fe363aeda6.jar" />
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_91869b6a3f06654800c1bf5e4d07ad0e95776802/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="9663366e1e6f9078d60c2701090c80e9fb644a36">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.0.1_083d8610321fa6380c801f0c2487cbc07325a063.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="632cf2bb01c851b401accc577991865c36cc1fae">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.0.1_ae720fe327b4aefadc35ca15c99c3714172417c5.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="0e848984cf0810dbcc72d7e664b8b30168d35c03">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-fitness-9.0.1_fe055a60357492bd1e5d00193c429da28fe04811.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="a71cfcfe6d690ee7034e6303e68bc97fa5234946">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-analytics-9.0.1_8738a5eec8d5d7aa9554d6f9b4d70cc709e4ea36.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_c87aa15ee51029ea56643e6d6402a8a3dfca879c.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="df7b50ec047648cc71075ec1ee24d3c9cf337e41">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.0.1_673a03ba9888da78b0512ebb3ed3a881d0f55aa2.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="e7895d06e98e7252de7d08c49591e4ca92a570a9">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-9.0.1_0378905d0a11ab1205b754fe2ae390533b636254.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="e51f4e3317456544915089185a40f4883addbdf1">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-maps-9.0.1_be22c6a9d567102fa05815224fda16e349baac11.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="eaa6b0fb1cad74c895845610bbfc8737324556e6">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-appinvite-9.0.1_402ae44cfe3a3f9a46dc64537eac69405ea536de.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="13270ae22369a0d50cb6c560aeca4056f025cae6">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.1_fdf603958a6f4c5c10e96c57c00fd0bef94079b8.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="bce13b18d5b0549a6126d6176a36cf3e53a83f3f">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.0.1_34664ffe7e5a83740dd5a8c0a8658b3aa0bf4f52.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/libs/twitter4j-core-4.0.4.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="f4ac5989c7be37249dfe310bf78ba69773ebce2d">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/twitter4j-core-4.0.4_b1f18add739d6cd2f6ec80414099ede55cda85bb.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_e268034ac8d992f0ff5aff69218be210afbf0e50.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="b49f3f1bddb0201ac336b50bb6c66040d26f6d0d">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-wearable-9.0.1_939a75853edec44f31b1a1e57b0ff0e6cc2e6f55.jar" />
-    </item>
-    <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.3"
-        sha1="19a8ef100d7456c2fde021851a40506c86d14821">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-ads-lite-9.0.1_28ef5214bea5b2e0528a5ca8be1ac2f395b4fc5f.jar" />
+        sha1="fa6c324604383981fb74c4cb036d4171ed0a9a02">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.2.0_d5af94a9ee0271c317acbd341595f968b3a66135/classes.dex" />
     </item>
     <item
         jar="/home/alvaro/workspaces/studio/mijuegoteca/app/libs/ftp4j-1.7.2.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.3"
         sha1="abd6a2ba75b142926052c4538611efda49e0b0e2">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/ftp4j-1.7.2_62d75a8f06d62f05f42c27e7d0674e2b88c446e0.jar" />
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/2/ftp4j-1.7.2_62d75a8f06d62f05f42c27e7d0674e2b88c446e0/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.4.0/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_5485008276abd97de7c7510788770e5bbd9a6e6e.jar" />
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_f4ed602a2d65e0381f86d76cf61f384ec06dccf1/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="ffc3c6fc861f04d45835c9eac5cec10acc180d55">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.1_444db1f743108294b8d482942ca8bfc781dd77aa.jar" />
+        sha1="21bb89120d84fa29afeb0f9c0ebf415bc3b45a7e">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.2.0_00fe74c503bb0113625a7e5f4dbe0dd6f1704c6a/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="f8b563033681919f54882d4605da10861bda6974">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-games-9.0.1_bab40569e3fabe9a6b4f9d367a1238055729c913.jar" />
+        sha1="299e04800d1169b9f3dd04c376c7b266a3594cca">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-maps-9.2.0_19fe1fbe8c20a751cde1d9e65d11b3ad5b350a87/classes.dex" />
     </item>
     <item
-        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.0.1/jars/classes.jar"
-        jumboMode="false"
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/jars/classes.jar"
+        jumboMode="true"
         revision="23.0.3"
-        sha1="73f7a1fbc96ecb7652c004e5b2ed306688a5a84c">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-config-9.0.1_2024f26657d2d88aa3a31c4c2445fcdb5f3ade1a.jar" />
+        sha1="f56a68df45e18ce77814db6553fdaa229308f49b">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.2.0_98b54539673c434d44ac70de85d7693f3b9013e2/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4838df6db988160b107e954e02a745370df543b6">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.2.0_0055eddc45c0bc10c86e63c8c4afcc1c2f2add4a/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7378806b630886994099d03c369983f2848a609f">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-9.2.0_d08da56b34e484611b806b8415366b75349a8a1d/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1dc44c4798cbd79e95e4838a3fdc734c0e3f895f">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-gass-9.2.0_9ea86a0a775cd64aa423638f82d447646ca81424/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="ce9432b50a02be101bc491a1b38d3904200bd988">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.2.0_2d21eb1a867c75a830f258e22a02fa4923be3942/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="811202a9098047576814fc2171b56b83b537a8b9">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.2.0_1146fea02854f3f39a54747c6ab1e347ff01843e/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="44120508d7240c3e34a05957981a5c3c9b9f61aa">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.2.0_c2ea7c23d323b9d4eb29d59d56017e9f33bad609/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e3f200938bb888d83c2da807cb6aee983baae254">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.2.0_3bbd7cd5e07089c34660330192d1b402b1c927b0/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-contextmanager/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8ad1b5663f367dac619256d75fb08a98c7baa4f4">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-contextmanager-9.2.0_00d90d4fb92aac40de527aaa83356ef76b6f79a9/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="18e52280643effbab30370b073e456d670a0db54">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-9.2.0_a63354787c53f22c014e71b965071c817aa2a981/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8ec9ae00d45e758ac5b7a1c5dc0daa8a4b24280f">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.2.0_0f05d019181179a913e216410d595d6bcf5f95d2/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="08cdd337d1d9247eb915f0ab365624dd7966e7fa">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.2.0_ab0ffaea462ec8841826c68b5d861224a7af143a/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e791f7f2fbf9ca5b3b576916533f844dfb384024">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.2.0_c9bc683d97604617e45cbc0b694f4679a3880fba/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="be009dbe07b3a252c8cda07fc948ac713d2f5171">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.2.0_d18990093dc75a39e1a98588d0e5057d231acec1/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-multidex-1.0.1_27965cf351c755b3c8a3569a60e2e4e797a44716/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="dd7676ac12aa6653718b7ea33d93ce9d6915d526">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.2.0_992cb42c8d5f4e4dba8268eac3543390605c0604/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7428f0d1debdcf1b5792a26146e51a38d992d04d">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-analytics-impl-9.2.0_f9c5dca59efe945313b114f4606c4b6edb266b52/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="30489a97b06cc3945bdbcc1770089af9e3b3b64d">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.2.0_753c9565b5d51ae0db91885508e0d9db26acb3ee/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="163b095362fd14d682ac311bf672c2fb54de5078">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-framework-9.2.0_ab649f1f532faceaf83e435a129f1cad7b33c61c/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="7c7c21cc7a45d5c2a57d77f4840d4d4ea3c7604f">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-drive-9.2.0_01cbd51d01790d0fafa9e65210a93fe04384f0aa/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="33203b081101ca6242a4cd746aafe5fc2dd98a34">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.2.0_3d4bd5408aef0b9010d3439bd7a21cd876bbb6de/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d7572433ba21aa9e4624c819fa738b2748b82d05">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.2.0_d71e5cc3481b7ea780c3eb940f46dc908900ba24/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_78de1e43d0dc2f681cc6e4cd807025b998e72e60/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a03f4d605b0f29222c2ddf8b7896258cb4b92def">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-location-9.2.0_caf95f24f68f0b82cc9141f1e8a6f452e45f657c/classes.dex" />
+    </item>
+    <item
+        jar="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_9ac39594426106a8343f0a3a9c2e3aba77131ca4/classes.dex" />
     </item>
     <item
         jar="/home/alvaro/workspaces/studio/mijuegoteca/app/libs/core.jar"
-        jumboMode="false"
+        jumboMode="true"
         revision="23.0.3"
         sha1="69ab751723c7f7c8a01fddb1d169a93160fadca7">
-        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/pre-dexed/debug/core_dfc9fef76c821268267deb3c3f79198a2c69168a.jar" />
+        <dex dex="/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/transforms/dex/debug/folders/1000/2/core_dfc9fef76c821268267deb3c3f79198a2c69168a/classes.dex" />
     </item>
 
 </items>

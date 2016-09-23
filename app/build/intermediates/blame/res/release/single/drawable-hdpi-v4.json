@@ -1,735 +1,203 @@
 [
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_dark_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_focused.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_focused.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_pause_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_pause_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_plusone_tall_off_client.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.2/res/drawable-hdpi-v4/ic_plusone_tall_off_client.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_codigo_barras.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_codigo_barras.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_usk0.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_usk0.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_psv.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_psv.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cargar_nuevo_juego.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cargar_nuevo_juego.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_n64.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_n64.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/directory_up.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/directory_up.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_dc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_dc.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_light_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_go_search_api_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_go_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfcr18.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfcr18.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_commit_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ms.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ms.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_route_disabled_mono_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_disabled_mono_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/id_de.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/id_de.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_disabled_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_disabled_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_md.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_md.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_000.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_opciones.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_opciones.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cast_ic_notification_1.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.2/res/drawable-hdpi-v4/cast_ic_notification_1.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_cmvic.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_cmvic.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gb.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gb.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cast_ic_notification_on.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.2/res/drawable-hdpi-v4/cast_ic_notification_on.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/icono.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/icono.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_setting_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_setting_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_importar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_importar.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_esrba.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_esrba.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_alynx.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_alynx.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_on_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_on_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/check_off_32.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/check_off_32.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_route_on_mono_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_mono_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_esrbe.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_esrbe.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_turboduo.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_turboduo.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_pc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_pc.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_won.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_won.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_pressed_holo_dark.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_voice_search_api_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_voice_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_plusone_small_off_client.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.2/res/drawable-hdpi-v4/ic_plusone_small_off_client.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/powered_by_google_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/drawable-hdpi-v4/powered_by_google_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_wiiu.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_wiiu.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_light_focused.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_usk12.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_usk12.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_pendientes.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_pendientes.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_route_on_1_mono_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_1_mono_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_usk18.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_usk18.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_vec.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_vec.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_black_48dp.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_xbox.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_xbox.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_favorito.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_favorito.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_nds.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_nds.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_focused.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_play_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_play_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_cerod.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_cerod.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_menu_cut_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_3ds.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_3ds.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_moreoverflow_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_menu_moreoverflow_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_esrbec.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_esrbec.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_check_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_editar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_editar.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_esrbe10p.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_esrbe10p.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfcpg.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfcpg.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_setting_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_setting_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_plusone_medium_off_client.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.2/res/drawable-hdpi-v4/ic_plusone_medium_off_client.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_popup_background_mtrl_mult.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_pcfx.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_pcfx.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ps4.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ps4.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_on_2_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_on_2_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_32x.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_32x.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_neocd.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_neocd.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gbc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gbc.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_nom.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_nom.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/id_jp.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/id_jp.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_on_0_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_on_0_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/id_fr.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/id_fr.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_estadisticas.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_estadisticas.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_play_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_play_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_telstar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_telstar.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gp2x.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gp2x.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_pegi18.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_pegi18.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfc15.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfc15.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_focused.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_sat.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_sat.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_tg16.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_tg16.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_pegi7.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_pegi7.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_pegi12.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_pegi12.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_clear_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_clear_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_neox.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_neox.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_cpsc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_cpsc.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/powered_by_google_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/drawable-hdpi-v4/powered_by_google_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_dark_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ab_share_pack_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_light_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_wonc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_wonc.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_sin.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_sin.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/id_es.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/id_es.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_favorito_eliminar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_favorito_eliminar.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_route_on_2_mono_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_2_mono_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_pause_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_pause_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_guardar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_guardar.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_intell.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_intell.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_snes.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_snes.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_rating_star_off_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_rating_star_off_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_a5200.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_a5200.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_off_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_off_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_colv.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_colv.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ajagcd.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ajagcd.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/res/drawable-hdpi-v4/ic_plusone_tall_off_client.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cast_ic_notification_0.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.2/res/drawable-hdpi-v4/cast_ic_notification_0.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/res/drawable-hdpi-v4/cast_ic_notification_0.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_forward_30_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_forward_30_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_switch_track_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ajag.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ajag.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_cm128.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_cm128.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_ic_googleplayservices.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_ic_googleplayservices.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_ic_googleplayservices.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_light_normal.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_pause_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_pause_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_sgr.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_sgr.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfc18.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfc18.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_light_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_focused.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_light_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_pressed.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_pressed.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_neopc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_neopc.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_normal.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_and.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_and.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_focused_holo.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_focused_holo.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/file_icon.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/file_icon.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_esrbm.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_esrbm.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_mcd.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_mcd.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ps1.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ps1.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/check_off_64.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/check_off_64.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/check_off_16.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/check_off_16.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_on_1_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_on_1_light.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_pressed.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_pressed.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cast_ic_notification_1.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/res/drawable-hdpi-v4/cast_ic_notification_1.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_black_36dp.png",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_opciones.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_opciones.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_cast_white_36.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_cast_white_36.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cast_ic_notification_on.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/res/drawable-hdpi-v4/cast_ic_notification_on.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_pressed.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_xbox360.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_xbox360.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_play.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_play.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_mody2.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_mody2.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_ab_back_mtrl_am_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_ab_back_mtrl_am_alpha.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_pressed.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ps3.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ps3.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_a2600.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_a2600.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_nuevo.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_nuevo.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_textfield_search_activated_mtrl_alpha.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_refresh_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_refresh_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cargar_caratula.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cargar_caratula.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/id_en.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/id_en.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_disabled.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_neop.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_neop.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_neo.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_neo.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_replay_10_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_replay_10_white_24.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_exportar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_exportar.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_disabled.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_eliminar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_eliminar.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_replay_30_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_replay_30_white_24.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_plusone_small_off_client.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/res/drawable-hdpi-v4/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/powered_by_google_light.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/res/drawable-hdpi-v4/powered_by_google_light.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_longpressed_holo.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_longpressed_holo.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_focused.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_light_focused.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_pressed.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gg.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gg.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_ceroa.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_ceroa.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_light_normal.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_play_arrow_grey600_48.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_play_arrow_grey600_48.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_app.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_app.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/splash.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/splash.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_skip_next_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_skip_next_white_24.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfc12a.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfc12a.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ios.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ios.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_play_arrow_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_play_arrow_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_cab_background_top_mtrl_alpha.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/launcher_icon.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/drawable-hdpi-v4/launcher_icon.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_replay_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_replay_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png",
@@ -737,266 +205,222 @@
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_textfield_search_default_mtrl_alpha.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_plusone_standard_off_client.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.0.2/res/drawable-hdpi-v4/ic_plusone_standard_off_client.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/res/drawable-hdpi-v4/ic_plusone_standard_off_client.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_black_48dp.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_menu_copy_mtrl_am_alpha.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_stop_grey600_48.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_stop_grey600_48.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_dark_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_focused.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_focused.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_wph.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_wph.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/menu_home.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/menu_home.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_light.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_light.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_cm64.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_cm64.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_pegi16.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_pegi16.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_esrbt.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_esrbt.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_vb.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_vb.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_focused.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_focused.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_disabled.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
+    },
+    {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_divider_mtrl_alpha.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_pegi3.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_pegi3.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gp32.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gp32.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_psp.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_psp.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_light_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_disabled.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/places_ic_search.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/drawable-hdpi-v4/places_ic_search.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfc12.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfc12.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/res/drawable-hdpi-v4/places_ic_search.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_check_to_on_mtrl_000.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_usk6.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_usk6.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_plusone_medium_off_client.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/res/drawable-hdpi-v4/ic_plusone_medium_off_client.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_xbox720.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_xbox720.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_rating_star_on_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_rating_star_on_mtrl_alpha.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_popup_background_mtrl_mult.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_cast_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_cast_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_pause.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_pause.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_nes.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_nes.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_search_api_mtrl_alpha.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_ic_search_api_mtrl_alpha.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_acpc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_acpc.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00012.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_estadistica.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_estadistica.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_cast_connected_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_cast_connected_white_24.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_ceroz.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_ceroz.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_forward_10_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_forward_10_white_24.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_black_16dp.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_btn_switch_to_on_mtrl_00001.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_ceroc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_ceroc.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_a7800.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_a7800.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_list_selector_disabled_holo_light.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_wii.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_wii.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ngage.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ngage.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_a2800.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_a2800.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_half_black_16dp.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_skip_previous_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_skip_previous_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_text_dark_focused.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_focused.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_focused.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_mody.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_mody.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_usk16.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_usk16.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_buscar.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_buscar.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_bbfcu.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_bbfcu.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_3do.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_3do.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_pressed.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_full_open_on_phone.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_full_open_on_phone.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_route_on_0_mono_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_on_0_mono_dark.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_dark_disabled.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/res/drawable-hdpi/abc_spinner_mtrl_am_alpha.9.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_cmamiga.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_cmamiga.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_disabled.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gba.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gba.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_light_focused.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_light_focused.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/id_it.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/id_it.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_clear_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_clear_white_24.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/sinimagen.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/sinimagen.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cl_cerob.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/cl_cerob.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_gc.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_gc.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_pause_grey600_48.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_pause_grey600_48.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/quantum_ic_stop_white_24.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/res/drawable-hdpi-v4/quantum_ic_stop_white_24.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/cast_ic_notification_2.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.0.2/res/drawable-hdpi-v4/cast_ic_notification_2.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/res/drawable-hdpi-v4/cast_ic_notification_2.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/powered_by_google_dark.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/res/drawable-hdpi-v4/powered_by_google_dark.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_text_dark_normal.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_text_dark_normal.9.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_cdi.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_cdi.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_launcher.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/ic_launcher.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/common_plus_signin_btn_icon_light_normal.9.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/res/drawable-hdpi-v4/common_plus_signin_btn_icon_light_normal.9.png"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/shopper_icon.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/drawable-hdpi-v4/shopper_icon.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/ic_media_route_off_mono_dark.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/res/drawable-hdpi/ic_media_route_off_mono_dark.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/directory_icon.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/directory_icon.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/pl_ps2.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/pl_ps2.png"
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/places_ic_clear.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.0.2/res/drawable-hdpi-v4/places_ic_clear.png"
-    },
-    {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-hdpi-v4/boton_favoritos.png",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/drawable-hdpi/boton_favoritos.png"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/res/drawable-hdpi-v4/places_ic_clear.png"
     }
 ]

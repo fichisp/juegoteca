@@ -4,6 +4,10 @@
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/xml/pref_otros.xml"
     },
     {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/xml/preferences.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/xml/preferences.xml"
+    },
+    {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/xml/pref_headers.xml",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/xml/pref_headers.xml"
     },

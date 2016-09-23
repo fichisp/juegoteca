@@ -1,11 +1,15 @@
 [
     {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/beep.ogg",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/raw/beep.ogg"
+    },
+    {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/list_placeholder.png",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/raw/list_placeholder.png"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/gtm_analytics",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.0.2/res/raw/gtm_analytics"
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/res/raw/gtm_analytics"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/raw/loading.gif",

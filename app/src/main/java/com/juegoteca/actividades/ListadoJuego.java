@@ -238,7 +238,7 @@ public class ListadoJuego extends Activity {
 		}
 		@Override
 		protected void onPreExecute() {
-			dialogoBusqueda = ProgressDialog.show(context, "", "Buscando...", true);
+			dialogoBusqueda = ProgressDialog.show(context, "", getString(R.string.buscando), true);
 		}
 		@Override
 		protected void onPostExecute(AdaptadorJuegosLista result) {

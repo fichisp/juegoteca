@@ -48,11 +48,12 @@
     <string name="app_version">1.3</string>
     <string name="app_versiones_texto">Version 0.9 - Beta</string>
     <string name="app_versiones_title">Version changes</string>
+    <string name="buscando">Searching...</string>
     <string name="campo_compania_vacio">The field COMPANY can not be blank</string>
     <string name="campo_fecha_completado_invalido">The field value COMPLETED DATE is invalid</string>
     <string name="campo_fecha_compra_invalido">The field value PURCHASE DATE is invalid</string>
     <string name="campo_fecha_lanzamiento_invalido">The field value RELEASE DATE is invalid</string>
-    <string name="campo_puntuacion_invalido">The SCRORE may not exceed 100</string>
+    <string name="campo_puntuacion_invalido">The SCORE may not exceed 100</string>
     <string name="campo_titulo_vacio">The field TITLE can not be blank</string>
     <string name="cancel">Cancel</string>
     <string name="contrasena">Password</string>

@@ -1,5 +1,13 @@
 [
     {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/capture.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/menu/capture.xml"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/history.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/menu/history.xml"
+    },
+    {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/buscador.xml",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/buscador.xml"
     },
@@ -38,6 +46,10 @@
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/estadisitcas.xml",
         "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/estadisitcas.xml"
+    },
+    {
+        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/encode.xml",
+        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/menu/encode.xml"
     },
     {
         "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/registro.xml",

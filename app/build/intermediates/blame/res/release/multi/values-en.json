@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/values-en/values-en.xml",
+        "outputFile": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-en/values-en.xml",
         "map": [
             {
                 "to": {
@@ -570,9 +570,9 @@
                     "position": {
                         "startLine": 153,
                         "startColumn": 4,
-                        "startOffset": 10265,
+                        "startOffset": 10264,
                         "endColumn": 61,
-                        "endOffset": 10322
+                        "endOffset": 10321
                     }
                 }
             },
@@ -657,8 +657,27 @@
                     "startLine": 50,
                     "startColumn": 4,
                     "startOffset": 2666,
+                    "endColumn": 49,
+                    "endOffset": 2711
+                },
+                "from": {
+                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 165,
+                        "startColumn": 4,
+                        "startOffset": 11145,
+                        "endColumn": 49,
+                        "endOffset": 11190
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 2716,
                     "endColumn": 83,
-                    "endOffset": 2745
+                    "endOffset": 2795
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -673,11 +692,11 @@
             },
             {
                 "to": {
-                    "startLine": 51,
+                    "startLine": 52,
                     "startColumn": 4,
-                    "startOffset": 2750,
+                    "startOffset": 2800,
                     "endColumn": 101,
-                    "endOffset": 2847
+                    "endOffset": 2897
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -692,11 +711,11 @@
             },
             {
                 "to": {
-                    "startLine": 52,
+                    "startLine": 53,
                     "startColumn": 4,
-                    "startOffset": 2852,
+                    "startOffset": 2902,
                     "endColumn": 96,
-                    "endOffset": 2944
+                    "endOffset": 2994
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -711,11 +730,11 @@
             },
             {
                 "to": {
-                    "startLine": 53,
+                    "startLine": 54,
                     "startColumn": 4,
-                    "startOffset": 2949,
+                    "startOffset": 2999,
                     "endColumn": 100,
-                    "endOffset": 3045
+                    "endOffset": 3095
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -730,11 +749,11 @@
             },
             {
                 "to": {
-                    "startLine": 54,
+                    "startLine": 55,
                     "startColumn": 4,
-                    "startOffset": 3050,
-                    "endColumn": 83,
-                    "endOffset": 3129
+                    "startOffset": 3100,
+                    "endColumn": 82,
+                    "endOffset": 3178
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -742,18 +761,18 @@
                         "startLine": 148,
                         "startColumn": 4,
                         "startOffset": 9870,
-                        "endColumn": 83,
-                        "endOffset": 9949
+                        "endColumn": 82,
+                        "endOffset": 9948
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 55,
+                    "startLine": 56,
                     "startColumn": 4,
-                    "startOffset": 3134,
+                    "startOffset": 3183,
                     "endColumn": 79,
-                    "endOffset": 3209
+                    "endOffset": 3258
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -768,11 +787,11 @@
             },
             {
                 "to": {
-                    "startLine": 56,
+                    "startLine": 57,
                     "startColumn": 4,
-                    "startOffset": 3214,
+                    "startOffset": 3263,
                     "endColumn": 41,
-                    "endOffset": 3251
+                    "endOffset": 3300
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -787,11 +806,11 @@
             },
             {
                 "to": {
-                    "startLine": 57,
+                    "startLine": 58,
                     "startColumn": 4,
-                    "startOffset": 3256,
+                    "startOffset": 3305,
                     "endColumn": 47,
-                    "endOffset": 3299
+                    "endOffset": 3348
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -806,11 +825,11 @@
             },
             {
                 "to": {
-                    "startLine": 58,
+                    "startLine": 59,
                     "startColumn": 4,
-                    "startOffset": 3304,
+                    "startOffset": 3353,
                     "endColumn": 80,
-                    "endOffset": 3380
+                    "endOffset": 3429
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -825,11 +844,11 @@
             },
             {
                 "to": {
-                    "startLine": 59,
+                    "startLine": 60,
                     "startColumn": 4,
-                    "startOffset": 3385,
+                    "startOffset": 3434,
                     "endColumn": 93,
-                    "endOffset": 3474
+                    "endOffset": 3523
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -844,30 +863,30 @@
             },
             {
                 "to": {
-                    "startLine": 60,
+                    "startLine": 61,
                     "startColumn": 4,
-                    "startOffset": 3479,
+                    "startOffset": 3528,
                     "endColumn": 59,
-                    "endOffset": 3534
+                    "endOffset": 3583
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 155,
                         "startColumn": 4,
-                        "startOffset": 10389,
+                        "startOffset": 10388,
                         "endColumn": 59,
-                        "endOffset": 10444
+                        "endOffset": 10443
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 61,
+                    "startLine": 62,
                     "startColumn": 4,
-                    "startOffset": 3539,
+                    "startOffset": 3588,
                     "endColumn": 43,
-                    "endOffset": 3578
+                    "endOffset": 3627
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -882,11 +901,11 @@
             },
             {
                 "to": {
-                    "startLine": 62,
+                    "startLine": 63,
                     "startColumn": 4,
-                    "startOffset": 3583,
+                    "startOffset": 3632,
                     "endColumn": 53,
-                    "endOffset": 3632
+                    "endOffset": 3681
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -901,11 +920,11 @@
             },
             {
                 "to": {
-                    "startLine": 63,
+                    "startLine": 64,
                     "startColumn": 4,
-                    "startOffset": 3637,
+                    "startOffset": 3686,
                     "endColumn": 56,
-                    "endOffset": 3689
+                    "endOffset": 3738
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -920,30 +939,30 @@
             },
             {
                 "to": {
-                    "startLine": 64,
+                    "startLine": 65,
                     "startColumn": 4,
-                    "startOffset": 3694,
+                    "startOffset": 3743,
                     "endColumn": 91,
-                    "endOffset": 3781
+                    "endOffset": 3830
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 149,
                         "startColumn": 4,
-                        "startOffset": 9954,
+                        "startOffset": 9953,
                         "endColumn": 91,
-                        "endOffset": 10041
+                        "endOffset": 10040
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 65,
+                    "startLine": 66,
                     "startColumn": 4,
-                    "startOffset": 3786,
+                    "startOffset": 3835,
                     "endColumn": 128,
-                    "endOffset": 3910
+                    "endOffset": 3959
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -958,11 +977,11 @@
             },
             {
                 "to": {
-                    "startLine": 66,
+                    "startLine": 67,
                     "startColumn": 4,
-                    "startOffset": 3915,
+                    "startOffset": 3964,
                     "endColumn": 48,
-                    "endOffset": 3959
+                    "endOffset": 4008
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -977,11 +996,11 @@
             },
             {
                 "to": {
-                    "startLine": 67,
+                    "startLine": 68,
                     "startColumn": 4,
-                    "startOffset": 3964,
+                    "startOffset": 4013,
                     "endColumn": 48,
-                    "endOffset": 4008
+                    "endOffset": 4057
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -996,11 +1015,11 @@
             },
             {
                 "to": {
-                    "startLine": 68,
+                    "startLine": 69,
                     "startColumn": 4,
-                    "startOffset": 4013,
+                    "startOffset": 4062,
                     "endColumn": 53,
-                    "endOffset": 4062
+                    "endOffset": 4111
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1015,11 +1034,11 @@
             },
             {
                 "to": {
-                    "startLine": 69,
+                    "startLine": 70,
                     "startColumn": 4,
-                    "startOffset": 4067,
+                    "startOffset": 4116,
                     "endColumn": 70,
-                    "endOffset": 4133
+                    "endOffset": 4182
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1034,11 +1053,11 @@
             },
             {
                 "to": {
-                    "startLine": 70,
+                    "startLine": 71,
                     "startColumn": 4,
-                    "startOffset": 4138,
+                    "startOffset": 4187,
                     "endColumn": 47,
-                    "endOffset": 4181
+                    "endOffset": 4230
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1053,11 +1072,11 @@
             },
             {
                 "to": {
-                    "startLine": 71,
+                    "startLine": 72,
                     "startColumn": 4,
-                    "startOffset": 4186,
+                    "startOffset": 4235,
                     "endColumn": 41,
-                    "endOffset": 4223
+                    "endOffset": 4272
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1072,11 +1091,11 @@
             },
             {
                 "to": {
-                    "startLine": 72,
+                    "startLine": 73,
                     "startColumn": 4,
-                    "startOffset": 4228,
+                    "startOffset": 4277,
                     "endColumn": 52,
-                    "endOffset": 4276
+                    "endOffset": 4325
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1091,11 +1110,11 @@
             },
             {
                 "to": {
-                    "startLine": 73,
+                    "startLine": 74,
                     "startColumn": 4,
-                    "startOffset": 4281,
+                    "startOffset": 4330,
                     "endColumn": 57,
-                    "endOffset": 4334
+                    "endOffset": 4383
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1110,11 +1129,11 @@
             },
             {
                 "to": {
-                    "startLine": 74,
+                    "startLine": 75,
                     "startColumn": 4,
-                    "startOffset": 4339,
+                    "startOffset": 4388,
                     "endColumn": 49,
-                    "endOffset": 4384
+                    "endOffset": 4433
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1129,11 +1148,11 @@
             },
             {
                 "to": {
-                    "startLine": 75,
+                    "startLine": 76,
                     "startColumn": 4,
-                    "startOffset": 4389,
+                    "startOffset": 4438,
                     "endColumn": 52,
-                    "endOffset": 4437
+                    "endOffset": 4486
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1148,11 +1167,11 @@
             },
             {
                 "to": {
-                    "startLine": 76,
+                    "startLine": 77,
                     "startColumn": 4,
-                    "startOffset": 4442,
+                    "startOffset": 4491,
                     "endColumn": 49,
-                    "endOffset": 4487
+                    "endOffset": 4536
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1167,11 +1186,11 @@
             },
             {
                 "to": {
-                    "startLine": 77,
+                    "startLine": 78,
                     "startColumn": 4,
-                    "startOffset": 4492,
+                    "startOffset": 4541,
                     "endColumn": 44,
-                    "endOffset": 4532
+                    "endOffset": 4581
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1186,11 +1205,11 @@
             },
             {
                 "to": {
-                    "startLine": 78,
+                    "startLine": 79,
                     "startColumn": 4,
-                    "startOffset": 4537,
+                    "startOffset": 4586,
                     "endColumn": 49,
-                    "endOffset": 4582
+                    "endOffset": 4631
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1205,11 +1224,11 @@
             },
             {
                 "to": {
-                    "startLine": 79,
+                    "startLine": 80,
                     "startColumn": 4,
-                    "startOffset": 4587,
+                    "startOffset": 4636,
                     "endColumn": 44,
-                    "endOffset": 4627
+                    "endOffset": 4676
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1224,11 +1243,11 @@
             },
             {
                 "to": {
-                    "startLine": 80,
+                    "startLine": 81,
                     "startColumn": 4,
-                    "startOffset": 4632,
+                    "startOffset": 4681,
                     "endColumn": 50,
-                    "endOffset": 4678
+                    "endOffset": 4727
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1243,11 +1262,11 @@
             },
             {
                 "to": {
-                    "startLine": 81,
+                    "startLine": 82,
                     "startColumn": 4,
-                    "startOffset": 4683,
+                    "startOffset": 4732,
                     "endColumn": 57,
-                    "endOffset": 4736
+                    "endOffset": 4785
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1262,11 +1281,11 @@
             },
             {
                 "to": {
-                    "startLine": 82,
+                    "startLine": 83,
                     "startColumn": 4,
-                    "startOffset": 4741,
+                    "startOffset": 4790,
                     "endColumn": 74,
-                    "endOffset": 4811
+                    "endOffset": 4860
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1281,11 +1300,11 @@
             },
             {
                 "to": {
-                    "startLine": 83,
+                    "startLine": 84,
                     "startColumn": 4,
-                    "startOffset": 4816,
+                    "startOffset": 4865,
                     "endColumn": 50,
-                    "endOffset": 4862
+                    "endOffset": 4911
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1300,11 +1319,11 @@
             },
             {
                 "to": {
-                    "startLine": 84,
+                    "startLine": 85,
                     "startColumn": 4,
-                    "startOffset": 4867,
+                    "startOffset": 4916,
                     "endColumn": 74,
-                    "endOffset": 4937
+                    "endOffset": 4986
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1319,11 +1338,11 @@
             },
             {
                 "to": {
-                    "startLine": 85,
+                    "startLine": 86,
                     "startColumn": 4,
-                    "startOffset": 4942,
+                    "startOffset": 4991,
                     "endColumn": 79,
-                    "endOffset": 5017
+                    "endOffset": 5066
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1338,11 +1357,11 @@
             },
             {
                 "to": {
-                    "startLine": 86,
+                    "startLine": 87,
                     "startColumn": 4,
-                    "startOffset": 5022,
+                    "startOffset": 5071,
                     "endColumn": 66,
-                    "endOffset": 5084
+                    "endOffset": 5133
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1357,39 +1376,20 @@
             },
             {
                 "to": {
-                    "startLine": 87,
+                    "startLine": 88,
                     "startColumn": 4,
-                    "startOffset": 5089,
+                    "startOffset": 5138,
                     "endColumn": 75,
-                    "endOffset": 5160
+                    "endOffset": 5209
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 156,
                         "startColumn": 4,
-                        "startOffset": 10449,
+                        "startOffset": 10448,
                         "endColumn": 75,
-                        "endOffset": 10520
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 88,
-                    "startColumn": 4,
-                    "startOffset": 5165,
-                    "endColumn": 99,
-                    "endOffset": 5260
-                },
-                "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
-                    "position": {
-                        "startLine": 152,
-                        "startColumn": 4,
-                        "startOffset": 10165,
-                        "endColumn": 99,
-                        "endOffset": 10260
+                        "endOffset": 10519
                     }
                 }
             },
@@ -1397,18 +1397,18 @@
                 "to": {
                     "startLine": 89,
                     "startColumn": 4,
-                    "startOffset": 5265,
-                    "endColumn": 56,
-                    "endOffset": 5317
+                    "startOffset": 5214,
+                    "endColumn": 99,
+                    "endOffset": 5309
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 161,
+                        "startLine": 152,
                         "startColumn": 4,
-                        "startOffset": 10885,
-                        "endColumn": 56,
-                        "endOffset": 10937
+                        "startOffset": 10164,
+                        "endColumn": 99,
+                        "endOffset": 10259
                     }
                 }
             },
@@ -1416,18 +1416,18 @@
                 "to": {
                     "startLine": 90,
                     "startColumn": 4,
-                    "startOffset": 5322,
-                    "endColumn": 81,
-                    "endOffset": 5399
+                    "startOffset": 5314,
+                    "endColumn": 56,
+                    "endOffset": 5366
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 159,
+                        "startLine": 161,
                         "startColumn": 4,
-                        "startOffset": 10705,
-                        "endColumn": 81,
-                        "endOffset": 10782
+                        "startOffset": 10884,
+                        "endColumn": 56,
+                        "endOffset": 10936
                     }
                 }
             },
@@ -1435,18 +1435,18 @@
                 "to": {
                     "startLine": 91,
                     "startColumn": 4,
-                    "startOffset": 5404,
-                    "endColumn": 53,
-                    "endOffset": 5453
+                    "startOffset": 5371,
+                    "endColumn": 81,
+                    "endOffset": 5448
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 150,
+                        "startLine": 159,
                         "startColumn": 4,
-                        "startOffset": 10046,
-                        "endColumn": 53,
-                        "endOffset": 10095
+                        "startOffset": 10704,
+                        "endColumn": 81,
+                        "endOffset": 10781
                     }
                 }
             },
@@ -1454,18 +1454,18 @@
                 "to": {
                     "startLine": 92,
                     "startColumn": 4,
-                    "startOffset": 5458,
-                    "endColumn": 90,
-                    "endOffset": 5544
+                    "startOffset": 5453,
+                    "endColumn": 53,
+                    "endOffset": 5502
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 158,
+                        "startLine": 150,
                         "startColumn": 4,
-                        "startOffset": 10614,
-                        "endColumn": 90,
-                        "endOffset": 10700
+                        "startOffset": 10045,
+                        "endColumn": 53,
+                        "endOffset": 10094
                     }
                 }
             },
@@ -1473,18 +1473,18 @@
                 "to": {
                     "startLine": 93,
                     "startColumn": 4,
-                    "startOffset": 5549,
-                    "endColumn": 72,
-                    "endOffset": 5617
+                    "startOffset": 5507,
+                    "endColumn": 90,
+                    "endOffset": 5593
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 162,
+                        "startLine": 158,
                         "startColumn": 4,
-                        "startOffset": 10942,
-                        "endColumn": 72,
-                        "endOffset": 11010
+                        "startOffset": 10613,
+                        "endColumn": 90,
+                        "endOffset": 10699
                     }
                 }
             },
@@ -1492,18 +1492,18 @@
                 "to": {
                     "startLine": 94,
                     "startColumn": 4,
-                    "startOffset": 5622,
-                    "endColumn": 97,
-                    "endOffset": 5715
+                    "startOffset": 5598,
+                    "endColumn": 72,
+                    "endOffset": 5666
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 160,
+                        "startLine": 162,
                         "startColumn": 4,
-                        "startOffset": 10787,
-                        "endColumn": 97,
-                        "endOffset": 10880
+                        "startOffset": 10941,
+                        "endColumn": 72,
+                        "endOffset": 11009
                     }
                 }
             },
@@ -1511,18 +1511,18 @@
                 "to": {
                     "startLine": 95,
                     "startColumn": 4,
-                    "startOffset": 5720,
-                    "endColumn": 64,
-                    "endOffset": 5780
+                    "startOffset": 5671,
+                    "endColumn": 97,
+                    "endOffset": 5764
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 151,
+                        "startLine": 160,
                         "startColumn": 4,
-                        "startOffset": 10100,
-                        "endColumn": 64,
-                        "endOffset": 10160
+                        "startOffset": 10786,
+                        "endColumn": 97,
+                        "endOffset": 10879
                     }
                 }
             },
@@ -1530,18 +1530,18 @@
                 "to": {
                     "startLine": 96,
                     "startColumn": 4,
-                    "startOffset": 5785,
-                    "endColumn": 88,
-                    "endOffset": 5869
+                    "startOffset": 5769,
+                    "endColumn": 64,
+                    "endOffset": 5829
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
-                        "startLine": 157,
+                        "startLine": 151,
                         "startColumn": 4,
-                        "startOffset": 10525,
-                        "endColumn": 88,
-                        "endOffset": 10609
+                        "startOffset": 10099,
+                        "endColumn": 64,
+                        "endOffset": 10159
                     }
                 }
             },
@@ -1549,9 +1549,28 @@
                 "to": {
                     "startLine": 97,
                     "startColumn": 4,
-                    "startOffset": 5874,
+                    "startOffset": 5834,
+                    "endColumn": 88,
+                    "endOffset": 5918
+                },
+                "from": {
+                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 157,
+                        "startColumn": 4,
+                        "startOffset": 10524,
+                        "endColumn": 88,
+                        "endOffset": 10608
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 98,
+                    "startColumn": 4,
+                    "startOffset": 5923,
                     "endColumn": 59,
-                    "endOffset": 5929
+                    "endOffset": 5978
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1566,11 +1585,11 @@
             },
             {
                 "to": {
-                    "startLine": 98,
+                    "startLine": 99,
                     "startColumn": 4,
-                    "startOffset": 5934,
+                    "startOffset": 5983,
                     "endColumn": 33,
-                    "endOffset": 5963
+                    "endOffset": 6012
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1585,11 +1604,11 @@
             },
             {
                 "to": {
-                    "startLine": 99,
+                    "startLine": 100,
                     "startColumn": 4,
-                    "startOffset": 5968,
+                    "startOffset": 6017,
                     "endColumn": 47,
-                    "endOffset": 6011
+                    "endOffset": 6060
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1604,11 +1623,11 @@
             },
             {
                 "to": {
-                    "startLine": 100,
+                    "startLine": 101,
                     "startColumn": 4,
-                    "startOffset": 6016,
+                    "startOffset": 6065,
                     "endColumn": 53,
-                    "endOffset": 6065
+                    "endOffset": 6114
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1623,11 +1642,11 @@
             },
             {
                 "to": {
-                    "startLine": 101,
+                    "startLine": 102,
                     "startColumn": 4,
-                    "startOffset": 6070,
+                    "startOffset": 6119,
                     "endColumn": 50,
-                    "endOffset": 6116
+                    "endOffset": 6165
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1642,11 +1661,11 @@
             },
             {
                 "to": {
-                    "startLine": 102,
+                    "startLine": 103,
                     "startColumn": 4,
-                    "startOffset": 6121,
+                    "startOffset": 6170,
                     "endColumn": 54,
-                    "endOffset": 6171
+                    "endOffset": 6220
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1661,11 +1680,11 @@
             },
             {
                 "to": {
-                    "startLine": 103,
+                    "startLine": 104,
                     "startColumn": 4,
-                    "startOffset": 6176,
+                    "startOffset": 6225,
                     "endColumn": 64,
-                    "endOffset": 6236
+                    "endOffset": 6285
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1680,11 +1699,11 @@
             },
             {
                 "to": {
-                    "startLine": 104,
+                    "startLine": 105,
                     "startColumn": 4,
-                    "startOffset": 6241,
+                    "startOffset": 6290,
                     "endColumn": 50,
-                    "endOffset": 6287
+                    "endOffset": 6336
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1699,11 +1718,11 @@
             },
             {
                 "to": {
-                    "startLine": 105,
+                    "startLine": 106,
                     "startColumn": 4,
-                    "startOffset": 6292,
+                    "startOffset": 6341,
                     "endColumn": 63,
-                    "endOffset": 6351
+                    "endOffset": 6400
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1718,11 +1737,11 @@
             },
             {
                 "to": {
-                    "startLine": 106,
+                    "startLine": 107,
                     "startColumn": 4,
-                    "startOffset": 6356,
+                    "startOffset": 6405,
                     "endColumn": 64,
-                    "endOffset": 6416
+                    "endOffset": 6465
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1737,11 +1756,11 @@
             },
             {
                 "to": {
-                    "startLine": 107,
+                    "startLine": 108,
                     "startColumn": 4,
-                    "startOffset": 6421,
+                    "startOffset": 6470,
                     "endColumn": 48,
-                    "endOffset": 6465
+                    "endOffset": 6514
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1756,11 +1775,11 @@
             },
             {
                 "to": {
-                    "startLine": 108,
+                    "startLine": 109,
                     "startColumn": 4,
-                    "startOffset": 6470,
+                    "startOffset": 6519,
                     "endColumn": 46,
-                    "endOffset": 6512
+                    "endOffset": 6561
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1775,11 +1794,11 @@
             },
             {
                 "to": {
-                    "startLine": 109,
+                    "startLine": 110,
                     "startColumn": 4,
-                    "startOffset": 6517,
+                    "startOffset": 6566,
                     "endColumn": 53,
-                    "endOffset": 6566
+                    "endOffset": 6615
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1794,11 +1813,11 @@
             },
             {
                 "to": {
-                    "startLine": 110,
+                    "startLine": 111,
                     "startColumn": 4,
-                    "startOffset": 6571,
+                    "startOffset": 6620,
                     "endColumn": 46,
-                    "endOffset": 6613
+                    "endOffset": 6662
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1813,11 +1832,11 @@
             },
             {
                 "to": {
-                    "startLine": 111,
+                    "startLine": 112,
                     "startColumn": 4,
-                    "startOffset": 6618,
+                    "startOffset": 6667,
                     "endColumn": 50,
-                    "endOffset": 6664
+                    "endOffset": 6713
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1832,11 +1851,11 @@
             },
             {
                 "to": {
-                    "startLine": 112,
+                    "startLine": 113,
                     "startColumn": 4,
-                    "startOffset": 6669,
+                    "startOffset": 6718,
                     "endColumn": 49,
-                    "endOffset": 6714
+                    "endOffset": 6763
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1851,11 +1870,11 @@
             },
             {
                 "to": {
-                    "startLine": 113,
+                    "startLine": 114,
                     "startColumn": 4,
-                    "startOffset": 6719,
+                    "startOffset": 6768,
                     "endColumn": 56,
-                    "endOffset": 6771
+                    "endOffset": 6820
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1870,11 +1889,11 @@
             },
             {
                 "to": {
-                    "startLine": 114,
+                    "startLine": 115,
                     "startColumn": 4,
-                    "startOffset": 6776,
+                    "startOffset": 6825,
                     "endColumn": 46,
-                    "endOffset": 6818
+                    "endOffset": 6867
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1889,11 +1908,11 @@
             },
             {
                 "to": {
-                    "startLine": 115,
+                    "startLine": 116,
                     "startColumn": 4,
-                    "startOffset": 6823,
+                    "startOffset": 6872,
                     "endColumn": 98,
-                    "endOffset": 6917
+                    "endOffset": 6966
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1908,39 +1927,20 @@
             },
             {
                 "to": {
-                    "startLine": 116,
+                    "startLine": 117,
                     "startColumn": 4,
-                    "startOffset": 6922,
+                    "startOffset": 6971,
                     "endColumn": 61,
-                    "endOffset": 6979
+                    "endOffset": 7028
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 154,
                         "startColumn": 4,
-                        "startOffset": 10327,
+                        "startOffset": 10326,
                         "endColumn": 61,
-                        "endOffset": 10384
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 117,
-                    "startColumn": 4,
-                    "startOffset": 6984,
-                    "endColumn": 81,
-                    "endOffset": 7061
-                },
-                "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
-                    "position": {
-                        "startLine": 163,
-                        "startColumn": 4,
-                        "startOffset": 11015,
-                        "endColumn": 81,
-                        "endOffset": 11092
+                        "endOffset": 10383
                     }
                 }
             },
@@ -1948,9 +1948,28 @@
                 "to": {
                     "startLine": 118,
                     "startColumn": 4,
-                    "startOffset": 7066,
+                    "startOffset": 7033,
+                    "endColumn": 81,
+                    "endOffset": 7110
+                },
+                "from": {
+                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
+                    "position": {
+                        "startLine": 163,
+                        "startColumn": 4,
+                        "startOffset": 11014,
+                        "endColumn": 81,
+                        "endOffset": 11091
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 119,
+                    "startColumn": 4,
+                    "startOffset": 7115,
                     "endColumn": 34,
-                    "endOffset": 7096
+                    "endOffset": 7145
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -1965,11 +1984,11 @@
             },
             {
                 "to": {
-                    "startLine": 119,
+                    "startLine": 120,
                     "startColumn": 4,
-                    "startOffset": 7101,
+                    "startOffset": 7150,
                     "endColumn": 64,
-                    "endOffset": 7161
+                    "endOffset": 7210
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -1984,11 +2003,11 @@
             },
             {
                 "to": {
-                    "startLine": 120,
+                    "startLine": 121,
                     "startColumn": 4,
-                    "startOffset": 7166,
+                    "startOffset": 7215,
                     "endColumn": 102,
-                    "endOffset": 7264
+                    "endOffset": 7313
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2003,11 +2022,11 @@
             },
             {
                 "to": {
-                    "startLine": 121,
+                    "startLine": 122,
                     "startColumn": 4,
-                    "startOffset": 7269,
+                    "startOffset": 7318,
                     "endColumn": 99,
-                    "endOffset": 7364
+                    "endOffset": 7413
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2022,11 +2041,11 @@
             },
             {
                 "to": {
-                    "startLine": 122,
+                    "startLine": 123,
                     "startColumn": 4,
-                    "startOffset": 7369,
+                    "startOffset": 7418,
                     "endColumn": 116,
-                    "endOffset": 7481
+                    "endOffset": 7530
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2041,11 +2060,11 @@
             },
             {
                 "to": {
-                    "startLine": 123,
+                    "startLine": 124,
                     "startColumn": 4,
-                    "startOffset": 7486,
+                    "startOffset": 7535,
                     "endColumn": 136,
-                    "endOffset": 7618
+                    "endOffset": 7667
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2060,11 +2079,11 @@
             },
             {
                 "to": {
-                    "startLine": 124,
+                    "startLine": 125,
                     "startColumn": 4,
-                    "startOffset": 7623,
+                    "startOffset": 7672,
                     "endColumn": 122,
-                    "endOffset": 7741
+                    "endOffset": 7790
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2079,11 +2098,11 @@
             },
             {
                 "to": {
-                    "startLine": 125,
+                    "startLine": 126,
                     "startColumn": 4,
-                    "startOffset": 7746,
+                    "startOffset": 7795,
                     "endColumn": 60,
-                    "endOffset": 7802
+                    "endOffset": 7851
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2098,11 +2117,11 @@
             },
             {
                 "to": {
-                    "startLine": 126,
+                    "startLine": 127,
                     "startColumn": 4,
-                    "startOffset": 7807,
+                    "startOffset": 7856,
                     "endColumn": 55,
-                    "endOffset": 7858
+                    "endOffset": 7907
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2117,11 +2136,11 @@
             },
             {
                 "to": {
-                    "startLine": 127,
+                    "startLine": 128,
                     "startColumn": 4,
-                    "startOffset": 7863,
+                    "startOffset": 7912,
                     "endColumn": 52,
-                    "endOffset": 7911
+                    "endOffset": 7960
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2136,11 +2155,11 @@
             },
             {
                 "to": {
-                    "startLine": 128,
+                    "startLine": 129,
                     "startColumn": 4,
-                    "startOffset": 7916,
+                    "startOffset": 7965,
                     "endColumn": 62,
-                    "endOffset": 7974
+                    "endOffset": 8023
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2155,11 +2174,11 @@
             },
             {
                 "to": {
-                    "startLine": 129,
+                    "startLine": 130,
                     "startColumn": 4,
-                    "startOffset": 7979,
+                    "startOffset": 8028,
                     "endColumn": 50,
-                    "endOffset": 8025
+                    "endOffset": 8074
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2174,11 +2193,11 @@
             },
             {
                 "to": {
-                    "startLine": 130,
+                    "startLine": 131,
                     "startColumn": 4,
-                    "startOffset": 8030,
+                    "startOffset": 8079,
                     "endColumn": 65,
-                    "endOffset": 8091
+                    "endOffset": 8140
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2193,11 +2212,11 @@
             },
             {
                 "to": {
-                    "startLine": 131,
+                    "startLine": 132,
                     "startColumn": 4,
-                    "startOffset": 8096,
+                    "startOffset": 8145,
                     "endColumn": 58,
-                    "endOffset": 8150
+                    "endOffset": 8199
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2212,11 +2231,11 @@
             },
             {
                 "to": {
-                    "startLine": 132,
+                    "startLine": 133,
                     "startColumn": 4,
-                    "startOffset": 8155,
+                    "startOffset": 8204,
                     "endColumn": 86,
-                    "endOffset": 8237
+                    "endOffset": 8286
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2231,11 +2250,11 @@
             },
             {
                 "to": {
-                    "startLine": 133,
+                    "startLine": 134,
                     "startColumn": 4,
-                    "startOffset": 8242,
+                    "startOffset": 8291,
                     "endColumn": 72,
-                    "endOffset": 8310
+                    "endOffset": 8359
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2250,11 +2269,11 @@
             },
             {
                 "to": {
-                    "startLine": 134,
+                    "startLine": 135,
                     "startColumn": 4,
-                    "startOffset": 8315,
+                    "startOffset": 8364,
                     "endColumn": 57,
-                    "endOffset": 8368
+                    "endOffset": 8417
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2269,11 +2288,11 @@
             },
             {
                 "to": {
-                    "startLine": 135,
+                    "startLine": 136,
                     "startColumn": 4,
-                    "startOffset": 8373,
+                    "startOffset": 8422,
                     "endColumn": 72,
-                    "endOffset": 8441
+                    "endOffset": 8490
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2288,11 +2307,11 @@
             },
             {
                 "to": {
-                    "startLine": 136,
+                    "startLine": 137,
                     "startColumn": 4,
-                    "startOffset": 8446,
+                    "startOffset": 8495,
                     "endColumn": 69,
-                    "endOffset": 8511
+                    "endOffset": 8560
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2307,11 +2326,11 @@
             },
             {
                 "to": {
-                    "startLine": 137,
+                    "startLine": 138,
                     "startColumn": 4,
-                    "startOffset": 8516,
+                    "startOffset": 8565,
                     "endColumn": 92,
-                    "endOffset": 8604
+                    "endOffset": 8653
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2326,11 +2345,11 @@
             },
             {
                 "to": {
-                    "startLine": 138,
+                    "startLine": 139,
                     "startColumn": 4,
-                    "startOffset": 8609,
+                    "startOffset": 8658,
                     "endColumn": 59,
-                    "endOffset": 8664
+                    "endOffset": 8713
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2345,11 +2364,11 @@
             },
             {
                 "to": {
-                    "startLine": 139,
+                    "startLine": 140,
                     "startColumn": 4,
-                    "startOffset": 8669,
+                    "startOffset": 8718,
                     "endColumn": 84,
-                    "endOffset": 8749
+                    "endOffset": 8798
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2364,11 +2383,11 @@
             },
             {
                 "to": {
-                    "startLine": 140,
+                    "startLine": 141,
                     "startColumn": 4,
-                    "startOffset": 8754,
+                    "startOffset": 8803,
                     "endColumn": 128,
-                    "endOffset": 8878
+                    "endOffset": 8927
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2383,11 +2402,11 @@
             },
             {
                 "to": {
-                    "startLine": 141,
+                    "startLine": 142,
                     "startColumn": 4,
-                    "startOffset": 8883,
+                    "startOffset": 8932,
                     "endColumn": 98,
-                    "endOffset": 8977
+                    "endOffset": 9026
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2402,11 +2421,11 @@
             },
             {
                 "to": {
-                    "startLine": 142,
+                    "startLine": 143,
                     "startColumn": 4,
-                    "startOffset": 8982,
+                    "startOffset": 9031,
                     "endColumn": 112,
-                    "endOffset": 9090
+                    "endOffset": 9139
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2421,11 +2440,11 @@
             },
             {
                 "to": {
-                    "startLine": 143,
+                    "startLine": 144,
                     "startColumn": 4,
-                    "startOffset": 9095,
+                    "startOffset": 9144,
                     "endColumn": 88,
-                    "endOffset": 9179
+                    "endOffset": 9228
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2440,11 +2459,11 @@
             },
             {
                 "to": {
-                    "startLine": 144,
+                    "startLine": 145,
                     "startColumn": 4,
-                    "startOffset": 9184,
+                    "startOffset": 9233,
                     "endColumn": 67,
-                    "endOffset": 9247
+                    "endOffset": 9296
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2459,11 +2478,11 @@
             },
             {
                 "to": {
-                    "startLine": 145,
+                    "startLine": 146,
                     "startColumn": 4,
-                    "startOffset": 9252,
+                    "startOffset": 9301,
                     "endColumn": 81,
-                    "endOffset": 9329
+                    "endOffset": 9378
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2478,11 +2497,11 @@
             },
             {
                 "to": {
-                    "startLine": 146,
+                    "startLine": 147,
                     "startColumn": 4,
-                    "startOffset": 9334,
+                    "startOffset": 9383,
                     "endColumn": 227,
-                    "endOffset": 9557
+                    "endOffset": 9606
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2497,11 +2516,11 @@
             },
             {
                 "to": {
-                    "startLine": 147,
+                    "startLine": 148,
                     "startColumn": 4,
-                    "startOffset": 9562,
+                    "startOffset": 9611,
                     "endColumn": 131,
-                    "endOffset": 9689
+                    "endOffset": 9738
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2516,11 +2535,11 @@
             },
             {
                 "to": {
-                    "startLine": 148,
+                    "startLine": 149,
                     "startColumn": 4,
-                    "startOffset": 9694,
+                    "startOffset": 9743,
                     "endColumn": 58,
-                    "endOffset": 9748
+                    "endOffset": 9797
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2535,11 +2554,11 @@
             },
             {
                 "to": {
-                    "startLine": 149,
+                    "startLine": 150,
                     "startColumn": 4,
-                    "startOffset": 9753,
+                    "startOffset": 9802,
                     "endColumn": 53,
-                    "endOffset": 9802
+                    "endOffset": 9851
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2554,11 +2573,11 @@
             },
             {
                 "to": {
-                    "startLine": 150,
+                    "startLine": 151,
                     "startColumn": 4,
-                    "startOffset": 9807,
+                    "startOffset": 9856,
                     "endColumn": 58,
-                    "endOffset": 9861
+                    "endOffset": 9910
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2573,11 +2592,11 @@
             },
             {
                 "to": {
-                    "startLine": 151,
+                    "startLine": 152,
                     "startColumn": 4,
-                    "startOffset": 9866,
+                    "startOffset": 9915,
                     "endColumn": 70,
-                    "endOffset": 9932
+                    "endOffset": 9981
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2592,11 +2611,11 @@
             },
             {
                 "to": {
-                    "startLine": 152,
+                    "startLine": 153,
                     "startColumn": 4,
-                    "startOffset": 9937,
+                    "startOffset": 9986,
                     "endColumn": 69,
-                    "endOffset": 10002
+                    "endOffset": 10051
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2611,11 +2630,11 @@
             },
             {
                 "to": {
-                    "startLine": 153,
+                    "startLine": 154,
                     "startColumn": 4,
-                    "startOffset": 10007,
+                    "startOffset": 10056,
                     "endColumn": 72,
-                    "endOffset": 10075
+                    "endOffset": 10124
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2630,11 +2649,11 @@
             },
             {
                 "to": {
-                    "startLine": 154,
+                    "startLine": 155,
                     "startColumn": 4,
-                    "startOffset": 10080,
+                    "startOffset": 10129,
                     "endColumn": 65,
-                    "endOffset": 10141
+                    "endOffset": 10190
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2649,11 +2668,11 @@
             },
             {
                 "to": {
-                    "startLine": 155,
+                    "startLine": 156,
                     "startColumn": 4,
-                    "startOffset": 10146,
+                    "startOffset": 10195,
                     "endColumn": 71,
-                    "endOffset": 10213
+                    "endOffset": 10262
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2668,11 +2687,11 @@
             },
             {
                 "to": {
-                    "startLine": 156,
+                    "startLine": 157,
                     "startColumn": 4,
-                    "startOffset": 10218,
+                    "startOffset": 10267,
                     "endColumn": 66,
-                    "endOffset": 10280
+                    "endOffset": 10329
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2687,11 +2706,11 @@
             },
             {
                 "to": {
-                    "startLine": 157,
+                    "startLine": 158,
                     "startColumn": 4,
-                    "startOffset": 10285,
+                    "startOffset": 10334,
                     "endColumn": 62,
-                    "endOffset": 10343
+                    "endOffset": 10392
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2706,11 +2725,11 @@
             },
             {
                 "to": {
-                    "startLine": 158,
+                    "startLine": 159,
                     "startColumn": 4,
-                    "startOffset": 10348,
+                    "startOffset": 10397,
                     "endColumn": 65,
-                    "endOffset": 10409
+                    "endOffset": 10458
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2725,11 +2744,11 @@
             },
             {
                 "to": {
-                    "startLine": 159,
+                    "startLine": 160,
                     "startColumn": 4,
-                    "startOffset": 10414,
+                    "startOffset": 10463,
                     "endColumn": 71,
-                    "endOffset": 10481
+                    "endOffset": 10530
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2744,11 +2763,11 @@
             },
             {
                 "to": {
-                    "startLine": 160,
+                    "startLine": 161,
                     "startColumn": 4,
-                    "startOffset": 10486,
+                    "startOffset": 10535,
                     "endColumn": 63,
-                    "endOffset": 10545
+                    "endOffset": 10594
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2763,11 +2782,11 @@
             },
             {
                 "to": {
-                    "startLine": 161,
+                    "startLine": 162,
                     "startColumn": 4,
-                    "startOffset": 10550,
+                    "startOffset": 10599,
                     "endColumn": 60,
-                    "endOffset": 10606
+                    "endOffset": 10655
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings_activity_opciones.xml",
@@ -2782,11 +2801,11 @@
             },
             {
                 "to": {
-                    "startLine": 162,
+                    "startLine": 163,
                     "startColumn": 4,
-                    "startOffset": 10611,
+                    "startOffset": 10660,
                     "endColumn": 61,
-                    "endOffset": 10668
+                    "endOffset": 10717
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2801,11 +2820,11 @@
             },
             {
                 "to": {
-                    "startLine": 163,
+                    "startLine": 164,
                     "startColumn": 4,
-                    "startOffset": 10673,
+                    "startOffset": 10722,
                     "endColumn": 62,
-                    "endOffset": 10731
+                    "endOffset": 10780
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2820,11 +2839,11 @@
             },
             {
                 "to": {
-                    "startLine": 164,
+                    "startLine": 165,
                     "startColumn": 4,
-                    "startOffset": 10736,
+                    "startOffset": 10785,
                     "endColumn": 59,
-                    "endOffset": 10791
+                    "endOffset": 10840
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2839,11 +2858,11 @@
             },
             {
                 "to": {
-                    "startLine": 165,
+                    "startLine": 166,
                     "startColumn": 4,
-                    "startOffset": 10796,
+                    "startOffset": 10845,
                     "endColumn": 74,
-                    "endOffset": 10866
+                    "endOffset": 10915
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2858,11 +2877,11 @@
             },
             {
                 "to": {
-                    "startLine": 166,
+                    "startLine": 167,
                     "startColumn": 4,
-                    "startOffset": 10871,
+                    "startOffset": 10920,
                     "endColumn": 65,
-                    "endOffset": 10932
+                    "endOffset": 10981
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2877,11 +2896,11 @@
             },
             {
                 "to": {
-                    "startLine": 167,
+                    "startLine": 168,
                     "startColumn": 4,
-                    "startOffset": 10937,
+                    "startOffset": 10986,
                     "endColumn": 77,
-                    "endOffset": 11010
+                    "endOffset": 11059
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2896,11 +2915,11 @@
             },
             {
                 "to": {
-                    "startLine": 168,
+                    "startLine": 169,
                     "startColumn": 4,
-                    "startOffset": 11015,
+                    "startOffset": 11064,
                     "endColumn": 75,
-                    "endOffset": 11086
+                    "endOffset": 11135
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2915,11 +2934,11 @@
             },
             {
                 "to": {
-                    "startLine": 169,
+                    "startLine": 170,
                     "startColumn": 4,
-                    "startOffset": 11091,
+                    "startOffset": 11140,
                     "endColumn": 71,
-                    "endOffset": 11158
+                    "endOffset": 11207
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2934,11 +2953,11 @@
             },
             {
                 "to": {
-                    "startLine": 170,
+                    "startLine": 171,
                     "startColumn": 4,
-                    "startOffset": 11163,
+                    "startOffset": 11212,
                     "endColumn": 70,
-                    "endOffset": 11229
+                    "endOffset": 11278
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2953,11 +2972,11 @@
             },
             {
                 "to": {
-                    "startLine": 171,
+                    "startLine": 172,
                     "startColumn": 4,
-                    "startOffset": 11234,
+                    "startOffset": 11283,
                     "endColumn": 53,
-                    "endOffset": 11283
+                    "endOffset": 11332
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2972,11 +2991,11 @@
             },
             {
                 "to": {
-                    "startLine": 172,
+                    "startLine": 173,
                     "startColumn": 4,
-                    "startOffset": 11288,
+                    "startOffset": 11337,
                     "endColumn": 46,
-                    "endOffset": 11330
+                    "endOffset": 11379
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -2991,11 +3010,11 @@
             },
             {
                 "to": {
-                    "startLine": 173,
+                    "startLine": 174,
                     "startColumn": 4,
-                    "startOffset": 11335,
+                    "startOffset": 11384,
                     "endColumn": 68,
-                    "endOffset": 11399
+                    "endOffset": 11448
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3010,11 +3029,11 @@
             },
             {
                 "to": {
-                    "startLine": 174,
+                    "startLine": 175,
                     "startColumn": 4,
-                    "startOffset": 11404,
+                    "startOffset": 11453,
                     "endColumn": 106,
-                    "endOffset": 11506
+                    "endOffset": 11555
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3029,11 +3048,11 @@
             },
             {
                 "to": {
-                    "startLine": 175,
+                    "startLine": 176,
                     "startColumn": 4,
-                    "startOffset": 11511,
+                    "startOffset": 11560,
                     "endColumn": 89,
-                    "endOffset": 11596
+                    "endOffset": 11645
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3048,11 +3067,11 @@
             },
             {
                 "to": {
-                    "startLine": 176,
+                    "startLine": 177,
                     "startColumn": 4,
-                    "startOffset": 11601,
+                    "startOffset": 11650,
                     "endColumn": 124,
-                    "endOffset": 11721
+                    "endOffset": 11770
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3067,11 +3086,11 @@
             },
             {
                 "to": {
-                    "startLine": 177,
+                    "startLine": 178,
                     "startColumn": 4,
-                    "startOffset": 11726,
+                    "startOffset": 11775,
                     "endColumn": 101,
-                    "endOffset": 11823
+                    "endOffset": 11872
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3086,11 +3105,11 @@
             },
             {
                 "to": {
-                    "startLine": 178,
+                    "startLine": 179,
                     "startColumn": 4,
-                    "startOffset": 11828,
+                    "startOffset": 11877,
                     "endColumn": 106,
-                    "endOffset": 11930
+                    "endOffset": 11979
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3105,11 +3124,11 @@
             },
             {
                 "to": {
-                    "startLine": 179,
+                    "startLine": 180,
                     "startColumn": 4,
-                    "startOffset": 11935,
+                    "startOffset": 11984,
                     "endColumn": 105,
-                    "endOffset": 12036
+                    "endOffset": 12085
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3124,11 +3143,11 @@
             },
             {
                 "to": {
-                    "startLine": 180,
+                    "startLine": 181,
                     "startColumn": 4,
-                    "startOffset": 12041,
+                    "startOffset": 12090,
                     "endColumn": 99,
-                    "endOffset": 12136
+                    "endOffset": 12185
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3143,11 +3162,11 @@
             },
             {
                 "to": {
-                    "startLine": 181,
+                    "startLine": 182,
                     "startColumn": 4,
-                    "startOffset": 12141,
+                    "startOffset": 12190,
                     "endColumn": 105,
-                    "endOffset": 12242
+                    "endOffset": 12291
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3162,11 +3181,11 @@
             },
             {
                 "to": {
-                    "startLine": 182,
+                    "startLine": 183,
                     "startColumn": 4,
-                    "startOffset": 12247,
+                    "startOffset": 12296,
                     "endColumn": 104,
-                    "endOffset": 12347
+                    "endOffset": 12396
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
@@ -3181,20 +3200,20 @@
             },
             {
                 "to": {
-                    "startLine": 183,
+                    "startLine": 184,
                     "startColumn": 4,
-                    "startOffset": 12352,
+                    "startOffset": 12401,
                     "endColumn": 46,
-                    "endOffset": 12394
+                    "endOffset": 12443
                 },
                 "from": {
                     "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-en/strings.xml",
                     "position": {
                         "startLine": 164,
                         "startColumn": 0,
-                        "startOffset": 11093,
+                        "startOffset": 11092,
                         "endColumn": 48,
-                        "endOffset": 11141
+                        "endOffset": 11140
                     }
                 }
             }

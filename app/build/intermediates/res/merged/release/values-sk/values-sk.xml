@@ -24,6 +24,8 @@
     <string msgid="4076576682505996667" name="abc_action_mode_done">"Hotovo"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Zobraziť všetko"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Zvoľte aplikáciu"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"VYP."</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"ZAP."</string>
     <string msgid="7723749260725869598" name="abc_search_hint">"Vyhľadať…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Vymazať dopyt"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Vyhľadávací dopyt"</string>
@@ -33,6 +35,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Zdieľať pomocou"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"Zdieľať pomocou %s"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Zbaliť"</string>
+    <string msgid="6361267646005304214" name="accept">"Prijať"</string>
     <string name="action_buscar">Search</string>
     <string name="action_duplicar">Duplicate</string>
     <string name="action_editar">Edit</string>
@@ -62,9 +65,38 @@
     <string name="alerta_restaurar_titulo">Restore backup</string>
     <string name="anio_invalido">The YEAR is invalid</string>
     <string name="app_name">My Game Collection</string>
+    <string name="app_picker_name">Aplikácie</string>
     <string name="app_version">1.3</string>
     <string name="app_versiones_texto">Version 0.9 - Beta</string>
     <string name="app_versiones_title">Version changes</string>
+    <string name="bookmark_picker_name">Záložky</string>
+    <string name="buscando">Searching...</string>
+    <string name="button_add_calendar">Pridať do kalendára</string>
+    <string name="button_add_contact">Pridať kontakt</string>
+    <string name="button_back">Späť</string>
+    <string name="button_book_search">Hľadať knihu</string>
+    <string name="button_cancel">Zrušiť</string>
+    <string name="button_custom_product_search">Prispôsobené vyhľadávanie</string>
+    <string name="button_dial">Vytočiť číslo</string>
+    <string name="button_done">Hotovo</string>
+    <string name="button_email">Poslať e-mail</string>
+    <string name="button_get_directions">Získať pokyny</string>
+    <string name="button_google_shopper">Nakupovanie</string>
+    <string name="button_mms">Poslať MMS</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_browser">Otvoriť prehliadač</string>
+    <string name="button_product_search">Vyhľadať produkt</string>
+    <string name="button_search_book_contents">Vyhľadať obsah</string>
+    <string name="button_share_app">Aplikácia</string>
+    <string name="button_share_bookmark">Záložka</string>
+    <string name="button_share_by_email">Zdieľať cez e-mail</string>
+    <string name="button_share_by_sms">Zdieľať cez SMS</string>
+    <string name="button_share_clipboard">Schránka</string>
+    <string name="button_share_contact">Kontakt</string>
+    <string name="button_show_map">Zobraziť mapu</string>
+    <string name="button_sms">Poslať SMS</string>
+    <string name="button_web_search">Hľadať na webe</string>
+    <string name="button_wifi">Pripojiť sa sieti</string>
     <string name="campo_compania_vacio">The field COMPANY can not be blank</string>
     <string name="campo_fecha_completado_invalido">The field value COMPLETED DATE is invalid</string>
     <string name="campo_fecha_compra_invalido">The field value PURCHASE DATE is invalid</string>
@@ -72,6 +104,34 @@
     <string name="campo_puntuacion_invalido">The SCRORE may not exceed 100</string>
     <string name="campo_titulo_vacio">The field TITLE can not be blank</string>
     <string name="cancel">Cancel</string>
+    <string msgid="366047012176970604" name="cast_casting_to_device">"Prenáša sa do zariadenia %1$s"</string>
+    <string msgid="4431992200264667209" name="cast_disconnect">"Odpojiť"</string>
+    <string msgid="7884080323096468593" name="cast_forward">"Pretočiť dopredu"</string>
+    <string msgid="6424889955881797947" name="cast_forward_10">"Pretočiť dopredu desať sekúnd"</string>
+    <string msgid="7868672855975238403" name="cast_forward_30">"Pretočiť dopredu tridsať sekúnd"</string>
+    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
+    <string msgid="5637297909372905371" name="cast_mute">"Vypnúť zvuk"</string>
+    <string msgid="5319032370587661362" name="cast_notification_connected_message">"Pripojené k obrazovke <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"Prebieha pripájanie k obrazovke <ns1:g id="NAME">%1$s</ns1:g>"</string>
+    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Odpojiť"</string>
+    <string msgid="5308503786390460607" name="cast_pause">"Pozastaviť"</string>
+    <string msgid="5906987965619702702" name="cast_play">"Prehrať"</string>
+    <string msgid="1739665135565985480" name="cast_rewind">"Pretočiť späť"</string>
+    <string msgid="6432793028560778843" name="cast_rewind_10">"Pretočiť späť desať sekúnd"</string>
+    <string msgid="4677199707225681325" name="cast_rewind_30">"Pretočiť spať tridsať sekúnd"</string>
+    <string msgid="3991548379225047363" name="cast_skip_next">"Preskočiť na ďalšiu položku"</string>
+    <string msgid="8369073097776576935" name="cast_skip_prev">"Preskočiť na predchádzajúcu položku"</string>
+    <string msgid="9191388946729723891" name="cast_stop">"Zastaviť"</string>
+    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Zastaviť priamy prenos"</string>
+    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Zvuk"</string>
+    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"Zrušiť"</string>
+    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Nie sú k dispozícii žiadne zvukové stopy"</string>
+    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Nie sú k dispozícii žiadne textové stopy"</string>
+    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Nie sú k dispozícii žiadne stopy"</string>
+    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Žiadne"</string>
+    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"OK"</string>
+    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Titulky"</string>
+    <string msgid="2913461521603516868" name="cast_unmute">"Zapnúť zvuk"</string>
     <string msgid="4770915072144378781" name="common_google_play_services_api_unavailable_text">"Aplikácia <ns1:g id="APP_NAME">%1$s</ns1:g> vyžaduje minimálne jednu službu Google Play, ktorá v súčasnosti nie je k dispozícii. Kontaktujte príslušného vývojára a požiadajte ho o pomoc."</string>
     <string msgid="2050101795821476669" name="common_google_play_services_enable_button">"Povoliť služby Google Play"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Aplikácia <ns1:g id="APP_NAME">%1$s</ns1:g> bude fungovať až po povolení služieb Google Play."</string>
@@ -103,9 +163,18 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Otvoriť v telefóne"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Prihlásiť sa"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Prihlásiť sa do účtu Google"</string>
+    <string name="contents_contact">Informácie o kontakte</string>
+    <string name="contents_email">E-mailová adresa</string>
+    <string name="contents_location">Geografické súradnice</string>
+    <string name="contents_phone">Telefónne číslo</string>
+    <string name="contents_sms">SMS adresa</string>
+    <string name="contents_text">Obyčajný text</string>
     <string name="contrasena">Password</string>
     <string name="copia_restaurada_ko">The backup could not be restored</string>
     <string name="copia_restaurada_ok">Backup complete. The application will restart</string>
+    <string msgid="6585634416571795096" name="create_calendar_message">"Povoliť reklame vytvoriť udalosť v kalendári?"</string>
+    <string msgid="5763102366548941325" name="create_calendar_title">"Vytvorenie udalosti v kalendári"</string>
+    <string msgid="6520798050439307862" name="decline">"Odmietnuť"</string>
     <string name="dia_invalido">The DAY is invalid</string>
     <string name="digital">Digital</string>
     <string name="dummy_button">Dummy Button</string>
@@ -130,6 +199,13 @@
     <string name="hint_puntuacion">From 0 to 100</string>
     <string name="hint_resumen">Resume or description of the game</string>
     <string name="hint_titulo">Game title</string>
+    <string name="history_clear_one_history_text">Vymazať</string>
+    <string name="history_clear_text">Vymazať históriu</string>
+    <string name="history_email_title">História Barcode Scanneru</string>
+    <string name="history_empty">Prázdna</string>
+    <string name="history_empty_detail">Žiadne čiarové kódy neboli zaznamenané</string>
+    <string name="history_send">Poslať históriu</string>
+    <string name="history_title">História</string>
     <string name="inicio_titulo_completados">Last games completed</string>
     <string name="juego_actualizado_ko">Failed to update the game data</string>
     <string name="juego_actualizado_ok">Game data updated</string>
@@ -162,6 +238,12 @@
     <string name="label_resumen_editar">Summary</string>
     <string name="label_titulo">Title</string>
     <string name="mensaje_datos_borrados_ok">All data clear. The application will restart</string>
+    <string name="menu_encode_mecard">Použiť MECARD</string>
+    <string name="menu_encode_vcard">Použiť vCard</string>
+    <string name="menu_help">Nápoveda</string>
+    <string name="menu_history">História</string>
+    <string name="menu_settings">Nastavenia</string>
+    <string name="menu_share">Zdieľať</string>
     <string name="mes_invalido">The MONTH is invalid</string>
     <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Prenášať"</string>
     <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Prebieha vyhľadávanie zariadení…"</string>
@@ -174,6 +256,34 @@
     <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Zastaviť prenášanie"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Systém"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Zariadenia"</string>
+    <string name="msg_bulk_mode_scanned">Hromadný režim: skenovanie a ukladanie čiarových kódov</string>
+    <string name="msg_camera_framework_bug">Ospravedlňujeme sa, fotoaparát narazil na problém. Možno bude potrebné reštartovať zariadenie.</string>
+    <string name="msg_default_format">Formát</string>
+    <string name="msg_default_meta">Metadáta</string>
+    <string name="msg_default_mms_subject">Ahoj</string>
+    <string name="msg_default_status">Umiestnite čiarový kód do vnútra obdĺžnika hľadáčiku pre skenovanie.</string>
+    <string name="msg_default_time">Čas</string>
+    <string name="msg_default_type">Typ</string>
+    <string name="msg_encode_contents_failed">Nie je možné zakódovať čiarový kód z poskytnutých údajov.</string>
+    <string name="msg_google_books">Google Knihy</string>
+    <string name="msg_google_product">Hľadať produkty Google</string>
+    <string name="msg_google_shopper_missing">Nie je nainštalované Google Nakupovanie.</string>
+    <string name="msg_install_google_shopper">Google Nakupovanie kombinuje v sebe skenovanie čiarových kódov s miestnymi cenami on-line, recenzie a oveľa viac bez otvorenia prehliadača. Chceli by ste ho vyskúšať?</string>
+    <string name="msg_intent_failed">Ospravedlňujeme sa, požadovaná aplikácia nemohla byť spustená. Obsah čiarového kódu je možno neplatný.</string>
+    <string name="msg_redirect">Presmerovať</string>
+    <string name="msg_sbc_book_not_searchable">Ospravedlňujeme sa, táto kniha nie je prehliadateľná.</string>
+    <string name="msg_sbc_failed">Ospravedlňujeme sa, vyhľadávanie narazilo na problém.</string>
+    <string name="msg_sbc_no_page_returned">Nenašla sa žiadna stránka</string>
+    <string name="msg_sbc_page">Stránka</string>
+    <string name="msg_sbc_results">Výsledky</string>
+    <string name="msg_sbc_searching_book">Vyhľadáva sa kniha\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Úryvok nie je k dispozícii</string>
+    <string name="msg_sbc_unknown_page">Neznáma stránka</string>
+    <string name="msg_share_explanation">Môžete zdieľať dáta zobrazením čiarového kódu na displeji vášho zariadenia a jeho zoskenovaním iným zariadením</string>
+    <string name="msg_share_subject_line">Tu je obsah naskenovaného čiarového kódu</string>
+    <string name="msg_share_text">Alebo zadajte nejaký text</string>
+    <string name="msg_sure">Ste si istí?</string>
+    <string name="msg_unmount_usb">Ospravedlňujeme sa, SD karta nie je prístupná.</string>
     <string name="no_data_backup">There is no data to save in the backup</string>
     <string name="ok">Yes</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Vymazať vyhľadávanie"</string>
@@ -198,12 +308,56 @@
     <string name="pref_title_restaurar_copia">Restore backup</string>
     <string name="pref_title_share_name">Mostrar mi nombre en la fichas compartidas</string>
     <string name="pref_title_version">Version %1$s</string>
+    <string name="preferences_actions_title">Pri zistení čiarového kódu</string>
+    <string name="preferences_auto_focus_title">Použiť automatické zaostrenie</string>
+    <string name="preferences_bulk_mode_summary">Skenovať a ukladať veľa čiarových kódov bez prerušenia</string>
+    <string name="preferences_bulk_mode_title">Hromadný režim skenovania</string>
+    <string name="preferences_copy_to_clipboard_title">Kopírovať do schránky</string>
+    <string formatted="false" name="preferences_custom_product_search_summary">Nahradiť: %s = obsah, %f = formát, %t = typ</string>
+    <string name="preferences_custom_product_search_title">Vlastné vyhľadávanie URL</string>
+    <string name="preferences_decode_1D_title">1D čiarové kódy</string>
+    <string name="preferences_decode_Data_Matrix_title">Dáta Matrix</string>
+    <string name="preferences_decode_QR_title">QR kódy</string>
+    <string name="preferences_device_bug_workarounds_title">Možné chyby zariadenia</string>
+    <string name="preferences_disable_continuous_focus_summary">Použiť iba štandardné zaostrenie</string>
+    <string name="preferences_disable_continuous_focus_title">Nezaostrovať nepretržite</string>
+    <string name="preferences_disable_exposure_title">Bez expozície</string>
+    <string name="preferences_front_light_summary">Na niektorých zariadeniach zlepšuje snímanie za zhoršených svetelných podmienok, ale môže spôsobiť odlesk. Nefunguje na všetkých zariadeniach.</string>
+    <string name="preferences_front_light_title">Použiť prisvetlenie</string>
+    <string name="preferences_general_title">Všeobecné nastavenia</string>
+    <string name="preferences_name">Nastavenia</string>
+    <string name="preferences_play_beep_title">Zvuková signalizácia</string>
+    <string name="preferences_remember_duplicates_summary">Uložiť viacnásobné skenovanie do jednej histórie čiarového kódu</string>
+    <string name="preferences_remember_duplicates_title">Zapamätať si duplikáty</string>
+    <string name="preferences_result_title">Nastavenia výsledku</string>
+    <string name="preferences_scanning_title">Dekódovať čiarové kódy</string>
+    <string name="preferences_search_country">Vyhľadávať v krajine</string>
+    <string name="preferences_supplemental_summary">Skúsiť získať viac informácií o obsahu čiarového kódu</string>
+    <string name="preferences_supplemental_title">Získať viac informácií</string>
+    <string name="preferences_try_bsplus">Vyskúšajte Barcode Scanner+</string>
+    <string name="preferences_try_bsplus_summary">Rozšírený o nové funkcie a prostredie</string>
+    <string name="preferences_vibrate_title">Vibrovať</string>
     <string name="registro_contrasenas_no_coinciden">Passwords do not match</string>
     <string name="registro_correcto">It has been recorded properly. You will receive an email to activate your account.</string>
     <string name="registro_email_usado">The email indicated already has a registered user</string>
     <string name="registro_mensaje">By registering, you will receive an email to activate your account.</string>
+    <string name="result_address_book">Nájdená informácia o kontakte</string>
+    <string name="result_calendar">Nájdená udalosť kalendára</string>
+    <string name="result_email_address">Nájdená e-mailová adresa</string>
+    <string name="result_geo">Nájdená zemepisná súradnica</string>
+    <string name="result_isbn">Nájdená kniha</string>
+    <string name="result_product">Nájdený tovar</string>
+    <string name="result_sms">Nájdená SMS adresa</string>
+    <string name="result_tel">Nájdené telefónne číslo</string>
+    <string name="result_text">Nájdený obyčajný text</string>
+    <string name="result_uri">Nájdená URL</string>
+    <string name="result_wifi">Nájdená konfigurácia WLAN</string>
+    <string name="sbc_name">Vyhľadať v Google Knihy</string>
+    <string name="share_name">Zdieľať cez čiarový kód</string>
     <string name="sin_resultados_busqueda">There are no results for this search</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="9018493135943017231" name="store_picture_message">"Povoliť reklame uložiť obrázok do galérie fotiek?"</string>
+    <string msgid="3745622764880844111" name="store_picture_title">"Uložiť obrázok"</string>
     <string name="texto_boton_buscar_online">Online search</string>
     <string name="texto_inicio_sesion">Enter your username and password.</string>
     <string name="texto_inicio_sesion_registro">If you have not yet registered, click on the button \ "Register \" to create your account to share your stack of games and make backup copies of your data in the sevidor.</string>
@@ -243,5 +397,9 @@
     <string name="url_registro_usuario">http://www.mijuegoteca.com/administracion/registro</string>
     <string name="url_subir_copia">http://www.mijuegoteca.com/administracion/subirCopiaSeguridad</string>
     <string name="url_subir_imagen">http://www.mijuegoteca.com/administracion/juego/subirImagen</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Kúpiť cez Google"</string>
+    <string name="wifi_changing_network">Požiadavka na pripojenie k sieti\u2026</string>
+    <string name="wifi_ssid_label">Názov sieťového pripojenia</string>
+    <string name="wifi_type_label">Typ</string>
     <string name="zip">Creating file…</string>
 </resources>

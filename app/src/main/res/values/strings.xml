@@ -146,7 +146,7 @@
     <string name="campo_fecha_lanzamiento_invalido">The field value RELEASE DATE is invalid</string>
     <string name="campo_fecha_compra_invalido">The field value PURCHASE DATE is invalid</string>
     <string name="campo_fecha_completado_invalido">The field value COMPLETED DATE is invalid</string>
-    <string name="campo_puntuacion_invalido">The SCRORE may not exceed 100</string>
+    <string name="campo_puntuacion_invalido">The SCORE may not exceed 100</string>
     <string name="error_cargar_caratula">Unable to copy the cover to directory app</string>
     <string name="juego_guardado">Game saved</string>
     <string name="juego_no_guardado">Error saving game:</string>
@@ -163,4 +163,5 @@
     <string name="juego_no_eliminado">Could not delete the game</string>
     <string name="no_data_backup">There is no data to save in the backup</string>
 <string name="zip">Creating file...</string>
+    <string name="buscando">Searching...</string>
 </resources>

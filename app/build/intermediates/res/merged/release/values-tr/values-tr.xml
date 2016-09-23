@@ -21,9 +21,11 @@
     <string msgid="6623331958280229229" name="abc_action_bar_home_subtitle_description_format">"%1$s, %2$s, %3$s"</string>
     <string msgid="1594238315039666878" name="abc_action_bar_up_description">"Yukarı git"</string>
     <string msgid="3588849162933574182" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
-    <string msgid="4076576682505996667" name="abc_action_mode_done">"Tamamlandı"</string>
+    <string msgid="4076576682505996667" name="abc_action_mode_done">"Bitti"</string>
     <string msgid="7468859129482906941" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
     <string msgid="2031811694353399454" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="121134116657445385" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="3405795526292276155" name="abc_capital_on">"AÇ"</string>
     <string msgid="7723749260725869598" name="abc_search_hint">"Ara…"</string>
     <string msgid="3691816814315814921" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
     <string msgid="2550479030709304392" name="abc_searchview_description_query">"Arama sorgusu"</string>
@@ -33,6 +35,7 @@
     <string msgid="3421042268587513524" name="abc_shareactionprovider_share_with">"Şununla paylaş"</string>
     <string msgid="7165123711973476752" name="abc_shareactionprovider_share_with_application">"%s ile paylaş"</string>
     <string msgid="1603543279005712093" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string msgid="6361267646005304214" name="accept">"Kabul et"</string>
     <string name="action_buscar">Search</string>
     <string name="action_duplicar">Duplicate</string>
     <string name="action_editar">Edit</string>
@@ -62,9 +65,38 @@
     <string name="alerta_restaurar_titulo">Restore backup</string>
     <string name="anio_invalido">The YEAR is invalid</string>
     <string name="app_name">My Game Collection</string>
+    <string name="app_picker_name">Uygulamalar</string>
     <string name="app_version">1.3</string>
     <string name="app_versiones_texto">Version 0.9 - Beta</string>
     <string name="app_versiones_title">Version changes</string>
+    <string name="bookmark_picker_name">Yer imleri</string>
+    <string name="buscando">Searching...</string>
+    <string name="button_add_calendar">Takvime ekle</string>
+    <string name="button_add_contact">Kişi ekle</string>
+    <string name="button_back">Geri</string>
+    <string name="button_book_search">Kitap Arama</string>
+    <string name="button_cancel">İptal</string>
+    <string name="button_custom_product_search">Özel arama</string>
+    <string name="button_dial">Numaraya çağrı</string>
+    <string name="button_done">Tamam</string>
+    <string name="button_email">Email gönder</string>
+    <string name="button_get_directions">Yön bilgisi al</string>
+    <string name="button_google_shopper">Shopper</string>
+    <string name="button_mms">MMS gönder</string>
+    <string name="button_ok">Tamam</string>
+    <string name="button_open_browser">Tarayıcıyı aç</string>
+    <string name="button_product_search">Ürün arama</string>
+    <string name="button_search_book_contents">İçerik arama</string>
+    <string name="button_share_app">Uygulama paylaş</string>
+    <string name="button_share_bookmark">Yer imi paylaş</string>
+    <string name="button_share_by_email">Email ile paylaş</string>
+    <string name="button_share_by_sms">SMS ile paylaş</string>
+    <string name="button_share_clipboard">Pano</string>
+    <string name="button_share_contact">Kişi</string>
+    <string name="button_show_map">Haritayı göster</string>
+    <string name="button_sms">SMS gönder</string>
+    <string name="button_web_search">Webde ara</string>
+    <string name="button_wifi">Ağa bağlan</string>
     <string name="campo_compania_vacio">The field COMPANY can not be blank</string>
     <string name="campo_fecha_completado_invalido">The field value COMPLETED DATE is invalid</string>
     <string name="campo_fecha_compra_invalido">The field value PURCHASE DATE is invalid</string>
@@ -72,6 +104,34 @@
     <string name="campo_puntuacion_invalido">The SCRORE may not exceed 100</string>
     <string name="campo_titulo_vacio">The field TITLE can not be blank</string>
     <string name="cancel">Cancel</string>
+    <string msgid="366047012176970604" name="cast_casting_to_device">"%1s cihazına yayınlanıyor"</string>
+    <string msgid="4431992200264667209" name="cast_disconnect">"Bağlantıyı kes"</string>
+    <string msgid="7884080323096468593" name="cast_forward">"İleri sar"</string>
+    <string msgid="6424889955881797947" name="cast_forward_10">"On saniye ileri sar"</string>
+    <string msgid="7868672855975238403" name="cast_forward_30">"Otuz saniye ileri sar"</string>
+    <string msgid="6885943100773268783" name="cast_intro_overlay_button_text">"@android:string/ok"</string>
+    <string msgid="5637297909372905371" name="cast_mute">"Sesi kapat"</string>
+    <string msgid="5319032370587661362" name="cast_notification_connected_message">"<ns1:g id="NAME">%1$s</ns1:g> bağlantısı yapıldı"</string>
+    <string msgid="2758865089947797888" name="cast_notification_connecting_message">"<ns1:g id="NAME">%1$s</ns1:g> bağlantısı yapılıyor"</string>
+    <string msgid="5232008641593292969" name="cast_notification_disconnect">"Bağlantıyı kes"</string>
+    <string msgid="5308503786390460607" name="cast_pause">"Duraklat"</string>
+    <string msgid="5906987965619702702" name="cast_play">"Oynat"</string>
+    <string msgid="1739665135565985480" name="cast_rewind">"Geri sar"</string>
+    <string msgid="6432793028560778843" name="cast_rewind_10">"On saniye geri sar"</string>
+    <string msgid="4677199707225681325" name="cast_rewind_30">"30 saniye geri sar"</string>
+    <string msgid="3991548379225047363" name="cast_skip_next">"Sonraki öğeye atla"</string>
+    <string msgid="8369073097776576935" name="cast_skip_prev">"Önceki öğeye atla"</string>
+    <string msgid="9191388946729723891" name="cast_stop">"Durdur"</string>
+    <string msgid="1219622777438777099" name="cast_stop_live_stream">"Canlı akışı durdur"</string>
+    <string msgid="4250321332248956563" name="cast_tracks_chooser_dialog_audio">"Ses"</string>
+    <string msgid="1162380934229249476" name="cast_tracks_chooser_dialog_cancel">"İptal"</string>
+    <string msgid="5563446400083425854" name="cast_tracks_chooser_dialog_no_audio_tracks">"Ses Kanalı Yok"</string>
+    <string msgid="7413336699113748535" name="cast_tracks_chooser_dialog_no_text_tracks">"Metin Kanalı Yok"</string>
+    <string msgid="2332432312191219516" name="cast_tracks_chooser_dialog_no_tracks_available">"Kanal yok"</string>
+    <string msgid="1176688358580178396" name="cast_tracks_chooser_dialog_none">"Yok"</string>
+    <string msgid="3804878371876790270" name="cast_tracks_chooser_dialog_ok">"Tamam"</string>
+    <string msgid="2454147715032376208" name="cast_tracks_chooser_dialog_subtitles">"Altyazılar"</string>
+    <string msgid="2913461521603516868" name="cast_unmute">"Sesi aç"</string>
     <string msgid="4770915072144378781" name="common_google_play_services_api_unavailable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g>, şu anda kullanılamayan bir veya daha fazla Google Play hizmetini gerektiriyor. Yardım için lütfen geliştiriciyle iletişim kurun."</string>
     <string msgid="2050101795821476669" name="common_google_play_services_enable_button">"Google Play hizmetlerini etkinleştir"</string>
     <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"Google Play hizmetlerini etkinleştirmezseniz <ns1:g id="APP_NAME">%1$s</ns1:g> çalışmaz."</string>
@@ -103,9 +163,18 @@
     <string msgid="5201977337835724196" name="common_open_on_phone">"Telefonda aç"</string>
     <string msgid="3441753203274453993" name="common_signin_button_text">"Oturum aç"</string>
     <string msgid="669893613918351210" name="common_signin_button_text_long">"Google\'da oturum aç"</string>
+    <string name="contents_contact">Kişi bilgisi</string>
+    <string name="contents_email">Email adresi</string>
+    <string name="contents_location">Coğrafi koordinatlar</string>
+    <string name="contents_phone">Telefon numarası</string>
+    <string name="contents_sms">SMS adresi</string>
+    <string name="contents_text">Düz metin</string>
     <string name="contrasena">Password</string>
     <string name="copia_restaurada_ko">The backup could not be restored</string>
     <string name="copia_restaurada_ok">Backup complete. The application will restart</string>
+    <string msgid="6585634416571795096" name="create_calendar_message">"Reklamın, bir takvim etkinliği oluşturmasına izin verilsin mi?"</string>
+    <string msgid="5763102366548941325" name="create_calendar_title">"Takvim etkinliği oluşturma"</string>
+    <string msgid="6520798050439307862" name="decline">"Reddet"</string>
     <string name="dia_invalido">The DAY is invalid</string>
     <string name="digital">Digital</string>
     <string name="dummy_button">Dummy Button</string>
@@ -130,6 +199,13 @@
     <string name="hint_puntuacion">From 0 to 100</string>
     <string name="hint_resumen">Resume or description of the game</string>
     <string name="hint_titulo">Game title</string>
+    <string name="history_clear_one_history_text">Temizle</string>
+    <string name="history_clear_text">Geçmişi temizle</string>
+    <string name="history_email_title">Barkod Tarayıcı geçmişi</string>
+    <string name="history_empty">Boş</string>
+    <string name="history_empty_detail">Yok barkod taramaları kaydedildi</string>
+    <string name="history_send">Geçmişi gönder</string>
+    <string name="history_title">Geçmiş</string>
     <string name="inicio_titulo_completados">Last games completed</string>
     <string name="juego_actualizado_ko">Failed to update the game data</string>
     <string name="juego_actualizado_ok">Game data updated</string>
@@ -162,6 +238,12 @@
     <string name="label_resumen_editar">Summary</string>
     <string name="label_titulo">Title</string>
     <string name="mensaje_datos_borrados_ok">All data clear. The application will restart</string>
+    <string name="menu_encode_mecard">MECARD kullanın</string>
+    <string name="menu_encode_vcard">VCard kullanın</string>
+    <string name="menu_help">Yardım</string>
+    <string name="menu_history">Geçmiş</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="menu_share">Paylaş</string>
     <string name="mes_invalido">The MONTH is invalid</string>
     <string msgid="8327680881775995150" name="mr_media_route_button_content_description">"Yayınla"</string>
     <string msgid="7553005460920830010" name="mr_media_route_chooser_searching">"Cihaz arayın…"</string>
@@ -174,6 +256,34 @@
     <string msgid="5398645111664294430" name="mr_media_route_controller_stop">"Yayını durdur"</string>
     <string msgid="5441529851481176817" name="mr_system_route_name">"Sistem"</string>
     <string msgid="7498112907524977311" name="mr_user_route_category_name">"Cihazlar"</string>
+    <string name="msg_bulk_mode_scanned">Toplu modu: taranan ve kaydedilen barkodlar</string>
+    <string name="msg_camera_framework_bug">Üzgünüz, Android kamera bir sorunla karşılaştı. Cihazı yeniden başlatmanız gerekebilir.</string>
+    <string name="msg_default_format">Biçim</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Merhaba</string>
+    <string name="msg_default_status">Barkodu taramak için vizördeki dikdörtgenin içerisine yerleştirin.</string>
+    <string name="msg_default_time">Süre</string>
+    <string name="msg_default_type">Tür</string>
+    <string name="msg_encode_contents_failed">Sağlanan verilerden bir barkod kodlanamadı.</string>
+    <string name="msg_google_books">Google Kitap Arama</string>
+    <string name="msg_google_product">Google Ürün Arama</string>
+    <string name="msg_google_shopper_missing">Google Shopper yüklü değil</string>
+    <string name="msg_install_google_shopper">Google Shopper, tarayıcıyı açmanıza gerek kalmadan barkod taraması, çevrimiçi ve yerel fiyatlar ile gözden geçirme ve diğer özellikten yararlanmanızı sağlar. Denemek ister misiniz?</string>
+    <string name="msg_intent_failed">Üzgünüz, istenen uygulama başlatılamadı. Barkod içeriği geçersiz olabilir.</string>
+    <string name="msg_redirect">Yönlendirme</string>
+    <string name="msg_sbc_book_not_searchable">Üzgünüz, bu kitapla ilgili arama yapılamıyor.</string>
+    <string name="msg_sbc_failed">Üzgünüz, arama esnasında bir sorun oluştu.</string>
+    <string name="msg_sbc_no_page_returned">Dönen sayfa yok</string>
+    <string name="msg_sbc_page">Sayfa</string>
+    <string name="msg_sbc_results">Sonuçlar</string>
+    <string name="msg_sbc_searching_book">Kitap aranıyor\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Parçacık yok</string>
+    <string name="msg_sbc_unknown_page">Bilinmeyen sayfa</string>
+    <string name="msg_share_explanation">Ekranınızda görüntülediğiniz barkodu başka bir telefonla tarayarak veri paylaşabilirsiniz.</string>
+    <string name="msg_share_subject_line">Taranan barkodun içeriği</string>
+    <string name="msg_share_text">Veya yazın bazı metin</string>
+    <string name="msg_sure">Emin misin?</string>
+    <string name="msg_unmount_usb">Lütfen USB depolamayı devre dışı bırakın.</string>
     <string name="no_data_backup">There is no data to save in the backup</string>
     <string name="ok">Yes</string>
     <string msgid="1303870564366209730" name="place_autocomplete_clear_button">"Aramayı temizle"</string>
@@ -198,12 +308,56 @@
     <string name="pref_title_restaurar_copia">Restore backup</string>
     <string name="pref_title_share_name">Mostrar mi nombre en la fichas compartidas</string>
     <string name="pref_title_version">Version %1$s</string>
+    <string name="preferences_actions_title">Bir barkod bulunduğu zaman\u2026</string>
+    <string name="preferences_auto_focus_title">Otomatik odaklama kullanın</string>
+    <string name="preferences_bulk_mode_summary">Birden fazla barkodu toplu olarak taramak ve kaydetmek için</string>
+    <string name="preferences_bulk_mode_title">Toplu tarama modu</string>
+    <string name="preferences_copy_to_clipboard_title">Panoya kopyala</string>
+    <string formatted="false" name="preferences_custom_product_search_summary">Yerine Koyma: %s = içeriği, %f = biçim, %t = tip</string>
+    <string name="preferences_custom_product_search_title">Özel arama adresi</string>
+    <string name="preferences_decode_1D_title">1D barkodları</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_QR_title">QR barkodları</string>
+    <string name="preferences_device_bug_workarounds_title">Cihaz Hata Geçici Çözümler</string>
+    <string name="preferences_disable_continuous_focus_summary">Sadece standart odaklama modunu kullanın</string>
+    <string name="preferences_disable_continuous_focus_title">Hayır sürekli odak</string>
+    <string name="preferences_disable_exposure_title">Maruziyet</string>
+    <string name="preferences_front_light_summary">Bazı telefonlarda düşük ışıkta taramayı iyileştirir, ancak parlamaya neden olabilir. Tüm telefonlarda sonuç vermez.</string>
+    <string name="preferences_front_light_title">Ön ışığı kullan</string>
+    <string name="preferences_general_title">Genel ayarlar</string>
+    <string name="preferences_name">Ayarlar</string>
+    <string name="preferences_play_beep_title">Bip</string>
+    <string name="preferences_remember_duplicates_summary">Aynı barkoda ait farklı taramaları kayıtlarda depola</string>
+    <string name="preferences_remember_duplicates_title">Aynı barkodları hatırla</string>
+    <string name="preferences_result_title">Sonuç ayarları</string>
+    <string name="preferences_scanning_title">Barkodlar taraması \u2026</string>
+    <string name="preferences_search_country">Arama Ülke</string>
+    <string name="preferences_supplemental_summary">Barkod içeriği hakkında daha fazla bilgi almayı dene</string>
+    <string name="preferences_supplemental_title">Daha fazla bilgi </string>
+    <string name="preferences_try_bsplus">Barkod Tarayıcısı+ deneyin</string>
+    <string name="preferences_try_bsplus_summary">Yeni özellikler ve arayüz ile gelişmiş</string>
+    <string name="preferences_vibrate_title">Titreşim </string>
     <string name="registro_contrasenas_no_coinciden">Passwords do not match</string>
     <string name="registro_correcto">It has been recorded properly. You will receive an email to activate your account.</string>
     <string name="registro_email_usado">The email indicated already has a registered user</string>
     <string name="registro_mensaje">By registering, you will receive an email to activate your account.</string>
+    <string name="result_address_book">Bulunan kişi bilgisi</string>
+    <string name="result_calendar">Bulunan takvim etkinliği</string>
+    <string name="result_email_address">Bulunan Email adresi</string>
+    <string name="result_geo">Bulunan coğrafi koordinatlar</string>
+    <string name="result_isbn">Bulunan kitap</string>
+    <string name="result_product">Bulunan ürün</string>
+    <string name="result_sms">Bulunan SMS adresi</string>
+    <string name="result_tel">Bulunan telefon numarası</string>
+    <string name="result_text">Bulunan düz metin</string>
+    <string name="result_uri">Bulunan URL</string>
+    <string name="result_wifi">Bulunan Wi-Fi konfigürasyonu</string>
+    <string name="sbc_name">Google Kitap Arama</string>
+    <string name="share_name">Barkod ile paylaş</string>
     <string name="sin_resultados_busqueda">There are no results for this search</string>
     <string msgid="2869576371154716097" name="status_bar_notification_info_overflow">"999+"</string>
+    <string msgid="9018493135943017231" name="store_picture_message">"Reklamın, Resim galerisine resim kaydetmesine izin verilsin mi?"</string>
+    <string msgid="3745622764880844111" name="store_picture_title">"Görseli kaydet"</string>
     <string name="texto_boton_buscar_online">Online search</string>
     <string name="texto_inicio_sesion">Enter your username and password.</string>
     <string name="texto_inicio_sesion_registro">If you have not yet registered, click on the button \ "Register \" to create your account to share your stack of games and make backup copies of your data in the sevidor.</string>
@@ -243,5 +397,9 @@
     <string name="url_registro_usuario">http://www.mijuegoteca.com/administracion/registro</string>
     <string name="url_subir_copia">http://www.mijuegoteca.com/administracion/subirCopiaSeguridad</string>
     <string name="url_subir_imagen">http://www.mijuegoteca.com/administracion/juego/subirImagen</string>
+    <string msgid="363496807345461806" name="wallet_buy_button_place_holder">"Google ile satın al"</string>
+    <string name="wifi_changing_network">Ağa bir bağlantı isteğinde\u2026</string>
+    <string name="wifi_ssid_label">Ağ adı</string>
+    <string name="wifi_type_label">Tip</string>
     <string name="zip">Creating file…</string>
 </resources>

@@ -10,7 +10,6 @@
 -keep class com.juegoteca.actividades.EditarJuego { <init>(); }
 -keep class com.juegoteca.actividades.Buscador { <init>(); }
 -keep class com.juegoteca.actividades.Estadisitcas { <init>(); }
--keep class com.google.zxing.client.android.CaptureActivity { <init>(); }
 -keep class com.juegoteca.actividades.Splash { <init>(); }
 -keep class com.juegoteca.actividades.Opciones { <init>(); }
 -keep class com.juegoteca.actividades.IniciarSesion { <init>(); }
@@ -24,15 +23,27 @@
 -keep class com.google.android.gms.ads.AdActivity { <init>(); }
 -keep class com.mijuegoteca.Anuncio { <init>(); }
 -keep class com.juegoteca.actividades.DuplicarJuego { <init>(); }
+-keep class com.google.zxing.client.android.CaptureActivity { <init>(); }
+-keep class com.google.zxing.client.android.PreferencesActivity { <init>(); }
+-keep class com.google.zxing.client.android.encode.EncodeActivity { <init>(); }
+-keep class com.google.zxing.client.android.book.SearchBookContentsActivity { <init>(); }
+-keep class com.google.zxing.client.android.share.ShareActivity { <init>(); }
+-keep class com.google.zxing.client.android.history.HistoryActivity { <init>(); }
+-keep class com.google.zxing.client.android.share.BookmarkPickerActivity { <init>(); }
+-keep class com.google.zxing.client.android.share.AppPickerActivity { <init>(); }
+-keep class com.google.zxing.client.android.HelpActivity { <init>(); }
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
--keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 -keep class com.google.android.gms.appinvite.PreviewActivity { <init>(); }
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(); }
 -keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(); }
+-keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver { <init>(); }
+-keep class com.google.android.gms.cast.framework.media.MediaNotificationService { <init>(); }
+-keep class com.google.android.gms.cast.framework.ReconnectionService { <init>(); }
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
 -keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(); }
 -keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 -keep class com.google.firebase.crash.internal.service.FirebaseCrashReceiverService { <init>(); }
 -keep class com.google.firebase.crash.internal.service.FirebaseCrashSenderService { <init>(); }
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
@@ -40,13 +51,3 @@
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
 -keep class com.google.android.gms.tagmanager.TagManagerService { <init>(); }
 -keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity { <init>(); }
--keep public class * extends android.app.backup.BackupAgent {
-    <init>();
-}
--keep public class * extends java.lang.annotation.Annotation {
-    *;
-}
--keep class com.android.tools.fd.** {
-    *;
-}
--dontnote com.android.tools.fd.**,android.support.multidex.MultiDexExtractor

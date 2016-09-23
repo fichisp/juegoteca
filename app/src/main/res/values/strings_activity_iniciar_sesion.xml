@@ -4,7 +4,7 @@
     <string name="title_activity_iniciar_sesion_cerrar">Cerrar sesión</string>
 
     <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
+    <string name="prompt_email" translatable="false">Email</string>
     <string name="prompt_password">Contraseña</string>
     <string name="action_sign_in_register"><b>Iniciar sesión</b> o registrarse</string>
     <string name="action_sign_in_short">Iniciar sesión</string>
