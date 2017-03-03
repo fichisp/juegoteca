@@ -1,0 +1,4 @@
+#Fri Mar 03 20:34:53 CET 2017
+base.0=/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/transforms/dex/release/folders/1000/1f/main
+renamed.0=classes.dex
+file.0=/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/transforms/dex/release/folders/1000/1f/main/classes.dex

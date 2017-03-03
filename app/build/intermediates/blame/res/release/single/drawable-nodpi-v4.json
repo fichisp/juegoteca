@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-nodpi-v4/cast_album_art_placeholder_large.png",
+        "source": "/home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/res/drawable-nodpi-v4/cast_album_art_placeholder_large.png"
+    },
+    {
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-nodpi-v4/cast_album_art_placeholder.png",
+        "source": "/home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/res/drawable-nodpi-v4/cast_album_art_placeholder.png"
+    },
+    {
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/drawable-nodpi-v4/cast_mini_controller_img_placeholder.png",
+        "source": "/home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/res/drawable-nodpi-v4/cast_mini_controller_img_placeholder.png"
+    }
+]
