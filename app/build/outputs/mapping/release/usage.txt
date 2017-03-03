@@ -96,6 +96,7 @@ android.support.graphics.drawable.PathParser:
     151:157:public static void updateNodes(android.support.graphics.drawable.PathParser$PathDataNode[],android.support.graphics.drawable.PathParser$PathDataNode[])
 android.support.graphics.drawable.PathParser$PathDataNode:
     333:337:public void interpolatePathDataNode(android.support.graphics.drawable.PathParser$PathDataNode,android.support.graphics.drawable.PathParser$PathDataNode,float)
+android.support.graphics.drawable.R
 android.support.graphics.drawable.TypedArrayUtils:
     private static final java.lang.String NAMESPACE
     20:20:TypedArrayUtils()
@@ -161,6 +162,7 @@ android.support.graphics.drawable.VectorDrawableCompat$VPath:
 android.support.graphics.drawable.VectorDrawableCompat$VectorDrawableCompatState:
     int[] mCachedThemeAttrs
 android.support.graphics.drawable.animated.BuildConfig
+android.support.graphics.drawable.animated.R
 android.support.multidex.BuildConfig
 android.support.multidex.MultiDex:
     static final java.lang.String TAG
@@ -190,12 +192,14 @@ android.support.multidex.MultiDexExtractor:
     private static final int BUFFER_SIZE
     private static final long NO_VALUE
     46:46:MultiDexExtractor()
+android.support.multidex.R
 android.support.multidex.ZipUtil:
     private static final int ENDHDR
     private static final int ENDSIG
     private static final int BUFFER_SIZE
     32:33:ZipUtil()
 android.support.v4.BuildConfig
+android.support.v4.R
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoIcsImpl
 android.support.v4.accessibilityservice.AccessibilityServiceInfoCompat$AccessibilityServiceInfoJellyBeanMr2
@@ -5677,6 +5681,7 @@ com.google.android.gms.ads.InterstitialAd:
 com.google.android.gms.ads.MobileAds
 com.google.android.gms.ads.MobileAds$Settings
 com.google.android.gms.ads.NativeExpressAdView
+com.google.android.gms.ads.R
 com.google.android.gms.ads.VideoController:
     public com.google.android.gms.ads.VideoController$VideoLifecycleCallbacks getVideoLifecycleCallbacks()
     public boolean hasVideoContent()
@@ -5756,6 +5761,7 @@ com.google.android.gms.ads.formats.NativeContentAdView
 com.google.android.gms.ads.formats.NativeCustomTemplateAd
 com.google.android.gms.ads.formats.NativeCustomTemplateAd$OnCustomClickListener
 com.google.android.gms.ads.formats.NativeCustomTemplateAd$OnCustomTemplateAdLoadedListener
+com.google.android.gms.ads.impl.R
 com.google.android.gms.ads.internal.client.zzad:
     public com.google.android.gms.ads.mediation.NetworkExtras getNetworkExtras(java.lang.Class)
     public android.os.Bundle getCustomEventExtrasBundle(java.lang.Class)
@@ -5978,6 +5984,7 @@ com.google.android.gms.analytics.Logger:
     public abstract void info(java.lang.String)
     public abstract void error(java.lang.Exception)
 com.google.android.gms.analytics.Logger$LogLevel
+com.google.android.gms.analytics.R
 com.google.android.gms.analytics.StandardExceptionParser
 com.google.android.gms.analytics.Tracker:
     private com.google.android.gms.analytics.ExceptionReporter zzcua
@@ -6128,6 +6135,7 @@ com.google.android.gms.appindexing.AppIndex
 com.google.android.gms.appindexing.AppIndexApi
 com.google.android.gms.appindexing.AppIndexApi$ActionResult
 com.google.android.gms.appindexing.AppIndexApi$AppIndexingLink
+com.google.android.gms.appindexing.R
 com.google.android.gms.appindexing.Thing
 com.google.android.gms.appindexing.Thing$Builder
 com.google.android.gms.appinvite.AppInvite
@@ -6154,6 +6162,7 @@ com.google.android.gms.appinvite.PreviewActivity:
     public static final java.lang.String KEY_TEXT_VIEW_TEXT_COLOR
     public static final java.lang.String KEY_WEB_VIEW_DATA
     public static final java.lang.String ON_CLICK_LISTENER_CLOSE
+com.google.android.gms.appinvite.R
 com.google.android.gms.auth.AccountChangeEvent:
     public AccountChangeEvent(long,java.lang.String,int,int,java.lang.String)
     public java.lang.String getAccountName()
@@ -6173,6 +6182,7 @@ com.google.android.gms.auth.AccountChangeEventsResponse:
 com.google.android.gms.auth.GoogleAuthException
 com.google.android.gms.auth.GoogleAuthUtil
 com.google.android.gms.auth.GooglePlayServicesAvailabilityException
+com.google.android.gms.auth.R
 com.google.android.gms.auth.TokenData:
     public static com.google.android.gms.auth.TokenData zzd(android.os.Bundle,java.lang.String)
 com.google.android.gms.auth.UserRecoverableAuthException
@@ -6192,6 +6202,7 @@ com.google.android.gms.auth.api.Auth:
 com.google.android.gms.auth.api.Auth$AuthCredentialsOptions:
     public com.google.android.gms.auth.api.credentials.PasswordSpecification zzafb()
 com.google.android.gms.auth.api.Auth$AuthCredentialsOptions$Builder
+com.google.android.gms.auth.api.R
 com.google.android.gms.auth.api.credentials.Credential:
     public static final java.lang.String EXTRA_KEY
     static synthetic java.lang.String zza(com.google.android.gms.auth.api.credentials.Credential)
@@ -6397,6 +6408,7 @@ com.google.android.gms.awareness.state.HeadphoneState$State
 com.google.android.gms.awareness.state.Weather
 com.google.android.gms.awareness.state.Weather$TemperatureUnit
 com.google.android.gms.awareness.state.Weather$WeatherCondition
+com.google.android.gms.base.R
 com.google.android.gms.cast.ApplicationMetadata:
     public boolean isNamespaceSupported(java.lang.String)
     public boolean areNamespacesSupported(java.util.List)
@@ -6640,6 +6652,7 @@ com.google.android.gms.cast.MediaTrack:
     public org.json.JSONObject getCustomData()
     void setCustomData(org.json.JSONObject)
 com.google.android.gms.cast.MediaTrack$Builder
+com.google.android.gms.cast.R
 com.google.android.gms.cast.RemoteMediaPlayer
 com.google.android.gms.cast.RemoteMediaPlayer$1
 com.google.android.gms.cast.RemoteMediaPlayer$10
@@ -6751,6 +6764,7 @@ com.google.android.gms.cast.framework.IntroductoryOverlay
 com.google.android.gms.cast.framework.IntroductoryOverlay$Builder
 com.google.android.gms.cast.framework.IntroductoryOverlay$OnOverlayDismissedListener
 com.google.android.gms.cast.framework.IntroductoryOverlay$zza
+com.google.android.gms.cast.framework.R
 com.google.android.gms.cast.framework.Session:
     public final java.lang.String getCategory()
     public final java.lang.String getSessionId()
@@ -6932,6 +6946,7 @@ com.google.android.gms.cast.internal.zzn:
     public long zza(com.google.android.gms.cast.internal.zzp,com.google.android.gms.cast.MediaQueueItem[],int,int,int,long,org.json.JSONObject)
     public long zza(com.google.android.gms.cast.internal.zzp,int[],org.json.JSONObject)
     public long zza(com.google.android.gms.cast.internal.zzp,int[],int,org.json.JSONObject)
+com.google.android.gms.clearcut.R
 com.google.android.gms.common.AccountPicker
 com.google.android.gms.common.ConnectionResult:
     public static final int SUCCESS
@@ -7309,6 +7324,7 @@ com.google.android.gms.config.internal.zzg$zza$zza
 com.google.android.gms.config.internal.zzh
 com.google.android.gms.config.internal.zzh$zza
 com.google.android.gms.config.internal.zzh$zza$zza
+com.google.android.gms.contextmanager.R
 com.google.android.gms.contextmanager.fence.internal.ContextFenceRegistrationStub:
     public static com.google.android.gms.contextmanager.fence.internal.ContextFenceRegistrationStub zza(java.lang.String,com.google.android.gms.contextmanager.fence.internal.ContextFenceStub)
     public ContextFenceRegistrationStub(java.lang.String,com.google.android.gms.contextmanager.fence.internal.ContextFenceStub)
@@ -7444,6 +7460,7 @@ com.google.android.gms.drive.MetadataBuffer$zza
 com.google.android.gms.drive.MetadataChangeSet
 com.google.android.gms.drive.MetadataChangeSet$Builder
 com.google.android.gms.drive.OpenFileActivityBuilder
+com.google.android.gms.drive.R
 com.google.android.gms.drive.UserMetadata:
     public UserMetadata(java.lang.String,java.lang.String,java.lang.String,boolean,java.lang.String)
 com.google.android.gms.drive.events.ChangeEvent:
@@ -7877,6 +7894,7 @@ com.google.android.gms.fitness.FitnessActivities
 com.google.android.gms.fitness.FitnessStatusCodes
 com.google.android.gms.fitness.HistoryApi
 com.google.android.gms.fitness.HistoryApi$ViewIntentBuilder
+com.google.android.gms.fitness.R
 com.google.android.gms.fitness.RecordingApi
 com.google.android.gms.fitness.SensorsApi
 com.google.android.gms.fitness.SessionsApi
@@ -8297,6 +8315,7 @@ com.google.android.gms.games.Players$LoadXpForGameCategoriesResult
 com.google.android.gms.games.Players$LoadXpForGamesResult
 com.google.android.gms.games.Players$LoadXpStreamResult
 com.google.android.gms.games.Players$UpdateGamerProfileResult
+com.google.android.gms.games.R
 com.google.android.gms.games.achievement.Achievement:
     public static final int STATE_UNLOCKED
     public static final int STATE_REVEALED
@@ -9273,6 +9292,7 @@ com.google.android.gms.gcm.PeriodicTask:
     public void toBundle(android.os.Bundle)
     synthetic PeriodicTask(com.google.android.gms.gcm.PeriodicTask$Builder,com.google.android.gms.gcm.PeriodicTask$1)
 com.google.android.gms.gcm.PeriodicTask$Builder
+com.google.android.gms.gcm.R
 com.google.android.gms.gcm.Task:
     public static final int NETWORK_STATE_CONNECTED
     public static final int NETWORK_STATE_UNMETERED
@@ -9303,6 +9323,7 @@ com.google.android.gms.gcm.zzc:
     public int zzbmh()
     public int zzbmi()
     public android.os.Bundle zzai(android.os.Bundle)
+com.google.android.gms.identity.R
 com.google.android.gms.identity.intents.Address
 com.google.android.gms.identity.intents.Address$1
 com.google.android.gms.identity.intents.Address$2
@@ -9341,6 +9362,7 @@ com.google.android.gms.iid.InstanceID
 com.google.android.gms.iid.InstanceIDListenerService
 com.google.android.gms.iid.InstanceIDListenerService$1
 com.google.android.gms.iid.InstanceIDListenerService$2
+com.google.android.gms.iid.R
 com.google.android.gms.iid.zza
 com.google.android.gms.iid.zzc
 com.google.android.gms.iid.zzc$1
@@ -10532,6 +10554,7 @@ com.google.android.gms.location.LocationSettingsStates:
     public static com.google.android.gms.location.LocationSettingsStates fromIntent(android.content.Intent)
 com.google.android.gms.location.LocationSettingsStatusCodes
 com.google.android.gms.location.LocationStatusCodes
+com.google.android.gms.location.R
 com.google.android.gms.location.SettingsApi
 com.google.android.gms.location.internal.LocationRequestInternal:
     public static com.google.android.gms.location.internal.LocationRequestInternal zzb(com.google.android.gms.location.LocationRequest)
@@ -10984,6 +11007,7 @@ com.google.android.gms.maps.MapsInitializer
 com.google.android.gms.maps.OnMapReadyCallback
 com.google.android.gms.maps.OnStreetViewPanoramaReadyCallback
 com.google.android.gms.maps.Projection
+com.google.android.gms.maps.R
 com.google.android.gms.maps.StreetViewPanorama
 com.google.android.gms.maps.StreetViewPanorama$1
 com.google.android.gms.maps.StreetViewPanorama$2
@@ -11300,6 +11324,8 @@ com.google.android.gms.measurement.AppMeasurement:
     public void setMinimumSessionDuration(long)
     public void setSessionTimeoutDuration(long)
 com.google.android.gms.measurement.AppMeasurementContentProvider
+com.google.android.gms.measurement.R
+com.google.android.gms.measurement.impl.R
 com.google.android.gms.measurement.internal.zzac:
     public void setMeasurementEnabled(boolean)
     public void setMinimumSessionDuration(long)
@@ -11313,6 +11339,7 @@ com.google.android.gms.measurement.internal.zzal:
     public int zzml(java.lang.String)
     public int zzmn(java.lang.String)
 com.google.android.gms.nearby.Nearby
+com.google.android.gms.nearby.R
 com.google.android.gms.nearby.bootstrap.zza
 com.google.android.gms.nearby.connection.AppIdentifier:
     public AppIdentifier(java.lang.String)
@@ -11471,6 +11498,7 @@ com.google.android.gms.panorama.Panorama
 com.google.android.gms.panorama.Panorama$1
 com.google.android.gms.panorama.PanoramaApi
 com.google.android.gms.panorama.PanoramaApi$PanoramaResult
+com.google.android.gms.panorama.R
 com.google.android.gms.play_services.R
 com.google.android.gms.plus.Account
 com.google.android.gms.plus.People
@@ -11492,6 +11520,7 @@ com.google.android.gms.plus.PlusOneDummyView$zzc
 com.google.android.gms.plus.PlusOneDummyView$zzd
 com.google.android.gms.plus.PlusShare
 com.google.android.gms.plus.PlusShare$Builder
+com.google.android.gms.plus.R
 com.google.android.gms.plus.internal.PlusCommonExtras:
     public void zzan(android.os.Bundle)
 com.google.android.gms.plus.internal.PlusSession:
@@ -11776,6 +11805,7 @@ com.google.android.gms.plus.model.people.Person$Urls$Type
 com.google.android.gms.plus.model.people.PersonBuffer
 com.google.android.gms.plus.zza
 com.google.android.gms.plus.zzb
+com.google.android.gms.safetynet.R
 com.google.android.gms.safetynet.SafeBrowsingData:
     public SafeBrowsingData(java.lang.String)
 com.google.android.gms.safetynet.SafeBrowsingThreatTypes
@@ -11813,12 +11843,14 @@ com.google.android.gms.tagmanager.InstallReferrerReceiver
 com.google.android.gms.tagmanager.InstallReferrerService
 com.google.android.gms.tagmanager.PreviewActivity
 com.google.android.gms.tagmanager.PreviewActivity$1
+com.google.android.gms.tagmanager.R
 com.google.android.gms.tagmanager.TagManager
 com.google.android.gms.tagmanager.TagManager$1
 com.google.android.gms.tagmanager.TagManager$2
 com.google.android.gms.tagmanager.TagManager$3
 com.google.android.gms.tagmanager.TagManager$4
 com.google.android.gms.tagmanager.TagManager$zza
+com.google.android.gms.tagmanager.impl.R
 com.google.android.gms.tagmanager.zza
 com.google.android.gms.tagmanager.zza$1
 com.google.android.gms.tagmanager.zza$2
@@ -11992,6 +12024,7 @@ com.google.android.gms.tasks.Continuation
 com.google.android.gms.tasks.OnCompleteListener
 com.google.android.gms.tasks.OnFailureListener
 com.google.android.gms.tasks.OnSuccessListener
+com.google.android.gms.tasks.R
 com.google.android.gms.tasks.RuntimeExecutionException
 com.google.android.gms.tasks.Task
 com.google.android.gms.tasks.TaskCompletionSource
@@ -12043,6 +12076,7 @@ com.google.android.gms.vision.MultiProcessor$1
 com.google.android.gms.vision.MultiProcessor$Builder
 com.google.android.gms.vision.MultiProcessor$Factory
 com.google.android.gms.vision.MultiProcessor$zza
+com.google.android.gms.vision.R
 com.google.android.gms.vision.Tracker
 com.google.android.gms.vision.barcode.Barcode:
     public static final int ALL_FORMATS
@@ -12250,6 +12284,7 @@ com.google.android.gms.wallet.ProxyCard:
     public java.lang.String getCvn()
     public int getExpirationMonth()
     public int getExpirationYear()
+com.google.android.gms.wallet.R
 com.google.android.gms.wallet.Wallet
 com.google.android.gms.wallet.Wallet$1
 com.google.android.gms.wallet.Wallet$WalletOptions
@@ -12410,6 +12445,7 @@ com.google.android.gms.wearable.PutDataRequest:
     public com.google.android.gms.wearable.PutDataRequest removeAsset(java.lang.String)
     public boolean isUrgent()
     public com.google.android.gms.wearable.PutDataRequest setUrgent()
+com.google.android.gms.wearable.R
 com.google.android.gms.wearable.Wearable
 com.google.android.gms.wearable.Wearable$1
 com.google.android.gms.wearable.Wearable$WearableOptions
@@ -12610,6 +12646,7 @@ com.google.firebase.FirebaseOptions:
 com.google.firebase.FirebaseOptions$1
 com.google.firebase.FirebaseOptions$Builder
 com.google.firebase.FirebaseTooManyRequestsException
+com.google.firebase.R
 com.google.firebase.analytics.FirebaseAnalytics:
     public static com.google.firebase.analytics.FirebaseAnalytics getInstance(android.content.Context)
     public void logEvent(java.lang.String,android.os.Bundle)
@@ -12690,6 +12727,7 @@ com.google.firebase.auth.TwitterAuthProvider
 com.google.firebase.auth.UserProfileChangeRequest:
     public android.net.Uri getPhotoUri()
 com.google.firebase.auth.UserProfileChangeRequest$Builder
+com.google.firebase.auth.api.R
 com.google.firebase.auth.api.model.CreateAuthUriResponse:
     public java.util.List getAllProviders()
 com.google.firebase.auth.api.model.GetAccountInfoUser:
@@ -12702,6 +12740,8 @@ com.google.firebase.auth.api.model.ProviderUserInfo:
     public android.net.Uri getPhotoUri()
 com.google.firebase.auth.api.model.VerifyAssertionRequest:
     public VerifyAssertionRequest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+com.google.firebase.auth.common.R
+com.google.firebase.auth.module.R
 com.google.firebase.crash.FirebaseCrash:
     public static com.google.firebase.crash.FirebaseCrash zzcmd()
     public static void log(java.lang.String)
@@ -12711,6 +12751,7 @@ com.google.firebase.crash.FirebaseCrash:
     public void zzqo(java.lang.String)
     public void zzf(java.lang.Throwable)
     public static boolean isSingletonInitialized()
+com.google.firebase.crash.R
 com.google.firebase.database.ChildEventListener
 com.google.firebase.database.DataSnapshot
 com.google.firebase.database.DataSnapshot$1
@@ -12745,6 +12786,7 @@ com.google.firebase.database.Query$1
 com.google.firebase.database.Query$2
 com.google.firebase.database.Query$3
 com.google.firebase.database.Query$4
+com.google.firebase.database.R
 com.google.firebase.database.ServerValue
 com.google.firebase.database.ThrowOnExtraProperties
 com.google.firebase.database.Transaction
@@ -12752,6 +12794,7 @@ com.google.firebase.database.Transaction$1
 com.google.firebase.database.Transaction$Handler
 com.google.firebase.database.Transaction$Result
 com.google.firebase.database.ValueEventListener
+com.google.firebase.database.connection.R
 com.google.firebase.database.connection.idl.CompoundHashParcelable:
     public static com.google.firebase.database.connection.idl.CompoundHashParcelable zza(com.google.android.gms.internal.zzags)
 com.google.firebase.database.connection.idl.ConnectionConfig:
@@ -12772,6 +12815,7 @@ com.google.firebase.iid.FirebaseInstanceId:
     public void deleteInstanceId()
     public void deleteToken(java.lang.String,java.lang.String)
     public void zzsf(java.lang.String)
+com.google.firebase.iid.R
 com.google.firebase.iid.zzc:
     public java.lang.String getToken()
 com.google.firebase.iid.zzd:
@@ -12779,6 +12823,7 @@ com.google.firebase.iid.zzd:
 com.google.firebase.iid.zze:
     void zzsf(java.lang.String)
 com.google.firebase.messaging.FirebaseMessaging
+com.google.firebase.messaging.R
 com.google.firebase.messaging.RemoteMessage:
     private java.util.Map zzctg
     private com.google.firebase.messaging.RemoteMessage$Notification bbb
@@ -12813,6 +12858,7 @@ com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings
 com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings$1
 com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings$Builder
 com.google.firebase.remoteconfig.FirebaseRemoteConfigValue
+com.google.firebase.remoteconfig.R
 com.google.firebase.storage.CancellableTask
 com.google.firebase.storage.ControllableTask
 com.google.firebase.storage.FileDownloadTask
@@ -12820,6 +12866,7 @@ com.google.firebase.storage.FileDownloadTask$TaskSnapshot
 com.google.firebase.storage.FirebaseStorage
 com.google.firebase.storage.OnPausedListener
 com.google.firebase.storage.OnProgressListener
+com.google.firebase.storage.R
 com.google.firebase.storage.StorageException
 com.google.firebase.storage.StorageException$ErrorCode
 com.google.firebase.storage.StorageMetadata

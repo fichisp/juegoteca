@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
+        "outputFile": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 163
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-ldltr-v21/values-ldltr-v21.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,

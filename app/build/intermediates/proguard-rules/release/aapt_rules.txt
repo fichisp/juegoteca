@@ -62,64 +62,64 @@
 # view AndroidManifest.xml #generated:236
 -keep class com.google.android.gms.ads.AdActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:414
+# view AndroidManifest.xml #generated:513
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:421
+# view AndroidManifest.xml #generated:414
 -keep class com.google.android.gms.appinvite.PreviewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:440
+# view AndroidManifest.xml #generated:525
 -keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(...); }
 
-# view AndroidManifest.xml #generated:431
+# view AndroidManifest.xml #generated:516
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:448
+# view AndroidManifest.xml #generated:428
 -keep class com.google.android.gms.cast.framework.ReconnectionService { <init>(...); }
 
 # view res/layout/cast_help_text.xml #generated:2
 -keep class com.google.android.gms.cast.framework.internal.featurehighlight.HelpTextView { <init>(...); }
 
-# view AndroidManifest.xml #generated:445
+# view AndroidManifest.xml #generated:425
 -keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:447
+# view AndroidManifest.xml #generated:427
 -keep class com.google.android.gms.cast.framework.media.MediaNotificationService { <init>(...); }
 
-# view AndroidManifest.xml #generated:417
+# view AndroidManifest.xml #generated:530
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:493
+# view AndroidManifest.xml #generated:464
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:501
+# view AndroidManifest.xml #generated:472
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(...); }
 
-# view AndroidManifest.xml #generated:521
+# view AndroidManifest.xml #generated:451
 -keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:516
+# view AndroidManifest.xml #generated:446
 -keep class com.google.android.gms.tagmanager.TagManagerService { <init>(...); }
 
-# view AndroidManifest.xml #generated:486
+# view AndroidManifest.xml #generated:429
 -keep class com.google.firebase.crash.internal.service.FirebaseCrashReceiverService { <init>(...); }
 
-# view AndroidManifest.xml #generated:489
+# view AndroidManifest.xml #generated:432
 -keep class com.google.firebase.crash.internal.service.FirebaseCrashSenderService { <init>(...); }
 
-# view AndroidManifest.xml #generated:465
+# view AndroidManifest.xml #generated:492
 -keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:450
+# view AndroidManifest.xml #generated:477
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:472
+# view AndroidManifest.xml #generated:499
 -keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(...); }
 
-# view AndroidManifest.xml #generated:509
+# view AndroidManifest.xml #generated:439
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(...); }
 
-# view AndroidManifest.xml #generated:480
+# view AndroidManifest.xml #generated:507
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(...); }
 
 # view AndroidManifest.xml #generated:252
@@ -208,7 +208,7 @@
 -keep class com.juegoteca.actividades.Splash { <init>(...); }
 
 # view res/layout/activity_inicio.xml #generated:30
-# view res/layout/activity_inicio.xml #generated:58
+# view res/layout/activity_inicio.xml #generated:65
 -keep class com.juegoteca.ui.HorizontalListView { <init>(...); }
 
 # view AndroidManifest.xml #generated:240
@@ -253,25 +253,25 @@
 # onClick res/layout/activity_detalle_juego.xml #generated:96
 -keepclassmembers class * { *** detallePlataforma(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:94
+# onClick res/layout/activity_inicio.xml #generated:101
 -keepclassmembers class * { *** estadisticas(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:103
+# onClick res/layout/activity_inicio.xml #generated:110
 -keepclassmembers class * { *** favoritos(...); }
 
 # onClick res/layout/activity_registro.xml #generated:128
 -keepclassmembers class * { *** iniciarRegistro(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:85
+# onClick res/layout/activity_inicio.xml #generated:92
 -keepclassmembers class * { *** listarJuegos(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:76
+# onClick res/layout/activity_inicio.xml #generated:83
 -keepclassmembers class * { *** nuevoJuego(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:121
+# onClick res/layout/activity_inicio.xml #generated:128
 -keepclassmembers class * { *** opciones(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:112
+# onClick res/layout/activity_inicio.xml #generated:119
 -keepclassmembers class * { *** pendientes(...); }
 
 # onClick res/layout/activity_iniciar_sesion.xml #generated:92

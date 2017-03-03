@@ -6342,6 +6342,7 @@ com.mijuegoteca.R$drawable: int pl_psv
 com.mijuegoteca.R$drawable: int pl_sat
 com.mijuegoteca.R$drawable: int pl_sgr
 com.mijuegoteca.R$drawable: int pl_snes
+com.mijuegoteca.R$drawable: int pl_switch
 com.mijuegoteca.R$drawable: int pl_telstar
 com.mijuegoteca.R$drawable: int pl_tg16
 com.mijuegoteca.R$drawable: int pl_turboduo

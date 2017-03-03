@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/home/alvaro/workspaces/studio/mijuegoteca/captureActivity/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/home/alvaro/workspaces/studio/mijuegoteca/captureActivity/src/release/jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/src/main/jniLibs"/></dataSet><dataSet config="release"><source path="/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/src/release/jniLibs"/></dataSet></merger>

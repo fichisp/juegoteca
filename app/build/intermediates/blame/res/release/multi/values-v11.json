@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v11/values-v11.xml",
+        "outputFile": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,7 +12,7 @@
                     "endOffset": 187
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-v11/styles.xml",
+                    "file": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -33,7 +33,7 @@
                     "endOffset": 606
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -54,7 +54,7 @@
                     "endOffset": 1031
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -75,7 +75,7 @@
                     "endOffset": 1459
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 14,
                         "startColumn": 4,
@@ -96,7 +96,7 @@
                     "endOffset": 1885
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 20,
                         "startColumn": 4,
@@ -117,7 +117,7 @@
                     "endOffset": 2312
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 26,
                         "startColumn": 4,
@@ -138,7 +138,7 @@
                     "endOffset": 2737
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 32,
                         "startColumn": 4,
@@ -158,7 +158,7 @@
                     "endOffset": 2826
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 38,
                         "startColumn": 4,
@@ -177,7 +177,7 @@
                     "endOffset": 2927
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 39,
                         "startColumn": 4,
@@ -196,7 +196,7 @@
                     "endOffset": 3030
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 40,
                         "startColumn": 4,
@@ -216,7 +216,7 @@
                     "endOffset": 3438
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 41,
                         "startColumn": 4,
@@ -237,7 +237,7 @@
                     "endOffset": 3858
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 46,
                         "startColumn": 4,
@@ -258,7 +258,7 @@
                     "endOffset": 4280
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 51,
                         "startColumn": 4,
@@ -279,7 +279,7 @@
                     "endOffset": 4387
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 56,
                         "startColumn": 4,
@@ -300,7 +300,7 @@
                     "endOffset": 4516
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 58,
                         "startColumn": 4,
@@ -321,7 +321,7 @@
                     "endOffset": 4680
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-v11/styles.xml",
+                    "file": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 19,
                         "startColumn": 4,
@@ -342,7 +342,7 @@
                     "endOffset": 5118
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-v11/styles.xml",
+                    "file": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 4,
@@ -362,7 +362,7 @@
                     "endOffset": 5189
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 60,
                         "startColumn": 4,
@@ -381,7 +381,7 @@
                     "endOffset": 5272
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 61,
                         "startColumn": 4,
@@ -401,7 +401,7 @@
                     "endOffset": 8887
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 62,
                         "startColumn": 4,
@@ -422,7 +422,7 @@
                     "endOffset": 12642
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 111,
                         "startColumn": 4,
@@ -442,7 +442,7 @@
                     "endOffset": 12733
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/values-v11/values-v11.xml",
+                    "file": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/values-v11/values-v11.xml",
                     "position": {
                         "startLine": 161,
                         "startColumn": 4,
@@ -461,7 +461,7 @@
                     "endOffset": 12851
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/res/values-v11/values.xml",
+                    "file": "/home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/res/values-v11/values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,

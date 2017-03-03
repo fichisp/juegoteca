@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "outputFile": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,7 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/values-w820dp/dimens.xml",
+                    "file": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/values-w820dp/dimens.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,

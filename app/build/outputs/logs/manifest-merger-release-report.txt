@@ -1,809 +1,809 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:2:1-214:12
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:2:1-214:12
 	package
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:3:5-30
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:3:5-30
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
 	android:versionName
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:5:5-32
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:5:5-32
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
 	android:versionCode
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:4:5-29
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:4:5-29
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support:multidex:1.0.1] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.1/AndroidManifest.xml:18:5-42
-MERGED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:30:5-32:41
-MERGED from [com.google.android.gms:play-services:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/9.2.0/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-ads:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.2.0/AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:23:5-42
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:support-v4:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.android.gms:play-services-auth-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.2.0/AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-config:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-contextmanager/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-location:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-places:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:26:5-42
-MERGED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:22:5-42
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.2.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.2.0/AndroidManifest.xml:18:5-43
-MERGED from [com.google.firebase:firebase-auth-module:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.2.0/AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-database-connection:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.2.0/AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-database:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.2.0/AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.firebase:firebase-storage:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.2.0/AndroidManifest.xml:5:5-43
-MERGED from [com.google.firebase:firebase-storage-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.2.0/AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-games:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.2.0/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-tagmanager:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager/9.2.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.2.0/AndroidManifest.xml:4:5-42
-MERGED from [com.google.android.gms:play-services-wallet:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/9.2.0/AndroidManifest.xml:19:5-42
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.2.0/AndroidManifest.xml:18:5-42
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:multidex:1.0.1] /home/alvaro/.android/build-cache/c2de299b8d00a0e7dddc4ed215519980462f52d6/output/AndroidManifest.xml:18:5-42
+MERGED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:30:5-32:41
+MERGED from [com.google.android.gms:play-services:9.2.0] /home/alvaro/.android/build-cache/3ca8b2819efc83f2b3c169105d57cab250e44994/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/.android/build-cache/a33c1e5ca493090373b90cb5fc99cdd10281ea02/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-cast:9.2.0] /home/alvaro/.android/build-cache/3176bd05184bc55603e0588fcb9cb08140eb2878/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/alvaro/.android/build-cache/bba50f94c67d775b555ccc92ff630c9abf3d9808/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/alvaro/.android/build-cache/ca5215f065198195c0b086f828ece880d1183ba1/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/alvaro/.android/build-cache/7e2cf97e7b672f8fb2d43364638ae446c22bc6a1/output/AndroidManifest.xml:21:5-43
+MERGED from [com.google.firebase:firebase-config:9.2.0] /home/alvaro/.android/build-cache/d43599f05625fccf42fe8825935f519c7083bd34/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] /home/alvaro/.android/build-cache/bf023f6084fb15e664ec40aa2a232db2486c05a0/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:22:5-42
+MERGED from [com.google.firebase:firebase-auth:9.2.0] /home/alvaro/.android/build-cache/00dbe8e9253fb34118083849f6a25983f28f43c0/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-common:9.2.0] /home/alvaro/.android/build-cache/e7638a0c49f574a7ec7b1ba368810b7dd0416bd3/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-auth-module:9.2.0] /home/alvaro/.android/build-cache/b6f7bb3634e3216ef4be26acd4fdb0f89ee4d176/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-database:9.2.0] /home/alvaro/.android/build-cache/749af53969e0aedf136ceb25f859e410100050fe/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-database-connection:9.2.0] /home/alvaro/.android/build-cache/0ba467e68b0fb0b663c0981c509a15584a6aa486/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-storage:9.2.0] /home/alvaro/.android/build-cache/ebfed879ec64d0e47ce825352187a5ed4d0771b0/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.firebase:firebase-storage-common:9.2.0] /home/alvaro/.android/build-cache/b7fe46f75e7abe444e01d2682e0a6c9fcf91d123/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-fitness:9.2.0] /home/alvaro/.android/build-cache/0ed22c8657f6d418701231fc449fe739daf621b3/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-games:9.2.0] /home/alvaro/.android/build-cache/9d71c87d23338574a04e6219b5a2c143ad6b4006/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-drive:9.2.0] /home/alvaro/.android/build-cache/000d8a81e2655395eecce4baa6d3db26bca9dd9c/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] /home/alvaro/.android/build-cache/5dd154bc2fdd8c9affde9ab0270b13b9ce54d341/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-location:9.2.0] /home/alvaro/.android/build-cache/d7d59369bde92af9211c347ccf61ef6ae5ad389b/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-nearby:9.2.0] /home/alvaro/.android/build-cache/194cb48b4d9a7dbbdcf3e97b580f0d2ae1944ed0/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-panorama:9.2.0] /home/alvaro/.android/build-cache/993e732a711c7dad380d14109a35d76c54a58048/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-places:9.2.0] /home/alvaro/.android/build-cache/b0057bd99e84dd4f2bde34a19bcab8d6070cb6ab/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-plus:9.2.0] /home/alvaro/.android/build-cache/3587482a4113d07e6bbc95ac0f27943c33610d43/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] /home/alvaro/.android/build-cache/4f121c736932b2ec684655d3c85b5bcc9b7a2698/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager:9.2.0] /home/alvaro/.android/build-cache/2cdde581d3302e06bd81393c31c06c5d40826c3f/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/ca027a8863f2d81d444b0799811f5cd69bf7ccb1/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-vision:9.2.0] /home/alvaro/.android/build-cache/a7739e74082603c36373eea88410a8e3eb29b6c9/output/AndroidManifest.xml:4:5-42
+MERGED from [com.google.android.gms:play-services-wallet:9.2.0] /home/alvaro/.android/build-cache/215f489481064b0094e3d8b5adaa66b6ad69cf12/output/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-identity:9.2.0] /home/alvaro/.android/build-cache/a99dfd927b0205aee399de083a5404c31a8fc6a6/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:26:5-42
+MERGED from [com.google.android.gms:play-services-wearable:9.2.0] /home/alvaro/.android/build-cache/d93b97b8a6cd3265d3c2f7492730f6cdfaed9196/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-ads:9.2.0] /home/alvaro/.android/build-cache/32235a0898582c7330f4bf70a4a29e7a3c151096/output/AndroidManifest.xml:19:5-42
+MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:23:5-42
+MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] /home/alvaro/.android/build-cache/c50da2e5adffc45cb1dda26c27fcadf1c8f01028/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-gass:9.2.0] /home/alvaro/.android/build-cache/32668e1a7d40a56895b2378465a6c20beadd9b2a/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-auth-base:9.2.0] /home/alvaro/.android/build-cache/a90e47707ebdae79cb354fae176ae7d03eebe4f2/output/AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/.android/build-cache/6360f8ed2def65680275d1d092ea4c7da17f6abc/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/.android/build-cache/b9dc55bebe7b359ae130ef8244fa8883c328ae39/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/.android/build-cache/951f7ccbf2de14761c1ce0776ef218830f06ea2f/output/AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] /home/alvaro/.android/build-cache/24ad7d4826c926943b9cc92f77c0bc26dc9def5f/output/AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] /home/alvaro/.android/build-cache/0bf19fa5cb763c033ce10da151f5f4096fff1eda/output/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:support-v4:24.0.0] /home/alvaro/.android/build-cache/974db962275011b2e4b6caa7fcf525c3e451fc3c/output/AndroidManifest.xml:21:5-23:54
 	tools:overrideLibrary
-		ADDED from [com.android.support:support-v4:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:23:9-51
+		ADDED from [com.android.support:appcompat-v7:24.0.0] /home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:9:9-38
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:9:9-38
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:8:9-34
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
-		INJECTED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:8:9-34
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
+		INJECTED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.CAMERA
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:11:5-65
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:11:5-65
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:11:22-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:11:22-62
 uses-permission#android.permission.FLASHLIGHT
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:12:5-15:44
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:12:5-15:44
 	android:protectionLevel
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:15:9-41
 	android:permissionGroup
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:14:9-77
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:14:9-77
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:13:9-53
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:13:9-53
 uses-feature#android.hardware.camera.flash
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:17:5-90
-MERGED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:44:5-46:36
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:17:5-90
+MERGED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:44:5-46:36
 	android:required
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:17:64-88
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:17:64-88
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:17:19-63
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:17:19-63
 uses-permission#android.permission.INTERNET
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:20:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:19:5-67
-MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:21:5-66
-MERGED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:20:5-66
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:21:5-67
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.0/AndroidManifest.xml:22:5-67
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:21:5-67
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:20:5-67
+MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/.android/build-cache/a33c1e5ca493090373b90cb5fc99cdd10281ea02/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:19:5-67
+MERGED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/ca027a8863f2d81d444b0799811f5cd69bf7ccb1/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:21:5-67
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:21:5-66
+MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:20:5-66
+MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/.android/build-cache/6360f8ed2def65680275d1d092ea4c7da17f6abc/output/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/.android/build-cache/b9dc55bebe7b359ae130ef8244fa8883c328ae39/output/AndroidManifest.xml:22:5-67
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:20:22-64
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:20:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:21:5-79
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:21:5-78
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:20:5-79
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:20:5-78
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:22:5-79
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.2.0/AndroidManifest.xml:5:5-79
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:22:5-79
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:21:5-79
+MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/.android/build-cache/a33c1e5ca493090373b90cb5fc99cdd10281ea02/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-nearby:9.2.0] /home/alvaro/.android/build-cache/194cb48b4d9a7dbbdcf3e97b580f0d2ae1944ed0/output/AndroidManifest.xml:5:5-79
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/ca027a8863f2d81d444b0799811f5cd69bf7ccb1/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:20:5-79
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:20:5-78
+MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:21:5-78
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:21:22-76
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:21:22-76
 uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:22:5-84
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:22:5-84
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:22:22-81
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:22:22-81
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:23:5-80
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:23:5-80
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:23:22-77
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:23:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:24:5-81
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:24:5-81
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:24:22-78
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:24:22-78
 application
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:26:5-212:19
-MERGED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:63:5-226:19
-MERGED from [com.google.android.gms:play-services:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/9.2.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.android.support:support-v4:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/AndroidManifest.xml:19:5-23:19
-MERGED from [com.google.android.gms:play-services-tasks:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.2.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-clearcut/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gass:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gass/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/AndroidManifest.xml:27:5-20
-MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:20:5-30:19
-MERGED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:5:5-9:19
-MERGED from [com.google.android.gms:play-services-cast:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/23.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-config:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:30:5-59:19
-MERGED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:5:5-12:19
-MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-contextmanager/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-location:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-places:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:27:5-20
-MERGED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:24:5-32:19
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:26:5-41:19
-MERGED from [com.google.android.gms:play-services-drive:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.firebase:firebase-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.2.0/AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-auth-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.2.0/AndroidManifest.xml:20:5-21:19
-MERGED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:20:5-32:19
-MERGED from [com.google.android.gms:play-services-fitness:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-games:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.0/AndroidManifest.xml:24:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-identity:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-nearby:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.2.0/AndroidManifest.xml:6:5-20
-MERGED from [com.google.android.gms:play-services-panorama:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-plus:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.2.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:24:5-38:19
-MERGED from [com.google.android.gms:play-services-vision:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-vision/9.2.0/AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-wearable:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.2.0/AndroidManifest.xml:19:5-20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:26:5-212:19
+MERGED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:63:5-226:19
+MERGED from [com.google.android.gms:play-services:9.2.0] /home/alvaro/.android/build-cache/3ca8b2819efc83f2b3c169105d57cab250e44994/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/.android/build-cache/a33c1e5ca493090373b90cb5fc99cdd10281ea02/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:20:5-30:19
+MERGED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:5:5-9:19
+MERGED from [com.google.android.gms:play-services-cast:9.2.0] /home/alvaro/.android/build-cache/3176bd05184bc55603e0588fcb9cb08140eb2878/output/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:mediarouter-v7:23.0.0] /home/alvaro/.android/build-cache/bba50f94c67d775b555ccc92ff630c9abf3d9808/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.0.0] /home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] /home/alvaro/.android/build-cache/ca5215f065198195c0b086f828ece880d1183ba1/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] /home/alvaro/.android/build-cache/7e2cf97e7b672f8fb2d43364638ae446c22bc6a1/output/AndroidManifest.xml:23:5-20
+MERGED from [com.google.firebase:firebase-config:9.2.0] /home/alvaro/.android/build-cache/d43599f05625fccf42fe8825935f519c7083bd34/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-contextmanager:9.2.0] /home/alvaro/.android/build-cache/bf023f6084fb15e664ec40aa2a232db2486c05a0/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-auth:9.2.0] /home/alvaro/.android/build-cache/00dbe8e9253fb34118083849f6a25983f28f43c0/output/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-auth-common:9.2.0] /home/alvaro/.android/build-cache/e7638a0c49f574a7ec7b1ba368810b7dd0416bd3/output/AndroidManifest.xml:20:5-21:19
+MERGED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-fitness:9.2.0] /home/alvaro/.android/build-cache/0ed22c8657f6d418701231fc449fe739daf621b3/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-games:9.2.0] /home/alvaro/.android/build-cache/9d71c87d23338574a04e6219b5a2c143ad6b4006/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-drive:9.2.0] /home/alvaro/.android/build-cache/000d8a81e2655395eecce4baa6d3db26bca9dd9c/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:9.2.0] /home/alvaro/.android/build-cache/5dd154bc2fdd8c9affde9ab0270b13b9ce54d341/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-location:9.2.0] /home/alvaro/.android/build-cache/d7d59369bde92af9211c347ccf61ef6ae5ad389b/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-nearby:9.2.0] /home/alvaro/.android/build-cache/194cb48b4d9a7dbbdcf3e97b580f0d2ae1944ed0/output/AndroidManifest.xml:6:5-20
+MERGED from [com.google.android.gms:play-services-panorama:9.2.0] /home/alvaro/.android/build-cache/993e732a711c7dad380d14109a35d76c54a58048/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-places:9.2.0] /home/alvaro/.android/build-cache/b0057bd99e84dd4f2bde34a19bcab8d6070cb6ab/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-plus:9.2.0] /home/alvaro/.android/build-cache/3587482a4113d07e6bbc95ac0f27943c33610d43/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-safetynet:9.2.0] /home/alvaro/.android/build-cache/4f121c736932b2ec684655d3c85b5bcc9b7a2698/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/ca027a8863f2d81d444b0799811f5cd69bf7ccb1/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:24:5-38:19
+MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:26:5-41:19
+MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:30:5-59:19
+MERGED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:5:5-12:19
+MERGED from [com.google.android.gms:play-services-vision:9.2.0] /home/alvaro/.android/build-cache/a7739e74082603c36373eea88410a8e3eb29b6c9/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-identity:9.2.0] /home/alvaro/.android/build-cache/a99dfd927b0205aee399de083a5404c31a8fc6a6/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:27:5-20
+MERGED from [com.google.android.gms:play-services-wearable:9.2.0] /home/alvaro/.android/build-cache/d93b97b8a6cd3265d3c2f7492730f6cdfaed9196/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.gms:play-services-clearcut:9.2.0] /home/alvaro/.android/build-cache/c50da2e5adffc45cb1dda26c27fcadf1c8f01028/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-gass:9.2.0] /home/alvaro/.android/build-cache/32668e1a7d40a56895b2378465a6c20beadd9b2a/output/AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:20:5-32:19
+MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/.android/build-cache/6360f8ed2def65680275d1d092ea4c7da17f6abc/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/.android/build-cache/b9dc55bebe7b359ae130ef8244fa8883c328ae39/output/AndroidManifest.xml:24:5-20
+MERGED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/.android/build-cache/951f7ccbf2de14761c1ce0776ef218830f06ea2f/output/AndroidManifest.xml:19:5-23:19
+MERGED from [com.google.android.gms:play-services-tasks:9.2.0] /home/alvaro/.android/build-cache/24ad7d4826c926943b9cc92f77c0bc26dc9def5f/output/AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] /home/alvaro/.android/build-cache/0bf19fa5cb763c033ce10da151f5f4096fff1eda/output/AndroidManifest.xml:20:5-24:19
+MERGED from [com.android.support:support-v4:24.0.0] /home/alvaro/.android/build-cache/974db962275011b2e4b6caa7fcf525c3e451fc3c/output/AndroidManifest.xml:25:5-20
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:29:9-41
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:29:9-41
 	android:allowBackup
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:27:9-35
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:27:9-35
 	android:icon
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:28:9-39
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:28:9-39
 	android:theme
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:30:9-43
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:30:9-43
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:31:9-68
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:31:9-68
 meta-data#com.google.android.gms.version
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:34:9-36:69
-MERGED from [com.google.android.gms:play-services-basement:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.2.0/AndroidManifest.xml:21:9-23:69
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:34:9-36:69
+MERGED from [com.google.android.gms:play-services-basement:9.2.0] /home/alvaro/.android/build-cache/0bf19fa5cb763c033ce10da151f5f4096fff1eda/output/AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:36:13-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:36:13-66
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:35:13-58
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:35:13-58
 activity#com.juegoteca.actividades.Inicio
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:38:9-43:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:38:9-43:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:41:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:41:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:40:13-58
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:40:13-58
 	android:uiOptions
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:42:13-57
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:42:13-57
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:39:13-60
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:39:13-60
 activity#com.juegoteca.actividades.DetalleJuego
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:44:9-55:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:44:9-55:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:47:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:47:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:46:13-65
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:46:13-65
 	android:uiOptions
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:48:13-57
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:48:13-57
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:45:13-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:45:13-66
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:49:13-51:58
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:49:13-51:58
 	android:value
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:51:17-55
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:51:17-55
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:50:17-63
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:50:17-63
 meta-data#android.support.UI_OPTIONS
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:52:13-54:60
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:52:13-54:60
 	android:value
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:54:17-57
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:54:17-57
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:53:17-58
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:53:17-58
 activity#com.juegoteca.actividades.NuevoJuego
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:56:9-63:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:56:9-63:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:59:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:59:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:58:13-63
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:58:13-63
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:57:13-64
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:57:13-64
 activity#com.juegoteca.actividades.ListadoJuego
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:64:9-71:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:64:9-71:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:67:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:67:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:66:13-65
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:66:13-65
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:65:13-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:65:13-66
 activity#com.mijuegoteca.CargarCaratula
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:72:9-76:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:72:9-76:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:75:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:75:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:74:13-67
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:74:13-67
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:73:13-43
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:73:13-43
 activity#com.juegoteca.actividades.EditarJuego
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:77:9-84:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:77:9-84:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:80:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:80:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:79:13-64
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:79:13-64
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:78:13-65
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:78:13-65
 activity#com.juegoteca.actividades.Buscador
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:85:9-93:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:85:9-93:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:88:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:88:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:87:13-60
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:87:13-60
 	android:windowSoftInputMode
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:89:13-52
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:89:13-52
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:86:13-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:86:13-62
 activity#com.juegoteca.actividades.Estadisitcas
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:94:9-101:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:94:9-101:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:97:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:97:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:96:13-64
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:96:13-64
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:95:13-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:95:13-66
 activity#com.juegoteca.actividades.Splash
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:119:9-130:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:119:9-130:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:123:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:123:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:122:13-58
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:122:13-58
 	android:configChanges
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:121:13-74
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:121:13-74
 	android:theme
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:124:13-47
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:124:13-47
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:120:13-60
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:120:13-60
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:125:13-129:29
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:125:13-129:29
 action#android.intent.action.MAIN
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:126:17-69
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:126:17-69
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:126:25-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:126:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:128:17-77
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:128:17-77
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:128:27-74
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:128:27-74
 activity#com.juegoteca.actividades.Opciones
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:131:9-138:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:131:9-138:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:134:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:134:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:133:13-60
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:133:13-60
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:132:13-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:132:13-62
 activity#com.juegoteca.actividades.IniciarSesion
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:139:9-144:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:139:9-144:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:142:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:142:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:141:13-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:141:13-66
 	android:windowSoftInputMode
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:143:13-68
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:143:13-68
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:140:13-67
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:140:13-67
 activity#com.juegoteca.actividades.Plataforma
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:145:9-152:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:145:9-152:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:148:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:148:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:147:13-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:147:13-62
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:146:13-64
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:146:13-64
 activity#com.juegoteca.actividades.Registro
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:153:9-157:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:153:9-157:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:156:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:156:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:155:13-60
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:155:13-60
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:154:13-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:154:13-62
 activity#com.juegoteca.actividades.Favoritos
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:158:9-166:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:158:9-166:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:162:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:162:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:160:13-61
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:160:13-61
 	android:parentActivityName
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:161:13-74
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:161:13-74
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:159:13-63
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:159:13-63
 activity#com.juegoteca.actividades.Pendientes
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:167:9-175:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:167:9-175:20
 	android:screenOrientation
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:171:13-49
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:171:13-49
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:169:13-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:169:13-62
 	android:parentActivityName
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:170:13-74
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:170:13-74
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:168:13-64
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:168:13-64
 activity#com.mijuegoteca.SeleccionarFichero
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:176:9-179:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:176:9-179:20
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:178:13-71
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:178:13-71
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:177:13-47
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:177:13-47
 activity#com.mijuegoteca.FtpUpload
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:181:9-187:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:181:9-187:20
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:183:13-45
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:183:13-45
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:182:13-38
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:182:13-38
 intent-filter#android.intent.action.MAIN
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:184:13-186:29
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:184:13-186:29
 activity#com.juegoteca.actividades.AcercaDe
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:188:9-195:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:188:9-195:20
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:190:13-61
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:190:13-61
 	android:parentActivityName
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:191:13-74
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:191:13-74
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:189:13-62
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:189:13-62
 activity#com.google.android.gms.ads.AdActivity
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:197:9-199:125
-MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:26:9-29:64
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:197:9-199:125
+MERGED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:26:9-29:64
 	android:configChanges
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:199:13-122
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:199:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:29:13-61
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:29:13-61
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:198:13-65
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:198:13-65
 activity#com.mijuegoteca.Anuncio
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:200:9-203:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:200:9-203:20
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:202:13-59
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:202:13-59
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:201:13-36
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:201:13-36
 activity#com.juegoteca.actividades.DuplicarJuego
-ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:204:9-211:20
+ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:204:9-211:20
 	android:label
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:206:13-66
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:206:13-66
 	android:parentActivityName
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:207:13-80
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:207:13-80
 	android:name
-		ADDED from /home/alvaro/workspaces/studio/mijuegoteca/app/src/main/AndroidManifest.xml:205:13-67
+		ADDED from /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/AndroidManifest.xml:205:13-67
 uses-feature#android.hardware.camera
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:35:5-37:36
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:35:5-37:36
 	android:required
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:37:9-33
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:37:9-33
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:36:9-47
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:36:9-47
 uses-feature#android.hardware.camera.front
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:38:5-40:36
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:38:5-40:36
 	android:required
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:40:9-33
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:40:9-33
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:39:9-53
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:39:9-53
 uses-feature#android.hardware.camera.autofocus
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:41:5-43:36
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:41:5-43:36
 	android:required
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:43:9-33
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:43:9-33
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:42:9-57
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:42:9-57
 uses-feature#android.hardware.screen.landscape
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:47:5-70
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:47:5-70
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:47:19-67
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:47:19-67
 uses-feature#android.hardware.wifi
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:48:5-50:36
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:48:5-50:36
 	android:required
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:50:9-33
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:50:9-33
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:49:9-45
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:49:9-45
 uses-feature#android.hardware.touchscreen
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:51:5-53:36
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:51:5-53:36
 	android:required
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:53:9-33
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:53:9-33
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:52:9-52
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:52:9-52
 supports-screens
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:56:5-61:40
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:56:5-61:40
 	android:largeScreens
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:58:9-36
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:58:9-36
 	android:smallScreens
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:60:9-36
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:60:9-36
 	android:normalScreens
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:59:9-37
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:59:9-37
 	android:xlargeScreens
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:61:9-37
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:61:9-37
 	android:anyDensity
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:57:9-34
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:57:9-34
 activity#com.google.zxing.client.android.CaptureActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:64:9-130:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:64:9-130:20
 	android:clearTaskOnLaunch
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:66:13-45
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:66:13-45
 	android:screenOrientation
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:68:13-49
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:68:13-49
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:69:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:69:13-42
 	android:windowSoftInputMode
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:71:13-60
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:71:13-60
 	android:configChanges
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:67:13-63
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:67:13-63
 	android:theme
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:70:13-71
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:70:13-71
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:65:13-75
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:65:13-75
 intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.SCAN
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:77:13-81:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:77:13-81:29
 action#com.google.zxing.client.android.SCAN
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:78:17-79
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:78:17-79
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:78:25-76
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:78:25-76
 category#android.intent.category.DEFAULT
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:80:17-76
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:80:17-76
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:80:27-73
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:80:27-73
 intent-filter#android.intent.action.VIEW+android.intent.category.BROWSABLE+android.intent.category.DEFAULT
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:83:13-93:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:83:13-93:29
 action#android.intent.action.VIEW
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:84:17-69
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:84:17-69
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:84:25-66
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:84:25-66
 category#android.intent.category.BROWSABLE
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:87:17-78
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:87:17-78
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:87:27-75
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:87:27-75
 data
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:89:17-92:45
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:89:17-92:45
 	android:path
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:91:21-41
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:91:21-41
 	android:host
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:90:21-53
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:90:21-53
 	android:scheme
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:92:21-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:92:21-42
 activity#com.google.zxing.client.android.PreferencesActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:131:9-135:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:131:9-135:20
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:133:13-53
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:133:13-53
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:134:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:134:13-42
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:132:13-79
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:132:13-79
 activity#com.google.zxing.client.android.encode.EncodeActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:136:9-161:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:136:9-161:20
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:138:13-47
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:138:13-47
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:139:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:139:13-42
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:137:13-81
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:137:13-81
 intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.ENCODE
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:140:13-144:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:140:13-144:29
 action#com.google.zxing.client.android.ENCODE
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:141:17-81
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:141:17-81
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:141:25-78
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:141:25-78
 intent-filter#android.intent.action.SEND+android.intent.category.DEFAULT
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:146:13-152:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:146:13-152:29
 action#android.intent.action.SEND
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:147:17-69
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:147:17-69
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:147:25-66
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:147:25-66
 activity#com.google.zxing.client.android.book.SearchBookContentsActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:162:9-173:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:162:9-173:20
 	android:screenOrientation
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:166:13-50
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:166:13-50
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:165:13-45
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:165:13-45
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:167:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:167:13-42
 	android:configChanges
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:164:13-63
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:164:13-63
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:163:13-91
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:163:13-91
 intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.SEARCH_BOOK_CONTENTS
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:168:13-172:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:168:13-172:29
 action#com.google.zxing.client.android.SEARCH_BOOK_CONTENTS
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:169:17-95
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:169:17-95
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:169:25-92
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:169:25-92
 activity#com.google.zxing.client.android.share.ShareActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:174:9-185:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:174:9-185:20
 	android:screenOrientation
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:177:13-45
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:177:13-45
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:176:13-47
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:176:13-47
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:178:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:178:13-42
 	android:theme
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:179:13-55
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:179:13-55
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:175:13-79
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:175:13-79
 intent-filter#android.intent.category.DEFAULT+com.google.zxing.client.android.SHARE
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:180:13-184:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:180:13-184:29
 action#com.google.zxing.client.android.SHARE
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:181:17-80
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:181:17-80
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:181:25-77
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:181:25-77
 activity#com.google.zxing.client.android.history.HistoryActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:186:9-195:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:186:9-195:20
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:188:13-50
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:188:13-50
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:189:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:189:13-42
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:187:13-83
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:187:13-83
 intent-filter#android.intent.action.VIEW+android.intent.category.DEFAULT
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:190:13-194:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:190:13-194:29
 activity#com.google.zxing.client.android.share.BookmarkPickerActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:196:9-205:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:196:9-205:20
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:198:13-57
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:198:13-57
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:199:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:199:13-42
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:197:13-88
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:197:13-88
 intent-filter#android.intent.action.PICK+android.intent.category.DEFAULT
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:200:13-204:29
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:200:13-204:29
 action#android.intent.action.PICK
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:201:17-69
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:201:17-69
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:201:25-66
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:201:25-66
 activity#com.google.zxing.client.android.share.AppPickerActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:206:9-216:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:206:9-216:20
 	android:label
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:209:13-52
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:209:13-52
 	android:stateNotNeeded
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:210:13-42
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:210:13-42
 	android:configChanges
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:208:13-48
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:208:13-48
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:207:13-83
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:207:13-83
 activity#com.google.zxing.client.android.HelpActivity
-ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:217:9-225:20
+ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:217:9-225:20
 	android:screenOrientation
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:219:13-45
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:219:13-45
 	android:name
-		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/AndroidManifest.xml:218:13-72
-activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:30:9-31:52
-	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:31:13-50
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads-lite/9.2.0/AndroidManifest.xml:30:19-91
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/AndroidManifest.xml:20:9-22:45
-	android:exported
-		ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/AndroidManifest.xml:22:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/AndroidManifest.xml:21:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.2.0/AndroidManifest.xml:20:19-85
+		ADDED from [mijuegoteca:captureActivity:unspecified] /home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/AndroidManifest.xml:218:13-72
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics-impl/9.2.0/AndroidManifest.xml:25:5-67
-MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:22:5-68
-MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:24:5-67
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:24:5-67
+ADDED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/.android/build-cache/a33c1e5ca493090373b90cb5fc99cdd10281ea02/output/AndroidManifest.xml:25:5-67
+MERGED from [com.google.android.gms:play-services-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/ca027a8863f2d81d444b0799811f5cd69bf7ccb1/output/AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:22:5-68
 	android:name
-		ADDED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/9.2.0/AndroidManifest.xml:25:22-65
+		ADDED from [com.google.android.gms:play-services-analytics:9.2.0] /home/alvaro/.android/build-cache/a33c1e5ca493090373b90cb5fc99cdd10281ea02/output/AndroidManifest.xml:25:22-65
 activity#com.google.android.gms.appinvite.PreviewActivity
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:21:9-29:20
+ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:21:9-29:20
 	android:exported
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:23:17-40
+		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:23:17-40
 	android:theme
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:24:17-63
+		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:24:17-63
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:22:17-48
+		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:22:17-48
 intent-filter#android.intent.category.DEFAULT+com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:25:13-28:29
+ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:25:13-28:29
 action#com.google.android.gms.appinvite.ACTION_PREVIEW
-ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:26:17-89
+ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:26:17-89
 	android:name
-		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/9.2.0/AndroidManifest.xml:26:25-87
-activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
-ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:21:9-24:46
-	android:excludeFromRecents
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:23:19-52
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:24:19-43
-	android:theme
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:22:19-78
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:21:19-68
-service#com.google.android.gms.auth.api.signin.RevocationBoundService
-ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:28:9-31:110
-	android:exported
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:30:13-36
-	android:permission
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:31:13-107
-	android:name
-		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.2.0/AndroidManifest.xml:29:13-58
+		ADDED from [com.google.android.gms:play-services-appinvite:9.2.0] /home/alvaro/.android/build-cache/e446af4abd9f543984808046f6035cad60515060/output/AndroidManifest.xml:26:25-87
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
-ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:6:9-100
+ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:6:9-100
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:6:19-97
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:6:19-97
 service#com.google.android.gms.cast.framework.media.MediaNotificationService
-ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:7:9-104
+ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:7:9-104
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:7:18-101
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:7:18-101
 service#com.google.android.gms.cast.framework.ReconnectionService
-ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:8:9-92
+ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:8:9-92
 	android:name
-		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast-framework/9.2.0/AndroidManifest.xml:8:18-90
-uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:23:5-82
-MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/9.2.0/AndroidManifest.xml:21:5-82
-MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/9.2.0/AndroidManifest.xml:21:5-82
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:23:22-79
-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:25:5-26:47
-	android:protectionLevel
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:26:9-44
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:25:17-71
-uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:28:5-79
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:28:22-76
-receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:32:9-41:20
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:34:13-36
-	android:permission
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:35:13-73
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:33:13-78
-intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:36:13-40:29
-action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:37:17-81
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:37:25-78
-action#com.google.android.c2dm.intent.REGISTRATION
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:38:17-86
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:38:25-83
-category#${applicationId}
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:39:17-61
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:39:27-58
-receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:45:9-47:40
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:47:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:46:13-86
-service#com.google.firebase.iid.FirebaseInstanceIdService
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:51:9-57:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:53:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:52:13-77
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:54:13-56:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:54:28-51
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:55:17-80
-	android:name
-		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.2.0/AndroidManifest.xml:55:25-77
-provider#com.google.firebase.provider.FirebaseInitProvider
-ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:7:9-11:39
-	android:authorities
-		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:8:13-72
-	android:exported
-		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:10:13-37
-	android:initOrder
-		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:11:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.2.0/AndroidManifest.xml:9:13-58
-uses-feature#0x00020000
-ADDED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:22:5-24:33
-	android:glEsVersion
-		ADDED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:23:8-40
-	android:required
-		ADDED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/9.2.0/AndroidManifest.xml:24:8-31
+		ADDED from [com.google.android.gms:play-services-cast-framework:9.2.0] /home/alvaro/.android/build-cache/d50bc6c92336bbfb87dd14acaafecd84a158b2cd/output/AndroidManifest.xml:8:18-90
 service#com.google.firebase.crash.internal.service.FirebaseCrashReceiverService
-ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:26:9-27:50
+ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:26:9-27:50
 	android:process
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:27:13-48
+		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:27:13-48
 	android:name
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:26:18-79
+		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:26:18-79
 service#com.google.firebase.crash.internal.service.FirebaseCrashSenderService
-ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:29:9-30:50
+ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:29:9-30:50
 	android:process
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:30:13-48
+		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:30:13-48
 	android:name
-		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.2.0/AndroidManifest.xml:29:18-77
-receiver#com.google.android.gms.measurement.AppMeasurementReceiver
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:28:7-34:18
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:28:7-34:18
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:30:11-33
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:29:11-83
-intent-filter#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:31:9-33:25
-action#com.google.android.gms.measurement.UPLOAD
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:32:11-77
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:32:19-75
-service#com.google.android.gms.measurement.AppMeasurementService
-ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:36:7-39:37
-MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.2.0/AndroidManifest.xml:36:7-39:37
-	android:enabled
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:38:11-33
-	android:exported
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:39:11-35
-	android:name
-		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.2.0/AndroidManifest.xml:37:11-82
+		ADDED from [com.google.firebase:firebase-crash:9.2.0] /home/alvaro/.android/build-cache/25718418239873d354e5b7245010502d530b16e5/output/AndroidManifest.xml:29:18-77
 service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:24:9-30:19
+ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:24:9-30:19
 	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:26:13-36
+		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:26:13-36
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:25:13-82
+		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:25:13-82
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:27:13-29:29
+ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:27:13-29:29
 	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:27:28-51
+		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:27:28-51
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:28:17-78
+ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:28:17-78
 	android:name
-		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.2.0/AndroidManifest.xml:28:25-75
+		ADDED from [com.google.firebase:firebase-messaging:9.2.0] /home/alvaro/.android/build-cache/adbc750d1a69c9e6b246211aa3bdbb311225ba40/output/AndroidManifest.xml:28:25-75
 service#com.google.android.gms.tagmanager.TagManagerService
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:25:9-27:42
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:25:9-27:42
 	android:enabled
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:27:17-39
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:27:17-39
 	android:exported
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:26:17-41
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:26:17-41
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:25:18-84
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:25:18-84
 activity#com.google.android.gms.tagmanager.TagManagerPreviewActivity
-ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:28:9-37:20
+ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:28:9-37:20
 	android:noHistory
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:30:13-37
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.2.0/AndroidManifest.xml:29:13-87
+		ADDED from [com.google.android.gms:play-services-tagmanager-api:9.2.0] /home/alvaro/.android/build-cache/01730fea8be3b1fb5c2bca2219c5d30c2e022338/output/AndroidManifest.xml:29:13-87
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:28:7-34:18
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:28:7-34:18
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:30:11-33
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:29:11-83
+intent-filter#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:31:9-33:25
+action#com.google.android.gms.measurement.UPLOAD
+ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:32:11-77
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:32:19-75
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:36:7-39:37
+MERGED from [com.google.firebase:firebase-analytics-impl:9.2.0] /home/alvaro/.android/build-cache/b0f1a8207b9cb321c1a84bba707b440390c0fba8/output/AndroidManifest.xml:36:7-39:37
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:38:11-33
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:39:11-35
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:9.2.0] /home/alvaro/.android/build-cache/d1690bddec26b9cbc068b6ad65ed737e6a3fe079/output/AndroidManifest.xml:37:11-82
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:23:5-82
+MERGED from [com.google.android.gms:play-services-gcm:9.2.0] /home/alvaro/.android/build-cache/6360f8ed2def65680275d1d092ea4c7da17f6abc/output/AndroidManifest.xml:21:5-82
+MERGED from [com.google.android.gms:play-services-iid:9.2.0] /home/alvaro/.android/build-cache/b9dc55bebe7b359ae130ef8244fa8883c328ae39/output/AndroidManifest.xml:21:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:23:22-79
+permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:25:5-26:47
+	android:protectionLevel
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:26:9-44
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:25:17-71
+uses-permission#${applicationId}.permission.C2D_MESSAGE
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:28:5-79
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:28:22-76
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:32:9-41:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:34:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:35:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:33:13-78
+intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:36:13-40:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:37:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:37:25-78
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:38:17-86
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:38:25-83
+category#${applicationId}
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:39:17-61
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:39:27-58
+receiver#com.google.firebase.iid.FirebaseInstanceIdInternalReceiver
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:45:9-47:40
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:46:13-86
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:51:9-57:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:52:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:54:13-56:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:54:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:55:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:9.2.0] /home/alvaro/.android/build-cache/aa05acc77d09695294106f4e6f12ba2026f8ee77/output/AndroidManifest.xml:55:25-77
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:7:9-11:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:8:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:10:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:11:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:9.2.0] /home/alvaro/.android/build-cache/5a26eba8bf93b4385deb42e83eecb449c8d10e1d/output/AndroidManifest.xml:9:13-58
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:22:5-24:33
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:23:8-40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:9.2.0] /home/alvaro/.android/build-cache/363644920fb267409eb419004f79b2fa9225c9c8/output/AndroidManifest.xml:24:8-31
+activity#com.google.android.gms.ads.purchase.InAppPurchaseActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:30:9-31:52
+	android:theme
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:31:13-50
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:9.2.0] /home/alvaro/.android/build-cache/d92e5bcf7528da88d19d85c19ae8ee0f49e52532/output/AndroidManifest.xml:30:19-91
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:21:9-24:46
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:23:19-52
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:24:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:22:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:21:19-68
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:28:9-31:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:31:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:9.2.0] /home/alvaro/.android/build-cache/22f6b92995ef96a8809cadf6ed48a4a3232ec6df/output/AndroidManifest.xml:29:13-58
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/.android/build-cache/951f7ccbf2de14761c1ce0776ef218830f06ea2f/output/AndroidManifest.xml:20:9-22:45
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/.android/build-cache/951f7ccbf2de14761c1ce0776ef218830f06ea2f/output/AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/.android/build-cache/951f7ccbf2de14761c1ce0776ef218830f06ea2f/output/AndroidManifest.xml:21:19-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:9.2.0] /home/alvaro/.android/build-cache/951f7ccbf2de14761c1ce0776ef218830f06ea2f/output/AndroidManifest.xml:20:19-85

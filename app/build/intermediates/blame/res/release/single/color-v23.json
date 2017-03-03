@@ -1,38 +1,38 @@
 [
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_default.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_btn_colored_borderless_text_material.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_color_highlight_material.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_default.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_btn_checkable.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_color_highlight_material.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_switch_thumb.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_thumb.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_spinner.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_edittext.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_edittext.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_seek_thumb.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_btn_checkable.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_switch_track.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/color-v23/abc_tint_switch_thumb.xml",
+        "source": "/home/alvaro/.android/build-cache/df3a5e8363ded8e232271e1e45534aac863bce49/output/res/color-v23/abc_tint_switch_thumb.xml"
     }
 ]

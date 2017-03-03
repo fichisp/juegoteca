@@ -1,82 +1,82 @@
 [
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/capture.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/menu/capture.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/inicio.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/inicio.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/history.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/menu/history.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/acerca_de.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/acerca_de.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/buscador.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/buscador.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/iniciar_sesion.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/iniciar_sesion.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/nuevo_juego.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/nuevo_juego.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/pendientes.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/pendientes.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/seleccionar_fichero.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/seleccionar_fichero.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/seleccionar_fichero.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/seleccionar_fichero.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/pendientes.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/pendientes.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/registro.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/registro.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/editar_juego.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/editar_juego.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/favoritos.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/favoritos.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/acerca_de.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/acerca_de.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/listado_juego.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/listado_juego.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/cargar_caratula.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/cargar_caratula.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/nuevo_juego.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/nuevo_juego.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/anuncio.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/anuncio.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/buscador.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/buscador.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/favoritos.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/favoritos.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/encode.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/res/menu/encode.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/estadisitcas.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/estadisitcas.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/estadisitcas.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/estadisitcas.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/encode.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/exploded-aar/mijuegoteca/captureActivity/unspecified/res/menu/encode.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/editar_juego.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/editar_juego.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/registro.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/registro.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/detalle_juego.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/detalle_juego.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/eliminar_anuncios.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/eliminar_anuncios.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/anuncio.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/anuncio.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/inicio.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/inicio.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/eliminar_anuncios.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/eliminar_anuncios.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/listado_juego.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/listado_juego.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/cargar_caratula.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/cargar_caratula.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/detalle_juego.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/detalle_juego.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/history.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/res/menu/history.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/plataforma.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/plataforma.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/plataforma.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/src/main/res/menu/plataforma.xml"
     },
     {
-        "merged": "/home/alvaro/workspaces/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/iniciar_sesion.xml",
-        "source": "/home/alvaro/workspaces/studio/mijuegoteca/app/src/main/res/menu/iniciar_sesion.xml"
+        "merged": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/app/build/intermediates/res/merged/release/menu/capture.xml",
+        "source": "/home/alvaro/Workspaces/AndroidStudio/studio/mijuegoteca/captureActivity/build/intermediates/bundles/default/res/menu/capture.xml"
     }
 ]

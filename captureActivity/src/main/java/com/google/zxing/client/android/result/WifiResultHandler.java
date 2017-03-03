@@ -60,7 +60,7 @@ public final class WifiResultHandler extends ResultHandler {
   public void handleButtonPress(int index) {
     if (index == 0) {
       WifiParsedResult wifiResult = (WifiParsedResult) getResult();
-      WifiManager wifiManager = (WifiManager) getActivity().getSystemService(Context.WIFI_SERVICE);
+      WifiManager wifiManager = (WifiManager) getActivity().getApplicationContext().getSystemService(Context.WIFI_SERVICE);
       Toast.makeText(getActivity(), R.string.wifi_changing_network, Toast.LENGTH_LONG).show();
       taskExec.execute(new WifiConfigManager(wifiManager), wifiResult);
       parent.restartPreviewAfterDelay(0L);

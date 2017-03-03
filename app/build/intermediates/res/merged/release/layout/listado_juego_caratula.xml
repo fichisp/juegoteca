@@ -20,7 +20,10 @@
             android:id="@+id/image_caratula_listado_caratula"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/ic_launcher" />
+            android:src="@drawable/ic_launcher"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true" />
     </LinearLayout>
 
 </LinearLayout>
