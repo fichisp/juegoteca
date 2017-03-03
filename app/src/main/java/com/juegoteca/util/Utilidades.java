@@ -88,10 +88,10 @@ public class Utilidades {
 	private String url_subir_copia, url_bajar_copia, url_comprobar_subir_copia,
 			url_registrar_trial;
 	private int serverResponseCode;
-	static final String FTP_HOST = "185.28.20.73";
-	static final String FTP_USER = "u199244220";
-	static final String FTP_PASS = "4MmHbkms4aQ8m";
-	private static final String MY_AD_UNIT_ID = "ca-app-pub-5590574021757982/3775274753";
+	static final String FTP_HOST = "**********";
+	static final String FTP_USER = "**********";
+	static final String FTP_PASS = "**********";
+	private static final String MY_AD_UNIT_ID = "****************";
 	public static final boolean ANUNCIOS = true;
 	private InterstitialAd interstitial;
 
