@@ -45,6 +45,7 @@ public class AdaptadorJuegosListaCaratula extends ArrayAdapter<Juego> {
 
 		ImageView caratula = (ImageView)item.findViewById(R.id.image_caratula_listado_caratula);
 
+
 		utilidades.redimensionarElemento(caratula);
 
 		if ((juegos[position].getCaratula()).length()==0){	

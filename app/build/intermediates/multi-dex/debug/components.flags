@@ -1,0 +1,103 @@
+-injars /home/alvaro/proyectos/juegoteca/app/libs/achartengine-1.0.0.jar(**.class)
+-injars /home/alvaro/proyectos/juegoteca/app/libs/core.jar(**.class)
+-injars /home/alvaro/proyectos/juegoteca/app/libs/ftp4j-1.7.2.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-9.2.0.aar/157a9efcd74d471918910bcedb9d6b62/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-ads-9.2.0.aar/43f170794105124b2aa3ae78c6058ee3/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-auth-9.2.0.aar/709847a0715ccfefcc7e3e7bf63c87ac/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-gcm-9.2.0.aar/aa5c1cc0eadfd9c43c9ef6a090a372b6/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-9.2.0.aar/bf3730b1e2e70e8e4a546fd7dd8fd2de/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-analytics-9.2.0.aar/7295ffe68b5ce31d90bef2e01ce48d63/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-9.2.0.aar/25164995e3f516518316243638e7f128/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-9.2.0.aar/65a48aed77573aa00a3b32176d4ef09a/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-9.2.0.aar/f463d55f11e84c70aef955429b8649ba/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-9.2.0.aar/3e44c8971207ee0254fbbf4b18f354a5/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-9.2.0.aar/4d11358381aa508e2a74d2255297d5b3/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-clearcut-9.2.0.aar/d08893d43d900f0d0f2af6d54bb96fe4/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-config-9.2.0.aar/a4652499b8990b413e46fdb3657e50fe/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-contextmanager-9.2.0.aar/abc4391736a6af2b59b68b643dc2f920/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-crash-9.2.0.aar/7677ef6271aeef350c00e7aa1025b14f/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-games-9.2.0.aar/b09f461d5eb1921d6b43daf23c8a65ba/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-drive-9.2.0.aar/04c9f9902ac5377e7c8d7cbc69c3e59b/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-auth-9.2.0.aar/9c3c7cc03c9991a232c0f518fdf234b2/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-auth-common-9.2.0.aar/e0905b343a6ea6b39f3e8fc0484cbc07/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-auth-module-9.2.0.aar/e9610981d3795761e1f269c77618ee48/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-database-9.2.0.aar/fe3175a60b10ed86267687766ad232f6/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-9.2.0.aar/0a8259dbf455a09cb71034074425fa10/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-storage-9.2.0.aar/abd2427735f9efcf89ea22368513055a/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-9.2.0.aar/cdbccf29dac282b85664d70b65fb27ec/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-fitness-9.2.0.aar/4850fdd5c692e2cb92b1c40c174eaf78/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-appindexing-9.2.0.aar/0d18dd4b6a565e2ed74e1918b3078dbd/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.2.0.aar/8c5344db3f2760d1d703c983f1408647/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-identity-9.2.0.aar/f7ff0397e29a83d6bce85547772dc67a/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-iid-9.2.0.aar/2bb31e944c46ddfa6a5555e8aec2741c/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-location-9.2.0.aar/f1aa1aa6b7f38da0a6062ebf7a32e9ef/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-places-9.2.0.aar/cf51eda4b4b6cd8ed63c2799458d5bb9/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-maps-9.2.0.aar/a156cc255e4e6ebc2098632bdb7c9e7a/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-nearby-9.2.0.aar/6b4c901ce98d49970ade41a3c3d87954/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-panorama-9.2.0.aar/6364fbf120ae02cabe79faff843ebc1e/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-plus-9.2.0.aar/4fca4937a0f1bf0feb64e1a1551fe0e7/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-safetynet-9.2.0.aar/3ff7d208a85f34386e4c95262cdd3161/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-vision-9.2.0.aar/b9667bf6a771e9126335b8293cc7ff72/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-wearable-9.2.0.aar/09b40a106eeec4d720ec32f2b8da92d6/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-messaging-9.2.0.aar/bec9b27e95c83c39aa19ee9b8aafe61f/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-9.2.0.aar/24d97f260d3307ab9c6ded591b1709c8/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-analytics-9.2.0.aar/e10d98458f471690a3807fce357fed31/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-9.2.0.aar/d6572e82a3d45a4cb67a82105ed78096/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-iid-9.2.0.aar/c1e5b270439c02248e1f190ac94008e1/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/firebase-common-9.2.0.aar/35c458b291f3ee662b9ac3b0403434c5/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-gass-9.2.0.aar/6390bea7af554e0b9ec09ca154891cd8/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-tasks-9.2.0.aar/725731e78d0b6b0d7c66d95754d1713b/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-basement-9.2.0.aar/3cba8b566fceb2d22327bac3e7065f3a/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/54541527945aa656d67a24f64b85152a/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/54541527945aa656d67a24f64b85152a/jars/libs/internal_impl-23.0.0.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-23.4.0.aar/50503f95ea9a24c6e778d84bfd58d6b7/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-23.4.0.aar/851a72e437f9c4f68b047d71e2ee4018/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/4c7a39ff7c945fc0233e8703d7a5c035/jars/classes.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/support-v4-23.4.0.aar/4c7a39ff7c945fc0233e8703d7a5c035/jars/libs/internal_impl-23.4.0.jar(**.class)
+-injars /home/alvaro/.gradle/caches/transforms-1/files-1.1/multidex-1.0.2.aar/7695341836673317a7b3ed1991d7677c/jars/classes.jar(**.class)
+-injars /home/alvaro/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar(**.class)
+-injars /home/alvaro/proyectos/juegoteca/app/build/intermediates/classes/debug(**.class)
+-outjars /home/alvaro/proyectos/juegoteca/app/build/intermediates/multi-dex/debug/componentClasses.jar
+
+-libraryjars /home/alvaro/Android/Sdk/build-tools/26.0.2/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontusemixedcaseclassnames
+-dontpreverify
+-dontnote **
+-dontwarn **
+-printconfiguration /home/alvaro/proyectos/juegoteca/app/build/intermediates/multi-dex/debug/components.flags
+
+
+# Referenced at /home/alvaro/proyectos/juegoteca/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:42
+-keep class android.support.multidex.MultiDexApplication {
+    <init>(...);
+}
+
+-keep public class * extends android.app.Instrumentation {
+    <init>();
+}
+
+-keep public class * extends android.app.Application {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}
+
+-keep class com.android.tools.ir.** {
+    <fields>;
+    <methods>;
+}

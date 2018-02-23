@@ -28,7 +28,8 @@
         android:icon="@drawable/icono"
         android:label="@string/app_name"
         android:theme="@style/TemaGeneral"
-        android:name="android.support.multidex.MultiDexApplication">>
+        android:name="android.support.multidex.MultiDexApplication"
+        >
 
 
         <meta-data

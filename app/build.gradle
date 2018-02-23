@@ -10,7 +10,7 @@ android {
         }
     }
     compileSdkVersion 23
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
     useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.mijuegoteca"
@@ -28,7 +28,7 @@ android {
         }
     }
     dexOptions {
-        incremental true
+        //incremental true
         javaMaxHeapSize "4g"
     }
     productFlavors {
@@ -45,11 +45,14 @@ dependencies {
     compile files('libs/core.jar')
     compile files('libs/ftp4j-1.7.2.jar')
     //    compile files('libs/twitter4j-core-4.0.4.jar')
-    compile project(':captureActivity')
-    compile 'com.android.support:support-v4:24.0.0'
-    compile 'com.android.support:appcompat-v7:24.0.0'
+    //compile project(':captureActivity')
+    //noinspection GradleCompatible
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.google.android.gms:play-services:9.2.0'
     compile 'com.google.android.gms:play-services-ads:9.2.0'
     compile 'com.google.android.gms:play-services-auth:9.2.0'
     compile 'com.google.android.gms:play-services-gcm:9.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+    //compile 'com.google.zxing:core:3.3.1'
 }

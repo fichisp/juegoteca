@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/captureActivity/captureActivity.iml" filepath="$PROJECT_DIR$/captureActivity/captureActivity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mijuegoteca.iml" filepath="$PROJECT_DIR$/mijuegoteca.iml" />
+      <module fileurl="file://$PROJECT_DIR$/juegoteca.iml" filepath="$PROJECT_DIR$/juegoteca.iml" />
     </modules>
   </component>
 </project>

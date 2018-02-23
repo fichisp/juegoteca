@@ -6,10 +6,11 @@ android {
         }
     }
     compileSdkVersion 15
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
     defaultConfig {
         minSdkVersion 7
         targetSdkVersion 21
+        multiDexEnabled true
         signingConfig signingConfigs.config
     }
     buildTypes {
@@ -20,7 +21,7 @@ android {
         }
     }
     dexOptions {
-        incremental true
+        //incremental true
         javaMaxHeapSize "4g"
     }
     productFlavors {
@@ -29,4 +30,5 @@ android {
 
 dependencies {
     compile files('libs/core.jar')
+    compile 'com.android.support:multidex:1.0.1'
 }

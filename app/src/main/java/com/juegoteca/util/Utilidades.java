@@ -1214,16 +1214,20 @@ public class Utilidades {
 		// Point size = new Point();
 		// display.getSize(size);
 		int width;
+		int height;
 		if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
 			Point size = new Point();
 			display.getSize(size);
 			width = size.x;
+			height = size.y;
 		} else {
 			width = display.getWidth(); // deprecated
+			height = display.getHeight();
 		}
 
 		LayoutParams params = (LayoutParams) elemento.getLayoutParams();
-		params.width = Math.round(width / 4);
+		//params.width = Math.round(width / 4);
+		params.height = Math.round(height/ 4.5f);
 		elemento.setLayoutParams(params);
 	}
 
