@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -91,6 +92,25 @@ public class Estadisitcas extends Activity {
 		Cursor cursorJuegos = juegosSQLH.getJuegos();
 		int total = cursorJuegos.getCount();
 		cursorJuegos.close();
+		Float valorColeccion = juegosSQLH.getValorColeccion();
+		Integer juegosConPrecio = juegosSQLH.getCountJuegosConPrecio();
+
+
+		TextView resumenTotal = (TextView) findViewById(R.id.text_view_resumen_total);
+		TextView resumenSum = (TextView) findViewById(R.id.text_view_resumen_sum);
+		TextView resumenAVG = (TextView) findViewById(R.id.text_view_resumen_avg);
+
+		resumenTotal.setText(getString(R.string.total_juegos) + ": "
+				+ total);
+		if(valorColeccion!=null){
+			resumenSum.setText(getString(R.string.valor_total)+ ": " + valorColeccion);
+			resumenAVG.setText(getString(R.string.valor_medio)+ ": " + valorColeccion/juegosConPrecio);
+
+		} else {
+			resumenSum.setText(getString(R.string.valor_total)+ ": " + "-");
+			resumenAVG.setText(getString(R.string.valor_medio)+ ": " + "-");
+		}
+
 
 		Cursor cursorJuegosPlataforma = juegosSQLH.getJuegosPorPlataforma();
 		if (cursorJuegosPlataforma != null
@@ -122,11 +142,13 @@ public class Estadisitcas extends Activity {
 				rendererJuegosPlataforma.setShowLegend(false);
 				rendererJuegosPlataforma.setPanEnabled(false);
 				rendererJuegosPlataforma.setZoomEnabled(false);
-				rendererJuegosPlataforma
+				/*rendererJuegosPlataforma
 						.setChartTitle(getString(R.string.total_juegos) + ": "
-								+ +total);
+								+ total+ " - " + valor);*/
 				rendererJuegosPlataforma.setChartTitleTextSize(36);
+
 				rendererJuegosPlataforma.setStartAngle(270);
+
 			}
 
 			LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_1);

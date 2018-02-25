@@ -164,4 +164,7 @@
     <string name="no_data_backup">No hay datos que salvar en la copia de seguridad</string>
 <string name="zip">Generando fichero&#8230;</string>
     <string name="buscando">Buscando...</string>
+    <string name="valor_total">Valor</string>
+    <string name="valor_medio">valor mig joc</string>
+    <string name="titulo_estadisiticas_resumen">Resumen</string>
 </resources>

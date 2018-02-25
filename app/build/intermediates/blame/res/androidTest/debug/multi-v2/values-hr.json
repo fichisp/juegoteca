@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hr/values-hr.xml",
+            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hr/values-hr.xml",
             "map": [
                 {
                     "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/values-hr/values-hr.xml",

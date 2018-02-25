@@ -25,7 +25,7 @@ public class Inicio extends Activity {
 	private Juego[] datosJuegos;
 	private Utilidades utilidades;
 
-	private int NUM_MAX_ELEMENTOS_INICIO = 15;
+	private int NUM_MAX_ELEMENTOS_INICIO = 25;
 
 	/**
 	 * Llamada cuando se inicializa la actividad. Carga los listados que se

@@ -834,4 +834,53 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
 		return c;
 	}
 
+	/**
+	 * Retorna el sumatorio de los precios
+	 * @return
+	 */
+	public Float getValorColeccion(){
+		Cursor c = null;
+		SQLiteDatabase db = this.getReadableDatabase();
+		try {
+
+			c = db.rawQuery(
+					"SELECT SUM(precio) FROM juego", null);
+
+			if(c.moveToFirst())
+			{
+				return c.getFloat(0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return null;
+
+	}
+
+	/**
+	 * Retorna el sumatorio de los precios
+	 * @return
+	 */
+	public Integer getCountJuegosConPrecio(){
+		Cursor c = null;
+		SQLiteDatabase db = this.getReadableDatabase();
+		try {
+
+			c = db.rawQuery(
+					"SELECT count(*) FROM juego where precio <> 0", null);
+
+			if(c.moveToFirst())
+			{
+				return c.getInt(0);
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+		return null;
+
+	}
+
+
 }

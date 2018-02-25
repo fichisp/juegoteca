@@ -1,0 +1,148 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Padding0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inicio" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            style="@style/Padding16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titulo_ultimos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/ultimos_juegos_anadidos"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <com.juegoteca.ui.HorizontalListView
+                android:id="@+id/lista_ultimos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:paddingBottom="0dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp">
+            </com.juegoteca.ui.HorizontalListView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Padding16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="10"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/titulo_completados"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/inicio_titulo_completados"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <com.juegoteca.ui.HorizontalListView
+                android:id="@+id/lista_completados"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:padding="0dp"
+                android:paddingBottom="0dp"
+                android:paddingEnd="0dp"
+                android:paddingRight="0dp"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingTop="0dp">
+            </com.juegoteca.ui.HorizontalListView>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/Padding16V"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="0"
+            android:background="@color/naranja_cabeceras"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/boton_nuevo"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="nuevoJuego"
+                android:src="@drawable/boton_nuevo" />
+
+            <ImageButton
+                android:id="@+id/boton_buscar"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="listarJuegos"
+                android:src="@drawable/boton_buscar" />
+
+            <ImageButton
+                android:id="@+id/boton_estadisticas"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="estadisticas"
+                android:src="@drawable/boton_estadistica" />
+
+            <ImageButton
+                android:id="@+id/boton_favoritos"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="favoritos"
+                android:src="@drawable/boton_favoritos" />
+
+            <ImageButton
+                android:id="@+id/boton_pendientes"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="pendientes"
+                android:src="@drawable/boton_pendientes" />
+
+            <ImageButton
+                android:id="@+id/boton_opciones"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="opciones"
+                android:src="@drawable/boton_opciones" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

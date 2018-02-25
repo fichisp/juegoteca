@@ -164,4 +164,7 @@
     <string name="no_data_backup">There is no data to save in the backup</string>
 <string name="zip">Creating file...</string>
     <string name="buscando">Searching...</string>
+    <string name="valor_total">Value</string>
+    <string name="valor_medio">AVG game price</string>
+    <string name="titulo_estadisiticas_resumen">Summary</string>
 </resources>
