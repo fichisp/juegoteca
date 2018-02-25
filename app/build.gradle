@@ -22,7 +22,7 @@ android {
     }
     buildTypes {
         release {
-            shrinkResources true
+            //shrinkResources true
             minifyEnabled true
             proguardFiles 'proguard-app.txt'
             signingConfig signingConfigs.config
