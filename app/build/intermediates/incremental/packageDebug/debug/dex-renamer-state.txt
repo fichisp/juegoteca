@@ -1,4 +1,4 @@
-#Mon Feb 26 09:31:19 CET 2018
+#Mon Feb 26 16:49:40 CET 2018
 path.1=classes.dex
 path.0=classes.dex
 renamed.7=classes8.dex
@@ -10,11 +10,11 @@ renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
 base.7=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/1
-base.6=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/8
-base.5=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/6
-base.4=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/4
-base.3=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/2
-base.2=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/5
+base.6=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/6
+base.5=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/4
+base.4=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/2
+base.3=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/5
+base.2=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/0
 base.1=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/3
 base.0=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/1
 path.7=classes2.dex

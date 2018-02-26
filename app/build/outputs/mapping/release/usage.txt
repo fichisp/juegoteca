@@ -13219,6 +13219,19 @@ com.juegoteca.actividades.EditarJuego:
     private android.net.Uri caratulaOriginal
 com.juegoteca.actividades.Estadisitcas:
     public static final java.lang.String TYPE
+    public static final java.lang.String STATUS_PENDING
+    public static final java.lang.String STATUS_COMPLETED
+    public static final java.lang.String STATUS_NO_COMPLETADO
+    public static final java.lang.String STATUS_COMPLETADO
+    public static final java.lang.String FORMAT_N_D
+    public static final java.lang.String FORMAT_RETAIL_EN
+    public static final java.lang.String FORMAT_DIGITAL
+    public static final java.lang.String FORMAT_RETAIL_ES
+    public static final java.lang.String F
+    public static final java.lang.String D
+    public static final java.lang.String EMPTY_STRING
+    public static final java.lang.String ZERO_STRING
+    public static final java.lang.String SPA
 com.juegoteca.actividades.IniciarSesion:
     public static final java.lang.String EXTRA_EMAIL
 com.juegoteca.actividades.ListadoJuego:
@@ -13493,7 +13506,6 @@ org.achartengine.renderer.SimpleSeriesRenderer:
     private int mGradientStartColor
     private double mGradientStopValue
     private int mGradientStopColor
-    83:84:public void setDisplayChartValues(boolean)
     101:102:public void setChartValuesTextSize(float)
     120:121:public void setChartValuesTextAlign(android.graphics.Paint$Align)
     138:139:public void setChartValuesSpacing(float)

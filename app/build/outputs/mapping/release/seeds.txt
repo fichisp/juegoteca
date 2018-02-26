@@ -5989,10 +5989,10 @@ com.mijuegoteca.R$drawable: int abc_textfield_default_mtrl_alpha
 com.mijuegoteca.R$drawable: int abc_textfield_search_activated_mtrl_alpha
 com.mijuegoteca.R$drawable: int abc_textfield_search_default_mtrl_alpha
 com.mijuegoteca.R$drawable: int abc_textfield_search_material
+com.mijuegoteca.R$drawable: int action_bar_icon
 com.mijuegoteca.R$drawable: int boton_buscar
 com.mijuegoteca.R$drawable: int boton_codigo_barras
 com.mijuegoteca.R$drawable: int boton_estadistica
-com.mijuegoteca.R$drawable: int boton_estadisticas
 com.mijuegoteca.R$drawable: int boton_favoritos
 com.mijuegoteca.R$drawable: int boton_nuevo
 com.mijuegoteca.R$drawable: int boton_opciones
@@ -6131,6 +6131,8 @@ com.mijuegoteca.R$drawable: int ic_plusone_standard_off_client
 com.mijuegoteca.R$drawable: int ic_plusone_tall_off_client
 com.mijuegoteca.R$drawable: int ic_setting_dark
 com.mijuegoteca.R$drawable: int ic_setting_light
+com.mijuegoteca.R$drawable: int ic_videogame_asset_black_24dp
+com.mijuegoteca.R$drawable: int ic_watch_later_black_24dp
 com.mijuegoteca.R$drawable: int icono
 com.mijuegoteca.R$drawable: int id_de
 com.mijuegoteca.R$drawable: int id_en
@@ -6456,7 +6458,13 @@ com.mijuegoteca.R$id: int linear_detalle_precio
 com.mijuegoteca.R$id: int linear_detalle_puntuacion
 com.mijuegoteca.R$id: int linear_estadisticas
 com.mijuegoteca.R$id: int linear_estadisticas_1
+com.mijuegoteca.R$id: int linear_estadisticas_1_foot
+com.mijuegoteca.R$id: int linear_estadisticas_1_foot_left
+com.mijuegoteca.R$id: int linear_estadisticas_1_foot_right
 com.mijuegoteca.R$id: int linear_estadisticas_2
+com.mijuegoteca.R$id: int linear_estadisticas_2_foot
+com.mijuegoteca.R$id: int linear_estadisticas_2_foot_left
+com.mijuegoteca.R$id: int linear_estadisticas_2_foot_right
 com.mijuegoteca.R$id: int linear_estadisticas_3
 com.mijuegoteca.R$id: int linear_estadisticas_4
 com.mijuegoteca.R$id: int linear_estadisticas_resumen

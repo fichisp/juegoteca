@@ -1,40 +1,6 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
-            "map": [
-                {
-                    "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/values-large-v4/values-large-v4.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,117,189,248,319,390,460,530,598,666,730,785,889",
-                        "endColumns": "61,71,58,70,70,69,69,67,67,63,54,103,115",
-                        "endOffsets": "112,184,243,314,385,455,525,593,661,725,780,884,1000"
-                    }
-                },
-                {
-                    "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/values-large/styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endLines": "7",
-                        "endColumns": "12",
-                        "endOffsets": "288"
-                    },
-                    "to": {
-                        "startLines": "15",
-                        "startColumns": "4",
-                        "startOffsets": "1005",
-                        "endLines": "20",
-                        "endColumns": "12",
-                        "endOffsets": "1276"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {

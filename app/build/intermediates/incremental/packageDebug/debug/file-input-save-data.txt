@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Feb 26 09:31:19 CET 2018
+#Mon Feb 26 16:49:40 CET 2018
 2.path=images/big-qr.png
 14.set=ASSET
 107.baseType=DIRECTORY
@@ -17,7 +17,7 @@
 125.set=ASSET
 129.path=html-en/sharing.html
 134.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
-104.path=classes.dex
+104.path=html-zh-rCN/scanning.html
 156.path=cb58e511d71fdd8f1d955897c573be50.png
 161.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
 152.baseType=DIRECTORY
@@ -279,7 +279,7 @@
 127.baseType=DIRECTORY
 152.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
 122.path=images/demo-yes.png
-101.set=ASSET
+101.set=DEX
 96.set=ASSET
 122.baseType=DIRECTORY
 25.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/4
@@ -326,10 +326,10 @@
 88.path=html-nl/about1d.html
 11.path=classes.dex
 99.set=ASSET
-104.set=DEX
+104.set=ASSET
 126.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
 74.baseType=DIRECTORY
-101.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
+101.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/0
 150.set=ASSET
 148.path=html-es/whatsnew.html
 7.baseType=DIRECTORY
@@ -507,11 +507,11 @@ count=167
 134.set=ASSET
 129.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
 125.baseType=DIRECTORY
-104.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/transforms/dexMerger/debug/8
+104.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
 156.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
 126.path=27f0d0319e40b656b033e6da02267799.png
 131.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
-101.path=88bbedee5c5753baa4b721bc7a217b70.png
+101.path=classes.dex
 153.path=acc36e89cead1367125457932b7a64c4.png
 141.set=ASSET
 120.baseType=DIRECTORY
@@ -571,7 +571,7 @@ count=167
 105.set=ASSET
 127.path=a1383e86b1e4fd2d86e76715caef7e5b.png
 132.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
-102.path=html-fr/about2d.html
+102.path=88bbedee5c5753baa4b721bc7a217b70.png
 154.path=html-de/index.html
 151.set=ASSET
 0.baseType=DIRECTORY
@@ -625,7 +625,7 @@ count=167
 115.set=ASSET
 128.path=html-de/whatsnew.html
 133.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug
-103.path=html-zh-rCN/scanning.html
+103.path=html-fr/about2d.html
 161.set=ASSET
 155.path=html-zh-rCN/index.html
 160.base=/home/alvaro/proyectos/juegoteca/app/build/intermediates/assets/debug

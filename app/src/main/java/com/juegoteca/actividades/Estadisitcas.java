@@ -8,9 +8,12 @@ import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
@@ -25,19 +28,66 @@ import org.achartengine.GraphicalView;
 import org.achartengine.model.CategorySeries;
 import org.achartengine.renderer.DefaultRenderer;
 import org.achartengine.renderer.SimpleSeriesRenderer;
+import org.achartengine.renderer.XYMultipleSeriesRenderer;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class Estadisitcas extends Activity {
 
 	public static final String TYPE = "type";
-	private static int[] COLORS = new int[] { Color.GREEN, Color.BLUE,
+	public static final String STATUS_PENDING = "PENDING";
+	public static final String STATUS_COMPLETED = "COMPLETED";
+	public static final String STATUS_NO_COMPLETADO = "NO COMPLETADO";
+	public static final String STATUS_COMPLETADO = "COMPLETADO";
+	public static final String FORMAT_N_D = "N/D";
+	public static final String FORMAT_RETAIL_EN = "Retail";
+	public static final String FORMAT_DIGITAL = "Digital";
+	public static final String FORMAT_RETAIL_ES = "Fisico";
+	public static final String F = "F";
+	public static final String D = "D";
+	public static final String EMPTY_STRING = "";
+	public static final String ZERO_STRING = "0";
+	public static final String SPA = "spa";
+	/*private static int[] COLORS = new int[] { Color.GREEN, Color.BLUE,
 			Color.MAGENTA, Color.CYAN, Color.rgb(230, 95, 0), Color.RED,
-			Color.GRAY, Color.YELLOW };
-	private CategorySeries serieJuegosPlataforma = new CategorySeries("");
-	private CategorySeries serieJuegosCompletados = new CategorySeries("");
-	private CategorySeries serieJuegosGenero = new CategorySeries("");
-	private CategorySeries serieJuegosFormato = new CategorySeries("");
+			Color.GRAY, Color.YELLOW };*/
+	private static int[] COLORS = new int[] {
+			Color.rgb(255, 64, 0),
+			Color.rgb(255, 128, 0),
+			Color.rgb(255, 191, 0),
+			Color.rgb(255, 255, 0),
+			Color.rgb(191, 255, 0),
+			Color.rgb(128, 255, 0),
+			Color.rgb(64, 255, 0),
+			Color.rgb(0, 255, 0),
+			Color.rgb(0, 255, 64),
+			Color.rgb(0, 255, 128),
+			Color.rgb(0, 255, 191),
+			Color.rgb(0, 255, 255),
+			Color.rgb(0, 191, 255),
+			Color.rgb(0, 128, 255),
+			Color.rgb(0, 64, 255),
+			Color.rgb(0, 0, 255),
+			Color.rgb(64, 0, 255),
+			Color.rgb(128, 0, 255),
+			Color.rgb(191, 0, 255),
+			Color.rgb(255, 0, 255),
+			Color.rgb(255, 0, 191),
+			Color.rgb(255, 0, 128),
+			Color.rgb(255, 0, 64),
+			Color.rgb(255, 0, 0)
+
+	};
+
+
+
+
+	private CategorySeries serieJuegosPlataforma = new CategorySeries(EMPTY_STRING);
+	private CategorySeries serieJuegosCompletados = new CategorySeries(EMPTY_STRING);
+	private CategorySeries serieJuegosGenero = new CategorySeries(EMPTY_STRING);
+	private CategorySeries serieJuegosFormato = new CategorySeries(EMPTY_STRING);
 	private DefaultRenderer rendererJuegosPlataforma = new DefaultRenderer();
 	private DefaultRenderer rendererJuegosCompletados = new DefaultRenderer();
 	private DefaultRenderer rendererJuegosGenero = new DefaultRenderer();
@@ -80,6 +130,10 @@ public class Estadisitcas extends Activity {
 
 		// Start loading the ad in the background.
 		adView.loadAd(adRequest);
+
+
+
+
 
 		// Juegos agrupados por plataforma
 		rendererJuegosPlataforma.setApplyBackgroundColor(true);
@@ -126,6 +180,11 @@ public class Estadisitcas extends Activity {
 				etiquetas[i] = cursorJuegosPlataforma.getString(1);
 				i++;
 			} while (cursorJuegosPlataforma.moveToNext());
+
+			LinearLayout foot = (LinearLayout)findViewById(R.id.linear_estadisticas_1_foot);
+			LinearLayout footL = (LinearLayout)findViewById(R.id.linear_estadisticas_1_foot_left);
+			LinearLayout footR = (LinearLayout)findViewById(R.id.linear_estadisticas_1_foot_right);
+
 			for (int j = 0; j < numeroJuegos.length; j++) {
 				int x = 0;
 				try {
@@ -134,27 +193,73 @@ public class Estadisitcas extends Activity {
 					// TODO
 					return;
 				}
-				serieJuegosPlataforma.add(etiquetas[j] + "(" + x + ")", x);
+				//serieJuegosPlataforma.add(etiquetas[j] + "(" + x + ")", x);
+				serieJuegosPlataforma.add(etiquetas[j], x);
 				SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
-				renderer.setColor(COLORS[(serieJuegosPlataforma.getItemCount() - 1)
-						% COLORS.length]);
+				int color = COLORS[(serieJuegosPlataforma.getItemCount() - 1)
+						% COLORS.length];
+				renderer.setColor(color);
+
+				//TODO Añadimos a la falsa leyenda una entrada
+
+				LinearLayout tmpFoot = new LinearLayout(this);
+				tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+				TextView tmpColor = new TextView(this);
+				tmpColor.setHeight(50);
+				tmpColor.setWidth(50);
+				tmpColor.setTextSize(12);
+				tmpColor.setPadding(0,0,0,10);
+				tmpColor.setGravity(Gravity.TOP);
+				tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
+				tmpColor.setBackgroundColor(color);
+
+				TextView tmp = new TextView(this);
+				tmp.setText(etiquetas[j] + " (" +  numeroJuegos[j] +")");
+				tmp.setTextSize(12);
+
+				tmp.setGravity(Gravity.TOP);
+				tmp.setPadding(15,0,0,10);
+				tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+				tmpFoot.addView(tmpColor);
+				tmpFoot.addView(tmp);
+
+				tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+				//foot.addView(tmpFoot);
+				if(j%2 == 0){
+					footL.addView(tmpFoot);
+				} else {
+					footR.addView(tmpFoot);
+				}
+
+				
+				renderer.setDisplayChartValues(true);
 				rendererJuegosPlataforma.addSeriesRenderer(renderer);
 				rendererJuegosPlataforma.setShowLegend(false);
 				rendererJuegosPlataforma.setPanEnabled(false);
 				rendererJuegosPlataforma.setZoomEnabled(false);
-				/*rendererJuegosPlataforma
-						.setChartTitle(getString(R.string.total_juegos) + ": "
-								+ total+ " - " + valor);*/
 				rendererJuegosPlataforma.setChartTitleTextSize(36);
 
+				rendererJuegosPlataforma.setScale(1f);
 				rendererJuegosPlataforma.setStartAngle(270);
+
+
 
 			}
 
 			LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_1);
+
+
+
 			graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
 					serieJuegosPlataforma, rendererJuegosPlataforma);
 			layout.addView(graficoJuegosPlataforma);
+
+
 
 			cursorJuegosPlataforma.close();
 		}
@@ -174,11 +279,13 @@ public class Estadisitcas extends Activity {
 
 		Cursor cursorJuegosGenero = null;
 
-		if (!"spa".equalsIgnoreCase(codigoIdioma)) {
+		if (!SPA.equalsIgnoreCase(codigoIdioma)) {
 			cursorJuegosGenero = juegosSQLH.getJuegosGeneroEN();
 		} else {
 			cursorJuegosGenero = juegosSQLH.getJuegosGenero();
 		}
+
+
 
 		if (cursorJuegosGenero != null && cursorJuegosGenero.moveToFirst()) {
 
@@ -190,6 +297,11 @@ public class Estadisitcas extends Activity {
 				etiquetas[i] = cursorJuegosGenero.getString(1);
 				i++;
 			} while (cursorJuegosGenero.moveToNext());
+
+			LinearLayout foot = (LinearLayout)findViewById(R.id.linear_estadisticas_2_foot);
+			LinearLayout footL = (LinearLayout)findViewById(R.id.linear_estadisticas_2_foot_left);
+			LinearLayout footR = (LinearLayout)findViewById(R.id.linear_estadisticas_2_foot_right);
+
 			for (int j = 0; j < numeroJuegos.length; j++) {
 				int x = 0;
 				try {
@@ -198,10 +310,53 @@ public class Estadisitcas extends Activity {
 					// TODO
 					return;
 				}
-				serieJuegosGenero.add(etiquetas[j] + "(" + x + ")", x);
+//				serieJuegosGenero.add(etiquetas[j] + " (" + x + ")", x);
+				serieJuegosGenero.add(etiquetas[j], x);
 				SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
-				renderer.setColor(COLORS[(serieJuegosGenero.getItemCount() - 1)
-						% COLORS.length]);
+
+
+
+				int color = COLORS[(serieJuegosGenero.getItemCount() - 1)
+						% COLORS.length];
+				renderer.setColor(color);
+
+				//TODO Añadimos a la falsa leyenda una entrada
+
+				LinearLayout tmpFoot = new LinearLayout(this);
+				tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+				TextView tmpColor = new TextView(this);
+				tmpColor.setHeight(50);
+				tmpColor.setWidth(50);
+				tmpColor.setTextSize(12);
+				tmpColor.setPadding(0,0,0,10);
+				tmpColor.setGravity(Gravity.TOP);
+				tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
+				tmpColor.setBackgroundColor(color);
+
+				TextView tmp = new TextView(this);
+				tmp.setText(etiquetas[j] + " (" +  numeroJuegos[j] +")");
+				tmp.setTextSize(12);
+
+				tmp.setGravity(Gravity.TOP);
+				tmp.setPadding(15,0,0,10);
+				tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+				tmpFoot.addView(tmpColor);
+				tmpFoot.addView(tmp);
+
+				tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+				//foot.addView(tmpFoot);
+				if(j%2 == 0){
+					footL.addView(tmpFoot);
+				} else {
+					footR.addView(tmpFoot);
+				}
+
+
 				rendererJuegosGenero.addSeriesRenderer(renderer);
 				rendererJuegosGenero.setShowLegend(false);
 				rendererJuegosGenero.setPanEnabled(false);
@@ -234,30 +389,33 @@ public class Estadisitcas extends Activity {
 			int i = 0;
 			do {
 				numeroJuegos[i] = cursorJuegosFormato.getInt(0);
-				if (!"spa".equalsIgnoreCase(codigoIdioma)) {
-					if (cursorJuegosFormato.getString(1).equals("F")) {
-						etiquetas[i] = "Retail";
+				if (!SPA.equalsIgnoreCase(codigoIdioma)) {
+					if (cursorJuegosFormato.getString(1).equals(F)) {
+						etiquetas[i] = FORMAT_RETAIL_EN;
 					}
-					if (cursorJuegosFormato.getString(1).equals("D")) {
-						etiquetas[i] = "Digital";
+					if (cursorJuegosFormato.getString(1).equals(D)) {
+						etiquetas[i] = FORMAT_DIGITAL;
 					}
-					if (cursorJuegosFormato.getString(1).equals("")) {
-						etiquetas[i] = "N/D";
+					if (cursorJuegosFormato.getString(1).equals(EMPTY_STRING)) {
+						etiquetas[i] = FORMAT_N_D;
 					}
 				} else {
-					if (cursorJuegosFormato.getString(1).equals("F")) {
-						etiquetas[i] = "Fisico";
+					if (cursorJuegosFormato.getString(1).equals(F)) {
+						etiquetas[i] = FORMAT_RETAIL_ES;
 					}
-					if (cursorJuegosFormato.getString(1).equals("D")) {
-						etiquetas[i] = "Digital";
+					if (cursorJuegosFormato.getString(1).equals(D)) {
+						etiquetas[i] = FORMAT_DIGITAL;
 					}
-					if (cursorJuegosFormato.getString(1).equals("")) {
-						etiquetas[i] = "N/D";
+					if (cursorJuegosFormato.getString(1).equals(EMPTY_STRING)) {
+						etiquetas[i] = FORMAT_N_D;
 					}
 				}
 
 				i++;
 			} while (cursorJuegosFormato.moveToNext());
+
+			int[] coloresFormato = new int[] {Color.rgb(255, 64, 0),Color.rgb(255,215,0)};
+
 			for (int j = 0; j < numeroJuegos.length; j++) {
 				int x = 0;
 				try {
@@ -268,8 +426,8 @@ public class Estadisitcas extends Activity {
 				}
 				serieJuegosFormato.add(etiquetas[j] + "(" + x + ")", x);
 				SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
-				renderer.setColor(COLORS[(serieJuegosFormato.getItemCount() - 1)
-						% COLORS.length]);
+				renderer.setColor(coloresFormato[(serieJuegosFormato.getItemCount() - 1)
+						% coloresFormato.length]);
 				rendererJuegosFormato.addSeriesRenderer(renderer);
 				rendererJuegosFormato.setShowLegend(false);
 				rendererJuegosFormato.setPanEnabled(false);
@@ -305,17 +463,17 @@ public class Estadisitcas extends Activity {
 			do {
 				numeroJuegos[i] = cursorJuegosCompletados.getInt(0);
 
-				if (!"spa".equalsIgnoreCase(codigoIdioma)) {
-					if (cursorJuegosCompletados.getString(1).compareTo("0") == 0) {
-						etiquetas[i] = "PENDING";
+				if (!SPA.equalsIgnoreCase(codigoIdioma)) {
+					if (cursorJuegosCompletados.getString(1).compareTo(ZERO_STRING) == 0) {
+						etiquetas[i] = STATUS_PENDING;
 					} else {
-						etiquetas[i] = "COMPLETED";
+						etiquetas[i] = STATUS_COMPLETED;
 					}
 				} else {
-					if (cursorJuegosCompletados.getString(1).compareTo("0") == 0) {
-						etiquetas[i] = "NO COMPLETADO";
+					if (cursorJuegosCompletados.getString(1).compareTo(ZERO_STRING) == 0) {
+						etiquetas[i] = STATUS_NO_COMPLETADO;
 					} else {
-						etiquetas[i] = "COMPLETADO";
+						etiquetas[i] = STATUS_COMPLETADO;
 					}
 				}
 
@@ -329,10 +487,17 @@ public class Estadisitcas extends Activity {
 					// TODO
 					return;
 				}
-				serieJuegosCompletados.add(etiquetas[j] + "(" + x + ")", x);
+				serieJuegosCompletados.add(etiquetas[j] + " (" + x + ")", x);
 				SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
-				renderer.setColor(COLORS[(serieJuegosCompletados.getItemCount() - 1)
-						% COLORS.length]);
+
+				if(STATUS_NO_COMPLETADO.equals(etiquetas[j]) ||  STATUS_PENDING.equals(etiquetas[j])){
+					renderer.setColor(Color.rgb(255,69,0));
+				} else {
+					renderer.setColor(Color.rgb	(0,255,0));
+				}
+				/*renderer.setColor(COLORS[(serieJuegosCompletados.getItemCount() - 1)
+						% COLORS.length]);*/
+
 				rendererJuegosCompletados.addSeriesRenderer(renderer);
 				rendererJuegosCompletados.setPanEnabled(false);
 				rendererJuegosCompletados.setShowLegend(false);
@@ -361,16 +526,16 @@ public class Estadisitcas extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		Intent intent;
 		switch (item.getItemId()) {
-		case R.id.action_home:
-			Log.i("ActionBar", "Home");
-			intent = new Intent(this, Inicio.class);
-			startActivity(intent);
-			return true;
-		case android.R.id.home:
-			onBackPressed();
-			return true;
-		default:
-			return super.onOptionsItemSelected(item);
+			case R.id.action_home:
+				Log.i("ActionBar", "Home");
+				intent = new Intent(this, Inicio.class);
+				startActivity(intent);
+				return true;
+			case android.R.id.home:
+				onBackPressed();
+				return true;
+			default:
+				return super.onOptionsItemSelected(item);
 		}
 	}
 
