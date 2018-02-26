@@ -181,7 +181,7 @@ public class EditarJuego extends Activity {
 					|| juegoDetalle.getFormato().compareTo("F") == 0) {
 				spinnerFormato.setSelection(0);
 			} else {
-				spinnerFormato.setSelection(0);
+				spinnerFormato.setSelection(1);
 			}
 			
 			c.close();
