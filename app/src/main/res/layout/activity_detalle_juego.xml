@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linear_detalle_all"
     android:layout_width="match_parent"
@@ -23,53 +24,219 @@
             android:scrollbars="vertical" >
 
             <LinearLayout
+                android:id="@+id/datos_titulo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/text_titulo_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/label_titulo"
+                    android:textAllCaps="true"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/image_plataforma_detalle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:gravity="left"
+                    android:onClick="detallePlataforma"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_launcher" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/datos1_detalle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="3" >
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:id="@+id/linear_datos1_imagen"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
-                    android:layout_weight="3"
-                    android:orientation="vertical" >
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:orientation="vertical">
+
 
                     <ImageView
                         android:id="@+id/image_view_caratula_detalle"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
                         android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
                         android:src="@raw/loading" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/datos2_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/linear_detalle_compania"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/compania_detalle_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1.5"
+                            android:text="@string/label_compania"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_compania_detalle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/label_compania"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="4"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/linear_detalle_idioma"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/image_idioma_detalle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:scaleType="fitStart"
+                                    android:src="@drawable/ic_launcher"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="15dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/image_clasificacion_detalle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="right"
+                                    android:scaleType="fitStart"
+                                    android:src="@drawable/ic_launcher"
+                                    android:visibility="visible" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/datos1_detalle_detalle"
+                    android:id="@+id/linear_detalle_formato"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="vertical" >
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:orientation="horizontal">
+
 
                     <TextView
-                        android:id="@+id/text_titulo_detalle"
+                        android:id="@+id/formato_detalle_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:text="@string/label_titulo"
-                        android:textAllCaps="true"
-                        android:textSize="20dp"
+                        android:layout_weight="2"
+                        android:text="@string/label_formato"
+                        android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/text_compania_detalle"
+                        android:id="@+id/formato_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:text="@string/label_compania" />
+                        android:text="@string/label_formato" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_detalle_genero"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/genero_detalle_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="2"
+                        android:text="@string/label_genero"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/text_genero_detalle"
@@ -78,107 +245,48 @@
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:text="@string/label_genero" />
-
-                    <TextView
-                        android:id="@+id/formato_detalle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:text="@string/label_genero" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1" >
-
-                        <ImageView
-                            android:id="@+id/image_plataforma_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:onClick="detallePlataforma"
-                            android:src="@drawable/ic_launcher" />
-
-                        <ImageView
-                            android:id="@+id/image_clasificacion_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_launcher" />
-
-                        <ImageView
-                            android:id="@+id/image_idioma_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_launcher" />
-                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
 
-            <LinearLayout
-                android:id="@+id/datos2_detalle"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_weight="2"
-                android:orientation="vertical" >
-
-                <TextView
-                    android:id="@+id/label_descripcion_detalle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/label_descripcion_editar"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/text_resumen_detalle"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_weight="0"
-                    android:ems="10"
-                    android:inputType="textMultiLine|textNoSuggestions"
-                    android:text="@string/label_resumen"
-                    android:textSize="15sp" />
 
                 <LinearLayout
-                    android:id="@+id/linear_detalle_ean"
+                    android:id="@+id/linear_detalle_resumen"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/text_ean_detalle_label"
+                        android:id="@+id/label_descripcion_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/label_ean"
+                        android:text="@string/label_descripcion_editar"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/text_ean_detalle"
+                        android:id="@+id/text_resumen_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
                         android:layout_weight="1"
-                        android:inputType="number" />
+                        android:ellipsize="start"
+                        android:ems="10"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:text="@string/label_resumen"
+                        android:textSize="15sp" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/linear_detalle_fecha_lanzamiento"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/text_fecha_lanzamiento_detalle_label"
@@ -197,15 +305,16 @@
                         android:ems="10"
                         android:inputType="date"
                         android:textSize="15sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/linear_detalle_fecha_compra"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_fecha_compra_detalle_label"
@@ -229,10 +338,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_precio"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_precio_detalle_label"
@@ -256,10 +365,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_completado"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_completado_detalle"
@@ -274,13 +383,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:orientation="horizontal" >
+                        android:orientation="horizontal">
 
-<!--                         <CheckBox
-                            android:id="@+id/check_completado_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:clickable="false" /> -->
+                        <!--                         <CheckBox
+                                                        android:id="@+id/check_completado_detalle"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:clickable="false" /> -->
 
                         <TextView
                             android:id="@+id/text_fecha_completado_detalle"
@@ -290,12 +399,37 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linear_detalle_comentario"
+                    android:id="@+id/linear_detalle_puntuacion"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_puntuacion_detalle_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_puntuacion"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_puntuacion_detalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_detalle_comentario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_comentario_detalle_label"
@@ -315,29 +449,32 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/linear_detalle_puntuacion"
+                    android:id="@+id/linear_detalle_ean"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="1">
 
                     <TextView
-                        android:id="@+id/text_puntuacion_detalle_label"
+                        android:id="@+id/text_ean_detalle_label"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:text="@string/label_puntuacion"
+                        android:text="@string/label_ean"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/text_puntuacion_detalle"
+                        android:id="@+id/text_ean_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:inputType="number" />
+
                 </LinearLayout>
+
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

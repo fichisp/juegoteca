@@ -6333,6 +6333,7 @@ com.mijuegoteca.R$id: int checkbox
 com.mijuegoteca.R$id: int chronometer
 com.mijuegoteca.R$id: int classic
 com.mijuegoteca.R$id: int collapseActionView
+com.mijuegoteca.R$id: int compania_detalle_label
 com.mijuegoteca.R$id: int compania_juego
 com.mijuegoteca.R$id: int contact
 com.mijuegoteca.R$id: int container_all
@@ -6347,9 +6348,9 @@ com.mijuegoteca.R$id: int dark
 com.mijuegoteca.R$id: int datos1
 com.mijuegoteca.R$id: int datos1_1_detalle
 com.mijuegoteca.R$id: int datos1_detalle
-com.mijuegoteca.R$id: int datos1_detalle_detalle
 com.mijuegoteca.R$id: int datos2
 com.mijuegoteca.R$id: int datos2_detalle
+com.mijuegoteca.R$id: int datos_titulo
 com.mijuegoteca.R$id: int decode
 com.mijuegoteca.R$id: int decode_failed
 com.mijuegoteca.R$id: int decode_succeeded
@@ -6395,6 +6396,8 @@ com.mijuegoteca.R$id: int expand_activities_button
 com.mijuegoteca.R$id: int expanded_menu
 com.mijuegoteca.R$id: int format_text_view
 com.mijuegoteca.R$id: int formato_detalle
+com.mijuegoteca.R$id: int formato_detalle_label
+com.mijuegoteca.R$id: int genero_detalle_label
 com.mijuegoteca.R$id: int google_wallet_classic
 com.mijuegoteca.R$id: int google_wallet_grayscale
 com.mijuegoteca.R$id: int google_wallet_monochrome
@@ -6450,12 +6453,17 @@ com.mijuegoteca.R$id: int linear_datos1_imagen
 com.mijuegoteca.R$id: int linear_datos1_imagen_editar
 com.mijuegoteca.R$id: int linear_detalle_all
 com.mijuegoteca.R$id: int linear_detalle_comentario
+com.mijuegoteca.R$id: int linear_detalle_compania
 com.mijuegoteca.R$id: int linear_detalle_completado
 com.mijuegoteca.R$id: int linear_detalle_ean
 com.mijuegoteca.R$id: int linear_detalle_fecha_compra
 com.mijuegoteca.R$id: int linear_detalle_fecha_lanzamiento
+com.mijuegoteca.R$id: int linear_detalle_formato
+com.mijuegoteca.R$id: int linear_detalle_genero
+com.mijuegoteca.R$id: int linear_detalle_idioma
 com.mijuegoteca.R$id: int linear_detalle_precio
 com.mijuegoteca.R$id: int linear_detalle_puntuacion
+com.mijuegoteca.R$id: int linear_detalle_resumen
 com.mijuegoteca.R$id: int linear_estadisticas
 com.mijuegoteca.R$id: int linear_estadisticas_1
 com.mijuegoteca.R$id: int linear_estadisticas_1_foot
@@ -7009,6 +7017,7 @@ com.mijuegoteca.R$string: int juego_ya_anadido_favoritos
 com.mijuegoteca.R$string: int juegos_encontrados
 com.mijuegoteca.R$string: int ko
 com.mijuegoteca.R$string: int label_buscar
+com.mijuegoteca.R$string: int label_clasificacion
 com.mijuegoteca.R$string: int label_comentario
 com.mijuegoteca.R$string: int label_compania
 com.mijuegoteca.R$string: int label_completado
@@ -7018,6 +7027,7 @@ com.mijuegoteca.R$string: int label_fecha_compra
 com.mijuegoteca.R$string: int label_fecha_lanzamiento
 com.mijuegoteca.R$string: int label_formato
 com.mijuegoteca.R$string: int label_genero
+com.mijuegoteca.R$string: int label_idioma
 com.mijuegoteca.R$string: int label_plataforma
 com.mijuegoteca.R$string: int label_precio
 com.mijuegoteca.R$string: int label_puntuacion
