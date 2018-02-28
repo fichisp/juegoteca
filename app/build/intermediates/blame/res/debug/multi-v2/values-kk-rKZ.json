@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml",
+            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-kk-rKZ/values-kk-rKZ.xml",
             "map": [
                 {
                     "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/54541527945aa656d67a24f64b85152a/res/values-kk-rKZ/values-kk-rKZ.xml",

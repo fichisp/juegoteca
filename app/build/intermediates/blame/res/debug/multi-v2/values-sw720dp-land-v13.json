@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/values-sw720dp-land/dimens.xml",
+                    "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/values-sw720dp-land/dimens.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",
