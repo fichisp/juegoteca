@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_common_plus_signin_btn_icon_dark_pressed.9.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-tvdpi-v4/common_plus_signin_btn_icon_dark_pressed.9.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_menu_home.png.flat",
@@ -72,12 +72,12 @@
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-xxxhdpi/boton_nuevo.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_cmamiga.png.flat",
-        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_cmamiga.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_popup_background_mtrl_mult.9.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxhdpi-v4/abc_popup_background_mtrl_mult.9.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_cmamiga.png.flat",
+        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_cmamiga.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/color_abc_primary_text_disable_only_material_dark.xml.flat",
@@ -140,12 +140,12 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/drawable-xhdpi-v4/quantum_ic_forward_10_white_24.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_disabled.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-hdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_light_disabled.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_disabled.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -172,16 +172,16 @@
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/check_off_64.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/anim/abc_grow_fade_in_from_bottom.xml"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_xbox720.png.flat",
+        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_xbox720.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_xbox720.png.flat",
-        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_xbox720.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/anim_abc_grow_fade_in_from_bottom.xml.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/anim/abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_quantum_ic_cast_white_36.png.flat",
@@ -204,12 +204,12 @@
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/xml/pref_datos_seguridad.xml"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_focused.9.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_focused.9.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_common_plus_signin_btn_text_light_disabled.9.png.flat",
@@ -232,16 +232,16 @@
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-xhdpi/menu_editar.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_cdi.png.flat",
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_cdi.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_light.9.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-ldrtl-xxxhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_quantum_ic_cast_connected_white_24.png.flat",
@@ -292,12 +292,12 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-hdpi-v4/abc_ic_star_black_16dp.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable/common_google_signin_btn_icon_light.xml"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_cast_on_light.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/54541527945aa656d67a24f64b85152a/res/drawable-xhdpi/ic_cast_on_light.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi_menu_guardar.png.flat",
@@ -328,12 +328,12 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-ldrtl-mdpi-v17_abc_ic_ab_back_mtrl_am_alpha.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-ldrtl-mdpi-v17/abc_ic_ab_back_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxhdpi-v4/abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -472,12 +472,12 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/drawable/cast_ic_mini_controller_stop.xml"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xxhdpi_menu_editar.png.flat",
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-xxhdpi/menu_editar.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-hdpi-v4/common_google_signin_btn_text_light_pressed.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_common_google_signin_btn_text_light_pressed.9.png.flat",
@@ -508,28 +508,28 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/drawable-mdpi-v4/quantum_ic_stop_white_24.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_quantum_ic_clear_white_24.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/drawable-hdpi-v4/quantum_ic_clear_white_24.png"
-    },
-    {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_neocd.png.flat",
-        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_neocd.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_plus_signin_btn_text_light_disabled.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-mdpi-v4/common_plus_signin_btn_text_light_disabled.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_cast_on_2_light.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-23.0.0.aar/54541527945aa656d67a24f64b85152a/res/drawable-mdpi/ic_cast_on_2_light.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_plus_signin_btn_text_light_disabled.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-mdpi-v4/common_plus_signin_btn_text_light_disabled.9.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_neocd.png.flat",
+        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_neocd.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_plus_signin_btn_text_light_normal.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_normal.9.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_quantum_ic_clear_white_24.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/drawable-hdpi-v4/quantum_ic_clear_white_24.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_plus_signin_btn_text_light_normal.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-xhdpi-v4/common_plus_signin_btn_text_light_normal.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_common_plus_signin_btn_icon_light_focused.9.png.flat",
@@ -628,16 +628,16 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-tvdpi-v4/common_google_signin_btn_icon_light_normal.9.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_usk12.png.flat",
+        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/cl_usk12.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_id_fr.png.flat",
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/id_fr.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_usk12.png.flat",
-        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/cl_usk12.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-mdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
@@ -656,12 +656,12 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_list_menu_item_layout.xml"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_common_plus_signin_btn_text_dark_focused.9.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_focused.9.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbm.png.flat",
         "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/cl_esrbm.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_common_plus_signin_btn_text_dark_focused.9.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-base-9.2.0.aar/a1249c34635ca2e5e72617f29996a5fa/res/drawable-tvdpi-v4/common_plus_signin_btn_text_dark_focused.9.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
@@ -728,16 +728,16 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_neox.png.flat",
-        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_neox.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_menu_opciones.png.flat",
+        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/menu_opciones.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable_cast_ic_notification_connecting.xml.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-9.2.0.aar/4d11358381aa508e2a74d2255297d5b3/res/drawable/cast_ic_notification_connecting.xml"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_menu_opciones.png.flat",
-        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/menu_opciones.png"
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi_pl_neox.png.flat",
+        "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/drawable-hdpi/pl_neox.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable_common_plus_signin_btn_icon_light.xml.flat",
@@ -848,12 +848,12 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/drawable/cast_ic_notification_skip_next.xml"
     },
     {
-        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
-        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png"
-    },
-    {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_places_ic_search.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-places-9.2.0.aar/cf51eda4b4b6cd8ed63c2799458d5bb9/res/drawable-hdpi-v4/places_ic_search.png"
+    },
+    {
+        "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
+        "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/drawable-mdpi-v4/abc_ic_clear_mtrl_alpha.png"
     },
     {
         "merged": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/res/merged/debug/drawable_mr_ic_cast_dark.xml.flat",
