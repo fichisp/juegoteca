@@ -168,4 +168,6 @@
     <string name="valor_total">Valor</string>
     <string name="valor_medio">Precio medio por juego</string>
     <string name="titulo_estadisiticas_resumen">Resumen</string>
+    <string name="pref_description_view">Ver el detalle del juego con el formato de imagen grande</string>
+    <string name="pref_title_view">Formato de vista detallada del juego</string>
 </resources>

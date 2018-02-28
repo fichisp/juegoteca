@@ -3372,6 +3372,10 @@
         "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/drawable-xxhdpi/boton_buscar.png"
     },
     {
+        "merged": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/res/merged/debug/layout_activity_detalle_juego_imagen_grande.xml.flat",
+        "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_detalle_juego_imagen_grande.xml"
+    },
+    {
         "merged": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_plusone_small_off_client.png.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-plus-9.2.0.aar/4fca4937a0f1bf0feb64e1a1551fe0e7/res/drawable-mdpi-v4/ic_plusone_small_off_client.png"
     },

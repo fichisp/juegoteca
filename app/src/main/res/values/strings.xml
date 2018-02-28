@@ -169,4 +169,6 @@
     <string name="titulo_estadisiticas_resumen">Summary</string>
     <string name="label_clasificacion">Clasificación</string>
     <string name="label_idioma">Idioma</string>
+    <string name="pref_title_view">Game detail view format</string>
+    <string name="pref_description_view">See the detail of the game with the large image format</string>
 </resources>

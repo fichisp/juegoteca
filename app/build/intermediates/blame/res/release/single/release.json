@@ -224,6 +224,10 @@
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_action_menu_layout.xml"
     },
     {
+        "merged": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/res/merged/release/layout_activity_detalle_juego_imagen_grande.xml.flat",
+        "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_detalle_juego_imagen_grande.xml"
+    },
+    {
         "merged": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/res/merged/release/layout_abc_search_dropdown_item_icons_2line.xml.flat",
         "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_search_dropdown_item_icons_2line.xml"
     },

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mijuegoteca"
-    android:versionCode="35"
-    android:versionName="1.3.15" >
+    android:versionCode="40"
+    android:versionName="1.4.0" >
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -80,6 +80,18 @@
         </activity>
         <activity
             android:name="com.juegoteca.actividades.DetalleJuego"
+            android:label="@string/title_activity_detalle_juego"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actividades.Inicio" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
+        </activity>
+        <activity
+            android:name="com.juegoteca.actividades.DetalleJuegoImagenGrande"
             android:label="@string/title_activity_detalle_juego"
             android:screenOrientation="portrait"
             android:uiOptions="splitActionBarWhenNarrow" >

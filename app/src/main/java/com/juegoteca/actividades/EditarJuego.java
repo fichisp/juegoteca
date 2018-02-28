@@ -2,6 +2,7 @@ package com.juegoteca.actividades;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -398,7 +399,20 @@ public class EditarJuego extends Activity {
 					getString(R.string.juego_actualizado_ok), Toast.LENGTH_SHORT);
 			toast.show();
 			Log.v("ID ACTUALIZADO: ", idJuego);
-			Intent intent = new Intent(this, DetalleJuego.class);
+
+			final SharedPreferences settings = getSharedPreferences("UserInfo",
+					0);
+			Intent intent;
+			if(settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen",true)){
+
+				intent = new Intent(this, DetalleJuegoImagenGrande.class);
+
+			} else {
+				intent = new Intent(this, DetalleJuego.class);
+
+			}
+
+			//Intent intent = new Intent(this, DetalleJuego.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 			intent.putExtra("ID_JUEGO", idJuego);
 			intent.putExtra("EDITADO", true);

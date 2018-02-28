@@ -7,6 +7,7 @@ import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -14,6 +15,7 @@ import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -128,6 +130,27 @@ public class Opciones extends PreferenceActivity {
 		fakeHeader2.setTitle(R.string.pref_header_data);
 		getPreferenceScreen().addPreference(fakeHeader2);
 		addPreferencesFromResource(R.xml.pref_datos_seguridad);
+
+		final SharedPreferences settings = getSharedPreferences("UserInfo",
+				0);
+
+		CheckBoxPreference preferenciaDetalle = (CheckBoxPreference) findPreference("detalle_imagen");
+		preferenciaDetalle.
+				setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+					public boolean onPreferenceChange(Preference preference, Object newValue) {
+						if (newValue.toString().equals("true")) {
+							SharedPreferences.Editor editor = settings.edit();
+							editor.putBoolean("detalle_imagen",true);
+							editor.commit();
+						} else {
+							SharedPreferences.Editor editor = settings.edit();
+							editor.putBoolean("detalle_imagen",false);
+							editor.commit();
+						}
+						return true;
+					}
+				});
 
 		// Establece las acciones al hacer click en las preferencias
 		Preference preferenciaCopiaExportar = (Preference) findPreference("exportar_copia_seguridad");

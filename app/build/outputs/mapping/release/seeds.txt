@@ -5292,6 +5292,8 @@ com.juegoteca.actividades.Buscador: void buscarJuego(android.view.View)
 com.juegoteca.actividades.DetalleJuego
 com.juegoteca.actividades.DetalleJuego: DetalleJuego()
 com.juegoteca.actividades.DetalleJuego: void detallePlataforma(android.view.View)
+com.juegoteca.actividades.DetalleJuegoImagenGrande
+com.juegoteca.actividades.DetalleJuegoImagenGrande: DetalleJuegoImagenGrande()
 com.juegoteca.actividades.EditarJuego
 com.juegoteca.actividades.EditarJuego: EditarJuego()
 com.juegoteca.actividades.EditarJuego: void cargarCaratula(android.view.View)
@@ -6348,6 +6350,7 @@ com.mijuegoteca.R$id: int dark
 com.mijuegoteca.R$id: int datos1
 com.mijuegoteca.R$id: int datos1_1_detalle
 com.mijuegoteca.R$id: int datos1_detalle
+com.mijuegoteca.R$id: int datos1_detalle_detalle
 com.mijuegoteca.R$id: int datos2
 com.mijuegoteca.R$id: int datos2_detalle
 com.mijuegoteca.R$id: int datos_titulo
@@ -6438,6 +6441,7 @@ com.mijuegoteca.R$id: int intent_data
 com.mijuegoteca.R$id: int intent_data_id
 com.mijuegoteca.R$id: int intent_extra_data
 com.mijuegoteca.R$id: int label_descripcion_detalle
+com.mijuegoteca.R$id: int label_formato_detalla
 com.mijuegoteca.R$id: int large_icon_uri
 com.mijuegoteca.R$id: int launch_product_query
 com.mijuegoteca.R$id: int layout_banner_Ads
@@ -6450,7 +6454,6 @@ com.mijuegoteca.R$id: int linear_comentario_editar
 com.mijuegoteca.R$id: int linear_comentario_nuevo
 com.mijuegoteca.R$id: int linear_datos1_detalle_editar
 com.mijuegoteca.R$id: int linear_datos1_imagen
-com.mijuegoteca.R$id: int linear_datos1_imagen_editar
 com.mijuegoteca.R$id: int linear_detalle_all
 com.mijuegoteca.R$id: int linear_detalle_comentario
 com.mijuegoteca.R$id: int linear_detalle_compania
@@ -6621,6 +6624,9 @@ com.mijuegoteca.R$id: int text1
 com.mijuegoteca.R$id: int text2
 com.mijuegoteca.R$id: int textSpacerNoButtons
 com.mijuegoteca.R$id: int textTitle
+com.mijuegoteca.R$id: int textView
+com.mijuegoteca.R$id: int textView2
+com.mijuegoteca.R$id: int textView3
 com.mijuegoteca.R$id: int textViewContrasena
 com.mijuegoteca.R$id: int textViewEmail
 com.mijuegoteca.R$id: int textViewFabricantePlataforma
@@ -6655,6 +6661,7 @@ com.mijuegoteca.R$id: int text_fecha_lanzamiento_detalle
 com.mijuegoteca.R$id: int text_fecha_lanzamiento_detalle_label
 com.mijuegoteca.R$id: int text_fecha_lanzamiento_editar
 com.mijuegoteca.R$id: int text_fecha_lanzamiento_nuevo
+com.mijuegoteca.R$id: int text_formato_editar
 com.mijuegoteca.R$id: int text_genero_buscador
 com.mijuegoteca.R$id: int text_genero_detalle
 com.mijuegoteca.R$id: int text_list_view
@@ -6730,6 +6737,7 @@ com.mijuegoteca.R$layout: int abc_select_dialog_material
 com.mijuegoteca.R$layout: int activity_acerca_de
 com.mijuegoteca.R$layout: int activity_buscador
 com.mijuegoteca.R$layout: int activity_detalle_juego
+com.mijuegoteca.R$layout: int activity_detalle_juego_imagen_grande
 com.mijuegoteca.R$layout: int activity_editar_juego
 com.mijuegoteca.R$layout: int activity_estadisitcas
 com.mijuegoteca.R$layout: int activity_favoritos
@@ -7093,6 +7101,7 @@ com.mijuegoteca.R$string: int pref_description_hacer_copia
 com.mijuegoteca.R$string: int pref_description_importar_copia
 com.mijuegoteca.R$string: int pref_description_iniciar_sesion
 com.mijuegoteca.R$string: int pref_description_restaurar_copia
+com.mijuegoteca.R$string: int pref_description_view
 com.mijuegoteca.R$string: int pref_header_data
 com.mijuegoteca.R$string: int pref_header_general
 com.mijuegoteca.R$string: int pref_header_otros
@@ -7107,6 +7116,7 @@ com.mijuegoteca.R$string: int pref_title_importar_copia
 com.mijuegoteca.R$string: int pref_title_restaurar_copia
 com.mijuegoteca.R$string: int pref_title_share_name
 com.mijuegoteca.R$string: int pref_title_version
+com.mijuegoteca.R$string: int pref_title_view
 com.mijuegoteca.R$string: int preferences_actions_title
 com.mijuegoteca.R$string: int preferences_auto_focus_title
 com.mijuegoteca.R$string: int preferences_bulk_mode_summary

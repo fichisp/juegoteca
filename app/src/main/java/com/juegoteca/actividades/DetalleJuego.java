@@ -71,6 +71,10 @@ public class DetalleJuego extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_detalle_juego);
+		loadData();
+	}
+
+	protected void loadData() {
 		Intent intent = getIntent();
 		utilidades = new Utilidades(this);
 		url_insertar = this.getResources().getString(R.string.url_insertar);

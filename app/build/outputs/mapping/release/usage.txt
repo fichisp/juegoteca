@@ -13210,7 +13210,7 @@ com.google.zxing.qrcode.encoder.QRCode:
     54:54:public int getMaskPattern()
 com.juegoteca.actividades.DetalleJuego:
     private static final java.lang.String TAG_SUCCESS
-    376:386:private void exportarJuego()
+    380:390:private void exportarJuego()
     44:44:static synthetic java.lang.String access$1000(com.juegoteca.actividades.DetalleJuego)
     44:44:static synthetic java.lang.String access$1200(com.juegoteca.actividades.DetalleJuego)
 com.juegoteca.actividades.DetalleJuego$ExportarJuego
@@ -13242,8 +13242,8 @@ com.juegoteca.actividades.Opciones:
     private static final boolean ALWAYS_SIMPLE_PREFS
     protected static final int PICKFILE_RESULT_CODE
     private static final int FILE_SELECT_CODE
-    402:412:private static void bindPreferenceSummaryToValue(android.preference.Preference)
-    44:44:static synthetic void access$200(android.preference.Preference)
+    425:435:private static void bindPreferenceSummaryToValue(android.preference.Preference)
+    46:46:static synthetic void access$200(android.preference.Preference)
 com.juegoteca.actividades.Opciones$CopiaSeguridad
 com.juegoteca.actividades.Opciones$DataSyncPreferenceFragment
 com.juegoteca.actividades.Opciones$GeneralPreferenceFragment

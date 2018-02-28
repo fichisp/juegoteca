@@ -26,28 +26,22 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="3" >
 
-                <LinearLayout
-                    android:id="@+id/linear_datos1_imagen_editar"
+                <ImageView
+                    android:id="@+id/image_view_caratula_editar"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="3"
-                    android:orientation="vertical" >
-
-                    <ImageView
-                        android:id="@+id/image_view_caratula_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:onClick="cargarCaratula"
-                        android:src="@drawable/ic_launcher" />
-                </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:onClick="cargarCaratula"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_launcher" />
 
                 <LinearLayout
                     android:id="@+id/linear_datos1_detalle_editar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:orientation="vertical" >
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <EditText
                         android:id="@+id/edit_titulo_editar"
@@ -70,41 +64,34 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
-                        android:spinnerMode="dialog"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog" />
 
                     <Spinner
                         android:id="@+id/spinner_plataforma_editar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:spinnerMode="dialog"
-                        android:layout_weight="1" />
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog" />
 
                     <Spinner
                         android:id="@+id/spinner_clasificacion_editar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
-                        android:spinnerMode="dialog"
-                        android:layout_weight="1" />
+                        android:layout_weight="1"
+                        android:spinnerMode="dialog" />
 
                     <Spinner
                         android:id="@+id/spinner_idioma_editar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
-                        android:spinnerMode="dialog"
-                        android:layout_weight="1" />
-                    
-                    
-                    <Spinner
-                        android:id="@+id/spinner_formato_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:padding="0dp"
                         android:spinnerMode="dialog" />
+
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -247,6 +234,32 @@
                         android:hint="@string/hint_precio"
                         android:inputType="numberDecimal"
                         android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/text_formato_editar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/label_formato"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_formato_editar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:spinnerMode="dialog" />
+
+
                 </LinearLayout>
 
                 <LinearLayout

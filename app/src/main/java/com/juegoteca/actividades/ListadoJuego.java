@@ -5,6 +5,7 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Build;
@@ -61,7 +62,18 @@ public class ListadoJuego extends Activity {
 	 */
 	public void detalleJuego(View view){
 		TextView id = (TextView)view.findViewById(R.id.id_juego);
-		final Intent intent = new Intent(this, DetalleJuego.class);
+		final SharedPreferences settings = getSharedPreferences("UserInfo",
+				0);
+		Intent intent;
+		if(settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen",true)){
+
+			intent = new Intent(this, DetalleJuegoImagenGrande.class);
+
+		} else {
+			intent = new Intent(this, DetalleJuego.class);
+
+		}
+		//final Intent intent = new Intent(this, DetalleJuego.class);
 		intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
 		intent.putExtra("NUEVO_JUEGO", false);
 		intent.putExtra("CALLER", "ListadoJuego");
