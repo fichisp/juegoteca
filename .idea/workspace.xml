@@ -23,125 +23,58 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/appcompat/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/mediarouter/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/android/support/v7/mediarouter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/android/gms/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/android/gms/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/google/zxing/client/android/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/AcercaDe.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/AcercaDe.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Buscador.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Buscador.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/DetalleJuego.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/DetalleJuego.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/EditarJuego.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/EditarJuego.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Estadisitcas.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Estadisitcas.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Favoritos.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Favoritos.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/IniciarSesion$1.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/IniciarSesion$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/IniciarSesion$UserLoginTask.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/IniciarSesion$UserLoginTask.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/IniciarSesion.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/IniciarSesion.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Inicio.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Inicio.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/ListadoJuego$RealizaBusqueda.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/ListadoJuego$RealizaBusqueda.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/NuevoJuego.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/NuevoJuego.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Pendientes.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Pendientes.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Plataforma.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/actividades/Plataforma.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/util/AdaptadorJuegosLista.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/juegoteca/util/AdaptadorJuegosLista.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$id.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$integer.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$integer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$layout.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$layout.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$menu.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$menu.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$raw.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$raw.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$string.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$style.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$style.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$styleable.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$styleable.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$xml.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/R$xml.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/OpH4P_CQpXiAgg+axVYiYqw1nb4=" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/zip-cache/OpH4P_CQpXiAgg+axVYiYqw1nb4=" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/debug/resources-debug.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc12.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc12.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc12a.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc12a.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc15.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc15.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc18.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfc18.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfcpg.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfcpg.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfcr18.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfcr18.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfcu.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_bbfcu.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_ceroa.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_ceroa.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_cerob.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_cerob.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_ceroc.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_ceroc.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_cerod.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_cerod.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_ceroz.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_ceroz.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrba.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrba.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbe.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbe.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbe10p.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbe10p.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbec.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbec.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbm.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbm.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbt.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_esrbt.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi12.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi12.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi18.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi18.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi3.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi3.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi7.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_cl_pegi7.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_sinimagen.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/drawable-hdpi_sinimagen.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_detalle_juego.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/debug/layout_activity_detalle_juego.xml.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc12.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc12.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc12a.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc12a.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc15.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc15.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc18.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfc18.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfcpg.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfcpg.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfcr18.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfcr18.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfcu.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_bbfcu.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_ceroa.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_ceroa.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_cerob.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_cerob.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_ceroc.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_ceroc.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_cerod.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_cerod.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_ceroz.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_ceroz.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrba.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrba.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbe.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbe.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbe10p.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbe10p.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbec.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbec.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbm.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbm.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbt.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_esrbt.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi12.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi12.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi18.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi18.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi3.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi3.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi7.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_cl_pegi7.png.flat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_sinimagen.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_sinimagen.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/BuildConfig.class" afterPath="$PROJECT_DIR$/app/build/intermediates/classes/release/com/mijuegoteca/BuildConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a2600.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a2600.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a2800.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a2800.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a5200.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a5200.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a7800.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_a7800.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_ajag.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_ajag.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_ajagcd.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_ajagcd.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_and.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_and.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_app.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_app.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_cmvic.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_cmvic.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_colv.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_colv.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_gc.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_gc.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_mcd.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_mcd.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_neo.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_neo.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_neopc.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_neopc.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_neox.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_neox.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_pc.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_pc.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_ps1.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_ps1.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_switch.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_switch.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_telstar.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_telstar.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_tg16.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_tg16.png.flat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_xbox720.png.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/drawable-hdpi_pl_xbox720.png.flat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/layout_activity_detalle_juego.xml.flat" afterPath="$PROJECT_DIR$/app/build/intermediates/res/merged/release/layout_activity_detalle_juego.xml.flat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/release/resources-release.ap_" afterPath="$PROJECT_DIR$/app/build/intermediates/res/release/resources-release.ap_" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc12.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc12a.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc12a.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc15.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc15.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc18.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfc18.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfcpg.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfcpg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfcr18.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfcr18.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfcu.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_bbfcu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_ceroa.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_ceroa.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_cerob.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_cerob.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_ceroc.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_ceroc.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_cerod.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_cerod.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_ceroz.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_ceroz.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrba.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrba.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbe.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbe.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbe10p.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbe10p.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbec.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbec.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbm.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbm.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbt.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_esrbt.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi12.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi12.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi18.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi18.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi3.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi3.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi7.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/cl_pegi7.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/sinimagen.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/sinimagen.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a2600.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a2600.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a2800.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a2800.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a5200.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a5200.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a7800.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_a7800.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_ajag.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_ajag.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_ajagcd.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_ajagcd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_and.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_and.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_app.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_app.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_cmvic.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_cmvic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_colv.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_colv.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_gc.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_gc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_mcd.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_mcd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_neo.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_neo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_neopc.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_neopc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_neox.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_neox.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_pc.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_pc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_ps1.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_ps1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_switch.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_switch.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_telstar.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_telstar.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_tg16.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_tg16.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_xbox720.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_xbox720.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/appcompat/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/mediarouter/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/android/support/v7/mediarouter/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/google/android/gms/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/google/android/gms/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/google/zxing/client/android/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/google/zxing/client/android/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/r/release/com/mijuegoteca/R.java" afterPath="$PROJECT_DIR$/app/build/generated/source/r/release/com/mijuegoteca/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/debug.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/mijuegoteca/BuildConfig.java" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/release/com/mijuegoteca/BuildConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/release.json" afterPath="$PROJECT_DIR$/app/build/intermediates/blame/res/release/single/release.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/debug/dex-renamer-state.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/res/symbol-table-with-package/release/package-aware-r.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/release/R.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/outputs/mapping/release/seeds.txt" afterPath="$PROJECT_DIR$/app/build/outputs/mapping/release/seeds.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/build/intermediates/manifests/full/release/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build/reports/lint-results-release-fatal.html" afterPath="$PROJECT_DIR$/app/build/reports/lint-results-release-fatal.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_juego.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_juego.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -198,16 +131,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
+            <state relative-caret-position="60">
+              <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
           </provider>
         </entry>
       </file>
@@ -216,9 +149,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="9210">
               <caret line="631" column="18" lean-forward="false" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -228,9 +159,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
               <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -238,30 +167,23 @@
       <file leaf-file-name="DetalleJuego.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/juegoteca/actividades/DetalleJuego.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="870">
               <caret line="97" column="43" lean-forward="false" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_detalle_juego.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_detalle_juego.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_juego.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
               <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-              <folding>
-                <element signature="e#4878#4902#0" expanded="true" />
-                <element signature="e#5400#5424#0" expanded="true" />
-                <element signature="e#9383#9405#0" expanded="true" />
-                <element signature="e#9901#9923#0" expanded="true" />
-                <element signature="e#12190#12213#0" expanded="true" />
-                <element signature="e#12705#12728#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="android-designer2">
+            <state />
           </provider>
         </entry>
       </file>
@@ -2930,8 +2852,8 @@
         <option value="$PROJECT_DIR$/app/libs/achartengine-1.0.0.jar!/org/achartengine/renderer/DefaultRenderer.class" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_estadisitcas.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/juegoteca/actividades/Estadisitcas.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_juego.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2958,8 +2880,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -3016,8 +2939,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3113,7 +3035,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519806971553" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519812259664" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3161,7 +3083,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519806971553" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519812259664" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3344,7 +3266,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519806971554" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1519812259666" />
       </method>
     </configuration>
     <list size="1">
@@ -3400,7 +3322,7 @@
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1682" height="1010" extended-state="6" />
     <layout>
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243243" sideWeight="0.2876377" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24900873" sideWeight="0.5252525" order="2" side_tool="true" content_ui="tabs" />
@@ -3409,21 +3331,21 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253833" sideWeight="0.7010309" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986537" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879046" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.41395718" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3243243" sideWeight="0.7123623" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3243243" sideWeight="0.7123623" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17870256" sideWeight="0.46717173" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16340269" sideWeight="0.47474748" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3975225" sideWeight="0.49722442" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -3452,23 +3374,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_inicio.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="594">
           <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="55" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listado_juego_caratula.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listado_juego_caratula.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
           <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/captureActivity/build.gradle">
@@ -3502,13 +3424,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_listado_juego.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable-hdpi/pl_switch.png">
@@ -3524,13 +3446,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listado_juego_caratula.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="337">
           <caret line="34" column="4" lean-forward="false" selection-start-line="34" selection-start-column="4" selection-end-line="34" selection-end-column="4" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/juegoteca/actividades/Opciones.java">
@@ -3575,13 +3497,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_inicio.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="33" column="55" lean-forward="false" selection-start-line="33" selection-start-column="55" selection-end-line="33" selection-end-column="55" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/play-services-appinvite-9.2.0.aar/f463d55f11e84c70aef955429b8649ba/res/values-v21/values.xml">
@@ -3657,14 +3579,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/captureActivity/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
@@ -3705,13 +3627,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_estadisitcas.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="670">
           <caret line="147" column="58" lean-forward="false" selection-start-line="147" selection-start-column="58" selection-end-line="147" selection-end-column="58" />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/juegoteca/actividades/Estadisitcas.java">
@@ -3740,9 +3662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9210">
           <caret line="631" column="18" lean-forward="false" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3750,9 +3670,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="42" column="65" lean-forward="false" selection-start-line="42" selection-start-column="65" selection-end-line="42" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3761,41 +3679,34 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="59" lean-forward="false" selection-start-line="39" selection-start-column="59" selection-end-line="39" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/juegoteca/actividades/DetalleJuego.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="870">
           <caret line="97" column="43" lean-forward="false" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_detalle_juego.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-          <folding>
-            <element signature="e#4878#4902#0" expanded="true" />
-            <element signature="e#5400#5424#0" expanded="true" />
-            <element signature="e#9383#9405#0" expanded="true" />
-            <element signature="e#9901#9923#0" expanded="true" />
-            <element signature="e#12190#12213#0" expanded="true" />
-            <element signature="e#12705#12728#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
   </component>
