@@ -28,29 +28,23 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3" >
 
-                <LinearLayout
-                    android:id="@+id/linear_datos1_imagen"
+                <ImageView
+                    android:id="@+id/image_view_caratula_detalle"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:orientation="vertical" >
-
-                    <ImageView
-                        android:id="@+id/image_view_caratula_detalle"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:adjustViewBounds="true"
-                        android:src="@raw/loading" />
-                </LinearLayout>
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="5dp"
+                    android:src="@raw/loading" />
 
                 <LinearLayout
                     android:id="@+id/datos1_detalle_detalle"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="3"
-                    android:orientation="vertical" >
+                    android:layout_marginLeft="5dp "
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_titulo_detalle"
@@ -68,7 +62,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
                         android:layout_weight="1"
+                        android:textAllCaps="true"
                         android:text="@string/label_compania" />
 
                     <TextView
@@ -77,42 +74,40 @@
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:text="@string/label_genero" />
-
-                    <TextView
-                        android:id="@+id/formato_detalle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:textAllCaps="true"
                         android:text="@string/label_genero" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_weight="1" >
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1">
 
                         <ImageView
                             android:id="@+id/image_plataforma_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:onClick="detallePlataforma"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/image_clasificacion_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/ic_launcher" />
 
                         <ImageView
                             android:id="@+id/image_idioma_detalle"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
+                            android:scaleType="fitCenter"
                             android:src="@drawable/ic_launcher" />
                     </LinearLayout>
                 </LinearLayout>
@@ -147,30 +142,6 @@
                     android:text="@string/label_resumen"
                     android:textSize="15sp" />
 
-                <LinearLayout
-                    android:id="@+id/linear_detalle_ean"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
-
-                    <TextView
-                        android:id="@+id/text_ean_detalle_label"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/label_ean"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/text_ean_detalle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:inputType="number" />
-                </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/linear_detalle_fecha_lanzamiento"
@@ -251,8 +222,34 @@
                         android:ems="10"
                         android:inputType="numberDecimal"
                         android:textSize="15sp" />
-                </LinearLayout>
 
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/label_formato_detalla"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/label_formato"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/formato_detalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:text="@string/label_formato" />
+                </LinearLayout>
                 <LinearLayout
                     android:id="@+id/linear_detalle_completado"
                     android:layout_width="match_parent"
@@ -338,6 +335,32 @@
                         android:layout_weight="1"
                         android:inputType="number" />
                 </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_detalle_ean"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0" >
+
+                    <TextView
+                        android:id="@+id/text_ean_detalle_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/label_ean"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/text_ean_detalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:inputType="number" />
+                </LinearLayout>
+
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

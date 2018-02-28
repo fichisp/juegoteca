@@ -6435,6 +6435,7 @@ com.mijuegoteca.R$id: int intent_data
 com.mijuegoteca.R$id: int intent_data_id
 com.mijuegoteca.R$id: int intent_extra_data
 com.mijuegoteca.R$id: int label_descripcion_detalle
+com.mijuegoteca.R$id: int label_formato_detalla
 com.mijuegoteca.R$id: int large_icon_uri
 com.mijuegoteca.R$id: int launch_product_query
 com.mijuegoteca.R$id: int layout_banner_Ads
@@ -6446,8 +6447,6 @@ com.mijuegoteca.R$id: int line3
 com.mijuegoteca.R$id: int linear_comentario_editar
 com.mijuegoteca.R$id: int linear_comentario_nuevo
 com.mijuegoteca.R$id: int linear_datos1_detalle_editar
-com.mijuegoteca.R$id: int linear_datos1_imagen
-com.mijuegoteca.R$id: int linear_datos1_imagen_editar
 com.mijuegoteca.R$id: int linear_detalle_all
 com.mijuegoteca.R$id: int linear_detalle_comentario
 com.mijuegoteca.R$id: int linear_detalle_completado
@@ -6646,6 +6645,7 @@ com.mijuegoteca.R$id: int text_fecha_lanzamiento_detalle
 com.mijuegoteca.R$id: int text_fecha_lanzamiento_detalle_label
 com.mijuegoteca.R$id: int text_fecha_lanzamiento_editar
 com.mijuegoteca.R$id: int text_fecha_lanzamiento_nuevo
+com.mijuegoteca.R$id: int text_formato_editar
 com.mijuegoteca.R$id: int text_genero_buscador
 com.mijuegoteca.R$id: int text_genero_detalle
 com.mijuegoteca.R$id: int text_list_view
