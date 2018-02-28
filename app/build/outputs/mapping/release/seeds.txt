@@ -6459,6 +6459,7 @@ com.mijuegoteca.R$id: int linear_detalle_ean
 com.mijuegoteca.R$id: int linear_detalle_fecha_compra
 com.mijuegoteca.R$id: int linear_detalle_fecha_lanzamiento
 com.mijuegoteca.R$id: int linear_detalle_formato
+com.mijuegoteca.R$id: int linear_detalle_formato_2
 com.mijuegoteca.R$id: int linear_detalle_genero
 com.mijuegoteca.R$id: int linear_detalle_idioma
 com.mijuegoteca.R$id: int linear_detalle_precio
