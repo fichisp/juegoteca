@@ -165,4 +165,7 @@
 <string name="zip">Generando fichero&#8230;</string>
     <string name="buscando">Buscando...</string>
     <string name="action_forgot_password">Recuperar contraseña</string>
+    <string name="valor_total">Valor</string>
+    <string name="valor_medio">Precio medio por juego</string>
+    <string name="titulo_estadisiticas_resumen">Resumen</string>
 </resources>

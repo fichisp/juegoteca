@@ -1,279 +1,277 @@
-# view AndroidManifest.xml #generated:64
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:64
 -keep class android.support.multidex.MultiDexApplication { <init>(...); }
 
-# view res/layout/abc_alert_dialog_material.xml #generated:75
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_alert_dialog_material.xml:0
 -keep class android.support.v4.widget.NestedScrollView { <init>(...); }
 
-# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:39
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_alert_dialog_button_bar_material.xml:0
 -keep class android.support.v4.widget.Space { <init>(...); }
 
-# view res/layout/abc_action_menu_item_layout.xml #generated:17
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_action_menu_item_layout.xml:0
 -keep class android.support.v7.view.menu.ActionMenuItemView { <init>(...); }
 
-# view res/layout/abc_expanded_menu_layout.xml #generated:17
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_expanded_menu_layout.xml:0
 -keep class android.support.v7.view.menu.ExpandedMenuView { <init>(...); }
 
-# view res/layout/abc_list_menu_item_layout.xml #generated:17
-# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_list_menu_item_layout.xml:0
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_popup_menu_item_layout.xml:0
 -keep class android.support.v7.view.menu.ListMenuItemView { <init>(...); }
 
-# view res/layout/abc_screen_toolbar.xml #generated:27
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_toolbar.xml:0
 -keep class android.support.v7.widget.ActionBarContainer { <init>(...); }
 
-# view res/layout/abc_action_mode_bar.xml #generated:19
-# view res/layout/abc_screen_toolbar.xml #generated:43
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_action_mode_bar.xml:0
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_toolbar.xml:0
 -keep class android.support.v7.widget.ActionBarContextView { <init>(...); }
 
-# view res/layout/abc_screen_toolbar.xml #generated:17
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_toolbar.xml:0
 -keep class android.support.v7.widget.ActionBarOverlayLayout { <init>(...); }
 
-# view res/layout/abc_action_menu_layout.xml #generated:17
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_action_menu_layout.xml:0
 -keep class android.support.v7.widget.ActionMenuView { <init>(...); }
 
-# view res/layout/abc_activity_chooser_view.xml #generated:19
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_activity_chooser_view.xml:0
 -keep class android.support.v7.widget.ActivityChooserView$InnerLayout { <init>(...); }
 
-# view res/layout/abc_alert_dialog_button_bar_material.xml #generated:18
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_alert_dialog_button_bar_material.xml:0
 -keep class android.support.v7.widget.ButtonBarLayout { <init>(...); }
 
-# view res/layout/abc_screen_content_include.xml #generated:19
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_content_include.xml:0
 -keep class android.support.v7.widget.ContentFrameLayout { <init>(...); }
 
-# view res/layout/abc_alert_dialog_material.xml #generated:48
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_alert_dialog_material.xml:0
 -keep class android.support.v7.widget.DialogTitle { <init>(...); }
 
-# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:23
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_simple_overlay_action_mode.xml:0
 -keep class android.support.v7.widget.FitWindowsFrameLayout { <init>(...); }
 
-# view res/layout/abc_dialog_title_material.xml #generated:22
-# view res/layout/abc_screen_simple.xml #generated:17
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_dialog_title_material.xml:0
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_simple.xml:0
 -keep class android.support.v7.widget.FitWindowsLinearLayout { <init>(...); }
 
-# view res/layout/abc_search_view.xml #generated:75
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_search_view.xml:0
 -keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
 
-# view res/layout/abc_screen_toolbar.xml #generated:36
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_toolbar.xml:0
 -keep class android.support.v7.widget.Toolbar { <init>(...); }
 
-# view res/layout/abc_screen_simple.xml #generated:25
-# view res/layout/abc_screen_simple_overlay_action_mode.xml #generated:32
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_simple.xml:0
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/layout/abc_screen_simple_overlay_action_mode.xml:0
 -keep class android.support.v7.widget.ViewStubCompat { <init>(...); }
 
-# view AndroidManifest.xml #generated:236
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:235
 -keep class com.google.android.gms.ads.AdActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:513
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:427
 -keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:414
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:430
 -keep class com.google.android.gms.appinvite.PreviewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:525
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:422
 -keep class com.google.android.gms.auth.api.signin.RevocationBoundService { <init>(...); }
 
-# view AndroidManifest.xml #generated:516
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:413
 -keep class com.google.android.gms.auth.api.signin.internal.SignInHubActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:428
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:444
 -keep class com.google.android.gms.cast.framework.ReconnectionService { <init>(...); }
 
-# view res/layout/cast_help_text.xml #generated:2
+# Referenced at /home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-9.2.0.aar/42c1548f680497e2810ac98e325cec23/res/layout/cast_help_text.xml:0
 -keep class com.google.android.gms.cast.framework.internal.featurehighlight.HelpTextView { <init>(...); }
 
-# view AndroidManifest.xml #generated:425
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:441
 -keep class com.google.android.gms.cast.framework.media.MediaIntentReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:427
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:443
 -keep class com.google.android.gms.cast.framework.media.MediaNotificationService { <init>(...); }
 
-# view AndroidManifest.xml #generated:530
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:452
 -keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:464
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:485
 -keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:472
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:493
 -keep class com.google.android.gms.measurement.AppMeasurementService { <init>(...); }
 
-# view AndroidManifest.xml #generated:451
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:472
 -keep class com.google.android.gms.tagmanager.TagManagerPreviewActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:446
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:467
 -keep class com.google.android.gms.tagmanager.TagManagerService { <init>(...); }
 
-# view AndroidManifest.xml #generated:429
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:445
 -keep class com.google.firebase.crash.internal.service.FirebaseCrashReceiverService { <init>(...); }
 
-# view AndroidManifest.xml #generated:432
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:448
 -keep class com.google.firebase.crash.internal.service.FirebaseCrashSenderService { <init>(...); }
 
-# view AndroidManifest.xml #generated:492
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:513
 -keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:477
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:498
 -keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(...); }
 
-# view AndroidManifest.xml #generated:499
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:520
 -keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(...); }
 
-# view AndroidManifest.xml #generated:439
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:460
 -keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(...); }
 
-# view AndroidManifest.xml #generated:507
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:528
 -keep class com.google.firebase.provider.FirebaseInitProvider { <init>(...); }
 
-# view AndroidManifest.xml #generated:252
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:251
 -keep class com.google.zxing.client.android.CaptureActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:405
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:404
 -keep class com.google.zxing.client.android.HelpActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:319
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:318
 -keep class com.google.zxing.client.android.PreferencesActivity { <init>(...); }
 
-# view ldpi-v4/res/layout-ldpi-v4/capture.xml #generated:25
-# view res/layout/capture.xml #generated:25
+# Referenced at /home/alvaro/Workspaces/juegoteca/captureActivity/build/intermediates/bundles/release/res/layout-ldpi-v4/capture.xml:0
+# Referenced at /home/alvaro/Workspaces/juegoteca/captureActivity/build/intermediates/bundles/release/res/layout/capture.xml:0
 -keep class com.google.zxing.client.android.ViewfinderView { <init>(...); }
 
-# view AndroidManifest.xml #generated:350
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:349
 -keep class com.google.zxing.client.android.book.SearchBookContentsActivity { <init>(...); }
 
-# view res/layout/search_book_contents_list_item.xml #generated:17
+# Referenced at /home/alvaro/Workspaces/juegoteca/captureActivity/build/intermediates/bundles/release/res/layout/search_book_contents_list_item.xml:0
 -keep class com.google.zxing.client.android.book.SearchBookContentsListItem { <init>(...); }
 
-# view AndroidManifest.xml #generated:324
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:323
 -keep class com.google.zxing.client.android.encode.EncodeActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:374
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:373
 -keep class com.google.zxing.client.android.history.HistoryActivity { <init>(...); }
 
-# view res/xml/preferences.xml #generated:98
+# Referenced at /home/alvaro/Workspaces/juegoteca/captureActivity/build/intermediates/bundles/release/res/xml/preferences.xml:0
 -keep class com.google.zxing.client.android.pref.BSPlusPreference { <init>(...); }
 
-# view AndroidManifest.xml #generated:394
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:393
 -keep class com.google.zxing.client.android.share.AppPickerActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:384
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:383
 -keep class com.google.zxing.client.android.share.BookmarkPickerActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:362
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:361
 -keep class com.google.zxing.client.android.share.ShareActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:227
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:226
 -keep class com.juegoteca.actividades.AcercaDe { <init>(...); }
 
-# view AndroidManifest.xml #generated:122
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:121
 -keep class com.juegoteca.actividades.Buscador { <init>(...); }
 
-# view AndroidManifest.xml #generated:81
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:80
 -keep class com.juegoteca.actividades.DetalleJuego { <init>(...); }
 
-# view AndroidManifest.xml #generated:244
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:243
 -keep class com.juegoteca.actividades.DuplicarJuego { <init>(...); }
 
-# view AndroidManifest.xml #generated:114
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:113
 -keep class com.juegoteca.actividades.EditarJuego { <init>(...); }
 
-# view AndroidManifest.xml #generated:131
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:130
 -keep class com.juegoteca.actividades.Estadisitcas { <init>(...); }
 
-# view AndroidManifest.xml #generated:197
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:196
 -keep class com.juegoteca.actividades.Favoritos { <init>(...); }
 
-# view AndroidManifest.xml #generated:178
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:177
 -keep class com.juegoteca.actividades.IniciarSesion { <init>(...); }
 
-# view AndroidManifest.xml #generated:75
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:74
 -keep class com.juegoteca.actividades.Inicio { <init>(...); }
 
-# view AndroidManifest.xml #generated:101
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:100
 -keep class com.juegoteca.actividades.ListadoJuego { <init>(...); }
 
-# view AndroidManifest.xml #generated:93
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:92
 -keep class com.juegoteca.actividades.NuevoJuego { <init>(...); }
 
-# view AndroidManifest.xml #generated:170
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:169
 -keep class com.juegoteca.actividades.Opciones { <init>(...); }
 
-# view AndroidManifest.xml #generated:206
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:205
 -keep class com.juegoteca.actividades.Pendientes { <init>(...); }
 
-# view AndroidManifest.xml #generated:184
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:183
 -keep class com.juegoteca.actividades.Plataforma { <init>(...); }
 
-# view AndroidManifest.xml #generated:192
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:191
 -keep class com.juegoteca.actividades.Registro { <init>(...); }
 
-# view AndroidManifest.xml #generated:158
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:157
 -keep class com.juegoteca.actividades.Splash { <init>(...); }
 
-# view res/layout/activity_inicio.xml #generated:30
-# view res/layout/activity_inicio.xml #generated:65
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keep class com.juegoteca.ui.HorizontalListView { <init>(...); }
 
-# view AndroidManifest.xml #generated:240
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:239
 -keep class com.mijuegoteca.Anuncio { <init>(...); }
 
-# view AndroidManifest.xml #generated:109
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:108
 -keep class com.mijuegoteca.CargarCaratula { <init>(...); }
 
-# view AndroidManifest.xml #generated:220
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:219
 -keep class com.mijuegoteca.FtpUpload { <init>(...); }
 
-# view res/xml/pref_headers.xml #generated:11
-# view res/xml/pref_headers.xml #generated:8
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/xml/pref_headers.xml:0
 -keep class com.mijuegoteca.Opciones$DataSyncPreferenceFragment { <init>(...); }
 
-# view res/xml/pref_headers.xml #generated:5
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/xml/pref_headers.xml:0
 -keep class com.mijuegoteca.Opciones$GeneralPreferenceFragment { <init>(...); }
 
-# view AndroidManifest.xml #generated:215
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:214
 -keep class com.mijuegoteca.SeleccionarFichero { <init>(...); }
 
-# onClick res/layout/activity_editar_juego.xml #generated:271
-# onClick res/layout/activity_nuevo_juego.xml #generated:266
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_editar_juego.xml:0
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_nuevo_juego.xml:0
 -keepclassmembers class * { *** activarFechaCompletado(...); }
 
-# onClick res/layout/activity_buscador.xml #generated:184
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_buscador.xml:0
 -keepclassmembers class * { *** buscarJuego(...); }
 
-# onClick res/layout/activity_buscador.xml #generated:60
-# onClick res/layout/activity_editar_juego.xml #generated:157
-# onClick res/layout/activity_nuevo_juego.xml #generated:150
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_buscador.xml:0
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_editar_juego.xml:0
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_nuevo_juego.xml:0
 -keepclassmembers class * { *** capturarCodigo(...); }
 
-# onClick res/layout/activity_editar_juego.xml #generated:36
-# onClick res/layout/activity_nuevo_juego.xml #generated:35
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_editar_juego.xml:0
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_nuevo_juego.xml:0
 -keepclassmembers class * { *** cargarCaratula(...); }
 
-# onClick res/layout/listado_juego.xml #generated:2
-# onClick res/layout/listado_juego_sin_caratula.xml #generated:2
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/listado_juego.xml:0
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/listado_juego_sin_caratula.xml:0
 -keepclassmembers class * { *** detalleJuego(...); }
 
-# onClick res/layout/activity_detalle_juego.xml #generated:96
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_detalle_juego.xml:0
 -keepclassmembers class * { *** detallePlataforma(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:101
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keepclassmembers class * { *** estadisticas(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:110
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keepclassmembers class * { *** favoritos(...); }
 
-# onClick res/layout/activity_registro.xml #generated:128
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_registro.xml:0
 -keepclassmembers class * { *** iniciarRegistro(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:92
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keepclassmembers class * { *** listarJuegos(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:83
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keepclassmembers class * { *** nuevoJuego(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:128
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keepclassmembers class * { *** opciones(...); }
 
-# onClick res/layout/activity_inicio.xml #generated:119
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_inicio.xml:0
 -keepclassmembers class * { *** pendientes(...); }
 
-# onClick res/layout/activity_iniciar_sesion.xml #generated:92
+# Referenced at /home/alvaro/Workspaces/juegoteca/app/src/main/res/layout/activity_iniciar_sesion.xml:0
 -keepclassmembers class * { *** registro(...); }
 

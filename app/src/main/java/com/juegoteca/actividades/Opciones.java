@@ -605,6 +605,58 @@ public class Opciones extends PreferenceActivity {
 	}
 
 	/**
+	 *
+	 * @author alvaro
+	 *
+	 */
+	private class RestaurarCopiaFichero extends AsyncTask<Void, Void, Integer> {
+
+		Intent data;
+
+		@Override
+		protected void onPreExecute() {
+			dialogoCopia = ProgressDialog.show(Opciones.this, null,
+					"Restaurando copia de seguridad...", true);
+
+		}
+
+		@Override
+		protected Integer doInBackground(Void... params) {
+			// Get the Uri of the selected file
+			Uri uri = data.getData();
+			Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
+			// Get the path
+			String path = uri.getPath();
+			Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
+			if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
+				return 1;
+			} else {
+				return 2;
+			}
+		}
+
+		@Override
+		protected void onPostExecute(Integer result) {
+			dialogoCopia.dismiss();
+			Toast t;
+			switch (result) {
+				case 1:
+					utilidades
+							.reiniciarApp(getString(R.string.copia_restaurada_ok));
+					break;
+				case 2:
+					t = Toast.makeText(getApplicationContext(),
+							"Error.",
+							Toast.LENGTH_SHORT);
+					t.show();
+					break;
+			}
+			return;
+		}
+	}
+
+
+	/**
 	 * 
 	 */
 	@Override
@@ -612,7 +664,7 @@ public class Opciones extends PreferenceActivity {
 		switch (requestCode) {
 		case FILE_SELECT_CODE:
 			if (resultCode == RESULT_OK) {
-				// Get the Uri of the selected file
+				/*// Get the Uri of the selected file
 				Uri uri = data.getData();
 				Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
 				// Get the path
@@ -626,7 +678,11 @@ public class Opciones extends PreferenceActivity {
 					t = Toast.makeText(getApplicationContext(),
 							R.string.copia_restaurada_ko, Toast.LENGTH_SHORT);
 					t.show();
-				}
+				}*/
+
+				RestaurarCopiaFichero task = new RestaurarCopiaFichero();
+				task.data = data;
+				task.execute();
 			}
 			break;
 		}

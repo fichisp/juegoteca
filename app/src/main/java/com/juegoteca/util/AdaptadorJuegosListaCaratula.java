@@ -41,9 +41,11 @@ public class AdaptadorJuegosListaCaratula extends ArrayAdapter<Juego> {
 		View item = inflater.inflate(R.layout.listado_juego_caratula, parent, false);
 
 		TextView id = (TextView)item.findViewById(R.id.id_juego);
+
 		id.setText(String.valueOf(juegos[position].getId()));
 
 		ImageView caratula = (ImageView)item.findViewById(R.id.image_caratula_listado_caratula);
+
 
 		utilidades.redimensionarElemento(caratula);
 
