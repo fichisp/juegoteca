@@ -15,15 +15,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24456e17-c9da-496e-bd5b-e83ab9fd03e3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/captureActivity/captureActivity.iml" afterPath="$PROJECT_DIR$/captureActivity/captureActivity.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid16992.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid17094.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid19751.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid25399.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid28557.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid30303.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid32062.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/hs_err_pid361.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="$PROJECT_DIR$/app/.gitignore" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/classes/" />
@@ -135,6 +135,9 @@
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
               <caret line="4" column="30" lean-forward="false" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
@@ -2972,7 +2975,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520458904991" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520459047936" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -3020,7 +3023,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520458904992" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520459047937" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -3182,7 +3185,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520458904999" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1520459047938" />
       </method>
     </configuration>
     <list size="1">
@@ -3360,6 +3363,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="50" column="14" lean-forward="false" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3563,6 +3567,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="71" column="43" lean-forward="false" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+          <folding>
+            <element signature="e#2596#2648#0" expanded="true" />
+            <element signature="e#2665#2715#0" expanded="true" />
+            <element signature="e#2738#2799#0" expanded="true" />
+            <element signature="e#4924#5726#0" expanded="true" />
+            <element signature="e#5042#5057#0" expanded="true" />
+            <element signature="e#5582#5627#0" expanded="true" />
+            <element signature="e#5725#5726#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3595,6 +3608,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="402" column="12" lean-forward="false" selection-start-line="402" selection-start-column="12" selection-end-line="403" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
