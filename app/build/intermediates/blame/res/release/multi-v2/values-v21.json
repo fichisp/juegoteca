@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/values-v21/values-v21.xml",
@@ -23,22 +23,22 @@
                     }
                 },
                 {
-                    "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/values-v21/themes.xml",
+                    "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/values-v21/styles.xml",
                     "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "115",
-                        "endLines": "9",
-                        "endColumns": "12",
-                        "endOffsets": "600"
+                        "startLines": "106,7,18,22,80,38,46,30,48,54,61,68,75,85,99,26,94",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4583,284,752,913,3508,1699,2028,1286,2066,2292,2580,2932,3297,3641,4341,1104,4161",
+                        "endLines": "109,15,20,24,82,44,46,36,52,59,66,73,78,92,103,28,97",
+                        "endColumns": "12,12,12,12,12,12,36,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "4810,714,907,1098,3602,2022,2060,1693,2286,2574,2926,3291,3502,4155,4553,1280,4335"
                     },
                     "to": {
-                        "startLines": "315",
-                        "startColumns": "4",
-                        "startOffsets": "21639",
-                        "endLines": "321",
-                        "endColumns": "12",
-                        "endOffsets": "22124"
+                        "startLines": "2,6,15,18,229,232,239,240,247,252,258,264,270,306,322,327,330",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,287,722,882,16853,16952,17280,17316,17728,17953,18240,18591,18955,20998,22129,22346,22527",
+                        "endLines": "5,14,17,20,231,238,239,246,251,257,263,269,273,313,326,329,333",
+                        "endColumns": "12,12,12,12,12,12,35,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "282,717,877,1067,16947,17275,17311,17723,17948,18235,18586,18950,19160,21512,22341,22522,22701"
                     }
                 },
                 {
@@ -59,22 +59,22 @@
                     }
                 },
                 {
-                    "source": "/home/alvaro/Workspaces/juegoteca/app/src/main/res/values-v21/styles.xml",
+                    "source": "/home/alvaro/proyectos/juegoteca/app/src/main/res/values-v21/themes.xml",
                     "from": {
-                        "startLines": "106,7,18,22,80,38,46,30,48,54,61,68,75,85,99,26,94",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "4583,284,752,913,3508,1699,2028,1286,2066,2292,2580,2932,3297,3641,4341,1104,4161",
-                        "endLines": "109,15,20,24,82,44,46,36,52,59,66,73,78,92,103,28,97",
-                        "endColumns": "12,12,12,12,12,12,36,12,12,12,12,12,12,12,12,12,12",
-                        "endOffsets": "4810,714,907,1098,3602,2022,2060,1693,2286,2574,2926,3291,3502,4155,4553,1280,4335"
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "115",
+                        "endLines": "9",
+                        "endColumns": "12",
+                        "endOffsets": "600"
                     },
                     "to": {
-                        "startLines": "2,6,15,18,229,232,239,240,247,252,258,264,270,306,322,327,330",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,287,722,882,16853,16952,17280,17316,17728,17953,18240,18591,18955,20998,22129,22346,22527",
-                        "endLines": "5,14,17,20,231,238,239,246,251,257,263,269,273,313,326,329,333",
-                        "endColumns": "12,12,12,12,12,12,35,12,12,12,12,12,12,12,12,12,12",
-                        "endOffsets": "282,717,877,1067,16947,17275,17311,17723,17948,18235,18586,18950,19160,21512,22341,22522,22701"
+                        "startLines": "315",
+                        "startColumns": "4",
+                        "startOffsets": "21639",
+                        "endLines": "321",
+                        "endColumns": "12",
+                        "endOffsets": "22124"
                     }
                 }
             ]
