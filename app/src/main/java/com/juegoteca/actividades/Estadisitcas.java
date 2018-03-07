@@ -30,7 +30,9 @@ import org.achartengine.renderer.DefaultRenderer;
 import org.achartengine.renderer.SimpleSeriesRenderer;
 import org.achartengine.renderer.XYMultipleSeriesRenderer;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Formatter;
 import java.util.List;
 import java.util.Locale;
 
@@ -154,15 +156,16 @@ public class Estadisitcas extends Activity {
 		TextView resumenSum = (TextView) findViewById(R.id.text_view_resumen_sum);
 		TextView resumenAVG = (TextView) findViewById(R.id.text_view_resumen_avg);
 
-		resumenTotal.setText(getString(R.string.total_juegos) + ": "
-				+ total);
-		if(valorColeccion!=null){
-			resumenSum.setText(getString(R.string.valor_total)+ ": " + valorColeccion);
-			resumenAVG.setText(getString(R.string.valor_medio)+ ": " + valorColeccion/juegosConPrecio);
+		resumenTotal.setText(String.valueOf(total));
+		if(valorColeccion!=null && juegosConPrecio!=null && juegosConPrecio>0){
+			resumenSum.setText(String.valueOf(valorColeccion));
+			BigDecimal bd = new BigDecimal(Float.toString(valorColeccion/juegosConPrecio));
+			bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
+			resumenAVG.setText(String.valueOf(bd.floatValue()));
 
 		} else {
-			resumenSum.setText(getString(R.string.valor_total)+ ": " + "-");
-			resumenAVG.setText(getString(R.string.valor_medio)+ ": " + "-");
+			resumenSum.setText("");
+			resumenAVG.setText("");
 		}
 
 

@@ -207,4 +207,8 @@ insert into plataforma SELECT id,nombre,fabricante,fecha_lanzamiento,resumen,dra
 INSERT INTO plataforma (id,nombre, fabricante, fecha_lanzamiento, resumen, drawable, imagen) VALUES(16,'Nintendo Switch', 'Nintendo', '2017', 'Nintendo Switch es una consola híbrida, que se puede usar tanto como consola de sobremesa como portátil. Fue anunciada el 17 de marzo de 2015 durante una conferencia de prensa, y mostrada por primera vez el 20 de octubre de 2016.3 El 13 de enero de 2017, se anunció que la consola saldrá a la venta oficialmente el 3 de marzo de 2017 en Estados Unidos, Canadá y varios países de Europa, a un coste de 299 dólares.', 'pl_switch', 'fabec2dfaf4dc19f8a3ff18b4453b812.png');
 insert into plataforma SELECT id+1,nombre,fabricante,fecha_lanzamiento,resumen,drawable,imagen  FROM plataforma_tmp where id>=16 order by id asc;
 DROP table plataforma_tmp;
+<<<<<<< HEAD
 update juego set plataforma=plataforma+1 where plataforma>=16;
+=======
+update juego set plataforma=plataforma+1 where plataforma>=16;
+>>>>>>> 1.3.15

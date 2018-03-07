@@ -1,7 +1,7 @@
 <resources>
 
     <color name="black_overlay">#66000000</color>
-    <color name="blanco">#FFFFFF</color>
+    <color name="blanco">#ffffff</color>
     <color name="naranja_cabeceras">#e7761a</color>
     <color name="negro">#000000</color>
 

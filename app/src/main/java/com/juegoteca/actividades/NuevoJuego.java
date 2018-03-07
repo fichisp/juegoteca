@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -347,8 +348,18 @@ public class NuevoJuego extends Activity {
 				//toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
 				toast.show();
 
-				
-				Intent intent = new Intent(this, DetalleJuego.class);
+				final SharedPreferences settings = getSharedPreferences("UserInfo",
+						0);
+				Intent intent;
+				if(settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen",true)){
+
+					intent = new Intent(this, DetalleJuegoImagenGrande.class);
+
+				} else {
+					intent = new Intent(this, DetalleJuego.class);
+
+				}
+				//Intent intent = new Intent(this, DetalleJuego.class);
 				intent.putExtra("ID_JUEGO", String.valueOf(id));
 				intent.putExtra("NUEVO_JUEGO", true);
 				startActivity(intent);

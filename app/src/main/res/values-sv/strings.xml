@@ -106,7 +106,7 @@
     <string name="hint_titulo">Game title</string>
     <string name="label_compania">Company</string>
     <string name="label_resumen">Summary</string>
-    <string name="label_fecha_lanzamiento">Release date</string>
+    <string name="label_fecha_lanzamiento">Release</string>
     <string name="label_fecha_compra">Date of purchase</string>
     <string name="label_precio">Price</string>
     <string name="label_completado">Completed</string>

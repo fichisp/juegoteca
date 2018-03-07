@@ -21,7 +21,7 @@ import java.util.Locale;
 
 public class JuegosSQLHelper extends SQLiteOpenHelper {
 
-	private static int DATABASE_VERSION = 14;
+	private static int DATABASE_VERSION = 15;
 	private static String DATABASE_NAME = "Juegoteca";
 
 	private Resources resources;

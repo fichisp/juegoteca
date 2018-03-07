@@ -2,6 +2,7 @@ package com.juegoteca.actividades;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -223,8 +224,15 @@ public class Inicio extends Activity {
 	public void detalleJuego(View view) {
 		TextView id = (TextView) view.findViewById(R.id.id_juego);
 		Intent intent;
+		final SharedPreferences settings = getSharedPreferences("UserInfo",
+				0);
 		if (Integer.parseInt(String.valueOf(id.getText())) == -1) {
 			intent = new Intent(this, NuevoJuego.class);
+		} else if(settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen",true)){
+
+			intent = new Intent(this, DetalleJuegoImagenGrande.class);
+			intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
+			intent.putExtra("NUEVO_JUEGO", false);
 		} else {
 			intent = new Intent(this, DetalleJuego.class);
 			intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
