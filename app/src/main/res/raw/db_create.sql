@@ -208,7 +208,11 @@ INSERT INTO plataforma (id,nombre, fabricante, fecha_lanzamiento, resumen, drawa
 insert into plataforma SELECT id+1,nombre,fabricante,fecha_lanzamiento,resumen,drawable,imagen  FROM plataforma_tmp where id>=16 order by id asc;
 DROP table plataforma_tmp;
 <<<<<<< HEAD
+<<<<<<< HEAD
 update juego set plataforma=plataforma+1 where plataforma>=16;
+=======
+update juego set plataforma=plataforma+1 where plataforma>=16;
+>>>>>>> 1.3.15
 =======
 update juego set plataforma=plataforma+1 where plataforma>=16;
 >>>>>>> 1.3.15
