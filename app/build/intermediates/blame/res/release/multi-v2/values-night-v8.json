@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.4.0.aar/8246f56f968b4d0b440ed784f52515be/res/values-night-v8/values-night-v8.xml",

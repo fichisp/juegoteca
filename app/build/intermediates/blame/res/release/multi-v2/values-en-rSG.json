@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rSG/values-en-rSG.xml",
+            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
                     "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-wallet-9.2.0.aar/8c5344db3f2760d1d703c983f1408647/res/values-en-rSG/values.xml",

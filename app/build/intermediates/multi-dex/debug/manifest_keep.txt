@@ -1,3 +1,3 @@
-# Referenced at /home/alvaro/Workspaces/juegoteca/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:64
+# Referenced at /home/alvaro/proyectos/juegoteca/app/build/intermediates/manifests/full/debug/AndroidManifest.xml:64
 -keep class android.support.multidex.MultiDexApplication { <init>(...); }
 

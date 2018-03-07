@@ -13255,6 +13255,8 @@ com.juegoteca.basedatos.Juego:
     355:356:public void setNombreClasificacion(java.lang.String)
 com.juegoteca.basedatos.JuegosSQLHelper:
     346:356:public android.database.Cursor getGeneros(java.lang.String[])
+com.juegoteca.igdb.IGDBFilter
+com.juegoteca.igdb.IGDBManager
 com.juegoteca.system.SystemUiHider
 com.juegoteca.system.SystemUiHider$1
 com.juegoteca.system.SystemUiHider$OnVisibilityChangeListener

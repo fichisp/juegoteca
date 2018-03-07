@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/alvaro/Workspaces/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ml/values-ml.xml",
+            "outputFile": "/home/alvaro/proyectos/juegoteca/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-ml/values-ml.xml",
             "map": [
                 {
                     "source": "/home/alvaro/.gradle/caches/transforms-1/files-1.1/play-services-places-9.2.0.aar/cf51eda4b4b6cd8ed63c2799458d5bb9/res/values-ml/values.xml",
