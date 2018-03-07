@@ -1,3 +1,0 @@
-# Referenced at /home/alvaro/proyectos/juegoteca/app/build/intermediates/manifests/full/release/AndroidManifest.xml:64
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
-
