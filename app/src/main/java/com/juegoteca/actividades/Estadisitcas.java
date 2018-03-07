@@ -157,15 +157,15 @@ public class Estadisitcas extends Activity {
 		TextView resumenAVG = (TextView) findViewById(R.id.text_view_resumen_avg);
 
 		resumenTotal.setText(String.valueOf(total));
-		if(valorColeccion!=null){
+		if(valorColeccion!=null && juegosConPrecio!=null && juegosConPrecio>0){
 			resumenSum.setText(String.valueOf(valorColeccion));
 			BigDecimal bd = new BigDecimal(Float.toString(valorColeccion/juegosConPrecio));
 			bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
 			resumenAVG.setText(String.valueOf(bd.floatValue()));
 
 		} else {
-			resumenSum.setText(getString(R.string.valor_total)+ ": " + "-");
-			resumenAVG.setText(getString(R.string.valor_medio)+ ": " + "-");
+			resumenSum.setText("");
+			resumenAVG.setText("");
 		}
 
 
