@@ -32,7 +32,7 @@ public class InicioMasonry extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_masonry);
         // Show the Up button in the action bar.
-        setupActionBar();
+        //setupActionBar();
 
         mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid);
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
@@ -135,10 +135,9 @@ public class InicioMasonry extends Activity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, Inicio.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        Intent intent = new Intent(InicioMasonry.this,
+                Inicio.class);
         startActivity(intent);
-        finish();
     }
 
     @Override
