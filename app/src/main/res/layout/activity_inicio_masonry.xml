@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/black_overlay"
+    tools:context="com.juegoteca.actividades.InicioMasonry">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_grid_juegos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/masonry_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/cast_intro_overlay_background_color"
+            android:clipToPadding="false" />
+
+        <LinearLayout
+            style="@style/Padding16V"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:background="@color/naranja_cabeceras"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <ImageButton
+                android:id="@+id/boton_nuevo"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="nuevoJuego"
+                android:src="@drawable/boton_nuevo" />
+
+            <ImageButton
+                android:id="@+id/boton_buscar"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="listarJuegos"
+                android:src="@drawable/boton_buscar" />
+
+            <ImageButton
+                android:id="@+id/boton_estadisticas"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="estadisticas"
+                android:src="@drawable/boton_estadistica" />
+
+            <ImageButton
+                android:id="@+id/boton_favoritos"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="favoritos"
+                android:src="@drawable/boton_favoritos" />
+
+            <ImageButton
+                android:id="@+id/boton_pendientes"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="pendientes"
+                android:src="@drawable/boton_pendientes" />
+
+            <ImageButton
+                android:id="@+id/boton_opciones"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="opciones"
+                android:src="@drawable/boton_opciones" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

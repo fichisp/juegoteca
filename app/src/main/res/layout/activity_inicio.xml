@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/Padding0"
     android:layout_width="match_parent"
@@ -41,6 +42,7 @@
                 android:paddingLeft="0dp"
                 android:paddingStart="0dp"
                 android:paddingTop="0dp">
+
             </com.juegoteca.ui.HorizontalListView>
         </LinearLayout>
 
@@ -86,6 +88,15 @@
             android:layout_weight="0"
             android:background="@color/naranja_cabeceras"
             android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/boton_grid"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="gridJuegos"
+                android:src="@drawable/ic_view_quilt_black_24dp" />
 
             <ImageButton
                 android:id="@+id/boton_nuevo"

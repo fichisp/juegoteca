@@ -164,4 +164,5 @@
     <string name="no_data_backup">There is no data to save in the backup</string>
 <string name="zip">Creating file&#8230;</string>
     <string name="buscando">Searching...</string>
+    <string name="action_grid">Grid</string>
 </resources>

@@ -162,7 +162,7 @@
     <string name="juego_eliminado">Game deleted</string>
     <string name="juego_no_eliminado">Could not delete the game</string>
     <string name="no_data_backup">There is no data to save in the backup</string>
-<string name="zip">Creating file...</string>
+    <string name="zip">Creating file...</string>
     <string name="buscando">Searching...</string>
     <string name="valor_total">Value</string>
     <string name="valor_medio">AVG game price</string>
@@ -171,4 +171,6 @@
     <string name="label_idioma">Idioma</string>
     <string name="pref_title_view">Game detail view format</string>
     <string name="pref_description_view">See the detail of the game with the large image format</string>
+    <string name="title_activity_inicio_masonry">All my games</string>
+    <string name="action_grid">Grid</string>
 </resources>

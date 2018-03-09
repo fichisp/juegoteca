@@ -168,5 +168,7 @@
     <string name="valor_medio">Precio medio juego</string>
     <string name="titulo_estadisiticas_resumen">Resumen</string>
     <string name="pref_title_view">Formato de vista detallada del juego</string>
+    <string name="action_grid">Grid</string>
+    <string name="title_activity_inicio_masonry">Todos los juegos</string>
 
 </resources>
