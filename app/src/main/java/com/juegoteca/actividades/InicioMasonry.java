@@ -39,7 +39,7 @@ public class InicioMasonry extends Activity {
 
         MasonryAdapter adapter = new MasonryAdapter(this);
         mRecyclerView.setAdapter(adapter);
-        SpacesItemDecoration decoration = new SpacesItemDecoration(8);
+        SpacesItemDecoration decoration = new SpacesItemDecoration(4);
         mRecyclerView.addItemDecoration(decoration);
 
     }

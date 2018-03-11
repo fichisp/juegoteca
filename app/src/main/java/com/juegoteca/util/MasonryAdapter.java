@@ -6,6 +6,7 @@ package com.juegoteca.util;
         import android.content.Intent;
         import android.content.SharedPreferences;
         import android.database.Cursor;
+        import android.graphics.Color;
         import android.support.v7.widget.RecyclerView;
         import android.view.LayoutInflater;
         import android.view.View;
@@ -32,8 +33,10 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
     private Context context;
 
     private Juego[] datosJuegos;
+    private int[] gridCellColor;
 
     private Utilidades utilidades;
+
 
     public MasonryAdapter(Context context) {
         this.context = context;
@@ -45,7 +48,6 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
 
         if (c != null & c.moveToFirst()) {
             datosJuegos = new Juego[c.getCount()];
-
             int i = 0;
             do {
                 datosJuegos[i] = new Juego();
@@ -86,8 +88,6 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
         holder.imageView.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + datosJuegos[position].getCaratula())));
         holder.textView.setText(datosJuegos[position].getTitulo());
         holder.idView.setText(String.valueOf(datosJuegos[position].getId()));
-
-
     }
 
     @Override
