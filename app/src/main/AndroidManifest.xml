@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mijuegoteca"
-    android:versionCode="43"
-    android:versionName="1.5.0-beta2">
+    android:versionCode="44"
+    android:versionName="1.5.0">
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -40,24 +40,19 @@
             android:name="com.juegoteca.actividades.Inicio"
             android:label="@string/title_activity_inicio"
             android:screenOrientation="portrait"
-            android:uiOptions="splitActionBarWhenNarrow"></activity>
-
-
+            android:uiOptions="splitActionBarWhenNarrow" />
         <activity
             android:name="com.juegoteca.actividades.InicioMasonry"
             android:label="@string/title_activity_inicio_masonry"
             android:screenOrientation="portrait"
             android:uiOptions="splitActionBarWhenNarrow">
-
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
             <meta-data
                 android:name="android.support.UI_OPTIONS"
                 android:value="splitActionBarWhenNarrow" />
-
         </activity>
-
         <activity
             android:name="com.juegoteca.actividades.DetalleJuego"
             android:label="@string/title_activity_detalle_juego"
@@ -101,7 +96,7 @@
         <activity
             android:name=".CargarCaratula"
             android:label="@string/title_activity_cargar_caratula"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.juegoteca.actividades.EditarJuego"
             android:label="@string/title_activity_editar_juego"
@@ -151,7 +146,7 @@
             android:name="com.juegoteca.actividades.IniciarSesion"
             android:label="@string/title_activity_iniciar_sesion"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateVisible"></activity>
+            android:windowSoftInputMode="adjustResize|stateVisible" />
         <activity
             android:name="com.juegoteca.actividades.Plataforma"
             android:label="@string/title_activity_plataforma"
@@ -163,7 +158,7 @@
         <activity
             android:name="com.juegoteca.actividades.Registro"
             android:label="@string/title_activity_registro"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.juegoteca.actividades.Favoritos"
             android:label="@string/title_activity_favoritos"
@@ -184,7 +179,7 @@
         </activity>
         <activity
             android:name=".SeleccionarFichero"
-            android:label="@string/title_activity_seleccionar_fichero"></activity>
+            android:label="@string/title_activity_seleccionar_fichero" />
         <!-- Gestiona la subida FTP de ficheros -->
         <activity
             android:name=".FtpUpload"
@@ -207,7 +202,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <activity
             android:name=".Anuncio"
-            android:label="@string/title_activity_anuncio"></activity>
+            android:label="@string/title_activity_anuncio" />
         <activity
             android:name="com.juegoteca.actividades.DuplicarJuego"
             android:label="@string/title_activity_duplicar_juego"
@@ -216,6 +211,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.juegoteca.actividades.DetalleJuego" />
         </activity>
+        <activity android:name="com.masonry.InicioMasonry2"></activity>
     </application>
 
 </manifest>

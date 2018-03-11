@@ -362,6 +362,11 @@ public class NuevoJuego extends Activity {
                 //Intent intent = new Intent(this, DetalleJuego.class);
                 intent.putExtra("ID_JUEGO", String.valueOf(id));
                 intent.putExtra("NUEVO_JUEGO", true);
+                if(getIntent().getBooleanExtra("GRID", false)) {
+                    intent.putExtra("GRID", true);
+                }
+
+
                 startActivity(intent);
             } else {
                 if (id == -5) {
@@ -497,10 +502,17 @@ public class NuevoJuego extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         // TODO: Escoger fichero
 
-                        Intent intent = new Intent(NuevoJuego.this,
+                        if(getIntent().getBooleanExtra("GRID", false)) {
+                            Intent intent = new Intent(NuevoJuego.this, InicioMasonry.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else{
+                            Intent intent = new Intent(NuevoJuego.this,
                                 Inicio.class);
                         startActivity(intent);
                         finish();
+                        }
 
                     }
                 });

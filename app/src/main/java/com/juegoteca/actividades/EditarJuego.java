@@ -417,6 +417,7 @@ public class EditarJuego extends Activity {
             intent.putExtra("ID_JUEGO", idJuego);
             intent.putExtra("EDITADO", true);
             intent.putExtra("NUEVO_JUEGO", false);
+            intent.putExtra("GRID", true);
             String caller = getIntent().getStringExtra("CALLER");
             if (caller != null) {
                 intent.putExtra("CALLER", caller);
@@ -526,6 +527,9 @@ public class EditarJuego extends Activity {
         Intent intent = new Intent(this, DetalleJuego.class);
         intent.putExtra("ID_JUEGO", idJuego);
         intent.putExtra("NUEVO_JUEGO", false);
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            intent.putExtra("GRID", true);
+        }
         startActivity(intent);
         finish();
     }

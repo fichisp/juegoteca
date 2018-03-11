@@ -469,12 +469,23 @@ public class DetalleJuego extends Activity {
         } else {
             if (caller != null && caller.compareTo("ListadoPendientes") == 0) {
                 final Intent intent = new Intent(this, Pendientes.class);
+                if(getIntent().getBooleanExtra("GRID", false)) {
+                    intent.putExtra("GRID", true);
+                }
                 startActivity(intent);
             } else {
                 if (caller != null && caller.compareTo("ListadoFavoritos") == 0) {
                     final Intent intent = new Intent(this, Favoritos.class);
+                    if(getIntent().getBooleanExtra("GRID", false)) {
+                        intent.putExtra("GRID", true);
+                    }
                     startActivity(intent);
-                } else {
+                } else if(getIntent().getBooleanExtra("GRID", false)) {
+                    Intent intent = new Intent(this, InicioMasonry.class);
+                    startActivity(intent);
+                    finish();
+                }
+                else{
                     Log.v("DETALLE JUEGO", "Juego nuevo");
                     Intent intent = new Intent(this, Inicio.class);
                     startActivity(intent);
@@ -553,6 +564,9 @@ public class DetalleJuego extends Activity {
                 intent = new Intent(this, EditarJuego.class);
                 intent.putExtra("ID_JUEGO", idJuego);
                 String caller = getIntent().getStringExtra("CALLER");
+                if(getIntent().getBooleanExtra("GRID", false)) {
+                    intent.putExtra("GRID", true);
+                }
                 if (caller != null) {
                     intent.putExtra("CALLER", caller);
                     if (caller != null && caller.compareTo("ListadoJuego") == 0) {
@@ -597,9 +611,15 @@ public class DetalleJuego extends Activity {
                                 }
                                 // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                                 toast.show();
-                                Intent intent = new Intent(getApplicationContext(),
-                                        Inicio.class);
-                                startActivity(intent);
+                                if(getIntent().getBooleanExtra("GRID", false)) {
+                                    Intent intent = new Intent(getApplicationContext(),
+                                            InicioMasonry.class);
+                                    startActivity(intent);
+                                } else {
+                                    Intent intent = new Intent(getApplicationContext(),
+                                            Inicio.class);
+                                    startActivity(intent);
+                                }
                                 return;
                             }
                         });

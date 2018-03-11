@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
@@ -13,6 +14,9 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AbsListView;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.juegoteca.util.MasonryAdapter;
 import com.juegoteca.util.SpacesItemDecoration;
@@ -22,6 +26,8 @@ import com.mijuegoteca.R;
 public class InicioMasonry extends Activity {
 
     RecyclerView mRecyclerView;
+
+    ImageButton backTopButton;
 
     private Utilidades utilidades;
 
@@ -34,13 +40,36 @@ public class InicioMasonry extends Activity {
         // Show the Up button in the action bar.
         //setupActionBar();
 
+        backTopButton = (ImageButton)findViewById(R.id.boton_top);
+
         mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid);
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
 
         MasonryAdapter adapter = new MasonryAdapter(this);
         mRecyclerView.setAdapter(adapter);
-        SpacesItemDecoration decoration = new SpacesItemDecoration(4);
+        SpacesItemDecoration decoration = new SpacesItemDecoration(1);
         mRecyclerView.addItemDecoration(decoration);
+
+        mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
+
+            @Override
+            public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
+                super.onScrolled(recyclerView, dx, dy);
+                int[] firstVisibleItemPositions = new int[3];
+                int pastVisiblesItems = ((StaggeredGridLayoutManager)mRecyclerView.getLayoutManager()).findLastVisibleItemPositions(firstVisibleItemPositions)[0];
+
+
+
+                if (pastVisiblesItems > 9) {
+                    backTopButton.setVisibility(View.VISIBLE);
+                }
+
+                else{
+                backTopButton.setVisibility(View.GONE);
+                }
+            }
+
+        });
 
     }
 
@@ -65,6 +94,9 @@ public class InicioMasonry extends Activity {
         }
 
     }
+    public void backTop(View view) {
+    mRecyclerView.smoothScrollToPosition(0);
+    }
 
     /**
      * Lanza la actividad para crear un juego
@@ -73,6 +105,7 @@ public class InicioMasonry extends Activity {
      */
     public void nuevoJuego(View view) {
         Intent intent = new Intent(this, NuevoJuego.class);
+        intent.putExtra("GRID", true);
         startActivity(intent);
     }
 
@@ -83,6 +116,7 @@ public class InicioMasonry extends Activity {
      */
     public void listarJuegos(View view) {
         Intent intent = new Intent(this, Buscador.class);
+        intent.putExtra("GRID", true);
         startActivity(intent);
     }
 
@@ -93,6 +127,7 @@ public class InicioMasonry extends Activity {
      */
     public void estadisticas(View view) {
         Intent intent = new Intent(this, Estadisitcas.class);
+        intent.putExtra("GRID", true);
         startActivity(intent);
     }
 
@@ -103,6 +138,7 @@ public class InicioMasonry extends Activity {
      */
     public void favoritos(View view) {
         Intent intent = new Intent(this, Favoritos.class);
+        intent.putExtra("GRID", true);
         startActivity(intent);
     }
 
@@ -113,6 +149,7 @@ public class InicioMasonry extends Activity {
      */
     public void pendientes(View view) {
         Intent intent = new Intent(this, Pendientes.class);
+        intent.putExtra("GRID", true);
         startActivity(intent);
     }
 
@@ -123,6 +160,7 @@ public class InicioMasonry extends Activity {
      */
     public void opciones(View view) {
         Intent intent = new Intent(this, Opciones.class);
+        intent.putExtra("GRID", true);
         startActivity(intent);
     }
 
