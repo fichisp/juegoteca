@@ -57,7 +57,7 @@ public class Inicio extends Activity {
 
 
 
-            if(versionCode == 45 && !settings.contains("releaseNotes")){
+            if(versionCode >=45 && !settings.contains("releaseNotes")){
                 utilidades.showBuildNotes(getPackageManager().getPackageInfo(getPackageName(),
                         0).versionName);
             }
