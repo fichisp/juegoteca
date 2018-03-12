@@ -9,9 +9,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.android.gms.vision.Frame;
 import com.juegoteca.actividades.DetalleJuego;
 import com.juegoteca.actividades.DetalleJuegoImagenGrande;
 import com.juegoteca.actividades.NuevoJuego;
@@ -57,11 +59,22 @@ public class MasonryAdapterHorizontal extends RecyclerView.Adapter<MasonryAdapte
             public boolean onLongClick(final View view) {
 
 
-                view.findViewById(R.id.img_name).setVisibility(View.VISIBLE);
+                ImageView image = (ImageView)view.findViewById(R.id.img);
+
+                final TextView title = (TextView)view.findViewById(R.id.img_name);
+
+                FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) title.getLayoutParams();
+                //Ajustar el texto a la imagen
+                params.width = image.getWidth();
+                params.height = image.getHeight();
+
+                title.setLayoutParams(params);
+
+                title.setVisibility(View.VISIBLE);
 
                 view.postDelayed(new Runnable() {
                     public void run() {
-                        view.findViewById(R.id.img_name).setVisibility(View.INVISIBLE);
+                        title.setVisibility(View.INVISIBLE);
                     }
                 }, 1500);
 
@@ -86,9 +99,7 @@ public class MasonryAdapterHorizontal extends RecyclerView.Adapter<MasonryAdapte
         }
         holder.textView.setText(datosJuegos[position].getTitulo());
         holder.idView.setText(String.valueOf(datosJuegos[position].getId()));
-        //Ajustar el texto a la imagen
-        holder.textView.setWidth(holder.imageView.getWidth());
-        holder.textView.setHeight(holder.imageView.getHeight());
+
     }
 
     @Override

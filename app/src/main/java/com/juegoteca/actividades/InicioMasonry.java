@@ -14,10 +14,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AbsListView;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
+import com.google.android.gms.vision.text.Line;
 import com.juegoteca.util.MasonryAdapter;
 import com.juegoteca.util.SpacesItemDecoration;
 import com.juegoteca.util.Utilidades;
@@ -50,6 +54,12 @@ public class InicioMasonry extends Activity {
         SpacesItemDecoration decoration = new SpacesItemDecoration(1);
         mRecyclerView.addItemDecoration(decoration);
 
+        ImageButton layoutBotones = (ImageButton) findViewById(R.id.boton_top);
+
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)backTopButton.getLayoutParams();
+        params.setMargins(params.leftMargin, params.topMargin,params.rightMargin , params.bottomMargin + layoutBotones.getLayoutParams().height);
+        backTopButton.setLayoutParams(params);
+
         mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
 
             @Override
@@ -58,9 +68,7 @@ public class InicioMasonry extends Activity {
                 int[] firstVisibleItemPositions = new int[3];
                 int pastVisiblesItems = ((StaggeredGridLayoutManager)mRecyclerView.getLayoutManager()).findLastVisibleItemPositions(firstVisibleItemPositions)[0];
 
-
-
-                if (pastVisiblesItems > 9) {
+                if (pastVisiblesItems > 15) {
                     backTopButton.setVisibility(View.VISIBLE);
                 }
 
