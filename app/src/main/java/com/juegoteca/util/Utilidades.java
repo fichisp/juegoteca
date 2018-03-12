@@ -22,6 +22,7 @@ import android.os.Environment;
 import android.os.Parcelable;
 import android.os.Process;
 import android.provider.Settings.Secure;
+import android.text.Html;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.Display;
@@ -51,6 +52,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
@@ -58,6 +60,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.math.BigInteger;
 import java.net.HttpURLConnection;
@@ -1147,6 +1150,54 @@ public class Utilidades {
                         PendingIntent.getActivity(context, 0, new Intent(
                                 context, Splash.class), 0));
 
+            }
+        });
+        AlertDialog dialog = builder.create();
+
+        dialog.show();
+    }
+
+    public void showBuildNotes(String versionName){
+        AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+
+        String codigoIdioma = Locale.getDefault().getISO3Language();
+
+        InputStream fraw;
+
+        if (!"spa".equalsIgnoreCase(codigoIdioma)) {
+            fraw = context.getResources().openRawResource(R.raw.relase_notes_en);
+        } else {
+            fraw = context.getResources().openRawResource(R.raw.relase_notes_es);
+        }
+
+
+        BufferedReader brin = new BufferedReader(new InputStreamReader(fraw));
+
+        String texto = "";
+        String linea;
+        try {
+            while ((linea = brin.readLine()) != null) {
+                texto += linea;
+            }
+            fraw.close();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+
+        builder.setMessage(Html.fromHtml(texto)).setTitle(String.format(context.getResources().getString(
+                R.string.pref_title_version, versionName)));
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+                        0);
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putBoolean("releaseNotes", true);
+                editor.commit();
             }
         });
         AlertDialog dialog = builder.create();

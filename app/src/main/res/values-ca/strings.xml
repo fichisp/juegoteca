@@ -170,4 +170,6 @@
     <string name="pref_title_view">Formato de vista detallada del juego</string>
     <string name="action_grid">Grid</string>
     <string name="title_activity_inicio_masonry">Todos los juegos</string>
+    <string name="novedades">Novedades</string>
+    <string name="unzip">Restaurando copia de seguridad...</string>
 </resources>

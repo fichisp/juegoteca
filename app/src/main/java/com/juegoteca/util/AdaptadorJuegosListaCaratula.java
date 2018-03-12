@@ -1,6 +1,7 @@
 package com.juegoteca.util;
 
 import android.app.Activity;
+import android.transition.Visibility;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.juegoteca.basedatos.Juego;
 import com.mijuegoteca.R;
@@ -46,6 +48,10 @@ public class AdaptadorJuegosListaCaratula extends ArrayAdapter<Juego> {
 
         ImageView caratula = (ImageView) item.findViewById(R.id.image_caratula_listado_caratula);
 
+        TextView titulo = (TextView) item.findViewById(R.id.listado_juego_caratula_nombre);
+
+        titulo.setText(juegos[position].getTitulo());
+
 
         utilidades.redimensionarElemento(caratula);
 
@@ -65,6 +71,27 @@ public class AdaptadorJuegosListaCaratula extends ArrayAdapter<Juego> {
                 Log.v("CARGAR CARATULA LISTADO", e.getMessage());
             }
         }
+
+        titulo.setWidth(caratula.getWidth());
+
+        item.setOnClickListener(new View.OnClickListener() {
+            @Override
+
+            public void onClick(final View view) {
+
+                view.findViewById(R.id.listado_juego_caratula_nombre).setVisibility(View.VISIBLE);
+
+                view.postDelayed(new Runnable() {
+                    public void run() {
+                        view.findViewById(R.id.listado_juego_caratula_nombre).setVisibility(View.INVISIBLE);
+                    }
+                }, 1000);
+
+
+
+            }
+        });
+
 
         return (item);
     }

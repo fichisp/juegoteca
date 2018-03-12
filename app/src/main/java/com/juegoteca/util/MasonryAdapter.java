@@ -1,30 +1,26 @@
 package com.juegoteca.util;
 
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.database.Cursor;
+import android.graphics.BitmapFactory;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-        import android.content.Context;
-        import android.content.Intent;
-        import android.content.SharedPreferences;
-        import android.database.Cursor;
-        import android.graphics.Color;
-        import android.support.v7.widget.RecyclerView;
-        import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.AdapterView;
-        import android.widget.ImageView;
-        import android.widget.TextView;
+import com.juegoteca.actividades.DetalleJuego;
+import com.juegoteca.actividades.DetalleJuegoImagenGrande;
+import com.juegoteca.actividades.NuevoJuego;
+import com.juegoteca.basedatos.Juego;
+import com.juegoteca.basedatos.JuegosSQLHelper;
+import com.mijuegoteca.R;
 
-        import com.google.zxing.common.StringUtils;
-        import com.juegoteca.actividades.DetalleJuego;
-        import com.juegoteca.actividades.DetalleJuegoImagenGrande;
-        import com.juegoteca.actividades.NuevoJuego;
-        import com.juegoteca.basedatos.Juego;
-        import com.juegoteca.basedatos.JuegosSQLHelper;
-        import com.juegoteca.ui.HorizontalListView;
-        import com.mijuegoteca.R;
-
-        import java.io.File;
+import java.io.File;
 
 /**
  * Created by Suleiman on 26-07-2015.
@@ -90,7 +86,9 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
         if(datosJuegos[position].getCaratula()!=null && !"".equals(datosJuegos[position].getCaratula())) {
             holder.imageView.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + datosJuegos[position].getCaratula())));
         } else {
-            holder.imageView.setImageDrawable((context.getResources().getDrawable(R.drawable.sinimagen)));
+            //holder.imageView.setImageDrawable((context.getResources().getDrawable(R.drawable.sinimagen)));
+            holder.imageView.setImageBitmap(utilidades.redimensionarImagen(BitmapFactory.decodeResource(context.getResources(), R.drawable.sinimagen), 300));
+
         }
         holder.textView.setText(datosJuegos[position].getTitulo());
         holder.idView.setText(String.valueOf(datosJuegos[position].getId()));

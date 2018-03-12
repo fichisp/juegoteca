@@ -14,7 +14,7 @@
         <LinearLayout
             style="@style/Padding16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="9"
             android:orientation="vertical">
 
@@ -28,7 +28,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <com.juegoteca.ui.HorizontalListView
+            <!--            <com.juegoteca.ui.HorizontalListView
                 android:id="@+id/lista_ultimos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -43,13 +43,23 @@
                 android:paddingStart="0dp"
                 android:paddingTop="0dp">
 
-            </com.juegoteca.ui.HorizontalListView>
+            </com.juegoteca.ui.HorizontalListView>-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/masonry_grid_nuevos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@color/cast_intro_overlay_background_color"
+                android:clipToPadding="false"></android.support.v7.widget.RecyclerView>
         </LinearLayout>
 
         <LinearLayout
             style="@style/Padding16"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="0dp"
             android:layout_weight="9"
             android:orientation="vertical">
@@ -64,7 +74,7 @@
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
-            <com.juegoteca.ui.HorizontalListView
+            <!--            <com.juegoteca.ui.HorizontalListView
                 android:id="@+id/lista_completados"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -76,7 +86,19 @@
                 android:paddingLeft="0dp"
                 android:paddingRight="0dp"
                 android:paddingStart="0dp"
-                android:paddingTop="0dp"></com.juegoteca.ui.HorizontalListView>
+                android:paddingTop="0dp"></com.juegoteca.ui.HorizontalListView>-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/masonry_grid_completados"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:backgroundTint="@color/cast_intro_overlay_background_color"
+                android:clipToPadding="false">
+
+            </android.support.v7.widget.RecyclerView>
         </LinearLayout>
 
         <LinearLayout

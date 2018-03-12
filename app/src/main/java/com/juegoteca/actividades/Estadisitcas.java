@@ -13,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
-import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.ads.AdRequest;
@@ -28,12 +27,8 @@ import org.achartengine.GraphicalView;
 import org.achartengine.model.CategorySeries;
 import org.achartengine.renderer.DefaultRenderer;
 import org.achartengine.renderer.SimpleSeriesRenderer;
-import org.achartengine.renderer.XYMultipleSeriesRenderer;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
-import java.util.Formatter;
-import java.util.List;
 import java.util.Locale;
 
 public class Estadisitcas extends Activity {

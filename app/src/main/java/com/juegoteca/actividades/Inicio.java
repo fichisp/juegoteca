@@ -3,21 +3,24 @@ package com.juegoteca.actividades;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemLongClickListener;
 import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.ui.HorizontalListView;
-import com.juegoteca.util.AdaptadorJuegosListaCaratula;
+import com.juegoteca.util.MasonryAdapterHorizontal;
+import com.juegoteca.util.RightSpacesItemDecoration;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -41,6 +44,29 @@ public class Inicio extends Activity {
         cargarUltimosAnadidos();
         cargarUltimosCompletados();
 
+        final SharedPreferences settings = getSharedPreferences("UserInfo",
+                0);
+
+        //Ya se ha visualizado
+        PackageInfo packageInfo = null;
+        try {
+            packageInfo = this.getPackageManager()
+                    .getPackageInfo(this.getPackageName(), 0);
+
+            int versionCode = packageInfo.versionCode;
+
+
+
+            if(versionCode == 45 && !settings.contains("releaseNotes")){
+                utilidades.showBuildNotes(getPackageManager().getPackageInfo(getPackageName(),
+                        0).versionName);
+            }
+
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+
+
         // TODO: Desactiva el modo estricto
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
@@ -60,22 +86,26 @@ public class Inicio extends Activity {
      * Carga la lista con los últimos añadidos
      */
     public void cargarUltimosAnadidos() {
-        listaUltimos = (HorizontalListView) findViewById(R.id.lista_ultimos);
+        //listaUltimos = (HorizontalListView) findViewById(R.id.lista_ultimos);
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
         Cursor c = juegosSQLH.getUltimosJuegosAnadidos();
         if (c != null & c.moveToFirst()) {
-            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
+/*            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
                 datosJuegos = new Juego[NUM_MAX_ELEMENTOS_INICIO];
             } else {
                 datosJuegos = new Juego[c.getCount()];
-            }
+            }*/
+
+            datosJuegos = new Juego[c.getCount()];
             int i = 0;
             do {
                 datosJuegos[i] = new Juego();
                 datosJuegos[i].setId(c.getInt(0));
                 datosJuegos[i].setCaratula(c.getString(13));
+                datosJuegos[i].setTitulo(c.getString(2));
                 i++;
-            } while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO);
+            } while (c.moveToNext());
+            /*while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO);*/
             c.close();
         } else {
             datosJuegos = new Juego[1];
@@ -83,6 +113,7 @@ public class Inicio extends Activity {
             datosJuegos[0].setId(-1);
             datosJuegos[0].setCaratula("");
         }
+/*
         AdaptadorJuegosListaCaratula adaptador = new AdaptadorJuegosListaCaratula(this, datosJuegos);
         listaUltimos.setAdapter(adaptador);
 
@@ -94,32 +125,52 @@ public class Inicio extends Activity {
                 return true;
             }
         });
+*/
+        RecyclerView mRecyclerView;
+
+        mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid_nuevos);
+        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
+        mRecyclerView.setLayoutFrozen(true);
+
+        MasonryAdapterHorizontal adapter = new MasonryAdapterHorizontal(this);
+        adapter.setDatosJuegos(datosJuegos);
+        mRecyclerView.setAdapter(adapter);
+        RightSpacesItemDecoration decoration = new RightSpacesItemDecoration(8);
+        mRecyclerView.addItemDecoration(decoration);
+
 
         juegosSQLH.close();
+
+
     }
 
     /**
      * Carga la lista con los últimos añadidos
      */
     public void cargarUltimosCompletados() {
-        listaCompletados = (HorizontalListView) findViewById(R.id.lista_completados);
+        //listaCompletados = (HorizontalListView) findViewById(R.id.lista_completados);
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
         Cursor c = juegosSQLH.getUltimosJuegosCompletados();
         if (c != null & c.moveToFirst()) {
-            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
+/*            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
                 datosJuegos = new Juego[NUM_MAX_ELEMENTOS_INICIO];
             } else {
                 datosJuegos = new Juego[c.getCount()];
-            }
+            }*/
+
+            datosJuegos = new Juego[c.getCount()];
             int i = 0;
             do {
                 datosJuegos[i] = new Juego();
                 datosJuegos[i].setId(c.getInt(0));
                 datosJuegos[i].setCaratula(c.getString(13));
+                datosJuegos[i].setTitulo(c.getString(2));
                 i++;
-            } while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO); // Cargar
+            } while (c.moveToNext() ); // Cargar
+
+            /*while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO); // Cargar*/
             c.close();
-            AdaptadorJuegosListaCaratula adaptador = new AdaptadorJuegosListaCaratula(this, datosJuegos);
+/*            AdaptadorJuegosListaCaratula adaptador = new AdaptadorJuegosListaCaratula(this, datosJuegos);
             listaCompletados.setAdapter(adaptador);
 
             listaCompletados.setOnItemLongClickListener(new OnItemLongClickListener() {
@@ -128,7 +179,18 @@ public class Inicio extends Activity {
                     detalleJuego(arg1);
                     return true;
                 }
-            });
+            });*/
+
+            RecyclerView mRecyclerView;
+
+            mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid_completados);
+            mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
+
+            MasonryAdapterHorizontal adapter = new MasonryAdapterHorizontal(this);
+            adapter.setDatosJuegos(datosJuegos);
+            mRecyclerView.setAdapter(adapter);
+            RightSpacesItemDecoration decoration = new RightSpacesItemDecoration(8);
+            mRecyclerView.addItemDecoration(decoration);
 
         }
         juegosSQLH.close();

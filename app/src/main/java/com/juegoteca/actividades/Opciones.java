@@ -634,8 +634,7 @@ public class Opciones extends PreferenceActivity {
 
         @Override
         protected void onPreExecute() {
-            dialogoCopia = ProgressDialog.show(Opciones.this, null,
-                    "Restaurando copia de seguridad...", true);
+            dialogoCopia = ProgressDialog.show(Opciones.this, null, getString(R.string.unzip), true);
 
         }
 

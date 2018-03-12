@@ -173,4 +173,6 @@
     <string name="pref_description_view">See the detail of the game with the large image format</string>
     <string name="title_activity_inicio_masonry">All my games</string>
     <string name="action_grid">Grid</string>
+    <string name="novedades">News</string>
+    <string name="unzip">Restoring backup ...</string>
 </resources>

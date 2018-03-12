@@ -165,4 +165,6 @@
 <string name="zip">Creating file...</string>
     <string name="buscando">Searching...</string>
     <string name="action_grid">Grid</string>
+    <string name="novedades">News</string>
+    <string name="unzip">Restoring backup ...</string>
 </resources>
