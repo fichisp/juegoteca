@@ -155,6 +155,10 @@ public class Buscador extends Activity {
         final Intent intent = new Intent(this, ListadoJuego.class);
         intent.putExtra("VALORES", valoresCampos);
 
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            intent.putExtra("GRID", true);
+        }
+
         // if (checkOnline.isChecked()){
         // intent.putExtra("ONLINE", true);
         // }
@@ -196,9 +200,15 @@ public class Buscador extends Activity {
 
     @Override
     public void onBackPressed() {
-        Log.v("DETALLE JUEGO", "Juego nuevo");
-        Intent intent = new Intent(this, Inicio.class);
-        startActivity(intent);
-        finish();
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            Intent intent = new Intent(this, InicioMasonry.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Log.v("DETALLE JUEGO", "Juego nuevo");
+            Intent intent = new Intent(this, Inicio.class);
+            startActivity(intent);
+            finish();
+        }
     }
 }

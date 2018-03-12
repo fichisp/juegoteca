@@ -20,7 +20,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/cast_intro_overlay_background_color"
-            android:clipToPadding="false" />
+            android:clipToPadding="false">
+
+        </android.support.v7.widget.RecyclerView>
 
         <LinearLayout
             style="@style/Padding16V"
@@ -37,6 +39,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+
                 android:onClick="nuevoJuego"
                 android:src="@drawable/boton_nuevo" />
 
@@ -87,5 +90,33 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|end">
+
+        <ImageButton
+            android:id="@+id/boton_top"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/naranja_cabeceras"
+            android:elevation="3dp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:onClick="backTop"
+            android:src="@drawable/ic_arrow_upward_black_24dp"
+            android:stateListAnimator="@null"
+            android:text="+"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+            />
+    </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

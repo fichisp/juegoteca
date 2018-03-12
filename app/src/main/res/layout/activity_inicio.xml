@@ -15,8 +15,8 @@
             style="@style/Padding16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="10"
-            android:orientation="vertical" >
+            android:layout_weight="9"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/titulo_ultimos"
@@ -38,8 +38,8 @@
                 android:padding="0dp"
                 android:paddingBottom="0dp"
                 android:paddingEnd="0dp"
-                android:paddingRight="0dp"
                 android:paddingLeft="0dp"
+                android:paddingRight="0dp"
                 android:paddingStart="0dp"
                 android:paddingTop="0dp">
 
@@ -50,9 +50,9 @@
             style="@style/Padding16"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="10"
-            android:orientation="vertical" >
+            android:layout_marginTop="0dp"
+            android:layout_weight="9"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/titulo_completados"
@@ -73,30 +73,20 @@
                 android:padding="0dp"
                 android:paddingBottom="0dp"
                 android:paddingEnd="0dp"
-                android:paddingRight="0dp"
                 android:paddingLeft="0dp"
+                android:paddingRight="0dp"
                 android:paddingStart="0dp"
-                android:paddingTop="0dp">
-            </com.juegoteca.ui.HorizontalListView>
+                android:paddingTop="0dp"></com.juegoteca.ui.HorizontalListView>
         </LinearLayout>
 
         <LinearLayout
             style="@style/Padding16V"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="5dp"
             android:layout_weight="0"
             android:background="@color/naranja_cabeceras"
             android:orientation="horizontal" >
-
-            <ImageButton
-                android:id="@+id/boton_grid"
-                style="@style/BotonesInicio"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="gridJuegos"
-                android:src="@drawable/ic_view_quilt_black_24dp" />
 
             <ImageButton
                 android:id="@+id/boton_nuevo"

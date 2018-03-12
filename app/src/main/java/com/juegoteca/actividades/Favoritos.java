@@ -156,6 +156,9 @@ public class Favoritos extends Activity {
 
         //Intent intent = new Intent(this, DetalleJuego.class);
         intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            intent.putExtra("GRID", true);
+        }
         intent.putExtra("CALLER", "ListadoFavoritos");
         intent.putExtra("NUEVO_JUEGO", false);
         startActivity(intent);
@@ -191,10 +194,16 @@ public class Favoritos extends Activity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, Inicio.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-        finish();
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            Intent intent = new Intent(this, InicioMasonry.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Intent intent = new Intent(this, Inicio.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        }
     }
 
     @Override

@@ -154,6 +154,9 @@ public class Pendientes extends Activity {
         intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
         intent.putExtra("CALLER", "ListadoPendientes");
         intent.putExtra("NUEVO_JUEGO", false);
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            intent.putExtra("GRID", true);
+        }
         startActivity(intent);
     }
 
@@ -187,10 +190,16 @@ public class Pendientes extends Activity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, Inicio.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
-        finish();
+        if(getIntent().getBooleanExtra("GRID", false)) {
+            Intent intent = new Intent(this, InicioMasonry.class);
+            startActivity(intent);
+            finish();
+        } else {
+            Intent intent = new Intent(this, Inicio.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+            finish();
+        }
     }
 
     @Override

@@ -6,6 +6,7 @@ package com.juegoteca.util;
         import android.content.Intent;
         import android.content.SharedPreferences;
         import android.database.Cursor;
+        import android.graphics.Color;
         import android.support.v7.widget.RecyclerView;
         import android.view.LayoutInflater;
         import android.view.View;
@@ -14,6 +15,7 @@ package com.juegoteca.util;
         import android.widget.ImageView;
         import android.widget.TextView;
 
+        import com.google.zxing.common.StringUtils;
         import com.juegoteca.actividades.DetalleJuego;
         import com.juegoteca.actividades.DetalleJuegoImagenGrande;
         import com.juegoteca.actividades.NuevoJuego;
@@ -32,8 +34,10 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
     private Context context;
 
     private Juego[] datosJuegos;
+    private int[] gridCellColor;
 
     private Utilidades utilidades;
+
 
     public MasonryAdapter(Context context) {
         this.context = context;
@@ -45,7 +49,6 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
 
         if (c != null & c.moveToFirst()) {
             datosJuegos = new Juego[c.getCount()];
-
             int i = 0;
             do {
                 datosJuegos[i] = new Juego();
@@ -83,11 +86,14 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
 
     @Override
     public void onBindViewHolder(MasonryView holder, int position) {
-        holder.imageView.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + datosJuegos[position].getCaratula())));
+
+        if(datosJuegos[position].getCaratula()!=null && !"".equals(datosJuegos[position].getCaratula())) {
+            holder.imageView.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + datosJuegos[position].getCaratula())));
+        } else {
+            holder.imageView.setImageDrawable((context.getResources().getDrawable(R.drawable.sinimagen)));
+        }
         holder.textView.setText(datosJuegos[position].getTitulo());
         holder.idView.setText(String.valueOf(datosJuegos[position].getId()));
-
-
     }
 
     @Override
@@ -128,10 +134,12 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
             intent = new Intent(context, DetalleJuegoImagenGrande.class);
             intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
             intent.putExtra("NUEVO_JUEGO", false);
+            intent.putExtra("GRID", true);
         } else {
             intent = new Intent(context, DetalleJuego.class);
             intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
             intent.putExtra("NUEVO_JUEGO", false);
+            intent.putExtra("GRID", true);
         }
         context.startActivity(intent);
     }

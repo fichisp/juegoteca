@@ -1214,7 +1214,7 @@ public class Utilidades {
 
         LayoutParams params = (LayoutParams) elemento.getLayoutParams();
         //params.width = Math.round(width / 4);
-        params.height = Math.round(height / 4.5f);
+        params.height = Math.round(height / 4f);
         elemento.setLayoutParams(params);
     }
 
