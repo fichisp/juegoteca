@@ -39,7 +39,11 @@ public class InicioMasonry extends Activity {
         backTopButton = (ImageButton) findViewById(R.id.boton_top);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid);
-        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
+
+
+        StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL);
+        layoutManager.setAutoMeasureEnabled(false);
+        mRecyclerView.setLayoutManager(layoutManager);
 
         MasonryAdapter adapter = new MasonryAdapter(this);
         mRecyclerView.setAdapter(adapter);

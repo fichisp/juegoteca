@@ -70,12 +70,15 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
         MasonryView masonryView = new MasonryView(layoutView);
 
+
         layoutView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View arg0) {
                 detalleJuego(arg0);
             }
         });
+
+        masonryView.setIsRecyclable(false);
 
         return masonryView;
     }
