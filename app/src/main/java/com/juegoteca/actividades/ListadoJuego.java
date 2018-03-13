@@ -81,7 +81,7 @@ public class ListadoJuego extends Activity {
         intent.putExtra("NUEVO_JUEGO", false);
         intent.putExtra("CALLER", "ListadoJuego");
         intent.putExtra("VALORES", valoresBusqueda);
-        if(getIntent().getBooleanExtra("GRID", false)) {
+        if (getIntent().getBooleanExtra("GRID", false)) {
             intent.putExtra("GRID", true);
         }
         if (getIntent().getExtras().getBoolean("ONLINE")) {

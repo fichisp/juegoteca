@@ -56,8 +56,7 @@ public class Inicio extends Activity {
             int versionCode = packageInfo.versionCode;
 
 
-
-            if(versionCode >=45 && !settings.contains("releaseNotes")){
+            if (versionCode >= 45 && !settings.contains("releaseNotes")) {
                 utilidades.showBuildNotes(getPackageManager().getPackageInfo(getPackageName(),
                         0).versionName);
             }
@@ -166,7 +165,7 @@ public class Inicio extends Activity {
                 datosJuegos[i].setCaratula(c.getString(13));
                 datosJuegos[i].setTitulo(c.getString(2));
                 i++;
-            } while (c.moveToNext() ); // Cargar
+            } while (c.moveToNext()); // Cargar
 
             /*while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO); // Cargar*/
             c.close();
@@ -292,7 +291,7 @@ public class Inicio extends Activity {
         startActivity(intent);
     }
 
-    public void gridJuegos(View view){
+    public void gridJuegos(View view) {
         Intent intent = new Intent(this, InicioMasonry.class);
         startActivity(intent);
     }

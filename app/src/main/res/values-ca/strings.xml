@@ -162,7 +162,7 @@
     <string name="juego_eliminado">Juego eliminado</string>
     <string name="juego_no_eliminado">No se ha podido eliminar el juego</string>
     <string name="no_data_backup">No hay datos que salvar en la copia de seguridad</string>
-<string name="zip">Generando fichero&#8230;</string>
+    <string name="zip">Generando fichero&#8230;</string>
     <string name="buscando">Buscando...</string>
     <string name="valor_total">Valor</string>
     <string name="valor_medio">valor mig joc</string>
@@ -172,4 +172,5 @@
     <string name="title_activity_inicio_masonry">Todos los juegos</string>
     <string name="novedades">Novedades</string>
     <string name="unzip">Restaurando copia de seguridad...</string>
+    <string name="alerta_atras_editar_titulo">Cancelar edición de juego</string>
 </resources>

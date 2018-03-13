@@ -162,10 +162,11 @@
     <string name="juego_eliminado">Game deleted</string>
     <string name="juego_no_eliminado">Could not delete the game</string>
     <string name="no_data_backup">There is no data to save in the backup</string>
-<string name="zip">Creating file&#8230;</string>
+    <string name="zip">Creating file&#8230;</string>
     <string name="buscando">Searching...</string>
     <string name="title_activity_iniciar_sesion_cerrar"></string>
     <string name="action_grid">Grid</string>
     <string name="novedades">News</string>
     <string name="unzip">Restoring backup ...</string>
+    <string name="alerta_atras_editar_titulo">Cancel game edition</string>
 </resources>

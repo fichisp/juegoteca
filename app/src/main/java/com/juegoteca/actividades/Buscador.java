@@ -26,6 +26,20 @@ public class Buscador extends Activity {
     private Utilidades utilidades;
     private EditText editEan, editTitulo;
     private Spinner spinnerGenero, spinnerPlataforma, spinnerFormato;
+    /**
+     * Lanza la busqueda al pulsar enter
+     */
+    private final View.OnKeyListener buscar = new View.OnKeyListener() {
+        @Override
+        public boolean onKey(View view, int keyCode, KeyEvent event) {
+            if (keyCode == KeyEvent.KEYCODE_ENTER
+                    && event.getAction() == KeyEvent.ACTION_DOWN) {
+                buscarJuego(view);
+                return true;
+            }
+            return false;
+        }
+    };
     // private CheckBox checkOnline;
     private AdView adView;
 
@@ -155,7 +169,7 @@ public class Buscador extends Activity {
         final Intent intent = new Intent(this, ListadoJuego.class);
         intent.putExtra("VALORES", valoresCampos);
 
-        if(getIntent().getBooleanExtra("GRID", false)) {
+        if (getIntent().getBooleanExtra("GRID", false)) {
             intent.putExtra("GRID", true);
         }
 
@@ -165,21 +179,6 @@ public class Buscador extends Activity {
         startActivity(intent);
 
     }
-
-    /**
-     * Lanza la busqueda al pulsar enter
-     */
-    private final View.OnKeyListener buscar = new View.OnKeyListener() {
-        @Override
-        public boolean onKey(View view, int keyCode, KeyEvent event) {
-            if (keyCode == KeyEvent.KEYCODE_ENTER
-                    && event.getAction() == KeyEvent.ACTION_DOWN) {
-                buscarJuego(view);
-                return true;
-            }
-            return false;
-        }
-    };
 
     /**
      * Procesar el escaneo de la cámara para obtener el código leído
@@ -200,7 +199,7 @@ public class Buscador extends Activity {
 
     @Override
     public void onBackPressed() {
-        if(getIntent().getBooleanExtra("GRID", false)) {
+        if (getIntent().getBooleanExtra("GRID", false)) {
             Intent intent = new Intent(this, InicioMasonry.class);
             startActivity(intent);
             finish();

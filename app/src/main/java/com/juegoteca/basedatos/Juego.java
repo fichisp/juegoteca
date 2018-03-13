@@ -288,17 +288,17 @@ public class Juego {
     }
 
     /**
+     * @param nombrePlataforma the nombrePlataforma to set
+     */
+    public void setNombrePlataforma(String nombrePlataforma) {
+        this.nombrePlataforma = nombrePlataforma;
+    }
+
+    /**
      * @return the fechaCreacion
      */
     public String getFechaCreacion() {
         return fechaCreacion;
-    }
-
-    /**
-     * @return the fechaCompletado
-     */
-    public String getFechaCompletado() {
-        return fechaCompletado;
     }
 
     /**
@@ -309,17 +309,17 @@ public class Juego {
     }
 
     /**
+     * @return the fechaCompletado
+     */
+    public String getFechaCompletado() {
+        return fechaCompletado;
+    }
+
+    /**
      * @param fechaCompletado the fechaCompletado to set
      */
     public void setFechaCompletado(String fechaCompletado) {
         this.fechaCompletado = fechaCompletado;
-    }
-
-    /**
-     * @param nombrePlataforma the nombrePlataforma to set
-     */
-    public void setNombrePlataforma(String nombrePlataforma) {
-        this.nombrePlataforma = nombrePlataforma;
     }
 
     /**

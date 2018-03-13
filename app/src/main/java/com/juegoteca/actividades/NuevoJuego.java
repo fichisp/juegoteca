@@ -32,8 +32,8 @@ import com.mijuegoteca.R;
 
 public class NuevoJuego extends Activity {
 
-    private JuegosSQLHelper juegosSQLH;
     private static final int IMAGEN_SELECCIONADA = 1;
+    private JuegosSQLHelper juegosSQLH;
     private Uri caratulaTemporal;
     private Utilidades utilidades;
     private EditText editTituloNuevo, editCompaniaNuevo, editResumenNuevo,
@@ -362,7 +362,7 @@ public class NuevoJuego extends Activity {
                 //Intent intent = new Intent(this, DetalleJuego.class);
                 intent.putExtra("ID_JUEGO", String.valueOf(id));
                 intent.putExtra("NUEVO_JUEGO", true);
-                if(getIntent().getBooleanExtra("GRID", false)) {
+                if (getIntent().getBooleanExtra("GRID", false)) {
                     intent.putExtra("GRID", true);
                 }
 
@@ -502,16 +502,15 @@ public class NuevoJuego extends Activity {
                     public void onClick(DialogInterface dialog, int id) {
                         // TODO: Escoger fichero
 
-                        if(getIntent().getBooleanExtra("GRID", false)) {
+                        if (getIntent().getBooleanExtra("GRID", false)) {
                             Intent intent = new Intent(NuevoJuego.this, InicioMasonry.class);
                             startActivity(intent);
                             finish();
-                        }
-                        else{
+                        } else {
                             Intent intent = new Intent(NuevoJuego.this,
-                                Inicio.class);
-                        startActivity(intent);
-                        finish();
+                                    Inicio.class);
+                            startActivity(intent);
+                            finish();
                         }
 
                     }

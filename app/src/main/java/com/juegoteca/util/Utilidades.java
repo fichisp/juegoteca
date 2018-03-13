@@ -86,16 +86,16 @@ import it.sauronsoftware.ftp4j.FTPClient;
 import it.sauronsoftware.ftp4j.FTPDataTransferListener;
 
 public class Utilidades {
+    public static final boolean ANUNCIOS = true;
+    static final String FTP_HOST = "**********";
+    static final String FTP_USER = "**********";
+    static final String FTP_PASS = "**********";
+    private static final String MY_AD_UNIT_ID = "****************";
     private JuegosSQLHelper juegosSQLH;
     private Context context;
     private String url_subir_copia, url_bajar_copia, url_comprobar_subir_copia,
             url_registrar_trial;
     private int serverResponseCode;
-    static final String FTP_HOST = "**********";
-    static final String FTP_USER = "**********";
-    static final String FTP_PASS = "**********";
-    private static final String MY_AD_UNIT_ID = "****************";
-    public static final boolean ANUNCIOS = true;
     private InterstitialAd interstitial;
 
     public Utilidades(Context context) {
@@ -1157,7 +1157,7 @@ public class Utilidades {
         dialog.show();
     }
 
-    public void showBuildNotes(String versionName){
+    public void showBuildNotes(String versionName) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
 

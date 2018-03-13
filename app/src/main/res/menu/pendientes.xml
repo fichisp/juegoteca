@@ -1,4 +1,4 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!--
     <item
@@ -12,6 +12,6 @@
         android:icon="@drawable/menu_home"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:title="@string/action_home"/>
+        android:title="@string/action_home" />
 
 </menu>

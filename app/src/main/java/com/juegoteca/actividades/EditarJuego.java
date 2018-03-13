@@ -1,6 +1,8 @@
 package com.juegoteca.actividades;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -28,9 +30,9 @@ import com.mijuegoteca.R;
 
 public class EditarJuego extends Activity {
 
+    private static final int IMAGEN_SELECCIONADA = 1;
     private JuegosSQLHelper juegosSQLH;
     private String idJuego;
-    private static final int IMAGEN_SELECCIONADA = 1;
     // private String selectedImagePath = null;
     private Uri caratulaOriginal, caratulaTemporal;
     private Juego juegoDetalle, juegoEditado;
@@ -417,7 +419,9 @@ public class EditarJuego extends Activity {
             intent.putExtra("ID_JUEGO", idJuego);
             intent.putExtra("EDITADO", true);
             intent.putExtra("NUEVO_JUEGO", false);
-            intent.putExtra("GRID", true);
+            if (getIntent().getBooleanExtra("GRID", false)) {
+                intent.putExtra("GRID", true);
+            }
             String caller = getIntent().getStringExtra("CALLER");
             if (caller != null) {
                 intent.putExtra("CALLER", caller);
@@ -524,13 +528,38 @@ public class EditarJuego extends Activity {
 
     @Override
     public void onBackPressed() {
-        Intent intent = new Intent(this, DetalleJuego.class);
-        intent.putExtra("ID_JUEGO", idJuego);
-        intent.putExtra("NUEVO_JUEGO", false);
-        if(getIntent().getBooleanExtra("GRID", false)) {
-            intent.putExtra("GRID", true);
-        }
-        startActivity(intent);
-        finish();
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(EditarJuego.this);
+        builder.setMessage(R.string.alerta_atras_nuevo_texto).setTitle(
+                R.string.alerta_atras_editar_titulo);
+        builder.setPositiveButton(R.string.ok,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        Intent intent = new Intent(EditarJuego.this, DetalleJuego.class);
+                        intent.putExtra("ID_JUEGO", idJuego);
+                        intent.putExtra("NUEVO_JUEGO", false);
+                        if (getIntent().getBooleanExtra("GRID", false)) {
+                            intent.putExtra("GRID", true);
+                        }
+                        startActivity(intent);
+                        finish();
+
+                    }
+                });
+
+        builder.setNegativeButton(R.string.cancel,
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int id) {
+                        // User cancelled the dialog
+                        return;
+                    }
+                });
+        AlertDialog dialog = builder.create();
+        dialog.show();
+
+
     }
 }

@@ -44,6 +44,7 @@ import java.util.List;
  * API Guide</a> for more information on developing a Settings UI.
  */
 public class Opciones extends PreferenceActivity {
+    protected static final int PICKFILE_RESULT_CODE = 0;
     /**
      * Determines whether to always show the simplified settings UI, where
      * settings are presented in a single list. When false, settings are shown
@@ -51,11 +52,83 @@ public class Opciones extends PreferenceActivity {
      * shown on tablets.
      */
     private static final boolean ALWAYS_SIMPLE_PREFS = false;
-    protected static final int PICKFILE_RESULT_CODE = 0;
     private static final int FILE_SELECT_CODE = 0;
     private static Utilidades utilidades;
+    /**
+     * A preference value change listener that updates the preference's summary
+     * to reflect its new value.
+     */
+    private static Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
+        @Override
+        public boolean onPreferenceChange(Preference preference, Object value) {
+            String stringValue = value.toString();
+
+            if (preference instanceof ListPreference) {
+                // For list preferences, look up the correct display value in
+                // the preference's 'entries' list.
+                ListPreference listPreference = (ListPreference) preference;
+                int index = listPreference.findIndexOfValue(stringValue);
+
+                // Set the summary to reflect the new value.
+                preference
+                        .setSummary(index >= 0 ? listPreference.getEntries()[index]
+                                : null);
+
+            } else {
+                // For all other preferences, set the summary to the value's
+                // simple string representation.
+                preference.setSummary(stringValue);
+            }
+            return true;
+        }
+    };
     private ProgressDialog dialogoCopia;
     private ProgressDialog dialogoEmpaquetado;
+
+    /**
+     * Helper method to determine if the device has an extra-large screen. For
+     * example, 10" tablets are extra-large.
+     */
+    @SuppressLint("InlinedApi")
+    private static boolean isXLargeTablet(Context context) {
+        return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_XLARGE;
+    }
+
+    /**
+     * Determines whether the simplified settings UI should be shown. This is
+     * true if this is forced via {@link #ALWAYS_SIMPLE_PREFS}, or the device
+     * doesn't have newer APIs like {@link PreferenceFragment}, or the device
+     * doesn't have an extra-large screen. In these cases, a single-pane
+     * "simplified" settings UI should be shown.
+     */
+    private static boolean isSimplePreferences(Context context) {
+        return ALWAYS_SIMPLE_PREFS
+                || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB
+                || !isXLargeTablet(context);
+    }
+
+    /**
+     * Binds a preference's summary to its value. More specifically, when the
+     * preference's value is changed, its summary (line of text below the
+     * preference title) is updated to reflect the value. The summary is also
+     * immediately updated upon calling this method. The exact display format is
+     * dependent on the type of preference.
+     *
+     * @see #sBindPreferenceSummaryToValueListener
+     */
+    private static void bindPreferenceSummaryToValue(Preference preference) {
+        // Set the listener to watch for value changes.
+        preference
+                .setOnPreferenceChangeListener(sBindPreferenceSummaryToValueListener);
+
+        // Trigger the listener immediately with the preference's
+        // current value.
+        sBindPreferenceSummaryToValueListener.onPreferenceChange(
+                preference,
+                PreferenceManager.getDefaultSharedPreferences(
+                        preference.getContext()).getString(preference.getKey(),
+                        ""));
+    }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
@@ -354,28 +427,6 @@ public class Opciones extends PreferenceActivity {
     }
 
     /**
-     * Helper method to determine if the device has an extra-large screen. For
-     * example, 10" tablets are extra-large.
-     */
-    @SuppressLint("InlinedApi")
-    private static boolean isXLargeTablet(Context context) {
-        return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK) >= Configuration.SCREENLAYOUT_SIZE_XLARGE;
-    }
-
-    /**
-     * Determines whether the simplified settings UI should be shown. This is
-     * true if this is forced via {@link #ALWAYS_SIMPLE_PREFS}, or the device
-     * doesn't have newer APIs like {@link PreferenceFragment}, or the device
-     * doesn't have an extra-large screen. In these cases, a single-pane
-     * "simplified" settings UI should be shown.
-     */
-    private static boolean isSimplePreferences(Context context) {
-        return ALWAYS_SIMPLE_PREFS
-                || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB
-                || !isXLargeTablet(context);
-    }
-
-    /**
      * {@inheritDoc}
      */
     @Override
@@ -386,56 +437,58 @@ public class Opciones extends PreferenceActivity {
         }
     }
 
-    /**
-     * A preference value change listener that updates the preference's summary
-     * to reflect its new value.
-     */
-    private static Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
-        @Override
-        public boolean onPreferenceChange(Preference preference, Object value) {
-            String stringValue = value.toString();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.buscador, menu);
+        return true;
+    }
 
-            if (preference instanceof ListPreference) {
-                // For list preferences, look up the correct display value in
-                // the preference's 'entries' list.
-                ListPreference listPreference = (ListPreference) preference;
-                int index = listPreference.findIndexOfValue(stringValue);
-
-                // Set the summary to reflect the new value.
-                preference
-                        .setSummary(index >= 0 ? listPreference.getEntries()[index]
-                                : null);
-
-            } else {
-                // For all other preferences, set the summary to the value's
-                // simple string representation.
-                preference.setSummary(stringValue);
-            }
-            return true;
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent intent;
+        switch (item.getItemId()) {
+            case R.id.action_home:
+                Log.i("ActionBar", "Home");
+                intent = new Intent(this, Inicio.class);
+                startActivity(intent);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
-    };
+    }
 
     /**
-     * Binds a preference's summary to its value. More specifically, when the
-     * preference's value is changed, its summary (line of text below the
-     * preference title) is updated to reflect the value. The summary is also
-     * immediately updated upon calling this method. The exact display format is
-     * dependent on the type of preference.
      *
-     * @see #sBindPreferenceSummaryToValueListener
      */
-    private static void bindPreferenceSummaryToValue(Preference preference) {
-        // Set the listener to watch for value changes.
-        preference
-                .setOnPreferenceChangeListener(sBindPreferenceSummaryToValueListener);
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        switch (requestCode) {
+            case FILE_SELECT_CODE:
+                if (resultCode == RESULT_OK) {
+                /*// Get the Uri of the selected file
+                Uri uri = data.getData();
+				Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
+				// Get the path
+				String path = uri.getPath();
+				Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
+				if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
+					utilidades
+							.reiniciarApp(getString(R.string.copia_restaurada_ok));
+				} else {
+					Toast t;
+					t = Toast.makeText(getApplicationContext(),
+							R.string.copia_restaurada_ko, Toast.LENGTH_SHORT);
+					t.show();
+				}*/
 
-        // Trigger the listener immediately with the preference's
-        // current value.
-        sBindPreferenceSummaryToValueListener.onPreferenceChange(
-                preference,
-                PreferenceManager.getDefaultSharedPreferences(
-                        preference.getContext()).getString(preference.getKey(),
-                        ""));
+                    RestaurarCopiaFichero task = new RestaurarCopiaFichero();
+                    task.data = data;
+                    task.execute();
+                }
+                break;
+        }
+        super.onActivityResult(requestCode, resultCode, data);
     }
 
     /**
@@ -468,27 +521,6 @@ public class Opciones extends PreferenceActivity {
         public void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             addPreferencesFromResource(R.xml.pref_datos_seguridad);
-        }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.buscador, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        Intent intent;
-        switch (item.getItemId()) {
-            case R.id.action_home:
-                Log.i("ActionBar", "Home");
-                intent = new Intent(this, Inicio.class);
-                startActivity(intent);
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
         }
     }
 
@@ -671,39 +703,5 @@ public class Opciones extends PreferenceActivity {
             }
             return;
         }
-    }
-
-
-    /**
-     *
-     */
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        switch (requestCode) {
-            case FILE_SELECT_CODE:
-                if (resultCode == RESULT_OK) {
-                /*// Get the Uri of the selected file
-				Uri uri = data.getData();
-				Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
-				// Get the path
-				String path = uri.getPath();
-				Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
-				if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
-					utilidades
-							.reiniciarApp(getString(R.string.copia_restaurada_ok));
-				} else {
-					Toast t;
-					t = Toast.makeText(getApplicationContext(),
-							R.string.copia_restaurada_ko, Toast.LENGTH_SHORT);
-					t.show();
-				}*/
-
-                    RestaurarCopiaFichero task = new RestaurarCopiaFichero();
-                    task.data = data;
-                    task.execute();
-                }
-                break;
-        }
-        super.onActivityResult(requestCode, resultCode, data);
     }
 }

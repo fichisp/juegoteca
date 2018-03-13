@@ -1,7 +1,6 @@
 package com.juegoteca.util;
 
 import android.app.Activity;
-import android.transition.Visibility;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +8,6 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.juegoteca.basedatos.Juego;
 import com.mijuegoteca.R;
@@ -86,7 +84,6 @@ public class AdaptadorJuegosListaCaratula extends ArrayAdapter<Juego> {
                         view.findViewById(R.id.listado_juego_caratula_nombre).setVisibility(View.INVISIBLE);
                     }
                 }, 1000);
-
 
 
             }

@@ -172,5 +172,6 @@
     <string name="title_activity_inicio_masonry">Todos los juegos</string>
     <string name="novedades">Novedades</string>
     <string name="unzip">Restaurando copia de seguridad...</string>
+    <string name="alerta_atras_editar_titulo">Cancelar edición de juego</string>
 
 </resources>

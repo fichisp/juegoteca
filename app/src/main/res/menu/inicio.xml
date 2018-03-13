@@ -1,10 +1,10 @@
-<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/action_grid"
         android:icon="@drawable/ic_view_quilt_black_24dp"
         android:orderInCategory="100"
-        android:title="@string/action_grid"
-        android:showAsAction="ifRoom" />
+        android:showAsAction="ifRoom"
+        android:title="@string/action_grid" />
 
 </menu>

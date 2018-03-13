@@ -13,7 +13,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.android.gms.vision.Frame;
 import com.juegoteca.actividades.DetalleJuego;
 import com.juegoteca.actividades.DetalleJuegoImagenGrande;
 import com.juegoteca.actividades.NuevoJuego;
@@ -59,9 +58,9 @@ public class MasonryAdapterHorizontal extends RecyclerView.Adapter<MasonryAdapte
             public boolean onLongClick(final View view) {
 
 
-                ImageView image = (ImageView)view.findViewById(R.id.img);
+                ImageView image = (ImageView) view.findViewById(R.id.img);
 
-                final TextView title = (TextView)view.findViewById(R.id.img_name);
+                final TextView title = (TextView) view.findViewById(R.id.img_name);
 
                 FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) title.getLayoutParams();
                 //Ajustar el texto a la imagen
@@ -90,7 +89,7 @@ public class MasonryAdapterHorizontal extends RecyclerView.Adapter<MasonryAdapte
     @Override
     public void onBindViewHolder(MasonryView holder, int position) {
 
-        if(datosJuegos[position].getCaratula()!=null && !"".equals(datosJuegos[position].getCaratula())) {
+        if (datosJuegos[position].getCaratula() != null && !"".equals(datosJuegos[position].getCaratula())) {
             holder.imageView.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + datosJuegos[position].getCaratula())));
         } else {
             //holder.imageView.setImageDrawable((context.getResources().getDrawable(R.drawable.sinimagen)));
@@ -105,22 +104,6 @@ public class MasonryAdapterHorizontal extends RecyclerView.Adapter<MasonryAdapte
     @Override
     public int getItemCount() {
         return datosJuegos.length;
-    }
-
-    class MasonryView extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView textView;
-        TextView idView;
-
-
-        public MasonryView(View itemView) {
-            super(itemView);
-
-            imageView = (ImageView) itemView.findViewById(R.id.img);
-            textView = (TextView) itemView.findViewById(R.id.img_name);
-            idView = (TextView) itemView.findViewById(R.id.id_juego);
-
-        }
     }
 
     /**
@@ -152,5 +135,21 @@ public class MasonryAdapterHorizontal extends RecyclerView.Adapter<MasonryAdapte
 
     public void setDatosJuegos(Juego[] datosJuegos) {
         this.datosJuegos = datosJuegos;
+    }
+
+    class MasonryView extends RecyclerView.ViewHolder {
+        ImageView imageView;
+        TextView textView;
+        TextView idView;
+
+
+        public MasonryView(View itemView) {
+            super(itemView);
+
+            imageView = (ImageView) itemView.findViewById(R.id.img);
+            textView = (TextView) itemView.findViewById(R.id.img_name);
+            idView = (TextView) itemView.findViewById(R.id.id_juego);
+
+        }
     }
 }

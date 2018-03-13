@@ -484,7 +484,7 @@ public class Estadisitcas extends Activity {
                     renderer.setColor(Color.rgb(0, 255, 0));
                 }
                 /*renderer.setColor(COLORS[(serieJuegosCompletados.getItemCount() - 1)
-						% COLORS.length]);*/
+                        % COLORS.length]);*/
 
                 rendererJuegosCompletados.addSeriesRenderer(renderer);
                 rendererJuegosCompletados.setPanEnabled(false);
@@ -526,7 +526,6 @@ public class Estadisitcas extends Activity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)

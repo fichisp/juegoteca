@@ -156,7 +156,7 @@ public class Favoritos extends Activity {
 
         //Intent intent = new Intent(this, DetalleJuego.class);
         intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
-        if(getIntent().getBooleanExtra("GRID", false)) {
+        if (getIntent().getBooleanExtra("GRID", false)) {
             intent.putExtra("GRID", true);
         }
         intent.putExtra("CALLER", "ListadoFavoritos");
@@ -194,7 +194,7 @@ public class Favoritos extends Activity {
 
     @Override
     public void onBackPressed() {
-        if(getIntent().getBooleanExtra("GRID", false)) {
+        if (getIntent().getBooleanExtra("GRID", false)) {
             Intent intent = new Intent(this, InicioMasonry.class);
             startActivity(intent);
             finish();

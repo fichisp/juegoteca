@@ -5,23 +5,15 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
-import com.google.android.gms.vision.text.Line;
 import com.juegoteca.util.MasonryAdapter;
 import com.juegoteca.util.SpacesItemDecoration;
 import com.juegoteca.util.Utilidades;
@@ -44,7 +36,7 @@ public class InicioMasonry extends Activity {
         // Show the Up button in the action bar.
         //setupActionBar();
 
-        backTopButton = (ImageButton)findViewById(R.id.boton_top);
+        backTopButton = (ImageButton) findViewById(R.id.boton_top);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid);
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(3, StaggeredGridLayoutManager.VERTICAL));
@@ -56,8 +48,8 @@ public class InicioMasonry extends Activity {
 
         ImageButton layoutBotones = (ImageButton) findViewById(R.id.boton_top);
 
-        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams)backTopButton.getLayoutParams();
-        params.setMargins(params.leftMargin, params.topMargin,params.rightMargin , params.bottomMargin + layoutBotones.getLayoutParams().height);
+        RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) backTopButton.getLayoutParams();
+        params.setMargins(params.leftMargin, params.topMargin, params.rightMargin, params.bottomMargin + layoutBotones.getLayoutParams().height);
         backTopButton.setLayoutParams(params);
 
         mRecyclerView.setOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -66,14 +58,12 @@ public class InicioMasonry extends Activity {
             public void onScrolled(RecyclerView recyclerView, int dx, int dy) {
                 super.onScrolled(recyclerView, dx, dy);
                 int[] firstVisibleItemPositions = new int[3];
-                int pastVisiblesItems = ((StaggeredGridLayoutManager)mRecyclerView.getLayoutManager()).findLastVisibleItemPositions(firstVisibleItemPositions)[0];
+                int pastVisiblesItems = ((StaggeredGridLayoutManager) mRecyclerView.getLayoutManager()).findLastVisibleItemPositions(firstVisibleItemPositions)[0];
 
                 if (pastVisiblesItems > 15) {
                     backTopButton.setVisibility(View.VISIBLE);
-                }
-
-                else{
-                backTopButton.setVisibility(View.GONE);
+                } else {
+                    backTopButton.setVisibility(View.GONE);
                 }
             }
 
@@ -102,8 +92,9 @@ public class InicioMasonry extends Activity {
         }
 
     }
+
     public void backTop(View view) {
-    mRecyclerView.smoothScrollToPosition(0);
+        mRecyclerView.smoothScrollToPosition(0);
     }
 
     /**

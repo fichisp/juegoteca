@@ -83,7 +83,7 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
     @Override
     public void onBindViewHolder(MasonryView holder, int position) {
 
-        if(datosJuegos[position].getCaratula()!=null && !"".equals(datosJuegos[position].getCaratula())) {
+        if (datosJuegos[position].getCaratula() != null && !"".equals(datosJuegos[position].getCaratula())) {
             holder.imageView.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + datosJuegos[position].getCaratula())));
         } else {
             //holder.imageView.setImageDrawable((context.getResources().getDrawable(R.drawable.sinimagen)));
@@ -97,22 +97,6 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
     @Override
     public int getItemCount() {
         return datosJuegos.length;
-    }
-
-    class MasonryView extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView textView;
-        TextView idView;
-
-
-        public MasonryView(View itemView) {
-            super(itemView);
-
-            imageView = (ImageView) itemView.findViewById(R.id.img);
-            textView = (TextView) itemView.findViewById(R.id.img_name);
-            idView = (TextView) itemView.findViewById(R.id.id_juego);
-
-        }
     }
 
     /**
@@ -140,5 +124,21 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
             intent.putExtra("GRID", true);
         }
         context.startActivity(intent);
+    }
+
+    class MasonryView extends RecyclerView.ViewHolder {
+        ImageView imageView;
+        TextView textView;
+        TextView idView;
+
+
+        public MasonryView(View itemView) {
+            super(itemView);
+
+            imageView = (ImageView) itemView.findViewById(R.id.img);
+            textView = (TextView) itemView.findViewById(R.id.img_name);
+            idView = (TextView) itemView.findViewById(R.id.id_juego);
+
+        }
     }
 }

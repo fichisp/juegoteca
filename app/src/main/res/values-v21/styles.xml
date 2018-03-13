@@ -56,7 +56,7 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:statusBarColor">@color/naranja_cabeceras</item>
-        
+
     </style>
 
     <style name="Padding0">

@@ -43,6 +43,7 @@ import java.util.Locale;
 
 public class DetalleJuego extends Activity {
 
+    private static final String TAG_SUCCESS = "success";
     private JuegosSQLHelper juegosSQLH;
     private String idJuego;
     private boolean esNuevoJuego = false, esJuegoOnline = false;
@@ -57,7 +58,6 @@ public class DetalleJuego extends Activity {
             textViewComentario, textViewPuntuacion, textViewFormato;
     // private CheckBox checkCompletado;
     private String url_insertar, url_buscar, url_subir_imagen;
-    private static final String TAG_SUCCESS = "success";
     private JSONParser jParser;
     private ProgressDialog dialogoExportar;
     private DescargarImagen cargarImagenAsicncrona;
@@ -469,23 +469,22 @@ public class DetalleJuego extends Activity {
         } else {
             if (caller != null && caller.compareTo("ListadoPendientes") == 0) {
                 final Intent intent = new Intent(this, Pendientes.class);
-                if(getIntent().getBooleanExtra("GRID", false)) {
+                if (getIntent().getBooleanExtra("GRID", false)) {
                     intent.putExtra("GRID", true);
                 }
                 startActivity(intent);
             } else {
                 if (caller != null && caller.compareTo("ListadoFavoritos") == 0) {
                     final Intent intent = new Intent(this, Favoritos.class);
-                    if(getIntent().getBooleanExtra("GRID", false)) {
+                    if (getIntent().getBooleanExtra("GRID", false)) {
                         intent.putExtra("GRID", true);
                     }
                     startActivity(intent);
-                } else if(getIntent().getBooleanExtra("GRID", false)) {
+                } else if (getIntent().getBooleanExtra("GRID", false)) {
                     Intent intent = new Intent(this, InicioMasonry.class);
                     startActivity(intent);
                     finish();
-                }
-                else{
+                } else {
                     Log.v("DETALLE JUEGO", "Juego nuevo");
                     Intent intent = new Intent(this, Inicio.class);
                     startActivity(intent);
@@ -564,7 +563,7 @@ public class DetalleJuego extends Activity {
                 intent = new Intent(this, EditarJuego.class);
                 intent.putExtra("ID_JUEGO", idJuego);
                 String caller = getIntent().getStringExtra("CALLER");
-                if(getIntent().getBooleanExtra("GRID", false)) {
+                if (getIntent().getBooleanExtra("GRID", false)) {
                     intent.putExtra("GRID", true);
                 }
                 if (caller != null) {
@@ -611,7 +610,7 @@ public class DetalleJuego extends Activity {
                                 }
                                 // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                                 toast.show();
-                                if(getIntent().getBooleanExtra("GRID", false)) {
+                                if (getIntent().getBooleanExtra("GRID", false)) {
                                     Intent intent = new Intent(getApplicationContext(),
                                             InicioMasonry.class);
                                     startActivity(intent);

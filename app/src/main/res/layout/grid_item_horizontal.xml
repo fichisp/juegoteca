@@ -25,9 +25,9 @@
         android:id="@+id/img_name"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="10dp"
         android:background="@color/cast_intro_overlay_background_color"
         android:gravity="center"
+        android:padding="10dp"
         android:textColor="@color/blanco"
         android:visibility="invisible" />
 
