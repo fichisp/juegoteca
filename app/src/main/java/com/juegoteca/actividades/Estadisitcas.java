@@ -3,8 +3,10 @@ package com.juegoteca.actividades;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,6 +33,9 @@ import org.achartengine.renderer.SimpleSeriesRenderer;
 import java.math.BigDecimal;
 import java.util.Locale;
 
+/**
+ * Estadísitcas
+ */
 public class Estadisitcas extends Activity {
 
     public static final String TYPE = "type";
@@ -47,9 +52,7 @@ public class Estadisitcas extends Activity {
     public static final String EMPTY_STRING = "";
     public static final String ZERO_STRING = "0";
     public static final String SPA = "spa";
-    /*private static int[] COLORS = new int[] { Color.GREEN, Color.BLUE,
-            Color.MAGENTA, Color.CYAN, Color.rgb(230, 95, 0), Color.RED,
-            Color.GRAY, Color.YELLOW };*/
+
     private static int[] COLORS = new int[]{
             Color.rgb(255, 64, 0),
             Color.rgb(255, 128, 0),
@@ -105,11 +108,32 @@ public class Estadisitcas extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_estadisitcas);
+
+        String codigoIdioma = Locale.getDefault().getISO3Language();
+
         utilidades = new Utilidades(this);
-        // utilidades.cargarAnuncio();
-        setupActionBar();
         juegosSQLH = new JuegosSQLHelper(this);
 
+        setupActionBar();
+        loadAds();
+
+        // Juegos agrupados por plataforma
+        gamesByPlatformGraphic(codigoIdioma);
+
+        // Juegos agrupados por genero
+        gamesByGenreGrpahic(codigoIdioma);
+
+        // Juegos agrupados por formato
+        gamesByFormatGraphic(codigoIdioma);
+
+        // Juegos agrupados por completado
+        gamesByStatusGraphic(codigoIdioma);
+    }
+
+    /**
+     * Load ads
+     */
+    private void loadAds() {
         adView = new AdView(this);
         adView.setAdSize(AdSize.BANNER);
         adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
@@ -125,243 +149,97 @@ public class Estadisitcas extends Activity {
 
         // Start loading the ad in the background.
         adView.loadAd(adRequest);
+    }
 
+    /**
+     * PieChart by status
+     *
+     * @param codigoIdioma
+     */
+    private void gamesByStatusGraphic(String codigoIdioma) {
 
-        // Juegos agrupados por plataforma
-        rendererJuegosPlataforma.setApplyBackgroundColor(true);
-        rendererJuegosPlataforma.setChartTitleTextSize(24);
-        rendererJuegosPlataforma.setLabelsTextSize(24);
-        rendererJuegosPlataforma.setLegendTextSize(24);
-        rendererJuegosPlataforma.setLabelsColor(Color.BLACK);
-        rendererJuegosPlataforma.setMargins(new int[]{20, 30, 15, 0});
-        rendererJuegosPlataforma.setStartAngle(270);
-        Cursor cursorJuegos = juegosSQLH.getJuegos();
-        int total = cursorJuegos.getCount();
-        cursorJuegos.close();
-        Float valorColeccion = juegosSQLH.getValorColeccion();
-        Integer juegosConPrecio = juegosSQLH.getCountJuegosConPrecio();
+        rendererJuegosCompletados.setApplyBackgroundColor(true);
+        rendererJuegosCompletados.setChartTitleTextSize(24);
+        rendererJuegosCompletados.setLabelsTextSize(24);
+        rendererJuegosCompletados.setLegendTextSize(24);
+        rendererJuegosCompletados.setLabelsColor(Color.BLACK);
+        rendererJuegosCompletados.setMargins(new int[]{20, 30, 15, 0});
+        rendererJuegosCompletados.setStartAngle(180);
 
+        Cursor cursorJuegosCompletados = juegosSQLH.getJuegosCompletados();
+        if (cursorJuegosCompletados != null
+                && cursorJuegosCompletados.moveToFirst()) {
 
-        TextView resumenTotal = (TextView) findViewById(R.id.text_view_resumen_total);
-        TextView resumenSum = (TextView) findViewById(R.id.text_view_resumen_sum);
-        TextView resumenAVG = (TextView) findViewById(R.id.text_view_resumen_avg);
+            numeroJuegos = new int[cursorJuegosCompletados.getCount()];
+            etiquetas = new String[cursorJuegosCompletados.getCount()];
 
-        resumenTotal.setText(String.valueOf(total));
-        if (valorColeccion != null && juegosConPrecio != null && juegosConPrecio > 0) {
-            resumenSum.setText(String.valueOf(valorColeccion));
-            BigDecimal bd = new BigDecimal(Float.toString(valorColeccion / juegosConPrecio));
-            bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
-            resumenAVG.setText(String.valueOf(bd.floatValue()));
-
-        } else {
-            resumenSum.setText("");
-            resumenAVG.setText("");
-        }
-
-
-        Cursor cursorJuegosPlataforma = juegosSQLH.getJuegosPorPlataforma();
-        if (cursorJuegosPlataforma != null
-                && cursorJuegosPlataforma.moveToFirst()) {
-
-            // textTotal.setText("Total del juegos: "+total);
-
-            numeroJuegos = new int[cursorJuegosPlataforma.getCount()];
-            etiquetas = new String[cursorJuegosPlataforma.getCount()];
             int i = 0;
+
+            //Procesarmos el cursor para generar las etiquetas y valores
             do {
-                numeroJuegos[i] = cursorJuegosPlataforma.getInt(0);
-                etiquetas[i] = cursorJuegosPlataforma.getString(1);
+
+                numeroJuegos[i] = cursorJuegosCompletados.getInt(0);
+
+                if (!SPA.equalsIgnoreCase(codigoIdioma)) {
+                    if (cursorJuegosCompletados.getString(1).compareTo(ZERO_STRING) == 0) {
+                        etiquetas[i] = STATUS_PENDING;
+                    } else {
+                        etiquetas[i] = STATUS_COMPLETED;
+                    }
+                } else {
+                    if (cursorJuegosCompletados.getString(1).compareTo(ZERO_STRING) == 0) {
+                        etiquetas[i] = STATUS_NO_COMPLETADO;
+                    } else {
+                        etiquetas[i] = STATUS_COMPLETADO;
+                    }
+                }
+
                 i++;
-            } while (cursorJuegosPlataforma.moveToNext());
+            } while (cursorJuegosCompletados.moveToNext());
 
-            LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot);
-            LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot_left);
-            LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot_right);
 
+            //Procesamos las etiquetas y valores
             for (int j = 0; j < numeroJuegos.length; j++) {
                 int x = 0;
                 try {
                     x = numeroJuegos[j];
                 } catch (NumberFormatException e) {
-                    // TODO
-                    return;
+                    x = 0;
                 }
-                //serieJuegosPlataforma.add(etiquetas[j] + "(" + x + ")", x);
-                serieJuegosPlataforma.add(etiquetas[j], x);
-                SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
-                int color = COLORS[(serieJuegosPlataforma.getItemCount() - 1)
-                        % COLORS.length];
-                renderer.setColor(color);
-
-                //TODO Añadimos a la falsa leyenda una entrada
-
-                LinearLayout tmpFoot = new LinearLayout(this);
-                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
-
-
-                TextView tmpColor = new TextView(this);
-                tmpColor.setHeight(50);
-                tmpColor.setWidth(50);
-                tmpColor.setTextSize(12);
-                tmpColor.setPadding(0, 0, 0, 10);
-                tmpColor.setGravity(Gravity.TOP);
-                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                tmpColor.setBackgroundColor(color);
-
-                TextView tmp = new TextView(this);
-                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
-                tmp.setTextSize(12);
-
-                tmp.setGravity(Gravity.TOP);
-                tmp.setPadding(15, 0, 0, 10);
-                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-
-                tmpFoot.addView(tmpColor);
-                tmpFoot.addView(tmp);
-
-                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-
-                //foot.addView(tmpFoot);
-                if (j % 2 == 0) {
-                    footL.addView(tmpFoot);
-                } else {
-                    footR.addView(tmpFoot);
-                }
-
-
-                renderer.setDisplayChartValues(true);
-                rendererJuegosPlataforma.addSeriesRenderer(renderer);
-                rendererJuegosPlataforma.setShowLegend(false);
-                rendererJuegosPlataforma.setPanEnabled(false);
-                rendererJuegosPlataforma.setZoomEnabled(false);
-                rendererJuegosPlataforma.setChartTitleTextSize(36);
-
-                rendererJuegosPlataforma.setScale(1f);
-                rendererJuegosPlataforma.setStartAngle(270);
-
-
-            }
-
-            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_1);
-
-
-            graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
-                    serieJuegosPlataforma, rendererJuegosPlataforma);
-            layout.addView(graficoJuegosPlataforma);
-
-
-            cursorJuegosPlataforma.close();
-        }
-
-        String codigoIdioma = Locale.getDefault().getISO3Language();
-
-        Log.v("LOCALE ISO", codigoIdioma);
-
-        // Juegos agrupados por genero
-        rendererJuegosGenero.setApplyBackgroundColor(true);
-        rendererJuegosGenero.setChartTitleTextSize(24);
-        rendererJuegosGenero.setLabelsTextSize(24);
-        rendererJuegosGenero.setLegendTextSize(24);
-        rendererJuegosGenero.setLabelsColor(Color.BLACK);
-        rendererJuegosGenero.setMargins(new int[]{20, 30, 15, 0});
-        rendererJuegosGenero.setStartAngle(180);
-
-        Cursor cursorJuegosGenero = null;
-
-        if (!SPA.equalsIgnoreCase(codigoIdioma)) {
-            cursorJuegosGenero = juegosSQLH.getJuegosGeneroEN();
-        } else {
-            cursorJuegosGenero = juegosSQLH.getJuegosGenero();
-        }
-
-
-        if (cursorJuegosGenero != null && cursorJuegosGenero.moveToFirst()) {
-
-            numeroJuegos = new int[cursorJuegosGenero.getCount()];
-            etiquetas = new String[cursorJuegosGenero.getCount()];
-            int i = 0;
-            do {
-                numeroJuegos[i] = cursorJuegosGenero.getInt(0);
-                etiquetas[i] = cursorJuegosGenero.getString(1);
-                i++;
-            } while (cursorJuegosGenero.moveToNext());
-
-            LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot);
-            LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot_left);
-            LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot_right);
-
-            for (int j = 0; j < numeroJuegos.length; j++) {
-                int x = 0;
-                try {
-                    x = numeroJuegos[j];
-                } catch (NumberFormatException e) {
-                    // TODO
-                    return;
-                }
-//				serieJuegosGenero.add(etiquetas[j] + " (" + x + ")", x);
-                serieJuegosGenero.add(etiquetas[j], x);
+                serieJuegosCompletados.add(etiquetas[j] + " (" + x + ")", x);
                 SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
 
-
-                int color = COLORS[(serieJuegosGenero.getItemCount() - 1)
-                        % COLORS.length];
-                renderer.setColor(color);
-
-                //TODO Añadimos a la falsa leyenda una entrada
-
-                LinearLayout tmpFoot = new LinearLayout(this);
-                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
-
-
-                TextView tmpColor = new TextView(this);
-                tmpColor.setHeight(50);
-                tmpColor.setWidth(50);
-                tmpColor.setTextSize(12);
-                tmpColor.setPadding(0, 0, 0, 10);
-                tmpColor.setGravity(Gravity.TOP);
-                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                tmpColor.setBackgroundColor(color);
-
-                TextView tmp = new TextView(this);
-                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
-                tmp.setTextSize(12);
-
-                tmp.setGravity(Gravity.TOP);
-                tmp.setPadding(15, 0, 0, 10);
-                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-
-                tmpFoot.addView(tmpColor);
-                tmpFoot.addView(tmp);
-
-                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
-
-                //foot.addView(tmpFoot);
-                if (j % 2 == 0) {
-                    footL.addView(tmpFoot);
+                if (STATUS_NO_COMPLETADO.equals(etiquetas[j]) || STATUS_PENDING.equals(etiquetas[j])) {
+                    renderer.setColor(Color.rgb(255, 69, 0));
                 } else {
-                    footR.addView(tmpFoot);
+                    renderer.setColor(Color.rgb(0, 255, 0));
                 }
 
+                rendererJuegosCompletados.addSeriesRenderer(renderer);
+                rendererJuegosCompletados.setPanEnabled(false);
+                rendererJuegosCompletados.setShowLegend(false);
+                rendererJuegosCompletados.setZoomEnabled(false);
+                rendererJuegosCompletados.setStartAngle(270);
 
-                rendererJuegosGenero.addSeriesRenderer(renderer);
-                rendererJuegosGenero.setShowLegend(false);
-                rendererJuegosGenero.setPanEnabled(false);
-                rendererJuegosGenero.setZoomEnabled(false);
-                rendererJuegosGenero.setStartAngle(270);
+                rendererJuegosCompletados.setFitLegend(true);
+                rendererJuegosCompletados.setScale(1.25f);
             }
 
-            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_2);
-            graficoJuegosGenero = ChartFactory.getPieChartView(this,
-                    serieJuegosGenero, rendererJuegosGenero);
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_3);
+            graficoJuegosCompletados = ChartFactory.getPieChartView(this,
+                    serieJuegosCompletados, rendererJuegosCompletados);
 
-            layout.addView(graficoJuegosGenero);
+            layout.addView(graficoJuegosCompletados);
 
-            cursorJuegosGenero.close();
+            cursorJuegosCompletados.close();
         }
+    }
 
-        // Juegos agrupados por formato
+    /**
+     * * PieChart by format
+     * @param codigoIdioma
+     */
+    private void gamesByFormatGraphic(String codigoIdioma) {
         rendererJuegosFormato.setApplyBackgroundColor(true);
         rendererJuegosFormato.setChartTitleTextSize(24);
         rendererJuegosFormato.setLabelsTextSize(24);
@@ -409,8 +287,7 @@ public class Estadisitcas extends Activity {
                 try {
                     x = numeroJuegos[j];
                 } catch (NumberFormatException e) {
-                    // TODO
-                    return;
+                    x = 0;
                 }
                 serieJuegosFormato.add(etiquetas[j] + "(" + x + ")", x);
                 SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
@@ -422,6 +299,9 @@ public class Estadisitcas extends Activity {
                 rendererJuegosFormato.setZoomEnabled(false);
                 rendererJuegosFormato.setStartAngle(270);
 
+                rendererJuegosFormato.setFitLegend(true);
+                rendererJuegosFormato.setScale(1.25f);
+
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_4);
@@ -432,74 +312,260 @@ public class Estadisitcas extends Activity {
 
             cursorJuegosFormato.close();
         }
+    }
 
-        // Juegos agrupados por completado
-        rendererJuegosCompletados.setApplyBackgroundColor(true);
-        rendererJuegosCompletados.setChartTitleTextSize(24);
-        rendererJuegosCompletados.setLabelsTextSize(24);
-        rendererJuegosCompletados.setLegendTextSize(24);
-        rendererJuegosCompletados.setLabelsColor(Color.BLACK);
-        rendererJuegosCompletados.setMargins(new int[]{20, 30, 15, 0});
-        rendererJuegosCompletados.setStartAngle(180);
-        Cursor cursorJuegosCompletados = juegosSQLH.getJuegosCompletados();
-        if (cursorJuegosCompletados != null
-                && cursorJuegosCompletados.moveToFirst()) {
+    /**
+     * PieChart by genre
+     * @param codigoIdioma
+     */
+    private void gamesByGenreGrpahic(String codigoIdioma) {
+        rendererJuegosGenero.setApplyBackgroundColor(true);
+        rendererJuegosGenero.setChartTitleTextSize(24);
+        rendererJuegosGenero.setLabelsTextSize(24);
+        rendererJuegosGenero.setLegendTextSize(24);
+        rendererJuegosGenero.setLabelsColor(Color.BLACK);
+        rendererJuegosGenero.setMargins(new int[]{20, 30, 15, 0});
+        rendererJuegosGenero.setStartAngle(180);
 
-            numeroJuegos = new int[cursorJuegosCompletados.getCount()];
-            etiquetas = new String[cursorJuegosCompletados.getCount()];
+        Cursor cursorJuegosGenero = null;
+
+        if (!SPA.equalsIgnoreCase(codigoIdioma)) {
+            cursorJuegosGenero = juegosSQLH.getJuegosGeneroEN();
+        } else {
+            cursorJuegosGenero = juegosSQLH.getJuegosGenero();
+        }
+
+
+        if (cursorJuegosGenero != null && cursorJuegosGenero.moveToFirst()) {
+
+            numeroJuegos = new int[cursorJuegosGenero.getCount()];
+            etiquetas = new String[cursorJuegosGenero.getCount()];
             int i = 0;
             do {
-                numeroJuegos[i] = cursorJuegosCompletados.getInt(0);
-
-                if (!SPA.equalsIgnoreCase(codigoIdioma)) {
-                    if (cursorJuegosCompletados.getString(1).compareTo(ZERO_STRING) == 0) {
-                        etiquetas[i] = STATUS_PENDING;
-                    } else {
-                        etiquetas[i] = STATUS_COMPLETED;
-                    }
-                } else {
-                    if (cursorJuegosCompletados.getString(1).compareTo(ZERO_STRING) == 0) {
-                        etiquetas[i] = STATUS_NO_COMPLETADO;
-                    } else {
-                        etiquetas[i] = STATUS_COMPLETADO;
-                    }
-                }
-
+                numeroJuegos[i] = cursorJuegosGenero.getInt(0);
+                etiquetas[i] = cursorJuegosGenero.getString(1);
                 i++;
-            } while (cursorJuegosCompletados.moveToNext());
+            } while (cursorJuegosGenero.moveToNext());
+
+            LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot);
+            LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot_left);
+            LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot_right);
+
             for (int j = 0; j < numeroJuegos.length; j++) {
                 int x = 0;
                 try {
                     x = numeroJuegos[j];
                 } catch (NumberFormatException e) {
-                    // TODO
-                    return;
+                    x = 0;
                 }
-                serieJuegosCompletados.add(etiquetas[j] + " (" + x + ")", x);
+
+                serieJuegosGenero.add(etiquetas[j], x);
                 SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
 
-                if (STATUS_NO_COMPLETADO.equals(etiquetas[j]) || STATUS_PENDING.equals(etiquetas[j])) {
-                    renderer.setColor(Color.rgb(255, 69, 0));
-                } else {
-                    renderer.setColor(Color.rgb(0, 255, 0));
-                }
-                /*renderer.setColor(COLORS[(serieJuegosCompletados.getItemCount() - 1)
-                        % COLORS.length]);*/
 
-                rendererJuegosCompletados.addSeriesRenderer(renderer);
-                rendererJuegosCompletados.setPanEnabled(false);
-                rendererJuegosCompletados.setShowLegend(false);
-                rendererJuegosCompletados.setZoomEnabled(false);
-                rendererJuegosFormato.setStartAngle(270);
+                int color = COLORS[(serieJuegosGenero.getItemCount() - 1)
+                        % COLORS.length];
+                renderer.setColor(color);
+
+                //Añadimos a la falsa leyenda una entrada
+
+                LinearLayout tmpFoot = new LinearLayout(this);
+                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                TextView tmpColor = new TextView(this);
+                tmpColor.setHeight(50);
+                tmpColor.setWidth(50);
+                tmpColor.setTextSize(12);
+                tmpColor.setPadding(0, 0, 0, 10);
+                tmpColor.setGravity(Gravity.TOP);
+                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tmpColor.setBackgroundColor(color);
+
+                TextView tmp = new TextView(this);
+                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
+                tmp.setTextSize(12);
+
+                tmp.setGravity(Gravity.TOP);
+                tmp.setPadding(15, 0, 0, 10);
+                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+                tmpFoot.addView(tmpColor);
+                tmpFoot.addView(tmp);
+
+                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+                //foot.addView(tmpFoot);
+                if (j % 2 == 0) {
+                    footL.addView(tmpFoot);
+                } else {
+                    footR.addView(tmpFoot);
+                }
+
+
+                rendererJuegosGenero.addSeriesRenderer(renderer);
+                rendererJuegosGenero.setShowLegend(false);
+                rendererJuegosGenero.setPanEnabled(false);
+                rendererJuegosGenero.setZoomEnabled(false);
+                rendererJuegosGenero.setStartAngle(270);
+
+                rendererJuegosGenero.setFitLegend(true);
+                rendererJuegosGenero.setScale(1.25f);
             }
 
-            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_3);
-            graficoJuegosCompletados = ChartFactory.getPieChartView(this,
-                    serieJuegosCompletados, rendererJuegosCompletados);
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_2);
+            graficoJuegosGenero = ChartFactory.getPieChartView(this,
+                    serieJuegosGenero, rendererJuegosGenero);
 
-            layout.addView(graficoJuegosCompletados);
+            layout.addView(graficoJuegosGenero);
 
-            cursorJuegosCompletados.close();
+            cursorJuegosGenero.close();
+        }
+    }
+
+    /**
+     * PieChart by platform
+     *
+     * @param codigoIdioma
+     */
+    private void gamesByPlatformGraphic(String codigoIdioma) {
+        rendererJuegosPlataforma.setApplyBackgroundColor(true);
+        rendererJuegosPlataforma.setChartTitleTextSize(24);
+        rendererJuegosPlataforma.setLabelsTextSize(24);
+        rendererJuegosPlataforma.setLegendTextSize(24);
+        rendererJuegosPlataforma.setLabelsColor(Color.BLACK);
+        rendererJuegosPlataforma.setMargins(new int[]{30, 30, 30, 30});
+        rendererJuegosPlataforma.setShowLegend(false);
+        rendererJuegosPlataforma.setPanEnabled(false);
+        rendererJuegosPlataforma.setZoomEnabled(false);
+        rendererJuegosPlataforma.setChartTitleTextSize(36);
+        rendererJuegosPlataforma.setShowLabels(true);
+        rendererJuegosPlataforma.setFitLegend(true);
+        rendererJuegosPlataforma.setScale(1.25f);
+
+        Cursor cursorJuegos = juegosSQLH.getJuegos();
+        int total = cursorJuegos.getCount();
+        cursorJuegos.close();
+
+        Float valorColeccion = juegosSQLH.getValorColeccion();
+        Integer juegosConPrecio = juegosSQLH.getCountJuegosConPrecio();
+
+        TextView resumenTotal = (TextView) findViewById(R.id.text_view_resumen_total);
+        TextView resumenSum = (TextView) findViewById(R.id.text_view_resumen_sum);
+        TextView resumenAVG = (TextView) findViewById(R.id.text_view_resumen_avg);
+
+        resumenTotal.setText(String.valueOf(total));
+
+        if (valorColeccion != null && juegosConPrecio != null && juegosConPrecio > 0) {
+
+            final SharedPreferences settings = getSharedPreferences("UserInfo",
+                    0);
+            String currency = settings.getString("currency","");
+            String coleccionValueText = String.valueOf(valorColeccion) + " " + currency;
+            BigDecimal bd = new BigDecimal(Float.toString(valorColeccion / juegosConPrecio));
+            bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
+            String avgText = String.valueOf(bd.floatValue()) + " " + currency;
+
+            if (SPA.equalsIgnoreCase(codigoIdioma)) {
+                coleccionValueText=coleccionValueText.replace(".", ",");
+                coleccionValueText=coleccionValueText.replace(".",",");
+            }
+
+            resumenSum.setText(coleccionValueText);
+            resumenAVG.setText(avgText);
+
+        } else {
+            resumenSum.setText("");
+            resumenAVG.setText("");
+        }
+
+
+        Cursor cursorJuegosPlataforma = juegosSQLH.getJuegosPorPlataforma();
+
+        if (cursorJuegosPlataforma != null
+                && cursorJuegosPlataforma.moveToFirst()) {
+
+            numeroJuegos = new int[cursorJuegosPlataforma.getCount()];
+            etiquetas = new String[cursorJuegosPlataforma.getCount()];
+            int i = 0;
+            do {
+                numeroJuegos[i] = cursorJuegosPlataforma.getInt(0);
+                etiquetas[i] = cursorJuegosPlataforma.getString(1);
+                i++;
+            } while (cursorJuegosPlataforma.moveToNext());
+
+            LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot);
+            LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot_left);
+            LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot_right);
+
+            for (int j = 0; j < numeroJuegos.length; j++) {
+                int x = 0;
+
+                try {
+                    x = numeroJuegos[j];
+                } catch (NumberFormatException e) {
+                    x = 0;
+                }
+
+                serieJuegosPlataforma.add(etiquetas[j], x);
+
+                SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
+
+                int color = COLORS[(serieJuegosPlataforma.getItemCount() - 1)
+                        % COLORS.length];
+
+                renderer.setColor(color);
+
+                //Añadimos a la falsa leyenda una entrada
+                LinearLayout tmpFoot = new LinearLayout(this);
+                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                TextView tmpColor = new TextView(this);
+                tmpColor.setHeight(50);
+                tmpColor.setWidth(50);
+                tmpColor.setTextSize(12);
+                tmpColor.setPadding(0, 0, 0, 10);
+                tmpColor.setGravity(Gravity.TOP);
+                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tmpColor.setBackgroundColor(color);
+
+                TextView tmp = new TextView(this);
+                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
+                tmp.setTextSize(12);
+
+                tmp.setGravity(Gravity.TOP);
+                tmp.setPadding(15, 0, 0, 10);
+                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+                tmpFoot.addView(tmpColor);
+                tmpFoot.addView(tmp);
+
+                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+                //foot.addView(tmpFoot);
+                if (j % 2 == 0) {
+                    footL.addView(tmpFoot);
+                } else {
+                    footR.addView(tmpFoot);
+                }
+
+                rendererJuegosPlataforma.addSeriesRenderer(renderer);
+
+            }
+
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_1);
+
+
+            graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
+                    serieJuegosPlataforma, rendererJuegosPlataforma);
+
+            layout.addView(graficoJuegosPlataforma);
+
+
+            cursorJuegosPlataforma.close();
         }
     }
 
@@ -515,7 +581,7 @@ public class Estadisitcas extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
+                //Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;

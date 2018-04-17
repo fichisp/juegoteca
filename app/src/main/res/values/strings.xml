@@ -176,4 +176,5 @@
     <string name="novedades">News</string>
     <string name="unzip">Restoring backup ...</string>
     <string name="alerta_atras_editar_titulo">Cance game edition</string>
+    <string name="currency">Currency</string>
 </resources>

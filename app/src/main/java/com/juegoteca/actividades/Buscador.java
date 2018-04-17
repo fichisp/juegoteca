@@ -106,7 +106,7 @@ public class Buscador extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
+                //Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;
@@ -162,7 +162,7 @@ public class Buscador extends Activity {
             }
         }
         for (int a = 0; a < valoresCampos.length; a++) {
-            Log.v("VALORES BUSCAR", a + " --> " + valoresCampos[a]);
+            //Log.v("VALORES BUSCAR", a + " --> " + valoresCampos[a]);
         }
 
         // Iniciar la actividad listado
@@ -204,7 +204,7 @@ public class Buscador extends Activity {
             startActivity(intent);
             finish();
         } else {
-            Log.v("DETALLE JUEGO", "Juego nuevo");
+            //Log.v("DETALLE JUEGO", "Juego nuevo");
             Intent intent = new Intent(this, Inicio.class);
             startActivity(intent);
             finish();

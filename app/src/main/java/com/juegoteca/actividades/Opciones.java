@@ -207,6 +207,22 @@ public class Opciones extends PreferenceActivity {
         final SharedPreferences settings = getSharedPreferences("UserInfo",
                 0);
 
+        ListPreference preferenciaModeda = (ListPreference) findPreference("currencys");
+        preferenciaModeda.
+                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putString("currency", newValue.toString());
+                            editor.commit();
+
+                        return true;
+                    }
+                });
+
+
+
         CheckBoxPreference preferenciaDetalle = (CheckBoxPreference) findPreference("detalle_imagen");
         preferenciaDetalle.
                 setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -449,7 +465,7 @@ public class Opciones extends PreferenceActivity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
+                //Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;
@@ -674,10 +690,10 @@ public class Opciones extends PreferenceActivity {
         protected Integer doInBackground(Void... params) {
             // Get the Uri of the selected file
             Uri uri = data.getData();
-            Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
+            //Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
             // Get the path
             String path = uri.getPath();
-            Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
+            //Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
             if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
                 return 1;
             } else {

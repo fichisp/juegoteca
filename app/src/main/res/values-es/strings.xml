@@ -142,7 +142,7 @@
     <string name="fisico">Físico</string>
     <string name="digital">Digital</string>
     <string name="campo_titulo_vacio">El campo TÍTULO no puede quedar en blanco</string>
-    <string name="campo_compania_vacio">El campor COMPAÑÍA no puede quedar en blanco</string>
+    <string name="campo_compania_vacio">El campo COMPAÑÍA no puede quedar en blanco</string>
     <string name="campo_fecha_lanzamiento_invalido">El valor del campo FECHA DE LANZAMIENTO no es válido</string>
     <string name="campo_fecha_compra_invalido">El valor del campo FECHA DE COMPRA no es válido.</string>
     <string name="campo_fecha_completado_invalido">El valor del campo FECHA DE COMPLETADO no es válido</string>
@@ -175,4 +175,5 @@
     <string name="novedades">Novedades</string>
     <string name="unzip">Restaurando copia de seguridad...</string>
     <string name="alerta_atras_editar_titulo">Cancelar edición de juego</string>
+    <string name="currency">Moneda</string>
 </resources>

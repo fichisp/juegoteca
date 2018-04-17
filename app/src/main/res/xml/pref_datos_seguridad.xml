@@ -1,5 +1,13 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ListPreference
+        android:icon="@null"
+        android:key="currencys"
+        android:title="@string/currency"
+        android:summary="%s"
+        android:entries="@array/currency"
+        android:entryValues="@array/currencyAlias"/>
+
     <CheckBoxPreference
         android:icon="@null"
         android:key="detalle_imagen"
