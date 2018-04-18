@@ -40,14 +40,14 @@ import java.util.Locale;
 public class Estadisitcas extends Activity {
 
     public static final String TYPE = "type";
-    public static final String STATUS_PENDING = "PENDING";
-    public static final String STATUS_COMPLETED = "COMPLETED";
-    public static final String STATUS_NO_COMPLETADO = "NO COMPLETADO";
-    public static final String STATUS_COMPLETADO = "COMPLETADO";
+    public static final String STATUS_PENDING = "Pending";
+    public static final String STATUS_COMPLETED = "Completed";
+    public static final String STATUS_NO_COMPLETADO = "Pendiente";
+    public static final String STATUS_COMPLETADO = "Completado";
     public static final String FORMAT_N_D = "N/D";
     public static final String FORMAT_RETAIL_EN = "Retail";
     public static final String FORMAT_DIGITAL = "Digital";
-    public static final String FORMAT_RETAIL_ES = "Fisico";
+    public static final String FORMAT_RETAIL_ES = "Físico";
     public static final String F = "F";
     public static final String D = "D";
     public static final String EMPTY_STRING = "";
@@ -101,6 +101,7 @@ public class Estadisitcas extends Activity {
     private Utilidades utilidades;
     private AdView adView;
     private float pxLabelSize;
+    private float pxLegendSize;
 
     /**
      * Llamada cuando se inicializa la actividad. Crea los gráficos que se
@@ -122,6 +123,7 @@ public class Estadisitcas extends Activity {
         //Calculo del tamaño en pixeles de las etiquetas para todos los gráficos
         Resources r = getResources();
         pxLabelSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 9, r.getDisplayMetrics());
+        pxLegendSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10, r.getDisplayMetrics());
 
         // Juegos agrupados por plataforma
         gamesByPlatformGraphic(codigoIdioma);
@@ -166,14 +168,15 @@ public class Estadisitcas extends Activity {
 
         rendererJuegosCompletados.setApplyBackgroundColor(true);
         rendererJuegosCompletados.setLabelsTextSize(pxLabelSize);
-        rendererJuegosCompletados.setLegendTextSize(pxLabelSize);
+        rendererJuegosCompletados.setLegendTextSize(pxLegendSize);
         rendererJuegosCompletados.setLabelsColor(Color.BLACK);
         rendererJuegosCompletados.setPanEnabled(false);
-        rendererJuegosCompletados.setShowLegend(true);
+        rendererJuegosCompletados.setShowLegend(false);
         rendererJuegosCompletados.setShowLabels(false);
         rendererJuegosCompletados.setZoomEnabled(false);
-        rendererJuegosCompletados.setFitLegend(true);
+        rendererJuegosCompletados.setFitLegend(false);
         rendererJuegosCompletados.setScale(1.35f);
+        rendererJuegosCompletados.setAntialiasing(true);
 
         Cursor cursorJuegosCompletados = juegosSQLH.getJuegosCompletados();
         if (cursorJuegosCompletados != null
@@ -226,6 +229,45 @@ public class Estadisitcas extends Activity {
 
                 rendererJuegosCompletados.addSeriesRenderer(renderer);
 
+                LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_3_foot);
+                LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_3_foot_left);
+                LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_3_foot_right);
+
+                LinearLayout tmpFoot = new LinearLayout(this);
+                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                TextView tmpColor = new TextView(this);
+                tmpColor.setHeight(50);
+                tmpColor.setWidth(50);
+                tmpColor.setTextSize(12);
+                tmpColor.setPadding(0, 0, 0, 10);
+                tmpColor.setGravity(Gravity.TOP);
+                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tmpColor.setBackgroundColor(renderer.getColor());
+
+                TextView tmp = new TextView(this);
+                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
+                tmp.setTextSize(12);
+
+                tmp.setGravity(Gravity.TOP);
+                tmp.setPadding(15, 0, 0, 10);
+                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+                tmpFoot.addView(tmpColor);
+                tmpFoot.addView(tmp);
+
+                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+                //foot.addView(tmpFoot);
+                if (j % 2 == 0) {
+                    footL.addView(tmpFoot);
+                } else {
+                    footR.addView(tmpFoot);
+                }
+
+
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_3);
@@ -246,14 +288,15 @@ public class Estadisitcas extends Activity {
     private void gamesByFormatGraphic(String codigoIdioma) {
         rendererJuegosFormato.setApplyBackgroundColor(true);
         rendererJuegosFormato.setLabelsTextSize(pxLabelSize);
-        rendererJuegosFormato.setLegendTextSize(pxLabelSize);
+        rendererJuegosFormato.setLegendTextSize(pxLegendSize);
         rendererJuegosFormato.setLabelsColor(Color.BLACK);
-        rendererJuegosFormato.setShowLegend(true);
+        rendererJuegosFormato.setShowLegend(false);
         rendererJuegosFormato.setShowLabels(false);
         rendererJuegosFormato.setPanEnabled(false);
         rendererJuegosFormato.setZoomEnabled(false);
-        rendererJuegosFormato.setFitLegend(true);
+        rendererJuegosFormato.setFitLegend(false);
         rendererJuegosFormato.setScale(1.35f);
+        rendererJuegosFormato.setAntialiasing(true);
 
         Cursor cursorJuegosFormato = juegosSQLH.getJuegosPorFormato();
 
@@ -264,6 +307,7 @@ public class Estadisitcas extends Activity {
             int i = 0;
             do {
                 numeroJuegos[i] = cursorJuegosFormato.getInt(0);
+
                 if (!SPA.equalsIgnoreCase(codigoIdioma)) {
                     if (cursorJuegosFormato.getString(1).equals(F)) {
                         etiquetas[i] = FORMAT_RETAIL_EN;
@@ -289,6 +333,9 @@ public class Estadisitcas extends Activity {
                 i++;
             } while (cursorJuegosFormato.moveToNext());
 
+
+
+
             int[] coloresFormato = new int[]{Color.rgb(255, 64, 0), Color.rgb(255, 215, 0)};
 
             for (int j = 0; j < numeroJuegos.length; j++) {
@@ -304,6 +351,44 @@ public class Estadisitcas extends Activity {
                         % coloresFormato.length]);
                 rendererJuegosFormato.addSeriesRenderer(renderer);
 
+
+                LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_4_foot);
+                LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_4_foot_left);
+                LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_4_foot_right);
+
+                LinearLayout tmpFoot = new LinearLayout(this);
+                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                TextView tmpColor = new TextView(this);
+                tmpColor.setHeight(50);
+                tmpColor.setWidth(50);
+                tmpColor.setTextSize(12);
+                tmpColor.setPadding(0, 0, 0, 10);
+                tmpColor.setGravity(Gravity.TOP);
+                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tmpColor.setBackgroundColor(renderer.getColor());
+
+                TextView tmp = new TextView(this);
+                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
+                tmp.setTextSize(12);
+
+                tmp.setGravity(Gravity.TOP);
+                tmp.setPadding(15, 0, 0, 10);
+                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+                tmpFoot.addView(tmpColor);
+                tmpFoot.addView(tmp);
+
+                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+                //foot.addView(tmpFoot);
+                if (j % 2 == 0) {
+                    footL.addView(tmpFoot);
+                } else {
+                    footR.addView(tmpFoot);
+                }
 
             }
 
@@ -332,6 +417,7 @@ public class Estadisitcas extends Activity {
         rendererJuegosGenero.setZoomEnabled(false);
         rendererJuegosGenero.setScale(1.35f);
         rendererJuegosGenero.setShowLabels(false);
+        rendererJuegosGenero.setAntialiasing(true);
 
         Cursor cursorJuegosGenero = null;
 
@@ -441,6 +527,7 @@ public class Estadisitcas extends Activity {
         rendererJuegosPlataforma.setScale(1.35f);
         rendererJuegosPlataforma.setStartAngle(0);
         rendererJuegosPlataforma.setShowLabels(false);
+        rendererJuegosPlataforma.setAntialiasing(true);
 
         Cursor cursorJuegos = juegosSQLH.getJuegos();
         int total = cursorJuegos.getCount();
