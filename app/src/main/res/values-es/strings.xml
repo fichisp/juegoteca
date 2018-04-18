@@ -142,7 +142,7 @@
     <string name="fisico">Físico</string>
     <string name="digital">Digital</string>
     <string name="campo_titulo_vacio">El campo TÍTULO no puede quedar en blanco</string>
-    <string name="campo_compania_vacio">El campor COMPAÑÍA no puede quedar en blanco</string>
+    <string name="campo_compania_vacio">El campo COMPAÑÍA no puede quedar en blanco</string>
     <string name="campo_fecha_lanzamiento_invalido">El valor del campo FECHA DE LANZAMIENTO no es válido</string>
     <string name="campo_fecha_compra_invalido">El valor del campo FECHA DE COMPRA no es válido.</string>
     <string name="campo_fecha_completado_invalido">El valor del campo FECHA DE COMPLETADO no es válido</string>
@@ -162,7 +162,7 @@
     <string name="juego_eliminado">Juego eliminado</string>
     <string name="juego_no_eliminado">No se ha podido eliminar el juego</string>
     <string name="no_data_backup">No hay datos que salvar en la copia de seguridad</string>
-<string name="zip">Generando fichero&#8230;</string>
+    <string name="zip">Generando fichero&#8230;</string>
     <string name="buscando">Buscando...</string>
     <string name="action_forgot_password">Recuperar contraseña</string>
     <string name="valor_total">Valor</string>
@@ -170,4 +170,10 @@
     <string name="titulo_estadisiticas_resumen">Resumen</string>
     <string name="pref_description_view">Ver el detalle del juego con el formato de imagen grande</string>
     <string name="pref_title_view">Formato de vista detallada del juego</string>
+    <string name="action_grid">Grid</string>
+    <string name="title_activity_inicio_masonry">Todos los juegos</string>
+    <string name="novedades">Novedades</string>
+    <string name="unzip">Restaurando copia de seguridad...</string>
+    <string name="alerta_atras_editar_titulo">Cancelar edición de juego</string>
+    <string name="currency">Moneda</string>
 </resources>

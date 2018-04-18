@@ -8,18 +8,18 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Buscador" >
+    tools:context=".Buscador">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:isScrollContainer="true"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:id="@+id/layout_buscador_opciones"
@@ -27,26 +27,26 @@
                 android:layout_height="350dp"
                 android:orientation="vertical"
                 android:scrollbars="vertical"
-                android:visibility="visible" >
+                android:visibility="visible">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_view_ean_buscador"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
                         android:paddingLeft="5dp"
-                        android:textStyle="bold"
-                        android:text="@string/label_ean" />
+                        android:text="@string/label_ean"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" >
+                        android:layout_height="wrap_content">
 
                         <EditText
                             android:id="@+id/edit_ean_buscador"
@@ -56,7 +56,7 @@
                             android:ems="10"
                             android:hint="@string/hint_ean"
                             android:inputType="number"
-                            android:textSize="15sp" >
+                            android:textSize="15sp">
 
                             <requestFocus />
                         </EditText>
@@ -78,16 +78,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_titulo_buscador"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
                         android:paddingLeft="5dp"
-                        android:text="@string/label_titulo" />
+                        android:text="@string/label_titulo"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <EditText
                         android:id="@+id/edit_titulo_buscador"
@@ -104,21 +104,20 @@
                 </LinearLayout>
 
 
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_plataforma_buscador"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
                         android:paddingLeft="5dp"
-                        android:textStyle="bold"
-                        android:text="@string/label_plataforma" />
+                        android:text="@string/label_plataforma"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/spinner_plataforma_buscador"
@@ -136,16 +135,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_genero_buscador"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
                         android:paddingLeft="5dp"
-                        android:text="@string/label_genero" />
+                        android:text="@string/label_genero"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/spinner_genero_buscador"
@@ -163,16 +162,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/formato_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textSize="15sp"
                         android:paddingLeft="5dp"
-                        android:textStyle="bold"
-                        android:text="@string/label_formato" />
+                        android:text="@string/label_formato"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <Spinner
                         android:id="@+id/spinner_formato_nuevo"
@@ -188,12 +187,12 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical" >
+                        android:orientation="vertical">
 
                         <!--                         <CheckBox
                                                     android:id="@+id/check_online_buscador"
@@ -221,12 +220,12 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="bottom"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:id="@+id/layout_banner_Ads"
@@ -235,8 +234,7 @@
                         android:layout_marginBottom="0dp"
                         android:layout_marginTop="15dp"
                         android:gravity="bottom"
-                        android:orientation="vertical" >
-                    </LinearLayout>
+                        android:orientation="vertical"></LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 

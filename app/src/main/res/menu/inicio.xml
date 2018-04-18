@@ -1,47 +1,10 @@
-<menu>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-<!--     <item
-        android:id="@+id/action_nuevo"
-        android:icon="@drawable/boton_nuevo"
+    <item
+        android:id="@+id/action_grid"
+        android:icon="@drawable/ic_view_quilt_black_24dp"
         android:orderInCategory="100"
-        android:showAsAction="always"
-        android:title="@string/action_nuevo"/>
-    
-     <item
-        android:id="@+id/action_buscar"
-        android:icon="@drawable/boton_buscar"
-        android:orderInCategory="200"
-        android:showAsAction="always"
-        android:title="@string/action_buscar"/>
-     
-      <item
-        android:id="@+id/action_estadisticas"
-        android:icon="@drawable/boton_estadistica"
-        android:orderInCategory="300"
-        android:showAsAction="always"
-        android:title="@string/action_estadisticas"/>
-      
-       <item
-        android:id="@+id/action_pendientes"
-        android:icon="@drawable/boton_pendientes"
-        android:orderInCategory="400"
-        android:showAsAction="always"
-        android:title="@string/action_pendientes"/>
-       
-        <item
-        android:id="@+id/action_favoritos"
-        android:icon="@drawable/boton_favoritos"
-        android:orderInCategory="500"
-        android:showAsAction="always"
-        android:title="@string/action_favoritos"/>
-        
-         <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/boton_opciones"
-        android:orderInCategory="600"
-        android:showAsAction="always"
-        android:title="@string/action_settings"/> -->
-    
-    
+        android:showAsAction="ifRoom"
+        android:title="@string/action_grid" />
 
 </menu>
