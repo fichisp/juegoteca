@@ -1,4 +1,11 @@
-<ul>
+<b>1.5.2</b>
+<ul style="list-style-type: square;">
+<li>Opciones de moneda.</li>
+</ul>
+<br/>
+
+<b>1.5.1</b>
+<ul style="list-style-type: square;">
 <li>Listado de todos los juegos en la pantalla principal pulsando el icono de la barra superior.</li>
 <li>En la pantalla de inicio, al pulsar sobre la imagen de un juego se muestra su ficha.</li>
 <li>En la pantalla de inicio, al mantener pulsado sobre la imagen de un juego se muestra su nombre.</li>

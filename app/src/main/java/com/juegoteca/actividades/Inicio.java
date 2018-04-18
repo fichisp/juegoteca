@@ -54,11 +54,13 @@ public class Inicio extends Activity {
                     .getPackageInfo(this.getPackageName(), 0);
 
             int versionCode = packageInfo.versionCode;
+            String versionName = getPackageManager().getPackageInfo(getPackageName(),
+                    0).versionName;
 
 
-            if (versionCode >= 45 && !settings.contains("releaseNotes")) {
-                utilidades.showBuildNotes(getPackageManager().getPackageInfo(getPackageName(),
-                        0).versionName);
+            if (!settings.contains("releaseNotes"+versionName)) {
+
+                utilidades.showBuildNotes(versionName);
             }
 
         } catch (PackageManager.NameNotFoundException e) {

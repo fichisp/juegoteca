@@ -1157,7 +1157,7 @@ public class Utilidades {
         dialog.show();
     }
 
-    public void showBuildNotes(String versionName) {
+    public void showBuildNotes(final String versionName) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
 
 
@@ -1186,17 +1186,15 @@ public class Utilidades {
             e.printStackTrace();
         }
 
+        builder.setMessage(Html.fromHtml(texto)).setTitle(R.string.novedades);
 
-        builder.setMessage(Html.fromHtml(texto)).setTitle(String.format(context.getResources().getString(
-                R.string.pref_title_version, versionName)));
-
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 final SharedPreferences settings = context.getSharedPreferences("UserInfo",
                         0);
                 SharedPreferences.Editor editor = settings.edit();
-                editor.putBoolean("releaseNotes", true);
+                editor.putBoolean("releaseNotes"+versionName, true);
                 editor.commit();
             }
         });
