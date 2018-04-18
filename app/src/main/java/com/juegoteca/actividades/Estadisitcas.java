@@ -4,12 +4,12 @@ import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
+import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -99,6 +99,7 @@ public class Estadisitcas extends Activity {
     private JuegosSQLHelper juegosSQLH;
     private Utilidades utilidades;
     private AdView adView;
+    private float pxLabelSize;
 
     /**
      * Llamada cuando se inicializa la actividad. Crea los gráficos que se
@@ -116,6 +117,10 @@ public class Estadisitcas extends Activity {
 
         setupActionBar();
         loadAds();
+
+        //Calculo del tamaño en pixeles de las etiquetas para todos los gráficos
+        Resources r = getResources();
+        pxLabelSize = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 9, r.getDisplayMetrics());
 
         // Juegos agrupados por plataforma
         gamesByPlatformGraphic(codigoIdioma);
@@ -160,8 +165,8 @@ public class Estadisitcas extends Activity {
 
         rendererJuegosCompletados.setApplyBackgroundColor(true);
         rendererJuegosCompletados.setChartTitleTextSize(24);
-        rendererJuegosCompletados.setLabelsTextSize(24);
-        rendererJuegosCompletados.setLegendTextSize(24);
+        rendererJuegosCompletados.setLabelsTextSize(pxLabelSize);
+        rendererJuegosCompletados.setLegendTextSize(pxLabelSize);
         rendererJuegosCompletados.setLabelsColor(Color.BLACK);
         rendererJuegosCompletados.setMargins(new int[]{20, 30, 15, 0});
         rendererJuegosCompletados.setStartAngle(180);
@@ -242,8 +247,8 @@ public class Estadisitcas extends Activity {
     private void gamesByFormatGraphic(String codigoIdioma) {
         rendererJuegosFormato.setApplyBackgroundColor(true);
         rendererJuegosFormato.setChartTitleTextSize(24);
-        rendererJuegosFormato.setLabelsTextSize(24);
-        rendererJuegosFormato.setLegendTextSize(24);
+        rendererJuegosFormato.setLabelsTextSize(pxLabelSize);
+        rendererJuegosFormato.setLegendTextSize(pxLabelSize);
         rendererJuegosFormato.setLabelsColor(Color.BLACK);
         rendererJuegosFormato.setMargins(new int[]{20, 30, 15, 0});
         rendererJuegosFormato.setStartAngle(180);
@@ -321,8 +326,8 @@ public class Estadisitcas extends Activity {
     private void gamesByGenreGrpahic(String codigoIdioma) {
         rendererJuegosGenero.setApplyBackgroundColor(true);
         rendererJuegosGenero.setChartTitleTextSize(24);
-        rendererJuegosGenero.setLabelsTextSize(24);
-        rendererJuegosGenero.setLegendTextSize(24);
+        rendererJuegosGenero.setLabelsTextSize(pxLabelSize);
+        rendererJuegosGenero.setLegendTextSize(pxLabelSize);
         rendererJuegosGenero.setLabelsColor(Color.BLACK);
         rendererJuegosGenero.setMargins(new int[]{20, 30, 15, 0});
         rendererJuegosGenero.setStartAngle(180);
@@ -430,12 +435,16 @@ public class Estadisitcas extends Activity {
      * @param codigoIdioma
      */
     private void gamesByPlatformGraphic(String codigoIdioma) {
+
+
+
+
         rendererJuegosPlataforma.setApplyBackgroundColor(true);
         rendererJuegosPlataforma.setChartTitleTextSize(24);
-        rendererJuegosPlataforma.setLabelsTextSize(24);
-        rendererJuegosPlataforma.setLegendTextSize(24);
+        rendererJuegosPlataforma.setLabelsTextSize(pxLabelSize);
+        rendererJuegosPlataforma.setLegendTextSize(pxLabelSize);
         rendererJuegosPlataforma.setLabelsColor(Color.BLACK);
-        rendererJuegosPlataforma.setMargins(new int[]{30, 30, 30, 30});
+        rendererJuegosPlataforma.setMargins(new int[]{20, 30, 15, 0});
         rendererJuegosPlataforma.setShowLegend(false);
         rendererJuegosPlataforma.setPanEnabled(false);
         rendererJuegosPlataforma.setZoomEnabled(false);
