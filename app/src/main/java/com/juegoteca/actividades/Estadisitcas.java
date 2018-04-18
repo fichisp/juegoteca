@@ -118,7 +118,7 @@ public class Estadisitcas extends Activity {
         juegosSQLH = new JuegosSQLHelper(this);
 
         setupActionBar();
-        loadAds();
+        //loadAds();
 
         //Calculo del tamaño en pixeles de las etiquetas para todos los gráficos
         Resources r = getResources();
@@ -142,21 +142,21 @@ public class Estadisitcas extends Activity {
      * Load ads
      */
     private void loadAds() {
-        adView = new AdView(this);
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
-
-        LinearLayout layoutBanner = (LinearLayout) findViewById(R.id.layout_banner_Ads);
-        layoutBanner.addView(adView);
-
-        // Create an ad request. Check logcat output for the hashed device ID to
-        // get test ads on a physical device.
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
-                .addTestDevice("358240057325789").build();
-
-        // Start loading the ad in the background.
-        adView.loadAd(adRequest);
+//        adView = new AdView(this);
+//        adView.setAdSize(AdSize.BANNER);
+//        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
+//
+//        LinearLayout layoutBanner = (LinearLayout) findViewById(R.id.layout_banner_Ads);
+//        layoutBanner.addView(adView);
+//
+//        // Create an ad request. Check logcat output for the hashed device ID to
+//        // get test ads on a physical device.
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
+//                .addTestDevice("358240057325789").build();
+//
+//        // Start loading the ad in the background.
+//        adView.loadAd(adRequest);
     }
 
     /**
@@ -554,7 +554,7 @@ public class Estadisitcas extends Activity {
 
             if (SPA.equalsIgnoreCase(codigoIdioma)) {
                 coleccionValueText=coleccionValueText.replace(".", ",");
-                coleccionValueText=coleccionValueText.replace(".",",");
+                avgText=avgText.replace(".",",");
             }
 
             resumenSum.setText(coleccionValueText);

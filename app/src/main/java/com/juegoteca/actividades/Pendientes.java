@@ -73,24 +73,29 @@ public class Pendientes extends Activity {
             public void onNothingSelected(AdapterView<?> arg0) {
             }
         });
+        //loadAds();
 
-        //Anuncio
-        adView = new AdView(this);
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
 
-        LinearLayout layoutBanner = (LinearLayout) findViewById(R.id.layout_banner_Ads);
-        layoutBanner.addView(adView);
+    }
 
-        // Create an ad request. Check logcat output for the hashed device ID to
-        // get test ads on a physical device.
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
-                .addTestDevice("358240057325789")
-                .build();
-
-        // Start loading the ad in the background.
-        adView.loadAd(adRequest);
+    private void loadAds() {
+//        //Anuncio
+//        adView = new AdView(this);
+//        adView.setAdSize(AdSize.BANNER);
+//        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
+//
+//        LinearLayout layoutBanner = (LinearLayout) findViewById(R.id.layout_banner_Ads);
+//        layoutBanner.addView(adView);
+//
+//        // Create an ad request. Check logcat output for the hashed device ID to
+//        // get test ads on a physical device.
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
+//                .addTestDevice("358240057325789")
+//                .build();
+//
+//        // Start loading the ad in the background.
+//        adView.loadAd(adRequest);
     }
 
     /**

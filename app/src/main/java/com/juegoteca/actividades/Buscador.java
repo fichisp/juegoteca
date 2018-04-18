@@ -64,21 +64,8 @@ public class Buscador extends Activity {
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
         utilidades = new Utilidades(this);
 
-        adView = new AdView(this);
-        adView.setAdSize(AdSize.BANNER);
-        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
+        //loadAds();
 
-        LinearLayout layout = (LinearLayout) findViewById(R.id.layout_banner_Ads);
-        layout.addView(adView);
-
-        // Create an ad request. Check logcat output for the hashed device ID to
-        // get test ads on a physical device.
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
-                .addTestDevice("358240057325789").build();
-
-        // Start loading the ad in the background.
-        adView.loadAd(adRequest);
         utilidades.cargarGenerosBuscador(spinnerGenero);
         utilidades.cargarPlataformasBuscador(spinnerPlataforma);
         // Inicializar el combo de formatos
@@ -92,6 +79,24 @@ public class Buscador extends Activity {
         //Acciones por defecto al pulsar enter
         editEan.setOnKeyListener(buscar);
         editTitulo.setOnKeyListener(buscar);
+    }
+
+    private void loadAds() {
+//        adView = new AdView(this);
+//        adView.setAdSize(AdSize.BANNER);
+//        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
+//
+//        LinearLayout layout = (LinearLayout) findViewById(R.id.layout_banner_Ads);
+//        layout.addView(adView);
+//
+//        // Create an ad request. Check logcat output for the hashed device ID to
+//        // get test ads on a physical device.
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
+//                .addTestDevice("358240057325789").build();
+//
+//        // Start loading the ad in the background.
+//        adView.loadAd(adRequest);
     }
 
     @Override

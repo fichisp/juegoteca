@@ -359,15 +359,15 @@
 
         </ScrollView>
 
-        <LinearLayout
-            android:id="@+id/layout_banner_Ads"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="bottom"
-            android:layout_marginTop="15dp"
-            android:gravity="bottom"
-            android:orientation="vertical" />
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layout_banner_Ads"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:gravity="bottom"-->
+            <!--android:orientation="vertical" />-->
     </LinearLayout>
 
 </RelativeLayout>
