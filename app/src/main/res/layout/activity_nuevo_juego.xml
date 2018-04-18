@@ -7,30 +7,30 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:scrollbars="vertical"
-    tools:context=".NuevoJuego" >
+    tools:context=".NuevoJuego">
 
     <ScrollView
         android:id="@+id/scrollView_detalle"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:scrollbars="vertical" >
+            android:scrollbars="vertical">
 
             <LinearLayout
                 android:id="@+id/datos1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="2" >
+                android:layout_weight="2">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <ImageView
                         android:id="@+id/image_view_caratula_nuevo"
@@ -47,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="2"
-                    android:orientation="vertical" >
+                    android:orientation="vertical">
 
                     <EditText
                         android:id="@+id/edit_titulo_nuevo"
@@ -116,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <EditText
                     android:id="@+id/edit_resumen_nuevo"
@@ -131,7 +131,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0" >
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_ean_nuevo"
@@ -145,7 +145,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1" >
+                        android:layout_weight="1">
 
                         <ImageButton
                             android:id="@+id/botton_ean_buscador"
@@ -169,7 +169,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0" >
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_fecha_lanzamiento_nuevo"
@@ -195,7 +195,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" >
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_fecha_compra_detalle_nuevo"
@@ -221,7 +221,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0" >
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_precio_nuevo"
@@ -246,7 +246,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0" >
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_completado_nuevo"
@@ -261,7 +261,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:orientation="horizontal" >
+                        android:orientation="horizontal">
 
                         <CheckBox
                             android:id="@+id/check_completado_nuevo"
@@ -278,7 +278,7 @@
                             android:hint="@string/hint_fecha"
                             android:inputType="number"
                             android:maxLength="10"
-                            android:textSize="15sp" >
+                            android:textSize="15sp">
 
                             <requestFocus />
                         </EditText>
@@ -291,7 +291,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0" >
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_comentario_nuevo_label"
@@ -319,7 +319,7 @@
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0"
-                    android:orientation="horizontal" >
+                    android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/text_puntuacion_nuevo_label"

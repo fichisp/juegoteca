@@ -3,16 +3,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:onClick="detalleJuego"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal" >
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/id_juego"
@@ -22,12 +22,12 @@
                 android:textStyle="bold"
                 android:visibility="visible" />
 
-<!--             <ImageView
-                android:id="@+id/caratula_juego"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@raw/loading" /> -->
+            <!--             <ImageView
+                            android:id="@+id/caratula_juego"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:src="@raw/loading" /> -->
 
         </LinearLayout>
 
@@ -35,7 +35,7 @@
             android:id="@+id/lista_juego_detalles"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/nombre_juego"
@@ -55,8 +55,8 @@
                 android:id="@+id/plataforma_juego"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="10sp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textSize="10sp" />
         </LinearLayout>
     </LinearLayout>
 

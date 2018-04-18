@@ -1,38 +1,46 @@
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <CheckBoxPreference android:title="@string/pref_title_view"
+    <ListPreference
+        android:icon="@null"
+        android:key="currencys"
+        android:title="@string/currency"
+        android:summary="%s"
+        android:entries="@array/currency"
+        android:entryValues="@array/currencyAlias"/>
+
+    <CheckBoxPreference
+        android:icon="@null"
+        android:key="detalle_imagen"
         android:summary="@string/pref_description_view"
+        android:title="@string/pref_title_view"></CheckBoxPreference>
+
+
+    <Preference
         android:icon="@null"
-        android:key="detalle_imagen">
-    </CheckBoxPreference>
-
-
-    <Preference android:title="@string/pref_title_exportar_copia" 
+        android:key="exportar_copia_seguridad"
         android:summary="@string/pref_description_exportar_copia"
+        android:title="@string/pref_title_exportar_copia"></Preference>
+
+    <Preference
         android:icon="@null"
-        android:key="exportar_copia_seguridad">
-    </Preference>
-    
-    <Preference android:title="@string/pref_title_importar_copia" 
+        android:key="importar_restaurar_seguridad"
         android:summary="@string/pref_description_importar_copia"
+        android:title="@string/pref_title_importar_copia"></Preference>
+
+    <!--     <Preference android:title="@string/pref_title_hacer_copia"
+            android:summary="@string/pref_description_hacer_copia"
+            android:icon="@null"
+            android:key="hacer_copia_seguridad">
+        </Preference>
+
+        <Preference android:title="@string/pref_title_restaurar_copia"
+            android:summary="@string/pref_description_restaurar_copia"
+            android:icon="@null"
+            android:key="hacer_restaurar_seguridad">
+        </Preference> -->
+
+    <Preference
         android:icon="@null"
-        android:key="importar_restaurar_seguridad">
-    </Preference>
-    
-<!--     <Preference android:title="@string/pref_title_hacer_copia" 
-        android:summary="@string/pref_description_hacer_copia"
-        android:icon="@null"
-        android:key="hacer_copia_seguridad">
-    </Preference>
-    
-    <Preference android:title="@string/pref_title_restaurar_copia" 
-        android:summary="@string/pref_description_restaurar_copia"
-        android:icon="@null"
-        android:key="hacer_restaurar_seguridad">
-    </Preference> -->
-    
-      <Preference android:title="@string/pref_title_borrar_bbdd"
-          android:icon="@null"
-          android:key="borrar_todo">
-    </Preference>
+        android:key="borrar_todo"
+        android:title="@string/pref_title_borrar_bbdd"></Preference>
 </PreferenceScreen>

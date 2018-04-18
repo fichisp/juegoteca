@@ -15,6 +15,6 @@
     <string name="error_invalid_password">La constraseña no es correcta</string>
     <string name="error_incorrect_password">La constraseña no es correcta</string>
     <string name="error_field_required">Estos campos son requeridos</string>
-    
+
 
 </resources>

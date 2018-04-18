@@ -7,26 +7,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="0dp"
-    tools:context=".Pendientes" >
+    tools:context=".Pendientes">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:scrollbars="horizontal" >
+            android:scrollbars="horizontal">
 
             <Spinner
                 android:id="@+id/spinner_filtro_plataforma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:spinnerMode="dialog" />
 
             <TextView
@@ -40,25 +40,23 @@
                 android:id="@+id/listado_pendientes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" >
-            </ListView>
+                android:layout_weight="1"></ListView>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
 
-            <LinearLayout
-                android:id="@+id/layout_banner_Ads"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginBottom="0dp"
-                android:layout_marginTop="15dp"
-                android:gravity="bottom"
-                android:orientation="vertical" >
-            </LinearLayout>
-        </LinearLayout>
+            <!--<LinearLayout-->
+                <!--android:id="@+id/layout_banner_Ads"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_marginBottom="0dp"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:gravity="bottom"-->
+                <!--android:orientation="vertical"></LinearLayout>-->
+        <!--</LinearLayout>-->
 
     </LinearLayout>
 

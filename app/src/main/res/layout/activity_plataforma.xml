@@ -6,26 +6,26 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Plataforma" >
+    tools:context=".Plataforma">
 
     <ScrollView
         android:id="@+id/scrollView1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp" >
+                android:layout_height="100dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="2" >
+                    android:layout_weight="2">
 
                     <ImageView
                         android:id="@+id/imagePlataforma"
@@ -39,18 +39,18 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:paddingLeft="20sp"
-                    android:orientation="vertical" >
+                    android:orientation="vertical"
+                    android:paddingLeft="20sp">
 
                     <TextView
                         android:id="@+id/textViewNombrePlataforma"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginBottom="5sp"
                         android:layout_weight="1"
                         android:textAllCaps="true"
                         android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:layout_marginBottom="5sp" />
+                        android:textStyle="bold" />
 
                     <TextView
                         android:id="@+id/textViewFabricantePlataforma"
@@ -70,7 +70,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textViewResumen"

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mijuegoteca"
-    android:versionCode="42"
-    android:versionName="1.4.2" >
+    android:versionCode="49"
+    android:versionName="1.5.2">
 
     <uses-sdk
         android:minSdkVersion="9"
@@ -13,9 +13,11 @@
         android:name="android.permission.FLASHLIGHT"
         android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
         android:protectionLevel="normal" />
-    
-    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
-    
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
     <!-- <uses-permission android:name="com.android.vending.BILLING" /> -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -24,14 +26,11 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@drawable/icono"
         android:label="@string/app_name"
-        android:theme="@style/TemaGeneral"
-        android:name="android.support.multidex.MultiDexApplication"
-        >
-
-
+        android:theme="@style/TemaGeneral">
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -40,13 +39,24 @@
             android:name="com.juegoteca.actividades.Inicio"
             android:label="@string/title_activity_inicio"
             android:screenOrientation="portrait"
-            android:uiOptions="splitActionBarWhenNarrow" >
+            android:uiOptions="splitActionBarWhenNarrow" />
+        <activity
+            android:name="com.juegoteca.actividades.InicioMasonry"
+            android:label="@string/title_activity_inicio_masonry"
+            android:screenOrientation="portrait"
+            android:uiOptions="splitActionBarWhenNarrow">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.actividades.Inicio" />
+            <meta-data
+                android:name="android.support.UI_OPTIONS"
+                android:value="splitActionBarWhenNarrow" />
         </activity>
         <activity
             android:name="com.juegoteca.actividades.DetalleJuego"
             android:label="@string/title_activity_detalle_juego"
             android:screenOrientation="portrait"
-            android:uiOptions="splitActionBarWhenNarrow" >
+            android:uiOptions="splitActionBarWhenNarrow">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
@@ -54,12 +64,11 @@
                 android:name="android.support.UI_OPTIONS"
                 android:value="splitActionBarWhenNarrow" />
         </activity>
-
         <activity
             android:name="com.juegoteca.actividades.DetalleJuegoImagenGrande"
             android:label="@string/title_activity_detalle_juego"
             android:screenOrientation="portrait"
-            android:uiOptions="splitActionBarWhenNarrow" >
+            android:uiOptions="splitActionBarWhenNarrow">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
@@ -67,11 +76,10 @@
                 android:name="android.support.UI_OPTIONS"
                 android:value="splitActionBarWhenNarrow" />
         </activity>
-
         <activity
             android:name="com.juegoteca.actividades.NuevoJuego"
             android:label="@string/title_activity_nuevo_juego"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
@@ -79,7 +87,7 @@
         <activity
             android:name="com.juegoteca.actividades.ListadoJuego"
             android:label="@string/title_activity_listado_juego"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Buscador" />
@@ -87,12 +95,11 @@
         <activity
             android:name=".CargarCaratula"
             android:label="@string/title_activity_cargar_caratula"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.juegoteca.actividades.EditarJuego"
             android:label="@string/title_activity_editar_juego"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.DetalleJuego" />
@@ -101,7 +108,7 @@
             android:name="com.juegoteca.actividades.Buscador"
             android:label="@string/title_activity_buscador"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustPan" >
+            android:windowSoftInputMode="adjustPan">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
@@ -109,34 +116,17 @@
         <activity
             android:name="com.juegoteca.actividades.Estadisitcas"
             android:label="@string/title_activity_estadisitcas"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
         </activity>
-        <!--<activity-->
-            <!--android:name="com.google.zxing.client.android.CaptureActivity"-->
-            <!--android:configChanges="orientation|keyboardHidden"-->
-            <!--android:screenOrientation="portrait"-->
-            <!--android:theme="@android:style/Theme.NoTitleBar.Fullscreen"-->
-            <!--android:windowSoftInputMode="stateAlwaysHidden" >-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
-            <!--<intent-filter>-->
-                <!--<action android:name="com.google.zxing.client.android.SCAN" />-->
-
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
         <activity
             android:name="com.juegoteca.actividades.Splash"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_splash"
             android:screenOrientation="portrait"
-            android:theme="@style/NoActionBar" >
+            android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -146,7 +136,7 @@
         <activity
             android:name="com.juegoteca.actividades.Opciones"
             android:label="@string/title_activity_opciones"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
@@ -155,12 +145,11 @@
             android:name="com.juegoteca.actividades.IniciarSesion"
             android:label="@string/title_activity_iniciar_sesion"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateVisible" >
-        </activity>
+            android:windowSoftInputMode="adjustResize|stateVisible" />
         <activity
             android:name="com.juegoteca.actividades.Plataforma"
             android:label="@string/title_activity_plataforma"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.DetalleJuego" />
@@ -168,13 +157,12 @@
         <activity
             android:name="com.juegoteca.actividades.Registro"
             android:label="@string/title_activity_registro"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.juegoteca.actividades.Favoritos"
             android:label="@string/title_activity_favoritos"
             android:parentActivityName="com.juegoteca.actividades.Inicio"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
@@ -183,19 +171,18 @@
             android:name="com.juegoteca.actividades.Pendientes"
             android:label="@string/title_activity_pendientes"
             android:parentActivityName="com.juegoteca.actividades.Inicio"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.Inicio" />
         </activity>
         <activity
             android:name=".SeleccionarFichero"
-            android:label="@string/title_activity_seleccionar_fichero" >
-        </activity>
+            android:label="@string/title_activity_seleccionar_fichero" />
         <!-- Gestiona la subida FTP de ficheros -->
         <activity
             android:name=".FtpUpload"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
@@ -203,7 +190,7 @@
         <activity
             android:name="com.juegoteca.actividades.AcercaDe"
             android:label="@string/title_activity_acerca_de"
-            android:parentActivityName="com.juegoteca.actividades.Inicio" >
+            android:parentActivityName="com.juegoteca.actividades.Inicio">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.juegoteca.actividades.Inicio" />
@@ -214,16 +201,16 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <activity
             android:name=".Anuncio"
-            android:label="@string/title_activity_anuncio" >
-        </activity>
+            android:label="@string/title_activity_anuncio" />
         <activity
             android:name="com.juegoteca.actividades.DuplicarJuego"
             android:label="@string/title_activity_duplicar_juego"
-            android:parentActivityName="com.juegoteca.actividades.DetalleJuego" >
+            android:parentActivityName="com.juegoteca.actividades.DetalleJuego">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.juegoteca.actividades.DetalleJuego" />
         </activity>
+        <activity android:name="com.masonry.InicioMasonry2"></activity>
     </application>
 
 </manifest>
