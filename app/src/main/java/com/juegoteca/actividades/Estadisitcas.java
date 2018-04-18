@@ -26,6 +26,7 @@ import com.mijuegoteca.R;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
+import org.achartengine.chart.PieChart;
 import org.achartengine.model.CategorySeries;
 import org.achartengine.renderer.DefaultRenderer;
 import org.achartengine.renderer.SimpleSeriesRenderer;
@@ -164,12 +165,15 @@ public class Estadisitcas extends Activity {
     private void gamesByStatusGraphic(String codigoIdioma) {
 
         rendererJuegosCompletados.setApplyBackgroundColor(true);
-        rendererJuegosCompletados.setChartTitleTextSize(24);
         rendererJuegosCompletados.setLabelsTextSize(pxLabelSize);
         rendererJuegosCompletados.setLegendTextSize(pxLabelSize);
         rendererJuegosCompletados.setLabelsColor(Color.BLACK);
-        rendererJuegosCompletados.setMargins(new int[]{20, 30, 15, 0});
-        rendererJuegosCompletados.setStartAngle(180);
+        rendererJuegosCompletados.setPanEnabled(false);
+        rendererJuegosCompletados.setShowLegend(true);
+        rendererJuegosCompletados.setShowLabels(false);
+        rendererJuegosCompletados.setZoomEnabled(false);
+        rendererJuegosCompletados.setFitLegend(true);
+        rendererJuegosCompletados.setScale(1.35f);
 
         Cursor cursorJuegosCompletados = juegosSQLH.getJuegosCompletados();
         if (cursorJuegosCompletados != null
@@ -221,19 +225,14 @@ public class Estadisitcas extends Activity {
                 }
 
                 rendererJuegosCompletados.addSeriesRenderer(renderer);
-                rendererJuegosCompletados.setPanEnabled(false);
-                rendererJuegosCompletados.setShowLegend(false);
-                rendererJuegosCompletados.setZoomEnabled(false);
-                rendererJuegosCompletados.setStartAngle(270);
 
-                rendererJuegosCompletados.setFitLegend(true);
-                rendererJuegosCompletados.setScale(1.25f);
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_3);
             graficoJuegosCompletados = ChartFactory.getPieChartView(this,
                     serieJuegosCompletados, rendererJuegosCompletados);
 
+            graficoJuegosCompletados.setPadding(0,20,0,0);
             layout.addView(graficoJuegosCompletados);
 
             cursorJuegosCompletados.close();
@@ -246,13 +245,18 @@ public class Estadisitcas extends Activity {
      */
     private void gamesByFormatGraphic(String codigoIdioma) {
         rendererJuegosFormato.setApplyBackgroundColor(true);
-        rendererJuegosFormato.setChartTitleTextSize(24);
         rendererJuegosFormato.setLabelsTextSize(pxLabelSize);
         rendererJuegosFormato.setLegendTextSize(pxLabelSize);
         rendererJuegosFormato.setLabelsColor(Color.BLACK);
-        rendererJuegosFormato.setMargins(new int[]{20, 30, 15, 0});
-        rendererJuegosFormato.setStartAngle(180);
+        rendererJuegosFormato.setShowLegend(true);
+        rendererJuegosFormato.setShowLabels(false);
+        rendererJuegosFormato.setPanEnabled(false);
+        rendererJuegosFormato.setZoomEnabled(false);
+        rendererJuegosFormato.setFitLegend(true);
+        rendererJuegosFormato.setScale(1.35f);
+
         Cursor cursorJuegosFormato = juegosSQLH.getJuegosPorFormato();
+
         if (cursorJuegosFormato != null && cursorJuegosFormato.moveToFirst()) {
 
             numeroJuegos = new int[cursorJuegosFormato.getCount()];
@@ -299,19 +303,14 @@ public class Estadisitcas extends Activity {
                 renderer.setColor(coloresFormato[(serieJuegosFormato.getItemCount() - 1)
                         % coloresFormato.length]);
                 rendererJuegosFormato.addSeriesRenderer(renderer);
-                rendererJuegosFormato.setShowLegend(false);
-                rendererJuegosFormato.setPanEnabled(false);
-                rendererJuegosFormato.setZoomEnabled(false);
-                rendererJuegosFormato.setStartAngle(270);
 
-                rendererJuegosFormato.setFitLegend(true);
-                rendererJuegosFormato.setScale(1.25f);
 
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_4);
             graficoJuegosFormato = ChartFactory.getPieChartView(this,
                     serieJuegosFormato, rendererJuegosFormato);
+
 
             layout.addView(graficoJuegosFormato);
 
@@ -325,12 +324,14 @@ public class Estadisitcas extends Activity {
      */
     private void gamesByGenreGrpahic(String codigoIdioma) {
         rendererJuegosGenero.setApplyBackgroundColor(true);
-        rendererJuegosGenero.setChartTitleTextSize(24);
         rendererJuegosGenero.setLabelsTextSize(pxLabelSize);
         rendererJuegosGenero.setLegendTextSize(pxLabelSize);
         rendererJuegosGenero.setLabelsColor(Color.BLACK);
-        rendererJuegosGenero.setMargins(new int[]{20, 30, 15, 0});
-        rendererJuegosGenero.setStartAngle(180);
+        rendererJuegosGenero.setShowLegend(false);
+        rendererJuegosGenero.setPanEnabled(false);
+        rendererJuegosGenero.setZoomEnabled(false);
+        rendererJuegosGenero.setScale(1.35f);
+        rendererJuegosGenero.setShowLabels(false);
 
         Cursor cursorJuegosGenero = null;
 
@@ -410,16 +411,10 @@ public class Estadisitcas extends Activity {
 
 
                 rendererJuegosGenero.addSeriesRenderer(renderer);
-                rendererJuegosGenero.setShowLegend(false);
-                rendererJuegosGenero.setPanEnabled(false);
-                rendererJuegosGenero.setZoomEnabled(false);
-                rendererJuegosGenero.setStartAngle(270);
 
-                rendererJuegosGenero.setFitLegend(true);
-                rendererJuegosGenero.setScale(1.25f);
             }
 
-            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_2);
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linea_estadisticas_2_layout_pie);
             graficoJuegosGenero = ChartFactory.getPieChartView(this,
                     serieJuegosGenero, rendererJuegosGenero);
 
@@ -436,22 +431,16 @@ public class Estadisitcas extends Activity {
      */
     private void gamesByPlatformGraphic(String codigoIdioma) {
 
-
-
-
         rendererJuegosPlataforma.setApplyBackgroundColor(true);
-        rendererJuegosPlataforma.setChartTitleTextSize(24);
         rendererJuegosPlataforma.setLabelsTextSize(pxLabelSize);
-        rendererJuegosPlataforma.setLegendTextSize(pxLabelSize);
         rendererJuegosPlataforma.setLabelsColor(Color.BLACK);
-        rendererJuegosPlataforma.setMargins(new int[]{20, 30, 15, 0});
         rendererJuegosPlataforma.setShowLegend(false);
         rendererJuegosPlataforma.setPanEnabled(false);
         rendererJuegosPlataforma.setZoomEnabled(false);
-        rendererJuegosPlataforma.setChartTitleTextSize(36);
-        rendererJuegosPlataforma.setShowLabels(true);
-        rendererJuegosPlataforma.setFitLegend(true);
-        rendererJuegosPlataforma.setScale(1.25f);
+        rendererJuegosPlataforma.setShowLabels(false);
+        rendererJuegosPlataforma.setScale(1.35f);
+        rendererJuegosPlataforma.setStartAngle(0);
+        rendererJuegosPlataforma.setShowLabels(false);
 
         Cursor cursorJuegos = juegosSQLH.getJuegos();
         int total = cursorJuegos.getCount();
@@ -492,11 +481,14 @@ public class Estadisitcas extends Activity {
 
         Cursor cursorJuegosPlataforma = juegosSQLH.getJuegosPorPlataforma();
 
+
+
         if (cursorJuegosPlataforma != null
                 && cursorJuegosPlataforma.moveToFirst()) {
 
             numeroJuegos = new int[cursorJuegosPlataforma.getCount()];
             etiquetas = new String[cursorJuegosPlataforma.getCount()];
+
             int i = 0;
             do {
                 numeroJuegos[i] = cursorJuegosPlataforma.getInt(0);
@@ -565,11 +557,12 @@ public class Estadisitcas extends Activity {
 
             }
 
-            LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_1);
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linea_estadisticas_1_layout_pie);
 
 
             graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
                     serieJuegosPlataforma, rendererJuegosPlataforma);
+
 
             layout.addView(graficoJuegosPlataforma);
 
