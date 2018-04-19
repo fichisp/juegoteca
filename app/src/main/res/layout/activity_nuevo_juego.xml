@@ -341,17 +341,6 @@
 
                 </LinearLayout>
             </LinearLayout>
-
-            <!--
-                 <Button
-                android:id="@+id/button_guardar_nuevo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:onClick="crearJuego"
-                android:text="Guardar" />
-            -->
-
         </LinearLayout>
     </ScrollView>
 

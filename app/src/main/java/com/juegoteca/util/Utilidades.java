@@ -1,7 +1,5 @@
 package com.juegoteca.util;
 
-import android.accounts.Account;
-import android.accounts.AccountManager;
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
@@ -23,8 +21,6 @@ import android.os.Parcelable;
 import android.os.Process;
 import android.provider.Settings.Secure;
 import android.text.Html;
-import android.util.Log;
-import android.util.Patterns;
 import android.view.Display;
 import android.view.Gravity;
 import android.view.MotionEvent;
@@ -39,9 +35,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdListener;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.InterstitialAd;
 import com.juegoteca.actividades.Splash;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.mijuegoteca.R;
@@ -76,27 +69,27 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-import java.util.regex.Pattern;
 import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
-import it.sauronsoftware.ftp4j.FTPClient;
-import it.sauronsoftware.ftp4j.FTPDataTransferListener;
 
+/**
+ * Clase de utilidades con métodos compartidos por varias partes de la aplicación.
+ */
 public class Utilidades {
-    public static final boolean ANUNCIOS = true;
-    static final String FTP_HOST = "**********";
-    static final String FTP_USER = "**********";
-    static final String FTP_PASS = "**********";
+
+    private static final boolean ANUNCIOS = true;
+    private static final String FTP_HOST = "**********";
+    private static final String FTP_USER = "**********";
+    private static final String FTP_PASS = "**********";
     private static final String MY_AD_UNIT_ID = "****************";
     private JuegosSQLHelper juegosSQLH;
     private Context context;
     private String url_subir_copia, url_bajar_copia, url_comprobar_subir_copia,
             url_registrar_trial;
     private int serverResponseCode;
-    private InterstitialAd interstitial;
 
     public Utilidades(Context context) {
         this.context = context;
@@ -149,7 +142,6 @@ public class Utilidades {
     public void cargarGenerosBuscador(Spinner genero) {
         List<String> generos = new ArrayList<String>();
         // Detectar idioma
-
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
         Cursor c = null;
@@ -367,37 +359,35 @@ public class Utilidades {
      * @param email
      */
     public void cargarCuentasDispositivo(AutoCompleteTextView email) {
-        // Autocompletar con los emails del dispositivo
-        Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-        Account[] accounts = AccountManager.get(context).getAccounts();
-        ArrayList<String> emails = new ArrayList<String>();
-        int index = 0;
-        Log.v("CUENTAS", "Hay " + accounts.length + "  cuentas");
-        for (Account account : accounts) {
-            if (emailPattern.matcher(account.name).matches()) {
-                String possibleEmail = account.name;
-                Log.v("EMAIL:", possibleEmail);
-                if (!emails.contains(possibleEmail)) {
-                    emails.add(possibleEmail);
-                }
-            }
-        }
-
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
-                android.R.layout.simple_spinner_item, emails) {
-            public View getView(int position, View convertView, ViewGroup parent) {
-                View v = super.getView(position, convertView, parent);
-
-                ((TextView) v).setTextSize(20);
-                ((TextView) v).setPadding(15, 20, 15, 20);
-
-                return v;
-            }
-
-        };
-        dataAdapter
-                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        email.setAdapter(dataAdapter);
+//        // Autocompletar con los emails del dispositivo
+//        Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
+//        Account[] accounts = AccountManager.get(context).getAccounts();
+//        ArrayList<String> emails = new ArrayList<String>();
+//        int index = 0;
+//        for (Account account : accounts) {
+//            if (emailPattern.matcher(account.name).matches()) {
+//                String possibleEmail = account.name;
+//                if (!emails.contains(possibleEmail)) {
+//                    emails.add(possibleEmail);
+//                }
+//            }
+//        }
+//
+//        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+//                android.R.layout.simple_spinner_item, emails) {
+//            public View getView(int position, View convertView, ViewGroup parent) {
+//                View v = super.getView(position, convertView, parent);
+//
+//                ((TextView) v).setTextSize(20);
+//                ((TextView) v).setPadding(15, 20, 15, 20);
+//
+//                return v;
+//            }
+//
+//        };
+//        dataAdapter
+//                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        email.setAdapter(dataAdapter);
 
     }
 
@@ -438,14 +428,7 @@ public class Utilidades {
             File outputFile = File.createTempFile("temp", ".png", outputDir);
             bmEscaldado.compress(CompressFormat.JPEG, 90, new FileOutputStream(
                     outputFile));
-            Log.v("Tamaño imagen original", "Ancho: " + bmOriginal.getWidth()
-                    + " - Alto: " + bmOriginal.getHeight());
-            Log.v("Temporales", "Directorio: " + outputDir.getAbsolutePath()
-                    + " - Fichero: " + outputFile.getAbsolutePath());
-
             caratulaTemporal = Uri.parse(outputFile.getAbsolutePath());
-            Log.v("CARGAR CARATULA",
-                    "Carátula temporal: " + caratulaTemporal.toString());
         } catch (IOException e) {
             Toast toast = Toast.makeText(context.getApplicationContext(),
                     "Error al recuperar la imagen", Toast.LENGTH_SHORT);
@@ -470,8 +453,6 @@ public class Utilidades {
             File origen = new File(caratulaTemporal.toString());
             File destino = new File(context.getFilesDir().getPath() + "/"
                     + nombre + ".png");
-            Log.v("Copiando", "Desde" + origen.getAbsolutePath() + " a "
-                    + destino.getAbsolutePath());
             Bitmap bmOriginal = BitmapFactory.decodeStream(new FileInputStream(
                     origen));
             Bitmap bmEscalado = redimensionarImagen(bmOriginal, 600);
@@ -487,21 +468,14 @@ public class Utilidades {
 
     /**
      * Redimensiona una imagen
-     *
      * @param imagen
-     * @param tamanoMaximo
-     * @param filter
+     * @param ancho
      * @return
      */
     public Bitmap redimensionarImagen(Bitmap imagen, int ancho) {
         float proporcion = (float) imagen.getWidth()
                 / (float) imagen.getHeight();
         int alto = Math.round(ancho / proporcion);
-        Log.v("Dimensiones de la imagen original",
-                "Ancho: " + imagen.getWidth() + " - Alto: "
-                        + imagen.getHeight());
-        Log.v("Proporción", String.valueOf(proporcion));
-        Log.v("Dimensiones calculadas", "Ancho: " + ancho + " - Alto: " + alto);
         Bitmap newBitmap = Bitmap.createScaledBitmap(imagen, ancho, alto, true);
         return newBitmap;
     }
@@ -577,8 +551,7 @@ public class Utilidades {
         } catch (ParseException e) {
             e.printStackTrace();
         }
-        Log.v("Convertir fecha en milisegundos", "Fecha: " + fecha + " -  ts: "
-                + String.valueOf(time));
+
         return String.valueOf(time);
     }
 
@@ -594,8 +567,6 @@ public class Utilidades {
             Date date = new Date(Long.parseLong(milisegundos) * 1000L);
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
             String fecha = dateFormat.format(date);
-            Log.v("Convertir milisegundos en fecha", "Milisegundos: "
-                    + milisegundos + " -  Fecha: " + fecha);
             return fecha;
         } catch (NumberFormatException nfe) {
             return "";
@@ -603,10 +574,10 @@ public class Utilidades {
     }
 
     /**
-     * Descarga una imagen desde un servidor y tranforma en un bitmap
+     * * Descarga una imagen desde un servidor y tranforma en un bitmap
      *
-     * @param url Url donde está ubuicada la imagen
-     * @return Bitmap resultante de la conversión
+     * @param urlImagen
+     * @return
      */
     public Bitmap descargarImagen(String urlImagen) {
         Bitmap bitmap = null;
@@ -693,20 +664,15 @@ public class Utilidades {
 
             // Respuesta del servidor
             serverResponseCode = conexion.getResponseCode();
-            Log.v("Subir fichero - response", "Código: " + serverResponseCode);
-
             fileInputStream.close();
             dos.flush();
             dos.close();
 
         } catch (FileNotFoundException fnfe) {
-            Log.v("SUBIR FICHERO", "error: " + fnfe.getMessage(), fnfe);
             return 0;
         } catch (MalformedURLException ex) {
-            Log.v("SUBIR FICHERO", "error: " + ex.getMessage(), ex);
             return 0;
         } catch (Exception e) {
-            Log.v("SUBIR FICHERO", "Exception : " + e.getMessage(), e);
             return 0;
         }
         return serverResponseCode;
@@ -732,7 +698,7 @@ public class Utilidades {
                 // if(subirFichero(zip, url_subir_copia) == 200){
                 // copiaSubida = 2;
                 // }
-                copiaSubida = subirCopiaFTP(new File(zip));
+                //copiaSubida = subirCopiaFTP(new File(zip));
                 // Borrar el fichero temporal con la copia
                 File fileZIP = new File(zip);
                 fileZIP.delete();
@@ -829,15 +795,11 @@ public class Utilidades {
             ficheroZIP = new FileOutputStream(zip);
             osZIP = new ZipOutputStream(ficheroZIP);
             osZIP.setLevel(Deflater.BEST_COMPRESSION);
-            Log.v("ZIP", zip);
-            Log.v("Directorio files", context.getFilesDir().getPath());
-            Log.v("Ruta de la base de datos",
-                    context.getDatabasePath("JUEGOTECA").getAbsolutePath());
+
             // Directorio "files" que contiene las imágenes
             File directorioFiles = new File(context.getFilesDir().getPath());
             File[] ficherosFiles = directorioFiles.listFiles();
             for (int x = 0; x < ficherosFiles.length; x++) {
-                Log.v("Fichero actual", ficherosFiles[x].getAbsolutePath());
                 ZipEntry entrada = new ZipEntry("files/"
                         + ficherosFiles[x].getName());
                 osZIP.putNextEntry(entrada);
@@ -865,12 +827,8 @@ public class Utilidades {
             osZIP.closeEntry();
             osZIP.close();
         } catch (FileNotFoundException e) {
-            Log.v("HACER COPIA SEGURIDAD",
-                    "Fichero no encontrado: " + e.getMessage());
             return null;
         } catch (IOException e) {
-            Log.v("HACER COPIA SEGURIDAD",
-                    "Error de entrada/salida: " + e.getMessage());
             return null;
         }
         return zip;
@@ -910,8 +868,6 @@ public class Utilidades {
                         URL url;
                         // Descargar el fichero
                         try {
-                            Log.v("Restaruar desde servidor", "Bajando:"
-                                    + urlCopiaSeguridad);
                             url = new URL(urlCopiaSeguridad);
                             HttpURLConnection connection = (HttpURLConnection) url
                                     .openConnection();
@@ -946,12 +902,6 @@ public class Utilidades {
                             while (null != (entrada = zis.getNextEntry())) {
                                 // Extraer los ficheros en sus correspondientes
                                 // directorios
-                                Log.v("RESTAURAR COPIA",
-                                        "Extrayendo: "
-                                                + entrada.getName()
-                                                + " en "
-                                                + context.getApplicationInfo().dataDir
-                                                + "/" + entrada.getName());
                                 OutputStream fos = new FileOutputStream(
                                         context.getApplicationInfo().dataDir + "/"
                                                 + entrada.getName());
@@ -1014,14 +964,11 @@ public class Utilidades {
                     .getContentResolver().openInputStream(path));
             if (zipValido(path)) {
                 ZipEntry entrada;
-                // TODO: Comprobar que el fichero es correcto
+                // Comprobar que el fichero es correcto
                 // Borrar los ficheros de la carpeta "files" y "databases"
                 borrarTodosDatos(false);
                 while (null != (entrada = zis.getNextEntry())) {
                     // Extraer los ficheros en sus correspondientes directorios
-                    Log.v("RESTAURAR COPIA", "Extrayendo: " + entrada.getName()
-                            + " en " + context.getApplicationInfo().dataDir
-                            + "/" + entrada.getName());
                     OutputStream fos = new FileOutputStream(
                             context.getApplicationInfo().dataDir + "/"
                                     + entrada.getName());
@@ -1053,7 +1000,6 @@ public class Utilidades {
     /**
      * Comprueba la validez de un fichero zip como copia de seguridad
      *
-     * @param zis Ruta del fichero que se va a comprobar
      * @return boolean Resultado
      */
     private boolean zipValido(Uri path) {
@@ -1063,8 +1009,6 @@ public class Utilidades {
                     .getContentResolver().openInputStream(path));
             ZipEntry entrada;
             while (null != (entrada = zis.getNextEntry())) {
-                Log.v("COMPROBANDO COPIA", "Comprobando: files"
-                        + entrada.getName().toString().contains("files"));
                 if (entrada.getName().toString().contains("files") == false
                         && entrada.getName().toString().contains("databases") == false) {
                     zipValido = false;
@@ -1100,19 +1044,11 @@ public class Utilidades {
                                 .getPath());
                         File[] ficherosFiles = directorioFiles.listFiles();
                         for (int x = 0; x < ficherosFiles.length; x++) {
-                            if (ficherosFiles[x].delete()) {
-                                Log.v("BORRAR DATOS", "Borrado el fichero "
-                                        + ficherosFiles[x].getAbsolutePath());
-                            }
+                            ficherosFiles[x].delete();
                         }
                         File fileBBDD = new File(context.getDatabasePath(
                                 "Juegoteca").getAbsolutePath());
-
-                        if (fileBBDD.delete()) {
-                            Log.v("BORRAR DATOS", "Borrado el fichero "
-                                    + context.getDatabasePath("Juegoteca")
-                                    .getAbsolutePath());
-                        }
+                        fileBBDD.delete();
                         reiniciarApp(context.getString(R.string.mensaje_datos_borrados_ok));
                     }
                 });
@@ -1125,7 +1061,7 @@ public class Utilidades {
                     }
                 });
 
-        // TODO Auto-generated method stub
+
         if (mostrarAlerta) {
             AlertDialog dialog = builder.create();
             dialog.show();
@@ -1140,7 +1076,7 @@ public class Utilidades {
     public void reiniciarApp(String mensaje) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         builder.setMessage(mensaje).setTitle("");
-        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Process.killProcess(Process.myPid());
@@ -1194,7 +1130,7 @@ public class Utilidades {
                 final SharedPreferences settings = context.getSharedPreferences("UserInfo",
                         0);
                 SharedPreferences.Editor editor = settings.edit();
-                editor.putBoolean("releaseNotes"+versionName, true);
+                editor.putBoolean("releaseNotes" + versionName, true);
                 editor.commit();
             }
         });
@@ -1237,18 +1173,12 @@ public class Utilidades {
 
     /**
      * Redimensiona un control
-     *
      * @param elemento
-     * @param x
-     * @param y
      */
     public void redimensionarElemento(View elemento) {
         WindowManager wm = (WindowManager) context
                 .getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
-        // Display display = context.getWindowManager().getDefaultDisplay();
-        // Point size = new Point();
-        // display.getSize(size);
         int width;
         int height;
         if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
@@ -1262,7 +1192,6 @@ public class Utilidades {
         }
 
         LayoutParams params = (LayoutParams) elemento.getLayoutParams();
-        //params.width = Math.round(width / 4);
         params.height = Math.round(height / 4f);
         elemento.setLayoutParams(params);
     }
@@ -1338,62 +1267,28 @@ public class Utilidades {
      *
      * @param fileName
      */
-    public int subirCopiaFTP(File fileName) {
-        FTPClient client = new FTPClient();
-
-        try {
-            client.connect(FTP_HOST, 21);
-            client.login(FTP_USER, FTP_PASS);
-            client.setType(FTPClient.TYPE_BINARY);
-            client.changeDirectory("/public_html/uploads/copias_seguridad/");
-
-            client.upload(fileName, new MyTransferListener());
-            return 2;
-
-        } catch (Exception e) {
-            e.printStackTrace();
-            try {
-                client.disconnect(true);
-            } catch (Exception e2) {
-                e2.printStackTrace();
-            }
-        }
-        return 0;
-    }
-
-    /**
-     * Carga un anuncio
-     */
-    public void cargarAnuncio() {
-        if (ANUNCIOS) {
-            interstitial = new InterstitialAd(context);
-            interstitial.setAdUnitId(MY_AD_UNIT_ID);
-
-            // Create ad request.
-            AdRequest adRequest = new AdRequest.Builder()
-                    .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
-                    .addTestDevice("358240057325789") // Nexus5
-                    .build();
-
-            // Begin loading your interstitial.
-            interstitial.loadAd(adRequest);
-
-            interstitial.setAdListener(new AdListener() {
-                public void onAdLoaded() {
-                    displayInterstitial();
-                }
-            });
-        }
-    }
-
-    /**
-     * Muestra un anuncio
-     */
-    public void displayInterstitial() {
-        if (interstitial.isLoaded()) {
-            interstitial.show();
-        }
-    }
+//    public int subirCopiaFTP(File fileName) {
+//        FTPClient client = new FTPClient();
+//
+//        try {
+//            client.connect(FTP_HOST, 21);
+//            client.login(FTP_USER, FTP_PASS);
+//            client.setType(FTPClient.TYPE_BINARY);
+//            client.changeDirectory("/public_html/uploads/copias_seguridad/");
+//
+//            client.upload(fileName, new MyTransferListener());
+//            return 2;
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            try {
+//                client.disconnect(true);
+//            } catch (Exception e2) {
+//                e2.printStackTrace();
+//            }
+//        }
+//        return 0;
+//    }
 
     /**
      * Compartir imagen y texto
@@ -1450,46 +1345,47 @@ public class Utilidades {
         }
     }
 
-    /**
-     * @author alvaro
-     */
-    public class MyTransferListener implements FTPDataTransferListener {
+//    /**
+//     * @author alvaro
+//     */
+//    public class MyTransferListener implements FTPDataTransferListener {
+//
+//        public void started() {
+//            // Transfer started
+//            // Toast.makeText(context, " Upload Started ...",
+//            // Toast.LENGTH_SHORT).show();
+//            System.out.println(" Upload Started ...");
+//        }
+//
+//        public void transferred(int length) {
+//
+//            // Yet other length bytes has been transferred since the last time
+//            // this
+//            // method was called
+//            // Toast.makeText(context, " transferred ..." + length,
+//            // Toast.LENGTH_SHORT).show();
+//            System.out.println(" transferred ..." + length);
+//        }
+//
+//        public void completed() {
+//            // Transfer completed
+//            // Toast.makeText(context, " completed ...",
+//            // Toast.LENGTH_SHORT).show();
+//            System.out.println(" completed ...");
+//        }
+//
+//        public void aborted() {
+//            // Transfer aborted
+//            // Toast.makeText(context," transfer aborted ,please try again...",
+//            // Toast.LENGTH_SHORT).show();
+//            System.out.println(" aborted ...");
+//        }
+//
+//        public void failed() {
+//            // Transfer failed
+//            System.out.println(" failed ...");
+//        }
+//
+//    }
 
-        public void started() {
-            // Transfer started
-            // Toast.makeText(context, " Upload Started ...",
-            // Toast.LENGTH_SHORT).show();
-            System.out.println(" Upload Started ...");
-        }
-
-        public void transferred(int length) {
-
-            // Yet other length bytes has been transferred since the last time
-            // this
-            // method was called
-            // Toast.makeText(context, " transferred ..." + length,
-            // Toast.LENGTH_SHORT).show();
-            System.out.println(" transferred ..." + length);
-        }
-
-        public void completed() {
-            // Transfer completed
-            // Toast.makeText(context, " completed ...",
-            // Toast.LENGTH_SHORT).show();
-            System.out.println(" completed ...");
-        }
-
-        public void aborted() {
-            // Transfer aborted
-            // Toast.makeText(context," transfer aborted ,please try again...",
-            // Toast.LENGTH_SHORT).show();
-            System.out.println(" aborted ...");
-        }
-
-        public void failed() {
-            // Transfer failed
-            System.out.println(" failed ...");
-        }
-
-    }
 }

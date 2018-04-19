@@ -30,7 +30,6 @@ public class ListadoJuego extends Activity {
 
     private ListView listadoJuegos;
     private Juego[] datosJuegos;
-    //private boolean esJuegoOnline = false;
     private String[] valoresBusqueda = null;
     private JSONObject listadoJuegosJSON;
     private String url_buscar;
@@ -51,7 +50,6 @@ public class ListadoJuego extends Activity {
         url_buscar = this.getResources().getString(R.string.url_buscar);
         Intent intent = getIntent();
         valoresBusqueda = intent.getStringArrayExtra("VALORES");
-        //esJuegoOnline = intent.getExtras().getBoolean("ONLINE");
 
         new RealizaBusqueda(this).execute();
     }
@@ -76,7 +74,7 @@ public class ListadoJuego extends Activity {
             intent = new Intent(this, DetalleJuego.class);
 
         }
-        //final Intent intent = new Intent(this, DetalleJuego.class);
+
         intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
         intent.putExtra("NUEVO_JUEGO", false);
         intent.putExtra("CALLER", "ListadoJuego");
@@ -104,7 +102,6 @@ public class ListadoJuego extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;

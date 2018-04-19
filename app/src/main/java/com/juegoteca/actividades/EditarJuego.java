@@ -8,7 +8,6 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -109,18 +108,14 @@ public class EditarJuego extends Activity {
         textTitulo.requestFocus();
         // Intentar recuperar el juego a visualizar y cargar los datos en los
         // controles
-        Log.v("ID del juego a mostrar: ", String.valueOf(idJuego));
         Cursor c = juegosSQLH.buscarJuegoID(idJuego);
-        Log.v("CURSOR ID - Elementos: ", String.valueOf(c.getCount()));
         if (c != null && c.moveToFirst()) {
-            Log.v("CURSOR ID - Columnas: ", String.valueOf(c.getColumnCount()));
             juegoDetalle = new Juego(c.getInt(0), c.getString(1),
                     c.getString(2), c.getString(3), c.getInt(4), c.getInt(5),
                     c.getInt(6), c.getInt(7), c.getString(8), c.getString(9),
                     c.getFloat(10), c.getInt(11), c.getString(12),
                     c.getString(13), c.getString(14), c.getString(15),
                     c.getString(16), c.getInt(17), c.getString(18));
-            Log.v("JUEGO DETALLE", juegoDetalle.toString());
             if ((juegoDetalle.getCaratula()).length() == 0) {
                 imageCaratula.setImageDrawable((this.getResources()
                         .getDrawable(R.drawable.sinimagen)));
@@ -229,8 +224,6 @@ public class EditarJuego extends Activity {
 
     /**
      * Actualiza el juego en la base de datos
-     *
-     * @param view
      */
     public void actualizarJuego() {
         juegoEditado = new Juego();
@@ -249,12 +242,6 @@ public class EditarJuego extends Activity {
         String fechaLanzamiento = textFechaLanzamiento.getText().toString();
 
         if (fechaLanzamiento.length() == 0) {
-            // Toast toast = Toast.makeText(getApplicationContext(),
-            // "El campo FECHA DE LANZAMIENTO no puede estar en blanco",
-            // Toast.LENGTH_SHORT);
-            // // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
-            // toast.show();
-            // return;
             juegoEditado.setFechaLanzamiento("0");
         } else {
             if (utilidades.validaFecha(fechaLanzamiento) != 0) {
@@ -307,7 +294,6 @@ public class EditarJuego extends Activity {
                                     getApplicationContext(),
                                     getString(R.string.campo_fecha_completado_invalido),
                                     Toast.LENGTH_SHORT);
-                    //toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
                     toast.show();
                     return;
                 } else {
@@ -317,20 +303,12 @@ public class EditarJuego extends Activity {
             } else {
                 juegoEditado.setFechaCompletado("0");
             }
-            // juegoEditado.setFechaCompletado(utilidades.convertirFechaAMilisegundos(textFechaCompletado.getText().toString()));
         } else {
             juegoEditado.setCompletado(0);
         }
-        // juegoEditado.setEan(Long.parseLong(textEan.getText().toString()));
         if (textEan.getText().toString().length() != 0) {
             juegoEditado.setEan(textEan.getText().toString());
         } else {
-            // TODO:string
-            // Toast toast = Toast.makeText(getApplicationContext(),
-            // "El campo CÓDIGO DE PRODUCTO no puede estar en blanco",
-            // Toast.LENGTH_SHORT);
-            // toast.show();
-            // return;
             String codigo = "mjtc"
                     + utilidades.encriptar(juegoEditado.getTitulo()
                     + juegoEditado.getPlataforma()
@@ -368,8 +346,6 @@ public class EditarJuego extends Activity {
             juegoEditado.setCaratula("");
         }
 
-        Log.v("JUEGO EDITADO", juegoEditado.toString());
-
         juegoEditado.setCompletado(checkCompletado.isChecked() ? 1 : 0);
         if (textComentario.getText().toString().length() > 0) {
 
@@ -400,7 +376,6 @@ public class EditarJuego extends Activity {
             Toast toast = Toast.makeText(getApplicationContext(),
                     getString(R.string.juego_actualizado_ok), Toast.LENGTH_SHORT);
             toast.show();
-            Log.v("ID ACTUALIZADO: ", idJuego);
 
             final SharedPreferences settings = getSharedPreferences("UserInfo",
                     0);
@@ -463,8 +438,6 @@ public class EditarJuego extends Activity {
                 Uri selectedImageUri = data.getData();
                 imageCaratula.setImageURI(caratulaTemporal = utilidades
                         .caratulaTemporal(selectedImageUri));
-                Log.v("CARGAR CARATULA",
-                        "URI Temporal: " + caratulaTemporal.toString());
             }
         }
         // Procesar el código escaneado
@@ -490,7 +463,6 @@ public class EditarJuego extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_guardar:
-                Log.i("ActionBar", "Guardar el juego");
                 actualizarJuego();
                 return true;
             default:

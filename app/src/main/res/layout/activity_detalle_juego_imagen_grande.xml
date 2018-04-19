@@ -431,11 +431,6 @@
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
-                        <!--                         <CheckBox
-                                                        android:id="@+id/check_completado_detalle"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:clickable="false" /> -->
 
                         <TextView
                             android:id="@+id/text_fecha_completado_detalle"

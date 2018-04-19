@@ -108,7 +108,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
             }
             fraw.close();
         } catch (IOException ioe) {
-            Log.v("JuegosSQLHelper - onCreate", ioe.toString());
+            Log.e("JuegosSQLHelper - onCreate", ioe.toString());
         }
     }
 
@@ -118,7 +118,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase database, int versionAnterior,
                           int versionActual) {
-        Log.v("Actualizando la base de datos...", "Inicio");
         // Ejecuta las SQLs de actualizacion
         try {
             InputStream fraw = resources.openRawResource(R.raw.db_upgrade);
@@ -126,19 +125,18 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     new InputStreamReader(fraw));
             String linea;
             while ((linea = brin.readLine()) != null) {
-                Log.v("Actualizando la base de datos...", linea);
                 try {
                     database.execSQL(linea);
                 } catch (SQLiteConstraintException sicve) {
-                    Log.v("Omitiendo insesión repetida", linea);
+                    Log.e("Omitiendo insesión repetida", linea);
                 }
             }
 
             fraw.close();
         } catch (IOException ioe) {
-            Log.v("JuegosSQLHelper - onCreate", ioe.toString());
+            Log.e("JuegosSQLHelper - onCreate", ioe.toString());
         }
-        Log.v("Actualizando la base de datos...", "Fin");
+
     }
 
     /**
@@ -156,8 +154,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
             // Insertamos los datos en la tabla Usuarios
             // Comprobamos que no exista el EAN
             try {
-                Log.v("JuegosSQLHelper - insertarJuego", "Juego a insertar: "
-                        + juego.toString());
                 ContentValues valores = new ContentValues();
                 valores.put("ean", juego.getEan());
                 valores.put("titulo", juego.getTitulo());
@@ -182,12 +178,8 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 }
                 id = db.insert("juego", null, valores);
             } catch (SQLiteConstraintException sqlce) {
-                Log.v("JuegosSQLHelper - insertarJuego - Clave única violada",
-                        sqlce.getMessage());
                 return -5;
             } catch (SQLException sqle) {
-                Log.v("JuegosSQLHelper - insertarJuego - Error desconocido",
-                        sqle.getMessage());
                 return id;
             }
             db.close();
@@ -210,8 +202,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         if (db != null) {
             // Insertamos los datos en la tabla Usuarios
             try {
-                Log.v("JuegosSQLHelper - actualizaJuego",
-                        "Juego a actualizar: " + juego.toString());
                 ContentValues valores = new ContentValues();
                 valores.put("ean", juego.getEan());
                 valores.put("titulo", juego.getTitulo());
@@ -235,10 +225,8 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 filas = db.update("juego", valores, "ID = " + juego.getId(),
                         null);
             } catch (SQLiteConstraintException sqlce) {
-                Log.v("JuegosSQLHelper - actualizarJuego", sqlce.getMessage());
                 return -5;
             } catch (SQLException sqle) {
-                Log.v("JuegosSQLHelper - actualizarJuego", sqle.getMessage());
                 return filas;
             }
             db.close();
@@ -259,7 +247,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT * FROM juego ORDER BY titulo ASC", null);
         } catch (SQLException sqle) {
-            Log.v("JuegosSQLHelper - getJuegos", sqle.getMessage());
+            Log.e("SQLHelper.getJuegos", sqle.getMessage());
         }
         return c;
     }
@@ -279,7 +267,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT * FROM juego WHERE ean LIKE '%'|| ? ||'%' AND titulo LIKE '%'|| ? ||'%' AND plataforma LIKE ? AND genero LIKE ? AND formato LIKE ? ORDER BY titulo ASC",
                     args);
         } catch (SQLException sqle) {
-            Log.v("JuegosSQLHelper - getJuegos (args)", sqle.getMessage());
+            Log.e("SQLHelper.getJuegos", sqle.getMessage());
         }
         return c;
     }
@@ -297,7 +285,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT id AS _id,compania FROM juego GROUP BY compania",
                     null);
         } catch (SQLException sqle) {
-            Log.v("JuegosSQLHelper - getCompanias", sqle.getMessage());
+            Log.e("SQLHelper.getCompanias", sqle.getMessage());
         }
         return c;
     }
@@ -313,7 +301,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM genero", null);
         } catch (SQLException sqle) {
-            Log.v("JuegosSQLHelper - getGeneros", sqle.getMessage());
+            Log.e("SQLHelper.getGeneros", sqle.getMessage());
         }
         return c;
     }
@@ -329,7 +317,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM genero_en", null);
         } catch (SQLException sqle) {
-            Log.v("JuegosSQLHelper - getGenerosEN", sqle.getMessage());
+            Log.e("SQLHelper.getGenerosEN", sqle.getMessage());
         }
         return c;
     }
@@ -347,7 +335,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT id AS _id,nombre FROM genero WHERE nombre LIKE '%?%'",
                     args);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -364,7 +351,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM plataforma", null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -381,7 +367,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM clasificacion", null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -398,7 +383,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM idioma", null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -415,7 +399,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM idioma_en", null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -433,7 +416,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT * FROM juego WHERE id=" + id, null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -459,7 +441,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -477,7 +458,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT * FROM plataforma WHERE id=" + id, null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -496,7 +476,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             c = db.rawQuery("SELECT * FROM clasificacion WHERE id=" + id, null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -522,7 +501,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
             }
 
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -540,7 +518,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             borrado = db.delete("juego", "ID = " + id, null);
         } catch (Exception e) {
-            e.printStackTrace();
             return 0;
         }
         return borrado;
@@ -558,7 +535,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
             c = db.rawQuery("SELECT * FROM juego ORDER BY fecha_creacion DESC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -577,7 +553,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT * FROM juego WHERE completado=1 ORDER BY fecha_completado DESC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -596,7 +571,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*) AS NUM,p.nombre FROM juego AS j LEFT JOIN plataforma AS p ON p.id=j.plataforma GROUP BY p.nombre ORDER BY NUM DESC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -615,7 +589,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*),completado FROM juego GROUP BY completado",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -634,7 +607,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*) NUM ,formato FROM juego GROUP BY formato ORDER BY NUM DESC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -653,7 +625,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*) NUM,g.nombre FROM juego AS j LEFT JOIN genero AS g ON g.id=j.genero GROUP BY g.nombre ORDER BY NUM DESC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -672,7 +643,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*) NUM,g.nombre FROM juego AS j LEFT JOIN genero_en AS g ON g.id=j.genero GROUP BY g.nombre ORDER BY NUM DESC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -709,7 +679,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT * FROM juego WHERE id IN (SELECT id_juego FROM favorito) ORDER BY titulo ASC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -728,7 +697,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT * FROM juego WHERE id IN (SELECT id_juego FROM favorito) AND plataforma LIKE '"
                             + plataforma + "' ORDER BY titulo ASC", null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -776,7 +744,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
     /**
      * Elimina un juego de la tabla de favoritos
      *
-     * @param id
+     * @param idJuego
      * @return
      */
     public int eliminarFavorito(String idJuego) {
@@ -785,7 +753,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         try {
             borrado = db.delete("favorito", "ID_JUEGO = " + idJuego, null);
         } catch (Exception e) {
-            e.printStackTrace();
             return 0;
         }
         return borrado;
@@ -804,7 +771,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT * FROM juego WHERE completado = 0 ORDER BY titulo ASC",
                     null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -825,7 +791,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT * FROM juego WHERE completado = 0 AND plataforma LIKE '"
                             + plataforma + "' ORDER BY titulo ASC", null);
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return c;
@@ -848,7 +813,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 return c.getFloat(0);
             }
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return null;
@@ -872,7 +836,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 return c.getInt(0);
             }
         } catch (Exception e) {
-            e.printStackTrace();
             return null;
         }
         return null;

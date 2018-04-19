@@ -24,7 +24,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:backgroundTint="@color/cast_intro_overlay_background_color"
+                android:backgroundTint="@color/blanco"
                 android:clipToPadding="false">
 
             </android.support.v7.widget.RecyclerView>

@@ -42,12 +42,7 @@ public class IniciarSesion extends Activity {
      * The default email to populate the email field with.
      */
     public static final String EXTRA_EMAIL = "com.example.android.authenticatordemo.extra.EMAIL";
-    /**
-     * A dummy authentication store containing known user names and passwords.
-     * TODO: remove after connecting to a real authentication system.
-     */
-    private static final String[] DUMMY_CREDENTIALS = new String[]{
-            "foo@example.com:hello", "bar@example.com:world"};
+
     private static Utilidades utilidades;
     private String url_iniciar_sesion;
     /**
@@ -230,12 +225,10 @@ public class IniciarSesion extends Activity {
     public class UserLoginTask extends AsyncTask<Void, Void, Boolean> {
         @Override
         protected Boolean doInBackground(Void... params) {
-            // TODO: attempt authentication against a network service.
-            Log.v("INICIO SESION", "Intento de inicio de sesion");
+
             String login = ((EditText) findViewById(R.id.email)).getText().toString();
             String password = utilidades.encriptar(((EditText) findViewById(R.id.password)).getText().toString());
-            //			String password = ((EditText)findViewById(R.id.password)).getText().toString();
-            Log.v("INICIO SESION", "Datos -> usuario: " + login + " - password: " + password);
+
             List<NameValuePair> paramsJS = new ArrayList<NameValuePair>();
             paramsJS.add((new BasicNameValuePair("login", login)));
             paramsJS.add((new BasicNameValuePair("password", password)));
@@ -244,7 +237,6 @@ public class IniciarSesion extends Activity {
             JSONObject jsInicioSesion = jParser.makeHttpRequest(url_iniciar_sesion, "POST", paramsJS);
 
             if (jsInicioSesion != null) {
-                Log.v("INICIO SESION", "JSON:" + jsInicioSesion.toString());
                 try {
                     Intent intent;
                     switch (Integer.valueOf(jsInicioSesion.get("success").toString())) {
@@ -278,24 +270,15 @@ public class IniciarSesion extends Activity {
 
                     }
                 } catch (JSONException e) {
-                    // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    Log.e("INICIO SESION", "Error al procesar el json de inicio de sesión");
                 }
             } else {
-                Log.v("INICIO SESION", "JSON vacío");
                 Intent intent = new Intent(getApplicationContext(), IniciarSesion.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.putExtra("MENSAJE_ERROR", "No se ha podido conectar con el servidor.");
                 startActivity(intent);
             }
 
-            for (String credential : DUMMY_CREDENTIALS) {
-                String[] pieces = credential.split(":");
-                if (pieces[0].equals(mEmail)) {
-                    // Account exists, return true if the password matches.
-                    return pieces[1].equals(mPassword);
-                }
-            }
             return true;
         }
 

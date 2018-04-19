@@ -46,22 +46,11 @@ dependencies {
     compile 'com.android.support:multidex:1.0.2'
     //compile 'com.github.igdb:api-java:2.0.1'
     compile files('libs/achartengine-1.2.0.jar')
-    //compile files('libs/core.jar')
-    compile files('libs/ftp4j-1.7.2.jar')
-    //    compile files('libs/twitter4j-core-4.0.4.jar')
-    //compile project(':captureActivity')
+    //compile files('libs/ftp4j-1.7.2.jar')
     //noinspection GradleCompatible
     compile 'com.android.support:support-v4:23.4.0'
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:recyclerview-v7:23.4.0'
     compile project(':captureActivity')
-    compile 'com.google.android.gms:play-services:9.2.0'
-    compile 'com.google.android.gms:play-services-ads:9.2.0'
-    compile 'com.google.android.gms:play-services-auth:9.2.0'
-    compile 'com.google.android.gms:play-services-gcm:9.2.0'
-    //compile 'com.android.support:multidex:1.0.1'
-    //compile 'com.google.zxing:core:3.3.1'
-
-
     implementation 'com.android.support:design:23.4.0'
 }

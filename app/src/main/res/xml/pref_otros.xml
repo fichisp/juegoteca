@@ -8,9 +8,5 @@
         android:icon="@null"
         android:key="licenses"
         android:title="@string/pref_title_about"></Preference>
-    <!--         <Preference -->
-    <!--         android:key="eliminar_anuncios" -->
-    <!--         android:title="@string/pref_title_eliminar_ads" > -->
-    <!--     </Preference> -->
 
 </PreferenceScreen>

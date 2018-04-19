@@ -48,7 +48,6 @@ public class Registro extends Activity {
      */
     public void iniciarRegistro(View view) {
         url_registro_usuario = this.getResources().getString(R.string.url_registro_usuario);
-        Log.v("INICIO SESION", "Intento de inicio de sesion");
         String usuario = ((EditText) findViewById(R.id.editTextUsuario)).getText().toString();
         String email = ((EditText) findViewById(R.id.editTextEmail)).getText().toString();
         String password = utilidades.encriptar(((EditText) findViewById(R.id.editTextContrasena)).getText().toString());
@@ -58,8 +57,6 @@ public class Registro extends Activity {
             Toast t = Toast.makeText(this, R.string.registro_contrasenas_no_coinciden, Toast.LENGTH_SHORT);
             t.show();
         } else {
-
-            Log.v("REGISTRO DE USUARIO", "Datos -> usuario: " + email + " - password: " + password);
             List<NameValuePair> paramsJS = new ArrayList<NameValuePair>();
             paramsJS.add((new BasicNameValuePair("usuario", usuario)));
             paramsJS.add((new BasicNameValuePair("email", email)));
@@ -69,7 +66,6 @@ public class Registro extends Activity {
             JSONObject jsInicioSesion = jParser.makeHttpRequest(url_registro_usuario, "POST", paramsJS);
 
             if (jsInicioSesion != null) {
-                Log.v("INICIO SESION", "JSON:" + jsInicioSesion.toString());
                 Toast t;
                 try {
                     switch (Integer.valueOf(jsInicioSesion.get("success").toString())) {
@@ -95,7 +91,7 @@ public class Registro extends Activity {
                     e.printStackTrace();
                 }
             } else {
-                Log.v("INICIO SESION", "JSON vacío");
+                Log.e("INICIO SESION", "JSON vacío");
             }
         }
     }

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import com.mijuegoteca.R;
 
 /**
+ * Detalle de juego con nuevo layout.
  * Created by alvaro on 28/02/18.
  */
 

@@ -4,7 +4,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 /**
- * Almacena los datos de un juego
+ * Entidad juego
  *
  * @author alvaro
  */
@@ -39,8 +39,7 @@ public class Juego {
     }
 
     /**
-     * Contructor parametrizado
-     *
+     * Constructor con parámetros
      * @param id
      * @param ean
      * @param titulo
@@ -49,12 +48,17 @@ public class Juego {
      * @param plataforma
      * @param clasificacion
      * @param idioma
-     * @param fechaLanzamiento
-     * @param fechaCompra
+     * @param fecha_lanzamiento
+     * @param fecha_compra
      * @param precio
      * @param completado
      * @param resumen
      * @param caratula
+     * @param fechaCreacion
+     * @param fechaCompletado
+     * @param comentario
+     * @param puntuacion
+     * @param formato
      */
     public Juego(int id, String ean, String titulo, String compania,
                  int genero, int plataforma, int clasificacion, int idioma,
@@ -204,7 +208,8 @@ public class Juego {
     }
 
     /**
-     * @param fechaLanzamiento the fechaLanzamiento to set
+     *
+     * @param fecha_lanzamiento
      */
     public void setFechaLanzamiento(String fecha_lanzamiento) {
         this.fechaLanzamiento = fecha_lanzamiento;
@@ -218,7 +223,8 @@ public class Juego {
     }
 
     /**
-     * @param fechaCompra the fechaCompra to set
+     *
+     * @param fecha_compra
      */
     public void setFechaCompra(String fecha_compra) {
         this.fechaCompra = fecha_compra;

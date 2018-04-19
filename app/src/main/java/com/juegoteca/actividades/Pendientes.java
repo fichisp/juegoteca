@@ -7,20 +7,15 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.AdaptadorJuegosLista;
@@ -37,7 +32,6 @@ public class Pendientes extends Activity {
     private Spinner filtroPlataformas;
     private AdaptadorJuegosLista adaptador;
     private JuegosSQLHelper juegoSQLH;
-    private AdView adView;
 
     /**
      * Llamada cuando se inicializa la actividad.
@@ -78,25 +72,6 @@ public class Pendientes extends Activity {
 
     }
 
-    private void loadAds() {
-//        //Anuncio
-//        adView = new AdView(this);
-//        adView.setAdSize(AdSize.BANNER);
-//        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
-//
-//        LinearLayout layoutBanner = (LinearLayout) findViewById(R.id.layout_banner_Ads);
-//        layoutBanner.addView(adView);
-//
-//        // Create an ad request. Check logcat output for the hashed device ID to
-//        // get test ads on a physical device.
-//        AdRequest adRequest = new AdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
-//                .addTestDevice("358240057325789")
-//                .build();
-//
-//        // Start loading the ad in the background.
-//        adView.loadAd(adRequest);
-    }
 
     /**
      * Realiza la consulta a la base de datos para obtener los juegos pendientes.
@@ -184,7 +159,6 @@ public class Pendientes extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;

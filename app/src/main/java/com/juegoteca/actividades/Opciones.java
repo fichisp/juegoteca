@@ -22,7 +22,6 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -248,21 +247,6 @@ public class Opciones extends PreferenceActivity {
                     public boolean onPreferenceClick(Preference preference) {
                         Toast t;
                         if (!utilidades.baseDatosEsVacia()) {
-                            // TODO: Exportar a fichero
-                            // dialogoEmpaquetado = ProgressDialog.show(
-                            // Opciones.this, "", getString(R.string.zip),
-                            // true);
-                            // String uriFichero = utilidades
-                            // .hacerCopiaSeguridadFichero();
-                            // Intent shareIntent = new Intent();
-                            // shareIntent.setAction(Intent.ACTION_SEND);
-                            // shareIntent.putExtra(Intent.EXTRA_STREAM,
-                            // Uri.parse("file://" + uriFichero));
-                            // shareIntent.setType("application/zip");
-                            // startActivity(Intent.createChooser(shareIntent,
-                            // "Enviar a..."));
-                            // dialogoEmpaquetado.hide();
-                            // File(utilidades.hacerCopiaSeguridadFichero()).delete();
                             new CopiaSeguridadFichero().execute();
                         } else {
                             t = Toast.makeText(getApplicationContext(),
@@ -417,8 +401,7 @@ public class Opciones extends PreferenceActivity {
             // versionName = res.getString(R.string.app_version);
         }
 
-        String version = String.format(res.getString(
-                R.string.pref_title_version, versionName));
+        String version = res.getString(R.string.pref_title_version, versionName);
         Preference preferenciaInicioSesion = (Preference) findPreference("about");
         preferenciaInicioSesion.setTitle(version);
 
@@ -465,7 +448,6 @@ public class Opciones extends PreferenceActivity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                //Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;
@@ -482,22 +464,6 @@ public class Opciones extends PreferenceActivity {
         switch (requestCode) {
             case FILE_SELECT_CODE:
                 if (resultCode == RESULT_OK) {
-                /*// Get the Uri of the selected file
-                Uri uri = data.getData();
-				Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
-				// Get the path
-				String path = uri.getPath();
-				Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
-				if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
-					utilidades
-							.reiniciarApp(getString(R.string.copia_restaurada_ok));
-				} else {
-					Toast t;
-					t = Toast.makeText(getApplicationContext(),
-							R.string.copia_restaurada_ko, Toast.LENGTH_SHORT);
-					t.show();
-				}*/
-
                     RestaurarCopiaFichero task = new RestaurarCopiaFichero();
                     task.data = data;
                     task.execute();
@@ -690,10 +656,8 @@ public class Opciones extends PreferenceActivity {
         protected Integer doInBackground(Void... params) {
             // Get the Uri of the selected file
             Uri uri = data.getData();
-            //Log.v("IMPORTAR COPIA URI", "File Uri: " + uri.toString());
             // Get the path
             String path = uri.getPath();
-            //Log.v("IMPORTAR COPIA PATH", "File Path: " + path);
             if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
                 return 1;
             } else {

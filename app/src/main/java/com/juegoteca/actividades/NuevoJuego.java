@@ -281,16 +281,11 @@ public class NuevoJuego extends Activity {
             if (editEanNuevo.getText().toString().length() != 0) {
                 juego.setEan(editEanNuevo.getText().toString());
             } else {
-                // TODO: generar un código?
+                // Generar un código
                 String codigo = "mjtc"
                         + utilidades.encriptar(juego.getTitulo()
                         + juego.getPlataforma() + juego.getCompania());
                 juego.setEan(codigo);
-                // Toast toast = Toast.makeText(getApplicationContext(),
-                // "El campo CÓDIGO DE PRODUCTO no puede estar en blanco",
-                // Toast.LENGTH_SHORT);
-                // toast.show();
-                // return;
             }
             // Comentario
             try {
@@ -315,7 +310,7 @@ public class NuevoJuego extends Activity {
             }
             try {
                 if (caratulaTemporal != null) {
-                    // TODO: Nombre generado
+                    // Nombre generado
                     String nombre = utilidades.encriptar(juego.getTitulo()
                             + juego.getEan() + juego.getPlataforma()
                             + juego.getCompania());
@@ -342,10 +337,8 @@ public class NuevoJuego extends Activity {
             // Insertamos en la base de datos
             long id;
             if ((id = juegosSQLH.insertarJuego(juego)) > 0) {
-                Log.v("ID insertado: ", String.valueOf(id));
                 Toast toast = Toast.makeText(getApplicationContext(),
                         getString(R.string.juego_guardado), Toast.LENGTH_SHORT);
-                //toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
                 toast.show();
 
                 final SharedPreferences settings = getSharedPreferences("UserInfo",
@@ -437,7 +430,6 @@ public class NuevoJuego extends Activity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_guardar:
-                Log.i("ActionBar", "Guardar el juego");
                 crearJuego();
                 return true;
             case android.R.id.home:
@@ -448,7 +440,7 @@ public class NuevoJuego extends Activity {
                 // DialogInterface.OnClickListener() {
                 // @Override
                 // public void onClick(DialogInterface dialog, int id) {
-                // // TODO: Escoger fichero
+                // Escoger fichero
                 //
                 // NavUtils.navigateUpFromSameTask(NuevoJuego.this);
                 //
@@ -500,8 +492,7 @@ public class NuevoJuego extends Activity {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
-                        // TODO: Escoger fichero
-
+                        // Escoger fichero
                         if (getIntent().getBooleanExtra("GRID", false)) {
                             Intent intent = new Intent(NuevoJuego.this, InicioMasonry.class);
                             startActivity(intent);
