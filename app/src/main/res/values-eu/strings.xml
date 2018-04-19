@@ -174,5 +174,6 @@
     <string name="unzip">Restaurando copia de seguridad...</string>
     <string name="alerta_atras_editar_titulo">Cancelar edición de juego</string>
     <string name="currency">Currency</string>
+    <string name="si">Yes</string>
 
 </resources>

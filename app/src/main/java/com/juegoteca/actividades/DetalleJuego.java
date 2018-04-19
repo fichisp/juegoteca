@@ -237,7 +237,7 @@ public class DetalleJuego extends Activity {
             }
             if (juego.getCompletado() == 1) {
                 if (Double.parseDouble(juego.getFechaCompletado()) != 0) {
-                    textViewFechaCompletado.setText(getString(R.string.ok)
+                    textViewFechaCompletado.setText(getString(R.string.si)
                             + " ("
                             + utilidades.convertirMilisegundosAFecha(juego
                             .getFechaCompletado()) + ")");

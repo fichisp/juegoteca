@@ -128,43 +128,6 @@
                     android:inputType="textMultiLine|textCapSentences"
                     android:textSize="15sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0">
-
-                    <TextView
-                        android:id="@+id/text_ean_nuevo"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/label_ean"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1">
-
-                        <ImageButton
-                            android:id="@+id/botton_ean_buscador"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:onClick="capturarCodigo"
-                            android:src="@drawable/boton_codigo_barras" />
-
-                        <EditText
-                            android:id="@+id/edit_ean_nuevo"
-                            android:layout_width="300dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:hint="@string/hint_ean"
-                            android:inputType="number"
-                            android:textSize="15sp" />
-                    </LinearLayout>
-                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -296,7 +259,7 @@
                     <TextView
                         android:id="@+id/text_comentario_nuevo_label"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/label_comentario"
                         android:textSize="15sp"
@@ -324,7 +287,7 @@
                     <TextView
                         android:id="@+id/text_puntuacion_nuevo_label"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:text="@string/label_puntuacion"
                         android:textSize="15sp"
@@ -339,6 +302,45 @@
                         android:inputType="number"
                         android:maxLength="3" />
 
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0">
+
+                <TextView
+                    android:id="@+id/text_ean_nuevo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="@string/label_ean"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/botton_ean_buscador"
+                        style="?android:attr/buttonStyleSmall"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:onClick="capturarCodigo"
+                        android:src="@drawable/boton_codigo_barras" />
+
+                    <EditText
+                        android:id="@+id/edit_ean_nuevo"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="@string/hint_ean"
+                        android:inputType="number"
+                        android:textSize="15sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
