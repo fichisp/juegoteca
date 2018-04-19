@@ -1,9 +1,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <EditTextPreference
-        android:icon="@null"
-        android:key="igdb"
-        android:title="IGDB"></EditTextPreference>
     <Preference
         android:icon="@null"
         android:key="about"
