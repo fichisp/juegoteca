@@ -1,19 +1,24 @@
 package com.juegoteca.util;
 
 import android.app.Activity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.mijuegoteca.R;
 
+import java.io.File;
+
 public class AdaptadorJuegosLista extends ArrayAdapter<Juego> {
 
     private Activity context;
     private Juego[] juegos;
+    private Utilidades utilidades;
 
     /**
      * Contructor parametrizado
@@ -26,6 +31,7 @@ public class AdaptadorJuegosLista extends ArrayAdapter<Juego> {
         super(context, R.layout.listado_juego, juegos);
         this.context = context;
         this.juegos = juegos;
+        utilidades = new Utilidades(context);
     }
 
     /**
@@ -59,6 +65,24 @@ public class AdaptadorJuegosLista extends ArrayAdapter<Juego> {
 
         TextView plataforma = (TextView) item.findViewById(R.id.plataforma_juego);
         plataforma.setText(juegos[position].getNombrePlataforma());
+
+        ImageView caratula = (ImageView) item.findViewById(R.id.image_caratula_listado_caratula);
+
+        if ((juegos[position].getCaratula()).length() == 0) {
+            if (juegos[position].getId() == -1) {
+                caratula.setImageDrawable((context.getResources().getDrawable(R.drawable.cargar_nuevo_juego)));
+            } else {
+                caratula.setImageDrawable((context.getResources().getDrawable(R.drawable.sinimagen)));
+            }
+        } else {
+            try {
+                caratula.setImageBitmap(utilidades.decodeFile(new File(context.getFilesDir().getPath() + "/" + juegos[position].getCaratula())));
+
+                //				caratula.setImageURI(Uri.parse(context.getFilesDir().getPath()+"/"+juegos[position].getCaratula()));
+            } catch (Exception e) {
+                Log.e("CARGAR CARATULA LISTADO", e.getMessage());
+            }
+        }
 
         return item;
     }

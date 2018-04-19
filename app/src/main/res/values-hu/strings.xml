@@ -134,7 +134,7 @@
     <string name="label_resumen_editar">Summary</string>
     <string name="label_descripcion_editar">Description</string>
     <string name="title_activity_duplicar_juego">Duplicate game</string>
-    <string name="juegos_encontrados">games found.</string>
+    <string name="juegos_encontrados">games found</string>
     <string name="total_juegos">Total</string>
     <string name="mensaje_datos_borrados_ok">All data clear. The application will restart</string>
     <string name="copia_restaurada_ok">Backup complete. The application will restart</string>
@@ -171,4 +171,5 @@
     <string name="alerta_atras_editar_titulo">Cancel game edition</string>
     <string name="currency">Currency</string>
     <string name="si">Yes</string>
+    <string name="juegos">games</string>
 </resources>

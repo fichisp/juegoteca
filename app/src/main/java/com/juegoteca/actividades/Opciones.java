@@ -16,6 +16,7 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
+import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -415,6 +416,21 @@ public class Opciones extends PreferenceActivity {
                         return true;
                     }
                 });
+
+        final EditTextPreference preferenciaIGDB = (EditTextPreference) findPreference("igdb");
+        preferenciaIGDB.setSummary(settings.getString("igdb-key",""));
+        preferenciaIGDB.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+                SharedPreferences.Editor editor = settings.edit();
+                editor.putString("igdb-key", newValue.toString());
+                preferenciaIGDB.setSummary(newValue.toString());
+                editor.commit();
+
+                return true;
+            }
+        });
     }
 
     /**

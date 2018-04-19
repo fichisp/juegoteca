@@ -134,7 +134,7 @@
     <string name="label_resumen_editar">Resumen</string>
     <string name="label_descripcion_editar">Descripción</string>
     <string name="title_activity_duplicar_juego">Duplicar Juego</string>
-    <string name="juegos_encontrados">juegos encontrados.</string>
+    <string name="juegos_encontrados">juegos encontrados</string>
     <string name="total_juegos">Total de juegos</string>
     <string name="mensaje_datos_borrados_ok">Datos borrados. La aplicación se va a reiniciar</string>
     <string name="copia_restaurada_ok">Copia restaurada. La aplicación se va a reiniciar</string>
@@ -177,4 +177,5 @@
     <string name="alerta_atras_editar_titulo">Cancelar edición de juego</string>
     <string name="currency">Moneda</string>
     <string name="si">Sí</string>
+    <string name="juegos">juegos</string>
 </resources>

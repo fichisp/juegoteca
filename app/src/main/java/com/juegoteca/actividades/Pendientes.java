@@ -103,10 +103,12 @@ public class Pendientes extends Activity {
             adaptador = new AdaptadorJuegosLista(this, datosJuegos, false);
             listadoJuegos.setAdapter(adaptador);
             listadoJuegos.setVisibility(View.VISIBLE);
-            textoPendientes.setVisibility(View.GONE);
+            textoPendientes.setText("No hay resultados");
+            textoPendientes.setText(datosJuegos.length + " " + getString(R.string.juegos));
+            //textoPendientes.setVisibility(View.GONE);
             c.close();
         } else {
-            textoPendientes.setText("No hay resultados");
+            textoPendientes.setText("0 " + getString(R.string.juegos));
             textoPendientes.setVisibility(View.VISIBLE);
             listadoJuegos.setVisibility(View.GONE);
         }

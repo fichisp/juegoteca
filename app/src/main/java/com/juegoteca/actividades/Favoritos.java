@@ -101,10 +101,11 @@ public class Favoritos extends Activity {
             adaptador = new AdaptadorJuegosLista(this, datosJuegos, false);
             listadoJuegos.setAdapter(adaptador);
             listadoJuegos.setVisibility(View.VISIBLE);
-            textoFavoritos.setVisibility(View.GONE);
+            textoFavoritos.setText(datosJuegos.length + " " + getString(R.string.juegos));
+            //textoFavoritos.setVisibility(View.GONE);
             c.close();
         } else {
-            textoFavoritos.setText("No hay resultados");
+            textoFavoritos.setText("0 " + getString(R.string.juegos));
             textoFavoritos.setVisibility(View.VISIBLE);
             listadoJuegos.setVisibility(View.GONE);
         }
