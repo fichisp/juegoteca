@@ -157,46 +157,6 @@ public class Opciones extends PreferenceActivity {
         fakeHeader.setTitle(R.string.pref_header_general);
         // getPreferenceScreen().addPreference(fakeHeader);
         addPreferencesFromResource(R.xml.pref_general);
-        //
-        // final SharedPreferences settings = getSharedPreferences("UserInfo",
-        // 0);
-        //
-        // if(settings.contains("usuario")){
-        // Preference preferenciaInicioSesion = (Preference)
-        // findPreference("iniciar_sesion");
-        // preferenciaInicioSesion.setTitle(R.string.title_activity_iniciar_sesion_cerrar);
-        // preferenciaInicioSesion.setSummary("Sesión iniciada: "+settings.getString("usuario",
-        // ""));
-        // preferenciaInicioSesion.setOnPreferenceClickListener(new
-        // Preference.OnPreferenceClickListener() {
-        // public boolean onPreferenceClick(Preference preference) {
-        // SharedPreferences.Editor editor = settings.edit();
-        // editor.remove("usuario");
-        // editor.commit();
-        // Intent intent=new Intent(getApplicationContext(),Opciones.class);
-        // intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        // startActivity(intent);
-        // Toast t = Toast.makeText(getApplicationContext(), "Sesión cerrada",
-        // Toast.LENGTH_SHORT);
-        // t.show();
-        // return true;
-        // }
-        // });
-        // }
-        // else{
-        // // Establece las acciones al hacer click en las preferencias
-        // Preference preferenciaInicioSesion = (Preference)
-        // findPreference("iniciar_sesion");
-        // preferenciaInicioSesion.setOnPreferenceClickListener(new
-        // Preference.OnPreferenceClickListener() {
-        // public boolean onPreferenceClick(Preference preference) {
-        // Intent intent = new Intent(getApplicationContext(),
-        // IniciarSesion.class);
-        // startActivity(intent);
-        // return true;
-        // }
-        // });
-        // }
 
         // Add 'data and sync' preferences, and a corresponding header.
         PreferenceCategory fakeHeader2 = new PreferenceCategory(this);
@@ -302,79 +262,6 @@ public class Opciones extends PreferenceActivity {
                     }
                 });
 
-        // // Establece las acciones al hacer click en las preferencias
-        // Preference preferenciaCopia = (Preference)
-        // findPreference("hacer_copia_seguridad");
-        // preferenciaCopia.setOnPreferenceClickListener(new
-        // Preference.OnPreferenceClickListener() {
-        // public boolean onPreferenceClick(Preference preference) {
-        // final SharedPreferences settings = getSharedPreferences("UserInfo",
-        // 0);
-        // Toast t;
-        // if(settings.contains("usuario")){
-        //
-        // if(!utilidades.baseDatosEsVacia()){
-        //
-        // new CopiaSeguridad().execute();
-        // }
-        // else{
-        // t = Toast.makeText(getApplicationContext(),
-        // "No hay datos que salvar en la copia de seguridad",
-        // Toast.LENGTH_SHORT);
-        // // t.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
-        // t.show();
-        // }
-        // }
-        // else{
-        // t = Toast.makeText(getApplicationContext(),
-        // "Tienes que iniciar sesión", Toast.LENGTH_SHORT);
-        // // t.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
-        // t.show();
-        // }
-        // return true;
-        // }
-        // });
-        //
-        // Preference preferenciaRestaurar = (Preference)
-        // findPreference("hacer_restaurar_seguridad");
-        // preferenciaRestaurar.setOnPreferenceClickListener(new
-        // Preference.OnPreferenceClickListener() {
-        // public boolean onPreferenceClick(Preference preference) {
-        // final SharedPreferences settings = getSharedPreferences("UserInfo",
-        // 0);
-        //
-        // if(settings.contains("usuario")){
-        // // utilidades.restaurarCopiaSeguridad();
-        // AlertDialog.Builder builder = new AlertDialog.Builder(Opciones.this);
-        // builder.setMessage(R.string.alerta_restaurar_texto).setTitle(R.string.alerta_restaurar_titulo);
-        // builder.setPositiveButton(R.string.ok, new
-        // DialogInterface.OnClickListener() {
-        // @Override
-        // public void onClick(DialogInterface dialog, int id) {
-        // new RestaurarCopia().execute();
-        // } });
-        //
-        // builder.setNegativeButton(R.string.cancel, new
-        // DialogInterface.OnClickListener() {
-        // @Override
-        // public void onClick(DialogInterface dialog, int id) {
-        // // User cancelled the dialog
-        // return;
-        // }
-        // });
-        // AlertDialog dialog = builder.create();
-        // dialog.show();
-        // }
-        // else{
-        // Toast t = Toast.makeText(getApplicationContext(),
-        // "Tienes que iniciar sesión", Toast.LENGTH_SHORT);
-        // // t.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
-        // t.show();
-        // }
-        //
-        // return true;
-        // }
-        // });
 
         Preference preferenciaBorrar = (Preference) findPreference("borrar_todo");
         preferenciaBorrar
@@ -416,21 +303,6 @@ public class Opciones extends PreferenceActivity {
                         return true;
                     }
                 });
-
-        final EditTextPreference preferenciaIGDB = (EditTextPreference) findPreference("igdb");
-        preferenciaIGDB.setSummary(settings.getString("igdb-key",""));
-        preferenciaIGDB.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-            public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-                SharedPreferences.Editor editor = settings.edit();
-                editor.putString("igdb-key", newValue.toString());
-                preferenciaIGDB.setSummary(newValue.toString());
-                editor.commit();
-
-                return true;
-            }
-        });
     }
 
     /**
