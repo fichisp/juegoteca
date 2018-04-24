@@ -1,19 +1,5 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ListPreference
-        android:icon="@null"
-        android:key="currencys"
-        android:title="@string/currency"
-        android:summary="%s"
-        android:entries="@array/currency"
-        android:entryValues="@array/currencyAlias"/>
-
-    <CheckBoxPreference
-        android:icon="@null"
-        android:key="detalle_imagen"
-        android:summary="@string/pref_description_view"
-        android:title="@string/pref_title_view"></CheckBoxPreference>
-
 
     <Preference
         android:icon="@null"

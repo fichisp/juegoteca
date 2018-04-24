@@ -466,6 +466,9 @@ public class DetalleJuego extends Activity {
                     startActivity(intent);
                 } else if (getIntent().getBooleanExtra("GRID", false)) {
                     Intent intent = new Intent(this, InicioMasonry.class);
+                    if(getIntent().getIntExtra("SCROLL_Y",0)>0){
+                        intent.putExtra("SCROLL_Y", getIntent().getIntExtra("SCROLL_Y",0));
+                    }
                     startActivity(intent);
                     finish();
                 } else {

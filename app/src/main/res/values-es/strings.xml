@@ -178,4 +178,6 @@
     <string name="currency">Moneda</string>
     <string name="si">Sí</string>
     <string name="juegos">juegos</string>
+    <string name="pref_description_orden_ultimos_anadidos">Ordenar los últimos juegos añadidos por fecha de compra</string>
+    <string name="pref_title_orden_ultimos_anadidos">Orden últimos añadidos</string>
 </resources>

@@ -30,6 +30,7 @@ public class Inicio extends Activity {
 
     private int NUM_MAX_ELEMENTOS_INICIO = 25;
 
+
     /**
      * Llamada cuando se inicializa la actividad. Carga los listados que se
      * muestran en pantalla.
@@ -85,9 +86,19 @@ public class Inicio extends Activity {
      * Carga la lista con los últimos añadidos
      */
     public void cargarUltimosAnadidos() {
-        //listaUltimos = (HorizontalListView) findViewById(R.id.lista_ultimos);
+
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
-        Cursor c = juegosSQLH.getUltimosJuegosAnadidos();
+        final SharedPreferences settings = getSharedPreferences("UserInfo",
+                0);
+
+        Cursor c = null;
+
+        if(settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
+            c = juegosSQLH.getUltimosJuegosAnadidosFechaCompra();
+        } else {
+            c = juegosSQLH.getUltimosJuegosAnadidos();
+        }
+
         if (c != null & c.moveToFirst()) {
 /*            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
                 datosJuegos = new Juego[NUM_MAX_ELEMENTOS_INICIO];

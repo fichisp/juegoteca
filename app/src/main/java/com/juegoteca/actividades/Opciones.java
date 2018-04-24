@@ -149,14 +149,74 @@ public class Opciones extends PreferenceActivity {
             return;
         }
 
+        final SharedPreferences settings = getSharedPreferences("UserInfo",
+                0);
+
+
         // In the simplified UI, fragments are not used at all and we instead
         // use the older PreferenceActivity APIs.
+
+        addPreferencesFromResource(R.xml.pref_container);
 
         // Add 'general' preferences.
         PreferenceCategory fakeHeader = new PreferenceCategory(this);
         fakeHeader.setTitle(R.string.pref_header_general);
-        // getPreferenceScreen().addPreference(fakeHeader);
+        getPreferenceScreen().addPreference(fakeHeader);
         addPreferencesFromResource(R.xml.pref_general);
+
+
+        CheckBoxPreference preferenciaOrden = (CheckBoxPreference) findPreference("orden_ultimos_anadidos");
+        preferenciaOrden.
+                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        if (newValue.toString().equals("true")) {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean("orden_ultimos_fecha_compra", true);
+                            editor.commit();
+                        } else {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean("orden_ultimos_fecha_compra", false);
+                            editor.commit();
+                        }
+                        return true;
+                    }
+                });
+
+        ListPreference preferenciaModeda = (ListPreference) findPreference("currencys");
+        preferenciaModeda.
+                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+                        SharedPreferences.Editor editor = settings.edit();
+                        editor.putString("currency", newValue.toString());
+                        editor.commit();
+
+                        return true;
+                    }
+                });
+
+
+
+        CheckBoxPreference preferenciaDetalle = (CheckBoxPreference) findPreference("detalle_imagen");
+        preferenciaDetalle.
+                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        if (newValue.toString().equals("true")) {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean("detalle_imagen", true);
+                            editor.commit();
+                        } else {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean("detalle_imagen", false);
+                            editor.commit();
+                        }
+                        return true;
+                    }
+                });
+
 
         // Add 'data and sync' preferences, and a corresponding header.
         PreferenceCategory fakeHeader2 = new PreferenceCategory(this);
@@ -164,10 +224,8 @@ public class Opciones extends PreferenceActivity {
         getPreferenceScreen().addPreference(fakeHeader2);
         addPreferencesFromResource(R.xml.pref_datos_seguridad);
 
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
-                0);
 
-        ListPreference preferenciaModeda = (ListPreference) findPreference("currencys");
+        /*ListPreference preferenciaModeda = (ListPreference) findPreference("currencys");
         preferenciaModeda.
                 setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 
@@ -199,7 +257,7 @@ public class Opciones extends PreferenceActivity {
                         }
                         return true;
                     }
-                });
+                });*/
 
         // Establece las acciones al hacer click en las preferencias
         Preference preferenciaCopiaExportar = (Preference) findPreference("exportar_copia_seguridad");

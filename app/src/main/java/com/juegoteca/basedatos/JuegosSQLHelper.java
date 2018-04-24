@@ -524,7 +524,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
     }
 
     /**
-     * Devuelve un cursor con los últimos añadidos
+     * Devuelve un cursor con los últimos añadidos ordenados por fecha de creación
      *
      * @return
      */
@@ -533,6 +533,23 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT * FROM juego ORDER BY fecha_creacion DESC",
+                    null);
+        } catch (Exception e) {
+            return null;
+        }
+        return c;
+    }
+
+    /**
+     * Devuelve un cursor con los últimos añadidos
+     *
+     * @return
+     */
+    public Cursor getUltimosJuegosAnadidosFechaCompra() {
+        Cursor c = null;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            c = db.rawQuery("SELECT * FROM juego ORDER BY fecha_compra DESC",
                     null);
         } catch (Exception e) {
             return null;

@@ -73,6 +73,14 @@ public class InicioMasonry extends Activity {
 
         });
 
+
+        if(getIntent().getIntExtra("SCROLL_Y",0)>0){
+            mRecyclerView.smoothScrollToPosition( getIntent().getIntExtra("SCROLL_Y",0));
+        }
+
+
+
+
     }
 
     @Override
