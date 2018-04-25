@@ -242,7 +242,7 @@ public class DetalleJuego extends Activity {
                             + utilidades.convertirMilisegundosAFecha(juego
                             .getFechaCompletado()) + ")");
                 } else {
-                    textViewFechaCompletado.setText(getString(R.string.ok));
+                    textViewFechaCompletado.setText(getString(R.string.si));
                 }
             } else {
                 textViewFechaCompletado.setText("-");
