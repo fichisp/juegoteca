@@ -105,7 +105,7 @@ public class InicioMasonry extends Activity {
     }
 
     public void backTop(View view) {
-        mRecyclerView.smoothScrollToPosition(0);
+        mRecyclerView.scrollToPosition(0);
     }
 
     /**

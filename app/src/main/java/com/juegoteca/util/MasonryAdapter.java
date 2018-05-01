@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -79,8 +80,10 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
 
     @Override
     public MasonryView onCreateViewHolder(final ViewGroup parent, int viewType) {
-        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
+        final View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
         final MasonryView masonryView = new MasonryView(layoutView);
+
+
 
 
         layoutView.setOnClickListener(new View.OnClickListener() {
@@ -91,6 +94,36 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
                 detalleJuego(arg0);
             }
         });
+
+        layoutView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(final View view) {
+
+
+                ImageView image = (ImageView) view.findViewById(R.id.img);
+
+                final TextView title = (TextView) view.findViewById(R.id.img_name);
+
+                FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) title.getLayoutParams();
+                //Ajustar el texto a la imagen
+                params.width = image.getWidth();
+                params.height = image.getHeight();
+
+                title.setLayoutParams(params);
+
+                title.setVisibility(View.VISIBLE);
+
+                view.postDelayed(new Runnable() {
+                    public void run() {
+                        title.setVisibility(View.INVISIBLE);
+                    }
+                }, 1500);
+
+                return true;
+
+            }
+        });
+
 
         masonryView.setIsRecyclable(false);
 
@@ -126,8 +159,6 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
         Intent intent;
         final SharedPreferences settings = context.getSharedPreferences("UserInfo",
                 0);
-
-
 
         if (Integer.parseInt(String.valueOf(id.getText())) == -1) {
             intent = new Intent(context, NuevoJuego.class);
