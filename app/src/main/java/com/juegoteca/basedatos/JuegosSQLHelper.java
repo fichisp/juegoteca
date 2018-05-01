@@ -77,7 +77,6 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * Constructor
      *
      * @param context
-     * @param version
      */
     public JuegosSQLHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -108,7 +107,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
             }
             fraw.close();
         } catch (IOException ioe) {
-            Log.e("JuegosSQLHelper - onCreate", ioe.toString());
+            Log.e("onCreate", ioe.toString());
         }
     }
 
@@ -128,13 +127,13 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 try {
                     database.execSQL(linea);
                 } catch (SQLiteConstraintException sicve) {
-                    Log.e("Omitiendo insesión repetida", linea);
+                    Log.e("onUpgrade duplicate", linea);
                 }
             }
 
             fraw.close();
         } catch (IOException ioe) {
-            Log.e("JuegosSQLHelper - onCreate", ioe.toString());
+            Log.e("onUpgrade", ioe.toString());
         }
 
     }
@@ -676,11 +675,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         Cursor c = db.rawQuery("SELECT * FROM favorito WHERE id_juego="
                 + idJuego, null);
         // Si ya está en favoritos, devolvemos el valor -5 para indicarlo
-        if (c != null && c.moveToFirst()) {
-            return true;
-        } else {
-            return false;
-        }
+        return c != null && c.moveToFirst();
     }
 
     /**
@@ -740,7 +735,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 if (c != null && c.moveToFirst()) {
                     return -5;
                 } else {
-                    Log.v("JuegosSQLHelper - insertarFavorito",
+                    Log.v("insertarFavorito",
                             "Juego a insertar (ID): " + id_juego);
                     ContentValues valores = new ContentValues();
                     valores.put("id_juego", id_juego);
@@ -748,7 +743,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 }
 
             } catch (SQLException sqle) {
-                Log.v("JuegosSQLHelper - insertarJuego", sqle.getMessage());
+                Log.v("insertarJuego", sqle.getMessage());
                 return id;
             }
             db.close();

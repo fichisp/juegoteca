@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
-import com.juegoteca.util.AdaptadorJuegosLista;
+import com.juegoteca.util.ListadoJuegosArrayAdapter;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -31,7 +31,7 @@ public class Favoritos extends Activity {
     private Spinner filtroPlataformas;
     private int opcionSeleccionadaPlataformas;
     private JuegosSQLHelper juegoSQLH;
-    private AdaptadorJuegosLista adaptador;
+    private ListadoJuegosArrayAdapter adaptador;
 
 
     /**
@@ -98,7 +98,7 @@ public class Favoritos extends Activity {
                 i++;
             }
             while (c.moveToNext());
-            adaptador = new AdaptadorJuegosLista(this, datosJuegos, false);
+            adaptador = new ListadoJuegosArrayAdapter(this, datosJuegos, false);
             listadoJuegos.setAdapter(adaptador);
             listadoJuegos.setVisibility(View.VISIBLE);
             textoFavoritos.setText(datosJuegos.length + " " + getString(R.string.juegos));

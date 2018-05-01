@@ -208,7 +208,7 @@ public class EditarJuego extends Activity {
      * @param view
      */
     public void cargarCaratula(View view) {
-        ((ImageView) findViewById(R.id.image_view_caratula_editar))
+        findViewById(R.id.image_view_caratula_editar)
                 .setOnClickListener(new OnClickListener() {
                     @Override
                     public void onClick(View arg0) {

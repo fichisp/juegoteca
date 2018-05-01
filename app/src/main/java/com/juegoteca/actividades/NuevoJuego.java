@@ -196,12 +196,6 @@ public class NuevoJuego extends Activity {
             // Validar las fechas antes de guardar
             String fechaLanzamiento = editFechaLanzamiento.getText().toString();
             if (fechaLanzamiento.length() == 0) {
-                // Toast toast = Toast.makeText(getApplicationContext(),
-                // "El campo FECHA DE LANZAMIENTO no puede estar en blanco",
-                // Toast.LENGTH_SHORT);
-                // // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
-                // toast.show();
-                // return;
                 juego.setFechaLanzamiento("0");
             } else {
                 if (utilidades.validaFecha(fechaLanzamiento) != 0) {
@@ -240,15 +234,6 @@ public class NuevoJuego extends Activity {
                 juego.setCompletado(1);
                 String fechaCompletado = editFechaCompletado.getText()
                         .toString();
-                // if(fechaCompletado.length()==0){
-                // Toast toast = Toast.makeText(getApplicationContext(),
-                // "El campo FECHA DE COMPLETADO no puede estar en blanco",
-                // Toast.LENGTH_SHORT);
-                // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
-                // toast.show();
-                // return;
-                // }
-                // else{
                 if (fechaCompletado != null && fechaCompletado.length() > 0) {
                     if (utilidades.validaFecha(fechaCompletado) != 0) {
                         Toast toast = Toast
@@ -256,7 +241,6 @@ public class NuevoJuego extends Activity {
                                         getApplicationContext(),
                                         getString(R.string.campo_fecha_completado_invalido),
                                         Toast.LENGTH_SHORT);
-                        //toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
                         toast.show();
                         return;
                     } else {
@@ -266,7 +250,7 @@ public class NuevoJuego extends Activity {
                 } else {
                     juego.setFechaCompletado("0");
                 }
-                // }
+
             } else {
                 juego.setCompletado(0);
             }
@@ -325,7 +309,6 @@ public class NuevoJuego extends Activity {
                         getString(R.string.error_cargar_caratula),
                         Toast.LENGTH_SHORT);
 
-                //toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 10);
 
                 toast.show();
 
@@ -433,29 +416,6 @@ public class NuevoJuego extends Activity {
                 crearJuego();
                 return true;
             case android.R.id.home:
-                // AlertDialog.Builder builder = new
-                // AlertDialog.Builder(NuevoJuego.this);
-                // builder.setMessage("¿Desea volver atrás? Si lo hace perderá los datos no guardados").setTitle("Cancelar la creación de juego");
-                // builder.setPositiveButton(R.string.ok, new
-                // DialogInterface.OnClickListener() {
-                // @Override
-                // public void onClick(DialogInterface dialog, int id) {
-                // Escoger fichero
-                //
-                // NavUtils.navigateUpFromSameTask(NuevoJuego.this);
-                //
-                // } });
-                //
-                // builder.setNegativeButton(R.string.cancel, new
-                // DialogInterface.OnClickListener() {
-                // @Override
-                // public void onClick(DialogInterface dialog, int id) {
-                // // User cancelled the dialog
-                // return;
-                // }
-                // });
-                // AlertDialog dialog = builder.create();
-                // dialog.show();
                 this.onBackPressed();
 
                 return true;

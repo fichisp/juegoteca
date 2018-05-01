@@ -7,37 +7,22 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.Bitmap.CompressFormat;
-import android.os.AsyncTask;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
-import com.juegoteca.util.JSONParser;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.lang.ref.WeakReference;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Locale;
 
 public class DetalleJuego extends Activity {
@@ -56,9 +41,7 @@ public class DetalleJuego extends Activity {
             textViewFechaCompletado, textViewPrecio, textViewEan,
             textViewComentario, textViewPuntuacion, textViewFormato;
     private String url_insertar, url_buscar, url_subir_imagen;
-    private JSONParser jParser;
     private ProgressDialog dialogoExportar;
-    private DescargarImagen cargarImagenAsicncrona;
     private String[] valoresBusqueda = null;
 
     /**
@@ -75,11 +58,6 @@ public class DetalleJuego extends Activity {
     protected void loadData() {
         Intent intent = getIntent();
         utilidades = new Utilidades(this);
-        url_insertar = this.getResources().getString(R.string.url_insertar);
-        url_buscar = this.getResources().getString(R.string.url_buscar);
-        url_subir_imagen = this.getResources().getString(
-                R.string.url_subir_imagen);
-        jParser = new JSONParser();
         // Recuperamos los valores que nos oueden pasar en el intent
         idJuego = intent.getStringExtra("ID_JUEGO");
         valoresBusqueda = intent.getStringArrayExtra("VALORES");
@@ -119,41 +97,7 @@ public class DetalleJuego extends Activity {
                 .findViewById(R.id.text_puntuacion_detalle));
         textViewFormato = ((TextView) this.findViewById(R.id.formato_detalle));
 
-        // Si es una ficha online se lanza en un hilo nuevo para no bloquear el
-        // principal
-        if (esJuegoOnline) {
-            try {
-                Handler h = new Handler();
-                h.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        try {
-                            List<NameValuePair> params = new ArrayList<NameValuePair>();
-                            params.add((new BasicNameValuePair("id", idJuego)));
-                            juegoJSON = jParser.makeHttpRequest(url_buscar,
-                                    "GET", params);
-                            JSONArray jA = juegoJSON.getJSONArray("juego");
-                            juego = new Juego();
-                            juego.convertirJSON(((JSONObject) jA.get(0)));
-                            cargarFichaJuego(juego);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                            Toast toast = Toast
-                                    .makeText(
-                                            getApplicationContext(),
-                                            getString(R.string.error_cargar_ficha_online),
-                                            Toast.LENGTH_SHORT);
-                            toast.show();
-                            onBackPressed();
-                        }
-                    }
-                });
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        // Si es una ficha local
-        else {
+
             Cursor c = juegosSQLH.buscarJuegoID(idJuego);
             if (c != null && c.moveToFirst()) {
 
@@ -167,7 +111,7 @@ public class DetalleJuego extends Activity {
                 c.close();
                 cargarFichaJuego(juego);
             }
-        }
+
     }
 
     /**
@@ -182,14 +126,10 @@ public class DetalleJuego extends Activity {
             imageViewCaratula.setImageDrawable((this.getResources()
                     .getDrawable(R.drawable.sinimagen)));
         } else {
-            if (esJuegoOnline) {
-                cargarImagenAsicncrona = new DescargarImagen(imageViewCaratula);
-                cargarImagenAsicncrona.execute(juego.getCaratula());
-            } else {
                 imageViewCaratula.setImageBitmap(utilidades
                         .decodeFile(new File(this.getFilesDir().getPath() + "/"
                                 + juego.getCaratula())));
-            }
+
         }
         // Título de la actividad igual al nombre del juego
         textViewTitulo.setText(juego.getTitulo());
@@ -270,15 +210,15 @@ public class DetalleJuego extends Activity {
         } else {
             // Estos campos no se cargan cuando es una ficha de un juego
             // online
-            ((LinearLayout) findViewById(R.id.linear_detalle_fecha_compra))
+            findViewById(R.id.linear_detalle_fecha_compra)
                     .setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.linear_detalle_precio))
+            findViewById(R.id.linear_detalle_precio)
                     .setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.linear_detalle_completado))
+            findViewById(R.id.linear_detalle_completado)
                     .setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.linear_detalle_comentario))
+            findViewById(R.id.linear_detalle_comentario)
                     .setVisibility(View.GONE);
-            ((LinearLayout) findViewById(R.id.linear_detalle_puntuacion))
+            findViewById(R.id.linear_detalle_puntuacion)
                     .setVisibility(View.GONE);
         }
     }
@@ -346,30 +286,7 @@ public class DetalleJuego extends Activity {
         }
     }
 
-    /**
-     * Importar la ficha online de un juego a la base de datos local. Llama a la
-     * tarea asíncrona ImportarJuego para realizar la acción
-     */
-    private void importarJuego() {
-        new ImportarJuego().execute();
-    }
 
-    /**
-     * Sube la ficha local a la BBDD de la aplicación para su contribución.
-     * Llama a la tarea asíncrona ExportarJuego para realizar la acción.
-     */
-    private void exportarJuego() {
-        final SharedPreferences settings = getSharedPreferences("UserInfo", 0);
-        if (!settings.contains("usuario")) {
-            Toast t = Toast.makeText(getApplicationContext(),
-                    "Tienes que iniciar sesion para poder exportar un juego",
-                    Toast.LENGTH_SHORT);
-            t.show();
-        } else {
-            new ExportarJuego().execute();
-        }
-
-    }
 
     /**
      * Añade el juego actual a la lista de favoritos
@@ -466,9 +383,6 @@ public class DetalleJuego extends Activity {
                     startActivity(intent);
                 } else if (getIntent().getBooleanExtra("GRID", false)) {
                     Intent intent = new Intent(this, InicioMasonry.class);
-                    if(getIntent().getIntExtra("SCROLL_Y",0)>0){
-                        intent.putExtra("SCROLL_Y", getIntent().getIntExtra("SCROLL_Y",0));
-                    }
                     startActivity(intent);
                     finish();
                 } else {
@@ -531,13 +445,6 @@ public class DetalleJuego extends Activity {
             case R.id.action_favorito_eliminar:
                 eliminarFavorito();
                 return true;
-            case R.id.action_importar:
-                importarJuego();
-                return true;
-            // Version 1.2
-            // case R.id.action_exportar:
-            // exportarJuego();
-            // return true;
             case R.id.action_editar:
                 intent = new Intent(this, EditarJuego.class);
                 intent.putExtra("ID_JUEGO", idJuego);
@@ -616,290 +523,8 @@ public class DetalleJuego extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
-        // unbind all drawables starting from the first viewgroup
         utilidades.unbindDrawables(findViewById(R.id.linear_detalle_all));
-        if (cargarImagenAsicncrona != null) {
-            cargarImagenAsicncrona.cancel(true);
-        }
-
-        // indicate to the vm that it would be a good time to run the gc
         System.gc();
     }
 
-    /**
-     * Clase asíncrona para la exportación de una ficha a la base de datos del
-     * servidor.
-     *
-     * @author alvaro
-     */
-    private class ExportarJuego extends AsyncTask<Void, Void, Boolean> {
-
-        private String mensajeError = "";
-
-        /**
-         * Muestra un diálogo de progreso que se mostrará mientras la tarea se
-         * ejecuta.
-         */
-        @Override
-        protected void onPreExecute() {
-            dialogoExportar = ProgressDialog.show(DetalleJuego.this, null,
-                    "Compartiendo juego...", true);
-
-        }
-
-        /**
-         * Realiza la conexión con el servidor. Envía los datos en JSON y
-         * tranfiere la imagen.
-         */
-        @Override
-        protected Boolean doInBackground(Void... parameters) {
-            boolean juegoExportado = false;
-            final SharedPreferences settings = getSharedPreferences("UserInfo",
-                    0);
-            try {
-                // Establecemos los parámetros que vamos a necesitar
-                List<NameValuePair> params = new ArrayList<NameValuePair>();
-                params.add(new BasicNameValuePair("ean", String.valueOf(juego
-                        .getEan())));
-                params.add(new BasicNameValuePair("titulo", juego.getTitulo()));
-                params.add(new BasicNameValuePair("compania", juego
-                        .getCompania()));
-                params.add(new BasicNameValuePair("genero", String
-                        .valueOf(juego.getGenero())));
-                params.add(new BasicNameValuePair("plataforma", String
-                        .valueOf(juego.getPlataforma())));
-                params.add(new BasicNameValuePair("clasificacion", String
-                        .valueOf(juego.getClasificacion())));
-                params.add(new BasicNameValuePair("idioma", String
-                        .valueOf(juego.getIdioma())));
-                params.add(new BasicNameValuePair("fecha_lanzamiento", juego
-                        .getFechaLanzamiento()));
-                params.add(new BasicNameValuePair("fecha_compra", ""));
-                params.add(new BasicNameValuePair("precio", ""));
-                params.add(new BasicNameValuePair("completado", ""));
-                params.add(new BasicNameValuePair("resumen", juego.getResumen()));
-                params.add(new BasicNameValuePair("fecha_creacion", ""));
-                params.add(new BasicNameValuePair("fecha_completado", ""));
-                try {
-
-                    if (utilidades.subirFichero(
-                            getApplicationContext().getFilesDir().getPath()
-                                    + "/" + juego.getCaratula(),
-                            url_subir_imagen) == 200) {
-                        params.add(new BasicNameValuePair("caratula", juego
-                                .getCaratula()));
-                    } else {
-                        params.add(new BasicNameValuePair("caratula", ""));
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                    params.add(new BasicNameValuePair("caratula", ""));
-                }
-                params.add(new BasicNameValuePair("usuario", settings
-                        .getString("usuario", "")));
-
-                // Hacemos la llamada al PHP enviando los parámetros en el POST
-                JSONObject json = jParser.makeHttpRequest(url_insertar, "POST",
-                        params);
-
-                // Compromabamos el resultado de la operación con el valor
-                // TAG_SUCESS que devolverá la petición
-                try {
-                    int success = Integer.valueOf(json.get("success")
-                            .toString());
-
-                    // La inserción se completó con éxito
-                    switch (success) {
-                        case 1:
-                            juegoExportado = true;
-                            break;
-                        case 3:
-                            mensajeError = "No puede exportar el juego porque su cuenta ha sido baneada";
-                            break;
-                        default:
-                            mensajeError = "No se ha podido exportar el juego";
-                            break;
-                    }
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            } catch (Exception e) {
-            }
-            return juegoExportado;
-        }
-
-        /**
-         * Muestra el resultado de la operación a través de un Toast.
-         */
-        @Override
-        protected void onPostExecute(Boolean result) {
-            dialogoExportar.dismiss();
-            Toast resultadoExportacion;
-            if (result) {
-                resultadoExportacion = Toast
-                        .makeText(
-                                getApplicationContext(),
-                                "Gracias por colaborar. Tu juego será incluido en la base de datos una vez validado.",
-                                Toast.LENGTH_SHORT);
-                resultadoExportacion.show();
-            } else {
-                resultadoExportacion = Toast.makeText(getApplicationContext(),
-                        mensajeError, Toast.LENGTH_SHORT);
-                resultadoExportacion.show();
-            }
-            return;
-        }
-    }
-
-    /**
-     * Clase asíncrona para la importación de una ficha desde la base de datos
-     * del servidor.
-     *
-     * @author alvaro
-     */
-    private class ImportarJuego extends AsyncTask<Void, Void, Boolean> {
-        long id;
-
-        /**
-         * Muestra un diálogo de progreso que se mostrará mientras la tarea se
-         * ejecuta.
-         */
-        @Override
-        protected void onPreExecute() {
-            // TODO: String
-            dialogoExportar = ProgressDialog.show(DetalleJuego.this, null,
-                    "Importando juego...", true);
-
-        }
-
-        /**
-         * Inserta el juego que se está visualizando en la base de datos del
-         * dispositovo y descarga la imagen asociada.
-         */
-        @Override
-        protected Boolean doInBackground(Void... parameters) {
-            // Insertamos en la base de datos
-            if ((id = juegosSQLH.insertarJuego(juego)) > 0) {
-                juego.setId(id);
-                // Descargar la imagen de la caratula
-                if (juego.getCaratula().length() > 0) {
-                    try {
-                        String nombreFichero = utilidades.encriptar(juego
-                                .getTitulo() + juego.getEan());
-                        String extensionFichero = juego.getCaratula()
-                                .substring(
-                                        juego.getCaratula().lastIndexOf('.'),
-                                        juego.getCaratula().length());
-                        File destino = new File(getApplicationContext()
-                                .getFilesDir().getPath()
-                                + "/"
-                                + nombreFichero
-                                + extensionFichero);
-                        Bitmap bmOriginal = utilidades.descargarImagen(juego
-                                .getCaratula());
-                        Bitmap bmEscalado = utilidades.redimensionarImagen(
-                                bmOriginal, 600);
-                        bmEscalado.compress(CompressFormat.JPEG, 90,
-                                new FileOutputStream(destino));
-                        juego.setCaratula(nombreFichero + extensionFichero);
-                    } catch (IOException ioe) {
-                        Toast toast = Toast
-                                .makeText(
-                                        getApplicationContext(),
-                                        "No se puede copiar la carátula al directorio de la apliación",
-                                        Toast.LENGTH_SHORT);
-                        toast.show();
-                        juego.setCaratula("");
-                    }
-                }
-                juegosSQLH.actualizarJuego(juego);
-                return true;
-            } else {
-                if (id == -5) {
-                    return false;
-                } else {
-                    return null;
-                }
-            }
-        }
-
-        /**
-         * Muestra el resultado de la operación a través de un Toast.
-         */
-        @Override
-        protected void onPostExecute(Boolean result) {
-            dialogoExportar.dismiss();
-            Toast resultadoExportacion;
-            if (result == null) {
-                resultadoExportacion = Toast.makeText(getApplicationContext(),
-                        "Error al importar el juego", Toast.LENGTH_SHORT);
-                resultadoExportacion.show();
-            } else {
-                if (result) {
-                    Toast toast = Toast.makeText(getApplicationContext(),
-                            "Juego guardado", Toast.LENGTH_SHORT);
-                    toast.show();
-                    Intent intent = new Intent(DetalleJuego.this,
-                            EditarJuego.class);
-                    intent.putExtra("ID_JUEGO", String.valueOf(id));
-                    startActivity(intent);
-                } else {
-                    resultadoExportacion = Toast.makeText(
-                            getApplicationContext(),
-                            "Ya tienes este juego en tu colección.",
-                            Toast.LENGTH_SHORT);
-                    resultadoExportacion.show();
-                }
-            }
-            return;
-        }
-    }
-
-    /**
-     * Clase asíncrona para la descarga de imágenes en segudo plano. Usada al
-     * visualizar una ficha de la base de datos online sin tener que esperar a
-     * que se descargue la imagen.
-     *
-     * @author alvaro
-     */
-    class DescargarImagen extends AsyncTask<String, Void, Bitmap> {
-
-        private final WeakReference imageViewReference;
-
-        public DescargarImagen(ImageView imageView) {
-            imageViewReference = new WeakReference(imageView);
-        }
-
-        /**
-         * Descarga la imagen asociada al juego.
-         */
-        @Override
-        protected Bitmap doInBackground(String... params) {
-            return utilidades.descargarImagen(params[0]);
-        }
-
-        /**
-         * Asocia la imagen descargada con el imageView correspondiente
-         */
-        @Override
-        protected void onPostExecute(Bitmap bitmap) {
-            if (isCancelled()) {
-                bitmap = null;
-            }
-            if (imageViewReference != null) {
-                ImageView imageView = (ImageView) imageViewReference.get();
-                if (imageView != null) {
-                    if (bitmap != null) {
-                        imageView.setImageBitmap(bitmap);
-                    } else {
-                        imageView.setImageDrawable(imageView.getContext()
-                                .getResources()
-                                .getDrawable(R.drawable.sinimagen));
-                    }
-                }
-
-            }
-        }
-    }
 }

@@ -7,15 +7,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
-import com.juegoteca.util.MasonryAdapter;
-import com.juegoteca.util.SpacesItemDecoration;
+import com.juegoteca.util.GridJuegosMasonryAdapterVertical;
+import com.juegoteca.util.GridJuegosItemDecorationVertical;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -45,9 +44,9 @@ public class InicioMasonry extends Activity {
         layoutManager.setAutoMeasureEnabled(false);
         mRecyclerView.setLayoutManager(layoutManager);
 
-        MasonryAdapter adapter = new MasonryAdapter(this);
+        GridJuegosMasonryAdapterVertical adapter = new GridJuegosMasonryAdapterVertical(this);
         mRecyclerView.setAdapter(adapter);
-        SpacesItemDecoration decoration = new SpacesItemDecoration(1);
+        GridJuegosItemDecorationVertical decoration = new GridJuegosItemDecorationVertical(1);
         mRecyclerView.addItemDecoration(decoration);
 
         ImageButton layoutBotones = (ImageButton) findViewById(R.id.boton_top);
@@ -72,14 +71,6 @@ public class InicioMasonry extends Activity {
             }
 
         });
-
-
-  /*      if(getIntent().getIntExtra("SCROLL_Y",0)>0){
-            mRecyclerView.smoothScrollToPosition( getIntent().getIntExtra("SCROLL_Y",0));
-        }*/
-
-
-
 
     }
 

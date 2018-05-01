@@ -225,42 +225,8 @@ public class Opciones extends PreferenceActivity {
         addPreferencesFromResource(R.xml.pref_datos_seguridad);
 
 
-        /*ListPreference preferenciaModeda = (ListPreference) findPreference("currencys");
-        preferenciaModeda.
-                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                    public boolean onPreferenceChange(Preference preference, Object newValue) {
-
-                            SharedPreferences.Editor editor = settings.edit();
-                            editor.putString("currency", newValue.toString());
-                            editor.commit();
-
-                        return true;
-                    }
-                });
-
-
-
-        CheckBoxPreference preferenciaDetalle = (CheckBoxPreference) findPreference("detalle_imagen");
-        preferenciaDetalle.
-                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
-
-                    public boolean onPreferenceChange(Preference preference, Object newValue) {
-                        if (newValue.toString().equals("true")) {
-                            SharedPreferences.Editor editor = settings.edit();
-                            editor.putBoolean("detalle_imagen", true);
-                            editor.commit();
-                        } else {
-                            SharedPreferences.Editor editor = settings.edit();
-                            editor.putBoolean("detalle_imagen", false);
-                            editor.commit();
-                        }
-                        return true;
-                    }
-                });*/
-
         // Establece las acciones al hacer click en las preferencias
-        Preference preferenciaCopiaExportar = (Preference) findPreference("exportar_copia_seguridad");
+        Preference preferenciaCopiaExportar = findPreference("exportar_copia_seguridad");
         preferenciaCopiaExportar
                 .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
@@ -277,7 +243,7 @@ public class Opciones extends PreferenceActivity {
                     }
                 });
 
-        Preference preferenciaCopiaImportar = (Preference) findPreference("importar_restaurar_seguridad");
+        Preference preferenciaCopiaImportar = findPreference("importar_restaurar_seguridad");
 
         preferenciaCopiaImportar
                 .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
@@ -321,7 +287,7 @@ public class Opciones extends PreferenceActivity {
                 });
 
 
-        Preference preferenciaBorrar = (Preference) findPreference("borrar_todo");
+        Preference preferenciaBorrar = findPreference("borrar_todo");
         preferenciaBorrar
                 .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
@@ -348,10 +314,10 @@ public class Opciones extends PreferenceActivity {
         }
 
         String version = res.getString(R.string.pref_title_version, versionName);
-        Preference preferenciaInicioSesion = (Preference) findPreference("about");
+        Preference preferenciaInicioSesion = findPreference("about");
         preferenciaInicioSesion.setTitle(version);
 
-        Preference preferenciaLicencia = (Preference) findPreference("licenses");
+        Preference preferenciaLicencia = findPreference("licenses");
         preferenciaLicencia
                 .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
@@ -452,62 +418,6 @@ public class Opciones extends PreferenceActivity {
         }
     }
 
-    /**
-     * @author alvaro
-     */
-    private class CopiaSeguridad extends AsyncTask<Void, Void, Integer> {
-        @Override
-        protected void onPreExecute() {
-            dialogoCopia = ProgressDialog.show(Opciones.this, null,
-                    "Realizando copia de seguridad...", true);
-        }
-
-        @Override
-        protected void onPostExecute(Integer result) {
-            dialogoCopia.dismiss();
-            Toast t;
-            switch (result) {
-                case 0:
-                    t = Toast.makeText(getApplicationContext(),
-                            "No se ha podido realizar la copia de seguridad.",
-                            Toast.LENGTH_SHORT);
-                    break;
-                case 1:
-                    t = Toast
-                            .makeText(
-                                    getApplicationContext(),
-                                    "No se ha podido realizar la copia de seguridad. La cuenta de usuario no está activada",
-                                    Toast.LENGTH_SHORT);
-                    break;
-                case 2:
-                    t = Toast.makeText(getApplicationContext(),
-                            "Copia de seguridad guardada correctamente.",
-                            Toast.LENGTH_SHORT);
-                    break;
-                case 3:
-                    t = Toast
-                            .makeText(
-                                    getApplicationContext(),
-                                    "No se ha podido realizar la copia de seguridad. La cuenta de usuario está baneada",
-                                    Toast.LENGTH_SHORT);
-                    break;
-
-                default:
-                    t = Toast.makeText(getApplicationContext(),
-                            "No se ha podido realizar la copia de seguridad.",
-                            Toast.LENGTH_SHORT);
-                    break;
-            }
-            t.show();
-            return;
-        }
-
-        @Override
-        protected Integer doInBackground(Void... arg0) {
-            return utilidades.hacerCopiaSeguridadServidor();
-
-        }
-    }
 
     /**
      * @author alvaro
@@ -529,6 +439,8 @@ public class Opciones extends PreferenceActivity {
                     Uri.parse("file://" + result));
             shareIntent.setType("application/zip");
             startActivity(Intent.createChooser(shareIntent, "Enviar a..."));
+
+
             return;
         }
 
@@ -541,49 +453,6 @@ public class Opciones extends PreferenceActivity {
         }
     }
 
-    /**
-     * @author alvaro
-     */
-    private class RestaurarCopia extends AsyncTask<Void, Void, Integer> {
-        @Override
-        protected void onPreExecute() {
-            dialogoCopia = ProgressDialog.show(Opciones.this, null,
-                    "Restaurando copia de seguridad...", true);
-
-        }
-
-        @Override
-        protected Integer doInBackground(Void... params) {
-            return utilidades.restaurarCopiaSeguridadServidor();
-        }
-
-        @Override
-        protected void onPostExecute(Integer result) {
-            dialogoCopia.dismiss();
-            Toast t;
-            switch (result) {
-                case 1:
-                    utilidades
-                            .reiniciarApp(getString(R.string.copia_restaurada_ok));
-                    break;
-                case 2:
-                    t = Toast.makeText(getApplicationContext(),
-                            "No se hay ninguna copia de seguridad en el servidor.",
-                            Toast.LENGTH_SHORT);
-                    t.show();
-                    break;
-                case 3:
-                    t = Toast
-                            .makeText(
-                                    getApplicationContext(),
-                                    "No se ha podido restaurar la copia de seguridad porque se cuenta ha sido baneada.",
-                                    Toast.LENGTH_SHORT);
-                    t.show();
-                    break;
-            }
-            return;
-        }
-    }
 
     /**
      * @author alvaro

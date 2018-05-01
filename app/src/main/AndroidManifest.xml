@@ -137,11 +137,6 @@
                 android:value="com.actividades.Inicio" />
         </activity>
         <activity
-            android:name="com.juegoteca.actividades.IniciarSesion"
-            android:label="@string/title_activity_iniciar_sesion"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize|stateVisible" />
-        <activity
             android:name="com.juegoteca.actividades.Plataforma"
             android:label="@string/title_activity_plataforma"
             android:screenOrientation="portrait">
@@ -149,10 +144,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.actividades.DetalleJuego" />
         </activity>
-        <activity
-            android:name="com.juegoteca.actividades.Registro"
-            android:label="@string/title_activity_registro"
-            android:screenOrientation="portrait" />
         <activity
             android:name="com.juegoteca.actividades.Favoritos"
             android:label="@string/title_activity_favoritos"

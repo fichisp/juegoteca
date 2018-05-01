@@ -7,10 +7,10 @@ import android.view.View;
 /**
  * Created by Suleiman on 26-07-2015.
  */
-public class SpacesItemDecoration extends RecyclerView.ItemDecoration {
+public class GridJuegosItemDecorationVertical extends RecyclerView.ItemDecoration {
     private final int mSpace;
 
-    public SpacesItemDecoration(int space) {
+    public GridJuegosItemDecorationVertical(int space) {
         this.mSpace = space;
     }
 

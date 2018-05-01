@@ -8,27 +8,19 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
-import android.graphics.Point;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Environment;
-import android.os.Parcelable;
 import android.os.Process;
-import android.provider.Settings.Secure;
 import android.text.Html;
-import android.view.Display;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnHoverListener;
 import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
-import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
@@ -39,14 +31,7 @@ import com.juegoteca.actividades.Splash;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.mijuegoteca.R;
 
-import org.apache.http.NameValuePair;
-import org.apache.http.message.BasicNameValuePair;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -56,9 +41,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.math.BigInteger;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
@@ -81,27 +63,14 @@ import java.util.zip.ZipOutputStream;
 public class Utilidades {
 
     private static final boolean ANUNCIOS = true;
-    private static final String FTP_HOST = "**********";
-    private static final String FTP_USER = "**********";
-    private static final String FTP_PASS = "**********";
-    private static final String MY_AD_UNIT_ID = "****************";
     private JuegosSQLHelper juegosSQLH;
     private Context context;
     private String url_subir_copia, url_bajar_copia, url_comprobar_subir_copia,
             url_registrar_trial;
-    private int serverResponseCode;
 
     public Utilidades(Context context) {
         this.context = context;
         juegosSQLH = new JuegosSQLHelper(context);
-        url_subir_copia = context.getResources().getString(
-                R.string.url_subir_copia);
-        url_bajar_copia = context.getResources().getString(
-                R.string.url_bajar_copia);
-        url_comprobar_subir_copia = context.getResources().getString(
-                R.string.url_comprobar_subir_copia);
-        url_registrar_trial = context.getResources().getString(
-                R.string.url_registrar_trial);
     }
 
     /**
@@ -333,8 +302,8 @@ public class Utilidades {
                 View v = super.getView(position, convertView, parent);
 
                 ((TextView) v).setTextSize(20);
-                ((TextView) v).setPadding(15, 20, 15, 20);
-                ((TextView) v).setOnHoverListener(new OnHoverListener() {
+                v.setPadding(15, 20, 15, 20);
+                v.setOnHoverListener(new OnHoverListener() {
 
                     @Override
                     public boolean onHover(View v, MotionEvent event) {
@@ -352,44 +321,6 @@ public class Utilidades {
         compania.setAdapter(dataAdapter);
     }
 
-    /**
-     * Carga un listado con los emails de las cuentas del dispositovo para el
-     * autocompletar del campo
-     *
-     * @param email
-     */
-    public void cargarCuentasDispositivo(AutoCompleteTextView email) {
-//        // Autocompletar con los emails del dispositivo
-//        Pattern emailPattern = Patterns.EMAIL_ADDRESS; // API level 8+
-//        Account[] accounts = AccountManager.get(context).getAccounts();
-//        ArrayList<String> emails = new ArrayList<String>();
-//        int index = 0;
-//        for (Account account : accounts) {
-//            if (emailPattern.matcher(account.name).matches()) {
-//                String possibleEmail = account.name;
-//                if (!emails.contains(possibleEmail)) {
-//                    emails.add(possibleEmail);
-//                }
-//            }
-//        }
-//
-//        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
-//                android.R.layout.simple_spinner_item, emails) {
-//            public View getView(int position, View convertView, ViewGroup parent) {
-//                View v = super.getView(position, convertView, parent);
-//
-//                ((TextView) v).setTextSize(20);
-//                ((TextView) v).setPadding(15, 20, 15, 20);
-//
-//                return v;
-//            }
-//
-//        };
-//        dataAdapter
-//                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        email.setAdapter(dataAdapter);
-
-    }
 
     /**
      * Copia un fichero
@@ -526,11 +457,7 @@ public class Utilidades {
         if (anio % 400 == 0) {
             return true;
         } else {
-            if (anio % 4 == 0 && anio % 100 != 0) {
-                return true;
-            } else {
-                return false;
-            }
+            return anio % 4 == 0 && anio % 100 != 0;
         }
     }
 
@@ -573,172 +500,6 @@ public class Utilidades {
         }
     }
 
-    /**
-     * * Descarga una imagen desde un servidor y tranforma en un bitmap
-     *
-     * @param urlImagen
-     * @return
-     */
-    public Bitmap descargarImagen(String urlImagen) {
-        Bitmap bitmap = null;
-        try {
-            URL url = new URL(urlImagen);
-            HttpURLConnection connection = (HttpURLConnection) url
-                    .openConnection();
-            // connection.setDoInput(true);
-            connection.connect();
-            InputStream input = connection.getInputStream();
-            bitmap = BitmapFactory.decodeStream(input);
-            input.close();
-            connection.disconnect();
-        } catch (IOException ioe) {
-
-        }
-        return bitmap;
-    }
-
-    /**
-     * Sube un fichero de copia de seguridad al servidor
-     *
-     * @param rutaFichero Ruta del fichero a subir
-     * @return int Código de respuesta del servidor en forma de
-     */
-    public int subirFichero(String rutaFichero, String ubicacion) {
-
-        String fichero = rutaFichero;
-
-        HttpURLConnection conexion = null;
-        DataOutputStream dos = null;
-        String lineEnd = "\r\n";
-        String twoHyphens = "--";
-        String boundary = "*****";
-        int bytesRead, bytesAvailable, bufferSize;
-        byte[] buffer;
-        int maxBufferSize = 1 * 1024 * 1024;
-        File sourceFile = new File(rutaFichero);
-
-        try {
-            // Abrir la conexión
-            FileInputStream fileInputStream = new FileInputStream(sourceFile);
-            SharedPreferences settings = context.getSharedPreferences(
-                    "UserInfo", 0);
-            URL url = new URL(ubicacion + "?usuario="
-                    + settings.getString("usuario", ""));
-            conexion = (HttpURLConnection) url.openConnection();
-            conexion.setDoInput(true); // Allow Inputs
-            conexion.setDoOutput(true); // Allow Outputs
-            conexion.setUseCaches(false); // Don't use a Cached Copy
-            conexion.setRequestMethod("POST");
-            conexion.setRequestProperty("Connection", "Keep-Alive");
-            conexion.setRequestProperty("ENCTYPE", "multipart/form-data");
-            conexion.setRequestProperty("Content-Type",
-                    "multipart/form-data;boundary=" + boundary);
-            conexion.setRequestProperty("uploaded_file", fichero);
-
-            dos = new DataOutputStream(conexion.getOutputStream());
-
-            dos.writeBytes(twoHyphens + boundary + lineEnd);
-            dos.writeBytes("Content-Disposition: form-data; name='uploaded_file';filename='"
-                    + fichero + "'" + lineEnd);
-
-            dos.writeBytes(lineEnd);
-
-            // Leer el fichero
-            bytesAvailable = fileInputStream.available();
-
-            bufferSize = Math.min(bytesAvailable, maxBufferSize);
-            buffer = new byte[bufferSize];
-
-            bytesRead = fileInputStream.read(buffer, 0, bufferSize);
-
-            while (bytesRead > 0) {
-                dos.write(buffer, 0, bufferSize);
-                bytesAvailable = fileInputStream.available();
-                bufferSize = Math.min(bytesAvailable, maxBufferSize);
-                bytesRead = fileInputStream.read(buffer, 0, bufferSize);
-            }
-
-            // Multipart form data necesaria tras subir los datos del fichero
-            dos.writeBytes(lineEnd);
-            dos.writeBytes(twoHyphens + boundary + twoHyphens + lineEnd);
-
-            // Respuesta del servidor
-            serverResponseCode = conexion.getResponseCode();
-            fileInputStream.close();
-            dos.flush();
-            dos.close();
-
-        } catch (FileNotFoundException fnfe) {
-            return 0;
-        } catch (MalformedURLException ex) {
-            return 0;
-        } catch (Exception e) {
-            return 0;
-        }
-        return serverResponseCode;
-
-    }
-
-    /**
-     * Realiza una copia de seguridad y la almacena en el servidor
-     *
-     * @return
-     */
-    public int hacerCopiaSeguridadServidor() {
-        int copiaSubida = 0;
-        switch (comprobarSubirCopia()) {
-            case 0:// Usuario no encontrado
-                break;
-            case 1:// Usuario sin activar
-                copiaSubida = 1;
-                break;
-            case 2: // Usuario válido
-                String zip = generarFicheroCopiaSeguridad();
-                // Subimos al servidor el fichero comprimido
-                // if(subirFichero(zip, url_subir_copia) == 200){
-                // copiaSubida = 2;
-                // }
-                //copiaSubida = subirCopiaFTP(new File(zip));
-                // Borrar el fichero temporal con la copia
-                File fileZIP = new File(zip);
-                fileZIP.delete();
-                break;
-            case 3:// Usuario baneado
-                copiaSubida = 3;
-                break;
-        }
-        return copiaSubida;
-    }
-
-    /**
-     * Comprueba si el usuario actual puede subir una copia al servidor
-     *
-     * @return
-     */
-    public int comprobarSubirCopia() {
-        int estado = 0;
-        SharedPreferences settings = context
-                .getSharedPreferences("UserInfo", 0);
-
-        List<NameValuePair> paramsJS = new ArrayList<NameValuePair>();
-        paramsJS.add((new BasicNameValuePair("usuario", settings.getString(
-                "usuario", ""))));
-
-        JSONParser jParser = new JSONParser();
-        JSONObject jsComprobarCopia = jParser.makeHttpRequest(
-                url_comprobar_subir_copia, "GET", paramsJS);
-        if (jsComprobarCopia != null) {
-            try {
-                estado = Integer.valueOf(jsComprobarCopia.get("success")
-                        .toString());
-            } catch (NumberFormatException e) {
-                e.printStackTrace();
-            } catch (JSONException e) {
-                e.printStackTrace();
-            }
-        }
-        return estado;
-    }
 
     /**
      * Realiza una copia de seguridad para que el usuario la almacene o la envíe
@@ -834,119 +595,6 @@ public class Utilidades {
         return zip;
     }
 
-    /**
-     * Descarga un fichero de copia de seguridad del servidor (si existe),
-     * eliminanando lo datos actuales de la aplicación sustituyéndolos por los
-     * contenidos en el fichero de copia de seguridad
-     *
-     * @return int Valor para indicar el resultado de la operacion. Usado para
-     * manejar estados de la cuenta de usuario.
-     */
-    public int restaurarCopiaSeguridadServidor() {
-        int copiaRestaurada = 0;
-        // Consultar en la BBDD online si ha una copia de segiridad para este
-        // usuario
-        String urlCopiaSeguridad = "";
-        SharedPreferences settings = context
-                .getSharedPreferences("UserInfo", 0);
-
-        List<NameValuePair> paramsJS = new ArrayList<NameValuePair>();
-        paramsJS.add((new BasicNameValuePair("usuario", settings.getString(
-                "usuario", ""))));
-
-        JSONParser jParser = new JSONParser();
-        JSONObject jsBajarCopia = jParser.makeHttpRequest(url_bajar_copia,
-                "GET", paramsJS);
-
-        if (jsBajarCopia != null) {
-            try {
-                switch (Integer.valueOf(jsBajarCopia.get("success").toString())) {
-                    case 1:
-                        urlCopiaSeguridad = jsBajarCopia.get("ruta").toString();
-                        final String rutaFicheroTemporal = context.getCacheDir()
-                                .getPath() + "/" + "copia_seguridad.zip";
-                        URL url;
-                        // Descargar el fichero
-                        try {
-                            url = new URL(urlCopiaSeguridad);
-                            HttpURLConnection connection = (HttpURLConnection) url
-                                    .openConnection();
-                            InputStream input = connection.getInputStream();
-                            OutputStream zipTMP = new FileOutputStream(new File(
-                                    rutaFicheroTemporal));
-                            byte[] array = new byte[1000];
-                            int leido = input.read(array);
-                            while (leido > 0) {
-                                zipTMP.write(array, 0, leido);
-                                leido = input.read(array);
-                            }
-                            input.close();
-                            zipTMP.close();
-                        } catch (MalformedURLException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
-                        }
-                        // Crear el directorio "files" si no existe
-                        File files = new File(context.getFilesDir().getPath());
-                        // Descomprimir el fichero
-                        try {
-                            ZipInputStream zis = new ZipInputStream(
-                                    new FileInputStream(rutaFicheroTemporal));
-                            ZipEntry entrada;
-                            // Borrar los ficheros de la carpeta "files" y
-                            // "databases"
-                            borrarTodosDatos(false);
-                            while (null != (entrada = zis.getNextEntry())) {
-                                // Extraer los ficheros en sus correspondientes
-                                // directorios
-                                OutputStream fos = new FileOutputStream(
-                                        context.getApplicationInfo().dataDir + "/"
-                                                + entrada.getName());
-                                int leido;
-                                byte[] buffer = new byte[1024];
-                                while (0 < (leido = zis.read(buffer))) {
-                                    fos.write(buffer, 0, leido);
-                                }
-                                fos.close();
-                                zis.closeEntry();
-                            }
-                            zis.close();
-                            new File(rutaFicheroTemporal).delete();// Borrar la
-                            // copia de
-                            // seguridad
-                            // descargada
-                            copiaRestaurada = 1;
-                        } catch (FileNotFoundException e) {
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
-                        }
-                        break;
-                    case 2:
-                        copiaRestaurada = 2;
-                        break;
-                    case 3:
-                        copiaRestaurada = 3;
-                        break;
-                }
-
-            } catch (NumberFormatException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            } catch (JSONException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }
-
-        } else {
-
-        }
-        return copiaRestaurada;
-    }
 
     /**
      * Abre un fichero seleccionado por el usuario para sobreescribir los datos
@@ -981,17 +629,11 @@ public class Utilidades {
                     zis.closeEntry();
                 }
                 zis.close();
-                // new File(path).delete();//Borrar la copia de seguridad
-                // descargada
-                // Reiniciar la aplicación
-                // reiniciarApp("Copia restaurada. La aplicación se va a reiniciar");
                 copiaRestaurada = true;
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
             return copiaRestaurada;
         } catch (IOException e) {
-            e.printStackTrace();
             return copiaRestaurada;
         }
         return copiaRestaurada;
@@ -1018,8 +660,6 @@ public class Utilidades {
             }
             zis.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
             return zipValido = false;
         }
         return zipValido;
@@ -1118,8 +758,7 @@ public class Utilidades {
             }
             fraw.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+            return;
         }
 
         builder.setMessage(Html.fromHtml(texto)).setTitle(R.string.novedades);
@@ -1146,10 +785,7 @@ public class Utilidades {
      */
     public boolean baseDatosEsVacia() {
         Cursor c = juegosSQLH.getJuegos();
-        if (c == null || !c.moveToFirst()) {
-            return true;
-        }
-        return false;
+        return c == null || !c.moveToFirst();
     }
 
     /**
@@ -1170,33 +806,6 @@ public class Utilidades {
         }
         return hashword;
     }
-
-    /**
-     * Redimensiona un control
-     * @param elemento
-     */
-    public void redimensionarElemento(View elemento) {
-        WindowManager wm = (WindowManager) context
-                .getSystemService(Context.WINDOW_SERVICE);
-        Display display = wm.getDefaultDisplay();
-        int width;
-        int height;
-        if (Build.VERSION.SDK_INT > Build.VERSION_CODES.HONEYCOMB) {
-            Point size = new Point();
-            display.getSize(size);
-            width = size.x;
-            height = size.y;
-        } else {
-            width = display.getWidth(); // deprecated
-            height = display.getHeight();
-        }
-
-        LayoutParams params = (LayoutParams) elemento.getLayoutParams();
-        params.height = Math.round(height / 4f);
-        elemento.setLayoutParams(params);
-    }
-
-    // decodes image and scales it to reduce memory consumption
 
     /**
      * Decodifica una imagen y la escala para reducir el consumo de memoria
@@ -1239,153 +848,5 @@ public class Utilidades {
         } catch (Exception e) {
         }
     }
-
-    /**
-     * Registra un dispositivo en la base de datos online para la versión de
-     * prueba
-     *
-     * @return
-     * @throws JSONException
-     */
-    public boolean registrarDispositivo() throws JSONException {
-        String android_id = Secure.getString(context.getContentResolver(),
-                Secure.ANDROID_ID);
-        List<NameValuePair> params = new ArrayList<NameValuePair>();
-        params.add((new BasicNameValuePair("android_id", android_id)));
-        JSONParser jParser = new JSONParser();
-
-        JSONObject resultadoRegistro = jParser.makeHttpRequest(
-                url_registrar_trial, "GET", params);
-
-        JSONArray jA = resultadoRegistro.getJSONArray("juego");
-        ((JSONObject) jA.get(0)).get("id").toString();
-        return false;
-    }
-
-    /**
-     * Subida de un fichero por FTP
-     *
-     * @param fileName
-     */
-//    public int subirCopiaFTP(File fileName) {
-//        FTPClient client = new FTPClient();
-//
-//        try {
-//            client.connect(FTP_HOST, 21);
-//            client.login(FTP_USER, FTP_PASS);
-//            client.setType(FTPClient.TYPE_BINARY);
-//            client.changeDirectory("/public_html/uploads/copias_seguridad/");
-//
-//            client.upload(fileName, new MyTransferListener());
-//            return 2;
-//
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            try {
-//                client.disconnect(true);
-//            } catch (Exception e2) {
-//                e2.printStackTrace();
-//            }
-//        }
-//        return 0;
-//    }
-
-    /**
-     * Compartir imagen y texto
-     * <p>
-     * Ej:
-     * <p>
-     * <p>
-     * <p>
-     * try { File filePath = "/mnt/sdcard/vmphoto.jpg"; //This is imagefile path
-     * in your change it acc. to your requirement.
-     * share("twitter",filePath.toString(),"Hello"); <<<<<Hello is a text send
-     * acc. to you req.
-     * <p>
-     * } catch(Exception e) { //exception occur might your app like gmail ,
-     * facebook etc not installed or not working correctly. }
-     *
-     * @param nameApp
-     * @param imagePath
-     * @param text
-     */
-
-    public void share(String nameApp, String imagePath, String text) {
-        try {
-            List<Intent> targetedShareIntents = new ArrayList<Intent>();
-            Intent share = new Intent(android.content.Intent.ACTION_SEND);
-            share.setType("image/jpeg");
-            List<ResolveInfo> resInfo = this.context.getPackageManager()
-                    .queryIntentActivities(share, 0);
-            if (!resInfo.isEmpty()) {
-                for (ResolveInfo info : resInfo) {
-                    Intent targetedShare = new Intent(
-                            android.content.Intent.ACTION_SEND);
-                    targetedShare.setType("image/jpeg"); // put here your mime
-                    // type
-                    if (info.activityInfo.packageName.toLowerCase().contains(
-                            nameApp)
-                            || info.activityInfo.name.toLowerCase().contains(
-                            nameApp)) {
-                        targetedShare.putExtra(Intent.EXTRA_SUBJECT, text);
-                        targetedShare.putExtra(Intent.EXTRA_TEXT, text);
-                        targetedShare.putExtra(Intent.EXTRA_STREAM,
-                                Uri.fromFile(new File(imagePath)));
-                        targetedShare.setPackage(info.activityInfo.packageName);
-                        targetedShareIntents.add(targetedShare);
-                    }
-                }
-                Intent chooserIntent = Intent.createChooser(
-                        targetedShareIntents.remove(0), "Select app to share");
-                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS,
-                        targetedShareIntents.toArray(new Parcelable[]{}));
-                this.context.startActivity(chooserIntent);
-            }
-        } catch (Exception e) {
-        }
-    }
-
-//    /**
-//     * @author alvaro
-//     */
-//    public class MyTransferListener implements FTPDataTransferListener {
-//
-//        public void started() {
-//            // Transfer started
-//            // Toast.makeText(context, " Upload Started ...",
-//            // Toast.LENGTH_SHORT).show();
-//            System.out.println(" Upload Started ...");
-//        }
-//
-//        public void transferred(int length) {
-//
-//            // Yet other length bytes has been transferred since the last time
-//            // this
-//            // method was called
-//            // Toast.makeText(context, " transferred ..." + length,
-//            // Toast.LENGTH_SHORT).show();
-//            System.out.println(" transferred ..." + length);
-//        }
-//
-//        public void completed() {
-//            // Transfer completed
-//            // Toast.makeText(context, " completed ...",
-//            // Toast.LENGTH_SHORT).show();
-//            System.out.println(" completed ...");
-//        }
-//
-//        public void aborted() {
-//            // Transfer aborted
-//            // Toast.makeText(context," transfer aborted ,please try again...",
-//            // Toast.LENGTH_SHORT).show();
-//            System.out.println(" aborted ...");
-//        }
-//
-//        public void failed() {
-//            // Transfer failed
-//            System.out.println(" failed ...");
-//        }
-//
-//    }
 
 }

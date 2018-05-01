@@ -10,7 +10,7 @@ import android.widget.TextView;
 import com.juegoteca.basedatos.Juego;
 import com.mijuegoteca.R;
 
-public class AdaptadorJuegosLista extends ArrayAdapter<Juego> {
+public class ListadoJuegosArrayAdapter extends ArrayAdapter<Juego> {
 
     private Activity context;
     private Juego[] juegos;
@@ -22,7 +22,7 @@ public class AdaptadorJuegosLista extends ArrayAdapter<Juego> {
      * @param juegos
      * @param esJuegoOnline
      */
-    public AdaptadorJuegosLista(Activity context, Juego[] juegos, boolean esJuegoOnline) {
+    public ListadoJuegosArrayAdapter(Activity context, Juego[] juegos, boolean esJuegoOnline) {
         super(context, R.layout.listado_juego, juegos);
         this.context = context;
         this.juegos = juegos;

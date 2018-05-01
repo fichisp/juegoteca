@@ -18,7 +18,7 @@ import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
-import com.juegoteca.util.AdaptadorJuegosLista;
+import com.juegoteca.util.ListadoJuegosArrayAdapter;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -30,7 +30,7 @@ public class Pendientes extends Activity {
     private int opcionSeleccionadaPlataformas;
     private Utilidades utilidades;
     private Spinner filtroPlataformas;
-    private AdaptadorJuegosLista adaptador;
+    private ListadoJuegosArrayAdapter adaptador;
     private JuegosSQLHelper juegoSQLH;
 
     /**
@@ -47,7 +47,6 @@ public class Pendientes extends Activity {
         textoPendientes = (TextView) findViewById(R.id.texto_pendientes);
         filtroPlataformas = (Spinner) findViewById(R.id.spinner_filtro_plataforma);
         utilidades.cargarPlataformasBuscador(filtroPlataformas);
-        //utilidades.cargarAnuncio();
         setupActionBar();
         cargarPendientes(0);//Todas las plataformas
         // Filtrado de juegos
@@ -67,7 +66,6 @@ public class Pendientes extends Activity {
             public void onNothingSelected(AdapterView<?> arg0) {
             }
         });
-        //loadAds();
 
 
     }
@@ -100,7 +98,7 @@ public class Pendientes extends Activity {
                 i++;
             }
             while (c.moveToNext());
-            adaptador = new AdaptadorJuegosLista(this, datosJuegos, false);
+            adaptador = new ListadoJuegosArrayAdapter(this, datosJuegos, false);
             listadoJuegos.setAdapter(adaptador);
             listadoJuegos.setVisibility(View.VISIBLE);
             textoPendientes.setText("No hay resultados");

@@ -53,21 +53,18 @@ public class TextWatcherFechas implements TextWatcher {
                     avisoFecha = Toast.makeText(view.getContext(), view
                                     .getContext().getString(R.string.anio_invalido),
                             Toast.LENGTH_SHORT);
-                    // avisoFecha.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                     avisoFecha.show();
                     break;
                 case 2:
                     avisoFecha = Toast.makeText(view.getContext(), view
                                     .getContext().getString(R.string.mes_invalido),
                             Toast.LENGTH_SHORT);
-                    // avisoFecha.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                     avisoFecha.show();
                     break;
                 case 3:
                     avisoFecha = Toast.makeText(view.getContext(), view
                                     .getContext().getString(R.string.dia_invalido),
                             Toast.LENGTH_SHORT);
-                    // avisoFecha.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                     avisoFecha.show();
                     break;
                 default:

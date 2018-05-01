@@ -10,7 +10,6 @@ import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,8 +17,8 @@ import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
-import com.juegoteca.util.MasonryAdapterHorizontal;
-import com.juegoteca.util.RightSpacesItemDecoration;
+import com.juegoteca.util.GridJuegosMasonryAdapterHorizontal;
+import com.juegoteca.util.GridJuegosItemDecorationHorizontal;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -100,11 +99,6 @@ public class Inicio extends Activity {
         }
 
         if (c != null & c.moveToFirst()) {
-/*            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
-                datosJuegos = new Juego[NUM_MAX_ELEMENTOS_INICIO];
-            } else {
-                datosJuegos = new Juego[c.getCount()];
-            }*/
 
             datosJuegos = new Juego[c.getCount()];
             int i = 0;
@@ -115,7 +109,6 @@ public class Inicio extends Activity {
                 datosJuegos[i].setTitulo(c.getString(2));
                 i++;
             } while (c.moveToNext());
-            /*while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO);*/
             c.close();
         } else {
             datosJuegos = new Juego[1];
@@ -123,29 +116,16 @@ public class Inicio extends Activity {
             datosJuegos[0].setId(-1);
             datosJuegos[0].setCaratula("");
         }
-/*
-        AdaptadorJuegosListaCaratula adaptador = new AdaptadorJuegosListaCaratula(this, datosJuegos);
-        listaUltimos.setAdapter(adaptador);
-
-
-        listaUltimos.setOnItemLongClickListener(new OnItemLongClickListener() {
-            @Override
-            public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int pos, long id) {
-                detalleJuego(arg1);
-                return true;
-            }
-        });
-*/
         RecyclerView mRecyclerView;
 
         mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid_nuevos);
         mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
         mRecyclerView.setLayoutFrozen(true);
 
-        MasonryAdapterHorizontal adapter = new MasonryAdapterHorizontal(this);
+        GridJuegosMasonryAdapterHorizontal adapter = new GridJuegosMasonryAdapterHorizontal(this);
         adapter.setDatosJuegos(datosJuegos);
         mRecyclerView.setAdapter(adapter);
-        RightSpacesItemDecoration decoration = new RightSpacesItemDecoration(8);
+        GridJuegosItemDecorationHorizontal decoration = new GridJuegosItemDecorationHorizontal(8);
         mRecyclerView.addItemDecoration(decoration);
 
 
@@ -162,12 +142,6 @@ public class Inicio extends Activity {
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
         Cursor c = juegosSQLH.getUltimosJuegosCompletados();
         if (c != null & c.moveToFirst()) {
-/*            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
-                datosJuegos = new Juego[NUM_MAX_ELEMENTOS_INICIO];
-            } else {
-                datosJuegos = new Juego[c.getCount()];
-            }*/
-
             datosJuegos = new Juego[c.getCount()];
             int i = 0;
             do {
@@ -178,28 +152,17 @@ public class Inicio extends Activity {
                 i++;
             } while (c.moveToNext()); // Cargar
 
-            /*while (c.moveToNext() && i < NUM_MAX_ELEMENTOS_INICIO); // Cargar*/
             c.close();
-/*            AdaptadorJuegosListaCaratula adaptador = new AdaptadorJuegosListaCaratula(this, datosJuegos);
-            listaCompletados.setAdapter(adaptador);
-
-            listaCompletados.setOnItemLongClickListener(new OnItemLongClickListener() {
-                @Override
-                public boolean onItemLongClick(AdapterView<?> arg0, View arg1, int pos, long id) {
-                    detalleJuego(arg1);
-                    return true;
-                }
-            });*/
 
             RecyclerView mRecyclerView;
 
             mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid_completados);
             mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.HORIZONTAL));
 
-            MasonryAdapterHorizontal adapter = new MasonryAdapterHorizontal(this);
+            GridJuegosMasonryAdapterHorizontal adapter = new GridJuegosMasonryAdapterHorizontal(this);
             adapter.setDatosJuegos(datosJuegos);
             mRecyclerView.setAdapter(adapter);
-            RightSpacesItemDecoration decoration = new RightSpacesItemDecoration(8);
+            GridJuegosItemDecorationHorizontal decoration = new GridJuegosItemDecorationHorizontal(8);
             mRecyclerView.addItemDecoration(decoration);
 
         }

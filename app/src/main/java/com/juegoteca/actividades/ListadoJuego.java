@@ -18,12 +18,10 @@ import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
-import com.juegoteca.util.AdaptadorJuegosLista;
+import com.juegoteca.util.ListadoJuegosArrayAdapter;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
-import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 
 @SuppressLint("NewApi")
@@ -139,7 +137,7 @@ public class ListadoJuego extends Activity {
      *
      * @author alvaro
      */
-    private class RealizaBusqueda extends AsyncTask<Void, Void, AdaptadorJuegosLista> {
+    private class RealizaBusqueda extends AsyncTask<Void, Void, ListadoJuegosArrayAdapter> {
         private Activity context;
         private int elementosEncontrados = 0;
 
@@ -148,7 +146,7 @@ public class ListadoJuego extends Activity {
         }
 
         @Override
-        protected AdaptadorJuegosLista doInBackground(Void... values) {
+        protected ListadoJuegosArrayAdapter doInBackground(Void... values) {
             // Referenciamos los controles
             listadoJuegos = (ListView) findViewById(R.id.listado_juegos);
             tituloBusqueda = (TextView) findViewById(R.id.nombre_busqueda);
@@ -178,7 +176,7 @@ public class ListadoJuego extends Activity {
                 while (c.moveToNext());
                 elementosEncontrados = c.getCount();
                 c.close();
-                AdaptadorJuegosLista adaptador = new AdaptadorJuegosLista(context, datosJuegos, false);
+                ListadoJuegosArrayAdapter adaptador = new ListadoJuegosArrayAdapter(context, datosJuegos, false);
                 return adaptador;
             } else {
                 return null;
@@ -193,7 +191,7 @@ public class ListadoJuego extends Activity {
         }
 
         @Override
-        protected void onPostExecute(AdaptadorJuegosLista result) {
+        protected void onPostExecute(ListadoJuegosArrayAdapter result) {
             dialogoBusqueda.dismiss();
             if (result != null && elementosEncontrados != 0) {
                 listadoJuegos.setAdapter(result);
