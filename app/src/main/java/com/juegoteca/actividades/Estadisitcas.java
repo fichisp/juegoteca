@@ -17,16 +17,12 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
 import org.achartengine.ChartFactory;
 import org.achartengine.GraphicalView;
-import org.achartengine.chart.PieChart;
 import org.achartengine.model.CategorySeries;
 import org.achartengine.renderer.DefaultRenderer;
 import org.achartengine.renderer.SimpleSeriesRenderer;
@@ -99,7 +95,6 @@ public class Estadisitcas extends Activity {
     private String[] etiquetas = null;
     private JuegosSQLHelper juegosSQLH;
     private Utilidades utilidades;
-    private AdView adView;
     private float pxLabelSize;
     private float pxLegendSize;
 
@@ -118,7 +113,6 @@ public class Estadisitcas extends Activity {
         juegosSQLH = new JuegosSQLHelper(this);
 
         setupActionBar();
-        //loadAds();
 
         //Calculo del tamaño en pixeles de las etiquetas para todos los gráficos
         Resources r = getResources();
@@ -138,26 +132,6 @@ public class Estadisitcas extends Activity {
         gamesByStatusGraphic(codigoIdioma);
     }
 
-    /**
-     * Load ads
-     */
-    private void loadAds() {
-//        adView = new AdView(this);
-//        adView.setAdSize(AdSize.BANNER);
-//        adView.setAdUnitId("ca-app-pub-5590574021757982/9422268351");
-//
-//        LinearLayout layoutBanner = (LinearLayout) findViewById(R.id.layout_banner_Ads);
-//        layoutBanner.addView(adView);
-//
-//        // Create an ad request. Check logcat output for the hashed device ID to
-//        // get test ads on a physical device.
-//        AdRequest adRequest = new AdRequest.Builder()
-//                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)// Emulador
-//                .addTestDevice("358240057325789").build();
-//
-//        // Start loading the ad in the background.
-//        adView.loadAd(adRequest);
-    }
 
     /**
      * PieChart by status
@@ -670,7 +644,6 @@ public class Estadisitcas extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                //Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;

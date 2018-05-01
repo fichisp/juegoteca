@@ -36,7 +36,6 @@ public class Plataforma extends Activity {
         setContentView(R.layout.activity_plataforma);
         Intent intent = getIntent();
         utilidades = new Utilidades(this);
-        //utilidades.cargarAnuncio();
         idPlataforma = intent.getStringExtra("ID_PLATAFORMA");
         imagenPlataforma = (ImageView) findViewById(R.id.imagePlataforma);
         nombrePlataforma = (TextView) findViewById(R.id.textViewNombrePlataforma);
@@ -46,7 +45,6 @@ public class Plataforma extends Activity {
         juegosSQLH = new JuegosSQLHelper(this);
         Cursor c = juegosSQLH.buscarPlataformaID(idPlataforma);
         if (c != null && c.moveToFirst()) {
-            Log.v("Cursor plataforma", "" + c.getColumnCount());
             nombrePlataforma.setText(c.getString(1));
             this.setTitle(c.getString(1));
             fabricantePlataforma.setText(c.getString(2));
@@ -83,7 +81,6 @@ public class Plataforma extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 finish();

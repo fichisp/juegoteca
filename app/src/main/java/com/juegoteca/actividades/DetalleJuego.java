@@ -12,7 +12,6 @@ import android.graphics.Bitmap.CompressFormat;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -46,7 +45,7 @@ public class DetalleJuego extends Activity {
     private static final String TAG_SUCCESS = "success";
     private JuegosSQLHelper juegosSQLH;
     private String idJuego;
-    private boolean esNuevoJuego = false, esJuegoOnline = false;
+    private boolean esJuegoOnline = false;
     private Juego juego = null;
     private Utilidades utilidades;
     private JSONObject juegoJSON;
@@ -56,7 +55,6 @@ public class DetalleJuego extends Activity {
             textViewResumen, textViewFechaLanzamiento, textViewFechaCompra,
             textViewFechaCompletado, textViewPrecio, textViewEan,
             textViewComentario, textViewPuntuacion, textViewFormato;
-    // private CheckBox checkCompletado;
     private String url_insertar, url_buscar, url_subir_imagen;
     private JSONParser jParser;
     private ProgressDialog dialogoExportar;
@@ -84,7 +82,6 @@ public class DetalleJuego extends Activity {
         jParser = new JSONParser();
         // Recuperamos los valores que nos oueden pasar en el intent
         idJuego = intent.getStringExtra("ID_JUEGO");
-        esNuevoJuego = intent.getExtras().getBoolean("NUEVO_JUEGO");
         valoresBusqueda = intent.getStringArrayExtra("VALORES");
         esJuegoOnline = intent.getExtras().getBoolean("ONLINE");
         juegosSQLH = new JuegosSQLHelper(this);
@@ -122,7 +119,6 @@ public class DetalleJuego extends Activity {
                 .findViewById(R.id.text_puntuacion_detalle));
         textViewFormato = ((TextView) this.findViewById(R.id.formato_detalle));
 
-       // Log.v("ID del juego a mostrar: ", String.valueOf(idJuego));
         // Si es una ficha online se lanza en un hilo nuevo para no bloquear el
         // principal
         if (esJuegoOnline) {
@@ -139,7 +135,6 @@ public class DetalleJuego extends Activity {
                             JSONArray jA = juegoJSON.getJSONArray("juego");
                             juego = new Juego();
                             juego.convertirJSON(((JSONObject) jA.get(0)));
-                            //Log.v("JUEGO DETALLE ONLINE", juegoJSON.toString());
                             cargarFichaJuego(juego);
                         } catch (Exception e) {
                             e.printStackTrace();
@@ -160,23 +155,15 @@ public class DetalleJuego extends Activity {
         // Si es una ficha local
         else {
             Cursor c = juegosSQLH.buscarJuegoID(idJuego);
-           // Log.v("CURSOR ID - Elementos: ", String.valueOf(c.getCount()));
             if (c != null && c.moveToFirst()) {
-             //   Log.v("CURSOR ID - Columnas: ",
-                        //String.valueOf(c.getColumnCount()));
-                // juego = new Juego(c.getInt(0), c.getLong(1), c.getString(2),
-                // c.getString(3), c.getInt(4), c.getInt(5), c.getInt(6),
-                // c.getInt(7), c.getString(8), c.getString(9), c.getFloat(10),
-                // c.getInt(11), c.getString(12), c.getString(13),
-                // c.getString(14), c.getString(15), c.getString(16),
-                // c.getInt(17));
+
                 juego = new Juego(c.getInt(0), c.getString(1), c.getString(2),
                         c.getString(3), c.getInt(4), c.getInt(5), c.getInt(6),
                         c.getInt(7), c.getString(8), c.getString(9),
                         c.getFloat(10), c.getInt(11), c.getString(12),
                         c.getString(13), c.getString(14), c.getString(15),
                         c.getString(16), c.getInt(17), c.getString(18));
-               // Log.v("JUEGO DETALLE", juego.toString());
+
                 c.close();
                 cargarFichaJuego(juego);
             }
@@ -205,7 +192,6 @@ public class DetalleJuego extends Activity {
             }
         }
         // Título de la actividad igual al nombre del juego
-        // this.setTitle(juego.getTitulo());
         textViewTitulo.setText(juego.getTitulo());
         textViewCompania.setText(juego.getCompania());
         cargarGenero(String.valueOf(juego.getGenero()));
@@ -250,18 +236,15 @@ public class DetalleJuego extends Activity {
                 textViewPrecio.setText("-");
             }
             if (juego.getCompletado() == 1) {
-                // checkCompletado.setChecked(true);
                 if (Double.parseDouble(juego.getFechaCompletado()) != 0) {
-                    textViewFechaCompletado.setText(getString(R.string.ok)
+                    textViewFechaCompletado.setText(getString(R.string.si)
                             + " ("
                             + utilidades.convertirMilisegundosAFecha(juego
                             .getFechaCompletado()) + ")");
                 } else {
-                    textViewFechaCompletado.setText(getString(R.string.ok));
+                    textViewFechaCompletado.setText(getString(R.string.si));
                 }
             } else {
-                // checkCompletado.setButtonDrawable(this.getResources()
-                // .getDrawable(R.drawable.check_off_32));
                 textViewFechaCompletado.setText("-");
             }
             if (juego.getComentario().length() != 0
@@ -284,7 +267,8 @@ public class DetalleJuego extends Activity {
                 textViewFormato.setText(getString(R.string.digital));
             }
 
-        } else {// Estos campos no se cargan cuando es una ficha de un juego
+        } else {
+            // Estos campos no se cargan cuando es una ficha de un juego
             // online
             ((LinearLayout) findViewById(R.id.linear_detalle_fecha_compra))
                     .setVisibility(View.GONE);
@@ -393,11 +377,9 @@ public class DetalleJuego extends Activity {
     private void anadirFavorito() {
         long id;
         if ((id = juegosSQLH.insertarFavorito(juego.getId())) > 0) {
-           // Log.v("ID insertado: ", String.valueOf(id));
             Toast toast = Toast.makeText(getApplicationContext(),
                     getString(R.string.juego_anadido_favoritos),
                     Toast.LENGTH_SHORT);
-            // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
             toast.show();
             // Recarga de la actividad
             startActivity(getIntent().setFlags(
@@ -427,7 +409,6 @@ public class DetalleJuego extends Activity {
     private void eliminarFavorito() {
         int id;
         if ((id = juegosSQLH.eliminarFavorito(idJuego)) > 0) {
-            //Log.v("ID borrado de favoritos: ", String.valueOf(id));
             Toast toast = Toast.makeText(getApplicationContext(),
                     getString(R.string.juego_eliminado_favoritos),
                     Toast.LENGTH_SHORT);
@@ -485,10 +466,12 @@ public class DetalleJuego extends Activity {
                     startActivity(intent);
                 } else if (getIntent().getBooleanExtra("GRID", false)) {
                     Intent intent = new Intent(this, InicioMasonry.class);
+                    if(getIntent().getIntExtra("SCROLL_Y",0)>0){
+                        intent.putExtra("SCROLL_Y", getIntent().getIntExtra("SCROLL_Y",0));
+                    }
                     startActivity(intent);
                     finish();
                 } else {
-                   // Log.v("DETALLE JUEGO", "Juego nuevo");
                     Intent intent = new Intent(this, Inicio.class);
                     startActivity(intent);
                     finish();
@@ -534,35 +517,28 @@ public class DetalleJuego extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                //Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 finish();
                 return true;
             case R.id.action_settings:
-               // Log.i("ActionBar", "Opciones");
                 intent = new Intent(this, Opciones.class);
                 startActivity(intent);
                 return true;
             case R.id.action_favorito:
-               // Log.i("ActionBar", "Favorito");
                 anadirFavorito();
                 return true;
             case R.id.action_favorito_eliminar:
-               // Log.i("ActionBar", "Favorito eliminar");
                 eliminarFavorito();
                 return true;
             case R.id.action_importar:
-               // Log.i("ActionBar", "Importar el juego");
                 importarJuego();
                 return true;
             // Version 1.2
             // case R.id.action_exportar:
-            // Log.i("ActionBar", "Importar el juego");
             // exportarJuego();
             // return true;
             case R.id.action_editar:
-              //  Log.i("ActionBar", "Editar el juego");
                 intent = new Intent(this, EditarJuego.class);
                 intent.putExtra("ID_JUEGO", idJuego);
                 String caller = getIntent().getStringExtra("CALLER");
@@ -580,7 +556,6 @@ public class DetalleJuego extends Activity {
                 finish();
                 return true;
             case R.id.action_eliminar:
-               // Log.i("ActionBar", "Eliminar el juego");
                 AlertDialog.Builder builder = new AlertDialog.Builder(this);
                 builder.setMessage(R.string.alerta_borrado_texto).setTitle(
                         R.string.alerta_borrado_titulo);
@@ -600,10 +575,7 @@ public class DetalleJuego extends Activity {
                                                         .getFilesDir()
                                                         .getAbsolutePath()
                                                         + "/" + juego.getCaratula());
-                                        if (imagen.delete()) {
-                                            //Log.v("ELIMINAR JUEGO",
-                                              //      "Imagen del juego borrada");
-                                        }
+                                        imagen.delete();
                                     } catch (Exception e) {
                                     }
                                 } else {
@@ -710,7 +682,6 @@ public class DetalleJuego extends Activity {
                 params.add(new BasicNameValuePair("fecha_creacion", ""));
                 params.add(new BasicNameValuePair("fecha_completado", ""));
                 try {
-                  //  Log.v("Ruta caratula", juego.getCaratula());
 
                     if (utilidades.subirFichero(
                             getApplicationContext().getFilesDir().getPath()
@@ -731,8 +702,6 @@ public class DetalleJuego extends Activity {
                 // Hacemos la llamada al PHP enviando los parámetros en el POST
                 JSONObject json = jParser.makeHttpRequest(url_insertar, "POST",
                         params);
-
-                //Log.v("Exportando juego", json.toString());
 
                 // Compromabamos el resultado de la operación con el valor
                 // TAG_SUCESS que devolverá la petición
@@ -810,11 +779,9 @@ public class DetalleJuego extends Activity {
          */
         @Override
         protected Boolean doInBackground(Void... parameters) {
-            //Log.v("JUEGO IMPORTAR", "Juego importado: " + juego.toString());
             // Insertamos en la base de datos
             if ((id = juegosSQLH.insertarJuego(juego)) > 0) {
                 juego.setId(id);
-                //Log.v("ID insertado: ", String.valueOf(id));
                 // Descargar la imagen de la caratula
                 if (juego.getCaratula().length() > 0) {
                     try {

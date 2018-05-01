@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,8 +32,8 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
 
     private Juego[] datosJuegos;
     private int[] gridCellColor;
-
     private Utilidades utilidades;
+    private int position = 0;
 
 
     public MasonryAdapter(Context context) {
@@ -41,7 +42,19 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
 
 
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(context);
-        Cursor c = juegosSQLH.getUltimosJuegosAnadidos();
+        //Cursor c = juegosSQLH.getUltimosJuegosAnadidos();
+
+        final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+                0);
+
+        Cursor c = null;
+
+        if(settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
+            c = juegosSQLH.getUltimosJuegosAnadidosFechaCompra();
+        } else {
+            c = juegosSQLH.getUltimosJuegosAnadidos();
+        }
+
 
         if (c != null & c.moveToFirst()) {
             datosJuegos = new Juego[c.getCount()];
@@ -66,17 +79,51 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
     }
 
     @Override
-    public MasonryView onCreateViewHolder(ViewGroup parent, int viewType) {
-        View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
-        MasonryView masonryView = new MasonryView(layoutView);
+    public MasonryView onCreateViewHolder(final ViewGroup parent, int viewType) {
+        final View layoutView = LayoutInflater.from(parent.getContext()).inflate(R.layout.grid_item, parent, false);
+        final MasonryView masonryView = new MasonryView(layoutView);
+
+
 
 
         layoutView.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View arg0) {
+                position = masonryView.getAdapterPosition();
                 detalleJuego(arg0);
             }
         });
+
+        layoutView.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(final View view) {
+
+
+                ImageView image = (ImageView) view.findViewById(R.id.img);
+
+                final TextView title = (TextView) view.findViewById(R.id.img_name);
+
+                FrameLayout.LayoutParams params = (FrameLayout.LayoutParams) title.getLayoutParams();
+                //Ajustar el texto a la imagen
+                params.width = image.getWidth();
+                params.height = image.getHeight();
+
+                title.setLayoutParams(params);
+
+                title.setVisibility(View.VISIBLE);
+
+                view.postDelayed(new Runnable() {
+                    public void run() {
+                        title.setVisibility(View.INVISIBLE);
+                    }
+                }, 1500);
+
+                return true;
+
+            }
+        });
+
 
         masonryView.setIsRecyclable(false);
 
@@ -112,6 +159,7 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
         Intent intent;
         final SharedPreferences settings = context.getSharedPreferences("UserInfo",
                 0);
+
         if (Integer.parseInt(String.valueOf(id.getText())) == -1) {
             intent = new Intent(context, NuevoJuego.class);
         } else if (settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen", true)) {
@@ -120,11 +168,13 @@ public class MasonryAdapter extends RecyclerView.Adapter<MasonryAdapter.MasonryV
             intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
             intent.putExtra("NUEVO_JUEGO", false);
             intent.putExtra("GRID", true);
+            intent.putExtra("SCROLL_Y",  position);
         } else {
             intent = new Intent(context, DetalleJuego.class);
             intent.putExtra("ID_JUEGO", String.valueOf(id.getText()));
             intent.putExtra("NUEVO_JUEGO", false);
             intent.putExtra("GRID", true);
+            intent.putExtra("SCROLL_Y", position);
         }
         context.startActivity(intent);
     }

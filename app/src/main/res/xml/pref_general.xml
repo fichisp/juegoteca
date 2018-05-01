@@ -1,22 +1,24 @@
-<PreferenceScreen>
-    <!--     <EditTextPreference
-            android:capitalize="words"
-            android:defaultValue="@string/pref_default_display_name"
-            android:inputType="textCapWords"
-            android:key="example_text"
-            android:maxLines="1"
-            android:selectAllOnFocus="true"
-            android:singleLine="true"
-            android:title="@string/pref_title_display_name" /> -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!--    <Preference android:title="@string/pref_iniciar_sesion"
-            android:summary="@string/pref_description_iniciar_sesion"
-            android:icon="@null"
-            android:key="iniciar_sesion">
-        </Preference> -->
+    <ListPreference
+        android:icon="@null"
+        android:key="currencys"
+        android:title="@string/currency"
+        android:summary="%s"
+        android:entries="@array/currency"
+        android:entryValues="@array/currencyAlias"/>
 
-    <!--     <CheckBoxPreference
-            android:defaultValue="true"
-            android:key="example_checkbox"
-            android:title="@string/pref_title_share_name"></CheckBoxPreference> -->
+    <CheckBoxPreference
+        android:icon="@null"
+        android:key="detalle_imagen"
+        android:summary="@string/pref_description_view"
+        android:title="@string/pref_title_view"></CheckBoxPreference>
+
+    <CheckBoxPreference
+        android:icon="@null"
+        android:key="orden_ultimos_anadidos"
+        android:summary="@string/pref_description_orden_ultimos_anadidos"
+        android:title="@string/pref_title_orden_ultimos_anadidos"></CheckBoxPreference>
+
+
 </PreferenceScreen>

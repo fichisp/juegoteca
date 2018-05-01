@@ -18,7 +18,6 @@ import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
-import com.juegoteca.ui.HorizontalListView;
 import com.juegoteca.util.MasonryAdapterHorizontal;
 import com.juegoteca.util.RightSpacesItemDecoration;
 import com.juegoteca.util.Utilidades;
@@ -26,11 +25,11 @@ import com.mijuegoteca.R;
 
 public class Inicio extends Activity {
 
-    private HorizontalListView listaUltimos, listaCompletados;
     private Juego[] datosJuegos;
     private Utilidades utilidades;
 
     private int NUM_MAX_ELEMENTOS_INICIO = 25;
+
 
     /**
      * Llamada cuando se inicializa la actividad. Carga los listados que se
@@ -68,7 +67,7 @@ public class Inicio extends Activity {
         }
 
 
-        // TODO: Desactiva el modo estricto
+        // Desactiva el modo estricto
         if (android.os.Build.VERSION.SDK_INT > 9) {
             StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
             StrictMode.setThreadPolicy(policy);
@@ -87,9 +86,19 @@ public class Inicio extends Activity {
      * Carga la lista con los últimos añadidos
      */
     public void cargarUltimosAnadidos() {
-        //listaUltimos = (HorizontalListView) findViewById(R.id.lista_ultimos);
+
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
-        Cursor c = juegosSQLH.getUltimosJuegosAnadidos();
+        final SharedPreferences settings = getSharedPreferences("UserInfo",
+                0);
+
+        Cursor c = null;
+
+        if(settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
+            c = juegosSQLH.getUltimosJuegosAnadidosFechaCompra();
+        } else {
+            c = juegosSQLH.getUltimosJuegosAnadidos();
+        }
+
         if (c != null & c.moveToFirst()) {
 /*            if (c.getCount() >= NUM_MAX_ELEMENTOS_INICIO) {
                 datosJuegos = new Juego[NUM_MAX_ELEMENTOS_INICIO];
@@ -214,7 +223,6 @@ public class Inicio extends Activity {
 
         switch (item.getItemId()) {
             case R.id.action_grid:
-                Log.i("ActionBar", "Home");
                 intent = new Intent(this, InicioMasonry.class);
                 startActivity(intent);
                 finish();

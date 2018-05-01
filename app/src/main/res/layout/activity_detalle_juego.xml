@@ -228,7 +228,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="1"
@@ -237,7 +237,7 @@
                     <TextView
                         android:id="@+id/label_formato_detalla"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/label_formato"
                         android:textSize="15sp"
@@ -246,7 +246,7 @@
                     <TextView
                         android:id="@+id/formato_detalle"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:text="@string/label_formato" />
@@ -274,12 +274,6 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:orientation="horizontal">
-
-                        <!--                         <CheckBox
-                                                    android:id="@+id/check_completado_detalle"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:clickable="false" /> -->
 
                         <TextView
                             android:id="@+id/text_fecha_completado_detalle"

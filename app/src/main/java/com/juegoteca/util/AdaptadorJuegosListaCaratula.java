@@ -65,8 +65,7 @@ public class AdaptadorJuegosListaCaratula extends ArrayAdapter<Juego> {
 
                 //				caratula.setImageURI(Uri.parse(context.getFilesDir().getPath()+"/"+juegos[position].getCaratula()));
             } catch (Exception e) {
-                //TODO
-                Log.v("CARGAR CARATULA LISTADO", e.getMessage());
+                Log.e("CARGAR CARATULA LISTADO", e.getMessage());
             }
         }
 

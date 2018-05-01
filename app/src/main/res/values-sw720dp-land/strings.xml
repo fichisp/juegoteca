@@ -5,4 +5,6 @@
     <string name="unzip">Restoring backup ...</string>
     <string name="alerta_atras_editar_titulo">Cancel game edition</string>
     <string name="currency">Currency</string>
+    <string name="si">Yes</string>
+    <string name="juegos">games</string>
 </resources>

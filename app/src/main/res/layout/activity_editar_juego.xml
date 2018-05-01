@@ -361,16 +361,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!--
-                 <Button
-                android:id="@+id/button_guardar_editar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:onClick="actualizarJuego"
-                android:text="Guardar cambios" />
-            -->
-
         </LinearLayout>
     </ScrollView>
 

@@ -73,6 +73,14 @@ public class InicioMasonry extends Activity {
 
         });
 
+
+  /*      if(getIntent().getIntExtra("SCROLL_Y",0)>0){
+            mRecyclerView.smoothScrollToPosition( getIntent().getIntExtra("SCROLL_Y",0));
+        }*/
+
+
+
+
     }
 
     @Override
@@ -87,7 +95,6 @@ public class InicioMasonry extends Activity {
         Intent intent;
         switch (item.getItemId()) {
             case R.id.action_home:
-                Log.i("ActionBar", "Home");
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;
@@ -98,7 +105,7 @@ public class InicioMasonry extends Activity {
     }
 
     public void backTop(View view) {
-        mRecyclerView.smoothScrollToPosition(0);
+        mRecyclerView.scrollToPosition(0);
     }
 
     /**

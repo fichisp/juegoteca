@@ -21,42 +21,35 @@
             android:orientation="vertical"
             android:scrollbars="horizontal">
 
-            <Spinner
-                android:id="@+id/spinner_filtro_plataforma"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
-                android:layout_marginTop="10dp"
-                android:spinnerMode="dialog" />
+                android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/texto_pendientes"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:text="@string/titulo_pendientes" />
+                <Spinner
+                    android:id="@+id/spinner_filtro_plataforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:spinnerMode="dialog" />
+
+                <TextView
+                    android:id="@+id/texto_pendientes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
 
             <ListView
                 android:id="@+id/listado_pendientes"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"></ListView>
+                android:layout_weight="5"></ListView>
         </LinearLayout>
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="vertical">-->
-
-            <!--<LinearLayout-->
-                <!--android:id="@+id/layout_banner_Ads"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="50dp"-->
-                <!--android:layout_marginBottom="0dp"-->
-                <!--android:layout_marginTop="15dp"-->
-                <!--android:gravity="bottom"-->
-                <!--android:orientation="vertical"></LinearLayout>-->
-        <!--</LinearLayout>-->
 
     </LinearLayout>
 
