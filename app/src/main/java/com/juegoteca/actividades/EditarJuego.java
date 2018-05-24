@@ -225,7 +225,7 @@ public class EditarJuego extends Activity {
     /**
      * Actualiza el juego en la base de datos
      */
-    public void actualizarJuego() {
+    private void actualizarJuego() {
         juegoEditado = new Juego();
         // Establecemos el valor de los atributos recuperados del formulario
         juegoEditado.setId(Integer.parseInt(idJuego));

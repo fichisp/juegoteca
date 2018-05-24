@@ -446,9 +446,8 @@ public class Opciones extends PreferenceActivity {
 
         @Override
         protected String doInBackground(Void... arg0) {
-            String result = utilidades.hacerCopiaSeguridadFichero();
 
-            return result;
+            return utilidades.hacerCopiaSeguridadFichero();
 
         }
     }

@@ -329,7 +329,7 @@ public class Utilidades {
      * @param destino Fichero de destino
      * @throws IOException
      */
-    public void copiarFichero(File origen, File destino) throws IOException {
+    private void copiarFichero(File origen, File destino) throws IOException {
         InputStream in = new FileInputStream(origen);
         OutputStream out = new FileOutputStream(destino);
         // Transfer bytes from in to out
@@ -407,8 +407,7 @@ public class Utilidades {
         float proporcion = (float) imagen.getWidth()
                 / (float) imagen.getHeight();
         int alto = Math.round(ancho / proporcion);
-        Bitmap newBitmap = Bitmap.createScaledBitmap(imagen, ancho, alto, true);
-        return newBitmap;
+        return Bitmap.createScaledBitmap(imagen, ancho, alto, true);
     }
 
     /**
@@ -453,7 +452,7 @@ public class Utilidades {
      * @param anio Año para el cálculo
      * @return
      */
-    public boolean esBisiesto(int anio) {
+    private boolean esBisiesto(int anio) {
         if (anio % 400 == 0) {
             return true;
         } else {
@@ -493,8 +492,7 @@ public class Utilidades {
         try {
             Date date = new Date(Long.parseLong(milisegundos) * 1000L);
             SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
-            String fecha = dateFormat.format(date);
-            return fecha;
+            return dateFormat.format(date);
         } catch (NumberFormatException nfe) {
             return "";
         }
@@ -651,8 +649,8 @@ public class Utilidades {
                     .getContentResolver().openInputStream(path));
             ZipEntry entrada;
             while (null != (entrada = zis.getNextEntry())) {
-                if (entrada.getName().toString().contains("files") == false
-                        && entrada.getName().toString().contains("databases") == false) {
+                if (!entrada.getName().contains("files")
+                        && !entrada.getName().contains("databases")) {
                     zipValido = false;
                     zis.close();
                     break;
@@ -750,18 +748,18 @@ public class Utilidades {
 
         BufferedReader brin = new BufferedReader(new InputStreamReader(fraw));
 
-        String texto = "";
+        StringBuilder texto = new StringBuilder();
         String linea;
         try {
             while ((linea = brin.readLine()) != null) {
-                texto += linea;
+                texto.append(linea);
             }
             fraw.close();
         } catch (IOException e) {
             return;
         }
 
-        builder.setMessage(Html.fromHtml(texto)).setTitle(R.string.novedades);
+        builder.setMessage(Html.fromHtml(texto.toString())).setTitle(R.string.novedades);
 
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override

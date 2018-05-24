@@ -3,13 +3,13 @@
     <!-- These settings headers are only used on tablets. -->
 
     <header
-        android:fragment="com.mijuegoteca.Opciones$GeneralPreferenceFragment"
+        android:fragment="com.juegoteca.actividades.Opciones$GeneralPreferenceFragment"
         android:title="@string/pref_header_general" />
     <header
-        android:fragment="com.mijuegoteca.Opciones$DataSyncPreferenceFragment"
+        android:fragment="com.juegoteca.actividades.Opciones$DataSyncPreferenceFragment"
         android:title="@string/pref_header_data" />
     <header
-        android:fragment="com.mijuegoteca.Opciones$DataSyncPreferenceFragment"
+        android:fragment="com.juegoteca.actividades.Opciones$DataSyncPreferenceFragment"
         android:title="@string/pref_header_otros" />
 
 </preference-headers>

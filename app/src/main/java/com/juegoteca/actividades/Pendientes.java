@@ -76,7 +76,7 @@ public class Pendientes extends Activity {
      *
      * @param plataforma Plataforma para el filtro (si es 0 se devuelven todos los elementos)
      */
-    protected void cargarPendientes(int plataforma) {
+    private void cargarPendientes(int plataforma) {
         listadoJuegos = (ListView) findViewById(R.id.listado_pendientes);
         textoPendientes = (TextView) findViewById(R.id.texto_pendientes);
         juegoSQLH = new JuegosSQLHelper(this);

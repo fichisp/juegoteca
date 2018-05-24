@@ -84,7 +84,7 @@ public class Inicio extends Activity {
     /**
      * Carga la lista con los últimos añadidos
      */
-    public void cargarUltimosAnadidos() {
+    private void cargarUltimosAnadidos() {
 
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
         final SharedPreferences settings = getSharedPreferences("UserInfo",
@@ -137,7 +137,7 @@ public class Inicio extends Activity {
     /**
      * Carga la lista con los últimos añadidos
      */
-    public void cargarUltimosCompletados() {
+    private void cargarUltimosCompletados() {
         //listaCompletados = (HorizontalListView) findViewById(R.id.lista_completados);
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
         Cursor c = juegosSQLH.getUltimosJuegosCompletados();

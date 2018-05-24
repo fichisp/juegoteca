@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="0dp"
-    tools:context=".Estadisitcas">
+    tools:context="com.juegoteca.actividades.Estadisitcas">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -35,20 +35,20 @@ import java.util.Locale;
  */
 public class Estadisitcas extends Activity {
 
-    public static final String TYPE = "type";
-    public static final String STATUS_PENDING = "Pending";
-    public static final String STATUS_COMPLETED = "Completed";
-    public static final String STATUS_NO_COMPLETADO = "Pendiente";
-    public static final String STATUS_COMPLETADO = "Completado";
-    public static final String FORMAT_N_D = "N/D";
-    public static final String FORMAT_RETAIL_EN = "Retail";
-    public static final String FORMAT_DIGITAL = "Digital";
-    public static final String FORMAT_RETAIL_ES = "Físico";
-    public static final String F = "F";
-    public static final String D = "D";
-    public static final String EMPTY_STRING = "";
-    public static final String ZERO_STRING = "0";
-    public static final String SPA = "spa";
+    private static final String TYPE = "type";
+    private static final String STATUS_PENDING = "Pending";
+    private static final String STATUS_COMPLETED = "Completed";
+    private static final String STATUS_NO_COMPLETADO = "Pendiente";
+    private static final String STATUS_COMPLETADO = "Completado";
+    private static final String FORMAT_N_D = "N/D";
+    private static final String FORMAT_RETAIL_EN = "Retail";
+    private static final String FORMAT_DIGITAL = "Digital";
+    private static final String FORMAT_RETAIL_ES = "Físico";
+    private static final String F = "F";
+    private static final String D = "D";
+    private static final String EMPTY_STRING = "";
+    private static final String ZERO_STRING = "0";
+    private static final String SPA = "spa";
 
     private static int[] COLORS = new int[]{
             Color.rgb(255, 64, 0),

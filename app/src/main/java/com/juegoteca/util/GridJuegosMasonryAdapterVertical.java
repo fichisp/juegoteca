@@ -154,7 +154,7 @@ public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJ
      *
      * @param view
      */
-    public void detalleJuego(View view) {
+    private void detalleJuego(View view) {
         TextView id = (TextView) view.findViewById(R.id.id_juego);
         Intent intent;
         final SharedPreferences settings = context.getSharedPreferences("UserInfo",

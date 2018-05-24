@@ -31,17 +31,17 @@ public class AcercaDe extends Activity {
         TextView textoAcercaDe = (TextView) this.findViewById(R.id.texto_acercade);
         InputStream fraw = this.getResources().openRawResource(R.raw.licencias);
         BufferedReader brin = new BufferedReader(new InputStreamReader(fraw));
-        String texto = "";
+        StringBuilder texto = new StringBuilder();
         String linea;
         try {
             while ((linea = brin.readLine()) != null) {
-                texto += linea + "\n";
+                texto.append(linea).append("\n");
             }
             fraw.close();
         } catch (IOException e) {
-            texto = "";
+            texto = new StringBuilder();
         }
-        textoAcercaDe.setText(texto);
+        textoAcercaDe.setText(texto.toString());
     }
 
     /**

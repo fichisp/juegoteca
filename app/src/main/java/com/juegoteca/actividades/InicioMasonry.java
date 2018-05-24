@@ -20,9 +20,9 @@ import com.mijuegoteca.R;
 
 public class InicioMasonry extends Activity {
 
-    RecyclerView mRecyclerView;
+    private RecyclerView mRecyclerView;
 
-    ImageButton backTopButton;
+    private ImageButton backTopButton;
 
     private Utilidades utilidades;
 

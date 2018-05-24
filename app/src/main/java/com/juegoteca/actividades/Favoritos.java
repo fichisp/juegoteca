@@ -78,7 +78,7 @@ public class Favoritos extends Activity {
      *
      * @param plataforma Plataforma para el filtro de la consulta (si es 0 se supone que es todos)
      */
-    public void cargarFavoritos(int plataforma) {
+    private void cargarFavoritos(int plataforma) {
         juegoSQLH = new JuegosSQLHelper(this);
         Cursor c = (plataforma == 0) ? juegoSQLH.getFavoritos() : juegoSQLH.getFavoritosPlataforma(plataforma);
         if (c != null && c.moveToFirst()) {

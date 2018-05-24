@@ -151,7 +151,7 @@ public class NuevoJuego extends Activity {
     /**
      * Crea un nuevo juego en la base de datos
      */
-    public void crearJuego() {
+    private void crearJuego() {
         // Comprobamos que los campos titulo y compañia están rellenados
         if (editTituloNuevo.getText().toString().length() == 0
                 || editCompaniaNuevo.getText().toString().length() == 0) {

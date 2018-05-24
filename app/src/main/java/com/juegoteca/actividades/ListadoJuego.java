@@ -176,8 +176,7 @@ public class ListadoJuego extends Activity {
                 while (c.moveToNext());
                 elementosEncontrados = c.getCount();
                 c.close();
-                ListadoJuegosArrayAdapter adaptador = new ListadoJuegosArrayAdapter(context, datosJuegos, false);
-                return adaptador;
+                return new ListadoJuegosArrayAdapter(context, datosJuegos, false);
             } else {
                 return null;
             }

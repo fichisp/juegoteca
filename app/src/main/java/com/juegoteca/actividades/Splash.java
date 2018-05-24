@@ -28,7 +28,7 @@ public class Splash extends Activity {
      * @return
      */
     private Runnable getRunnableStartApp() {
-        Runnable runnable = new Runnable() {
+        return new Runnable() {
 
             @Override
             public void run() {
@@ -37,7 +37,6 @@ public class Splash extends Activity {
                 finish();
             }
         };
-        return runnable;
     }
 
 }

@@ -20,10 +20,10 @@ import com.mijuegoteca.R;
  */
 public class Buscador extends Activity {
 
-    public static final String INTENT_PARAMETER_GRID = "GRID";
-    public static final String INTENT_PARAMETER_VALORES = "VALORES";
-    public static final String INTENT_PARAMETER_SCAN_MODE = "SCAN_MODE";
-    public static final String INTENT_PARAMETER_SCAN_RESULT = "SCAN_RESULT";
+    private static final String INTENT_PARAMETER_GRID = "GRID";
+    private static final String INTENT_PARAMETER_VALORES = "VALORES";
+    private static final String INTENT_PARAMETER_SCAN_MODE = "SCAN_MODE";
+    private static final String INTENT_PARAMETER_SCAN_RESULT = "SCAN_RESULT";
     private String[] valoresCampos = new String[5];// 5 campos de búsqueda
     private Utilidades utilidades;
     private EditText editEan, editTitulo;
