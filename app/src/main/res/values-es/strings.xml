@@ -180,4 +180,6 @@
     <string name="juegos">juegos</string>
     <string name="pref_description_orden_ultimos_anadidos">Ordenar los últimos juegos añadidos por fecha de compra</string>
     <string name="pref_title_orden_ultimos_anadidos">Orden últimos añadidos</string>
+    <string name="share_twitter_intro">Inicia sesión en Twitter para compartir cada juego nuevo que añadas a tu colección</string>
+    <string name="share_on_twitter">Compartir en Twitter</string>
 </resources>

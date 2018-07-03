@@ -342,6 +342,10 @@ public class NuevoJuego extends Activity {
                     intent.putExtra("GRID", true);
                 }
 
+                //TODO Tweet del nuevo juego
+                if(utilidades.isTwitterAuth()) {
+                    utilidades.tweet(juego);
+                }
 
                 startActivity(intent);
             } else {
@@ -362,6 +366,8 @@ public class NuevoJuego extends Activity {
                 }
             }
         }
+
+
     }
 
     /**

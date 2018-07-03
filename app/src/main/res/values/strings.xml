@@ -182,4 +182,7 @@
     <string name="juegos">games</string>
     <string name="pref_description_orden_ultimos_anadidos">Sort the latest games added by date of purchase</string>
     <string name="pref_title_orden_ultimos_anadidos">Last added order</string>
+    <string name="title_activity_twitter_config">TwitterConfig</string>
+    <string name="share_on_twitter">Share on Twitter</string>
+    <string name="share_twitter_intro">Log in with Twitter to share every new game that you add to your collection</string>
 </resources>

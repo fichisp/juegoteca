@@ -16,7 +16,6 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
-import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.PreferenceActivity;
@@ -217,6 +216,17 @@ public class Opciones extends PreferenceActivity {
                     }
                 });
 
+        Preference preferenciaTwitter = findPreference("twitter");
+        preferenciaTwitter
+                .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                    public boolean onPreferenceClick(Preference preference) {
+                        Intent intent = new Intent(getApplicationContext(),
+                                TwitterActivity.class);
+                        startActivity(intent);
+                        return true;
+                    }
+                });
+
 
         // Add 'data and sync' preferences, and a corresponding header.
         PreferenceCategory fakeHeader2 = new PreferenceCategory(this);
@@ -327,6 +337,7 @@ public class Opciones extends PreferenceActivity {
                         return true;
                     }
                 });
+
     }
 
     /**

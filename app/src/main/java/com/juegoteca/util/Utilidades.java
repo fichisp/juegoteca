@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.Process;
 import android.text.Html;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -28,8 +29,22 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.juegoteca.actividades.Splash;
+import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.mijuegoteca.R;
+import com.twitter.sdk.android.core.Callback;
+import com.twitter.sdk.android.core.DefaultLogger;
+import com.twitter.sdk.android.core.Result;
+import com.twitter.sdk.android.core.Twitter;
+import com.twitter.sdk.android.core.TwitterApiClient;
+import com.twitter.sdk.android.core.TwitterAuthConfig;
+import com.twitter.sdk.android.core.TwitterConfig;
+import com.twitter.sdk.android.core.TwitterCore;
+import com.twitter.sdk.android.core.TwitterException;
+import com.twitter.sdk.android.core.models.Media;
+import com.twitter.sdk.android.core.models.Tweet;
+import com.twitter.sdk.android.core.services.MediaService;
+import com.twitter.sdk.android.core.services.StatusesService;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -55,6 +70,13 @@ import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
+
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
+import retrofit2.Call;
+
+import static com.twitter.sdk.android.core.Twitter.TAG;
 
 
 /**
@@ -845,6 +867,85 @@ public class Utilidades {
             }
         } catch (Exception e) {
         }
+    }
+
+
+    public boolean isTwitterAuth(){
+
+        final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+                0);
+        if (!settings.contains("twitter_token")) {
+            return true;
+        }
+        return false;
+    }
+
+    /** Publica un tweet con la información del juego **/
+    public void tweet(Juego juego){
+
+        TwitterConfig config = new TwitterConfig.Builder(context)
+                .logger(new DefaultLogger(Log.DEBUG))
+                .twitterAuthConfig(new TwitterAuthConfig("HxyV7qaJl2YoWkdbOBN0HPwmc", "p4EQ0Y6xNGnjLgdyR6hubYSlMfIHj5TMB6TM6FShCe6VqWMKXM"))
+                .debug(true)
+                .build();
+        Twitter.initialize(config);
+
+
+        TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
+        StatusesService statusesService = twitterApiClient.getStatusesService();
+
+        StringBuilder statusBuilder = new StringBuilder();
+        statusBuilder.append("He añadido").append(" ");
+        statusBuilder.append(juego.getTitulo()).append(" ");
+
+        //Recuperar la plataforma
+        Cursor cursorPlataforma = juegosSQLH.buscarPlataformaID(String.valueOf(juego.getPlataforma()));
+        if(cursorPlataforma!=null && cursorPlataforma.moveToFirst()){
+            statusBuilder.append("("+cursorPlataforma.getString(1)+")");
+            cursorPlataforma.close();
+        }
+
+        Cursor cursorJuegos = juegosSQLH.getJuegos();
+        int total = cursorJuegos.getCount();
+        cursorJuegos.close();
+
+        statusBuilder.append(" en total tengo en mi colección").append(" ").append(total).append(" juegos https://play.google.com/store/apps/details?id=com.mijuegoteca");
+
+        //TODO Añadir la caratula
+        MediaType type = MediaType.parse("image/*");
+        RequestBody body = RequestBody.create(type, new File(context.getFilesDir().getPath() + "/" + juego.getCaratula()));
+        Call<Media> mediaCall = TwitterCore.getInstance().getApiClient().getMediaService().upload(body, null,null);
+
+
+
+        mediaCall.enqueue(new Callback<Media>() {
+              @Override
+              public void failure(TwitterException exception) {
+
+              }
+
+              @Override
+              public void success(Result<Media> result) {
+
+
+                  Call<Tweet> update = statusesService.update(statusBuilder.toString(), null, null, null, null, null, null, null, result.data.mediaIdString);
+
+                  update.enqueue(new Callback<Tweet>() {
+                      @Override
+                      public void success(Result<Tweet> result) {
+                          Log.e(TAG, "Result<Tweet> result" + result.data.toString());
+
+                      }
+
+                      @Override
+                      public void failure(TwitterException exception) {
+                          Log.e(TAG, "Result<Tweet> result" + exception.getMessage());
+                      }
+                  });
+              }
+        });
+
+
     }
 
 }

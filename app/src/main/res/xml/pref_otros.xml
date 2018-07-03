@@ -9,5 +9,4 @@
         android:key="licenses"
         android:title="@string/pref_title_about"></Preference>
 
-
 </PreferenceScreen>
