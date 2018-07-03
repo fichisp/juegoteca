@@ -921,7 +921,7 @@ public class Utilidades {
         mediaCall.enqueue(new Callback<Media>() {
               @Override
               public void failure(TwitterException exception) {
-
+                  Log.e(TAG, "Result<Media> result" + exception.getMessage());
               }
 
               @Override

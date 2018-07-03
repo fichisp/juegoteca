@@ -407,6 +407,12 @@ public class EditarJuego extends Activity {
             }
 
             startActivity(intent);
+
+            //TODO Tweet del nuevo juego
+
+            utilidades.tweet(juegoEditado);
+
+
         } else {
             if (id == -5) {
                 Toast toast = Toast.makeText(getApplicationContext(),
