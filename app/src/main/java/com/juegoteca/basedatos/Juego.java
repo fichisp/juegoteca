@@ -1,8 +1,5 @@
 package com.juegoteca.basedatos;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
 /**
  * Entidad juego
  *
@@ -403,45 +400,4 @@ public class Juego {
                 + formato + "]";
     }
 
-    /**
-     * Convierte un JSON en un objeto Juego
-     *
-     * @param juegoJSON
-     * @return
-     */
-    public Juego convertirJSON(JSONObject juegoJSON) {
-        Juego juego = new Juego();
-        try {
-            this.ean = juegoJSON.get("ean").toString();
-            this.titulo = juegoJSON.get("titulo").toString();
-            this.compania = juegoJSON.get("compania").toString();
-            this.genero = Integer.valueOf(juegoJSON.get("genero").toString());
-            this.plataforma = Integer.valueOf(juegoJSON.get("plataforma")
-                    .toString());
-            this.clasificacion = Integer.valueOf(juegoJSON.get("clasificacion")
-                    .toString());
-            this.idioma = Integer.valueOf(juegoJSON.get("idioma").toString());
-            this.fechaLanzamiento = juegoJSON.get("fecha_lanzamiento")
-                    .toString();
-            this.fechaCompra = juegoJSON.get("fecha_compra").toString();
-            this.precio = Float.valueOf(juegoJSON.get("precio").toString());
-            this.resumen = juegoJSON.get("resumen").toString();
-            this.completado = Integer.valueOf(juegoJSON.get("completado")
-                    .toString());
-            this.fechaCompletado = juegoJSON.get("fecha_completado").toString();
-            this.caratula = juegoJSON.get("caratula").toString();
-            this.comentario = juegoJSON.get("comentario").toString();
-            try {
-                this.puntuacion = Integer.valueOf(juegoJSON.get("puntuacion")
-                        .toString());
-            } catch (NumberFormatException nfe) {
-                this.puntuacion = 0;
-            }
-            this.formato = juegoJSON.get("formato").toString();
-        } catch (JSONException e) {
-            e.printStackTrace();
-            return null;
-        }
-        return juego;
-    }
 }

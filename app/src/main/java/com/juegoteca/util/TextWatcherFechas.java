@@ -10,8 +10,8 @@ import com.mijuegoteca.R;
 
 public class TextWatcherFechas implements TextWatcher {
 
-    private View view;
-    private Utilidades utilidades;
+    private final View view;
+    private final Utilidades utilidades;
 
     /**
      * @param view

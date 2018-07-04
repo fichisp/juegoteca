@@ -28,9 +28,7 @@ public class Favoritos extends Activity {
     private Juego[] datosJuegos;
     private TextView textoFavoritos;
     private Utilidades utilidades;
-    private Spinner filtroPlataformas;
     private int opcionSeleccionadaPlataformas;
-    private JuegosSQLHelper juegoSQLH;
     private ListadoJuegosArrayAdapter adaptador;
 
 
@@ -46,7 +44,7 @@ public class Favoritos extends Activity {
         opcionSeleccionadaPlataformas = 0;
         listadoJuegos = (ListView) findViewById(R.id.listado_favoritos);
         textoFavoritos = (TextView) findViewById(R.id.texto_favoritos);
-        filtroPlataformas = (Spinner) findViewById(R.id.spinner_filtro_plataforma);
+        Spinner filtroPlataformas = (Spinner) findViewById(R.id.spinner_filtro_plataforma);
         utilidades.cargarPlataformasBuscador(filtroPlataformas);
         //utilidades.cargarAnuncio();
         setupActionBar();
@@ -79,11 +77,10 @@ public class Favoritos extends Activity {
      * @param plataforma Plataforma para el filtro de la consulta (si es 0 se supone que es todos)
      */
     private void cargarFavoritos(int plataforma) {
-        juegoSQLH = new JuegosSQLHelper(this);
+        JuegosSQLHelper juegoSQLH = new JuegosSQLHelper(this);
         Cursor c = (plataforma == 0) ? juegoSQLH.getFavoritos() : juegoSQLH.getFavoritosPlataforma(plataforma);
         if (c != null && c.moveToFirst()) {
             datosJuegos = new Juego[c.getCount()];
-            textoFavoritos.setText(c.getCount() + " juegos encontrados");
             int i = 0;
             do {
                 datosJuegos[i] = new Juego();
@@ -98,7 +95,7 @@ public class Favoritos extends Activity {
                 i++;
             }
             while (c.moveToNext());
-            adaptador = new ListadoJuegosArrayAdapter(this, datosJuegos, false);
+            adaptador = new ListadoJuegosArrayAdapter(this, datosJuegos);
             listadoJuegos.setAdapter(adaptador);
             listadoJuegos.setVisibility(View.VISIBLE);
             textoFavoritos.setText(datosJuegos.length + " " + getString(R.string.juegos));
@@ -144,9 +141,7 @@ public class Favoritos extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

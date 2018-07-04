@@ -115,10 +115,8 @@ public class NuevoJuego extends Activity {
             }
         });
         // Make sure we're running on Honeycomb or higher to use ActionBar APIs
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            // Show the Up button in the action bar.
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        // Show the Up button in the action bar.
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
 
@@ -160,14 +158,12 @@ public class NuevoJuego extends Activity {
                         getString(R.string.campo_titulo_vacio),
                         Toast.LENGTH_SHORT);
                 toast.show();
-                return;
             } else {
                 if (editCompaniaNuevo.getText().toString().length() == 0) {
                     Toast toast = Toast.makeText(getApplicationContext(),
                             getString(R.string.campo_compania_vacio),
                             Toast.LENGTH_SHORT);
                     toast.show();
-                    return;
                 }
             }
         } else {
@@ -234,7 +230,7 @@ public class NuevoJuego extends Activity {
                 juego.setCompletado(1);
                 String fechaCompletado = editFechaCompletado.getText()
                         .toString();
-                if (fechaCompletado != null && fechaCompletado.length() > 0) {
+                if (fechaCompletado.length() > 0) {
                     if (utilidades.validaFecha(fechaCompletado) != 0) {
                         Toast toast = Toast
                                 .makeText(
@@ -355,7 +351,6 @@ public class NuevoJuego extends Activity {
                             Toast.LENGTH_SHORT);
                     //toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
                     toast.show();
-                    return;
                 } else {
                     Toast toast = Toast.makeText(
                             getApplicationContext(),
@@ -400,17 +395,13 @@ public class NuevoJuego extends Activity {
                         .caratulaTemporal(selectedImageUri));
             }
         }
-        /**
-         * Procesar el escaneo de un código
-         */
+        // Procesar el escaneo de un código
         if (requestCode == 0) {
             if (resultCode == RESULT_OK) {
                 String contents = data.getStringExtra("SCAN_RESULT");
                 ((EditText) this.findViewById(R.id.edit_ean_nuevo))
                         .setText(contents);
                 // Handle successful scan
-            } else if (resultCode == RESULT_CANCELED) {
-                // Handle cancel
             }
         }
     }
@@ -432,9 +423,7 @@ public class NuevoJuego extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     /**
@@ -478,7 +467,6 @@ public class NuevoJuego extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
-                        return;
                     }
                 });
         AlertDialog dialog = builder.create();

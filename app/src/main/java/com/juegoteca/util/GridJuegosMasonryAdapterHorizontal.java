@@ -26,14 +26,11 @@ import java.io.File;
  */
 public class GridJuegosMasonryAdapterHorizontal extends RecyclerView.Adapter<GridJuegosMasonryAdapterHorizontal.MasonryView> {
 
-    private Context context;
+    private final Context context;
 
     private Juego[] datosJuegos;
-    private int[] gridCellColor;
 
-    private Utilidades utilidades;
-
-    private int gridItem;
+    private final Utilidades utilidades;
 
 
     public GridJuegosMasonryAdapterHorizontal(Context context) {
@@ -43,7 +40,9 @@ public class GridJuegosMasonryAdapterHorizontal extends RecyclerView.Adapter<Gri
 
     @Override
     public MasonryView onCreateViewHolder(ViewGroup parent, int viewType) {
-        gridItem = R.layout.grid_item_horizontal;
+
+        int gridItem = R.layout.grid_item_horizontal;
+
         View layoutView = LayoutInflater.from(parent.getContext()).inflate(gridItem, parent, false);
 
         MasonryView masonryView = new MasonryView(layoutView);
@@ -138,12 +137,12 @@ public class GridJuegosMasonryAdapterHorizontal extends RecyclerView.Adapter<Gri
     }
 
     class MasonryView extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView textView;
-        TextView idView;
+        final ImageView imageView;
+        final TextView textView;
+        final TextView idView;
 
 
-        public MasonryView(View itemView) {
+        MasonryView(View itemView) {
             super(itemView);
 
             imageView = (ImageView) itemView.findViewById(R.id.img);

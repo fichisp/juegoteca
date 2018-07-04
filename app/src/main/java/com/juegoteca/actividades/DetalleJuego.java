@@ -2,12 +2,12 @@ package com.juegoteca.actividades;
 
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,28 +20,22 @@ import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
-import org.json.JSONObject;
-
 import java.io.File;
 import java.util.Locale;
 
 public class DetalleJuego extends Activity {
 
-    private static final String TAG_SUCCESS = "success";
     private JuegosSQLHelper juegosSQLH;
     private String idJuego;
     private boolean esJuegoOnline = false;
     private Juego juego = null;
     private Utilidades utilidades;
-    private JSONObject juegoJSON;
     private ImageView imageViewCaratula, imageViewPlataforma,
             imageViewClasficacion, imageViewIdioma;
     private TextView textViewTitulo, textViewCompania, textViewGenero,
             textViewResumen, textViewFechaLanzamiento, textViewFechaCompra,
             textViewFechaCompletado, textViewPrecio, textViewEan,
             textViewComentario, textViewPuntuacion, textViewFormato;
-    private String url_insertar, url_buscar, url_subir_imagen;
-    private ProgressDialog dialogoExportar;
     private String[] valoresBusqueda = null;
 
     /**
@@ -55,7 +49,7 @@ public class DetalleJuego extends Activity {
         loadData();
     }
 
-    protected void loadData() {
+    void loadData() {
         Intent intent = getIntent();
         utilidades = new Utilidades(this);
         // Recuperamos los valores que nos oueden pasar en el intent
@@ -309,7 +303,6 @@ public class DetalleJuego extends Activity {
                         Toast.LENGTH_SHORT);
                 // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                 toast.show();
-                return;
             } else {
                 Toast toast = Toast.makeText(getApplicationContext(),
                         getString(R.string.juego_no_anadido_favoritos),
@@ -324,8 +317,7 @@ public class DetalleJuego extends Activity {
      * Elimina el juego actual de la lista de favoritos
      */
     private void eliminarFavorito() {
-        int id;
-        if ((id = juegosSQLH.eliminarFavorito(idJuego)) > 0) {
+        if (juegosSQLH.eliminarFavorito(idJuego) > 0) {
             Toast toast = Toast.makeText(getApplicationContext(),
                     getString(R.string.juego_eliminado_favoritos),
                     Toast.LENGTH_SHORT);
@@ -454,7 +446,7 @@ public class DetalleJuego extends Activity {
                 }
                 if (caller != null) {
                     intent.putExtra("CALLER", caller);
-                    if (caller != null && caller.compareTo("ListadoJuego") == 0) {
+                    if (caller.compareTo("ListadoJuego") == 0) {
                         intent.putExtra("VALORES", valoresBusqueda);
                         intent.putExtra("ONLINE", esJuegoOnline);
                     }
@@ -468,6 +460,7 @@ public class DetalleJuego extends Activity {
                         R.string.alerta_borrado_titulo);
                 builder.setPositiveButton(R.string.ok,
                         new DialogInterface.OnClickListener() {
+                            @SuppressWarnings("ResultOfMethodCallIgnored")
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 // User clicked OK button
@@ -484,6 +477,7 @@ public class DetalleJuego extends Activity {
                                                         + "/" + juego.getCaratula());
                                         imagen.delete();
                                     } catch (Exception e) {
+                                        Log.e("Error", "Error al borrar la cartula" + e.getMessage());
                                     }
                                 } else {
                                     toast = Toast.makeText(getApplicationContext(),
@@ -501,7 +495,6 @@ public class DetalleJuego extends Activity {
                                             Inicio.class);
                                     startActivity(intent);
                                 }
-                                return;
                             }
                         });
                 builder.setNegativeButton(R.string.cancel,
@@ -509,7 +502,6 @@ public class DetalleJuego extends Activity {
                             @Override
                             public void onClick(DialogInterface dialog, int id) {
                                 // User cancelled the dialog
-                                return;
                             }
                         });
                 AlertDialog dialog = builder.create();

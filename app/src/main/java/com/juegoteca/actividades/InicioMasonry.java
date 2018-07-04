@@ -26,6 +26,7 @@ public class InicioMasonry extends Activity {
 
     private Utilidades utilidades;
 
+    @SuppressWarnings("deprecation")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 

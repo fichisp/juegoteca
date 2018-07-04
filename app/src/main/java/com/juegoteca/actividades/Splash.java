@@ -10,14 +10,12 @@ import com.mijuegoteca.R;
 
 public class Splash extends Activity {
 
-    private Utilidades utilidades;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
         Handler handler = new Handler();
-        utilidades = new Utilidades(this);
+        Utilidades utilidades = new Utilidades(this);
         handler.postDelayed(getRunnableStartApp(), 1500);
     }
 

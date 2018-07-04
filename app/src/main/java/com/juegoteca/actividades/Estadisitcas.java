@@ -35,7 +35,6 @@ import java.util.Locale;
  */
 public class Estadisitcas extends Activity {
 
-    private static final String TYPE = "type";
     private static final String STATUS_PENDING = "Pending";
     private static final String STATUS_COMPLETED = "Completed";
     private static final String STATUS_NO_COMPLETADO = "Pendiente";
@@ -50,7 +49,7 @@ public class Estadisitcas extends Activity {
     private static final String ZERO_STRING = "0";
     private static final String SPA = "spa";
 
-    private static int[] COLORS = new int[]{
+    private static final int[] COLORS = new int[]{
             Color.rgb(255, 64, 0),
             Color.rgb(255, 128, 0),
             Color.rgb(255, 191, 0),
@@ -79,22 +78,17 @@ public class Estadisitcas extends Activity {
     };
 
 
-    private CategorySeries serieJuegosPlataforma = new CategorySeries(EMPTY_STRING);
-    private CategorySeries serieJuegosCompletados = new CategorySeries(EMPTY_STRING);
-    private CategorySeries serieJuegosGenero = new CategorySeries(EMPTY_STRING);
-    private CategorySeries serieJuegosFormato = new CategorySeries(EMPTY_STRING);
-    private DefaultRenderer rendererJuegosPlataforma = new DefaultRenderer();
-    private DefaultRenderer rendererJuegosCompletados = new DefaultRenderer();
-    private DefaultRenderer rendererJuegosGenero = new DefaultRenderer();
-    private DefaultRenderer rendererJuegosFormato = new DefaultRenderer();
-    private GraphicalView graficoJuegosPlataforma;
-    private GraphicalView graficoJuegosCompletados;
-    private GraphicalView graficoJuegosGenero;
-    private GraphicalView graficoJuegosFormato;
+    private final CategorySeries serieJuegosPlataforma = new CategorySeries(EMPTY_STRING);
+    private final CategorySeries serieJuegosCompletados = new CategorySeries(EMPTY_STRING);
+    private final CategorySeries serieJuegosGenero = new CategorySeries(EMPTY_STRING);
+    private final CategorySeries serieJuegosFormato = new CategorySeries(EMPTY_STRING);
+    private final DefaultRenderer rendererJuegosPlataforma = new DefaultRenderer();
+    private final DefaultRenderer rendererJuegosCompletados = new DefaultRenderer();
+    private final DefaultRenderer rendererJuegosGenero = new DefaultRenderer();
+    private final DefaultRenderer rendererJuegosFormato = new DefaultRenderer();
     private int[] numeroJuegos = null;
     private String[] etiquetas = null;
     private JuegosSQLHelper juegosSQLH;
-    private Utilidades utilidades;
     private float pxLabelSize;
     private float pxLegendSize;
 
@@ -109,7 +103,7 @@ public class Estadisitcas extends Activity {
 
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
-        utilidades = new Utilidades(this);
+        Utilidades utilidades = new Utilidades(this);
         juegosSQLH = new JuegosSQLHelper(this);
 
         setupActionBar();
@@ -186,7 +180,7 @@ public class Estadisitcas extends Activity {
 
             //Procesamos las etiquetas y valores
             for (int j = 0; j < numeroJuegos.length; j++) {
-                int x = 0;
+                int x;
                 try {
                     x = numeroJuegos[j];
                 } catch (NumberFormatException e) {
@@ -203,7 +197,6 @@ public class Estadisitcas extends Activity {
 
                 rendererJuegosCompletados.addSeriesRenderer(renderer);
 
-                LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_3_foot);
                 LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_3_foot_left);
                 LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_3_foot_right);
 
@@ -245,7 +238,7 @@ public class Estadisitcas extends Activity {
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_3);
-            graficoJuegosCompletados = ChartFactory.getPieChartView(this,
+            GraphicalView graficoJuegosCompletados = ChartFactory.getPieChartView(this,
                     serieJuegosCompletados, rendererJuegosCompletados);
 
             graficoJuegosCompletados.setPadding(0,20,0,0);
@@ -313,7 +306,7 @@ public class Estadisitcas extends Activity {
             int[] coloresFormato = new int[]{Color.rgb(255, 64, 0), Color.rgb(255, 215, 0)};
 
             for (int j = 0; j < numeroJuegos.length; j++) {
-                int x = 0;
+                int x;
                 try {
                     x = numeroJuegos[j];
                 } catch (NumberFormatException e) {
@@ -325,8 +318,6 @@ public class Estadisitcas extends Activity {
                         % coloresFormato.length]);
                 rendererJuegosFormato.addSeriesRenderer(renderer);
 
-
-                LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_4_foot);
                 LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_4_foot_left);
                 LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_4_foot_right);
 
@@ -367,7 +358,7 @@ public class Estadisitcas extends Activity {
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linear_estadisticas_4);
-            graficoJuegosFormato = ChartFactory.getPieChartView(this,
+            GraphicalView graficoJuegosFormato = ChartFactory.getPieChartView(this,
                     serieJuegosFormato, rendererJuegosFormato);
 
 
@@ -393,7 +384,7 @@ public class Estadisitcas extends Activity {
         rendererJuegosGenero.setShowLabels(false);
         rendererJuegosGenero.setAntialiasing(true);
 
-        Cursor cursorJuegosGenero = null;
+        Cursor cursorJuegosGenero;
 
         if (!SPA.equalsIgnoreCase(codigoIdioma)) {
             cursorJuegosGenero = juegosSQLH.getJuegosGeneroEN();
@@ -413,12 +404,11 @@ public class Estadisitcas extends Activity {
                 i++;
             } while (cursorJuegosGenero.moveToNext());
 
-            LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot);
             LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot_left);
             LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_2_foot_right);
 
             for (int j = 0; j < numeroJuegos.length; j++) {
-                int x = 0;
+                int x;
                 try {
                     x = numeroJuegos[j];
                 } catch (NumberFormatException e) {
@@ -475,7 +465,7 @@ public class Estadisitcas extends Activity {
             }
 
             LinearLayout layout = (LinearLayout) findViewById(R.id.linea_estadisticas_2_layout_pie);
-            graficoJuegosGenero = ChartFactory.getPieChartView(this,
+            GraphicalView graficoJuegosGenero = ChartFactory.getPieChartView(this,
                     serieJuegosGenero, rendererJuegosGenero);
 
             layout.addView(graficoJuegosGenero);
@@ -557,12 +547,11 @@ public class Estadisitcas extends Activity {
                 i++;
             } while (cursorJuegosPlataforma.moveToNext());
 
-            LinearLayout foot = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot);
             LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot_left);
             LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_1_foot_right);
 
             for (int j = 0; j < numeroJuegos.length; j++) {
-                int x = 0;
+                int x;
 
                 try {
                     x = numeroJuegos[j];
@@ -621,7 +610,7 @@ public class Estadisitcas extends Activity {
             LinearLayout layout = (LinearLayout) findViewById(R.id.linea_estadisticas_1_layout_pie);
 
 
-            graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
+            GraphicalView graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
                     serieJuegosPlataforma, rendererJuegosPlataforma);
 
 
@@ -658,8 +647,6 @@ public class Estadisitcas extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }

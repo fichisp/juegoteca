@@ -1,6 +1,7 @@
 package com.juegoteca.util;
 
 import android.app.Activity;
+import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,17 +13,15 @@ import com.mijuegoteca.R;
 
 public class ListadoJuegosArrayAdapter extends ArrayAdapter<Juego> {
 
-    private Activity context;
+    private final Activity context;
     private Juego[] juegos;
 
     /**
      * Contructor parametrizado
-     *
-     * @param context
+     *  @param context
      * @param juegos
-     * @param esJuegoOnline
      */
-    public ListadoJuegosArrayAdapter(Activity context, Juego[] juegos, boolean esJuegoOnline) {
+    public ListadoJuegosArrayAdapter(Activity context, Juego[] juegos) {
         super(context, R.layout.listado_juego, juegos);
         this.context = context;
         this.juegos = juegos;
@@ -41,8 +40,9 @@ public class ListadoJuegosArrayAdapter extends ArrayAdapter<Juego> {
     /**
      * Carha los datos en los compomentes
      */
+    @NonNull
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = context.getLayoutInflater();
         View item = inflater.inflate(R.layout.listado_juego_sin_caratula, null);
 

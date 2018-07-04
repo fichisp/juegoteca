@@ -27,8 +27,6 @@ public class Inicio extends Activity {
     private Juego[] datosJuegos;
     private Utilidades utilidades;
 
-    private int NUM_MAX_ELEMENTOS_INICIO = 25;
-
 
     /**
      * Llamada cuando se inicializa la actividad. Carga los listados que se
@@ -46,15 +44,9 @@ public class Inicio extends Activity {
                 0);
 
         //Ya se ha visualizado
-        PackageInfo packageInfo = null;
         try {
-            packageInfo = this.getPackageManager()
-                    .getPackageInfo(this.getPackageName(), 0);
-
-            int versionCode = packageInfo.versionCode;
             String versionName = getPackageManager().getPackageInfo(getPackageName(),
                     0).versionName;
-
 
             if (!settings.contains("releaseNotes"+versionName)) {
 
@@ -67,10 +59,8 @@ public class Inicio extends Activity {
 
 
         // Desactiva el modo estricto
-        if (android.os.Build.VERSION.SDK_INT > 9) {
-            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
-            StrictMode.setThreadPolicy(policy);
-        }
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
     }
 
     @Override
@@ -90,7 +80,7 @@ public class Inicio extends Activity {
         final SharedPreferences settings = getSharedPreferences("UserInfo",
                 0);
 
-        Cursor c = null;
+        Cursor c;
 
         if(settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
             c = juegosSQLH.getUltimosJuegosAnadidosFechaCompra();

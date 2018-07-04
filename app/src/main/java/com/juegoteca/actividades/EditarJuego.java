@@ -32,9 +32,8 @@ public class EditarJuego extends Activity {
     private static final int IMAGEN_SELECCIONADA = 1;
     private JuegosSQLHelper juegosSQLH;
     private String idJuego;
-    // private String selectedImagePath = null;
-    private Uri caratulaOriginal, caratulaTemporal;
-    private Juego juegoDetalle, juegoEditado;
+    private Uri caratulaTemporal;
+    private Juego juegoDetalle;
     private Utilidades utilidades;
     private ImageView imageCaratula;
     private EditText textTitulo, textComentario, textPuntuacion, textResumen,
@@ -231,7 +230,8 @@ public class EditarJuego extends Activity {
      * Actualiza el juego en la base de datos
      */
     private void actualizarJuego() {
-        juegoEditado = new Juego();
+
+        Juego juegoEditado = new Juego();
         // Establecemos el valor de los atributos recuperados del formulario
         juegoEditado.setId(Integer.parseInt(idJuego));
         juegoEditado.setTitulo(textTitulo.getText().toString());
@@ -292,7 +292,7 @@ public class EditarJuego extends Activity {
             juegoEditado.setCompletado(1);
 
             String fechaCompletado = textFechaCompletado.getText().toString();
-            if (fechaCompletado != null && fechaCompletado.length() > 0) {
+            if (fechaCompletado.length() > 0) {
                 if (utilidades.validaFecha(fechaCompletado) != 0) {
                     Toast toast = Toast
                             .makeText(
@@ -405,7 +405,7 @@ public class EditarJuego extends Activity {
             String caller = getIntent().getStringExtra("CALLER");
             if (caller != null) {
                 intent.putExtra("CALLER", caller);
-                if (caller != null && caller.compareTo("ListadoJuego") == 0) {
+                if (caller.compareTo("ListadoJuego") == 0) {
                     intent.putExtra("VALORES", valoresBusqueda);
                     intent.putExtra("ONLINE", esJuegoOnline);
                 }
@@ -428,7 +428,6 @@ public class EditarJuego extends Activity {
                 Toast toast = Toast.makeText(getApplicationContext(),
                         getString(R.string.juego_codigo_duplicado), Toast.LENGTH_SHORT);
                 toast.show();
-                return;
             } else {
                 Toast toast = Toast.makeText(getApplicationContext(),
                         getString(R.string.juego_actualizado_ko), Toast.LENGTH_SHORT);
@@ -542,7 +541,6 @@ public class EditarJuego extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
-                        return;
                     }
                 });
         AlertDialog dialog = builder.create();

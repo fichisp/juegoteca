@@ -22,6 +22,7 @@ import com.juegoteca.util.ListadoJuegosArrayAdapter;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
+
 public class Pendientes extends Activity {
 
     private ListView listadoJuegos;
@@ -29,9 +30,7 @@ public class Pendientes extends Activity {
     private TextView textoPendientes;
     private int opcionSeleccionadaPlataformas;
     private Utilidades utilidades;
-    private Spinner filtroPlataformas;
     private ListadoJuegosArrayAdapter adaptador;
-    private JuegosSQLHelper juegoSQLH;
 
     /**
      * Llamada cuando se inicializa la actividad.
@@ -45,7 +44,7 @@ public class Pendientes extends Activity {
         opcionSeleccionadaPlataformas = 0;
         listadoJuegos = (ListView) findViewById(R.id.listado_pendientes);
         textoPendientes = (TextView) findViewById(R.id.texto_pendientes);
-        filtroPlataformas = (Spinner) findViewById(R.id.spinner_filtro_plataforma);
+        Spinner filtroPlataformas = (Spinner) findViewById(R.id.spinner_filtro_plataforma);
         utilidades.cargarPlataformasBuscador(filtroPlataformas);
         setupActionBar();
         cargarPendientes(0);//Todas las plataformas
@@ -79,7 +78,7 @@ public class Pendientes extends Activity {
     private void cargarPendientes(int plataforma) {
         listadoJuegos = (ListView) findViewById(R.id.listado_pendientes);
         textoPendientes = (TextView) findViewById(R.id.texto_pendientes);
-        juegoSQLH = new JuegosSQLHelper(this);
+        JuegosSQLHelper juegoSQLH = new JuegosSQLHelper(this);
         Cursor c = (plataforma == 0) ? juegoSQLH.getPendientes() : juegoSQLH.getPendientesPlataforma(plataforma);
         // Si hay elementos en el cursor
         if (c != null && c.moveToFirst()) {
@@ -98,10 +97,9 @@ public class Pendientes extends Activity {
                 i++;
             }
             while (c.moveToNext());
-            adaptador = new ListadoJuegosArrayAdapter(this, datosJuegos, false);
+            adaptador = new ListadoJuegosArrayAdapter(this, datosJuegos);
             listadoJuegos.setAdapter(adaptador);
             listadoJuegos.setVisibility(View.VISIBLE);
-            textoPendientes.setText("No hay resultados");
             textoPendientes.setText(datosJuegos.length + " " + getString(R.string.juegos));
             //textoPendientes.setVisibility(View.GONE);
             c.close();
@@ -142,9 +140,7 @@ public class Pendientes extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

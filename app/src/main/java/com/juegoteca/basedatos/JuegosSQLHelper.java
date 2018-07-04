@@ -21,57 +21,10 @@ import java.util.Locale;
 
 public class JuegosSQLHelper extends SQLiteOpenHelper {
 
-    private static int DATABASE_VERSION = 15;
-    private static String DATABASE_NAME = "Juegoteca";
+    private static final int DATABASE_VERSION = 15;
+    private static final String DATABASE_NAME = "Juegoteca";
 
-    private Resources resources;
-
-    private String sqlCreatePlataforma = "CREATE TABLE IF NOT EXISTS plataforma ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + "nombre varchar(512) NOT NULL,"
-            + "fabricante varchar(512) NULL,"
-            + "fecha_lanzamiento varchar(512) NULL,"
-            + "resumen varchar(512) NULL,"
-            + "drawable varchar(512) NOT NULL,"
-            + "imagen varchar(512) NULL)";
-
-    private String sqlCreateJuego = "CREATE TABLE IF NOT EXISTS juego ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
-            + "ean varchar(256) UNIQUE NULL," + "titulo varchar(256) NOT NULL,"
-            + "compania varchar(256) NOT NULL," + "genero int(2) NOT NULL,"
-            + "plataforma int(2) NOT NULL," + "clasificacion int(2) NOT NULL,"
-            + "idioma int(2)," + "fecha_lanzamiento bigint(64) DEFAULT NULL,"
-            + "fecha_compra bigint(64) DEFAULT NULL,"
-            + "precio float DEFAULT NULL," + "completado int(1) NOT NULL,"
-            + "resumen varchar(512) NOT NULL,"
-            + "caratula varchar(512) NOT NULL,"
-            + "fecha_creacion bigint(64) NOT NULL,"
-            + "fecha_completado bigint(64) NULL,"
-            + "comentario varchar(512) NULL," + "puntuacion int(2) NULL,"
-            + "formato char(2) NOT NULL,"
-            + "FOREIGN KEY(plataforma) REFERENCES plataforma(id),"
-            + "FOREIGN KEY(idioma) REFERENCES idioma(id),"
-            + "FOREIGN KEY(genero) REFERENCES genero(id),"
-            + "FOREIGN KEY(clasificacion) REFERENCES clasificacion(id));";
-
-    private String sqlCreateClasificacion = "CREATE TABLE IF NOT EXISTS clasificacion ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20), drawable VARCHAR(20));";
-
-    private String sqlCreateIdiomas = "CREATE TABLE IF NOT EXISTS idioma ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20), drawable VARCHAR(20));";
-
-    private String sqlCreateIdiomasEN = "CREATE TABLE IF NOT EXISTS idioma_en ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20), drawable VARCHAR(20));";
-
-    private String sqlCreateGeneros = "CREATE TABLE IF NOT EXISTS genero ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20));";
-
-    private String sqlCreateGenerosEN = "CREATE TABLE IF NOT EXISTS genero_en ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20));";
-
-    private String sqlCreateFavoritos = "CREATE TABLE IF NOT EXISTS favorito ("
-            + "id INTEGER PRIMARY KEY AUTOINCREMENT, id_juego int(2) NOT NULL,"
-            + "FOREIGN KEY(id_juego) REFERENCES juego(id));";
+    private final Resources resources;
 
     /**
      * Constructor
@@ -88,14 +41,18 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      */
     @Override
     public void onCreate(SQLiteDatabase database) {
-        database.execSQL(sqlCreatePlataforma);
-        database.execSQL(sqlCreateClasificacion);
-        database.execSQL(sqlCreateIdiomas);
-        database.execSQL(sqlCreateIdiomasEN);
-        database.execSQL(sqlCreateGeneros);
-        database.execSQL(sqlCreateGenerosEN);
-        database.execSQL(sqlCreateJuego);
-        database.execSQL(sqlCreateFavoritos);
+
+        createDatabase(database);
+        initDatabase(database);
+
+    }
+
+    /**
+     * Init empty database
+     *
+     * @param database
+     */
+    private void initDatabase(SQLiteDatabase database) {
         // Carga de los valores iniciales en las tablas
         try {
             InputStream fraw = resources.openRawResource(R.raw.db_create);
@@ -109,6 +66,67 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         } catch (IOException ioe) {
             Log.e("onCreate", ioe.toString());
         }
+    }
+
+    /**
+     * Create schema
+     * @param database
+     */
+    private void createDatabase(SQLiteDatabase database) {
+        String sqlCreatePlataforma = "CREATE TABLE IF NOT EXISTS plataforma ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "nombre varchar(512) NOT NULL,"
+                + "fabricante varchar(512) NULL,"
+                + "fecha_lanzamiento varchar(512) NULL,"
+                + "resumen varchar(512) NULL,"
+                + "drawable varchar(512) NOT NULL,"
+                + "imagen varchar(512) NULL)";
+        database.execSQL(sqlCreatePlataforma);
+
+        String sqlCreateClasificacion = "CREATE TABLE IF NOT EXISTS clasificacion ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20), drawable VARCHAR(20));";
+        database.execSQL(sqlCreateClasificacion);
+
+        String sqlCreateIdiomas = "CREATE TABLE IF NOT EXISTS idioma ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20), drawable VARCHAR(20));";
+        database.execSQL(sqlCreateIdiomas);
+
+        String sqlCreateIdiomasEN = "CREATE TABLE IF NOT EXISTS idioma_en ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20), drawable VARCHAR(20));";
+        database.execSQL(sqlCreateIdiomasEN);
+
+        String sqlCreateGeneros = "CREATE TABLE IF NOT EXISTS genero ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20));";
+        database.execSQL(sqlCreateGeneros);
+
+        String sqlCreateGenerosEN = "CREATE TABLE IF NOT EXISTS genero_en ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, nombre VARCHAR(20));";
+        database.execSQL(sqlCreateGenerosEN);
+
+        String sqlCreateJuego = "CREATE TABLE IF NOT EXISTS juego ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + "ean varchar(256) UNIQUE NULL," + "titulo varchar(256) NOT NULL,"
+                + "compania varchar(256) NOT NULL," + "genero int(2) NOT NULL,"
+                + "plataforma int(2) NOT NULL," + "clasificacion int(2) NOT NULL,"
+                + "idioma int(2)," + "fecha_lanzamiento bigint(64) DEFAULT NULL,"
+                + "fecha_compra bigint(64) DEFAULT NULL,"
+                + "precio float DEFAULT NULL," + "completado int(1) NOT NULL,"
+                + "resumen varchar(512) NOT NULL,"
+                + "caratula varchar(512) NOT NULL,"
+                + "fecha_creacion bigint(64) NOT NULL,"
+                + "fecha_completado bigint(64) NULL,"
+                + "comentario varchar(512) NULL," + "puntuacion int(2) NULL,"
+                + "formato char(2) NOT NULL,"
+                + "FOREIGN KEY(plataforma) REFERENCES plataforma(id),"
+                + "FOREIGN KEY(idioma) REFERENCES idioma(id),"
+                + "FOREIGN KEY(genero) REFERENCES genero(id),"
+                + "FOREIGN KEY(clasificacion) REFERENCES clasificacion(id));";
+        database.execSQL(sqlCreateJuego);
+
+        String sqlCreateFavoritos = "CREATE TABLE IF NOT EXISTS favorito ("
+                + "id INTEGER PRIMARY KEY AUTOINCREMENT, id_juego int(2) NOT NULL,"
+                + "FOREIGN KEY(id_juego) REFERENCES juego(id));";
+        database.execSQL(sqlCreateFavoritos);
     }
 
     /**
@@ -327,7 +345,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getGeneros(String[] args) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -345,7 +363,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getPlataformas() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM plataforma", null);
@@ -361,7 +379,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getClasificaciones() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM clasificacion", null);
@@ -377,7 +395,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getIdiomas() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM idioma", null);
@@ -393,7 +411,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getIdiomasEN() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT id AS _id,nombre FROM idioma_en", null);
@@ -410,7 +428,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor buscarJuegoID(String id) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT * FROM juego WHERE id=" + id, null);
@@ -427,7 +445,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor buscarGeneroID(String id) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
 
@@ -452,7 +470,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor buscarPlataformaID(String id) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT * FROM plataforma WHERE id=" + id, null);
@@ -470,7 +488,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor buscarClasificacionID(String id) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT * FROM clasificacion WHERE id=" + id, null);
@@ -487,7 +505,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor buscarIdiomaID(String id) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
 
@@ -513,7 +531,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      */
     public int borrarJuego(String id) {
         SQLiteDatabase db = this.getWritableDatabase();
-        int borrado = 0;
+        int borrado;
         try {
             borrado = db.delete("juego", "ID = " + id, null);
         } catch (Exception e) {
@@ -528,7 +546,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getUltimosJuegosAnadidos() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT * FROM juego ORDER BY fecha_creacion DESC",
@@ -545,7 +563,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getUltimosJuegosAnadidosFechaCompra() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery("SELECT * FROM juego ORDER BY fecha_compra DESC",
@@ -562,7 +580,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getUltimosJuegosCompletados() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -580,7 +598,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getJuegosPorPlataforma() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -598,7 +616,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getJuegosCompletados() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -616,7 +634,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getJuegosPorFormato() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -634,7 +652,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getJuegosGenero() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -652,7 +670,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getJuegosGeneroEN() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -675,7 +693,14 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         Cursor c = db.rawQuery("SELECT * FROM favorito WHERE id_juego="
                 + idJuego, null);
         // Si ya está en favoritos, devolvemos el valor -5 para indicarlo
-        return c != null && c.moveToFirst();
+        boolean esFavorito = false;
+
+        if(c != null && c.moveToFirst()){
+            esFavorito = true;
+            c.close();
+        }
+
+        return esFavorito;
     }
 
     /**
@@ -684,7 +709,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getFavoritos() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -702,7 +727,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getFavoritosPlataforma(int plataforma) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -733,6 +758,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                 // Si ya está en favoritos, devolvemos el valor -5 para
                 // indicarlo
                 if (c != null && c.moveToFirst()) {
+                    c.close();
                     return -5;
                 } else {
                     Log.v("insertarFavorito",
@@ -761,7 +787,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      */
     public int eliminarFavorito(String idJuego) {
         SQLiteDatabase db = this.getWritableDatabase();
-        int borrado = 0;
+        int borrado;
         try {
             borrado = db.delete("favorito", "ID_JUEGO = " + idJuego, null);
         } catch (Exception e) {
@@ -776,7 +802,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getPendientes() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -796,7 +822,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Cursor getPendientesPlataforma(int plataforma) {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
             c = db.rawQuery(
@@ -814,7 +840,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Float getValorColeccion() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
 
@@ -822,7 +848,9 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT SUM(precio) FROM juego", null);
 
             if (c.moveToFirst()) {
-                return c.getFloat(0);
+                float valor = c.getFloat(0);
+                c.close();
+                return valor;
             }
         } catch (Exception e) {
             return null;
@@ -837,7 +865,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Integer getCountJuegosConPrecio() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
 
@@ -845,7 +873,9 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*) FROM juego where precio <> 0", null);
 
             if (c.moveToFirst()) {
-                return c.getInt(0);
+                int juegosConPrecio = c.getInt(0);
+                c.close();
+                return juegosConPrecio;
             }
         } catch (Exception e) {
             return null;
@@ -860,7 +890,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
      * @return
      */
     public Integer getCountJuegosCompletados() {
-        Cursor c = null;
+        Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
 
@@ -868,7 +898,9 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
                     "SELECT count(*) FROM juego where completado = 1", null);
 
             if (c.moveToFirst()) {
-                return c.getInt(0);
+                int countJuegosCompletados = c.getInt(0);
+                c.close();
+                return countJuegosCompletados;
             }
         } catch (Exception e) {
             return null;

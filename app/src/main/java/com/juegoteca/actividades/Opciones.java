@@ -58,7 +58,7 @@ public class Opciones extends PreferenceActivity {
      * A preference value change listener that updates the preference's summary
      * to reflect its new value.
      */
-    private static Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
+    private static final Preference.OnPreferenceChangeListener sBindPreferenceSummaryToValueListener = new Preference.OnPreferenceChangeListener() {
         @Override
         public boolean onPreferenceChange(Preference preference, Object value) {
             String stringValue = value.toString();
@@ -102,9 +102,7 @@ public class Opciones extends PreferenceActivity {
      * "simplified" settings UI should be shown.
      */
     private static boolean isSimplePreferences(Context context) {
-        return ALWAYS_SIMPLE_PREFS
-                || Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB
-                || !isXLargeTablet(context);
+        return ALWAYS_SIMPLE_PREFS || !isXLargeTablet(context);
     }
 
     /**
@@ -292,7 +290,6 @@ public class Opciones extends PreferenceActivity {
                                     public void onClick(DialogInterface dialog,
                                                         int id) {
                                         // User cancelled the dialog
-                                        return;
                                     }
                                 });
                         AlertDialog dialog = builder.create();
@@ -458,7 +455,6 @@ public class Opciones extends PreferenceActivity {
             startActivity(Intent.createChooser(shareIntent, "Enviar a..."));
 
 
-            return;
         }
 
         @Override
@@ -488,7 +484,7 @@ public class Opciones extends PreferenceActivity {
             // Get the Uri of the selected file
             Uri uri = data.getData();
             // Get the path
-            String path = uri.getPath();
+            String path = uri != null ? uri.getPath() : null;
             if (utilidades.restaurarCopiaSeguridadFichero(uri)) {
                 return 1;
             } else {
@@ -512,7 +508,6 @@ public class Opciones extends PreferenceActivity {
                     t.show();
                     break;
             }
-            return;
         }
     }
 }

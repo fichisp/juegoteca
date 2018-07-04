@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.Process;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.text.Html;
 import android.util.Log;
 import android.view.Gravity;
@@ -44,7 +45,6 @@ import com.twitter.sdk.android.core.TwitterCore;
 import com.twitter.sdk.android.core.TwitterException;
 import com.twitter.sdk.android.core.models.Media;
 import com.twitter.sdk.android.core.models.Tweet;
-import com.twitter.sdk.android.core.services.MediaService;
 import com.twitter.sdk.android.core.services.StatusesService;
 
 import java.io.BufferedReader;
@@ -74,7 +74,6 @@ import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
 import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 
@@ -86,11 +85,8 @@ import static com.twitter.sdk.android.core.Twitter.TAG;
  */
 public class Utilidades {
 
-    private static final boolean ANUNCIOS = true;
-    private JuegosSQLHelper juegosSQLH;
-    private Context context;
-    private String url_subir_copia, url_bajar_copia, url_comprobar_subir_copia,
-            url_registrar_trial;
+    private final JuegosSQLHelper juegosSQLH;
+    private final Context context;
 
     public Utilidades(Context context) {
         this.context = context;
@@ -102,11 +98,11 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarGeneros(Spinner genero) {
-        List<String> generos = new ArrayList<String>();
+        List<String> generos = new ArrayList<>();
 
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
-        Cursor c = null;
+        Cursor c;
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
             c = juegosSQLH.getGenerosEN();
@@ -118,9 +114,11 @@ public class Utilidades {
             do {
                 generos.add(c.getString(1));
             } while (c.moveToNext());
+
+            c.close();
         }
-        c.close();
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, generos);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -133,11 +131,11 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarGenerosBuscador(Spinner genero) {
-        List<String> generos = new ArrayList<String>();
+        List<String> generos = new ArrayList<>();
         // Detectar idioma
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
-        Cursor c = null;
+        Cursor c;
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
             generos.add("ANY");
@@ -151,9 +149,10 @@ public class Utilidades {
             do {
                 generos.add(c.getString(1));
             } while (c.moveToNext());
+            c.close();
         }
-        c.close();
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, generos);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -165,16 +164,18 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarPlataformas(Spinner plataforma) {
-        List<String> plataformas = new ArrayList<String>();
+        List<String> plataformas = new ArrayList<>();
 
         Cursor c = juegosSQLH.getPlataformas();
         if (c != null && c.moveToFirst()) {
             do {
                 plataformas.add(c.getString(1));
             } while (c.moveToNext());
+
+            c.close();
         }
-        c.close();
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, plataformas);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -188,7 +189,7 @@ public class Utilidades {
      * @param plataforma
      */
     public void cargarPlataformasBuscador(Spinner plataforma) {
-        List<String> plataformas = new ArrayList<String>();
+        List<String> plataformas = new ArrayList<>();
 
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
@@ -203,9 +204,11 @@ public class Utilidades {
             do {
                 plataformas.add(c.getString(1));
             } while (c.moveToNext());
+
+            c.close();
         }
-        c.close();
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, plataformas);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -213,7 +216,7 @@ public class Utilidades {
     }
 
     public void cargarFormatos(Spinner plataforma) {
-        List<String> formatos = new ArrayList<String>();
+        List<String> formatos = new ArrayList<>();
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
@@ -223,7 +226,7 @@ public class Utilidades {
             formatos.add("Fisico");
             formatos.add("Digital");
         }
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, formatos);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -234,7 +237,7 @@ public class Utilidades {
      * @param plataforma
      */
     public void cargarFormatosBuscador(Spinner plataforma) {
-        List<String> formatos = new ArrayList<String>();
+        List<String> formatos = new ArrayList<>();
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
@@ -248,7 +251,7 @@ public class Utilidades {
 
         }
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, formatos);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -260,16 +263,18 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarClasificacion(Spinner clasificacion) {
-        List<String> clasificaciones = new ArrayList<String>();
+        List<String> clasificaciones = new ArrayList<>();
 
         Cursor c = juegosSQLH.getClasificaciones();
         if (c != null && c.moveToFirst()) {
             do {
                 clasificaciones.add(c.getString(1));
             } while (c.moveToNext());
+
+            c.close();
         }
-        c.close();
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, clasificaciones);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -281,9 +286,9 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarIdioma(Spinner idioma) {
-        List<String> idiomas = new ArrayList<String>();
+        List<String> idiomas = new ArrayList<>();
 
-        Cursor c = null;
+        Cursor c;
 
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
@@ -297,9 +302,11 @@ public class Utilidades {
             do {
                 idiomas.add(c.getString(1));
             } while (c.moveToNext());
+
+            c.close();
         }
-        c.close();
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
                 android.R.layout.simple_spinner_item, idiomas);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -311,18 +318,21 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarCompanias(AutoCompleteTextView compania) {
-        List<String> companias = new ArrayList<String>();
+        List<String> companias = new ArrayList<>();
 
         Cursor c = juegosSQLH.getCompanias();
         if (c != null && c.moveToFirst()) {
             do {
                 companias.add(c.getString(1));
             } while (c.moveToNext());
+
+            c.close();
         }
-        c.close();
+
         ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(context,
                 android.R.layout.simple_spinner_item, companias) {
-            public View getView(int position, View convertView, ViewGroup parent) {
+            @NonNull
+            public View getView(int position, View convertView, @NonNull ViewGroup parent) {
                 View v = super.getView(position, convertView, parent);
 
                 ((TextView) v).setTextSize(20);
@@ -400,10 +410,9 @@ public class Utilidades {
      * @param nombre
      * @return
      */
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public boolean caratulaDefinitiva(Uri caratulaTemporal, String nombre) {
-        boolean caratulaDefinitiva = false;
-        // String extensionFichero
-        // =selectedImagePath.substring(selectedImagePath.lastIndexOf('.'),selectedImagePath.length());
+        boolean caratulaDefinitiva;
         try {
             File origen = new File(caratulaTemporal.toString());
             File destino = new File(context.getFilesDir().getPath() + "/"
@@ -414,11 +423,11 @@ public class Utilidades {
             bmEscalado.compress(CompressFormat.JPEG, 90, new FileOutputStream(
                     destino));
             origen.delete();// Borramos el fichero de la caché
-            caratulaDefinitiva = true;
         } catch (FileNotFoundException fnfe) {
-
+            Log.e("Error", "Error al cargar la cartula" + fnfe.getMessage());
+            return false;
         }
-        return caratulaDefinitiva;
+        return true;
     }
 
     /**
@@ -449,23 +458,23 @@ public class Utilidades {
             int mes = Integer.parseInt(fecha.substring(3, 5));
             int anio = Integer.parseInt(fecha.substring(6, 10));
             if (anio < 1950 || anio > Calendar.getInstance().get(Calendar.YEAR)) {
-                return resultado = 1;
+                return 1;
             } else {
                 if ((mes < 1 || mes > 12)
                         || ((mes > Calendar.getInstance().get(Calendar.MONTH) + 1) && anio == Calendar
                         .getInstance().get(Calendar.YEAR))) {
-                    return resultado = 2;
+                    return 2;
                 } else {
                     if ((dia < 1 || dia > 31)
                             || ((mes == 4 || mes == 6 || mes == 9 || mes == 11) && (dia > 30))
                             || (mes == 2 && esBisiesto(anio) && dia > 29)
                             || (mes == 2 && !esBisiesto(anio) && dia > 28)) {
-                        return resultado = 3;
+                        return 3;
                     }
                 }
             }
         } catch (Exception e) {
-            return resultado = 5;
+            return 5;
         }
         return resultado;
     }
@@ -477,11 +486,7 @@ public class Utilidades {
      * @return
      */
     private boolean esBisiesto(int anio) {
-        if (anio % 400 == 0) {
-            return true;
-        } else {
-            return anio % 4 == 0 && anio % 100 != 0;
-        }
+        return anio % 400 == 0 || anio % 4 == 0 && anio % 100 != 0;
     }
 
     /**
@@ -528,15 +533,11 @@ public class Utilidades {
      *
      * @return string Ruta del fichero generado
      */
+    @SuppressWarnings("ResultOfMethodCallIgnored")
     public String hacerCopiaSeguridadFichero() {
 
 
         String zipOrigen = generarFicheroCopiaSeguridad();
-        String dia = String.valueOf(Calendar.getInstance().get(
-                Calendar.DAY_OF_MONTH));
-        String mes = String
-                .valueOf(Calendar.getInstance().get(Calendar.MONTH) + 1);
-        String ano = String.valueOf(Calendar.getInstance().get(Calendar.YEAR));
 
         Calendar calendar = Calendar.getInstance();
 
@@ -549,14 +550,16 @@ public class Utilidades {
                 + fechaFichero
                 + ".zip";
         // Mover a directorio
-        try {
-            File origen = new File(zipOrigen);
-            File destino = new File(zipdestino);
-            copiarFichero(origen, destino);
-            origen.delete();
+        if(zipOrigen!=null) {
+            try {
+                File origen = new File(zipOrigen);
+                File destino = new File(zipdestino);
+                copiarFichero(origen, destino);
+                origen.delete();
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
         return zipdestino;
     }
@@ -582,14 +585,14 @@ public class Utilidades {
             // Directorio "files" que contiene las imágenes
             File directorioFiles = new File(context.getFilesDir().getPath());
             File[] ficherosFiles = directorioFiles.listFiles();
-            for (int x = 0; x < ficherosFiles.length; x++) {
+            for (File ficherosFile : ficherosFiles) {
                 ZipEntry entrada = new ZipEntry("files/"
-                        + ficherosFiles[x].getName());
+                        + ficherosFile.getName());
                 osZIP.putNextEntry(entrada);
                 FileInputStream fis = new FileInputStream(
-                        ficherosFiles[x].getAbsolutePath());
+                        ficherosFile.getAbsolutePath());
                 byte[] buffer = new byte[1024];
-                int leido = 0;
+                int leido;
                 while (0 < (leido = fis.read(buffer))) {
                     osZIP.write(buffer, 0, leido);
                 }
@@ -602,7 +605,7 @@ public class Utilidades {
             InputStream fis = new FileInputStream(context.getDatabasePath(
                     "Juegoteca").getAbsolutePath());
             byte[] buffer = new byte[1024];
-            int leido = 0;
+            int leido;
             while (0 < (leido = fis.read(buffer))) {
                 osZIP.write(buffer, 0, leido);
             }
@@ -629,7 +632,6 @@ public class Utilidades {
         boolean copiaRestaurada = false;
         // Descomprimir el fichero
         try {
-            File files = new File(context.getFilesDir().getPath());
             ZipInputStream zis = new ZipInputStream(context
                     .getContentResolver().openInputStream(path));
             if (zipValido(path)) {
@@ -654,9 +656,9 @@ public class Utilidades {
                 copiaRestaurada = true;
             }
         } catch (FileNotFoundException e) {
-            return copiaRestaurada;
+            return false;
         } catch (IOException e) {
-            return copiaRestaurada;
+            return false;
         }
         return copiaRestaurada;
     }
@@ -682,7 +684,7 @@ public class Utilidades {
             }
             zis.close();
         } catch (IOException e) {
-            return zipValido = false;
+            return false;
         }
         return zipValido;
     }
@@ -699,14 +701,15 @@ public class Utilidades {
                 R.string.alerta_borrado_todo_titulo);
         builder.setPositiveButton(R.string.ok,
                 new DialogInterface.OnClickListener() {
+                    @SuppressWarnings("ResultOfMethodCallIgnored")
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // User clicked OK button
                         File directorioFiles = new File(context.getFilesDir()
                                 .getPath());
                         File[] ficherosFiles = directorioFiles.listFiles();
-                        for (int x = 0; x < ficherosFiles.length; x++) {
-                            ficherosFiles[x].delete();
+                        for (File ficherosFile : ficherosFiles) {
+                            ficherosFile.delete();
                         }
                         File fileBBDD = new File(context.getDatabasePath(
                                 "Juegoteca").getAbsolutePath());
@@ -719,7 +722,6 @@ public class Utilidades {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // User cancelled the dialog
-                        return;
                     }
                 });
 
@@ -844,8 +846,9 @@ public class Utilidades {
             o2.inSampleSize = 2;
             return BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
         } catch (FileNotFoundException e) {
+            Log.e("Error", "Error al decodificar el fichero " + e.getMessage());
+            return null;
         }
-        return null;
     }
 
     /**
@@ -868,6 +871,7 @@ public class Utilidades {
 
             }
         } catch (Exception e) {
+            Log.e("Error", "Error al liberar drawables" + e.getMessage());
         }
     }
 
@@ -876,10 +880,7 @@ public class Utilidades {
 
         SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(context);
 
-        if(globalSettings.getBoolean("twitter",false)) {
-            return true;
-        }
-        return false;
+        return globalSettings.getBoolean("twitter", false);
     }
 
     /** Publica un tweet con la información del juego **/

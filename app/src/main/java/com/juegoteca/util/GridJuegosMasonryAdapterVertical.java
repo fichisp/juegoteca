@@ -28,11 +28,10 @@ import java.io.File;
  */
 public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJuegosMasonryAdapterVertical.MasonryView> {
 
-    private Context context;
+    private final Context context;
 
-    private Juego[] datosJuegos;
-    private int[] gridCellColor;
-    private Utilidades utilidades;
+    private final Juego[] datosJuegos;
+    private final Utilidades utilidades;
     private int position = 0;
 
 
@@ -47,7 +46,7 @@ public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJ
         final SharedPreferences settings = context.getSharedPreferences("UserInfo",
                 0);
 
-        Cursor c = null;
+        Cursor c;
 
         if(settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
             c = juegosSQLH.getUltimosJuegosAnadidosFechaCompra();
@@ -56,7 +55,7 @@ public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJ
         }
 
 
-        if (c != null & c.moveToFirst()) {
+        if (c != null && c.moveToFirst()) {
             datosJuegos = new Juego[c.getCount()];
             int i = 0;
             do {
@@ -178,12 +177,12 @@ public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJ
     }
 
     class MasonryView extends RecyclerView.ViewHolder {
-        ImageView imageView;
-        TextView textView;
-        TextView idView;
+        final ImageView imageView;
+        final TextView textView;
+        final TextView idView;
 
 
-        public MasonryView(View itemView) {
+        MasonryView(View itemView) {
             super(itemView);
 
             imageView = (ImageView) itemView.findViewById(R.id.img);

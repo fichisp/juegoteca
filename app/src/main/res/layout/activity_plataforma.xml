@@ -20,7 +20,8 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp">
+                android:layout_height="100dp"
+                android:baselineAligned="false">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -40,7 +41,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:orientation="vertical"
-                    android:paddingLeft="20sp">
+                    android:paddingLeft="20sp"
+                    android:paddingRight="20sp">
 
                     <TextView
                         android:id="@+id/textViewNombrePlataforma"

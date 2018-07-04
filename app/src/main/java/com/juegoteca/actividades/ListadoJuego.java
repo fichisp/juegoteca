@@ -28,10 +28,7 @@ import org.json.JSONObject;
 public class ListadoJuego extends Activity {
 
     private ListView listadoJuegos;
-    private Juego[] datosJuegos;
     private String[] valoresBusqueda = null;
-    private JSONObject listadoJuegosJSON;
-    private String url_buscar;
     private ProgressDialog dialogoBusqueda;
     private TextView tituloBusqueda;
     private Utilidades utilidades;
@@ -46,7 +43,7 @@ public class ListadoJuego extends Activity {
         setContentView(R.layout.activity_listado_juego);
         setupActionBar();
 
-        url_buscar = this.getResources().getString(R.string.url_buscar);
+        String url_buscar = this.getResources().getString(R.string.url_buscar);
         Intent intent = getIntent();
         valoresBusqueda = intent.getStringArrayExtra("VALORES");
         new RealizaBusqueda(this).execute();
@@ -125,9 +122,7 @@ public class ListadoJuego extends Activity {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private void setupActionBar() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
 
@@ -138,10 +133,10 @@ public class ListadoJuego extends Activity {
      * @author alvaro
      */
     private class RealizaBusqueda extends AsyncTask<Void, Void, ListadoJuegosArrayAdapter> {
-        private Activity context;
+        private final Activity context;
         private int elementosEncontrados = 0;
 
-        public RealizaBusqueda(Activity context) {
+        RealizaBusqueda(Activity context) {
             this.context = context;
         }
 
@@ -152,14 +147,14 @@ public class ListadoJuego extends Activity {
             tituloBusqueda = (TextView) findViewById(R.id.nombre_busqueda);
             JuegosSQLHelper juegoSQLH = new JuegosSQLHelper(context);
             elementosEncontrados = 0;
-            listadoJuegosJSON = null;
+            JSONObject listadoJuegosJSON = null;
 
 
             // Búsqueda en la base de datos local
 
             Cursor c = juegoSQLH.getJuegos(valoresBusqueda);
             if (c != null && c.moveToFirst()) {
-                datosJuegos = new Juego[c.getCount()];
+                Juego[] datosJuegos = new Juego[c.getCount()];
                 int i = 0;
                 do {
                     datosJuegos[i] = new Juego();
@@ -176,7 +171,7 @@ public class ListadoJuego extends Activity {
                 while (c.moveToNext());
                 elementosEncontrados = c.getCount();
                 c.close();
-                return new ListadoJuegosArrayAdapter(context, datosJuegos, false);
+                return new ListadoJuegosArrayAdapter(context, datosJuegos);
             } else {
                 return null;
             }

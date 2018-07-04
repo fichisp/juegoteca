@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.drawable.Drawable;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -20,12 +19,6 @@ import java.io.InputStream;
 
 public class Plataforma extends Activity {
 
-    private String idPlataforma = "";
-    private JuegosSQLHelper juegosSQLH;
-    private TextView nombrePlataforma, fabricantePlataforma, fechaLanzamientoPlataforma, resumenPlataforma;
-    private ImageView imagenPlataforma;
-    private Utilidades utilidades;
-
     /**
      * Llamada cuando se inicializa la actividad.
      * Carga la información de la plataforma en los componentes
@@ -35,14 +28,14 @@ public class Plataforma extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plataforma);
         Intent intent = getIntent();
-        utilidades = new Utilidades(this);
-        idPlataforma = intent.getStringExtra("ID_PLATAFORMA");
-        imagenPlataforma = (ImageView) findViewById(R.id.imagePlataforma);
-        nombrePlataforma = (TextView) findViewById(R.id.textViewNombrePlataforma);
-        fabricantePlataforma = (TextView) findViewById(R.id.textViewFabricantePlataforma);
-        fechaLanzamientoPlataforma = (TextView) findViewById(R.id.textViewFechaLanzamientoPlataforma);
-        resumenPlataforma = (TextView) findViewById(R.id.textViewResumen);
-        juegosSQLH = new JuegosSQLHelper(this);
+        Utilidades utilidades = new Utilidades(this);
+        String idPlataforma = intent.getStringExtra("ID_PLATAFORMA");
+        ImageView imagenPlataforma = (ImageView) findViewById(R.id.imagePlataforma);
+        TextView nombrePlataforma = (TextView) findViewById(R.id.textViewNombrePlataforma);
+        TextView fabricantePlataforma = (TextView) findViewById(R.id.textViewFabricantePlataforma);
+        TextView fechaLanzamientoPlataforma = (TextView) findViewById(R.id.textViewFechaLanzamientoPlataforma);
+        TextView resumenPlataforma = (TextView) findViewById(R.id.textViewResumen);
+        JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
         Cursor c = juegosSQLH.buscarPlataformaID(idPlataforma);
         if (c != null && c.moveToFirst()) {
             nombrePlataforma.setText(c.getString(1));
@@ -58,15 +51,13 @@ public class Plataforma extends Activity {
                 // set image to ImageView
                 imagenPlataforma.setImageDrawable(d);
             } catch (Exception e) {
+                Log.e("Error", "Error al cargar la plataforma" + e.getMessage());
             }
-            //			imagenPlataforma.setImageURI(Uri.parse(this.getFilesDir().getPath()+"/"+c.getString(6)));
             c.close();
         }
         // Make sure we're running on Honeycomb or higher to use ActionBar APIs
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            // Show the Up button in the action bar.
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        // Show the Up button in the action bar.
+        getActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override

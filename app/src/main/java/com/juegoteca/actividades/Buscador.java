@@ -2,7 +2,6 @@ package com.juegoteca.actividades;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.Menu;
@@ -24,8 +23,7 @@ public class Buscador extends Activity {
     private static final String INTENT_PARAMETER_VALORES = "VALORES";
     private static final String INTENT_PARAMETER_SCAN_MODE = "SCAN_MODE";
     private static final String INTENT_PARAMETER_SCAN_RESULT = "SCAN_RESULT";
-    private String[] valoresCampos = new String[5];// 5 campos de búsqueda
-    private Utilidades utilidades;
+    private final String[] valoresCampos = new String[5];// 5 campos de búsqueda
     private EditText editEan, editTitulo;
     private Spinner spinnerGenero, spinnerPlataforma, spinnerFormato;
     /**
@@ -61,17 +59,15 @@ public class Buscador extends Activity {
 
         this.getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN);
-        utilidades = new Utilidades(this);
+        Utilidades utilidades = new Utilidades(this);
         utilidades.cargarGenerosBuscador(spinnerGenero);
         utilidades.cargarPlataformasBuscador(spinnerPlataforma);
 
         // Inicializar el combo de formatos
         utilidades.cargarFormatosBuscador(spinnerFormato);
         // Make sure we're running on Honeycomb or higher to use ActionBar APIs
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-            // Show the Up button in the action bar.
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        // Show the Up button in the action bar.
+        getActionBar().setDisplayHomeAsUpEnabled(true);
 
         //Acciones por defecto al pulsar enter
         editEan.setOnKeyListener(buscar);
@@ -168,8 +164,6 @@ public class Buscador extends Activity {
                 ((EditText) this.findViewById(R.id.edit_ean_buscador))
                         .setText(contents);
                 // Handle successful scan
-            } else if (resultCode == RESULT_CANCELED) {
-                // Handle cancel
             }
         }
     }

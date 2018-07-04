@@ -40,6 +40,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:text="@string/label_ean"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -85,6 +86,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:text="@string/label_titulo"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -115,6 +117,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:text="@string/label_plataforma"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -142,6 +145,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:text="@string/label_genero"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -169,6 +173,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
                         android:text="@string/label_formato"
                         android:textSize="15sp"
                         android:textStyle="bold" />
