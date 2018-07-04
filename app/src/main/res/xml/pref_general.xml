@@ -1,9 +1,10 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <Preference
+    <SwitchPreference
         android:icon="@null"
         android:key="twitter"
-        android:title="@string/share_on_twitter"></Preference>
+        android:persistent="true"
+        android:title="@string/share_on_twitter"></SwitchPreference>
 
     <ListPreference
         android:icon="@null"

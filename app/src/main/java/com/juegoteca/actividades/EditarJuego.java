@@ -47,6 +47,8 @@ public class EditarJuego extends Activity {
     private String[] valoresBusqueda;
     private boolean esJuegoOnline;
 
+    private boolean completadoAnterior;
+
     /**
      * Llamada cuando se inicializa la actividad. Inicializa los spinner con los
      * datos necesarios y carga el resto de componentes con los datos del juego
@@ -153,6 +155,9 @@ public class EditarJuego extends Activity {
 
             if (juegoDetalle.getCompletado() == 1) {
                 checkCompletado.setChecked(true);
+                //TODO Guardamos el valor original para comprobar si ha camnbiado de estado a completado y tweetearlo
+                completadoAnterior = true;
+
                 if (Double.parseDouble(juegoDetalle.getFechaCompletado()) != 0) {
                     textFechaCompletado.setText(utilidades
                             .convertirMilisegundosAFecha(juegoDetalle
@@ -408,9 +413,14 @@ public class EditarJuego extends Activity {
 
             startActivity(intent);
 
-            //TODO Tweet del nuevo juego
+            //TODO Tweet si se ha marcado como completado
 
-            utilidades.tweet(juegoEditado);
+            if(checkCompletado.isChecked() && !completadoAnterior) {
+
+                if (utilidades.isTwitterAuth()) {
+                    utilidades.tweet(juegoEditado, true);
+                }
+            }
 
 
         } else {

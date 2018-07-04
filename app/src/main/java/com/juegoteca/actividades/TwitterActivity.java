@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.mijuegoteca.R;
@@ -38,9 +40,7 @@ public class TwitterActivity extends Activity {
 
 
         TwitterConfig config = new TwitterConfig.Builder(this)
-                .logger(new DefaultLogger(Log.DEBUG))
                 .twitterAuthConfig(new TwitterAuthConfig("HxyV7qaJl2YoWkdbOBN0HPwmc", "p4EQ0Y6xNGnjLgdyR6hubYSlMfIHj5TMB6TM6FShCe6VqWMKXM"))
-                .debug(true)
                 .build();
         Twitter.initialize(config);
 
@@ -66,9 +66,13 @@ public class TwitterActivity extends Activity {
                 editor.putString("twitter_secret", authToken.secret);
                 editor.commit();
 
+                SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                globalSettings.edit().putBoolean("twitter", true).commit();
+
+
 
                 Toast toast = Toast.makeText(getApplicationContext(),
-                        "Sesión iniciada correctamente en Twitter", Toast.LENGTH_SHORT);
+                        getString(R.string.share_twitter_login_ok), Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
                 toast.show();
 
@@ -81,8 +85,8 @@ public class TwitterActivity extends Activity {
             @Override
             public void failure(TwitterException exception) {
                 // Do something on failure
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Error al inciar sesión en Twitter. Inténtelo de nuevo pasado unos segundos.", Toast.LENGTH_SHORT);
+                Toast toast = Toast.makeText(getApplicationContext(),getString(R.string.share_twitter_login_ko)
+                        , Toast.LENGTH_SHORT);
                 toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
                 toast.show();
             }
@@ -97,7 +101,27 @@ public class TwitterActivity extends Activity {
         // Pass the activity result to the login button.
         loginButton.onActivityResult(requestCode, resultCode, data);
 
-
     }
 
+    @Override
+    public void onBackPressed() {
+        SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+        globalSettings.edit().putBoolean("twitter", false).commit();
+        Intent intent = new Intent(getApplicationContext(), Opciones.class);
+        startActivity(intent);
+        //super.onBackPressed();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                globalSettings.edit().putBoolean("twitter", false).commit();
+                Intent intent = new Intent(getApplicationContext(), Opciones.class);
+                startActivity(intent);
+                break;
+        }
+        return true;
+    }
 }

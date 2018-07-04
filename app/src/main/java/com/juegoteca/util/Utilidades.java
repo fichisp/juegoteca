@@ -15,6 +15,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.Process;
+import android.preference.PreferenceManager;
 import android.text.Html;
 import android.util.Log;
 import android.view.Gravity;
@@ -59,6 +60,7 @@ import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.text.DateFormat;
+import java.text.MessageFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -872,21 +874,20 @@ public class Utilidades {
 
     public boolean isTwitterAuth(){
 
-        final SharedPreferences settings = context.getSharedPreferences("UserInfo",
-                0);
-        if (!settings.contains("twitter_token")) {
+        SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(context);
+
+        if(globalSettings.getBoolean("twitter",false)) {
             return true;
         }
         return false;
     }
 
     /** Publica un tweet con la información del juego **/
-    public void tweet(Juego juego){
+    public void tweet(Juego juego, boolean marcadoCompletado){
 
         TwitterConfig config = new TwitterConfig.Builder(context)
                 .logger(new DefaultLogger(Log.DEBUG))
                 .twitterAuthConfig(new TwitterAuthConfig("HxyV7qaJl2YoWkdbOBN0HPwmc", "p4EQ0Y6xNGnjLgdyR6hubYSlMfIHj5TMB6TM6FShCe6VqWMKXM"))
-                .debug(true)
                 .build();
         Twitter.initialize(config);
 
@@ -894,14 +895,13 @@ public class Utilidades {
         TwitterApiClient twitterApiClient = TwitterCore.getInstance().getApiClient();
         StatusesService statusesService = twitterApiClient.getStatusesService();
 
-        StringBuilder statusBuilder = new StringBuilder();
-        statusBuilder.append("He añadido").append(" ");
-        statusBuilder.append(juego.getTitulo()).append(" ");
-
         //Recuperar la plataforma
+
+        String nombrePlataforma = "";
+
         Cursor cursorPlataforma = juegosSQLH.buscarPlataformaID(String.valueOf(juego.getPlataforma()));
         if(cursorPlataforma!=null && cursorPlataforma.moveToFirst()){
-            statusBuilder.append("("+cursorPlataforma.getString(1)+")");
+            nombrePlataforma = cursorPlataforma.getString(1);
             cursorPlataforma.close();
         }
 
@@ -909,43 +909,72 @@ public class Utilidades {
         int total = cursorJuegos.getCount();
         cursorJuegos.close();
 
-        statusBuilder.append(" en total tengo en mi colección").append(" ").append(total).append(" juegos https://play.google.com/store/apps/details?id=com.mijuegoteca");
 
-        //TODO Añadir la caratula
-        MediaType type = MediaType.parse("image/*");
-        RequestBody body = RequestBody.create(type, new File(context.getFilesDir().getPath() + "/" + juego.getCaratula()));
-        Call<Media> mediaCall = TwitterCore.getInstance().getApiClient().getMediaService().upload(body, null,null);
+        String status;
 
+        if(!marcadoCompletado) {
+            status = MessageFormat.format(context.getString(R.string.share_status_message), juego.getTitulo(), nombrePlataforma, total);
+        } else {
 
+            int completados = juegosSQLH.getCountJuegosCompletados();
 
-        mediaCall.enqueue(new Callback<Media>() {
-              @Override
-              public void failure(TwitterException exception) {
-                  Log.e(TAG, "Result<Media> result" + exception.getMessage());
-              }
-
-              @Override
-              public void success(Result<Media> result) {
+            status = MessageFormat.format(context.getString(R.string.share_status_message_completado), juego.getTitulo(), nombrePlataforma,completados ,total);
+        }
 
 
-                  Call<Tweet> update = statusesService.update(statusBuilder.toString(), null, null, null, null, null, null, null, result.data.mediaIdString);
+        if ((juego.getCaratula()).length() == 0) {
 
-                  update.enqueue(new Callback<Tweet>() {
-                      @Override
-                      public void success(Result<Tweet> result) {
-                          Log.e(TAG, "Result<Tweet> result" + result.data.toString());
+            Call<Tweet> update = statusesService.update(status, null, null, null, null, null, null, null, null);
 
-                      }
+            update.enqueue(new Callback<Tweet>() {
+                @Override
+                public void success(Result<Tweet> result) {
+                    Log.e(TAG, "Tweet publicado" + result.data.toString());
 
-                      @Override
-                      public void failure(TwitterException exception) {
-                          Log.e(TAG, "Result<Tweet> result" + exception.getMessage());
-                      }
-                  });
-              }
-        });
+                }
 
+                @Override
+                public void failure(TwitterException exception) {
+                    Log.e(TAG, "Error al publicar el tweet" + exception.getMessage());
+                }
+            });
+
+        } else {
+
+            //TODO Añadir la caratula
+            MediaType type = MediaType.parse("image/*");
+            RequestBody body = RequestBody.create(type, new File(context.getFilesDir().getPath() + "/" + juego.getCaratula()));
+            Call<Media> mediaCall = TwitterCore.getInstance().getApiClient().getMediaService().upload(body, null, null);
+
+            mediaCall.enqueue(new Callback<Media>() {
+                @Override
+                public void failure(TwitterException exception) {
+                    Log.e(TAG, "Error al publicar la imagen" + exception.getMessage());
+                }
+
+                @Override
+                public void success(Result<Media> result) {
+
+
+                    Call<Tweet> update = statusesService.update(status, null, null, null, null, null, null, null, result.data.mediaIdString);
+
+                    update.enqueue(new Callback<Tweet>() {
+                        @Override
+                        public void success(Result<Tweet> result) {
+                            Log.e(TAG, "Tweet publicado" + result.data.toString());
+
+                        }
+
+                        @Override
+                        public void failure(TwitterException exception) {
+                            Log.e(TAG, "Error al publicar el tweet" + exception.getMessage());
+                        }
+                    });
+                }
+            });
+        }
 
     }
+
 
 }

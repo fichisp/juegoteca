@@ -180,5 +180,10 @@
     <string name="pref_title_orden_ultimos_anadidos">Orden últimos añadidos</string>
     <string name="share_twitter_intro">Inicia sesión en Twitter para compartir cada juego nuevo que añadas a tu colección</string>
     <string name="share_on_twitter">Compartir en Twitter</string>
+    <string name="title_activity_twitter_config">Iniciar sesión con Twitter</string>
+    <string name="share_twitter_login_ko">Error al iniciar sesión con Twitter. Inténtalo de nuevo pasados unos segundos.</string>
+    <string name="share_twitter_login_ok">Se ha iniciado sesión correctamente con Twitter</string>
+    <string name="share_status_message">He añadido {0} para {1} a mi #juegoteca. En total tengo {2} juegos en mi colección https://play.google.com/store/apps/details?id=com.mijuegoteca</string>
+    <string name="share_status_message_completado">He terminado {0} para {1}. En total he terminado {2} juegos de los {3} que tengo en mi #juegoteca https://play.google.com/store/apps/details?id=com.mijuegoteca</string>
 
 </resources>

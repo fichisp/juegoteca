@@ -854,5 +854,28 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
 
     }
 
+    /**
+     * Retorna el sumatorio de los precios
+     *
+     * @return
+     */
+    public Integer getCountJuegosCompletados() {
+        Cursor c = null;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+
+            c = db.rawQuery(
+                    "SELECT count(*) FROM juego where completado = 1", null);
+
+            if (c.moveToFirst()) {
+                return c.getInt(0);
+            }
+        } catch (Exception e) {
+            return null;
+        }
+        return null;
+
+    }
+
 
 }

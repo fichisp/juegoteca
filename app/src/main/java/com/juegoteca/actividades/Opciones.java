@@ -22,6 +22,7 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.preference.SwitchPreference;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -216,17 +217,22 @@ public class Opciones extends PreferenceActivity {
                     }
                 });
 
-        Preference preferenciaTwitter = findPreference("twitter");
-        preferenciaTwitter
-                .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
-                    public boolean onPreferenceClick(Preference preference) {
+        SwitchPreference preferenciaTwitter = (SwitchPreference) findPreference("twitter");
+        preferenciaTwitter.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                if (newValue instanceof Boolean) {
+                    boolean isChecked = (boolean) newValue;
+                    if(isChecked){
                         Intent intent = new Intent(getApplicationContext(),
                                 TwitterActivity.class);
                         startActivity(intent);
                         return true;
                     }
-                });
-
+                }
+                return true;
+            }
+        });
 
         // Add 'data and sync' preferences, and a corresponding header.
         PreferenceCategory fakeHeader2 = new PreferenceCategory(this);

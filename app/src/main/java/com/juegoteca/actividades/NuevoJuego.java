@@ -344,7 +344,7 @@ public class NuevoJuego extends Activity {
 
                 //TODO Tweet del nuevo juego
                 if(utilidades.isTwitterAuth()) {
-                    utilidades.tweet(juego);
+                    utilidades.tweet(juego, false);
                 }
 
                 startActivity(intent);
