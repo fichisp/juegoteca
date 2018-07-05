@@ -52,6 +52,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -584,20 +585,27 @@ public class Utilidades {
 
             // Directorio "files" que contiene las imágenes
             File directorioFiles = new File(context.getFilesDir().getPath());
-            File[] ficherosFiles = directorioFiles.listFiles();
-            for (File ficherosFile : ficherosFiles) {
-                ZipEntry entrada = new ZipEntry("files/"
-                        + ficherosFile.getName());
-                osZIP.putNextEntry(entrada);
-                FileInputStream fis = new FileInputStream(
-                        ficherosFile.getAbsolutePath());
-                byte[] buffer = new byte[1024];
-                int leido;
-                while (0 < (leido = fis.read(buffer))) {
-                    osZIP.write(buffer, 0, leido);
+            File[] ficherosFiles = directorioFiles.listFiles(new FilenameFilter() {
+                public boolean accept(File dir, String name) {
+                    return name.toLowerCase().endsWith(".png");
                 }
-                fis.close();
-                osZIP.closeEntry();
+            });
+            for (File ficherosFile : ficherosFiles) {
+
+
+                    ZipEntry entrada = new ZipEntry("files/"
+                            + ficherosFile.getName());
+                    osZIP.putNextEntry(entrada);
+                    FileInputStream fis = new FileInputStream(
+                            ficherosFile.getAbsolutePath());
+                    byte[] buffer = new byte[1024];
+                    int leido;
+                    while (0 < (leido = fis.read(buffer))) {
+                        osZIP.write(buffer, 0, leido);
+                    }
+                    fis.close();
+                    osZIP.closeEntry();
+
             }
             // Base de datos
             ZipEntry entrada = new ZipEntry("databases/Juegoteca");
@@ -707,7 +715,12 @@ public class Utilidades {
                         // User clicked OK button
                         File directorioFiles = new File(context.getFilesDir()
                                 .getPath());
-                        File[] ficherosFiles = directorioFiles.listFiles();
+                        //Borrar sólo las imágenes
+                        File[] ficherosFiles = directorioFiles.listFiles(new FilenameFilter() {
+                            public boolean accept(File dir, String name) {
+                                return name.toLowerCase().endsWith(".png");
+                            }
+                        });
                         for (File ficherosFile : ficherosFiles) {
                             ficherosFile.delete();
                         }

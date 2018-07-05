@@ -68,6 +68,7 @@ public class TwitterActivity extends Activity {
 
                 Intent intent = new Intent(getApplicationContext(), Opciones.class);
                 startActivity(intent);
+                finish();
 
 
             }
@@ -97,8 +98,9 @@ public class TwitterActivity extends Activity {
     public void onBackPressed() {
         SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
         globalSettings.edit().putBoolean("twitter", false).commit();
-        Intent intent = new Intent(getApplicationContext(), Opciones.class);
+        Intent intent = new Intent(TwitterActivity.this, Opciones.class);
         startActivity(intent);
+        finish();
         //super.onBackPressed();
     }
 
@@ -108,8 +110,9 @@ public class TwitterActivity extends Activity {
             case android.R.id.home:
                 SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
                 globalSettings.edit().putBoolean("twitter", false).commit();
-                Intent intent = new Intent(getApplicationContext(), Opciones.class);
+                Intent intent = new Intent(TwitterActivity.this, Opciones.class);
                 startActivity(intent);
+                finish();
                 break;
         }
         return true;
