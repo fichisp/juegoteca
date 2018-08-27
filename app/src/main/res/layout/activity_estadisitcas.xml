@@ -60,6 +60,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -81,6 +83,8 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -92,18 +96,62 @@
 
                         <TextView
                             android:id="@+id/text_view_resumen_sum"
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:paddingLeft="5dp"
                             android:paddingRight="5dp"
                             android:text="TextView" />
 
+                        <Button
+                            android:id="@+id/buttonShowValueByPlatform"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@android:drawable/screen_background_light_transparent"
+                            android:onClick="toggleValueByPlatform"
+                            android:layout_marginLeft="5dp"
+                            android:text="+"
+                            android:textAppearance="@style/TextAppearance.AppCompat"
+                            android:visibility="visible" />
+
                     </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/layoutValueByPlatform"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/textViewH"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/valor_total_detalle"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/horizontalbars"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
 
                         <TextView

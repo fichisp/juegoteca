@@ -185,4 +185,5 @@
     <string name="share_twitter_login_ko">Error al iniciar sesión con Twitter. Inténtalo de nuevo pasados unos segundos.</string>
     <string name="share_status_message">He añadido {0} para {1} a mi #juegoteca. En total tengo {2} juegos en mi colección https://play.google.com/store/apps/details?id=com.mijuegoteca</string>
     <string name="share_status_message_completado">He terminado {0} para {1}. En total he terminado {2} juegos de los {3} que tengo en mi #juegoteca https://play.google.com/store/apps/details?id=com.mijuegoteca</string>
+    <string name="valor_total_detalle">Por plataforma</string>
 </resources>

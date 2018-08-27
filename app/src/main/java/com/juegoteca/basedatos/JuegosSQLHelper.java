@@ -884,6 +884,27 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
 
     }
 
+
+
+    /**
+     * Devuelve un cursor con la suma de los precios de juegos por plataforma
+     *
+     * @return
+     */
+    public Cursor getSumPrecioPorPlataforma() {
+        Cursor c;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            c = db.rawQuery(
+                    "SELECT SUM(j.precio) AS SUMPRECIO,p.nombre FROM juego AS j LEFT JOIN plataforma AS p ON p.id=j.plataforma GROUP BY p.nombre ORDER BY SUMPRECIO ASC",
+                    null);
+        } catch (Exception e) {
+            return null;
+        }
+        return c;
+    }
+
+
     /**
      * Retorna el sumatorio de los precios
      *
