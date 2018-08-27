@@ -906,6 +906,27 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
 
 
     /**
+     * Devuelve un cursor con la suma de los precios de juegos por plataforma
+     *
+     * @return
+     */
+    public Cursor getSumPrecioPorAnyo() {
+        Cursor c;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            c = db.rawQuery(
+                    "SELECT SUM(j.precio) AS SUMPRECIO, strftime('%Y',  datetime(j.fecha_compra , 'unixepoch')) AS ANIO_COMPRA FROM juego AS j LEFT JOIN plataforma AS p ON p.id=j.plataforma GROUP BY ANIO_COMPRA ORDER BY ANIO_COMPRA ASC",
+                    null);
+        } catch (Exception e) {
+            return null;
+        }
+        return c;
+    }
+
+
+
+
+    /**
      * Retorna el sumatorio de los precios
      *
      * @return
@@ -929,6 +950,8 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         return null;
 
     }
+
+
 
 
 }

@@ -190,4 +190,5 @@
     <string name="share_status_message">I added {0} for {1} to my game library. I have {2} games in my collection https://play.google.com/store/apps/details?id=com.mijuegoteca</string>
     <string name="share_status_message_completado">I have finished {0} for {1}. In total I have finished {2} games of the {3} that I have in my collection https://play.google.com/store/apps/details?id=com.mijuegoteca</string>
     <string name="valor_total_detalle">By platform</string>
+    <string name="valor_total_detalle_anyo">By year</string>
 </resources>

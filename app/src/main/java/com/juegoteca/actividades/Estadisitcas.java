@@ -106,17 +106,6 @@ public class Estadisitcas extends Activity {
     private float pxLabelSize;
     private float pxLegendSize;
 
-
-
-    private XYMultipleSeriesDataset mDataset = new XYMultipleSeriesDataset();
-
-    private XYMultipleSeriesRenderer mRenderer = new XYMultipleSeriesRenderer();
-
-    private XYSeries mCurrentSeries;
-
-    private XYSeriesRenderer mCurrentRenderer;
-
-    private GraphicalView mChart;
     /**
      * Llamada cuando se inicializa la actividad. Crea los gráficos que se
      * mostrarán
@@ -143,6 +132,7 @@ public class Estadisitcas extends Activity {
 
         //Detalle
         detailValueByPlatform();
+        detailValueByYear();
 
         // Juegos agrupados por plataforma
         gamesByPlatformGraphic(codigoIdioma);
@@ -160,10 +150,6 @@ public class Estadisitcas extends Activity {
 
     private void detailValueByPlatform(){
 
-        mCurrentSeries = new XYSeries("Sample Data");
-        mDataset.addSeries(mCurrentSeries);
-        mCurrentRenderer = new XYSeriesRenderer();
-        mRenderer.addSeriesRenderer(mCurrentRenderer);
 
         Cursor c = juegosSQLH.getSumPrecioPorPlataforma();
 
@@ -249,7 +235,92 @@ public class Estadisitcas extends Activity {
 
     }
 
+    private void detailValueByYear(){
 
+
+        Cursor c = juegosSQLH.getSumPrecioPorAnyo();
+
+
+        if (c != null && c.moveToFirst()) {
+
+            Float[] sum = new Float[c.getCount()];
+            etiquetas = new String[c.getCount()];
+            int j = 0;
+            do {
+                sum[j] = c.getFloat(0);
+                etiquetas[j] = c.getString(1);
+                j++;
+            } while (c.moveToNext());
+
+
+            LinearLayout linear  = (LinearLayout) findViewById(R.id.horizontalbarsyear);
+
+
+            for (int i = 0; i < etiquetas.length; i++) {
+
+                if (sum[i] > 0 && !"1970".equals(etiquetas[i])) {
+
+
+                    int maxWidth = linear.getWidth();
+
+                    LinearLayout lay = new LinearLayout(this);
+                    LinearLayout lay1 = new LinearLayout(this);
+
+                    TextView text = new TextView(this);
+                    text.setText(etiquetas[i]);
+                    text.setTextColor(Color.BLACK);
+                    text.setLayoutParams(new LinearLayout.LayoutParams(350, 50));
+                    text.setTextSize(12);
+
+                    TextView line = new TextView(this);
+                    line.setBackgroundColor(Color.BLACK);
+                    line.setLayoutParams(new LinearLayout.LayoutParams(1, 90));
+
+                    TextView btn = new TextView(this);
+
+                    btn.setBackgroundColor(Color.rgb(231,118,26));
+
+
+                    Display display = getWindowManager().getDefaultDisplay();
+                    Point size = new Point();
+                    display.getSize(size);
+                    int width = size.x;
+
+
+                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ width)*100), 40));
+
+                    TextView text1 = new TextView(this);
+
+                    BigDecimal bd = new BigDecimal(Float.toString(sum[i]));
+                    bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
+
+                    final SharedPreferences settings = getSharedPreferences("UserInfo",
+                            0);
+                    String currency = settings.getString("currency","");
+
+
+                    text1.setText(bd.toString()+ " " + currency);
+                    text1.setTextSize(12);
+                    text1.setPadding(10,0,0,0);
+
+                    text1.setTextColor(Color.parseColor("#000000"));
+                    text1.setLayoutParams(new LinearLayout.LayoutParams(400, 40));
+                    lay1.setOrientation(LinearLayout.HORIZONTAL);
+                    lay1.setGravity(Gravity.CENTER_VERTICAL);
+                    lay1.setPadding(0, 0, 0, 0);
+                    lay1.addView(text);
+                    lay1.addView(line);
+                    lay1.addView(btn);
+                    lay1.addView(text1);
+                    lay.setOrientation(LinearLayout.VERTICAL);
+                    lay.addView(lay1);
+                    linear.addView(lay);
+                }
+            }
+        }
+
+
+    }
 
     /**
      * PieChart by status
@@ -788,14 +859,14 @@ public class Estadisitcas extends Activity {
      * @param view
      */
     public void toggleValueByPlatform(View view) {
-        LinearLayout layoutValueByPlatform = (LinearLayout) findViewById(R.id.layoutValueByPlatform);
+        LinearLayout layoutValueDetails = (LinearLayout) findViewById(R.id.layoutValueDetails);
         Button buttonShowValueByPlatform = (Button) findViewById(R.id.buttonShowValueByPlatform);
 
-        if(View.VISIBLE == layoutValueByPlatform.getVisibility()) {
-            layoutValueByPlatform.setVisibility(View.GONE);
+        if(View.VISIBLE == layoutValueDetails.getVisibility()) {
+            layoutValueDetails.setVisibility(View.GONE);
             buttonShowValueByPlatform.setText("+");
         } else {
-            layoutValueByPlatform.setVisibility(View.VISIBLE);
+            layoutValueDetails.setVisibility(View.VISIBLE);
             buttonShowValueByPlatform.setText("-");
         }
     }
