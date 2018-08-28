@@ -31,7 +31,8 @@
                     android:id="@+id/linear_estadisticas_resumen"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -51,10 +52,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="5dp"
                         android:text="@string/titulo_estadisiticas_resumen"
                         android:textAllCaps="true"
-                        android:textSize="18dp"
+                        android:textSize="14dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -116,72 +117,74 @@
                     </LinearLayout>
 
 
-<LinearLayout
-    android:id="@+id/layoutValueDetails"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:visibility="gone"
-    android:layout_marginLeft="15dp"
-    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:id="@+id/layoutValueDetails"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:visibility="gone"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:id="@+id/layoutValueByPlatform"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/layoutValueByPlatform"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textViewH"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/valor_total_detalle"
-            android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/textViewH"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/valor_total_detalle"
+                                android:textStyle="bold" />
 
-        <LinearLayout
-            android:id="@+id/horizontalbars"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp">
+                            <LinearLayout
+                                android:id="@+id/horizontalbars"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
 
-        </LinearLayout>
+                            </LinearLayout>
 
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:id="@+id/layoutValueByYear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textViewHY"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="@string/valor_total_detalle_anyo"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:id="@+id/horizontalbarsyear"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingLeft="5dp"
-            android:paddingRight="5dp">
-
-        </LinearLayout>
-
-    </LinearLayout>
+                        </LinearLayout>
 
 
+                        <LinearLayout
+                            android:id="@+id/layoutValueByYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical">
 
-</LinearLayout>
+                            <TextView
+                                android:id="@+id/textViewHY"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="@string/valor_total_detalle_anyo"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/horizontalbarsyear"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp">
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
 
 
                     <LinearLayout
@@ -216,7 +219,7 @@
                     android:id="@+id/divider1"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="?android:attr/listDivider" />
 
@@ -233,10 +236,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="25dp"
-                        android:layout_marginTop="15dp"
+                        android:layout_marginTop="5dp"
                         android:text="@string/titulo_estadisiticas_plataforma"
                         android:textAllCaps="true"
-                        android:textSize="18dp"
+                        android:textSize="14dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -280,7 +283,7 @@
                     android:id="@+id/divider2"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="?android:attr/listDivider" />
 
@@ -288,6 +291,7 @@
                     android:id="@+id/linear_estadisticas_2"
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
                     android:layout_marginBottom="15dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
@@ -297,9 +301,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="25dp"
+                        android:layout_marginTop="5dp"
                         android:text="@string/titulo_estadisticas_genero"
                         android:textAllCaps="true"
-                        android:textSize="18dp"
+                        android:textSize="14dp"
                         android:textStyle="bold" />
 
                     <LinearLayout
@@ -342,7 +347,7 @@
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="?android:attr/listDivider" />
 
@@ -350,7 +355,8 @@
                     android:id="@+id/linear_estadisticas_3"
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -359,9 +365,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="25dp"
+                        android:layout_marginTop="5dp"
                         android:text="@string/titulo_estadisticas_completados"
                         android:textAllCaps="true"
-                        android:textSize="18dp"
+                        android:textSize="14dp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -392,11 +399,79 @@
 
                 </LinearLayout>
 
+
+
+
+                <View
+                    android:id="@+id/divider3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:id="@+id/linear_estadisticas_3_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_estadisticas_3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/titulo_estadisticas_pendientes_por_plataforma"
+                        android:textAllCaps="true"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/linea_estadisticas_3_1_layout_pie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"></LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_estadisticas_3_1_foot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <LinearLayout
+                        android:id="@+id/linear_estadisticas_3_1_foot_left"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_estadisticas_3_1_foot_right"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"></LinearLayout>
+
+                </LinearLayout>
+
                 <View
                     android:id="@+id/divider4"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:background="?android:attr/listDivider" />
 
@@ -404,7 +479,8 @@
                     android:id="@+id/linear_estadisticas_4"
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
-                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
                     android:layout_weight="1"
                     android:orientation="vertical">
 
@@ -413,9 +489,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="15dp"
+                        android:layout_marginTop="5dp"
                         android:text="@string/titulo_estadisticas_formato"
                         android:textAllCaps="true"
-                        android:textSize="18dp"
+                        android:textSize="14dp"
                         android:textStyle="bold" />
                 </LinearLayout>
 

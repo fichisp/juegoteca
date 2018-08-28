@@ -93,10 +93,12 @@ public class Estadisitcas extends Activity {
 
 
     private final CategorySeries serieJuegosPlataforma = new CategorySeries(EMPTY_STRING);
+    private final CategorySeries serieJuegosPendientesPlataforma = new CategorySeries(EMPTY_STRING);
     private final CategorySeries serieJuegosCompletados = new CategorySeries(EMPTY_STRING);
     private final CategorySeries serieJuegosGenero = new CategorySeries(EMPTY_STRING);
     private final CategorySeries serieJuegosFormato = new CategorySeries(EMPTY_STRING);
     private final DefaultRenderer rendererJuegosPlataforma = new DefaultRenderer();
+    private final DefaultRenderer rendererJuegosPendientesPlataforma = new DefaultRenderer();
     private final DefaultRenderer rendererJuegosCompletados = new DefaultRenderer();
     private final DefaultRenderer rendererJuegosGenero = new DefaultRenderer();
     private final DefaultRenderer rendererJuegosFormato = new DefaultRenderer();
@@ -145,6 +147,8 @@ public class Estadisitcas extends Activity {
 
         // Juegos agrupados por completado
         gamesByStatusGraphic(codigoIdioma);
+
+        gamesPendingByPlatformGraphic(codigoIdioma);
     }
 
 
@@ -168,6 +172,11 @@ public class Estadisitcas extends Activity {
 
             LinearLayout linear  = (LinearLayout) findViewById(R.id.horizontalbars);
 
+            Display display = getWindowManager().getDefaultDisplay();
+            Point size = new Point();
+            display.getSize(size);
+            int width = size.x;
+
 
             for (int i = 0; i < etiquetas.length; i++) {
 
@@ -182,7 +191,7 @@ public class Estadisitcas extends Activity {
                     TextView text = new TextView(this);
                     text.setText(etiquetas[i]);
                     text.setTextColor(Color.BLACK);
-                    text.setLayoutParams(new LinearLayout.LayoutParams(350, 50));
+                    text.setLayoutParams(new LinearLayout.LayoutParams((int) (width*0.3), 50));
                     text.setTextSize(12);
 
                     TextView line = new TextView(this);
@@ -194,13 +203,10 @@ public class Estadisitcas extends Activity {
                     btn.setBackgroundColor(Color.rgb(231,118,26));
 
 
-                    Display display = getWindowManager().getDefaultDisplay();
-                    Point size = new Point();
-                    display.getSize(size);
-                    int width = size.x;
 
 
-                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ width)*100), 40));
+
+                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ (width*0.6)*100)), 40));
 
                     TextView text1 = new TextView(this);
 
@@ -255,6 +261,10 @@ public class Estadisitcas extends Activity {
 
             LinearLayout linear  = (LinearLayout) findViewById(R.id.horizontalbarsyear);
 
+            Display display = getWindowManager().getDefaultDisplay();
+            Point size = new Point();
+            display.getSize(size);
+            int width = size.x;
 
             for (int i = 0; i < etiquetas.length; i++) {
 
@@ -269,7 +279,7 @@ public class Estadisitcas extends Activity {
                     TextView text = new TextView(this);
                     text.setText(etiquetas[i]);
                     text.setTextColor(Color.BLACK);
-                    text.setLayoutParams(new LinearLayout.LayoutParams(350, 50));
+                    text.setLayoutParams(new LinearLayout.LayoutParams((int) (width*0.2), 50));
                     text.setTextSize(12);
 
                     TextView line = new TextView(this);
@@ -281,13 +291,10 @@ public class Estadisitcas extends Activity {
                     btn.setBackgroundColor(Color.rgb(231,118,26));
 
 
-                    Display display = getWindowManager().getDefaultDisplay();
-                    Point size = new Point();
-                    display.getSize(size);
-                    int width = size.x;
 
 
-                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ width)*100), 40));
+
+                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ (width*0.8)*100)), 40));
 
                     TextView text1 = new TextView(this);
 
@@ -689,11 +696,6 @@ public class Estadisitcas extends Activity {
         rendererJuegosPlataforma.setAntialiasing(true);
 
 
-
-
-
-
-
         Cursor cursorJuegosPlataforma = juegosSQLH.getJuegosPorPlataforma();
 
 
@@ -820,6 +822,119 @@ public class Estadisitcas extends Activity {
         } else {
             resumenSum.setText("");
             resumenAVG.setText("");
+        }
+    }
+
+
+
+    /**
+     * PieChart by platform
+     *
+     * @param codigoIdioma
+     */
+    private void gamesPendingByPlatformGraphic(String codigoIdioma) {
+
+        rendererJuegosPendientesPlataforma.setApplyBackgroundColor(true);
+        rendererJuegosPendientesPlataforma.setLabelsTextSize(pxLabelSize);
+        rendererJuegosPendientesPlataforma.setLabelsColor(Color.BLACK);
+        rendererJuegosPendientesPlataforma.setShowLegend(false);
+        rendererJuegosPendientesPlataforma.setPanEnabled(false);
+        rendererJuegosPendientesPlataforma.setZoomEnabled(false);
+        rendererJuegosPendientesPlataforma.setShowLabels(false);
+        rendererJuegosPendientesPlataforma.setScale(1.35f);
+        rendererJuegosPendientesPlataforma.setStartAngle(0);
+        rendererJuegosPendientesPlataforma.setShowLabels(false);
+        rendererJuegosPendientesPlataforma.setAntialiasing(true);
+
+
+        Cursor cursorJuegosPlataforma = juegosSQLH.getJuegosPendientesPorPlataforma();
+
+
+
+        if (cursorJuegosPlataforma != null
+                && cursorJuegosPlataforma.moveToFirst()) {
+
+            numeroJuegos = new int[cursorJuegosPlataforma.getCount()];
+            etiquetas = new String[cursorJuegosPlataforma.getCount()];
+
+            int i = 0;
+            do {
+                numeroJuegos[i] = cursorJuegosPlataforma.getInt(0);
+                etiquetas[i] = cursorJuegosPlataforma.getString(1);
+                i++;
+            } while (cursorJuegosPlataforma.moveToNext());
+
+            LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_3_1_foot_left);
+            LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_3_1_foot_right);
+
+            for (int j = 0; j < numeroJuegos.length; j++) {
+                int x;
+
+                try {
+                    x = numeroJuegos[j];
+                } catch (NumberFormatException e) {
+                    x = 0;
+                }
+
+                serieJuegosPendientesPlataforma.add(etiquetas[j], x);
+
+                SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
+
+                int color = COLORS[(serieJuegosPendientesPlataforma.getItemCount() - 1)
+                        % COLORS.length];
+
+                renderer.setColor(color);
+
+                //Añadimos a la falsa leyenda una entrada
+                LinearLayout tmpFoot = new LinearLayout(this);
+                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                TextView tmpColor = new TextView(this);
+                tmpColor.setHeight(50);
+                tmpColor.setWidth(50);
+                tmpColor.setTextSize(12);
+                tmpColor.setPadding(0, 0, 0, 10);
+                tmpColor.setGravity(Gravity.TOP);
+                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tmpColor.setBackgroundColor(color);
+
+                TextView tmp = new TextView(this);
+                tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
+                tmp.setTextSize(12);
+
+                tmp.setGravity(Gravity.TOP);
+                tmp.setPadding(15, 0, 0, 10);
+                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+                tmpFoot.addView(tmpColor);
+                tmpFoot.addView(tmp);
+
+                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+                //foot.addView(tmpFoot);
+                if (j % 2 == 0) {
+                    footL.addView(tmpFoot);
+                } else {
+                    footR.addView(tmpFoot);
+                }
+
+                rendererJuegosPendientesPlataforma.addSeriesRenderer(renderer);
+
+            }
+
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linea_estadisticas_3_1_layout_pie);
+
+
+            GraphicalView graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
+                    serieJuegosPendientesPlataforma, rendererJuegosPendientesPlataforma);
+
+
+            layout.addView(graficoJuegosPlataforma);
+
+
+            cursorJuegosPlataforma.close();
         }
     }
 

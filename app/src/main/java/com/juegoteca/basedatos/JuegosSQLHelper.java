@@ -952,6 +952,23 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
     }
 
 
+    /**
+     * Devuelve un cursor con la cantidad total de juegos por plataforma
+     *
+     * @return
+     */
+    public Cursor getJuegosPendientesPorPlataforma() {
+        Cursor c;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            c = db.rawQuery(
+                    "SELECT count(*) AS NUM,p.nombre FROM juego AS j LEFT JOIN plataforma AS p ON p.id=j.plataforma WHERE j.completado = 0 GROUP BY p.nombre ORDER BY NUM DESC",
+                    null);
+        } catch (Exception e) {
+            return null;
+        }
+        return c;
+    }
 
 
 }
