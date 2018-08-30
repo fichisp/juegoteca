@@ -23,14 +23,19 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.SwitchPreference;
+import android.support.v4.content.FileProvider;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.juegoteca.util.Utilidades;
+import com.mijuegoteca.BuildConfig;
 import com.mijuegoteca.R;
 
+import java.io.File;
 import java.util.List;
+
+import static java.security.AccessController.getContext;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On
@@ -452,8 +457,7 @@ public class Opciones extends PreferenceActivity {
             dialogoEmpaquetado.dismiss();
             Intent shareIntent = new Intent();
             shareIntent.setAction(Intent.ACTION_SEND);
-            shareIntent.putExtra(Intent.EXTRA_STREAM,
-                    Uri.parse("file://" + result));
+            shareIntent.putExtra(Intent.EXTRA_STREAM,FileProvider.getUriForFile(Opciones.this, BuildConfig.APPLICATION_ID + ".provider", new File(result) ));
             shareIntent.setType("application/zip");
             startActivity(Intent.createChooser(shareIntent, "Enviar a..."));
 
