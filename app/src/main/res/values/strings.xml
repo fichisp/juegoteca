@@ -192,4 +192,7 @@
     <string name="valor_total_detalle">By platform</string>
     <string name="valor_total_detalle_anyo">By year</string>
     <string name="titulo_estadisticas_pendientes_por_plataforma">PENDING GAMES BY PLATFORM</string>
+    <string name="search_help_text">Find games in your collection</string>
+    <string name="titulo_estadisticas_anyo">Games by year</string>
+    <string name="other_year">Other</string>
 </resources>

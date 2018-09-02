@@ -971,4 +971,22 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
     }
 
 
+    /**
+     * Devuelve un cursor con la suma de los precios de juegos por plataforma
+     *
+     * @return
+     */
+    public Cursor getCountPorAnyo() {
+        Cursor c;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+            c = db.rawQuery(
+                    "SELECT count(*) AS TOTAL, strftime('%Y',  datetime(j.fecha_compra , 'unixepoch')) AS ANIO_COMPRA FROM juego AS j LEFT JOIN plataforma AS p ON p.id=j.plataforma GROUP BY ANIO_COMPRA ORDER BY ANIO_COMPRA DESC",
+                    null);
+        } catch (Exception e) {
+            return null;
+        }
+        return c;
+    }
+
 }

@@ -97,6 +97,8 @@ public class Estadisitcas extends Activity {
     private final CategorySeries serieJuegosCompletados = new CategorySeries(EMPTY_STRING);
     private final CategorySeries serieJuegosGenero = new CategorySeries(EMPTY_STRING);
     private final CategorySeries serieJuegosFormato = new CategorySeries(EMPTY_STRING);
+    private final CategorySeries serieJuegosAnyo = new CategorySeries(EMPTY_STRING);
+    private final DefaultRenderer rendererJuegosAnyo = new DefaultRenderer();
     private final DefaultRenderer rendererJuegosPlataforma = new DefaultRenderer();
     private final DefaultRenderer rendererJuegosPendientesPlataforma = new DefaultRenderer();
     private final DefaultRenderer rendererJuegosCompletados = new DefaultRenderer();
@@ -144,6 +146,9 @@ public class Estadisitcas extends Activity {
 
         // Juegos agrupados por formato
         gamesByFormatGraphic(codigoIdioma);
+
+        // Juegos por año de compra
+        gamesByYearGraphic(codigoIdioma);
 
         // Juegos agrupados por completado
         gamesByStatusGraphic(codigoIdioma);
@@ -929,6 +934,133 @@ public class Estadisitcas extends Activity {
 
             GraphicalView graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
                     serieJuegosPendientesPlataforma, rendererJuegosPendientesPlataforma);
+
+
+            layout.addView(graficoJuegosPlataforma);
+
+
+            cursorJuegosPlataforma.close();
+        }
+    }
+
+
+    /**
+     * PieChart by platform
+     *
+     * @param codigoIdioma
+     */
+    private void gamesByYearGraphic(String codigoIdioma) {
+
+        rendererJuegosAnyo.setApplyBackgroundColor(true);
+        rendererJuegosAnyo.setLabelsTextSize(pxLabelSize);
+        rendererJuegosAnyo.setLabelsColor(Color.BLACK);
+        rendererJuegosAnyo.setShowLegend(false);
+        rendererJuegosAnyo.setPanEnabled(false);
+        rendererJuegosAnyo.setZoomEnabled(false);
+        rendererJuegosAnyo.setShowLabels(false);
+        rendererJuegosAnyo.setScale(1.35f);
+        rendererJuegosAnyo.setStartAngle(0);
+        rendererJuegosAnyo.setShowLabels(false);
+        rendererJuegosAnyo.setAntialiasing(true);
+
+
+        Cursor cursorJuegosPlataforma = juegosSQLH.getCountPorAnyo();
+
+
+
+        if (cursorJuegosPlataforma != null
+                && cursorJuegosPlataforma.moveToFirst()) {
+
+            numeroJuegos = new int[cursorJuegosPlataforma.getCount()];
+            etiquetas = new String[cursorJuegosPlataforma.getCount()];
+
+            int i = 0;
+            do {
+                numeroJuegos[i] = cursorJuegosPlataforma.getInt(0);
+                etiquetas[i] = cursorJuegosPlataforma.getString(1);
+                i++;
+            } while (cursorJuegosPlataforma.moveToNext());
+
+            LinearLayout footL = (LinearLayout) findViewById(R.id.linear_estadisticas_6_foot_left);
+            LinearLayout footR = (LinearLayout) findViewById(R.id.linear_estadisticas_6_foot_right);
+
+            for (int j = 0; j < numeroJuegos.length; j++) {
+
+
+                int x;
+
+                try {
+                    x = numeroJuegos[j];
+                } catch (NumberFormatException e) {
+                    x = 0;
+                }
+
+                if(!"1970".equals(etiquetas[j])){
+                    serieJuegosAnyo.add(etiquetas[j], x);
+                } else {
+                    serieJuegosAnyo.add(getString(R.string.other_year), x);
+                }
+
+
+
+                SimpleSeriesRenderer renderer = new SimpleSeriesRenderer();
+
+                int color = COLORS[(serieJuegosAnyo.getItemCount() - 1)
+                        % COLORS.length];
+
+                renderer.setColor(color);
+
+                //Añadimos a la falsa leyenda una entrada
+                LinearLayout tmpFoot = new LinearLayout(this);
+                tmpFoot.setOrientation(LinearLayout.HORIZONTAL);
+
+
+                TextView tmpColor = new TextView(this);
+                tmpColor.setHeight(50);
+                tmpColor.setWidth(50);
+                tmpColor.setTextSize(12);
+                tmpColor.setPadding(0, 0, 0, 10);
+                tmpColor.setGravity(Gravity.TOP);
+                tmpColor.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tmpColor.setBackgroundColor(color);
+
+                TextView tmp = new TextView(this);
+
+                if(!"1970".equals(etiquetas[j])){
+                    tmp.setText(etiquetas[j] + " (" + numeroJuegos[j] + ")");
+                } else {
+                    tmp.setText(getString(R.string.other_year) + " (" + numeroJuegos[j] + ")");
+                }
+
+                tmp.setTextSize(12);
+
+                tmp.setGravity(Gravity.TOP);
+                tmp.setPadding(15, 0, 0, 10);
+                tmp.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+
+                tmpFoot.addView(tmpColor);
+                tmpFoot.addView(tmp);
+
+                tmpFoot.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+
+                //foot.addView(tmpFoot);
+                if (j % 2 == 0) {
+                    footL.addView(tmpFoot);
+                } else {
+                    footR.addView(tmpFoot);
+                }
+
+                rendererJuegosAnyo.addSeriesRenderer(renderer);
+
+
+            }
+
+            LinearLayout layout = (LinearLayout) findViewById(R.id.linea_estadisticas_6_layout_pie);
+
+
+            GraphicalView graficoJuegosPlataforma = ChartFactory.getPieChartView(this,
+                    serieJuegosAnyo, rendererJuegosAnyo);
 
 
             layout.addView(graficoJuegosPlataforma);

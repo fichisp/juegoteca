@@ -164,8 +164,12 @@ public class DetalleJuego extends Activity {
 
                 final SharedPreferences settings = getSharedPreferences("UserInfo", 0);
 
+                String currency = settings.getString("currency",null);
+
+                String currencyText = (currency!=null && !"".equals(currency))?currency:"";
+
                 textViewPrecio
-                        .setText(String.format("%.2f", juego.getPrecio())+" " + settings.getString("currency",null));
+                        .setText(String.format("%.2f", juego.getPrecio())+" " +currencyText);
             } else {
                 textViewPrecio.setText("-");
             }

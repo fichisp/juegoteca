@@ -139,11 +139,11 @@ public class Utilidades {
         Cursor c;
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
-            generos.add("ANY");
+            generos.add("-- All --");
             c = juegosSQLH.getGenerosEN();
         } else {
             c = juegosSQLH.getGeneros();
-            generos.add("CUALQUIERA");
+            generos.add("-- Todos --");
         }
 
         if (c != null && c.moveToFirst()) {
@@ -195,9 +195,9 @@ public class Utilidades {
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
-            plataformas.add("ANY");
+            plataformas.add("-- All --");
         } else {
-            plataformas.add("CUALQUIERA");
+            plataformas.add("-- Todos --");
         }
 
         Cursor c = juegosSQLH.getPlataformas();
@@ -242,11 +242,11 @@ public class Utilidades {
         String codigoIdioma = Locale.getDefault().getISO3Language();
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
-            formatos.add("ANY");
+            formatos.add("-- All --");
             formatos.add("Retail");
             formatos.add("Digital");
         } else {
-            formatos.add("CUALQUIERA");
+            formatos.add("-- Todos --");
             formatos.add("Fisico");
             formatos.add("Digital");
 

@@ -188,5 +188,8 @@
     <string name="valor_total_detalle">Por plataforma</string>
     <string name="valor_total_detalle_anyo">Por año</string>
     <string name="titulo_estadisticas_pendientes_por_plataforma">JUEGOS PENDIENTES POR PLATAFORMA</string>
+    <string name="search_help_text">Busca juegos en tu colección</string>
+    <string name="titulo_estadisticas_anyo">Juegos por año</string>
+    <string name="other_year">Otro</string>
 
 </resources>
