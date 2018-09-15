@@ -197,7 +197,7 @@ public class Estadisitcas extends Activity {
                     text.setText(etiquetas[i]);
                     text.setTextColor(Color.BLACK);
                     text.setLayoutParams(new LinearLayout.LayoutParams((int) (width*0.3), 50));
-                    text.setTextSize(12);
+                    text.setTextSize(10);
 
                     TextView line = new TextView(this);
                     line.setBackgroundColor(Color.BLACK);
@@ -224,7 +224,7 @@ public class Estadisitcas extends Activity {
 
 
                     text1.setText(bd.toString()+ " " + currency);
-                    text1.setTextSize(12);
+                    text1.setTextSize(10);
                     text1.setPadding(10,0,0,0);
 
                     text1.setTextColor(Color.parseColor("#000000"));
@@ -284,8 +284,8 @@ public class Estadisitcas extends Activity {
                     TextView text = new TextView(this);
                     text.setText(etiquetas[i]);
                     text.setTextColor(Color.BLACK);
-                    text.setLayoutParams(new LinearLayout.LayoutParams((int) (width*0.2), 50));
-                    text.setTextSize(12);
+                    text.setLayoutParams(new LinearLayout.LayoutParams((int) (width*0.15), 50));
+                    text.setTextSize(10);
 
                     TextView line = new TextView(this);
                     line.setBackgroundColor(Color.BLACK);
@@ -312,7 +312,7 @@ public class Estadisitcas extends Activity {
 
 
                     text1.setText(bd.toString()+ " " + currency);
-                    text1.setTextSize(12);
+                    text1.setTextSize(10);
                     text1.setPadding(10,0,0,0);
 
                     text1.setTextColor(Color.parseColor("#000000"));
