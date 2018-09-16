@@ -587,7 +587,7 @@ public class Utilidades {
             File directorioFiles = new File(context.getFilesDir().getPath());
             File[] ficherosFiles = directorioFiles.listFiles(new FilenameFilter() {
                 public boolean accept(File dir, String name) {
-                    return name.toLowerCase().endsWith(".png");
+                    return name.toLowerCase().endsWith(".png") || name.toLowerCase().endsWith(".jpg");
                 }
             });
             for (File ficherosFile : ficherosFiles) {

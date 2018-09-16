@@ -120,10 +120,23 @@ public class DetalleJuego extends Activity {
             imageViewCaratula.setImageDrawable((this.getResources()
                     .getDrawable(R.drawable.sinimagen)));
         } else {
-                imageViewCaratula.setImageBitmap(utilidades
-                        .decodeFile(new File(this.getFilesDir().getPath() + "/"
-                                + juego.getCaratula())));
+            try {
+                File f = new File(this.getFilesDir().getPath() + "/"
+                        + juego.getCaratula());
 
+                if(f.exists()){
+                    imageViewCaratula.setImageBitmap(utilidades
+                            .decodeFile(f));
+                } else {
+                    imageViewCaratula.setImageDrawable((this.getResources()
+                            .getDrawable(R.drawable.sinimagen)));
+                }
+
+            } catch (Exception e)
+            {
+                imageViewCaratula.setImageDrawable((this.getResources()
+                        .getDrawable(R.drawable.sinimagen)));
+            }
         }
         // Título de la actividad igual al nombre del juego
         textViewTitulo.setText(juego.getTitulo());

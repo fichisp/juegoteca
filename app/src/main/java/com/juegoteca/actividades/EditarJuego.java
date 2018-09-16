@@ -27,6 +27,8 @@ import com.juegoteca.util.TextWatcherFechas;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
+import java.io.File;
+
 public class EditarJuego extends Activity {
 
     private static final int IMAGEN_SELECCIONADA = 1;
@@ -121,8 +123,23 @@ public class EditarJuego extends Activity {
                 imageCaratula.setImageDrawable((this.getResources()
                         .getDrawable(R.drawable.sinimagen)));
             } else {
-                imageCaratula.setImageURI(Uri.parse(this.getFilesDir()
-                        .getPath() + "/" + juegoDetalle.getCaratula()));
+
+                File f = new File(this.getFilesDir()
+                        .getPath() + "/" + juegoDetalle.getCaratula());
+
+                if(f.exists()){
+                    Uri parse = Uri.parse(this.getFilesDir()
+                            .getPath() + "/" + juegoDetalle.getCaratula());
+
+
+                    imageCaratula.setImageURI(parse);
+                } else {
+                    imageCaratula.setImageDrawable((this.getResources()
+                            .getDrawable(R.drawable.sinimagen)));
+                }
+
+
+
             }
             textTitulo.setText(juegoDetalle.getTitulo());
             autoCompania.setText(juegoDetalle.getCompania());
