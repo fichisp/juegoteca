@@ -123,6 +123,7 @@
                     android:id="@+id/edit_resumen_nuevo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="5sp"
                     android:layout_weight="0"
                     android:ems="10"
                     android:hint="@string/hint_resumen"
@@ -133,12 +134,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
                     android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_fecha_lanzamiento_nuevo"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/label_fecha_lanzamiento"
                         android:textSize="15sp"
@@ -159,12 +162,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
                     android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_fecha_compra_detalle_nuevo"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/label_fecha_compra"
                         android:textSize="15sp"
@@ -185,12 +190,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
                     android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_precio_nuevo"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/label_precio"
                         android:textSize="15sp"
@@ -210,13 +217,17 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
                     android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_completado_nuevo"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
                         android:text="@string/label_completado"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -230,13 +241,13 @@
                         <CheckBox
                             android:id="@+id/check_completado_nuevo"
                             android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:onClick="activarFechaCompletado" />
 
                         <EditText
                             android:id="@+id/edit_fecha_completado_nuevo"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
+                            android:layout_height="wrap_content"
                             android:ems="10"
                             android:enabled="false"
                             android:hint="@string/hint_fecha"
@@ -253,8 +264,8 @@
                     android:id="@+id/linear_comentario_nuevo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_weight="0">
 
                     <TextView
@@ -262,6 +273,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
                         android:text="@string/label_comentario"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -290,6 +303,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
                         android:text="@string/label_puntuacion"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -310,6 +325,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
                 android:layout_weight="0">
 
                 <TextView
@@ -317,6 +333,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:paddingTop="5sp"
                     android:text="@string/label_ean"
                     android:textSize="15sp"
                     android:textStyle="bold" />

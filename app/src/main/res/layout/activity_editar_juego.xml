@@ -102,35 +102,44 @@
                 android:layout_weight="2"
                 android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/text_resumen_editar"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:text="@string/label_descripcion_editar"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
-
-                <EditText
-                    android:id="@+id/edit_resumen_editar"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:ems="10"
-                    android:hint="@string/hint_resumen"
-                    android:inputType="textMultiLine|textCapSentences"
-                    android:textSize="15sp" />
+                    android:layout_marginTop="10sp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_resumen_editar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="@string/label_descripcion_editar"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edit_resumen_editar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:ems="10"
+                        android:hint="@string/hint_resumen"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:textSize="15sp" />
+                </LinearLayout>
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0">
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_fecha_lanzamiento_editar"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="@string/label_fecha_lanzamiento"
                         android:textSize="15sp"
@@ -139,7 +148,7 @@
                     <EditText
                         android:id="@+id/edit_fecha_lanzamiento_editar"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:hint="@string/hint_fecha"
@@ -151,7 +160,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0">
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_fecha_compra_detalle_editar"
@@ -177,7 +187,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0">
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_precio_Editar"
@@ -202,13 +213,18 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1"
+                    android:paddingTop="5sp"
+                    android:paddingBottom="5sp">
 
                     <TextView
                         android:id="@+id/text_formato_editar"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingTop="5sp"
+                        android:paddingBottom="5sp"
                         android:text="@string/label_formato"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -228,6 +244,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginBottom="5sp"
                     android:layout_weight="1">
 
                     <TextView
@@ -235,6 +252,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingTop="10sp"
                         android:text="@string/label_completado"
                         android:textSize="15sp"
                         android:textStyle="bold" />
@@ -271,9 +289,9 @@
                     android:id="@+id/linear_comentario_editar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_comentario_detalle_label"
@@ -298,9 +316,9 @@
                     android:id="@+id/linear_puntuacion_editar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="0">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1">
 
                     <TextView
                         android:id="@+id/text_puntuacion_detalle_label"
@@ -325,7 +343,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_weight="1"
                     android:orientation="horizontal">
 
                     <TextView
@@ -333,13 +353,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingTop="5sp"
                         android:text="@string/label_ean"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_weight="1">
 
                         <ImageButton
@@ -353,10 +374,12 @@
                         <EditText
                             android:id="@+id/edit_ean_editar"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="10"
                             android:hint="@string/hint_ean"
-                            android:inputType="number" />
+                            android:inputType="number"
+                            android:paddingTop="5sp"
+                            android:paddingBottom="5sp" />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
