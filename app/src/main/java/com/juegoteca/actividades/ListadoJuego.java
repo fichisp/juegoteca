@@ -167,6 +167,7 @@ public class ListadoJuego extends Activity {
                     cursorPlataforma.moveToFirst();
                     datosJuegos[i].setNombrePlataforma(cursorPlataforma.getString(1));
                     i++;
+                    cursorPlataforma.close();
                 }
                 while (c.moveToNext());
                 elementosEncontrados = c.getCount();
@@ -175,6 +176,8 @@ public class ListadoJuego extends Activity {
             } else {
                 return null;
             }
+
+
 
         }
 

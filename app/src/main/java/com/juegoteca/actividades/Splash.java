@@ -2,6 +2,7 @@ package com.juegoteca.actividades;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -14,9 +15,15 @@ public class Splash extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.naranja_cabeceras));
+        }
+
         Handler handler = new Handler();
         Utilidades utilidades = new Utilidades(this);
         handler.postDelayed(getRunnableStartApp(), 1500);
+
     }
 
     /**

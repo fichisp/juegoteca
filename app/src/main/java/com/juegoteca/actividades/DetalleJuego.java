@@ -532,7 +532,11 @@ public class DetalleJuego extends Activity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        utilidades.unbindDrawables(findViewById(R.id.linear_detalle_all));
+        try {
+            utilidades.unbindDrawables(findViewById(R.id.linear_detalle_all));
+        } catch (Exception e){
+            Log.e("DETALLE_JUEGO",e.getMessage());
+        }
         System.gc();
     }
 

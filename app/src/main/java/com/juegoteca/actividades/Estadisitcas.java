@@ -211,7 +211,7 @@ public class Estadisitcas extends Activity {
 
 
 
-                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ (width*0.6)*100)), 40));
+                    btn.setLayoutParams(new LinearLayout.LayoutParams((int) ((sum[i]/ (width*0.8)*100)), 40));
 
                     TextView text1 = new TextView(this);
 
@@ -811,7 +811,14 @@ public class Estadisitcas extends Activity {
             final SharedPreferences settings = getSharedPreferences("UserInfo",
                     0);
             String currency = settings.getString("currency","");
-            String coleccionValueText = String.valueOf(valorColeccion) + " " + currency;
+
+            BigDecimal valorColeccionBD = new BigDecimal(valorColeccion);
+            valorColeccionBD = valorColeccionBD.setScale(2, BigDecimal.ROUND_HALF_UP);
+
+
+            String coleccionValueText = String.valueOf(valorColeccionBD) + " " + currency;
+
+
             BigDecimal bd = new BigDecimal(Float.toString(valorColeccion / juegosConPrecio));
             bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
             String avgText = String.valueOf(bd.floatValue()) + " " + currency;

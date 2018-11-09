@@ -547,6 +547,15 @@ public class EditarJuego extends Activity {
                         if (getIntent().getBooleanExtra("GRID", false)) {
                             intent.putExtra("GRID", true);
                         }
+
+                        String caller = getIntent().getStringExtra("CALLER");
+                        if (caller != null) {
+                            intent.putExtra("CALLER", caller);
+                            if (caller.compareTo("ListadoJuego") == 0) {
+                                intent.putExtra("VALORES", valoresBusqueda);
+                                intent.putExtra("ONLINE", esJuegoOnline);
+                            }
+                        }
                         startActivity(intent);
                         finish();
 
