@@ -69,9 +69,16 @@ public class Buscador extends Activity {
         // Show the Up button in the action bar.
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
+        getActionBar().setDisplayHomeAsUpEnabled(true); // In `OnCreate();`
         //Acciones por defecto al pulsar enter
         editEan.setOnKeyListener(buscar);
         editTitulo.setOnKeyListener(buscar);
+    }
+
+    @Override
+    public boolean onNavigateUp(){
+        finish();
+        return true;
     }
 
 

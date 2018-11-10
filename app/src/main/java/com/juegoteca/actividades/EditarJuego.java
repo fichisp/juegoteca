@@ -59,6 +59,7 @@ public class EditarJuego extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editar_juego);
+        getActionBar().setDisplayHomeAsUpEnabled(true); // In `OnCreate();`
         Intent intent = getIntent();
         juegosSQLH = new JuegosSQLHelper(this);
         idJuego = intent.getStringExtra("ID_JUEGO");
@@ -220,6 +221,12 @@ public class EditarJuego extends Activity {
                 return false;
             }
         });
+    }
+
+    @Override
+    public boolean onNavigateUp(){
+        onBackPressed();
+        return true;
     }
 
     /**
@@ -439,6 +446,7 @@ public class EditarJuego extends Activity {
                 }
             }
 
+            finish();
 
         } else {
             if (id == -5) {

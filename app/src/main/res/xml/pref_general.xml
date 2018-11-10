@@ -4,6 +4,7 @@
         android:icon="@null"
         android:key="twitter"
         android:persistent="true"
+        android:summary="@string/share_twitter_intro"
         android:title="@string/share_on_twitter"></SwitchPreference>
 
     <ListPreference

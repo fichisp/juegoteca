@@ -344,6 +344,8 @@ public class NuevoJuego extends Activity {
                 }
 
                 startActivity(intent);
+
+                finish();
             } else {
                 if (id == -5) {
                     Toast toast = Toast.makeText(getApplicationContext(),
@@ -448,7 +450,7 @@ public class NuevoJuego extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int id) {
                         // Escoger fichero
-                        if (getIntent().getBooleanExtra("GRID", false)) {
+                      /*  if (getIntent().getBooleanExtra("GRID", false)) {
                             Intent intent = new Intent(NuevoJuego.this, InicioMasonry.class);
                             startActivity(intent);
                             finish();
@@ -458,7 +460,7 @@ public class NuevoJuego extends Activity {
                             startActivity(intent);
                             finish();
                         }
-
+*/ finish();
                     }
                 });
 

@@ -440,6 +440,17 @@ public class Opciones extends PreferenceActivity {
         }
     }
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        getActionBar().setDisplayHomeAsUpEnabled(true); // In `OnCreate();`
+    }
+
+    @Override
+    public boolean onNavigateUp(){
+        finish();
+        return true;
+    }
 
     /**
      * @author alvaro

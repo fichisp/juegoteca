@@ -46,6 +46,7 @@ public class DetalleJuego extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalle_juego);
+        getActionBar().setDisplayHomeAsUpEnabled(true); // In `OnCreate();`
         loadData();
     }
 
@@ -370,37 +371,55 @@ public class DetalleJuego extends Activity {
 
     @Override
     public void onBackPressed() {
-        String caller = getIntent().getStringExtra("CALLER");
-        if (caller != null && caller.compareTo("ListadoJuego") == 0) {
-            final Intent intent = new Intent(this, ListadoJuego.class);
-            intent.putExtra("VALORES", valoresBusqueda);
-            intent.putExtra("ONLINE", esJuegoOnline);
-            startActivity(intent);
-        } else {
-            if (caller != null && caller.compareTo("ListadoPendientes") == 0) {
-                final Intent intent = new Intent(this, Pendientes.class);
-                if (getIntent().getBooleanExtra("GRID", false)) {
-                    intent.putExtra("GRID", true);
-                }
+//        String caller = getIntent().getStringExtra("CALLER");
+//        if (caller != null && caller.compareTo("ListadoJuego") == 0) {
+//            final Intent intent = new Intent(this, ListadoJuego.class);
+//            intent.putExtra("VALORES", valoresBusqueda);
+//            intent.putExtra("ONLINE", esJuegoOnline);
+//            startActivity(intent);
+//        } else {
+//            if (caller != null && caller.compareTo("ListadoPendientes") == 0) {
+//                final Intent intent = new Intent(this, Pendientes.class);
+//                if (getIntent().getBooleanExtra("GRID", false)) {
+//                    intent.putExtra("GRID", true);
+//                }
+//                startActivity(intent);
+//            } else {
+//                if (caller != null && caller.compareTo("ListadoFavoritos") == 0) {
+//                    final Intent intent = new Intent(this, Favoritos.class);
+//                    if (getIntent().getBooleanExtra("GRID", false)) {
+//                        intent.putExtra("GRID", true);
+//                    }
+//                    startActivity(intent);
+//                } else if (getIntent().getBooleanExtra("GRID", false)) {
+//                    Intent intent = new Intent(this, InicioMasonry.class);
+//                    startActivity(intent);
+//                    finish();
+//                } else {
+//                    Intent intent = new Intent(this, Inicio.class);
+//                    startActivity(intent);
+//                    finish();
+//                }
+//            }
+//        }
+
+        //Si es un juego nuevo, volvemos al inicio siempre
+/*        if(getIntent().getBooleanExtra("NUEVO_JUEGO", false)) {
+            if (getIntent().getBooleanExtra("GRID", false)) {
+                Intent intent = new Intent(this, InicioMasonry.class);
                 startActivity(intent);
+                finish();
             } else {
-                if (caller != null && caller.compareTo("ListadoFavoritos") == 0) {
-                    final Intent intent = new Intent(this, Favoritos.class);
-                    if (getIntent().getBooleanExtra("GRID", false)) {
-                        intent.putExtra("GRID", true);
-                    }
-                    startActivity(intent);
-                } else if (getIntent().getBooleanExtra("GRID", false)) {
-                    Intent intent = new Intent(this, InicioMasonry.class);
-                    startActivity(intent);
-                    finish();
-                } else {
-                    Intent intent = new Intent(this, Inicio.class);
-                    startActivity(intent);
-                    finish();
-                }
+                Intent intent = new Intent(this, Inicio.class);
+                startActivity(intent);
+                finish();
             }
-        }
+        } else {
+            finish();
+        }*/
+
+        finish();
+
     }
 
     @Override
@@ -503,7 +522,8 @@ public class DetalleJuego extends Activity {
                                 }
                                 // toast.setGravity(Gravity.CENTER|Gravity.BOTTOM,0,0);
                                 toast.show();
-                                if (getIntent().getBooleanExtra("GRID", false)) {
+                                finish();
+                                /*if (getIntent().getBooleanExtra("GRID", false)) {
                                     Intent intent = new Intent(getApplicationContext(),
                                             InicioMasonry.class);
                                     startActivity(intent);
@@ -511,7 +531,7 @@ public class DetalleJuego extends Activity {
                                     Intent intent = new Intent(getApplicationContext(),
                                             Inicio.class);
                                     startActivity(intent);
-                                }
+                                }*/
                             }
                         });
                 builder.setNegativeButton(R.string.cancel,
@@ -527,6 +547,12 @@ public class DetalleJuego extends Activity {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public boolean onNavigateUp(){
+        onBackPressed();
+        return true;
     }
 
     @Override

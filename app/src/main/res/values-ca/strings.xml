@@ -178,7 +178,7 @@
     <string name="juegos">games</string>
     <string name="pref_description_orden_ultimos_anadidos">Ordenar los últimos juegos añadidos por fecha de compra</string>
     <string name="pref_title_orden_ultimos_anadidos">Orden últimos añadidos</string>
-    <string name="share_twitter_intro">Inicia sesión en Twitter para compartir cada juego nuevo que añadas a tu colección</string>
+    <string name="share_twitter_intro">Inicia sesión en Twitter para compartir cada juego nuevo que añadas a tu colección y cuando completes un juego</string>
     <string name="share_on_twitter">Compartir en Twitter</string>
     <string name="title_activity_twitter_config">Iniciar sesión con Twitter</string>
     <string name="share_twitter_login_ok">Se ha iniciado sesión correctamente con Twitter</string>
@@ -191,4 +191,5 @@
     <string name="search_help_text">Busca juegos en tu colección</string>
     <string name="titulo_estadisticas_anyo">Juegos por año</string>
     <string name="other_year">Otro</string>
+    <string name="pref_description_importar_copia">Carga un fichero de copia de seguridad para restarurar los datos</string>
 </resources>

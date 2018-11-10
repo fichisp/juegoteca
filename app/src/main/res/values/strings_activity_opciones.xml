@@ -33,9 +33,9 @@
     <string name="pref_title_restaurar_copia">Restore backup</string>
     <string name="pref_description_restaurar_copia">Retrieve a backup stored on the server and restores the data.</string>
     <string name="pref_title_exportar_copia">Export backup file</string>
-    <string name="pref_description_exportar_copia">Make a backup and stores it in the device.</string>
+    <string name="pref_description_exportar_copia">Make a backup and stores it in the device or share it</string>
     <string name="pref_title_importar_copia">Import backup file</string>
-    <string name="pref_description_importar_copia">Retrieve a backup stored on the device and restore data.</string>
+    <string name="pref_description_importar_copia">Retrieve a backup file and restore data</string>
     <string name="pref_title_borrar_bbdd">Clear all data</string>
 
     <!-- Otros -->

@@ -36,6 +36,8 @@ public class InicioMasonry extends Activity {
         // Show the Up button in the action bar.
         //setupActionBar();
 
+        getActionBar().setDisplayHomeAsUpEnabled(true); // In `OnCreate();`
+
         backTopButton = (ImageButton) findViewById(R.id.boton_top);
 
         mRecyclerView = (RecyclerView) findViewById(R.id.masonry_grid);
@@ -73,6 +75,13 @@ public class InicioMasonry extends Activity {
 
         });
 
+    }
+
+    @Override
+    public boolean onNavigateUp(){
+       // finish();
+        this.onBackPressed();
+        return true;
     }
 
     @Override
