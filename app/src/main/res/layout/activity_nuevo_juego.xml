@@ -149,12 +149,13 @@
 
                     <EditText
                         android:id="@+id/edit_fecha_lanzamiento_nuevo"
+                        android:clickable="true"
+                        android:focusable="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:hint="@string/hint_fecha"
-                        android:inputType="number"
                         android:maxLength="10"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -164,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5sp"
                     android:layout_marginBottom="5sp"
-                    android:layout_weight="1">
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_fecha_compra_detalle_nuevo"
@@ -177,14 +178,16 @@
 
                     <EditText
                         android:id="@+id/edit_fecha_compra_nuevo"
+                        android:clickable="true"
+                        android:focusable="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:ems="10"
                         android:hint="@string/hint_fecha"
-                        android:inputType="number"
                         android:maxLength="10"
                         android:textSize="15sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -212,6 +215,7 @@
                         android:hint="@string/hint_precio"
                         android:inputType="numberDecimal"
                         android:textSize="15sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -246,12 +250,13 @@
 
                         <EditText
                             android:id="@+id/edit_fecha_completado_nuevo"
+                            android:clickable="true"
+                            android:focusable="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:ems="10"
                             android:enabled="false"
                             android:hint="@string/hint_fecha"
-                            android:inputType="number"
                             android:maxLength="10"
                             android:textSize="15sp">
 

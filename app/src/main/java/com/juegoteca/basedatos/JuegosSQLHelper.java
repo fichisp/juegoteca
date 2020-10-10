@@ -21,7 +21,7 @@ import java.util.Locale;
 
 public class JuegosSQLHelper extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 15;
+    private static final int DATABASE_VERSION = 16;
     private static final String DATABASE_NAME = "Juegoteca";
 
     private final Resources resources;
@@ -366,7 +366,7 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         Cursor c;
         SQLiteDatabase db = this.getReadableDatabase();
         try {
-            c = db.rawQuery("SELECT id AS _id,nombre FROM plataforma", null);
+            c = db.rawQuery("SELECT id AS _id,nombre FROM plataforma ORDER by orden ASC", null);
         } catch (Exception e) {
             return null;
         }

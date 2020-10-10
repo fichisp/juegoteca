@@ -69,3 +69,5 @@
 -dontwarn android.support.**
 -dontwarn org.apache.lang.**
 -dontwarn com.google.zxing.**
+
+-keepattributes EnclosingMethod

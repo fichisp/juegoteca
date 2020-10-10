@@ -55,7 +55,11 @@ public class Favoritos extends Activity {
             @Override
             public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 if (arg2 != opcionSeleccionadaPlataformas) {
-                    cargarFavoritos(arg2);
+
+                    //cargarFavoritos(arg2);
+                    com.juegoteca.basedatos.Plataforma p = (com.juegoteca.basedatos.Plataforma)filtroPlataformas.getSelectedItem();
+                    cargarFavoritos(p.getId());
+
                     if (datosJuegos != null) {
                         adaptador.actualizar(datosJuegos);
                     }

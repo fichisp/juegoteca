@@ -116,7 +116,12 @@ public class Pendientes extends Activity {
             public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
                 if (arg2 != opcionSeleccionadaPlataformas) {//Si cambia la opción seleccionada
                     findViewById(R.id.graphicLayout).setVisibility(View.GONE);
-                    cargarPendientes(arg2);
+
+                    //cargarPendientes(arg2);
+                    com.juegoteca.basedatos.Plataforma p = (com.juegoteca.basedatos.Plataforma)filtroPlataformas.getSelectedItem();
+                    cargarPendientes(p.getId());
+
+
                     if (datosJuegos != null) {
                         adaptador.actualizar(datosJuegos);
                     }

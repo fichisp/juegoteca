@@ -102,32 +102,15 @@
                 android:layout_weight="2"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <EditText
+                    android:id="@+id/edit_resumen_editar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10sp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/text_resumen_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="@string/label_descripcion_editar"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <EditText
-                        android:id="@+id/edit_resumen_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0"
-                        android:ems="10"
-                        android:hint="@string/hint_resumen"
-                        android:inputType="textMultiLine|textCapSentences"
-                        android:textSize="15sp" />
-                </LinearLayout>
+                    android:layout_weight="0"
+                    android:ems="10"
+                    android:hint="@string/hint_resumen"
+                    android:inputType="textMultiLine|textCapSentences"
+                    android:textSize="15sp" />
 
 
                 <LinearLayout
@@ -147,6 +130,8 @@
 
                     <EditText
                         android:id="@+id/edit_fecha_lanzamiento_editar"
+                        android:clickable="true"
+                        android:focusable="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -155,6 +140,7 @@
                         android:inputType="date"
                         android:maxLength="10"
                         android:textSize="15sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -174,6 +160,8 @@
 
                     <EditText
                         android:id="@+id/edit_fecha_compra_editar"
+                        android:clickable="true"
+                        android:focusable="false"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -182,6 +170,7 @@
                         android:inputType="date"
                         android:maxLength="10"
                         android:textSize="15sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -208,11 +197,12 @@
                         android:hint="@string/hint_precio"
                         android:inputType="numberDecimal"
                         android:textSize="15sp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="5sp"
                     android:layout_weight="1"
                     android:paddingTop="5sp"
@@ -243,7 +233,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="5sp"
                     android:layout_weight="1">
 
@@ -270,6 +260,8 @@
 
                         <EditText
                             android:id="@+id/edit_fecha_completado_editar"
+                            android:clickable="true"
+                            android:focusable="false"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2.10"
@@ -283,6 +275,7 @@
                             <requestFocus />
                         </EditText>
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout

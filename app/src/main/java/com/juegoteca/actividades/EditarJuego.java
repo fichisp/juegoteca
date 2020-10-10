@@ -2,6 +2,7 @@ package com.juegoteca.actividades;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -16,6 +17,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -28,6 +30,9 @@ import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class EditarJuego extends Activity {
 
@@ -49,6 +54,8 @@ public class EditarJuego extends Activity {
     private boolean esJuegoOnline;
 
     private boolean completadoAnterior;
+
+    private final Calendar myCalendar = Calendar.getInstance();
 
     /**
      * Llamada cuando se inicializa la actividad. Inicializa los spinner con los
@@ -99,8 +106,82 @@ public class EditarJuego extends Activity {
                 .findViewById(R.id.spinner_formato_editar));
         textFechaLanzamiento = ((EditText) this
                 .findViewById(R.id.edit_fecha_lanzamiento_editar));
+
+        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "dd/MM/yyyy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                textFechaLanzamiento.setText(sdf.format(myCalendar.getTime()));
+            }
+        };
+
+        textFechaLanzamiento.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Calendar cal = Calendar.getInstance();
+                if (juegoDetalle
+                        .getFechaLanzamiento() != null && juegoDetalle
+                        .getFechaLanzamiento().isEmpty()) {
+                    cal.setTime(utilidades
+                            .convertirMilisegundosFecha(juegoDetalle
+                                    .getFechaLanzamiento()));
+                }
+
+                cal = myCalendar;
+
+                new DatePickerDialog(EditarJuego.this, date, cal
+                        .get(Calendar.YEAR), cal.get(Calendar.MONTH),
+                        cal.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+
         textFechaCompra = ((EditText) this
                 .findViewById(R.id.edit_fecha_compra_editar));
+
+        DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "dd/MM/yyyy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                textFechaCompra.setText(sdf.format(myCalendar.getTime()));
+            }
+        };
+
+        textFechaCompra.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Calendar cal = Calendar.getInstance();
+                if (juegoDetalle
+                        .getFechaCompra() != null && juegoDetalle
+                        .getFechaCompra().isEmpty()) {
+                    cal.setTime(utilidades
+                            .convertirMilisegundosFecha(juegoDetalle
+                                    .getFechaCompra()));
+                }
+
+                cal = myCalendar;
+
+                new DatePickerDialog(EditarJuego.this, date2, cal
+                        .get(Calendar.YEAR), cal.get(Calendar.MONTH),
+                        cal.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+
         textPrecio = ((EditText) this.findViewById(R.id.edit_precio_editar));
         autoCompania = ((AutoCompleteTextView) this
                 .findViewById(R.id.autoComplete_compania_editar));
@@ -108,6 +189,43 @@ public class EditarJuego extends Activity {
                 .findViewById(R.id.check_completado_editar));
         textFechaCompletado = ((EditText) this
                 .findViewById(R.id.edit_fecha_completado_editar));
+
+        DatePickerDialog.OnDateSetListener date3 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "dd/MM/yyyy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                textFechaCompletado.setText(sdf.format(myCalendar.getTime()));
+            }
+        };
+
+        textFechaCompletado.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+
+
+                Calendar cal = Calendar.getInstance();
+                if (juegoDetalle
+                        .getFechaCompletado() != null && juegoDetalle
+                        .getFechaCompletado().isEmpty()) {
+                    cal.setTime(utilidades
+                            .convertirMilisegundosFecha(juegoDetalle
+                                    .getFechaCompletado()));
+                }
+                cal = myCalendar;
+                new DatePickerDialog(EditarJuego.this, date3, cal
+                        .get(Calendar.YEAR), cal.get(Calendar.MONTH),
+                        cal.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+
         textEan = ((EditText) this.findViewById(R.id.edit_ean_editar));
         textTitulo.requestFocus();
         // Intentar recuperar el juego a visualizar y cargar los datos en los
@@ -128,7 +246,7 @@ public class EditarJuego extends Activity {
                 File f = new File(this.getFilesDir()
                         .getPath() + "/" + juegoDetalle.getCaratula());
 
-                if(f.exists()){
+                if (f.exists()) {
                     Uri parse = Uri.parse(this.getFilesDir()
                             .getPath() + "/" + juegoDetalle.getCaratula());
 
@@ -140,14 +258,27 @@ public class EditarJuego extends Activity {
                 }
 
 
-
             }
             textTitulo.setText(juegoDetalle.getTitulo());
             autoCompania.setText(juegoDetalle.getCompania());
             // Hay que restar 1 a la posición de los elementos porque empiezan
             // en 0 y los IDs en 1
             spinnerGenero.setSelection(juegoDetalle.getGenero() - 1);
-            spinnerPlataforma.setSelection(juegoDetalle.getPlataforma() - 1);
+
+//            spinnerPlataforma.setSelection(juegoDetalle.getPlataforma() - 1);
+
+            Utilidades.selectPlataformaSpinner(spinnerPlataforma, juegoDetalle.getPlataforma());
+
+
+//            ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.select_state, android.R.layout.simple_spinner_item);
+//            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//            spinnerPlataforma.setAdapter(adapter);
+//            if (compareValue != null) {
+//                int spinnerPosition = adapter.getPosition(compareValue);
+//                mSpinner.setSelection(spinnerPosition);
+//            }
+
+
             spinnerClasificacion
                     .setSelection(juegoDetalle.getClasificacion() - 1);
             spinnerIdioma.setSelection(juegoDetalle.getIdioma() - 1);
@@ -224,7 +355,7 @@ public class EditarJuego extends Activity {
     }
 
     @Override
-    public boolean onNavigateUp(){
+    public boolean onNavigateUp() {
         onBackPressed();
         return true;
     }
@@ -262,8 +393,11 @@ public class EditarJuego extends Activity {
         juegoEditado.setCompania(autoCompania.getText().toString());
         juegoEditado.setGenero(spinnerGenero.getSelectedItemPosition() + 1);
         juegoEditado.setResumen(textResumen.getText().toString());
-        juegoEditado
-                .setPlataforma(spinnerPlataforma.getSelectedItemPosition() + 1);
+      /*  juegoEditado
+                .setPlataforma(spinnerPlataforma.getSelectedItemPosition() + 1);*/
+
+        com.juegoteca.basedatos.Plataforma p = (com.juegoteca.basedatos.Plataforma) spinnerPlataforma.getSelectedItem();
+        juegoEditado.setPlataforma(p.getId());
         juegoEditado.setClasificacion(spinnerClasificacion
                 .getSelectedItemPosition() + 1);
         juegoEditado.setIdioma(spinnerIdioma.getSelectedItemPosition() + 1);
@@ -439,7 +573,7 @@ public class EditarJuego extends Activity {
 
             //TODO Tweet si se ha marcado como completado
 
-            if(checkCompletado.isChecked() && !completadoAnterior) {
+            if (checkCompletado.isChecked() && !completadoAnterior) {
 
                 if (utilidades.isTwitterAuth()) {
                     utilidades.tweet(juegoEditado, true);

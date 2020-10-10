@@ -26,6 +26,7 @@ import android.view.View.OnHoverListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,7 @@ import android.widget.Toast;
 import com.juegoteca.actividades.Splash;
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
+import com.juegoteca.basedatos.Plataforma;
 import com.mijuegoteca.R;
 import com.twitter.sdk.android.core.Callback;
 import com.twitter.sdk.android.core.DefaultLogger;
@@ -165,24 +167,54 @@ public class Utilidades {
      */
     @SuppressLint("NewApi")
     public void cargarPlataformas(Spinner plataforma) {
-        List<String> plataformas = new ArrayList<>();
+//        List<String> plataformas = new ArrayList<>();
+////
+////        Cursor c = juegosSQLH.getPlataformas();
+////        if (c != null && c.moveToFirst()) {
+////            do {
+////                plataformas.add(c.getString(1));
+////            } while (c.moveToNext());
+////
+////            c.close();
+////        }
+////
+////        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
+////                android.R.layout.simple_spinner_item, plataformas);
+////        dataAdapter
+////                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+////        plataforma.setAdapter(dataAdapter);
+
+        List<Plataforma> plataformas = new ArrayList<>();
 
         Cursor c = juegosSQLH.getPlataformas();
         if (c != null && c.moveToFirst()) {
             do {
-                plataformas.add(c.getString(1));
+                Plataforma p = new Plataforma(c.getInt(0), c.getString(1));
+                plataformas.add(p);
             } while (c.moveToNext());
 
             c.close();
         }
 
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(context,
-                android.R.layout.simple_spinner_item, plataformas);
-        dataAdapter
-                .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        plataforma.setAdapter(dataAdapter);
+        // Step 2: Create and fill an ArrayAdapter with a bunch of "State" objects
+        ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(context, android.R.layout.simple_spinner_item, plataformas.toArray());
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Step 3: Tell the spinner about our adapter
+        plataforma.setAdapter(spinnerArrayAdapter);
 
     }
+
+    public static void selectPlataformaSpinner(Spinner spnr, Integer value) {
+        ArrayAdapter adapter = (ArrayAdapter) spnr.getAdapter();
+        for (int position = 0; position < adapter.getCount(); position++) {
+
+            if(((com.juegoteca.basedatos.Plataforma)adapter.getItem(position)).getId() == value) {
+                spnr.setSelection(position);
+                return;
+            }
+        }
+    }
+
 
     /**
      * Metodo especial para el buscador para contemplar el valor "todos"
@@ -190,17 +222,17 @@ public class Utilidades {
      * @param plataforma
      */
     public void cargarPlataformasBuscador(Spinner plataforma) {
-        List<String> plataformas = new ArrayList<>();
+//        List<String> plataformas = new ArrayList<>();
+//
+//        String codigoIdioma = Locale.getDefault().getISO3Language();
+//
+//        if (!"spa".equalsIgnoreCase(codigoIdioma)) {
+//            plataformas.add("-- All --");
+//        } else {
+//            plataformas.add("-- Todos --");
+//        }
 
-        String codigoIdioma = Locale.getDefault().getISO3Language();
-
-        if (!"spa".equalsIgnoreCase(codigoIdioma)) {
-            plataformas.add("-- All --");
-        } else {
-            plataformas.add("-- Todos --");
-        }
-
-        Cursor c = juegosSQLH.getPlataformas();
+        /*Cursor c = juegosSQLH.getPlataformas();
         if (c != null && c.moveToFirst()) {
             do {
                 plataformas.add(c.getString(1));
@@ -213,7 +245,36 @@ public class Utilidades {
                 android.R.layout.simple_spinner_item, plataformas);
         dataAdapter
                 .setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        plataforma.setAdapter(dataAdapter);
+        plataforma.setAdapter(dataAdapter);*/
+        List<Plataforma> plataformas = new ArrayList<>();
+
+        String codigoIdioma = Locale.getDefault().getISO3Language();
+
+
+
+        if (!"spa".equalsIgnoreCase(codigoIdioma)) {
+            Plataforma all = new Plataforma(0, "-- All --");
+            plataformas.add(all);
+        } else {
+            Plataforma all = new Plataforma(0, "-- Todas --");
+            plataformas.add(all);
+        }
+
+        Cursor c = juegosSQLH.getPlataformas();
+        if (c != null && c.moveToFirst()) {
+            do {
+                Plataforma p = new Plataforma(c.getInt(0), c.getString(1));
+                plataformas.add(p);
+            } while (c.moveToNext());
+
+            c.close();
+        }
+
+        // Step 2: Create and fill an ArrayAdapter with a bunch of "State" objects
+        ArrayAdapter spinnerArrayAdapter = new ArrayAdapter(context, android.R.layout.simple_spinner_item, plataformas.toArray());
+        spinnerArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        // Step 3: Tell the spinner about our adapter
+        plataforma.setAdapter(spinnerArrayAdapter);
     }
 
     public void cargarFormatos(Spinner plataforma) {
@@ -433,6 +494,7 @@ public class Utilidades {
 
     /**
      * Redimensiona una imagen
+     *
      * @param imagen
      * @param ancho
      * @return
@@ -528,6 +590,10 @@ public class Utilidades {
         }
     }
 
+    public Date convertirMilisegundosFecha(String milisegundos) {
+            Date date = new Date(Long.parseLong(milisegundos) * 1000L);
+            return date;
+    }
 
     /**
      * Realiza una copia de seguridad para que el usuario la almacene o la envíe
@@ -551,7 +617,7 @@ public class Utilidades {
                 + fechaFichero
                 + ".zip";
         // Mover a directorio
-        if(zipOrigen!=null) {
+        if (zipOrigen != null) {
             try {
                 File origen = new File(zipOrigen);
                 File destino = new File(zipdestino);
@@ -593,18 +659,18 @@ public class Utilidades {
             for (File ficherosFile : ficherosFiles) {
 
 
-                    ZipEntry entrada = new ZipEntry("files/"
-                            + ficherosFile.getName());
-                    osZIP.putNextEntry(entrada);
-                    FileInputStream fis = new FileInputStream(
-                            ficherosFile.getAbsolutePath());
-                    byte[] buffer = new byte[1024];
-                    int leido;
-                    while (0 < (leido = fis.read(buffer))) {
-                        osZIP.write(buffer, 0, leido);
-                    }
-                    fis.close();
-                    osZIP.closeEntry();
+                ZipEntry entrada = new ZipEntry("files/"
+                        + ficherosFile.getName());
+                osZIP.putNextEntry(entrada);
+                FileInputStream fis = new FileInputStream(
+                        ficherosFile.getAbsolutePath());
+                byte[] buffer = new byte[1024];
+                int leido;
+                while (0 < (leido = fis.read(buffer))) {
+                    osZIP.write(buffer, 0, leido);
+                }
+                fis.close();
+                osZIP.closeEntry();
 
             }
             // Base de datos
@@ -889,15 +955,17 @@ public class Utilidades {
     }
 
 
-    public boolean isTwitterAuth(){
+    public boolean isTwitterAuth() {
 
         SharedPreferences globalSettings = PreferenceManager.getDefaultSharedPreferences(context);
 
         return globalSettings.getBoolean("twitter", false);
     }
 
-    /** Publica un tweet con la información del juego **/
-    public void tweet(Juego juego, boolean marcadoCompletado){
+    /**
+     * Publica un tweet con la información del juego
+     **/
+    public void tweet(Juego juego, boolean marcadoCompletado) {
 
         TwitterConfig config = new TwitterConfig.Builder(context)
                 .logger(new DefaultLogger(Log.DEBUG))
@@ -914,7 +982,7 @@ public class Utilidades {
         String nombrePlataforma = "";
 
         Cursor cursorPlataforma = juegosSQLH.buscarPlataformaID(String.valueOf(juego.getPlataforma()));
-        if(cursorPlataforma!=null && cursorPlataforma.moveToFirst()){
+        if (cursorPlataforma != null && cursorPlataforma.moveToFirst()) {
             nombrePlataforma = cursorPlataforma.getString(1);
             cursorPlataforma.close();
         }
@@ -926,13 +994,13 @@ public class Utilidades {
 
         String status;
 
-        if(!marcadoCompletado) {
+        if (!marcadoCompletado) {
             status = MessageFormat.format(context.getString(R.string.share_status_message), juego.getTitulo(), nombrePlataforma, total);
         } else {
 
             int completados = juegosSQLH.getCountJuegosCompletados();
 
-            status = MessageFormat.format(context.getString(R.string.share_status_message_completado), juego.getTitulo(), nombrePlataforma,completados ,total);
+            status = MessageFormat.format(context.getString(R.string.share_status_message_completado), juego.getTitulo(), nombrePlataforma, completados, total);
         }
 
 

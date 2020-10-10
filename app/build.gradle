@@ -9,7 +9,15 @@ android {
             storePassword '11PW499f'
         }
     }
-    compileSdkVersion 23
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileSdkVersion 29
 
     compileOptions {
         sourceCompatibility 1.8
@@ -21,7 +29,7 @@ android {
     defaultConfig {
         applicationId "com.mijuegoteca"
         minSdkVersion 14
-        targetSdkVersion 26
+        targetSdkVersion 29
         // Enabling multidex support.
         multiDexEnabled true
         signingConfig signingConfigs.config
@@ -58,4 +66,7 @@ dependencies {
     implementation project(':captureActivity')
     implementation 'com.android.support:design:23.4.0'
     implementation 'com.twitter.sdk.android:twitter:3.1.1'
+    implementation 'com.github.igdb:api-java:2.0.0'
+    implementation 'com.mashape.unirest:unirest-android:1.0+'
+    implementation group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'
 }

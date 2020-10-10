@@ -23,16 +23,6 @@
             android:scrollbars="vertical">
 
             <LinearLayout
-                android:id="@+id/datos_titulo"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:paddingBottom="5dp">
-
-            </LinearLayout>
-
-            <LinearLayout
                 android:id="@+id/datos1_detalle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -66,7 +56,7 @@
             <LinearLayout
                 android:id="@+id/datos2_detalle"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
@@ -75,30 +65,22 @@
                 <TextView
                     android:id="@+id/text_titulo_detalle"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="15dp"
-                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
                     android:gravity="left"
                     android:text="@string/label_titulo"
                     android:textAllCaps="true"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
-                <View
-                    android:id="@+id/divider6"
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_weight="1"
-                    android:layout_marginBottom="10dp"
-                    android:background="?android:attr/listDivider" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false">
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:id="@+id/linear_detalle_compania"
@@ -149,8 +131,8 @@
                                 android:id="@+id/image_plataforma_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
-                                android:layout_weight="1"
                                 android:layout_marginRight="5dp"
+                                android:layout_weight="1"
                                 android:gravity="right"
                                 android:onClick="detallePlataforma"
                                 android:scaleType="centerInside"
@@ -160,10 +142,10 @@
                                 android:id="@+id/image_clasificacion_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
+                                android:layout_marginRight="5dp"
                                 android:layout_weight="1"
                                 android:gravity="right"
                                 android:scaleType="centerInside"
-                                android:layout_marginRight="5dp"
                                 android:src="@drawable/ic_launcher"
                                 android:visibility="visible" />
 
@@ -187,12 +169,12 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_genero"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
+                    android:baselineAligned="false"
                     android:gravity="top|left"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false">
+                    android:orientation="horizontal">
 
 
                     <LinearLayout
@@ -226,9 +208,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="4"
+                        android:baselineAligned="false"
                         android:orientation="horizontal"
-                        android:visibility="invisible"
-                        android:baselineAligned="false">
+                        android:visibility="invisible">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -248,11 +230,11 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_formato"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:baselineAligned="false"
                     android:gravity="top|left"
-                    android:orientation="horizontal"
-                    android:baselineAligned="false">
+                    android:orientation="horizontal">
 
 
                     <LinearLayout
@@ -290,9 +272,9 @@
                         android:layout_height="match_parent"
                         android:layout_marginLeft="10dp"
                         android:layout_weight="4"
+                        android:baselineAligned="false"
                         android:orientation="horizontal"
-                        android:visibility="invisible"
-                        android:baselineAligned="false">
+                        android:visibility="invisible">
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -309,12 +291,11 @@
 
                 </LinearLayout>
 
-
                 <LinearLayout
                     android:id="@+id/linear_detalle_resumen"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
                     android:orientation="vertical">
 
                     <TextView
@@ -330,8 +311,8 @@
                         android:id="@+id/text_resumen_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="10dp"
                         android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
                         android:layout_weight="1"
                         android:ellipsize="start"
                         android:ems="10"
@@ -343,10 +324,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_fecha_lanzamiento"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
                     android:gravity="top"
                     android:orientation="horizontal">
 
@@ -370,13 +351,14 @@
 
                 </LinearLayout>
 
+
                 <LinearLayout
                     android:id="@+id/linear_detalle_fecha_compra"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_fecha_compra_detalle_label"
@@ -400,10 +382,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_precio"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_precio_detalle_label"
@@ -427,10 +409,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_completado"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_completado_detalle"
@@ -453,15 +435,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" />
                     </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:id="@+id/linear_detalle_puntuacion"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_puntuacion_detalle_label"
@@ -483,10 +466,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_comentario"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_comentario_detalle_label"
@@ -508,10 +491,10 @@
                 <LinearLayout
                     android:id="@+id/linear_detalle_ean"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_weight="1">
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0">
 
                     <TextView
                         android:id="@+id/text_ean_detalle_label"
@@ -530,6 +513,14 @@
                         android:inputType="number" />
 
                 </LinearLayout>
+
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="?android:attr/listDivider" />
 
 
             </LinearLayout>

@@ -208,3 +208,7 @@ INSERT INTO plataforma (id,nombre, fabricante, fecha_lanzamiento, resumen, drawa
 insert into plataforma SELECT id+1,nombre,fabricante,fecha_lanzamiento,resumen,drawable,imagen  FROM plataforma_tmp where id>=16 order by id asc;
 DROP table plataforma_tmp;
 update juego set plataforma=plataforma+1 where plataforma>=16;
+ALTER TABLE plataforma ADD COLUMN orden INTEGER;
+UPDATE plataforma SET orden = id*5;
+INSERT INTO plataforma (id,nombre, fabricante, fecha_lanzamiento, resumen, drawable, imagen, orden) VALUES(100,'Playstation 5', 'Sony', '2020','PlayStation 5  es una consola de videojuegos de sobremesa desarrollada por Sony Interactive Entertainment. Sucesora de la PlayStation 4, y lanzada el 12 de noviembre de 2020 en Norteamérica, Japón, Australia y Corea del Sur, mientras que fue lanzada el 19 de noviembre de 2020 en el resto del mundo.','pl_ps5', '1503f8784ad3ff3f184f58221c8d9586.png', 21);
+INSERT INTO plataforma (id,nombre, fabricante, fecha_lanzamiento, resumen, drawable, imagen, orden) VALUES(101, 'Xbox Series X/S', 'Microsoft', '2020','Xbox, en sus versiones Series X y Series S, son una línea de videoconsolas de sobremesa desarrolladas por Microsoft y la cuarta generación de la familia de consolas Xbox, sucesoras de la serie Xbox One. Fueron lanzadas el 10 de noviembre de 2020.','pl_xbsx', 'e8fe48104f40cb2f58dafd84ab2f0ad0.png', 46);

@@ -3,6 +3,7 @@ package com.juegoteca.actividades;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DatePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -18,6 +19,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -28,6 +30,10 @@ import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.TextWatcherFechas;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
 
 public class NuevoJuego extends Activity {
@@ -43,6 +49,7 @@ public class NuevoJuego extends Activity {
             spinnerClasificacionNuevo, spinnerIdiomaNuevo, spinnerFormatoNuevo;
     private CheckBox checkCompletadoNuevo;
     private ImageView imageCaratula;
+    private final Calendar myCalendar = Calendar.getInstance();
 
 
     /**
@@ -81,12 +88,91 @@ public class NuevoJuego extends Activity {
         spinnerIdiomaNuevo = ((Spinner) findViewById(R.id.spinner_idioma_nuevo));
         editFechaLanzamiento = ((EditText) this
                 .findViewById(R.id.edit_fecha_lanzamiento_nuevo));
+
+        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "dd/MM/yyyy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                editFechaLanzamiento.setText(sdf.format(myCalendar.getTime()));
+            }
+        };
+
+        editFechaLanzamiento.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                new DatePickerDialog(NuevoJuego.this, date, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
         editFechaCompra = ((EditText) this
                 .findViewById(R.id.edit_fecha_compra_nuevo));
+
+        DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "dd/MM/yyyy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                editFechaCompra.setText(sdf.format(myCalendar.getTime()));
+            }
+        };
+
+        editFechaCompra.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                new DatePickerDialog(NuevoJuego.this, date2, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+
         checkCompletadoNuevo = ((CheckBox) this
                 .findViewById(R.id.check_completado_nuevo));
         editFechaCompletado = ((EditText) this
                 .findViewById(R.id.edit_fecha_completado_nuevo));
+
+
+        DatePickerDialog.OnDateSetListener date3 = new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                  int dayOfMonth) {
+                myCalendar.set(Calendar.YEAR, year);
+                myCalendar.set(Calendar.MONTH, monthOfYear);
+                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                String myFormat = "dd/MM/yyyy"; //In which you need put here
+                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                editFechaCompletado.setText(sdf.format(myCalendar.getTime()));
+            }
+        };
+
+        editFechaCompletado.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                new DatePickerDialog(NuevoJuego.this, date3, myCalendar
+                        .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
+                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+            }
+        });
+
+
+
         editPrecioNuevo = ((EditText) this.findViewById(R.id.edit_precio_nuevo));
         editEanNuevo = ((EditText) this.findViewById(R.id.edit_ean_nuevo));
         imageCaratula = ((ImageView) findViewById(R.id.image_view_caratula_nuevo));
@@ -176,8 +262,11 @@ public class NuevoJuego extends Activity {
 
             // Sumar 1 a la posicion en el spinner para obtener el ID asociado
             // de cada elemento
-            juego.setPlataforma(spinnerPlataformaNuevo
-                    .getSelectedItemPosition() + 1);
+/*            juego.setPlataforma(spinnerPlataformaNuevo
+                    .getSelectedItemPosition() + 1);*/
+
+            com.juegoteca.basedatos.Plataforma p = (com.juegoteca.basedatos.Plataforma)spinnerPlataformaNuevo.getSelectedItem();
+            juego.setPlataforma(p.getId());
             juego.setClasificacion(spinnerClasificacionNuevo
                     .getSelectedItemPosition() + 1);
             juego.setIdioma(spinnerIdiomaNuevo.getSelectedItemPosition() + 1);
@@ -438,6 +527,7 @@ public class NuevoJuego extends Activity {
         intent.putExtra("SCAN_MODE", "PRODUCT_MODE");
         startActivityForResult(intent, 0);
     }
+
 
     @Override
     public void onBackPressed() {

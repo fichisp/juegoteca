@@ -127,8 +127,11 @@ public class Buscador extends Activity {
                 .getSelectedItemPosition() == 0) {
             valoresCampos[2] = "%";
         } else {
-            valoresCampos[2] = String.valueOf(spinnerPlataforma
-                    .getSelectedItemPosition());
+//            valoresCampos[2] = String.valueOf(spinnerPlataforma
+//                    .getSelectedItemPosition());
+
+            com.juegoteca.basedatos.Plataforma p = (com.juegoteca.basedatos.Plataforma)spinnerPlataforma.getSelectedItem();
+            valoresCampos[2] = String.valueOf(p.getId());
         }
         // Genero a buscar
         if (spinnerGenero.getSelectedItemPosition() == 0) {

@@ -38,7 +38,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <LinearLayout
@@ -60,7 +60,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
@@ -83,7 +83,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
                         android:layout_marginBottom="5dp"
                         android:orientation="horizontal">
@@ -107,9 +107,9 @@
                             android:id="@+id/buttonShowValueByPlatform"
                             android:layout_width="20dp"
                             android:layout_height="20dp"
+                            android:layout_marginLeft="5dp"
                             android:background="@android:drawable/screen_background_light_transparent"
                             android:onClick="toggleValueByPlatform"
-                            android:layout_marginLeft="5dp"
                             android:text="+"
                             android:textAppearance="@style/TextAppearance.AppCompat"
                             android:visibility="visible" />
