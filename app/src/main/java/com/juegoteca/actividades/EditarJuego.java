@@ -126,15 +126,16 @@ public class EditarJuego extends Activity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Calendar cal = Calendar.getInstance();
+                cal = myCalendar;
                 if (juegoDetalle
-                        .getFechaLanzamiento() != null && juegoDetalle
+                        .getFechaLanzamiento() != null && !juegoDetalle
                         .getFechaLanzamiento().isEmpty()) {
                     cal.setTime(utilidades
                             .convertirMilisegundosFecha(juegoDetalle
                                     .getFechaLanzamiento()));
                 }
 
-                cal = myCalendar;
+
 
                 new DatePickerDialog(EditarJuego.this, date, cal
                         .get(Calendar.YEAR), cal.get(Calendar.MONTH),
@@ -165,15 +166,16 @@ public class EditarJuego extends Activity {
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                 Calendar cal = Calendar.getInstance();
+                cal = myCalendar;
                 if (juegoDetalle
-                        .getFechaCompra() != null && juegoDetalle
+                        .getFechaCompra() != null && !juegoDetalle
                         .getFechaCompra().isEmpty()) {
                     cal.setTime(utilidades
                             .convertirMilisegundosFecha(juegoDetalle
                                     .getFechaCompra()));
                 }
 
-                cal = myCalendar;
+
 
                 new DatePickerDialog(EditarJuego.this, date2, cal
                         .get(Calendar.YEAR), cal.get(Calendar.MONTH),
@@ -211,14 +213,16 @@ public class EditarJuego extends Activity {
 
 
                 Calendar cal = Calendar.getInstance();
+                cal = myCalendar;
+
                 if (juegoDetalle
-                        .getFechaCompletado() != null && juegoDetalle
+                        .getFechaCompletado() != null && !juegoDetalle
                         .getFechaCompletado().isEmpty()) {
                     cal.setTime(utilidades
                             .convertirMilisegundosFecha(juegoDetalle
                                     .getFechaCompletado()));
                 }
-                cal = myCalendar;
+
                 new DatePickerDialog(EditarJuego.this, date3, cal
                         .get(Calendar.YEAR), cal.get(Calendar.MONTH),
                         cal.get(Calendar.DAY_OF_MONTH)).show();
