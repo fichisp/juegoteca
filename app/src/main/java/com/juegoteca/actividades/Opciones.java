@@ -1,13 +1,16 @@
 package com.juegoteca.actividades;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -23,7 +26,10 @@ import android.preference.PreferenceCategory;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
 import android.preference.SwitchPreference;
-import android.support.v4.content.FileProvider;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.FileProvider;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -34,8 +40,6 @@ import com.mijuegoteca.R;
 
 import java.io.File;
 import java.util.List;
-
-import static java.security.AccessController.getContext;
 
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On
@@ -188,6 +192,24 @@ public class Opciones extends PreferenceActivity {
                     }
                 });
 
+        CheckBoxPreference preferenciaNotificaciones = (CheckBoxPreference) findPreference("show_launched_notification");
+        preferenciaNotificaciones.
+                setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+                    public boolean onPreferenceChange(Preference preference, Object newValue) {
+                        if (newValue.toString().equals("true")) {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean("show_launched_notification", true);
+                            editor.commit();
+                        } else {
+                            SharedPreferences.Editor editor = settings.edit();
+                            editor.putBoolean("show_launched_notification", false);
+                            editor.commit();
+                        }
+                        return true;
+                    }
+                });
+
         ListPreference preferenciaModeda = (ListPreference) findPreference("currencys");
         preferenciaModeda.
                 setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
@@ -245,6 +267,7 @@ public class Opciones extends PreferenceActivity {
         getPreferenceScreen().addPreference(fakeHeader2);
         addPreferencesFromResource(R.xml.pref_datos_seguridad);
 
+        Activity a = this;
 
         // Establece las acciones al hacer click en las preferencias
         Preference preferenciaCopiaExportar = findPreference("exportar_copia_seguridad");
@@ -252,14 +275,20 @@ public class Opciones extends PreferenceActivity {
                 .setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
                     public boolean onPreferenceClick(Preference preference) {
                         Toast t;
-                        if (!utilidades.baseDatosEsVacia()) {
-                            new CopiaSeguridadFichero().execute();
+                        if(PackageManager.PERMISSION_GRANTED == ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                            if (!utilidades.baseDatosEsVacia()) {
+                                new CopiaSeguridadFichero().execute();
+                            } else {
+                                t = Toast.makeText(getApplicationContext(),
+                                        getString(R.string.no_data_backup),
+                                        Toast.LENGTH_SHORT);
+                                t.show();
+                            }
                         } else {
-                            t = Toast.makeText(getApplicationContext(),
-                                    getString(R.string.no_data_backup),
-                                    Toast.LENGTH_SHORT);
-                            t.show();
+                            ActivityCompat.requestPermissions(a, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 200);
+
                         }
+
                         return true;
                     }
                 });
@@ -439,6 +468,9 @@ public class Opciones extends PreferenceActivity {
             addPreferencesFromResource(R.xml.pref_datos_seguridad);
         }
     }
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

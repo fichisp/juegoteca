@@ -55,7 +55,7 @@ public class EditarJuego extends Activity {
 
     private boolean completadoAnterior;
 
-    private final Calendar myCalendar = Calendar.getInstance();
+//    private final Calendar myCalendar = Calendar.getInstance();
 
     /**
      * Llamada cuando se inicializa la actividad. Inicializa los spinner con los
@@ -107,21 +107,10 @@ public class EditarJuego extends Activity {
         textFechaLanzamiento = ((EditText) this
                 .findViewById(R.id.edit_fecha_lanzamiento_editar));
 
-        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                String myFormat = "dd/MM/yyyy"; //In which you need put here
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                textFechaLanzamiento.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
 
         textFechaLanzamiento.setOnClickListener(new OnClickListener() {
+            private final Calendar myCalendar = Calendar.getInstance();
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -137,7 +126,19 @@ public class EditarJuego extends Activity {
 
 
 
-                new DatePickerDialog(EditarJuego.this, date, cal
+                new DatePickerDialog(EditarJuego.this,  new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                        textFechaLanzamiento.setText(sdf.format(myCalendar.getTime()));
+                    }
+                }, cal
                         .get(Calendar.YEAR), cal.get(Calendar.MONTH),
                         cal.get(Calendar.DAY_OF_MONTH)).show();
             }
@@ -147,21 +148,10 @@ public class EditarJuego extends Activity {
         textFechaCompra = ((EditText) this
                 .findViewById(R.id.edit_fecha_compra_editar));
 
-        DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                String myFormat = "dd/MM/yyyy"; //In which you need put here
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                textFechaCompra.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
 
         textFechaCompra.setOnClickListener(new OnClickListener() {
+            private final Calendar myCalendar = Calendar.getInstance();
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -177,7 +167,19 @@ public class EditarJuego extends Activity {
 
 
 
-                new DatePickerDialog(EditarJuego.this, date2, cal
+                new DatePickerDialog(EditarJuego.this,  new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                        textFechaCompra.setText(sdf.format(myCalendar.getTime()));
+                    }
+                }, cal
                         .get(Calendar.YEAR), cal.get(Calendar.MONTH),
                         cal.get(Calendar.DAY_OF_MONTH)).show();
             }
@@ -192,21 +194,10 @@ public class EditarJuego extends Activity {
         textFechaCompletado = ((EditText) this
                 .findViewById(R.id.edit_fecha_completado_editar));
 
-        DatePickerDialog.OnDateSetListener date3 = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                String myFormat = "dd/MM/yyyy"; //In which you need put here
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                textFechaCompletado.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
 
         textFechaCompletado.setOnClickListener(new OnClickListener() {
+            private final Calendar myCalendar = Calendar.getInstance();
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
@@ -223,7 +214,19 @@ public class EditarJuego extends Activity {
                                     .getFechaCompletado()));
                 }
 
-                new DatePickerDialog(EditarJuego.this, date3, cal
+                new DatePickerDialog(EditarJuego.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                        textFechaCompletado.setText(sdf.format(myCalendar.getTime()));
+                    }
+                }, cal
                         .get(Calendar.YEAR), cal.get(Calendar.MONTH),
                         cal.get(Calendar.DAY_OF_MONTH)).show();
             }

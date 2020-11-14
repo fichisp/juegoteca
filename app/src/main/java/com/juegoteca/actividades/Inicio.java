@@ -1,14 +1,29 @@
 package com.juegoteca.actividades;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.app.AlarmManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.os.StrictMode;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,10 +31,17 @@ import android.widget.TextView;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
+import com.juegoteca.util.CheckLaunchDatesService;
 import com.juegoteca.util.GridJuegosMasonryAdapterHorizontal;
 import com.juegoteca.util.GridJuegosItemDecorationHorizontal;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.UUID;
 
 public class Inicio extends Activity {
 
@@ -60,6 +82,63 @@ public class Inicio extends Activity {
         // Desactiva el modo estricto
         StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
         StrictMode.setThreadPolicy(policy);
+
+        //scheduling lanch dates job
+        DateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
+        String currentDay = dateFormat.format(new Date());
+
+        if (!settings.contains("27021985_"+currentDay)) {
+            scheduleJobCheckLaunchDate(currentDay);
+        }
+        //utilidades.checkLaunchDates();
+
+
+        checkPermission();
+
+
+
+
+
+    }
+
+    private void checkPermission(){
+        String[] permissions = new String []{"android.permission.READ_EXTERNAL_STORAGE","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.CAMERA"};
+        requestPermissions(permissions,200);
+    }
+
+
+
+    private void scheduleJobCheckLaunchDate(final String currentDay){
+
+
+
+        final long ONE_DAY_INTERVAL = 24 * 60 * 60 * 1000L; // 1 Day
+
+        @SuppressLint("WrongConstant") JobScheduler jobScheduler = (JobScheduler)getApplicationContext()
+                .getSystemService(JOB_SCHEDULER_SERVICE);
+
+        boolean hasBeenScheduled = false ;
+
+        for ( JobInfo jobInfo : jobScheduler.getAllPendingJobs() ) {
+            if ( jobInfo.getId() == 27021985 ) {
+                hasBeenScheduled = true ;
+                break ;
+            }
+        }
+
+        if(!hasBeenScheduled) {
+            ComponentName componentName = new ComponentName(this,
+                    CheckLaunchDatesService.class);
+
+
+            JobInfo.Builder builder = new JobInfo.Builder(27021985, componentName);
+            builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_NONE);
+            builder.setPeriodic(ONE_DAY_INTERVAL);
+            PersistableBundle extras = new PersistableBundle();
+            extras.putString("currentDay",currentDay);
+            builder.setExtras(extras);
+            jobScheduler.schedule(builder.build());
+        }
 
     }
 
@@ -180,6 +259,11 @@ public class Inicio extends Activity {
                 startActivity(intent);
                 finish();
                 return true;
+            case R.id.action_options:
+                intent = new Intent(this, Opciones.class);
+                startActivity(intent);
+                finish();
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
@@ -243,6 +327,13 @@ public class Inicio extends Activity {
         Intent intent = new Intent(this, Pendientes.class);
         startActivity(intent);
     }
+    public void undiacomohoy(View view) {
+        Intent intent = new Intent(this, UnDiaComoHoy.class);
+        startActivity(intent);
+    }
+
+
+
 
     /**
      * Lanza la actividad para ver las opciones

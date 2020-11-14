@@ -3,6 +3,8 @@ package com.juegoteca.util;
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -13,10 +15,11 @@ import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Environment;
 import android.os.Process;
 import android.preference.PreferenceManager;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.text.Html;
 import android.util.Log;
 import android.view.Gravity;
@@ -26,12 +29,12 @@ import android.view.View.OnHoverListener;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.juegoteca.actividades.Splash;
+import com.juegoteca.actividades.UnDiaComoHoy;
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.basedatos.Plataforma;
@@ -71,11 +74,14 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.UUID;
 import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 import java.util.zip.ZipOutputStream;
 
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -1056,6 +1062,61 @@ public class Utilidades {
             });
         }
 
+    }
+
+
+    public void checkLaunchDates(){
+
+        String day          = (String) android.text.format.DateFormat.format("dd",   new Date());
+        String monthNumber  = (String) android.text.format.DateFormat.format("MM",   new Date());
+
+        Cursor c = juegosSQLH.gamesLaunchedSameDay(day,monthNumber);
+
+       if (c != null && c.moveToFirst()) {
+
+
+
+            c.close();
+
+        // Create an explicit intent for an Activity in your app
+        Intent intent = new Intent(context, UnDiaComoHoy.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+
+            NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "juegoteca")
+                    .setSmallIcon(R.drawable.notitication_icon)
+                    .setContentTitle("Un día como hoy")
+                    .setContentText("Mira los juegos de tu colección que se lanzaron un día como hoy")
+                    .setLargeIcon(BitmapFactory.decodeResource(context.getResources(),
+                            R.drawable.icono))
+                    .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                    .setStyle(new NotificationCompat.BigTextStyle()
+                            .bigText("Mira los juegos de tu colección que se lanzaron un día como hoy"))
+                    // Set the intent that will fire when the user taps the notification
+                    .setContentIntent(pendingIntent)
+                    .setAutoCancel(true);
+
+            NotificationManager notificationManager =     (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+
+            // === Removed some obsoletes
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
+            {
+                String channelId = "juegoteca";
+                @SuppressLint("WrongConstant") NotificationChannel channel = new NotificationChannel(
+                        channelId,
+                        "Juegoteca",
+                        NotificationManager.IMPORTANCE_LOW);
+
+                notificationManager.createNotificationChannel(channel);
+                builder.setChannelId(channelId);
+            }
+
+
+
+            // notificationId is a unique int for each notification that you must define
+            notificationManager.notify(1, builder.build());
+       }
     }
 
 

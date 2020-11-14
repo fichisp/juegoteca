@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="detalleJuego"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/id_juego"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lista_juego_detalles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nombre_juego"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titulo"
+                android:textSize="16sp"
+                android:paddingBottom="1dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/compania_juego"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Compañia"
+                android:textSize="12sp"
+                android:paddingBottom="1dp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/plataforma_juego"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Plataforma"
+                android:paddingBottom="1dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/fecha_lanzmiento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="1dp"
+                android:text="Fecha de lanzmiento"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -28,14 +28,14 @@
                 android:textStyle="bold" />
 
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/masonry_grid_nuevos"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:layout_weight="1"
                 android:backgroundTint="@color/blanco"
-                android:clipToPadding="false"></android.support.v7.widget.RecyclerView>
+                android:clipToPadding="false"></androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
 
         <LinearLayout
@@ -57,7 +57,7 @@
                 android:textStyle="bold" />
 
 
-            <android.support.v7.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/masonry_grid_completados"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -66,7 +66,7 @@
                 android:backgroundTint="@color/blanco"
                 android:clipToPadding="false">
 
-            </android.support.v7.widget.RecyclerView>
+            </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
 
         <LinearLayout
@@ -121,16 +121,27 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="pendientes"
-                android:src="@drawable/boton_pendientes" />
+                android:src="@drawable/baseline_timelapse_black_24" />
 
             <ImageButton
+                android:id="@+id/boton_undiacomohoy"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="undiacomohoy"
+                android:src="@drawable/baseline_history_black_24" />
+
+            <!--<ImageButton
                 android:id="@+id/boton_opciones"
                 style="@style/BotonesInicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="opciones"
-                android:src="@drawable/boton_opciones" />
+                android:src="@drawable/boton_opciones" />-->
+
+
         </LinearLayout>
 
     </LinearLayout>

@@ -27,5 +27,11 @@
         android:summary="@string/pref_description_orden_ultimos_anadidos"
         android:title="@string/pref_title_orden_ultimos_anadidos"></CheckBoxPreference>
 
+    <CheckBoxPreference
+        android:icon="@null"
+        android:key="show_launched_notification"
+        android:summary="@string/pref_description_show_launched_notification"
+        android:title="@string/pref_title_show_launched_notificacion"></CheckBoxPreference>
+
 
 </PreferenceScreen>

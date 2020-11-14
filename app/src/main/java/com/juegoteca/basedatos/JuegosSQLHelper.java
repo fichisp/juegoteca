@@ -279,9 +279,21 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
     public Cursor getJuegos(String[] args) {
         Cursor c = null;
         SQLiteDatabase db = this.getReadableDatabase();
+        //String sql = "SELECT * FROM juego WHERE ean LIKE '%'|| ? ||'%' AND titulo LIKE '%'|| ? ||'%' AND plataforma LIKE ? AND genero LIKE ? AND formato LIKE ? ORDER BY titulo ASC",;
+        String sql = "SELECT * FROM juego WHERE " +
+                "ean LIKE '%'|| ? ||'%' " +
+                "AND titulo LIKE '%'|| ? ||'%' " +
+                "AND plataforma LIKE ? " +
+                "AND genero LIKE ? " +
+                "AND formato LIKE ? " +
+                "AND fecha_lanzamiento >= ? " +
+                "AND fecha_lanzamiento <= ? " +
+                "AND fecha_compra >= ? " +
+                "AND fecha_compra <= ? " +
+                "ORDER BY titulo ASC";
         try {
             c = db.rawQuery(
-                    "SELECT * FROM juego WHERE ean LIKE '%'|| ? ||'%' AND titulo LIKE '%'|| ? ||'%' AND plataforma LIKE ? AND genero LIKE ? AND formato LIKE ? ORDER BY titulo ASC",
+                    sql,
                     args);
         } catch (SQLException sqle) {
             Log.e("SQLHelper.getJuegos", sqle.getMessage());
@@ -988,5 +1000,30 @@ public class JuegosSQLHelper extends SQLiteOpenHelper {
         }
         return c;
     }
+
+    /**
+     * Search in database games with launch day same as passed
+     * @param day
+     * @param month
+     * @return
+     */
+    public Cursor gamesLaunchedSameDay(final String day, final String month){
+        Cursor c;
+        SQLiteDatabase db = this.getReadableDatabase();
+        try {
+
+            String sql = "SELECT * FROM juego WHERE  strftime('%d',datetime(fecha_lanzamiento, 'unixepoch','localtime')) == \""+ day +"\" " +
+                    "AND strftime('%m',datetime(fecha_lanzamiento, 'unixepoch','localtime')) == \""+month+"\"" + " ORDER BY fecha_lanzamiento ASC";
+            c = db.rawQuery(
+                    sql,
+                    null);
+        } catch (Exception e) {
+            return null;
+        }
+        return c;
+    }
+
+
+
 
 }

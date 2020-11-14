@@ -49,7 +49,7 @@ public class NuevoJuego extends Activity {
             spinnerClasificacionNuevo, spinnerIdiomaNuevo, spinnerFormatoNuevo;
     private CheckBox checkCompletadoNuevo;
     private ImageView imageCaratula;
-    private final Calendar myCalendar = Calendar.getInstance();
+
 
 
     /**
@@ -89,25 +89,26 @@ public class NuevoJuego extends Activity {
         editFechaLanzamiento = ((EditText) this
                 .findViewById(R.id.edit_fecha_lanzamiento_nuevo));
 
-        DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                String myFormat = "dd/MM/yyyy"; //In which you need put here
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                editFechaLanzamiento.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
 
         editFechaLanzamiento.setOnClickListener(new OnClickListener() {
+            private final Calendar myCalendar = Calendar.getInstance();
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                new DatePickerDialog(NuevoJuego.this, date, myCalendar
+                new DatePickerDialog(NuevoJuego.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                        editFechaLanzamiento.setText(sdf.format(myCalendar.getTime()));
+                    }
+                }, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
@@ -116,25 +117,26 @@ public class NuevoJuego extends Activity {
         editFechaCompra = ((EditText) this
                 .findViewById(R.id.edit_fecha_compra_nuevo));
 
-        DatePickerDialog.OnDateSetListener date2 = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                String myFormat = "dd/MM/yyyy"; //In which you need put here
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                editFechaCompra.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
 
         editFechaCompra.setOnClickListener(new OnClickListener() {
+            private final Calendar myCalendar = Calendar.getInstance();
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                new DatePickerDialog(NuevoJuego.this, date2, myCalendar
+                new DatePickerDialog(NuevoJuego.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                        editFechaCompra.setText(sdf.format(myCalendar.getTime()));
+                    }
+                }, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
@@ -147,25 +149,26 @@ public class NuevoJuego extends Activity {
                 .findViewById(R.id.edit_fecha_completado_nuevo));
 
 
-        DatePickerDialog.OnDateSetListener date3 = new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker view, int year, int monthOfYear,
-                                  int dayOfMonth) {
-                myCalendar.set(Calendar.YEAR, year);
-                myCalendar.set(Calendar.MONTH, monthOfYear);
-                myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
-                String myFormat = "dd/MM/yyyy"; //In which you need put here
-                SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
 
-                editFechaCompletado.setText(sdf.format(myCalendar.getTime()));
-            }
-        };
 
         editFechaCompletado.setOnClickListener(new OnClickListener() {
+            private final Calendar myCalendar = Calendar.getInstance();
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                new DatePickerDialog(NuevoJuego.this, date3, myCalendar
+                new DatePickerDialog(NuevoJuego.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker view, int year, int monthOfYear,
+                                          int dayOfMonth) {
+                        myCalendar.set(Calendar.YEAR, year);
+                        myCalendar.set(Calendar.MONTH, monthOfYear);
+                        myCalendar.set(Calendar.DAY_OF_MONTH, dayOfMonth);
+                        String myFormat = "dd/MM/yyyy"; //In which you need put here
+                        SimpleDateFormat sdf = new SimpleDateFormat(myFormat, Locale.US);
+
+                        editFechaCompletado.setText(sdf.format(myCalendar.getTime()));
+                    }
+                }, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
