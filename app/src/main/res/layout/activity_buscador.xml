@@ -4,50 +4,51 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="0dp"
     android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="0dp"
     tools:context="com.juegoteca.actividades.Buscador">
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollView_detalle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:isScrollContainer="true"
-        android:orientation="vertical">
+        android:paddingTop="@dimen/activity_vertical_margin">
 
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:text="@string/search_help_text" />
+
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:id="@+id/layout_buscador_opciones"
+            <TextView
+                android:id="@+id/textView5"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:orientation="vertical"
-                android:scrollbars="vertical"
-                android:visibility="visible">
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/search_help_text" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5dp"
-                    android:orientation="horizontal">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_titulo_buscador"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:text="@string/label_titulo"
@@ -57,8 +58,8 @@
                     <EditText
                         android:id="@+id/edit_titulo_buscador"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="@string/hint_titulo"
                         android:inputType="text"
@@ -67,18 +68,22 @@
                         android:maxLines="1"
                         android:textSize="15sp" />
 
+
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="15dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
 
                     <TextView
                         android:id="@+id/text_genero_buscador"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
@@ -88,9 +93,10 @@
 
                     <Spinner
                         android:id="@+id/spinner_genero_buscador"
+                        style="@style/CustomSpinner"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
                         android:dropDownWidth="match_parent"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
@@ -101,14 +107,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="15dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/text_plataforma_buscador"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
@@ -118,27 +125,30 @@
 
                     <Spinner
                         android:id="@+id/spinner_plataforma_buscador"
+                        style="@style/CustomSpinner"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5  "
                         android:dropDownWidth="match_parent"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:padding="5dp"
                         android:spinnerMode="dialog" />
 
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="15dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/formato_detalle"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
@@ -148,179 +158,208 @@
 
                     <Spinner
                         android:id="@+id/spinner_formato_nuevo"
+                        style="@style/CustomSpinner"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.3"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
                         android:dropDownWidth="match_parent"
                         android:focusable="false"
                         android:focusableInTouchMode="false"
                         android:padding="5dp"
                         android:spinnerMode="dialog" />
 
-                </LinearLayout>
 
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="15dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/search_date_start_label"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:text="@string/label_fecha_lanzamiento"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/search_date_start"
+                    <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:ems="10"
-                        android:focusable="false"
-                        android:hint="@string/hint_fecha"
-                        android:maxLength="10"
-                        android:textSize="15sp" />
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/search_date_end"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:ems="10"
-                        android:focusable="false"
-                        android:hint="@string/hint_fecha"
-                        android:maxLength="10"
-                        android:textSize="15sp" />
+                        <EditText
+                            android:id="@+id/search_date_start"
+                            style="@android:style/Widget.Material.Light.EditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:hint="@string/hint_fecha"
+                            android:maxLength="10"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/search_date_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:hint="@string/hint_fecha"
+                            android:maxLength="10"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="15dp"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
                         android:id="@+id/search_date_buy_start_label"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.8"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
                         android:text="@string/label_fecha_compra"
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/search_date_buy_start"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:ems="10"
-                        android:focusable="false"
-                        android:hint="@string/hint_fecha"
-                        android:maxLength="10"
-                        android:textSize="15sp" />
-
-                    <EditText
-                        android:id="@+id/search_date_buy_end"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:clickable="true"
-                        android:ems="10"
-                        android:focusable="false"
-                        android:hint="@string/hint_fecha"
-                        android:maxLength="10"
-                        android:textSize="15sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="15dp"
-                    android:orientation="vertical">
-
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <TextView
-                            android:id="@+id/text_view_ean_buscador"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:paddingLeft="5dp"
-                            android:paddingRight="5dp"
-                            android:text="@string/label_ean"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
 
                         <EditText
-                            android:id="@+id/edit_ean_buscador"
-                            android:layout_width="125dp"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="12"
+                            android:id="@+id/search_date_buy_start"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
                             android:ems="10"
-                            android:hint="@string/hint_ean"
-                            android:inputType="number"
-                            android:textSize="15sp">
-                        </EditText>
+                            android:focusable="false"
+                            android:hint="@string/hint_fecha"
+                            android:maxLength="10"
+                            android:textSize="15sp" />
 
-                        <ImageButton
-                            android:id="@+id/botton_ean_buscador"
-                            style="?android:attr/buttonStyleSmall"
-                            android:layout_width="32dp"
-                            android:layout_height="32dp"
-                            android:layout_weight="0.25"
-                            android:onClick="capturarCodigo"
-                            android:src="@drawable/boton_codigo_barras" />
-
+                        <EditText
+                            android:id="@+id/search_date_buy_end"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:clickable="true"
+                            android:ems="10"
+                            android:focusable="false"
+                            android:hint="@string/hint_fecha"
+                            android:maxLength="10"
+                            android:textSize="15sp" />
                     </LinearLayout>
+
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_ean_buscador"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="@string/label_ean"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="15dp"
-                        android:orientation="vertical">
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal">
 
-                        <!--                         <CheckBox
-                                                    android:id="@+id/check_online_buscador"
-                                                    android:layout_width="wrap_content"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_marginBottom="5dp"
-                                                    android:text="@string/texto_boton_buscar_online"
-                                                    android:textSize="15sp" /> -->
+                        <EditText
+                            android:id="@+id/edit_ean_buscador"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:ems="10"
+                            android:hint="@string/hint_ean"
+                            android:textSize="15sp"></EditText>
 
-                        <Button
-                            android:id="@+id/button_buscar_buscador"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:onClick="buscarJuego"
-                            android:text="@string/label_buscar"
-                            android:textSize="15sp" />
+                        <ImageButton
+                            android:id="@+id/botton_ean_buscador"
+                            style="?android:attr/buttonStyleSmall"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="7"
+                            android:background="@color/naranja_cabeceras"
+                            android:onClick="capturarCodigo"
+
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:src="@drawable/boton_codigo_barras" />
 
                     </LinearLayout>
-                </LinearLayout>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
 
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button_buscar_buscador"
+                        style="@style/Widget.AppCompat.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/naranja_cabeceras"
+                        android:onClick="buscarJuego"
+                        android:padding="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="@string/label_buscar"
+                        android:textAllCaps="false"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

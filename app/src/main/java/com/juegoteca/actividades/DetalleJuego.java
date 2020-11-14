@@ -6,7 +6,10 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.graphics.text.LineBreaker;
+import android.os.Build;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -20,8 +23,12 @@ import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 import java.util.Locale;
+
+import static android.text.Layout.JUSTIFICATION_MODE_INTER_WORD;
 
 public class DetalleJuego extends Activity {
 
@@ -35,7 +42,7 @@ public class DetalleJuego extends Activity {
     private TextView textViewTitulo, textViewCompania, textViewGenero,
             textViewResumen, textViewFechaLanzamiento, textViewFechaCompra,
             textViewFechaCompletado, textViewPrecio, textViewEan,
-            textViewComentario, textViewPuntuacion, textViewFormato;
+            textViewComentario, textViewPuntuacion, textViewFormato, textViewPlataforma,textViewClasificacion, textViewIdioma;
     private String[] valoresBusqueda = null;
 
     /**
@@ -73,8 +80,29 @@ public class DetalleJuego extends Activity {
                 .findViewById(R.id.text_compania_detalle));
         textViewGenero = ((TextView) this
                 .findViewById(R.id.text_genero_detalle));
+
+        textViewPlataforma = ((TextView) this
+                .findViewById(R.id.text_plataforma_detalle));
+
+
+        textViewClasificacion = ((TextView) this
+                .findViewById(R.id.text_clasificacion_detalle));
+
+        textViewIdioma = ((TextView) this
+                .findViewById(R.id.text_idoma_detalle));
+
+        textViewFormato = ((TextView) this
+                .findViewById(R.id.text_formato_detalle));
+
         textViewResumen = ((TextView) this
                 .findViewById(R.id.text_resumen_detalle));
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            textViewResumen.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+        }
+
+
+
         textViewFechaLanzamiento = ((TextView) this
                 .findViewById(R.id.text_fecha_lanzamiento_detalle));
         textViewFechaCompra = ((TextView) this
@@ -90,7 +118,7 @@ public class DetalleJuego extends Activity {
                 .findViewById(R.id.text_comentario_detalle));
         textViewPuntuacion = ((TextView) this
                 .findViewById(R.id.text_puntuacion_detalle));
-        textViewFormato = ((TextView) this.findViewById(R.id.formato_detalle));
+        //textViewFormato = ((TextView) this.findViewById(R.id.formato_detalle));
 
 
             Cursor c = juegosSQLH.buscarJuegoID(idJuego);
@@ -143,10 +171,28 @@ public class DetalleJuego extends Activity {
         textViewTitulo.setText(juego.getTitulo());
         textViewCompania.setText(juego.getCompania());
         cargarGenero(String.valueOf(juego.getGenero()));
+
+        Cursor c = juegosSQLH.buscarPlataformaID(String.valueOf(juego.getPlataforma()));
+        c.moveToFirst();
+        textViewPlataforma.setText(c.getString(1));
+        textViewPlataforma.setSingleLine(false);
+        c.close();
+
+        c = juegosSQLH.buscarClasificacionID(String.valueOf(juego.getClasificacion()));
+        c.moveToFirst();
+        textViewClasificacion.setText(c.getString(1));
+        c.close();
+
+        c = juegosSQLH.buscarIdiomaID(String.valueOf(juego.getIdioma()));
+        c.moveToFirst();
+        textViewIdioma.setText(c.getString(1));
+        c.close();
+
         // Cargar la imagen de la plataforma
         cargarImagenPlataforma(String.valueOf(juego.getPlataforma()));
-        cargarImagenClasificacion(String.valueOf(juego.getClasificacion()));
-        cargarImagenIdioma(String.valueOf(juego.getIdioma()));
+       /* cargarImagenClasificacion(String.valueOf(juego.getClasificacion()));
+        cargarImagenIdioma(String.valueOf(juego.getIdioma()));*/
+
         if (juego.getResumen() != null && juego.getResumen().length() > 0) {
 
             textViewResumen.setText(juego.getResumen());

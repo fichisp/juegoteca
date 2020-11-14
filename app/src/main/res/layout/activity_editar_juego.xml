@@ -20,21 +20,40 @@
             android:orientation="vertical"
             android:scrollbars="vertical">
 
+            <EditText
+                android:id="@+id/edit_titulo_editar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/hint_titulo"
+                android:inputType="textNoSuggestions|textCapWords" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete_compania_editar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:hint="@string/hint_compania"
+                android:inputType="textNoSuggestions|textCapWords" />
+
             <LinearLayout
                 android:id="@+id/datos1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
                 android:layout_weight="3">
 
                 <ImageView
                     android:id="@+id/image_view_caratula_editar"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:onClick="cargarCaratula"
+                    android:paddingRight="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_launcher" />
+                    android:src="@drawable/cargar_caratula" />
 
                 <LinearLayout
                     android:id="@+id/linear_datos1_detalle_editar"
@@ -43,24 +62,9 @@
                     android:layout_weight="1"
                     android:orientation="vertical">
 
-                    <EditText
-                        android:id="@+id/edit_titulo_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:hint="@string/hint_titulo"
-                        android:inputType="textNoSuggestions|textCapWords" />
-
-                    <AutoCompleteTextView
-                        android:id="@+id/autoComplete_compania_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:hint="@string/hint_compania"
-                        android:inputType="textNoSuggestions|textCapWords" />
-
                     <Spinner
                         android:id="@+id/spinner_genero_editar"
+                        style="@style/CustomSpinnerMin"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
@@ -69,6 +73,7 @@
 
                     <Spinner
                         android:id="@+id/spinner_plataforma_editar"
+                        style="@style/CustomSpinnerMin"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
@@ -77,6 +82,7 @@
 
                     <Spinner
                         android:id="@+id/spinner_clasificacion_editar"
+                        style="@style/CustomSpinnerMin"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
@@ -85,14 +91,26 @@
 
                     <Spinner
                         android:id="@+id/spinner_idioma_editar"
+                        style="@style/CustomSpinnerMin"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="5dp"
                         android:layout_weight="1"
                         android:spinnerMode="dialog" />
 
+                    <Spinner
+                        android:id="@+id/spinner_formato_editar"
+                        style="@style/CustomSpinnerMin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:padding="0dp"
+                        android:spinnerMode="dialog" />
+
 
                 </LinearLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -197,37 +215,6 @@
                         android:hint="@string/hint_precio"
                         android:inputType="numberDecimal"
                         android:textSize="15sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="5sp"
-                    android:layout_weight="1"
-                    android:paddingTop="5sp"
-                    android:paddingBottom="5sp">
-
-                    <TextView
-                        android:id="@+id/text_formato_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:paddingTop="5sp"
-                        android:paddingBottom="5sp"
-                        android:text="@string/label_formato"
-                        android:textSize="15sp"
-                        android:textStyle="bold" />
-
-                    <Spinner
-                        android:id="@+id/spinner_formato_editar"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="5dp"
-                        android:layout_weight="1"
-                        android:padding="0dp"
-                        android:spinnerMode="dialog" />
-
 
                 </LinearLayout>
 
