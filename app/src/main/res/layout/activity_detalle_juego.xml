@@ -147,7 +147,7 @@
                         android:textSize="15sp"
                         android:textStyle="bold" />
 
-                    <TextView
+                    <com.juegoteca.util.ExpandableTextView
                         android:id="@+id/text_resumen_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -329,7 +329,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/text_idoma_detalle"
+                            android:id="@+id/text_idioma_detalle"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"

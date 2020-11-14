@@ -14,12 +14,15 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
+import com.juegoteca.util.ExpandableTextView;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -45,6 +48,9 @@ public class DetalleJuego extends Activity {
             textViewComentario, textViewPuntuacion, textViewFormato, textViewPlataforma,textViewClasificacion, textViewIdioma;
     private String[] valoresBusqueda = null;
 
+    int widthL  = 0;
+    int heightL = 0;
+
     /**
      * Llamada cuando se inicializa la actividad. Se inicializan los componentes
      * y se carga la información del juego que visualizará
@@ -55,6 +61,32 @@ public class DetalleJuego extends Activity {
         setContentView(R.layout.activity_detalle_juego);
         getActionBar().setDisplayHomeAsUpEnabled(true); // In `OnCreate();`
         loadData();
+
+
+        LinearLayout layout = (LinearLayout)findViewById(R.id.datos1_detalle);
+        ViewTreeObserver vto = layout.getViewTreeObserver();
+        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+                    layout.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                } else {
+                    layout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                }
+                widthL= layout.getMeasuredWidth();
+                heightL = layout.getMeasuredHeight();
+
+                if(heightL !=0){
+                    int newTrimSize = heightL/3;
+                    ((ExpandableTextView)textViewResumen).setTrimLength(newTrimSize < 300 ? newTrimSize:100);
+                    ((ExpandableTextView)textViewResumen).setTrim(true);
+                    ((ExpandableTextView)textViewResumen).setText();
+
+                }
+
+            }
+        });
+
     }
 
     void loadData() {
@@ -70,10 +102,10 @@ public class DetalleJuego extends Activity {
                 .findViewById(R.id.image_view_caratula_detalle));
         imageViewPlataforma = (ImageView) this
                 .findViewById(R.id.image_plataforma_detalle);
-        imageViewClasficacion = (ImageView) this
+/*        imageViewClasficacion = (ImageView) this
                 .findViewById(R.id.image_clasificacion_detalle);
         imageViewIdioma = (ImageView) this
-                .findViewById(R.id.image_idioma_detalle);
+                .findViewById(R.id.image_idioma_detalle);*/
         textViewTitulo = ((TextView) this
                 .findViewById(R.id.text_titulo_detalle));
         textViewCompania = ((TextView) this
@@ -89,7 +121,7 @@ public class DetalleJuego extends Activity {
                 .findViewById(R.id.text_clasificacion_detalle));
 
         textViewIdioma = ((TextView) this
-                .findViewById(R.id.text_idoma_detalle));
+                .findViewById(R.id.text_idioma_detalle));
 
         textViewFormato = ((TextView) this
                 .findViewById(R.id.text_formato_detalle));
@@ -100,6 +132,8 @@ public class DetalleJuego extends Activity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             textViewResumen.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
         }
+
+
 
 
 

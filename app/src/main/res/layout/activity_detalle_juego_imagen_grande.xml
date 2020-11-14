@@ -115,7 +115,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="4"
+                        android:layout_weight="7"
                         android:orientation="vertical"
                         android:visibility="visible">
 
@@ -129,16 +129,16 @@
 
                             <ImageView
                                 android:id="@+id/image_plataforma_detalle"
-                                android:layout_width="wrap_content"
+                                android:layout_width="match_parent"
                                 android:layout_height="30dp"
-                                android:layout_marginRight="5dp"
+                                android:layout_marginRight="0dp"
                                 android:layout_weight="1"
                                 android:gravity="right"
                                 android:onClick="detallePlataforma"
                                 android:scaleType="centerInside"
                                 android:src="@drawable/ic_launcher" />
 
-                            <ImageView
+                           <!-- <ImageView
                                 android:id="@+id/image_clasificacion_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
@@ -147,9 +147,9 @@
                                 android:gravity="right"
                                 android:scaleType="centerInside"
                                 android:src="@drawable/ic_launcher"
-                                android:visibility="visible" />
+                                android:visibility="visible" />-->
 
-                            <ImageView
+                           <!-- <ImageView
                                 android:id="@+id/image_idioma_detalle"
                                 android:layout_width="wrap_content"
                                 android:layout_height="30dp"
@@ -158,7 +158,7 @@
                                 android:gravity="right"
                                 android:scaleType="centerInside"
                                 android:src="@drawable/ic_launcher"
-                                android:visibility="visible" />
+                                android:visibility="visible" />-->
 
                         </LinearLayout>
 
@@ -228,6 +228,190 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/linear_detalle_plataforma"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false"
+                    android:gravity="top|left"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/plataforma_detalle_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="2"
+                            android:text="@string/label_plataforma"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_plataforma_detalle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/label_genero" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_detalle_clasificacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false"
+                    android:gravity="top|left"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/genero_clasificacion_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="2"
+                            android:text="@string/label_clasificacion"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_clasificacion_detalle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/label_genero" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_detalle_idioma_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="0"
+                    android:baselineAligned="false"
+                    android:gravity="top|left"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/idioma_detalle_label"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="2"
+                            android:text="@string/label_idioma"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_idioma_detalle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="@string/label_genero" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"></LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"></LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/linear_detalle_formato"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -258,7 +442,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/formato_detalle"
+                            android:id="@+id/text_formato_detalle"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="5dp"

@@ -195,5 +195,6 @@
     <string name="pref_description_show_launched_notification">Activar notificaciones de juegos lanzados en una fecha como la de día actual</string>
     <string name="pref_title_show_launched_notificacion">Juegos lanzados un día como hoy</string>
     <string name="action_options">Opciones</string>
+    <string name="more">(ver más)</string>
 
 </resources>
