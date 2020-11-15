@@ -99,6 +99,11 @@ public class InicioMasonry extends Activity {
                 intent = new Intent(this, Inicio.class);
                 startActivity(intent);
                 return true;
+            case R.id.action_options:
+                intent = new Intent(this, Opciones.class);
+                startActivity(intent);
+                finish();
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
@@ -142,6 +147,10 @@ public class InicioMasonry extends Activity {
         startActivity(intent);
     }
 
+    public void undiacomohoy(View view) {
+        Intent intent = new Intent(this, UnDiaComoHoy.class);
+        startActivity(intent);
+    }
     /**
      * Lanza la actividad para ver el listado de favoritos
      *

@@ -7,4 +7,11 @@
         android:showAsAction="ifRoom"
         android:title="@string/action_home" />
 
+    <item
+        android:id="@+id/action_options"
+        android:icon="@drawable/boton_opciones"
+        android:orderInCategory="200"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_options" />
+
 </menu>

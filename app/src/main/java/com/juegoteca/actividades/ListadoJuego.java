@@ -58,7 +58,7 @@ public class ListadoJuego extends Activity {
      */
     public void detalleJuego(View view) {
         TextView id = (TextView) view.findViewById(R.id.id_juego);
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
 
 

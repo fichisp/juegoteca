@@ -43,7 +43,7 @@ public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJ
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(context);
         //Cursor c = juegosSQLH.getUltimosJuegosAnadidos();
 
-        final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+        final SharedPreferences settings = context.getSharedPreferences("JuegotecaPrefs",
                 0);
 
         Cursor c;
@@ -156,7 +156,7 @@ public class GridJuegosMasonryAdapterVertical extends RecyclerView.Adapter<GridJ
     private void detalleJuego(View view) {
         TextView id = (TextView) view.findViewById(R.id.id_juego);
         Intent intent;
-        final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+        final SharedPreferences settings = context.getSharedPreferences("JuegotecaPrefs",
                 0);
 
         if (Integer.parseInt(String.valueOf(id.getText())) == -1) {

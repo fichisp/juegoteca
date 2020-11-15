@@ -113,7 +113,7 @@ public class GridJuegosMasonryAdapterHorizontal extends RecyclerView.Adapter<Gri
     private void detalleJuego(View view) {
         TextView id = (TextView) view.findViewById(R.id.id_juego);
         Intent intent;
-        final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+        final SharedPreferences settings = context.getSharedPreferences("JuegotecaPrefs",
                 0);
         if (Integer.parseInt(String.valueOf(id.getText())) == -1) {
             intent = new Intent(context, NuevoJuego.class);

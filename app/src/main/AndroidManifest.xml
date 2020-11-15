@@ -21,7 +21,9 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
+
     <application
+        android:requestLegacyExternalStorage="true"
         android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@drawable/icono"
@@ -117,7 +119,6 @@
             android:theme="@style/NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

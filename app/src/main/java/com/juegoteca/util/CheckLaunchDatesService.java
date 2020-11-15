@@ -10,9 +10,11 @@ public class CheckLaunchDatesService extends JobService {
     @Override
     public boolean onStartJob(JobParameters jobParameters) {
 
-        final SharedPreferences settings = getApplicationContext().getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getApplicationContext().getSharedPreferences("JuegotecaPrefs",
                 0);
-        if(settings.contains("show_launched_notification") && settings.getBoolean("show_launched_notification", true)) {
+        if(settings.contains("show_launched_notification") && settings.getBoolean("show_launched_notification", true)
+                && !settings.contains("27021985_" + jobParameters.getExtras().getString("currentDay"))
+        ) {
             Utilidades utilidades = new Utilidades(this);
             utilidades.checkLaunchDates();
             SharedPreferences.Editor editor = settings.edit();

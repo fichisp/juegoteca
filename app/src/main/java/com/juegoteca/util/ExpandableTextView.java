@@ -72,7 +72,7 @@ public class ExpandableTextView extends TextView {
             StringBuilder sb = new StringBuilder(ellipsis);
             SpannableString spanString = new SpannableString(sb.toString());
             spanString.setSpan(new UnderlineSpan(), 0, spanString.length(), 0);
-            String trimmed = text.toString().trim().replaceAll("(?<=.{"+trimLength+"})\\b.*", "... ");
+            String trimmed = text.toString().replace("\r", " ").trim().replace("\n", " ").replaceAll("(?<=.{"+trimLength+"})\\b.*", "... ");
             SpannableStringBuilder ssb = new SpannableStringBuilder(trimmed).append(spanString);
             return ssb;
         } else {

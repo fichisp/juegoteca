@@ -24,6 +24,7 @@ import androidx.core.app.NotificationManagerCompat;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
+
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -42,6 +43,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 public class Inicio extends Activity {
 
@@ -61,7 +63,7 @@ public class Inicio extends Activity {
         cargarUltimosAnadidos();
         cargarUltimosCompletados();
 
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
 
         //Ya se ha visualizado
@@ -69,7 +71,7 @@ public class Inicio extends Activity {
             String versionName = getPackageManager().getPackageInfo(getPackageName(),
                     0).versionName;
 
-            if (!settings.contains("releaseNotes"+versionName)) {
+            if (!settings.contains("releaseNotes" + versionName)) {
 
                 utilidades.showBuildNotes(versionName);
             }
@@ -87,55 +89,53 @@ public class Inicio extends Activity {
         DateFormat dateFormat = new SimpleDateFormat("ddMMyyyy");
         String currentDay = dateFormat.format(new Date());
 
-        if (!settings.contains("27021985_"+currentDay)) {
-            scheduleJobCheckLaunchDate(currentDay);
+
+        if (!settings.contains("show_launched_notification")) {
+            SharedPreferences.Editor editor = settings.edit();
+            editor.putBoolean("show_launched_notification", true);
+            editor.commit();
         }
-        //utilidades.checkLaunchDates();
-
-
+        scheduleJobCheckLaunchDate(currentDay);
         checkPermission();
-
-
-
-
-
     }
 
-    private void checkPermission(){
-        String[] permissions = new String []{"android.permission.READ_EXTERNAL_STORAGE","android.permission.WRITE_EXTERNAL_STORAGE","android.permission.CAMERA"};
-        requestPermissions(permissions,200);
+    /**
+     *
+     */
+    private void checkPermission() {
+        String[] permissions = new String[]{"android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE", "android.permission.CAMERA"};
+        requestPermissions(permissions, 200);
     }
 
 
+    /**
+     * @param currentDay
+     */
+    private void scheduleJobCheckLaunchDate(final String currentDay) {
 
-    private void scheduleJobCheckLaunchDate(final String currentDay){
 
-
-
-        final long ONE_DAY_INTERVAL = 24 * 60 * 60 * 1000L; // 1 Day
-
-        @SuppressLint("WrongConstant") JobScheduler jobScheduler = (JobScheduler)getApplicationContext()
+        @SuppressLint("WrongConstant") JobScheduler jobScheduler = (JobScheduler) getApplicationContext()
                 .getSystemService(JOB_SCHEDULER_SERVICE);
 
-        boolean hasBeenScheduled = false ;
+        boolean hasBeenScheduled = false;
 
-        for ( JobInfo jobInfo : jobScheduler.getAllPendingJobs() ) {
-            if ( jobInfo.getId() == 27021985 ) {
-                hasBeenScheduled = true ;
-                break ;
+        for (JobInfo jobInfo : jobScheduler.getAllPendingJobs()) {
+            if (jobInfo.getId() == 27021985) {
+                hasBeenScheduled = true;
+                break;
             }
         }
 
-        if(!hasBeenScheduled) {
+        if (!hasBeenScheduled) {
             ComponentName componentName = new ComponentName(this,
                     CheckLaunchDatesService.class);
 
 
             JobInfo.Builder builder = new JobInfo.Builder(27021985, componentName);
             builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_NONE);
-            builder.setPeriodic(ONE_DAY_INTERVAL);
+            builder.setPeriodic(TimeUnit.DAYS.toMillis(1));
             PersistableBundle extras = new PersistableBundle();
-            extras.putString("currentDay",currentDay);
+            extras.putString("currentDay", currentDay);
             builder.setExtras(extras);
             jobScheduler.schedule(builder.build());
         }
@@ -156,12 +156,12 @@ public class Inicio extends Activity {
     private void cargarUltimosAnadidos() {
 
         JuegosSQLHelper juegosSQLH = new JuegosSQLHelper(this);
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
 
         Cursor c;
 
-        if(settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
+        if (settings.contains("orden_ultimos_fecha_compra") && settings.getBoolean("orden_ultimos_fecha_compra", true)) {
             c = juegosSQLH.getUltimosJuegosAnadidosFechaCompra();
         } else {
             c = juegosSQLH.getUltimosJuegosAnadidos();
@@ -327,12 +327,11 @@ public class Inicio extends Activity {
         Intent intent = new Intent(this, Pendientes.class);
         startActivity(intent);
     }
+
     public void undiacomohoy(View view) {
         Intent intent = new Intent(this, UnDiaComoHoy.class);
         startActivity(intent);
     }
-
-
 
 
     /**
@@ -358,7 +357,7 @@ public class Inicio extends Activity {
     public void detalleJuego(View view) {
         TextView id = (TextView) view.findViewById(R.id.id_juego);
         Intent intent;
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
         if (Integer.parseInt(String.valueOf(id.getText())) == -1) {
             intent = new Intent(this, NuevoJuego.class);

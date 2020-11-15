@@ -256,7 +256,7 @@ public class DetalleJuego extends Activity {
 
             if (juego.getPrecio() != 0) {
 
-                final SharedPreferences settings = getSharedPreferences("UserInfo", 0);
+                final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs", 0);
 
                 String currency = settings.getString("currency",null);
 

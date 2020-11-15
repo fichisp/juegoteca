@@ -412,7 +412,7 @@ public class NuevoJuego extends Activity {
                         getString(R.string.juego_guardado), Toast.LENGTH_SHORT);
                 toast.show();
 
-                final SharedPreferences settings = getSharedPreferences("UserInfo",
+                final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                         0);
                 Intent intent;
                 if (settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen", true)) {

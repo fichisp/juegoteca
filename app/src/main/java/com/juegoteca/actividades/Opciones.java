@@ -41,6 +41,9 @@ import com.mijuegoteca.R;
 import java.io.File;
 import java.util.List;
 
+import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
+import static android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION;
+
 /**
  * A {@link PreferenceActivity} that presents a set of application settings. On
  * handset devices, settings are presented as a single list. On tablets,
@@ -158,7 +161,7 @@ public class Opciones extends PreferenceActivity {
             return;
         }
 
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
 
 
@@ -500,6 +503,8 @@ public class Opciones extends PreferenceActivity {
             dialogoEmpaquetado.dismiss();
             Intent shareIntent = new Intent();
             shareIntent.setAction(Intent.ACTION_SEND);
+            shareIntent.addFlags(FLAG_GRANT_READ_URI_PERMISSION);
+            shareIntent.addFlags(FLAG_GRANT_WRITE_URI_PERMISSION);
             shareIntent.putExtra(Intent.EXTRA_STREAM,FileProvider.getUriForFile(Opciones.this, BuildConfig.APPLICATION_ID + ".provider", new File(result) ));
             shareIntent.setType("application/zip");
             startActivity(Intent.createChooser(shareIntent, "Enviar a..."));
@@ -527,7 +532,6 @@ public class Opciones extends PreferenceActivity {
         @Override
         protected void onPreExecute() {
             dialogoCopia = ProgressDialog.show(Opciones.this, null, getString(R.string.unzip), true);
-
         }
 
         @Override

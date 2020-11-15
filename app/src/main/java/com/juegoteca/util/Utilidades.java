@@ -1,6 +1,8 @@
 package com.juegoteca.util;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.AlarmManager;
 import android.app.AlertDialog;
 import android.app.NotificationChannel;
@@ -10,6 +12,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Bitmap.CompressFormat;
@@ -19,7 +22,9 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.Process;
 import android.preference.PreferenceManager;
+
 import androidx.annotation.NonNull;
+
 import android.text.Html;
 import android.util.Log;
 import android.view.Gravity;
@@ -33,6 +38,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.jakewharton.processphoenix.ProcessPhoenix;
+import com.juegoteca.actividades.Inicio;
 import com.juegoteca.actividades.Splash;
 import com.juegoteca.actividades.UnDiaComoHoy;
 import com.juegoteca.basedatos.Juego;
@@ -53,15 +60,18 @@ import com.twitter.sdk.android.core.models.Tweet;
 import com.twitter.sdk.android.core.services.StatusesService;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.FilenameFilter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -74,6 +84,9 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Random;
+import java.util.Set;
 import java.util.UUID;
 import java.util.zip.Deflater;
 import java.util.zip.ZipEntry;
@@ -86,6 +99,7 @@ import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 
+import static android.content.Context.ACTIVITY_SERVICE;
 import static com.twitter.sdk.android.core.Twitter.TAG;
 
 
@@ -214,7 +228,7 @@ public class Utilidades {
         ArrayAdapter adapter = (ArrayAdapter) spnr.getAdapter();
         for (int position = 0; position < adapter.getCount(); position++) {
 
-            if(((com.juegoteca.basedatos.Plataforma)adapter.getItem(position)).getId() == value) {
+            if (((com.juegoteca.basedatos.Plataforma) adapter.getItem(position)).getId() == value) {
                 spnr.setSelection(position);
                 return;
             }
@@ -255,7 +269,6 @@ public class Utilidades {
         List<Plataforma> plataformas = new ArrayList<>();
 
         String codigoIdioma = Locale.getDefault().getISO3Language();
-
 
 
         if (!"spa".equalsIgnoreCase(codigoIdioma)) {
@@ -597,8 +610,8 @@ public class Utilidades {
     }
 
     public Date convertirMilisegundosFecha(String milisegundos) {
-            Date date = new Date(Long.parseLong(milisegundos) * 1000L);
-            return date;
+        Date date = new Date(Long.parseLong(milisegundos) * 1000L);
+        return date;
     }
 
     /**
@@ -646,7 +659,7 @@ public class Utilidades {
         // Comprimimos los ficheros necesarios para la copia de seguridad
         final String zip = context.getCacheDir().getPath()
                 + "/"
-                + encriptar(context.getSharedPreferences("UserInfo", 0)
+                + encriptar(context.getSharedPreferences("JuegotecaPrefs", 0)
                 .getString("usuario", "")) + ".zip";
         ZipOutputStream osZIP;
         OutputStream ficheroZIP;
@@ -689,6 +702,24 @@ public class Utilidades {
             while (0 < (leido = fis.read(buffer))) {
                 osZIP.write(buffer, 0, leido);
             }
+
+            //TODO Save shared prefs
+
+            File directoriPrefs = new File(context.getDataDir(), "/shared_prefs");
+            File[] ficherosShared = directoriPrefs.listFiles();
+            for (File fichero : ficherosShared) {
+                ZipEntry shared = new ZipEntry("shared_prefs/" + fichero.getName());
+                osZIP.putNextEntry(shared);
+                //InputStream fisS = new FileInputStream(new File(context.getDataDir(), "/shared_prefs/JuegotecaPrefs.xml"));
+                FileInputStream fisS = new FileInputStream(
+                        fichero.getAbsolutePath());
+                byte[] bufferS = new byte[1024];
+                int leidoS;
+                while (0 < (leidoS = fisS.read(bufferS))) {
+                    osZIP.write(bufferS, 0, leidoS);
+                }
+            }
+
             fis.close();
             osZIP.closeEntry();
             osZIP.close();
@@ -710,6 +741,9 @@ public class Utilidades {
      */
     public boolean restaurarCopiaSeguridadFichero(Uri path) {
         boolean copiaRestaurada = false;
+
+        // Borrar los ficheros de la carpeta "files" y "databases"
+        borrarTodosDatos(false);
         // Descomprimir el fichero
         try {
             ZipInputStream zis = new ZipInputStream(context
@@ -717,20 +751,27 @@ public class Utilidades {
             if (zipValido(path)) {
                 ZipEntry entrada;
                 // Comprobar que el fichero es correcto
-                // Borrar los ficheros de la carpeta "files" y "databases"
-                borrarTodosDatos(false);
+                new File(
+                        context.getApplicationInfo().dataDir + "/files").mkdirs();
+
                 while (null != (entrada = zis.getNextEntry())) {
-                    // Extraer los ficheros en sus correspondientes directorios
-                    OutputStream fos = new FileOutputStream(
-                            context.getApplicationInfo().dataDir + "/"
-                                    + entrada.getName());
-                    int leido;
-                    byte[] buffer = new byte[1024];
-                    while (0 < (leido = zis.read(buffer))) {
-                        fos.write(buffer, 0, leido);
+                    try {
+                        // Extraer los ficheros en sus correspondientes directorios
+                        File tmp = new File(
+                                context.getApplicationInfo().dataDir + "/"
+                                        + entrada.getName());
+                        //tmp.mkdirs();
+                        OutputStream fos = new FileOutputStream(tmp);
+                        int leido;
+                        byte[] buffer = new byte[1024];
+                        while (0 < (leido = zis.read(buffer))) {
+                            fos.write(buffer, 0, leido);
+                        }
+                        fos.close();
+                        zis.closeEntry();
+                    } catch (Exception e) {
+                        Log.v("RESTORE DB", e.getLocalizedMessage());
                     }
-                    fos.close();
-                    zis.closeEntry();
                 }
                 zis.close();
                 copiaRestaurada = true;
@@ -755,7 +796,7 @@ public class Utilidades {
                     .getContentResolver().openInputStream(path));
             ZipEntry entrada;
             while (null != (entrada = zis.getNextEntry())) {
-                if (!entrada.getName().contains("files")
+                if (!entrada.getName().contains("files") && !entrada.getName().contains("shared_prefs")
                         && !entrada.getName().contains("databases")) {
                     zipValido = false;
                     zis.close();
@@ -828,12 +869,20 @@ public class Utilidades {
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Process.killProcess(Process.myPid());
-                AlarmManager alm = (AlarmManager) context
+
+
+                ProcessPhoenix.triggerRebirth(context, new Intent(
+                        context, Splash.class));
+
+
+             /*   AlarmManager alm = (AlarmManager) context
                         .getSystemService(Context.ALARM_SERVICE);
-                alm.set(AlarmManager.RTC, System.currentTimeMillis() + 1000,
-                        PendingIntent.getActivity(context, 0, new Intent(
-                                context, Splash.class), 0));
+
+                alm.set(AlarmManager.RTC, System.currentTimeMillis(),
+                        PendingIntent.getActivity(context, new Random().nextInt(), new Intent(
+                                context, Splash.class), 0));*/
+                //System.exit(0);
+                //Process.killProcess(Process.myPid());
 
             }
         });
@@ -875,7 +924,7 @@ public class Utilidades {
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                final SharedPreferences settings = context.getSharedPreferences("UserInfo",
+                final SharedPreferences settings = context.getSharedPreferences("JuegotecaPrefs",
                         0);
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putBoolean("releaseNotes" + versionName, true);
@@ -1065,23 +1114,22 @@ public class Utilidades {
     }
 
 
-    public void checkLaunchDates(){
+    public void checkLaunchDates() {
 
-        String day          = (String) android.text.format.DateFormat.format("dd",   new Date());
-        String monthNumber  = (String) android.text.format.DateFormat.format("MM",   new Date());
+        String day = (String) android.text.format.DateFormat.format("dd", new Date());
+        String monthNumber = (String) android.text.format.DateFormat.format("MM", new Date());
 
-        Cursor c = juegosSQLH.gamesLaunchedSameDay(day,monthNumber);
+        Cursor c = juegosSQLH.gamesLaunchedSameDay(day, monthNumber);
 
-       if (c != null && c.moveToFirst()) {
-
+        if (c != null && c.moveToFirst()) {
 
 
             c.close();
 
-        // Create an explicit intent for an Activity in your app
-        Intent intent = new Intent(context, UnDiaComoHoy.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
+            // Create an explicit intent for an Activity in your app
+            Intent intent = new Intent(context, UnDiaComoHoy.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
             NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "juegoteca")
                     .setSmallIcon(R.drawable.notitication_icon)
@@ -1096,12 +1144,11 @@ public class Utilidades {
                     .setContentIntent(pendingIntent)
                     .setAutoCancel(true);
 
-            NotificationManager notificationManager =     (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+            NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
 
 
             // === Removed some obsoletes
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
-            {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 String channelId = "juegoteca";
                 @SuppressLint("WrongConstant") NotificationChannel channel = new NotificationChannel(
                         channelId,
@@ -1113,10 +1160,9 @@ public class Utilidades {
             }
 
 
-
             // notificationId is a unique int for each notification that you must define
             notificationManager.notify(1, builder.build());
-       }
+        }
     }
 
 

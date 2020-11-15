@@ -49,7 +49,7 @@ public class TwitterActivity extends Activity {
                 TwitterAuthToken authToken = session.getAuthToken();
 
                 //Registramos el token y el secret
-                final SharedPreferences settings = getSharedPreferences("UserInfo",
+                final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                         0);
                 SharedPreferences.Editor editor = settings.edit();
                 editor.putString("twitter_token", authToken.token);

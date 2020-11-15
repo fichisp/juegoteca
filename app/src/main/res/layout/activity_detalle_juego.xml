@@ -145,13 +145,14 @@
                         android:layout_weight="1"
                         android:text="@string/label_descripcion_editar"
                         android:textSize="15sp"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:visibility="gone" />
 
                     <com.juegoteca.util.ExpandableTextView
                         android:id="@+id/text_resumen_detalle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="0dp"
                         android:layout_marginBottom="10dp"
                         android:layout_weight="0"
                         android:ems="10"
@@ -191,30 +192,38 @@
                         android:layout_height="match_parent"
                         android:layout_marginBottom="10dp">
 
-                        <TextView
-                            android:id="@+id/textView25"
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_compania"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/text_compania_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:inputType="textCapWords"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_compania"
-                            android:textAllCaps="true"
-                            android:textSize="15dp" />
+                            <TextView
+                                android:id="@+id/textView25"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_compania"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_compania_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="textCapWords"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_compania"
+                                android:textAllCaps="true"
+                                android:textSize="15dp" />
+                        </LinearLayout>
 
                     </TableRow>
 
@@ -222,263 +231,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_genero"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_genero_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:inputType="textCapWords"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_genero"
-                            android:textAllCaps="true" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/textView10"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_plataforma"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_plataforma_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-
-                            android:inputType="textCapWords"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_plataforma"
-                            android:textAllCaps="true"
-                            android:textSize="15dp" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_clasificacion"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_clasificacion_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_clasificacion"
-                            android:textAllCaps="true"
-                            android:textSize="15dp" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/textView8"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_idioma"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_idioma_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:inputType="textCapWords"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_idioma"
-                            android:textAllCaps="true"
-                            android:textSize="15dp" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/textView9"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_formato"
-                            android:textSize="15dp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_formato_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:inputType="textCapWords"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_formato"
-                            android:textAllCaps="true"
-                            android:textSize="15dp" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_fecha_lanzamiento_detalle_label"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_fecha_lanzamiento"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_fecha_lanzamiento_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:ems="10"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:textSize="15sp"
-                            tools:text="dd/mm/yyyy" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_fecha_compra_detalle_label"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_fecha_compra"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_fecha_compra_detalle_editar"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:ems="10"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:textSize="15sp" />
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_precio_detalle_label"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_precio"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_precio_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:ems="10"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:textSize="15sp" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_completado_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_completado"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -487,11 +239,419 @@
                             android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/text_fecha_completado_detalle"
+                                android:id="@+id/textView6"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
                                 android:paddingLeft="5dp"
                                 android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_genero"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_genero_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="textCapWords"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_genero"
+                                android:textAllCaps="true" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView10"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_plataforma"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_plataforma_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+
+                                android:inputType="textCapWords"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_plataforma"
+                                android:textAllCaps="true"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_clasificacion"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_clasificacion_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_clasificacion"
+                                android:textAllCaps="true"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView8"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_idioma"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_idioma_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="textCapWords"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_idioma"
+                                android:textAllCaps="true"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView9"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_formato"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_formato_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="textCapWords"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_formato"
+                                android:textAllCaps="true"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_fecha_lanzamiento_detalle_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_fecha_lanzamiento"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_fecha_lanzamiento_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:textSize="15sp"
+                                tools:text="dd/mm/yyyy" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_fecha_compra_detalle_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_fecha_compra"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_fecha_compra_detalle_editar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_precio_detalle_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_precio"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_precio_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:ems="10"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_completado_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_completado"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/text_fecha_completado_detalle"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="5dp"
+                                    android:paddingBottom="5dp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_comentario_detalle_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_comentario"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_comentario_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp"
+                                android:singleLine="false" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/text_puntuacion_detalle_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_puntuacion"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/text_puntuacion_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="number"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
                                 android:paddingBottom="5dp" />
                         </LinearLayout>
 
@@ -502,81 +662,35 @@
                         android:layout_height="match_parent"
                         android:layout_marginBottom="10dp">
 
-                        <TextView
-                            android:id="@+id/text_comentario_detalle_label"
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_comentario"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/text_comentario_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:inputType="textMultiLine" />
+                            <TextView
+                                android:id="@+id/text_ean_detalle_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:text="@string/label_ean"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
 
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_puntuacion_detalle_label"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_puntuacion"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_puntuacion_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:inputType="number"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp" />
-
-                    </TableRow>
-
-                    <TableRow
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="10dp">
-
-                        <TextView
-                            android:id="@+id/text_ean_detalle_label"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp"
-                            android:text="@string/label_ean"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/text_ean_detalle"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:inputType="number"
-                            android:paddingLeft="5dp"
-                            android:paddingTop="5dp"
-                            android:paddingBottom="5dp" />
+                            <TextView
+                                android:id="@+id/text_ean_detalle"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:inputType="number"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="5dp"
+                                android:paddingRight="5dp"
+                                android:paddingBottom="5dp" />
+                        </LinearLayout>
 
                     </TableRow>
 

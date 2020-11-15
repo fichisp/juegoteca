@@ -84,16 +84,25 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="pendientes"
-                android:src="@drawable/boton_pendientes" />
+                android:src="@drawable/baseline_timelapse_black_24" />
 
             <ImageButton
+                android:id="@+id/boton_undiacomohoy"
+                style="@style/BotonesInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="undiacomohoy"
+                android:src="@drawable/baseline_history_black_24" />
+
+<!--            <ImageButton
                 android:id="@+id/boton_opciones"
                 style="@style/BotonesInicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="opciones"
-                android:src="@drawable/boton_opciones" />
+                android:src="@drawable/boton_opciones" />-->
         </LinearLayout>
 
     </LinearLayout>

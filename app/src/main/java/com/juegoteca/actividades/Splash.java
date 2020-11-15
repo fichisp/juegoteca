@@ -22,7 +22,7 @@ public class Splash extends Activity {
 
         Handler handler = new Handler();
         Utilidades utilidades = new Utilidades(this);
-        handler.postDelayed(getRunnableStartApp(), 1500);
+        handler.postDelayed(getRunnableStartApp(), 1000);
 
     }
 

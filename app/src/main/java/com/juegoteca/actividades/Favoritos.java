@@ -121,7 +121,7 @@ public class Favoritos extends Activity {
     public void detalleJuego(View view) {
         TextView id = (TextView) view.findViewById(R.id.id_juego);
 
-        final SharedPreferences settings = getSharedPreferences("UserInfo",
+        final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
         Intent intent;
         if (settings.contains("detalle_imagen") && settings.getBoolean("detalle_imagen", true)) {

@@ -218,7 +218,7 @@ public class Estadisitcas extends Activity {
                     BigDecimal bd = new BigDecimal(Float.toString(sum[i]));
                     bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
 
-                    final SharedPreferences settings = getSharedPreferences("UserInfo",
+                    final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                             0);
                     String currency = settings.getString("currency","");
 
@@ -306,7 +306,7 @@ public class Estadisitcas extends Activity {
                     BigDecimal bd = new BigDecimal(Float.toString(sum[i]));
                     bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
 
-                    final SharedPreferences settings = getSharedPreferences("UserInfo",
+                    final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                             0);
                     String currency = settings.getString("currency","");
 
@@ -808,7 +808,7 @@ public class Estadisitcas extends Activity {
 
         if (valorColeccion != null && juegosConPrecio != null && juegosConPrecio > 0) {
 
-            final SharedPreferences settings = getSharedPreferences("UserInfo",
+            final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                     0);
             String currency = settings.getString("currency","");
 
