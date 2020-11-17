@@ -35,6 +35,7 @@ import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.CheckLaunchDatesService;
 import com.juegoteca.util.GridJuegosMasonryAdapterHorizontal;
 import com.juegoteca.util.GridJuegosItemDecorationHorizontal;
+import com.juegoteca.util.NotificationReceiver;
 import com.juegoteca.util.Utilidades;
 import com.mijuegoteca.R;
 
@@ -95,9 +96,15 @@ public class Inicio extends Activity {
             editor.putBoolean("show_launched_notification", true);
             editor.commit();
         }
-        scheduleJobCheckLaunchDate(currentDay);
+       // scheduleJobCheckLaunchDate(currentDay);
         checkPermission();
+        utilidades.setUpAlarm();
     }
+
+
+
+
+
 
     /**
      *
