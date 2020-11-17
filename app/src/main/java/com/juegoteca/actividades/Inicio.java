@@ -98,6 +98,7 @@ public class Inicio extends Activity {
         }
        // scheduleJobCheckLaunchDate(currentDay);
         checkPermission();
+
         utilidades.setUpAlarm();
     }
 
@@ -114,40 +115,6 @@ public class Inicio extends Activity {
         requestPermissions(permissions, 200);
     }
 
-
-    /**
-     * @param currentDay
-     */
-    private void scheduleJobCheckLaunchDate(final String currentDay) {
-
-
-        @SuppressLint("WrongConstant") JobScheduler jobScheduler = (JobScheduler) getApplicationContext()
-                .getSystemService(JOB_SCHEDULER_SERVICE);
-
-        boolean hasBeenScheduled = false;
-
-        for (JobInfo jobInfo : jobScheduler.getAllPendingJobs()) {
-            if (jobInfo.getId() == 27021985) {
-                hasBeenScheduled = true;
-                break;
-            }
-        }
-
-        if (!hasBeenScheduled) {
-            ComponentName componentName = new ComponentName(this,
-                    CheckLaunchDatesService.class);
-
-
-            JobInfo.Builder builder = new JobInfo.Builder(27021985, componentName);
-            builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_NONE);
-            builder.setPeriodic(TimeUnit.DAYS.toMillis(1));
-            PersistableBundle extras = new PersistableBundle();
-            extras.putString("currentDay", currentDay);
-            builder.setExtras(extras);
-            jobScheduler.schedule(builder.build());
-        }
-
-    }
 
     @Override
     protected void onResume() {

@@ -1115,16 +1115,39 @@ public class Utilidades {
 
     public void setUpAlarm() {
 
-        Intent _intent = new Intent(context, NotificationReceiver.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, _intent, 0);
-        AlarmManager alarmManager = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
-        alarmManager.cancel(pendingIntent);
-        Calendar calendar = Calendar.getInstance();
-        calendar.setTimeInMillis(System.currentTimeMillis());
-        calendar.set(Calendar.HOUR_OF_DAY, 00);
-        calendar.set(Calendar.MINUTE, 00);
-        calendar.set(Calendar.SECOND, 0);
-        alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+        final SharedPreferences settings = context.getSharedPreferences("JuegotecaPrefs",
+                0);
+        AlarmManager manager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+
+
+        boolean alarmUp = (PendingIntent.getBroadcast(context, 0,
+                new Intent(context, NotificationReceiver.class),
+                PendingIntent.FLAG_NO_CREATE) != null);
+
+        if (!alarmUp) {
+           /* Toast toast = Toast.makeText(context.getApplicationContext(),
+                    "ALARM ALREADY UP", Toast.LENGTH_SHORT);
+            toast.setGravity(Gravity.CENTER | Gravity.BOTTOM, 0, 0);
+            toast.show();
+*/
+
+
+            if (settings.contains("show_launched_notification")) {
+                Intent _intent = new Intent(context, NotificationReceiver.class);
+                PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, _intent, 0);
+                AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+                alarmManager.cancel(pendingIntent);
+                Calendar calendar = Calendar.getInstance();
+                calendar.setTimeInMillis(System.currentTimeMillis());
+                calendar.set(Calendar.HOUR_OF_DAY, 00);
+                calendar.set(Calendar.MINUTE, 00);
+                calendar.set(Calendar.SECOND, 0);
+                alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
+
+
+            }
+
+        }
 
 
     }
@@ -1160,6 +1183,9 @@ public class Utilidades {
                     .setAutoCancel(true);
 
             NotificationManager notificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+//Cancel alarm
+            AlarmManager manager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
+            manager.cancel(pendingIntent);
 
 
             // === Removed some obsoletes
