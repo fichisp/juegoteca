@@ -1,5 +1,6 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     style="@style/Padding0"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -67,6 +68,8 @@
                 android:clipToPadding="false">
 
             </androidx.recyclerview.widget.RecyclerView>
+
+
         </LinearLayout>
 
         <LinearLayout
@@ -146,5 +149,50 @@
 
     </LinearLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_cloud_black_24"
+        android:backgroundTint="@color/naranja_cabeceras"
+        android:contentDescription="@string/action_nuevo"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="192dp"
+        app:borderWidth="0dp"
+        android:theme="@style/Theme.AppCompat.Light"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/boton_nuevo"
+        android:backgroundTint="@color/naranja_cabeceras"
+        android:contentDescription="@string/action_nuevo"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="128dp"
+        app:borderWidth="0dp"
+        android:theme="@style/Theme.AppCompat.Light"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/baseline_add_black_24"
+        android:backgroundTint="@color/naranja_cabeceras"
+        android:contentDescription="@string/action_nuevo"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="64dp"
+        app:borderWidth="0dp"
+        android:theme="@style/Theme.AppCompat.Light"/>
 </RelativeLayout>
+
 

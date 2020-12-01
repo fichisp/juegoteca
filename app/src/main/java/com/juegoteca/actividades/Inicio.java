@@ -30,6 +30,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.juegoteca.basedatos.Juego;
 import com.juegoteca.basedatos.JuegosSQLHelper;
 import com.juegoteca.util.CheckLaunchDatesService;
@@ -51,6 +52,10 @@ public class Inicio extends Activity {
     private Juego[] datosJuegos;
     private Utilidades utilidades;
 
+    private FloatingActionButton fabAdd, fabNew, fabCloud;
+
+    private Boolean isAllFabsVisible;
+
 
     /**
      * Llamada cuando se inicializa la actividad. Carga los listados que se
@@ -63,6 +68,8 @@ public class Inicio extends Activity {
         utilidades = new Utilidades(this);
         cargarUltimosAnadidos();
         cargarUltimosCompletados();
+
+        handleFabs();
 
         final SharedPreferences settings = getSharedPreferences("JuegotecaPrefs",
                 0);
@@ -122,6 +129,7 @@ public class Inicio extends Activity {
         setContentView(R.layout.activity_inicio);
         cargarUltimosAnadidos();
         cargarUltimosCompletados();
+        handleFabs();
     }
 
     /**
@@ -210,6 +218,61 @@ public class Inicio extends Activity {
 
         }
         juegosSQLH.close();
+    }
+
+    private void handleFabs(){
+        fabAdd = findViewById(R.id.fabAdd);
+        fabNew = findViewById(R.id.fabNew);
+        fabCloud = findViewById(R.id.fabCloud);
+
+        fabAdd.bringToFront();
+        fabNew.bringToFront();
+        fabCloud.bringToFront();
+
+        fabNew.hide();
+        fabCloud.hide();
+
+        isAllFabsVisible = false;
+
+        fabAdd.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        if (!isAllFabsVisible) {
+
+                            // when isAllFabsVisible becomes
+                            // true make all the action name
+                            // texts and FABs VISIBLE.
+                            fabNew.show();
+                            fabCloud.show();
+
+
+                            // make the boolean variable true as
+                            // we have set the sub FABs
+                            // visibility to GONE
+                            isAllFabsVisible = true;
+                        } else {
+
+                            // when isAllFabsVisible becomes
+                            // true make all the action name
+                            // texts and FABs GONE.
+                            fabNew.hide();
+                            fabCloud.hide();
+
+                            // make the boolean variable false
+                            // as we have set the sub FABs
+                            // visibility to GONE
+                            isAllFabsVisible = false;
+                        }
+                    }
+                });
+
+        fabNew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                nuevoJuego(view);
+            }
+        });
     }
 
     @Override
