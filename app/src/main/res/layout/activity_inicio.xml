@@ -81,14 +81,14 @@
             android:background="@color/naranja_cabeceras"
             android:orientation="horizontal">
 
-            <ImageButton
+           <!-- <ImageButton
                 android:id="@+id/boton_nuevo"
                 style="@style/BotonesInicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="nuevoJuego"
-                android:src="@drawable/boton_nuevo" />
+                android:src="@drawable/boton_nuevo" />-->
 
             <ImageButton
                 android:id="@+id/boton_buscar"

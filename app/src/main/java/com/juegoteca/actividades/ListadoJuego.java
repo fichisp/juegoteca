@@ -43,7 +43,6 @@ public class ListadoJuego extends Activity {
         setContentView(R.layout.activity_listado_juego);
         setupActionBar();
 
-        String url_buscar = this.getResources().getString(R.string.url_buscar);
         Intent intent = getIntent();
         valoresBusqueda = intent.getStringArrayExtra("VALORES");
         new RealizaBusqueda(this).execute();

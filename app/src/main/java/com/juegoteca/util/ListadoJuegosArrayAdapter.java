@@ -15,6 +15,7 @@ public class ListadoJuegosArrayAdapter extends ArrayAdapter<Juego> {
 
     private final Activity context;
     private Juego[] juegos;
+    private boolean hideCompany = false;
 
     /**
      * Contructor parametrizado
@@ -53,14 +54,25 @@ public class ListadoJuegosArrayAdapter extends ArrayAdapter<Juego> {
 
         TextView nombre = (TextView) item.findViewById(R.id.nombre_juego);
         nombre.setText(juegos[position].getTitulo());
-
         TextView compania = (TextView) item.findViewById(R.id.compania_juego);
-        compania.setText(juegos[position].getCompania());
+        if(hideCompany) {
+            compania.setVisibility(View.GONE);
+        } else  {
+            compania.setText(juegos[position].getCompania());
+        }
 
         TextView plataforma = (TextView) item.findViewById(R.id.plataforma_juego);
         plataforma.setText(juegos[position].getNombrePlataforma());
 
         return item;
+    }
+
+    public boolean isHideCompany() {
+        return hideCompany;
+    }
+
+    public void setHideCompany(boolean hideCompany) {
+        this.hideCompany = hideCompany;
     }
 
     @Override

@@ -273,6 +273,13 @@ public class Inicio extends Activity {
                 nuevoJuego(view);
             }
         });
+
+        fabCloud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tgdbSearch(view);
+            }
+        });
     }
 
     @Override
@@ -322,6 +329,11 @@ public class Inicio extends Activity {
      */
     public void nuevoJuego(View view) {
         Intent intent = new Intent(this, NuevoJuego.class);
+        startActivity(intent);
+    }
+
+    public void tgdbSearch(View view) {
+        Intent intent = new Intent(this, ListadoJuegoTGDB.class);
         startActivity(intent);
     }
 
